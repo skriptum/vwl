@@ -1,0 +1,9 @@
+[submodule "vwl2"]
+	path = vwl2
+	url = https://github.com/skriptum/vwl2
+[submodule "vwl3"]
+	path = vwl3
+	url = https://github.com/skriptum/vwl3
+[submodule "vwl1"]
+	path = vwl1
+	url = https://github.com/skriptum/vwl1

@@ -1,0 +1,40 @@
+project:
+  output-dir: _output
+  type: website
+  render:
+    - "vwl1/README.md"
+    - "vwl2/README.md"
+    - "vwl3/README.md"
+    - "*.md"
+    - "*.qmd"
+
+
+toc: true
+number-sections: false  
+  
+format:
+  html:
+    html-math-method: katex
+    theme: [cosmo, theme.scss]
+
+website:
+  favicon: logo.png
+  title: VWL
+  navbar:
+    search: true
+    left:
+      - text: "1. Semester"
+        file: vwl1/README.md
+      - text: "2. Semester"
+        file: vwl2/README.md
+      - text: "3. Semester"
+        file: vwl3/README.md
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents: 
+      - section: "1. Semester"
+        contents: 
+          - section: "Grundlagen BWL"
+            contents: vwl1/VL_BWL

@@ -224,6 +224,7 @@
     - [Romer](vwl3/VL_Makro1/2022-11-17-Romer.md)
     - [Arbeit](vwl3/VL_Makro1/2022-11-24-Arbeit.md)
     - [Geld](vwl3/VL_Makro1/2022-11-30-Geld.md)
+    - [Wirtschaftspolitik](vwl3/VL_Makro1/2022-12-06-Wirtschaftspolitik.md)
     - [Übersicht](vwl3/VL_Makro1/README.md)
 
 - Mikroökonomik II
@@ -234,6 +235,7 @@
     - [Verhalten_I](vwl3/VL_Mikro2/2022-11-20-Verhalten_I.md)
     - [Risiko](vwl3/VL_Mikro2/2022-11-30-Risiko.md)
     - [Versicherung](vwl3/VL_Mikro2/2022-12-02-Versicherung.md)
+    - [Verhalten_II](vwl3/VL_Mikro2/2022-12-10-Verhalten_II.md)
     - [Übersicht](vwl3/VL_Mikro2/README.md)
 
 - Wirtschaftssoziologie
@@ -277,4 +279,3 @@
     - [Zinsstruktur](vwl3/VL_Monetaer/2022-11-22-Zinsstruktur.md)
     - [Finanzmarkt](vwl3/VL_Monetaer/2022-11-29-Finanzmarkt.md)
     - [Übersicht](vwl3/VL_Monetaer/README.md)
-

@@ -4,9 +4,9 @@ Auf dieser Website werden alle Notizen aus den bisherigen Semestern Volkswirtsch
 
 Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der Startseite jedes einzelnen Semesters. Dort sind auch die Professor:innen des jeweiligen Moduls verzeichnet.
 
-## Übersicht über Semester
+## Modulübersicht
 
-1. Semester:
+### 1. Semester
 
 | Modul                 | Professor                | Übersicht                                            | Zusammenfassung                                              |
 | --------------------- | ------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
@@ -17,7 +17,7 @@ Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der S
 | VWL                   | Prof. Dr. Lars Börner    | [Übersicht](vwl1/VL_VWL/README.md)                   | [Zusammenfassung](vwl1/VL_VWL/2021-10-00-Zusammenfassung.md) |
 | Wirtschaftsinformatik | Prof. Dr. Taieb Mellouli | [Übersicht](vwl1/VL_Wirtschaftsinformatik/README.md) | [Zusammenfassung](vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md) |
 
-2. Semester
+### 2. Semester
 
 | Modul                       | Professor:in      | Übersicht                                 | Zusammenfassung                                              |
 | --------------------------- | ----------------- | ----------------------------------------- | ------------------------------------------------------------ |
@@ -28,7 +28,7 @@ Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der S
 | Stadtökonomie (Leipzig)     | Melanie Krause    | [Übersicht](vwl2/VL_Stadt/README.md)      | [Hausarbeit](vwl2/VL_Stadt/hausarbeit/Hausarbeit.md)         |
 | Mathe II                    | Maren Hantke      | [Übersicht](vwl2/VL_Mathe2/README.md)     |                                                              |
 
-3. Semester
+### 3. Semester
 
 | Modul                                         | Prof               | Übersicht                                 |
 | --------------------------------------------- | ------------------ | ----------------------------------------- |

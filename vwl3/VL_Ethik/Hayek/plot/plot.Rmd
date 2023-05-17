@@ -1,0 +1,61 @@
+# Plot
+
+```{r}
+library(tidyverse)
+library(patchwork)
+
+gdp = read.csv("gdp.csv")
+freedom = read_csv("freedom.csv")
+```
+
+```{r}
+freedom_plot = ggplot(data=gdp, aes(x=Year,y=gdp)) +
+  geom_line() +
+  ylab("GDP p.P, int. $")+
+  xlab("Jahr")+
+  coord_cartesian(xlim = c(1990, 2020), ylim = c(0, 30000)) +
+  labs(
+    title="BIP pro Capita in RU",
+    subtitle = "der starke Abfall nach 1990",
+    caption="Quelle: PennWorldTables, eigene Darstellung")
+
+freedom_plot
+```
+
+```{r}
+gdp_plot = ggplot(data=freedom, aes(x=Year)) +
+  geom_line(aes(y=PR, colour="Politische Rechte") )+
+  geom_line(aes(y=CL, colour="Bürgerliche Freiheiten")) +
+  scale_colour_manual("Freiheitsindex",
+                      breaks = c("Politische Rechte", "Bürgerliche Freiheiten"),
+                      values = c("orange", "red")
+                      )+
+  coord_cartesian(xlim = c(1991, 2021), ylim = c(0, 10)) +
+  ylab("Freiheitsgrad")+
+  xlab("Jahr")+
+  labs(
+    title="Freiheiten in Russland",
+    caption="Quelle: Freedom House, eigene Darstellung",
+    subtitle = "von 0 (frei) bis 10 (unfrei)") +
+  theme(
+    legend.position = c(.4, .8),
+    legend.background = element_rect(fill = "white"),)
+
+gdp_plot
+```
+
+```{r}
+c = freedom_plot + gdp_plot + plot_annotation(tag_levels = "1")
+c
+```
+
+```{r}
+ggsave(
+  filename="plot.png",
+  plot=c, 
+  device="png",
+  width = 20, 
+  height=10,
+  units="cm"
+  )
+```

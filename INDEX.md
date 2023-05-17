@@ -1,7 +1,8 @@
 - [Startseite](HOME.md)
 
 ---
-**I. Semester**
+[I. Semester](vwl1/README.md)
+
 
 - VWL 
     - [Formelsammlung](vwl1/VL_VWL/2021-10-00-Formelsammlung.md)
@@ -118,7 +119,8 @@
 
 ---
 
-**II. Semester**
+[II. Semester](vwl2/README.md)
+
 
 - Wissenschaftliches Arbeiten
     - [Einfuehrung](vwl2/VL_WissArbeit/2022-04-14-Einfuehrung.md)
@@ -193,7 +195,8 @@
 
 ---
 
-**III. Semester**
+[III. Semester](vwl3/README.md)
+
 
 - Makroökonomik I
     - [Einfuehrung](vwl3/VL_Makro1/2022-10-13-Einfuehrung.md)
@@ -288,7 +291,8 @@
 
 ---
 
-**IV. Semester**
+[IV. Semester](vwl4/README.md)
+
 
 - Angewandte Ökonomik
     - [Makro](vwl4/VL_Angewandte/2023-04-19-Makro.md)

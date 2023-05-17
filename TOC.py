@@ -66,8 +66,9 @@ for semester, desc in semesters.items():
 
     # add the semester as a headline
     
-    result_list.append(f"**{desc}**") 
+    result_list.append(f"[{desc}]({semester}/README.md)") 
     result_list.append("")
+    result_list.append(f"")
 
     for dir in os.listdir(semester):
 

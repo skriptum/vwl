@@ -5,7 +5,12 @@ Auf dieser Website werden alle Notizen aus den bisherigen Semestern Volkswirtsch
 Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der Startseite jedes einzelnen Semesters. Dort sind auch die Professor:innen des jeweiligen Moduls verzeichnet.
 
 
-[![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)](https://badges.strrl.dev)
+
+|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|![GitHub repo size](https://img.shields.io/github/repo-size/skriptum/vwl)|23| 287 |
+|---|---|---|---|
+|Zuletzt upgedatet|gesamte Dateigröße|Anzahl Module| Anzahl Notizen |
+
+
 
 ---
 

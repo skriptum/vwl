@@ -4,6 +4,7 @@ Afrika ist einer der Kontinente, die global gesehen vor den größten Herausford
 
 Mit diesen Themen beschäftigen sich Vernon Henderson, Adam Storeygard und Uwe Deichmann in ihrer wissenschaftlichen Arbeit mit dem Titel "Has climate change driven urbanization in Africa?". Der Artikel wurde 2017 im renommierten Journal of Development Economics veröffentlicht und untersucht die Zusammenhänge zwischen Urbanisierung und Klimawandel in Subsahara-Afrika (vgl. @hendersonHasClimateChange2017)
 
+
 Die zentralen Fragen, die die Autoren in ihrem Artikel zu beantworten versuchen, sind
 
 -   Welche Auswirkungen hat der Klimawandel auf den Urbanisierungsprozess in Afrika?

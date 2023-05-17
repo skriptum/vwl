@@ -1,0 +1,14 @@
+todo.md
+pruefungen.md
+.DS_Store
+
+.obsidian
+*.mp4
+.ipynb_checkpoints
+*.pdf
+*.calca
+*.sqlite
+*.mdb
+*.m4v
+.Rhistory
+.ztr-directory

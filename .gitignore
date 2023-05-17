@@ -1,0 +1,14 @@
+venv
+.DS_Store
+*.pyc
+*.mp4
+*.pdf
+*.calca
+*.sqlite
+*.mdb
+*.m4v
+.obsidian
+.ipynb_checkpoints
+.Rhistory
+.ztr-directory
+.Rproj.user

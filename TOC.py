@@ -58,7 +58,7 @@ ignores.append([
 #%%
 # get all files in the directory and subdirectories with type {dirname : filenames}
 
-result_list = ["- [Startseite](HOME.md)","", "---"] # first two lines of the SUMMARY.md
+result_list = ["- [Startseite](README.md)","", "---"] # first two lines of the SUMMARY.md
 count_files = 0
 count_dirs = 0
 

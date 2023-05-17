@@ -1,3 +1,5 @@
+cd Desktop/vwl
+
 echo "fetching subtrees"
 git fetch vwl1 master
 git subtree pull --prefix vwl1 vwl1 main --squash

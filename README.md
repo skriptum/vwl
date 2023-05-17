@@ -35,7 +35,7 @@ Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der S
 | Wissenschaftliches Arbeiten | Amelie Wuppermann | [Übersicht](vwl2/VL_WissArbeit/README.md) |                                                              |
 | Mikröokonomik I             | Ingo Pies         | [Übersicht](vwl2/VL_Mikro/README.md)      | [Formelsammlung](vwl2/VL_Mikro/2022-04-00-Formelsammlung.md) |
 | Recht für WiWi              | Katja Rath        | [Übersicht](vwl2/VL_Recht-WiWi/README.md) | [Zusammenfassung](vwl2/VL_Recht-WiWi/2022-04-00-Zusammenfassung.md) |
-| Stadtökonomie (Leipzig)     | Melanie Krause    | [Übersicht](vwl2/VL_Stadt/README.md)      | [Hausarbeit](vwl2/VL_Stadt/hausarbeit/Hausarbeit.md)         |
+| Stadtökonomie (Leipzig)     | Melanie Krause    | [Übersicht](vwl2/VL_Stadt/README.md)      | [Hausarbeit](vwl2/VL_Stadt/hausarbeit/Hausarbeit.html)       |
 | Mathe II                    | Maren Hantke      | [Übersicht](vwl2/VL_Mathe2/README.md)     |                                                              |
 
 ---

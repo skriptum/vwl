@@ -1,4 +1,4 @@
-- [Startseite](HOME.md)
+- [Startseite](README.md)
 
 ---
 [I. Semester](vwl1/README.md)

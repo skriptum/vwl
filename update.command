@@ -1,4 +1,4 @@
-cd Desktop/vwl
+cd Documents/vwl
 
 echo "fetching subtrees"
 git fetch vwl1 master

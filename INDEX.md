@@ -300,23 +300,28 @@
     - [Wert](vwl4/VL_Angewandte/2023-05-03-Wert.md)
     - [Normativ](vwl4/VL_Angewandte/2023-05-10-Normativ.md)
     - [Geldpolitik](vwl4/VL_Angewandte/2023-05-17-Geldpolitik.md)
+    - [Demokratie](vwl4/VL_Angewandte/2023-05-31-Demokratie.md)
+    - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
     - [Übersicht](vwl4/VL_Angewandte/README.md)
 - International Economics
     - [Start](vwl4/VL_International/2023-04-20-Start.md)
     - [Labour](vwl4/VL_International/2023-04-27-Labour.md)
     - [RicardoModel](vwl4/VL_International/2023-05-04-RicardoModel.md)
     - [Specific Factor](vwl4/VL_International/2023-05-11-Specific-Factor.md)
+    - [Heckscher](vwl4/VL_International/2023-06-01-Heckscher.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
     - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
     - [Labour](vwl4/VL_Makro2/2023-04-14-Labour.md)
-    - [Wage](vwl4/VL_Makro2/2023-04-20-Wage.md)
-    - [Inequality](vwl4/VL_Makro2/2023-04-21-Inequality.md)
     - [Banks](vwl4/VL_Makro2/2023-04-27-Banks.md)
     - [BanksII](vwl4/VL_Makro2/2023-04-28-BanksII.md)
     - [BanksIII](vwl4/VL_Makro2/2023-05-04-BanksIII.md)
     - [Fluctuations](vwl4/VL_Makro2/2023-05-08-Fluctuations.md)
     - [Tutorial1](vwl4/VL_Makro2/2023-05-08-Tutorial1.md)
+    - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
+    - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business Cycle.md)
+    - [Tutorial2](vwl4/VL_Makro2/2023-06-05-Tutorial2.md)
+    - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
     - [Übersicht](vwl4/VL_Makro2/README.md)
 - Sozial-Ökologische Systeme
     - [Einfuehrung](vwl4/VL_SoEco/2023-04-17-Einfuehrung.md)
@@ -324,15 +329,19 @@
     - [Lever](vwl4/VL_SoEco/2023-05-15-Lever.md)
     - [Food System](vwl4/VL_SoEco/2023-05-22-Food-System.md)
     - [Resource](vwl4/VL_SoEco/2023-05-27-Resource.md)
+    - [Climate Models](vwl4/VL_SoEco/2023-06-26-Climate-Models.md)
     - [Übersicht](vwl4/VL_SoEco/README.md)
+    - [](vwl4/VL_SoEco/Vortrag.md)
 - Wirtschaftspolitik
     - [Lesenotizen](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)
     - [Start](vwl4/VL_WiPo/2023-04-20-Start.md)
     - [Rationale](vwl4/VL_WiPo/2023-04-27-Rationale.md)
     - [Marktversagen](vwl4/VL_WiPo/2023-05-04-Marktversagen.md)
     - [Makrooekonomik](vwl4/VL_WiPo/2023-05-11-Makrooekonomik.md)
+    - [Inflation](vwl4/VL_WiPo/2023-05-25-Inflation.md)
+    - [Konjunktur](vwl4/VL_WiPo/2023-06-01-Konjunktur.md)
     - [Übersicht](vwl4/VL_WiPo/README.md)
 
 ---
 
-**287** Notizen in **23** Modulen
+**296** Notizen in **23** Modulen

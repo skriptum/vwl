@@ -175,7 +175,18 @@ Instruments:
 
 
 
-## International Labor Mobility
+## Exercise
+
+$w = MPL * P$
+
+![img](../images/2023-05-24_15-07-21.jpg)
+
+Shift of Price 50% upward of Good 1
+
+- w in the Sector 1 rises
+- Red Line shifts upward because of Formula
+- wage rise not exactly 50% but less because of Markets
+
 
 
 

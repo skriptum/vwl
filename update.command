@@ -1,10 +1,10 @@
 cd Documents/vwl
 
 echo "fetching subtrees"
-git fetch vwl1 master
+git fetch vwl1 main
 git subtree pull --prefix vwl1 vwl1 main --squash
 
-git fetch vwl2 master
+git fetch vwl2 main
 git subtree pull --prefix  vwl2 vwl2 main --squash
 
 git fetch vwl3 master

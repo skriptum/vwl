@@ -302,6 +302,7 @@
     - [Geldpolitik](vwl4/VL_Angewandte/2023-05-17-Geldpolitik.md)
     - [Demokratie](vwl4/VL_Angewandte/2023-05-31-Demokratie.md)
     - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
+    - [Demokratie](vwl4/VL_Angewandte/2023-06-14-Demokratie.md)
     - [Übersicht](vwl4/VL_Angewandte/README.md)
 - International Economics
     - [Start](vwl4/VL_International/2023-04-20-Start.md)
@@ -317,11 +318,12 @@
     - [BanksII](vwl4/VL_Makro2/2023-04-28-BanksII.md)
     - [BanksIII](vwl4/VL_Makro2/2023-05-04-BanksIII.md)
     - [Fluctuations](vwl4/VL_Makro2/2023-05-08-Fluctuations.md)
-    - [Tutorial1](vwl4/VL_Makro2/2023-05-08-Tutorial1.md)
     - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
     - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business Cycle.md)
-    - [Tutorial2](vwl4/VL_Makro2/2023-06-05-Tutorial2.md)
     - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
+    - [Tutorial1](vwl4/VL_Makro2/2023-08-00-Tutorial1.md)
+    - [Tutorial2](vwl4/VL_Makro2/2023-08-00-Tutorial2.md)
+    - [Tutorial3](vwl4/VL_Makro2/2023-08-00-Tutorial3.md)
     - [Übersicht](vwl4/VL_Makro2/README.md)
 - Sozial-Ökologische Systeme
     - [Einfuehrung](vwl4/VL_SoEco/2023-04-17-Einfuehrung.md)
@@ -344,4 +346,4 @@
 
 ---
 
-**296** Notizen in **23** Modulen
+**298** Notizen in **23** Modulen

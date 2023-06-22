@@ -303,6 +303,8 @@
     - [Demokratie](vwl4/VL_Angewandte/2023-05-31-Demokratie.md)
     - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
     - [Demokratie](vwl4/VL_Angewandte/2023-06-14-Demokratie.md)
+    - [Familie](vwl4/VL_Angewandte/2023-06-21-Familie.md)
+    - [Familienökonomik](vwl4/VL_Angewandte/21.06.2023 Familienökonomik.md)
     - [Übersicht](vwl4/VL_Angewandte/README.md)
 - International Economics
     - [Start](vwl4/VL_International/2023-04-20-Start.md)
@@ -310,6 +312,8 @@
     - [RicardoModel](vwl4/VL_International/2023-05-04-RicardoModel.md)
     - [Specific Factor](vwl4/VL_International/2023-05-11-Specific-Factor.md)
     - [Heckscher](vwl4/VL_International/2023-06-01-Heckscher.md)
+    - [Standard Trade](vwl4/VL_International/2023-06-15-Standard-Trade.md)
+    - [Economies of Scale](vwl4/VL_International/2023-06-22-Economies-of-Scale.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
     - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
@@ -321,9 +325,11 @@
     - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
     - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business Cycle.md)
     - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
+    - [Inflation](vwl4/VL_Makro2/2023-06-21-Inflation.md)
     - [Tutorial1](vwl4/VL_Makro2/2023-08-00-Tutorial1.md)
     - [Tutorial2](vwl4/VL_Makro2/2023-08-00-Tutorial2.md)
     - [Tutorial3](vwl4/VL_Makro2/2023-08-00-Tutorial3.md)
+    - [Tutorial4](vwl4/VL_Makro2/2023-08-00-Tutorial4.md)
     - [Übersicht](vwl4/VL_Makro2/README.md)
 - Sozial-Ökologische Systeme
     - [Einfuehrung](vwl4/VL_SoEco/2023-04-17-Einfuehrung.md)
@@ -346,4 +352,4 @@
 
 ---
 
-**298** Notizen in **23** Modulen
+**304** Notizen in **23** Modulen

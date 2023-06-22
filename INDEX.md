@@ -323,7 +323,7 @@
     - [BanksIII](vwl4/VL_Makro2/2023-05-04-BanksIII.md)
     - [Fluctuations](vwl4/VL_Makro2/2023-05-08-Fluctuations.md)
     - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
-    - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business Cycle.md)
+    - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business-Cycle.md)
     - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
     - [Inflation](vwl4/VL_Makro2/2023-06-21-Inflation.md)
     - [Tutorial1](vwl4/VL_Makro2/2023-08-00-Tutorial1.md)

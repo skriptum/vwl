@@ -45,3 +45,9 @@ Heckschler Ohlin: both factors are interchangeable => smooth curve
 
 ![img](../images/2023-05-24_15-29-08.jpg)
 
+
+
+## Tutorial 4
+
+Global Economy:
+

@@ -57,10 +57,10 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 
 ### 4. Semester
 
-| Modul                               | Prof               | Übersicht                               |
-| ----------------------------------- | ------------------ | --------------------------------------- |
-| Angewandte Ökonomik                 | Ingo Pies          | [Übersicht](VL_Angewandte/README.md)    |
-| International Economics             | Lars Börner        | [Übersicht](VL_International/README.md) |
-| Macroeconomics II                   | Wolf Grieben       | [Übersicht](VL_Makro2/README.md)        |
-| Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](VL_SoÖko/README.md)         |
-| Wirtschaftspolitik                  | Lars Börner        | [Übersicht](VL_WiPo/README.md)          |
+| Modul                               | Prof               | Übersicht                                    |
+| ----------------------------------- | ------------------ | -------------------------------------------- |
+| Angewandte Ökonomik                 | Ingo Pies          | [Übersicht](vwl4/VL_Angewandte/README.md)    |
+| International Economics             | Lars Börner        | [Übersicht](vwl4/VL_International/README.md) |
+| Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        |
+| Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoÖko/README.md)         |
+| Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          |

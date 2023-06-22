@@ -106,7 +106,9 @@ Eigenschaften:
 
 ### ökonomische Systeme
 
-| Marktwirtschaft | Planwirtschaft | | -------------------------------------------- | ------------------------------------------------ | | Individuen folgen Eigenzielen, preisgeleitet | Zentralregierung setzt Einkommen, Output, Preise |
+| Marktwirtschaft | Planwirtschaft | 
+| -------------------------------------------- | ------------------------------------------------ |
+| Individuen folgen Eigenzielen, preisgeleitet | Zentralregierung setzt Einkommen, Output, Preise |
 
 => reale Systeme immer Mischform
 
@@ -179,7 +181,11 @@ alternative Mechanismen der Verteilung:
 
 > **Wohlfahrt:** Nutzen aller Individuen in einem aggregierten Markt
 
-| Konsumentenrente | Produzentenrente | | ------------------------------------------------------------ | ------------------------------------------------------------ | | ![21-11-12_17-53](../images/21-11-12_17-53.jpg) | ![21-11-12_17-56](../images/21-11-12_17-56.jpg) | | Differenz zwischen Höchstbetrag, den man bereit ist zu zahlen und Marktpreis | Different zwischen Produktionskosten und Marktpreis einer Firma | | Beispiel: ich würde 5€ für Döner zahlen, er kostet aber nur 3 = 2€ Rente (Profit) für mich | Döner kostet 3€, Produktion aber nur 2€ = 1€ Profit = Rente |
+| Konsumentenrente | Produzentenrente |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![21-11-12_17-53](../images/21-11-12_17-53.jpg) | ![21-11-12_17-56](../images/21-11-12_17-56.jpg) | 
+| Differenz zwischen Höchstbetrag, den man bereit ist zu zahlen und Marktpreis | Different zwischen Produktionskosten und Marktpreis einer Firma | 
+| Beispiel: ich würde 5€ für Döner zahlen, er kostet aber nur 3 = 2€ Rente (Profit) für mich | Döner kostet 3€, Produktion aber nur 2€ = 1€ Profit = Rente |
 
 $Gesamtwohlfahrt = Konsumentenrente + Produzentenrente$
 
@@ -219,7 +225,10 @@ es gilt das *Gesetz des abnehmenden Grenznutzens*
 
 Haushalte agieren *nutzenmaximierend* => beste Streuung der Ausgaben für optimale Kombination
 
-| Gesamtnutzen | Grenznutzen | | ----------------------------------------------- | ----------------------------------------------- | | ![21-11-17_11-38](../images/21-11-17_11-38.jpg) | ![21-11-17_11-37](../images/21-11-17_11-37.jpg) | | Gesamtnutzen steigt immer weiter | der Grenznutzen nimmt aber ab! |
+| Gesamtnutzen | Grenznutzen | 
+| ----------------------------------------------- | ----------------------------------------------- |
+| ![21-11-17_11-38](../images/21-11-17_11-38.jpg) | ![21-11-17_11-37](../images/21-11-17_11-37.jpg) |
+| Gesamtnutzen steigt immer weiter | der Grenznutzen nimmt aber ab! |
 
 ### Effekte einer Preisänderung
 

@@ -122,3 +122,17 @@ Limitations:
 
 ### Interest rate Yield curve
 
+different interest rates depending on maturity
+
+![img](../images/2023-06-22_16-35-30.jpg)
+
+Reason: rational expectations because of higher risks for investors
+
+$$
+i_t = \frac{ i_t+ i_{t+1}^e +...+ i^e_{t+n-1} }{n}
+$$
+
+=> investors arbitrage the interest differences based on the expectations for future interest rates
+
+### Europe
+

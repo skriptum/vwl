@@ -306,7 +306,6 @@
     - [Familie](vwl4/VL_Angewandte/2023-06-21-Familie.md)
     - [Terrorismus](vwl4/VL_Angewandte/2023-06-28-Terrorismus.md)
     - [Geschichte](vwl4/VL_Angewandte/2023-07-05-Geschichte.md)
-    - [Familienökonomik](vwl4/VL_Angewandte/21.06.2023 Familienökonomik.md)
     - [Übersicht](vwl4/VL_Angewandte/README.md)
 - International Economics
     - [Start](vwl4/VL_International/2023-04-20-Start.md)
@@ -357,4 +356,4 @@
 
 ---
 
-**309** Notizen in **23** Modulen
+**308** Notizen in **23** Modulen

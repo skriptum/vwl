@@ -304,6 +304,8 @@
     - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
     - [Demokratie](vwl4/VL_Angewandte/2023-06-14-Demokratie.md)
     - [Familie](vwl4/VL_Angewandte/2023-06-21-Familie.md)
+    - [Terrorismus](vwl4/VL_Angewandte/2023-06-28-Terrorismus.md)
+    - [Geschichte](vwl4/VL_Angewandte/2023-07-05-Geschichte.md)
     - [Familienökonomik](vwl4/VL_Angewandte/21.06.2023 Familienökonomik.md)
     - [Übersicht](vwl4/VL_Angewandte/README.md)
 - International Economics
@@ -314,6 +316,9 @@
     - [Heckscher](vwl4/VL_International/2023-06-01-Heckscher.md)
     - [Standard Trade](vwl4/VL_International/2023-06-15-Standard-Trade.md)
     - [Economies of Scale](vwl4/VL_International/2023-06-22-Economies-of-Scale.md)
+    - [Trade Policy](vwl4/VL_International/2023-06-29-Trade-Policy.md)
+    - [Instruments](vwl4/VL_International/2023-07-05-Instruments.md)
+    - [Political Economy](vwl4/VL_International/2023-07-12-Political-Economy.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
     - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
@@ -352,4 +357,4 @@
 
 ---
 
-**304** Notizen in **23** Modulen
+**309** Notizen in **23** Modulen

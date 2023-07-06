@@ -1,15 +1,8 @@
 # 26.06.2023 Climate Models
 
-## Geschichte der IAM
 
--   Nordhaus erstmals 1993 "Erfinder"
-    -   DICE: Dynamic Integrated Climate and Economy
-    -   Nobelpreis 2018 mit Paul Romer
-    -   =\> 4°C optimal These
--   Stern dann in sehr beachteten Report für UK Gov, komplett andere Ergebnisse
--   Nobelpreis für Nordhaus 2018
 
-## Allgemein
+### Allgemein
 
 generelles Funktionieren von Klimamodellen
 
@@ -32,6 +25,23 @@ Ergebnis:
 
 -   daran soll sich dann ein (weltweiter) CO2 Preis orientieren
 
+### Geschichte der IAM
+
+-   Nordhaus erstmals 1993 "Erfinder"
+    -   DICE: Dynamic Integrated Climate and Economy
+    -   Nobelpreis 2018 mit Paul Romer
+    -   =\> 4°C optimal These
+-   Stern dann in sehr beachteten Report für UK Gov, komplett andere Ergebnisse
+-   Nobelpreis für Nordhaus 2018
+
+### Nordhaus Modell
+
+Vergleich von Emissionszenarien zwischen Modellen
+
+**Optimal** = ganz entspannt = 4° Celsius Erwärmung
+
+aus Nobel Prize Lecture 2018
+
 ## Kritik
 
 ### Damage Function
@@ -49,10 +59,9 @@ $$
 -   eigentlich keinen seriöse Forschung
 -   einfach nur vermutete Zusammenhänge
 
-Problem:
-
 -   Klimakippunkte kommen oft nicht vor (oder sind schwer modellierbar)
--   weil sie nicht modellierbar sind
+
+Bild: Damage Functions verschiedener Modelle
 
 ### Discount Rate
 

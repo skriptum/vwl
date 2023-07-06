@@ -134,5 +134,86 @@ $$
 
 => investors arbitrage the interest differences based on the expectations for future interest rates
 
-### Europe
+## Barro-Gordon Model
+
+Model about Central Bank actions with **inflation targeting**
+
+Loss Function of CB:
+
+$$
+L = b(U-U^*)^2 + (\pi - \pi^*)^2
+$$
+
+- $U / U^*$  = unemployment / target rate for unempl.
+- $\pi / pi^*$ = inflation / target rate of inflation
+- *b* = vaulation of other goals beside inflation, here Unemployment
+- higher b = more flexible inflation target
+
+![img](../images/2023-06-22_17-07-29.jpg)
+
+
+
+
+
+### Barro Gordon Model
+
+Expectations-augmented Philipps Curve:
+
+$$
+U = U_n - a (\pi - \pi^e)
+$$
+
+- $U_n$ = natural rate of unemployment
+- when inflation differs from it, then another U possible
+
+Optimal Point (bliss point):
+
+-  $U^* = k * U_n; 0 < k < 1$
+- $\pi^* = 0$ 
+
+Combination of *L* and *U* Formula and Bliss point
+
+Explanation of this calcukation an graph: what if the central bank is not independent and has the will to lower unemployment? then they will create a surprise inflation:
+
+- Starting in Point A: expecations = 0, full power to CB
+- Goal is Point B with lower unemployment
+- but Result is D, due to actors incorporating the expected inflation
+
+
+$$
+L = b(U-U^*)^2 + (\pi - \pi^*)^2 \\
+U = U_n - a (\pi - \pi^e) \\ 
+U^* = k*U_n; \pi^* = 0\\
+\implies L = b [
+\underbrace{U_n-a (\pi - \pi^e)}_U-
+\underbrace{k*U_n}_{U^*}]^2 + \pi^2 \\
+\frac{ \delta L }{\delta \pi} = 0 \to \frac{ ab [U_n(1-k)+ a\pi^e] }{1+a^2b}
+$$
+![img](../images/2023-06-22_17-30-26.jpg)
+
+=> Credibility needed
+
+- Central bank works with expectations
+- higher credibility = easier policy
+- no expected surprise inflation
+- with **policy rule** = 2% = rational expectation
+    - CB stays at Point A
+
+### Taylor Rule
+
+Rule of John Taylor for central banks short term rate
+$$
+i_t-\pi_t = r+a(\pi_t-\pi^*)+\beta x_t \\
+with \ x=\frac{ Y -\bar{Y}}{\bar{Y}} = output \ gap
+$$
+CB should adjust short term rate based on heating of the economy
+
+- in Euroarea: not possible, due to unified monetary policy
+- and output gap estimation difficult
+
+From the typical euro critics at Axel-Springer:
+
+![img](../images/2023-06-22_18-02-49.jpg)
+
+better version of this: Orphanides Rule
 

@@ -31,3 +31,27 @@ Demokratie: Rent Seeking
 
 
 
+## Mathematik dazu
+
+![img](../images/2023-07-05_10-27-55.jpg)
+
+optimiere: 
+$$
+C = t * Y(t,A)- A
+$$
+
+- *t* = Steuersatz
+- *A* = Affluence
+
+$$
+\frac{ dC }{dA} = t * \frac{ dY }{dA}- 1 = 0 \\
+\frac{ dC }{dt} = y- t \frac{ dy }{dt} = 0
+$$
+
+- marginaler Effekt 
+- und inframarginaler Effekt
+
+=> Demokraite: Bürger hat bei Wahl eigenes Bewusstsein, dass er Steuern zahlen muss...
+
+
+

@@ -49,3 +49,4 @@ Gibt es einen Tradeoff zwischen Armutsbekämpfung und Demokratieförderung?
 Nein: konditionierte Hilfe
 
 ![img](../images/2023-06-14_10-56-01.jpg)
+

@@ -300,7 +300,8 @@
     - [Wert](vwl4/VL_Angewandte/2023-05-03-Wert.md)
     - [Normativ](vwl4/VL_Angewandte/2023-05-10-Normativ.md)
     - [Geldpolitik](vwl4/VL_Angewandte/2023-05-17-Geldpolitik.md)
-    - [Demokratie](vwl4/VL_Angewandte/2023-05-31-Demokratie.md)
+    - [Innovation](vwl4/VL_Angewandte/2023-05-26-Innovation.md)
+    - [Steuern](vwl4/VL_Angewandte/2023-05-31-Steuern.md)
     - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
     - [Demokratie](vwl4/VL_Angewandte/2023-06-14-Demokratie.md)
     - [Familie](vwl4/VL_Angewandte/2023-06-21-Familie.md)
@@ -315,8 +316,7 @@
     - [Heckscher](vwl4/VL_International/2023-06-01-Heckscher.md)
     - [Standard Trade](vwl4/VL_International/2023-06-15-Standard-Trade.md)
     - [Economies of Scale](vwl4/VL_International/2023-06-22-Economies-of-Scale.md)
-    - [Trade Policy](vwl4/VL_International/2023-06-29-Trade-Policy.md)
-    - [Instruments](vwl4/VL_International/2023-07-05-Instruments.md)
+    - [Trade Policy](vwl4/VL_International/2023-07-05-Trade-Policy.md)
     - [Political Economy](vwl4/VL_International/2023-07-12-Political-Economy.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
@@ -334,6 +334,8 @@
     - [Tutorial2](vwl4/VL_Makro2/2023-08-00-Tutorial2.md)
     - [Tutorial3](vwl4/VL_Makro2/2023-08-00-Tutorial3.md)
     - [Tutorial4](vwl4/VL_Makro2/2023-08-00-Tutorial4.md)
+    - [Tutorial5](vwl4/VL_Makro2/2023-08-00-Tutorial5.md)
+    - [Tutorial6](vwl4/VL_Makro2/2023-08-00-Tutorial6.md)
     - [Übersicht](vwl4/VL_Makro2/README.md)
 - Sozial-Ökologische Systeme
     - [Einfuehrung](vwl4/VL_SoEco/2023-04-17-Einfuehrung.md)
@@ -352,8 +354,9 @@
     - [Makrooekonomik](vwl4/VL_WiPo/2023-05-11-Makrooekonomik.md)
     - [Inflation](vwl4/VL_WiPo/2023-05-25-Inflation.md)
     - [Konjunktur](vwl4/VL_WiPo/2023-06-01-Konjunktur.md)
+    - [Wohlfahrt](vwl4/VL_WiPo/2023-07-06-Wohlfahrt.md)
     - [Übersicht](vwl4/VL_WiPo/README.md)
 
 ---
 
-**308** Notizen in **23** Modulen
+**311** Notizen in **23** Modulen

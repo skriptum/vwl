@@ -127,3 +127,110 @@ US Sugar Prices vs. World![img](../images/2023-07-05_14-30-16.jpg)
 
 
 
+## Exercise
+
+### Free Trade Situation
+
+Country A
+$$
+\begin{aligned}
+D &= 100-20P \\
+S &= 20+20P \\
+MD &= D - S = 80-40P
+\end{aligned}
+$$
+Country B
+$$
+D = 80-20P \\
+S = 40+20P \\
+XS = S-D = -40+40P
+$$
+Equilibrium
+$$
+80-40P = -40+40P \\
+\to P = 1.5 \ , Q_{trade} = 20
+$$
+
+### Tariff
+
+Tariff inhome country: $t=0.5$
+$$
+MD = 80-40 (P+t) \\
+XS = -40 + 40P
+$$
+Equilbirum:
+
+- Import Demand to the Left
+- less Imports / Exports from other country
+- higher price
+
+$$
+80-40 (P+0.5) = -40+40P \\
+120 = 40P+40P+20 \\
+100 = 80P \to P = 1,25
+$$
+
+world market price: 1.25 + tax = 1.75 home price
+
+**=> tariffs leads to sinking world prices, cancels out some of the tariff**
+
+### Tariff with big country
+
+$$
+MD = 80-40(P+t) \\
+XS = -400+400P \\
+$$
+
+Equilibrium without Tariff
+$$
+80-40P = -400+400P \\
+480 = 440P \\
+\to  P=1.0909, Q= 36,36
+$$
+with Tariff
+$$
+80-40(P+t) = -400+400P \\
+480 = 400P+40P+20 \\
+460 = 440P \\
+\to P_{world}=1.045, Q=18,2
+$$
+Price with tariff: $P_{tariff} = 1.545$
+
+**=> small country shoulders most of the price increase!**
+
+Effective Tariff = nicht klausurrelevant
+
+### Surplus
+
+with original Situation
+
+![img](../images/2023-07-12_14-56-37.jpg)
+
+with small country 
+
+![img](../images/2023-07-12_15-02-52.jpg)
+
+- $P_t-P_w=1.545-1.09=0,455$
+- Zwischending = 9,1
+- Triangle: $0.455*9.1 = 4,1405$
+
+Surpluses:
+
+- Government: $0.5*(69.1-50.9)$
+- Producer: $41,8*0,455+4,1405$
+- Consumer: $69,1*0,455$
+
+### Export Subsidy
+
+new Sitatuion
+$$
+MD = 80-40P \\
+XS = -40+40(1+0,5)P
+$$
+Equilibrium
+$$
+80-40P = -40+60P \\
+P_{import} = 1.2, Q=32\\
+P_{export} = 1.8
+$$
+![img](../images/2023-07-12_15-15-22.jpg)

@@ -320,6 +320,8 @@
     - [Economies of Scale](vwl4/VL_International/2023-06-22-Economies-of-Scale.md)
     - [Trade Policy](vwl4/VL_International/2023-07-05-Trade-Policy.md)
     - [Political Economy](vwl4/VL_International/2023-07-12-Political-Economy.md)
+    - [Developing Countries](vwl4/VL_International/2023-07-13-Developing-Countries.md)
+    - [Controversies](vwl4/VL_International/2023-07-20-Controversies.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
     - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
@@ -332,6 +334,7 @@
     - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business-Cycle.md)
     - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
     - [Inflation](vwl4/VL_Makro2/2023-06-21-Inflation.md)
+    - [Tutorial Revision](vwl4/VL_Makro2/2023-08-00-Tutorial-Revision.md)
     - [Tutorial1](vwl4/VL_Makro2/2023-08-00-Tutorial1.md)
     - [Tutorial2](vwl4/VL_Makro2/2023-08-00-Tutorial2.md)
     - [Tutorial3](vwl4/VL_Makro2/2023-08-00-Tutorial3.md)
@@ -361,4 +364,4 @@
 
 ---
 
-**313** Notizen in **23** Modulen
+**316** Notizen in **23** Modulen

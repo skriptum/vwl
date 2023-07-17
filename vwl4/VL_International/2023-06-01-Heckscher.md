@@ -45,9 +45,14 @@ Heckschler Ohlin: both factors are interchangeable => smooth curve
 
 ![img](../images/2023-05-24_15-29-08.jpg)
 
+---
 
+> **Rybczynski:** Amount of one factor rises => Quantity of Goods using this supply increases => Supply of other goods decreases
 
-## Tutorial 4
+![img](../images/2023-07-13_17-01-04.jpg)
 
-Global Economy:
+---
 
+> **Stolper-Samuelson:** if Relative Price increases, real wage and price of most used factor price rises
+
+![img](../images/2023-07-13_17-03-02.jpg)

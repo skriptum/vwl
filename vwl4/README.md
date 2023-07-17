@@ -38,6 +38,8 @@ To-Do
         - Staatschulden Verhalten Formel
         - Essay Fiskalpolitik
         - Arbeitsmodell+AD+Philips
+        - Mini Model
+        - Revenue of Firm
     - Core Econ lesen
     - [Mock Exams](https://wachstum.wiwi.uni-halle.de/old-exams/)
 

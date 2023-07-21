@@ -1,6 +1,6 @@
 # 01.06.2023  Konjunktur
 
-
+*Anwendung Makroökonomik III*
 
 ## Arbeitslosigkeit
 
@@ -79,3 +79,19 @@ Instrumente:
 - feste Wechselkurse
 - Handelspolitik
 - Geldpolitik (Zinssätze etc.)
+
+
+
+## Zahlungsbilanz
+
+> Wert aller ökonomischen Transaktionen zwischen Inland und Ausland in einer Periode
+
+- doppelte Buchführung
+- Bestandteile
+    - Leistungsbilanz
+    - Kapitalbilanz
+    - Übertragungsbilanz
+
+die Zahlungsbilanz definiert den Wechselkurs
+
+![img](../images/2023-07-21_14-57-53.jpg)

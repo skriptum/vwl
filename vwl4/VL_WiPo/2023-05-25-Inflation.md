@@ -1,5 +1,7 @@
 # 25.05.2023 Inflation
 
+*Anwendung Makroökonomik II*
+
 ## Ursachen
 
 - **Cost-Push** Inflation: höhere Inputpreise

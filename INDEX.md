@@ -295,6 +295,7 @@
 
 
 - Angewandte Ökonomik
+    - [Lesenotizen](vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md)
     - [Makro](vwl4/VL_Angewandte/2023-04-19-Makro.md)
     - [Mikro](vwl4/VL_Angewandte/2023-04-26-Mikro.md)
     - [Wert](vwl4/VL_Angewandte/2023-05-03-Wert.md)
@@ -331,7 +332,7 @@
     - [BanksIII](vwl4/VL_Makro2/2023-05-04-BanksIII.md)
     - [Fluctuations](vwl4/VL_Makro2/2023-05-08-Fluctuations.md)
     - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
-    - [Business Cycle](vwl4/VL_Makro2/2023-05-26-Business-Cycle.md)
+    - [Stylized Facts](vwl4/VL_Makro2/2023-05-26-Stylized-Facts.md)
     - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
     - [Inflation](vwl4/VL_Makro2/2023-06-21-Inflation.md)
     - [Tutorial Revision](vwl4/VL_Makro2/2023-08-00-Tutorial-Revision.md)
@@ -364,4 +365,4 @@
 
 ---
 
-**316** Notizen in **23** Modulen
+**317** Notizen in **23** Modulen

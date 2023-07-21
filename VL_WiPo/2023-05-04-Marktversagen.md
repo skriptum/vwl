@@ -1,5 +1,9 @@
 # 04.05.2023 Marktversagen
 
+*Anwendung Mikroökonomik II*
+
+
+
 natürliche Monopole
 
 - hohe Fixkosten

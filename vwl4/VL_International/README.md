@@ -71,3 +71,11 @@ how much domestic currency exchanged for international currency
 - import of goods
 - export of goods
 
+
+
+## Exam
+
+- 10 Easy Questions (1 Point)
+- 18 Medium Questions (4 Points)
+- 2 Difficult Questions (9 Points)
+

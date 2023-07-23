@@ -30,7 +30,7 @@ Shock: new Hot Dog production technology (one Hot Dog one day)
 
 ------
 
-**technological change => shift in employed people in different industries but not less employed! **
+**technological change => shift in employed people in different industries but not less employed!**
 
 
 

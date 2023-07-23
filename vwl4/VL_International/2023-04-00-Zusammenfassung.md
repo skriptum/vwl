@@ -1,5 +1,32 @@
 # International Economics Zusammenfassung
 
+- [International Economics Zusammenfassung](#international-economics-zusammenfassung)
+  * [Definitions](#definitions)
+  * [Gravity Model](#gravity-model)
+  * [**Ricardo Model**](#ricardo-model)
+    + [Assumptions](#assumptions)
+    + [Definitions](#definitions-1)
+    + [Trade](#trade)
+    + [Results of Trade](#results-of-trade)
+  * [**Specific Factors Model**](#specific-factors-model)
+    + [Assumptions](#assumptions-1)
+    + [Definitions](#definitions-2)
+    + [Trade](#trade-1)
+    + [Results of Trade](#results-of-trade-1)
+  * [**Heckscher-Ohlin Model**](#heckscher-ohlin-model)
+    + [Assumptions](#assumptions-2)
+    + [Definitions](#definitions-3)
+    + [Trade](#trade-2)
+    + [Results of Trade](#results-of-trade-2)
+  * [**Standard Model**](#standard-model)
+    + [Assumptions](#assumptions-3)
+    + [Definitions](#definitions-4)
+    + [Trade](#trade-3)
+    + [Results of Trade](#results-of-trade-3)
+  * [Model Comparison](#model-comparison)
+  * [Theorems](#theorems)
+  * [Instruments](#instruments)
+
 
 
 ## Definitions
@@ -7,6 +34,7 @@
 > **Global Trade:** Sum of trade activities both within and between countries
 
 Types of Trade:
+
 | intraregional Trade                                          | interregional Trade               |
 | ------------------------------------------------------------ | --------------------------------- |
 | between members of economic integration space (EU, USA, country) | between different economic spaces |
@@ -30,15 +58,19 @@ Reasons for trade:
 ## Gravity Model
 
 Amount of Trade between two countries
+
 $$
 T_{ij} = A \frac{ Y_i Y_j }{D_{ij}}
 $$
+
 other Factors
 
 - Geography 
 - cultural affinity
 - borders
 - multinational corp
+
+
 
 
 
@@ -86,6 +118,8 @@ Trade = possible when country has comp. advantage, not just absolute advantage!
 | Trade only good for productive countries              | unproductive countries = lower wage = advantage          |
 | Trade exploits less productive countries              | better than without, cheaper goods                       |
 | trade only good for low wage countries, not high wage | increase wage in efficient industry in high wage country |
+
+
 
 
 
@@ -145,6 +179,8 @@ Example: Price rises of Cloth
 
 
 
+
+
 ## Heckscher-Ohlin Model
 
 ### Assumptions
@@ -189,6 +225,8 @@ shows two different countries (A & B) with factors ($G_1$ & $G_2$)
 
 
 
+
+
 ## Standard Model
 
 generalizes all models (with others as special cases)
@@ -225,6 +263,8 @@ different isovalue lines and PPF
 - depends if growth in export or import sector
     - export biased growth = higher ToT = welfare gain
     - import biased growth = lower ToT = welfare loss
+
+
 
 
 

@@ -25,7 +25,15 @@
     + [Results of Trade](#results-of-trade-3)
   * [Model Comparison](#model-comparison)
   * [Theorems](#theorems)
-  * [Instruments](#instruments)
+  * [Trade Policy Instruments](#trade-policy-instruments)
+      * [Tariff](#tariff)
+      * [Export Subsidy](#export-subsidy)
+      * [Import Quota](#import-quota)
+      * [Voluntary Export Restriction](#voluntary-export-restriction)
+      * [Local Content Requirement](#local-content-requirement)
+  * [Political Economy of Trade](#political-economy-of-trade)
+      * [Case for Protection](#case-for-protection)
+      * [Case against Protection](#case-against-protection)
 
 
 
@@ -261,8 +269,8 @@ different isovalue lines and PPF
 
 - grows economy (mostly biased growth)
 - depends if growth in export or import sector
-    - export biased growth = higher ToT = welfare gain
-    - import biased growth = lower ToT = welfare loss
+    - import biased growth = higher ToT = welfare gain
+    - export biased growth = lower ToT = welfare loss
 
 
 
@@ -305,9 +313,115 @@ e.g population rise in Bangladesh => more clothes produced & even less food prod
 
 
 
-## Instruments
+## Trade Policy Instruments
+
+| Policy                       | Producer Surplus | Consumer Surplus | Government revenue | national Welfare            |
+| ---------------------------- | ---------------- | ---------------- | ------------------ | --------------------------- |
+| *Tariff*                     | + (increase)     | – (decrease)     | +                  | ~ (Depends on country size) |
+| *Export Subsidy*             | +                | –                | –                  | –                           |
+| *Import Quote*               | +                | –                | =                  | ~                           |
+| *Voluntary Export Restraint* | +                | –                | =                  | –                           |
+
+### Tariff
+
+> **Tariff:** tax imposed by government on imports, either per unit (*specific*) or as % of value (*ad valorem*)
+
+similar to transportation cost
+
+- higher price at home
+- lowers world market price (if country big enough)
+- decreases quantity traded
+
+![img](../images/2023-07-05_13-29-47.jpg)
+
+producers profit, government gains revenue, consumers have to pay higher prices
 
 
 
+### Export Subsidy
 
+> **Export Subsidy:** policy to encourage export of goods and discourage sale of goods on the domestic market through direct payments
+
+- lowers price in importing countries
+- higher price for home consumers
+
+
+
+### Import Quota
+
+> **Import Quota:** Restriction of Quantity of Good that may be imported
+
+- no government revenue
+- quota rents to license holders
+
+
+
+### Voluntary Export Restriction
+
+> **Voluntary Export Restraint (VER):** quota imposed by exporting country on its exporting industry
+
+- due to pressure by Importing Country
+- Example: Japanese Cars in US Market
+    - Price rose of japanese fuel efficient cars 
+    - rent to japanese firms
+
+
+
+### Local Content Requirement
+
+> **Local Content Requirement:** regulation, that fraction of end product domestically produced
+
+- no revenues
+- home producers of inputs like import quota
+- home producers of outputs not as strict
+- price diff average between no quota and import quota
+
+
+
+## Political Economy of Trade
+
+International Trade & Globalisation = highly debated topic
+
+### Case for Protection
+
+Presence of imperfect markets
+
+- No prefect competition
+- market distortions
+
+Examples:
+
+- tariff on foreign monopoly firm = shift profit to domestic
+- subsidy on domestic firm  = compete against oligopolies 
+    - **Brender Spencer Analysis**
+    - capture world market = higher profit than subsidy costs
+    - Example: Airbus - Boeing
+- pollution = negative externality
+    - tariff = shift to less polluting domestic industry
+    - less world pollution overall
+
+
+
+### Case against Protection
+
+Retaliation
+
+- possibility of retaliation of other countries
+- less welfare overall
+
+Superior Policies to raise efficiency
+
+- if goal is to stop unemployment
+- use fiscal policy e.g than trade policy
+- Trade policy = *Second Best Option*
+
+Information Deficiencies
+
+- perfect tariff rate = difficult to set
+- unintended consequences in other industries
+
+Lobbying / Rent Seeking
+
+- concentrated interest groups = more power than less concentrated consumers
+- captured by special interests
 

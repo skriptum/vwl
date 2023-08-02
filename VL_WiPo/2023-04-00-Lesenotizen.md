@@ -1,6 +1,19 @@
 # Lesenotizen
 
-
+- [Lesenotizen](#_lesenotizen)
+  * [2a) Digitale Macht](#_2a-digitale-macht)
+  * [2b) Kartellrecht digital](#_2b-kartellrecht-digital)
+  * [3a) EZB in der Krise](#_3a-ezb-in-der-krise)
+  * [3b) Haushaltspezifische Inflationsraten](#_3b-haushaltspezifische-inflationsraten)
+  * [3c) Kann EZB Inflation eindämmen?](#_3c-kann-ezb-inflation-eindämmen)
+  * [4a) Deindustrialisierung](#_4a-deindustrialisierung)
+  * [4b) Green Economy](#_4b-green-economy)
+  * [5a) Klimageld](#_5a-klimageld)
+  * [5b) nachhaltige Soziale Marktwirtschaft](#_5b-nachhaltige-soziale-marktwirtschaft)
+  * [5c) Einkommensänderung - Umweltauswirkungen](#_5c-einkommensänderung-umweltauswirkungen)
+  * [6a) FFF und politischer Wandel](#_6a-fff-und-politischer-wandel)
+  * [6b) grüne Regierungen](#_6b-grüne-regierungen)
+  * [6c) Kohle Lobbyismus](#_6c-kohle-lobbyismus)
 
 ## 2a) Digitale Macht
 

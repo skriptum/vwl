@@ -32,6 +32,7 @@
     - [Übersicht](VL_International/README.md)
 
 - Makroökonomik II
+    - [Zusammenfassung](VL_Makro2/2023-04-00-Zusammenfassung.md)
     - [Firm](VL_Makro2/2023-04-13-Firm.md)
     - [Labour](VL_Makro2/2023-04-14-Labour.md)
     - [Banks](VL_Makro2/2023-04-27-Banks.md)

@@ -1,4 +1,33 @@
-# Macro 2 Zusammenfassung
+# Macro 2 Summary
+
+Table of Contents:
+* [Labour Market](#labour-market)
+  + [Wage and Effort ](#wage-and-effort)
+  + [Wage Setting  ](#wage-setting)
+  + [Prices ](#prices)
+  + [Price Setting](#price-setting)
+  + [Equilibrium](#equilibrium)
+* [Banks](#banks)
+* [Business Cycle](#business-cycle)
+  + [Definitions](#definitions)
+  + [Smooth Consumption](#smooth-consumption)
+  + [Volatile Investment](#volatile-investment)
+  + [Government Expediture](#government-expediture)
+  + [Stylized Facts](#stylized-facts)
+  + [Multiplier Model](#multiplier-model)
+  + [Influences on the Multiplier Model](#influences-on-the-multiplier-model)
+  + [AD and Unemployment](#ad-and-unemployment)
+* [Government](#government)
+  + [Important equations](#important-equations)
+  + [Phase Lines](#phase-lines)
+  + [Default Risk](#default-risk)
+* [Inflation](#inflation)
+  + [Philipps Curve](#philipps-curve)
+  + [Bargaining Gap](#bargaining-gap)
+  + [Inflation and AD](#inflation-and-ad)
+  + [Expectations](#expectations)
+  + [Monetary Policy](#monetary-policy)
+  + [Preferences of CB](#preferences-of-cb)
 
 ## Labour Market
 
@@ -356,3 +385,14 @@ Problems:
 
 
 
+### Preferences of CB
+
+Loss Function: $L = b(U-U^*)^2+(\pi-\pi^*)^2$
+
+Optimisation: $U = U_n - a (\pi-\pi^e)$ (Phillips Curve with Expectations)
+
+=> Surprise inflation = incorporated = not worth it
+
+defines rule-based inflation targeting:
+
+![img](../images/2023-06-22_17-07-29.jpg)

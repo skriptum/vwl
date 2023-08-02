@@ -325,6 +325,7 @@
     - [Controversies](vwl4/VL_International/2023-07-20-Controversies.md)
     - [Übersicht](vwl4/VL_International/README.md)
 - Makroökonomik II
+    - [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md)
     - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
     - [Labour](vwl4/VL_Makro2/2023-04-14-Labour.md)
     - [Banks](vwl4/VL_Makro2/2023-04-27-Banks.md)
@@ -367,4 +368,4 @@
 
 ---
 
-**319** Notizen in **23** Modulen
+**320** Notizen in **23** Modulen

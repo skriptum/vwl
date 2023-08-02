@@ -61,6 +61,6 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 | ----------------------------------- | ------------------ | -------------------------------------------- | ------------------------------------------------------------ |
 | Angewandte Ökonomik                 | Ingo Pies          | [Übersicht](vwl4/VL_Angewandte/README.md)    | [Texte](vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md)        |
 | International Economics             | Lars Börner        | [Übersicht](vwl4/VL_International/README.md) | [Zusammenfassung](vwl4/VL_International/2023-04-00-Zusammenfassung.md) |
-| Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        |                                                              |
+| Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        | [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md) |
 | Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoÖko/README.md)         |                                                              |
 | Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          | [Texte](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)              |

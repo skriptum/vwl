@@ -278,12 +278,12 @@ different isovalue lines and PPF
 
 ## Model Comparison
 
-| Model           | Assumptions         | differences between countries | Time perspective |      | winners of trade                    |
-| --------------- | ------------------- | ----------------------------- | ---------------- | ---- | ----------------------------------- |
-| Ricardo         | one factor, 2 goods | labor productivity            | short run        |      | everybody                           |
-| Specific Factor | 3 factor, 2 goods   | Productivity / factors        | medium run       |      | export industries and their factors |
-| Heckscher Ohlin | 2 factor, 2 goods   | Endowment of Factors          | long run         |      | owners of abundant factors          |
-| Standard        | 2 factor, 2 goods   | Everything                    |                  |      | Depends                             |
+| Model           | Assumptions         | differences between countries | Time perspective | winners of trade                    |
+| --------------- | ------------------- | ----------------------------- | ---------------- | ----------------------------------- |
+| Ricardo         | one factor, 2 goods | labor productivity            | short run        | everybody                           |
+| Specific Factor | 3 factor, 2 goods   | Productivity / factors        | medium run       | export industries and their factors |
+| Heckscher Ohlin | 2 factor, 2 goods   | Endowment of Factors          | long run         | owners of abundant factors          |
+| Standard        | 2 factor, 2 goods   | Everything                    |                  | Depends                             |
 
 
 

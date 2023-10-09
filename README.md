@@ -55,6 +55,8 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 - Seminararbeit als [Website](https://htmlpreview.github.io/?https://github.com/skriptum/vwl3/blob/master/VL_Ethik/Hayek/Ausarbeitung.html)
 - Seminararbeit als [PDF](https://raw.githubusercontent.com/skriptum/vwl3/master/VL_Ethik/Hayek/Walk%20-%20Russland%20und%20Hayek.pdf)
 
+---
+
 ### 4. Semester
 
 | Modul                               | Prof               | Übersicht                                    | Zusammenfassung                                              |
@@ -64,3 +66,8 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 | Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        | [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md) |
 | Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoÖko/README.md)         |                                                              |
 | Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          | [Texte](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)              |
+
+---
+
+###  5. Semester
+

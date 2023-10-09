@@ -10,7 +10,8 @@ semesters = {
     "vwl1": "I. Semester",
     "vwl2": "II. Semester", 
     "vwl3": "III. Semester", 
-    "vwl4": "IV. Semester",}
+    "vwl4": "IV. Semester",
+    "vwl5": "V. Semester"}
 
 
 dir_names = {
@@ -40,6 +41,13 @@ dir_names = {
     "VL_International": "International Economics",
     "VL_SoEco": "Sozial-Ökologische Systeme",
     "VL_WiPo": "Wirtschaftspolitik",
+
+    "VL_EconHistory": "Economic History",
+    "VL_Empirical": "Empirical Economics",
+    "VL_Feminist": "Feminist Economics",
+    "VL_Innovation": "Innovation Economics",
+    "VL_PublicEcon": "Public Economics",
+    "VL_Zivilrecht": "Zivilrecht",
 }
 
 #%%

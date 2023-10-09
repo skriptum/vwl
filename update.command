@@ -1,4 +1,4 @@
-cd Documents/vwl
+cd /Users/marten/Tresors/m's tresor/3 Projekte/34 Web/34.02 docsify vwl
 
 echo "fetching subtrees"
 git fetch vwl1 main

@@ -71,3 +71,12 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 
 ###  5. Semester
 
+| Modul                          | Prof              | Übersicht                                  |      |
+| ------------------------------ | ----------------- | ------------------------------------------ | ---- |
+| Economic History               | Lars Börner       | [Übersicht](vwl5/VL_EconHistory/README.md) |      |
+| Empirical Economics with R     | Hakon Albers      | [Übersicht](vwl5/VL_Empirical/README.md)   |      |
+| Feminist Economics (Karlsruhe) | Amelie Betz       | [Übersicht](vwl5/VL_Feminist/README.md)    |      |
+| Innovation Economics           | Inez Labucay      | [Übersicht](vwl5/VL_Innovation/README.md)  |      |
+| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md)  |      |
+| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)                |      |
+

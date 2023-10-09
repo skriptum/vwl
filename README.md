@@ -6,7 +6,7 @@ Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der S
 
 
 
-|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|![GitHub repo size](https://img.shields.io/github/repo-size/skriptum/vwl)|23| 316 |
+|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|![GitHub repo size](https://img.shields.io/github/repo-size/skriptum/vwl)|29| 326 |
 |---|---|---|---|
 |Zuletzt upgedatet|gesamte Dateigröße|Anzahl Module| Anzahl Notizen |
 

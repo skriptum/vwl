@@ -380,10 +380,11 @@
 - Innovation Economics
     - [Übersicht](vwl5/VL_Innovation/README.md)
 - Feminist Economics
+    - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
     - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
 ---
 
-**326** Notizen in **29** Modulen
+**327** Notizen in **29** Modulen

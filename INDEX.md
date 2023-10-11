@@ -371,8 +371,6 @@
 [V. Semester](vwl5/README.md)
 
 
-- Economic History
-    - [Übersicht](vwl5/VL_EconHistory/README.md)
 - Zivilrecht
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
@@ -383,8 +381,9 @@
     - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
+    - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
     - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
 ---
 
-**327** Notizen in **29** Modulen
+**327** Notizen in **28** Modulen

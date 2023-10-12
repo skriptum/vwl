@@ -374,6 +374,7 @@
 - Zivilrecht
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
+    - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
     - [Übersicht](vwl5/VL_Empirical/README.md)
 - Innovation Economics
     - [Übersicht](vwl5/VL_Innovation/README.md)
@@ -386,4 +387,4 @@
 
 ---
 
-**327** Notizen in **28** Modulen
+**328** Notizen in **28** Modulen

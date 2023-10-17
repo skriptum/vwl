@@ -6,3 +6,26 @@
 - [Exploring Econ](https://www.exploring-economics.org/en/discover/feminist-political-economy-a-global-perspective/)
 
 Video for Lecture: [here](https://www.cccb.org/en/multimedia/videos/angela-davis/227656)
+
+
+
+## Portfolio
+
+Text about 
+
+- argue about material portfolio
+- contextualize material
+- write whatever you want
+- reflect
+- posiibility to focus on on issue
+    - e.g share of work
+    - relate it to the course
+- or work on everything
+- with literature and academinc standards!
+- portfolio from the lecture: not academic standards
+- 
+
+
+
+
+

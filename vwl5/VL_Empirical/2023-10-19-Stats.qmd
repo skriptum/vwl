@@ -1,0 +1,66 @@
+---
+format: html
+self-contained: true
+---
+
+# 19.10.2023 Stats Intro
+
+```{r}
+getwd()
+```
+
+## Part 1: Load and Plot
+
+### Loading the Data
+
+```{r}
+load("data/dataset_AJR2001.Rdata")
+head(data)
+```
+
+= cross sectional Data (no time option)
+
+### Plot
+
+Example Plot
+
+```{r}
+plot(data[, "logem4"], data[, "logpgp95"])
+```
+
+Making it prettier, note: **run complete chunk at once!**
+
+```{r}
+#svg("data/figure1.svg") #for saving to file
+plot(
+  data$logem4, data$logpgp95,
+  type="n", #for no plotting, to add the labels as points
+  xlim=c(2,8), ylim=c(4,10.5),
+  xlab = "Log of European Settler Mortality",
+  ylab = "Log of GDP per Capita"
+)
+text(data$logem4, data$logpgp95, labels = data[, 1])
+abline(lm(data$logpgp95~data$logem4))
+#dev.off()
+```
+
+## Part 2: Summary Statistics
+
+Loading Library
+
+```{r}
+library(stargazer)
+```
+
+To see the resutling teble, render to HTML
+
+```{r}
+#| results: asis
+Table_1 <- c("logpgp95", "loghjypl", "avexpr", "cons00a", "cons1", "democ00a", "euro1900", "logem4")
+
+html <- stargazer(data[, Table_1], covariate.labels = c(
+  "Log GDP", 
+  "Log ouput"),
+  type = "html"
+)
+```

@@ -56,11 +56,19 @@ To see the resutling teble, render to HTML
 
 ```{r}
 #| results: asis
+#| output: false
 Table_1 <- c("logpgp95", "loghjypl", "avexpr", "cons00a", "cons1", "democ00a", "euro1900", "logem4")
 
 html <- stargazer(data[, Table_1], covariate.labels = c(
-  "Log GDP", 
-  "Log ouput"),
-  type = "html"
-)
+  "Log GDP per capita, PPP, 1995",
+  "Log output per worker in 1988 (US normalized to 1)",
+  "Average protection against expropriation risk, 1985-1995",
+  "Constraint on executive in 1900",
+  "Constraint on executive in first year of independence",
+  "Democracy in first year of independence",
+  "European settlements in 1900",
+  "Log of European Settler Mortality"),
+  type="text", #for output in text
+  out="data/Table1_stargazer.html" #save the file to html
+  )
 ```

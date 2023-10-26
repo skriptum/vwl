@@ -1,0 +1,12 @@
+# 26.10.2023 Regression
+
+## Intro
+
+Dependent Variable = intercept + ß explanatory variable + error
+
+$$
+y = \alpha + \beta x + \mu
+$$
+
+-   $\beta$ estimated with Ordinary Least Squares (OLS)
+-   explanatory variable = should be exogenous

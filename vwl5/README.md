@@ -18,7 +18,7 @@ Notizen zu meinem 5 Semester Volkswirtschaftslehre Uni Halle
 Prüfungsleistungen
 
 - Zivilrecht: Klausur **12.02.24 / 18.03**
-- Public: Klausur 
+- Public: Klausur  **07.02.24**
 - Feminist Economics: Essay
 - Empirical Economics: Paper
 - Data Science: Paper

@@ -375,7 +375,8 @@
     - [Übersicht](vwl5/VL_EconHistory/README.md)
 - Zivilrecht
     - [Intro](vwl5/VL_Zivilrecht/2023-10-17-Intro.md)
-    - [Vertrag1](vwl5/VL_Zivilrecht/2023-10-24-Vertrag1.md)
+    - [Vertrag](vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md)
+    - [AGB](vwl5/VL_Zivilrecht/2023-10-27-AGB.md)
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
     - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
@@ -393,4 +394,4 @@
 
 ---
 
-**334** Notizen in **28** Modulen
+**335** Notizen in **28** Modulen

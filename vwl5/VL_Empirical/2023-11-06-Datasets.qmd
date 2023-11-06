@@ -2,7 +2,49 @@
 
 Different Ways of importing Data
 
+## Creating Datasets
+
+from AJR 2001: [MIT Website](https://economics.mit.edu/people/faculty/daron-acemoglu/data-archive) with Data
+
+```{r}
+library(foreign)
+```
+
+Load Datasets
+
+```{r}
+alldata <- list()
+alldata[[1]] = read.dta("data/datasets/maketable1.dta")
+alldata[[2]] = read.dta("data/datasets/maketable2.dta")
+alldata[[3]] = read.dta("data/datasets/maketable3.dta")
+alldata[[4]] = read.dta("data/datasets/maketable4.dta")
+alldata[[5]] = read.dta("data/datasets/maketable5.dta")
+alldata[[6]] = read.dta("data/datasets/maketable6.dta")
+alldata[[7]] = read.dta("data/datasets/maketable7.dta")
+alldata[[8]] = read.dta("data/datasets/maketable8.dta")
+```
+
+Merge some of the Datasets
+
+```{r}
+data <- merge(alldata[[1]], alldata[[2]])
+head(data)
+```
+
+Search for the Base country sample (should be 64)
+
+```{r}
+nrow(data[which(data[,"baseco"]==1),])
+```
+
 ## Importing Datasets
+
+Imports
+
+```{r}
+library(foreign)
+library(openxlsx)
+```
 
 ### CSV
 
@@ -37,5 +79,3 @@ normal text format
 df_ascii = read.table("data/example_datasets/Per_Capita_GDP_Data_1870-1987.asc", header=T)
 head(df_ascii)
 ```
-
-## Creating Datasets

@@ -53,7 +53,8 @@ Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der S
 außerdem: **Exzellenzseminar Wirtschaftsethik**
 
 - Seminararbeit als [Website](https://htmlpreview.github.io/?https://github.com/skriptum/vwl3/blob/master/VL_Ethik/Hayek/Ausarbeitung.html)
-- Seminararbeit als [PDF](https://raw.githubusercontent.com/skriptum/vwl3/master/VL_Ethik/Hayek/Walk%20-%20Russland%20und%20Hayek.pdf)
+
+
 
 ---
 

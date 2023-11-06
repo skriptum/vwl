@@ -377,6 +377,7 @@
     - [Intro](vwl5/VL_Zivilrecht/2023-10-17-Intro.md)
     - [Vertrag](vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md)
     - [AGB](vwl5/VL_Zivilrecht/2023-10-27-AGB.md)
+    - [Privatautonomie](vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie.md)
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
     - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
@@ -385,6 +386,7 @@
     - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
     - [Divison Labor](vwl5/VL_Feminist/2023-10-16-Divison-Labor.md)
     - [Reproduction](vwl5/VL_Feminist/2023-10-23-Reproduction.md)
+    - [Care](vwl5/VL_Feminist/2023-11-06-Care.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
     - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
@@ -394,4 +396,4 @@
 
 ---
 
-**335** Notizen in **28** Modulen
+**337** Notizen in **28** Modulen

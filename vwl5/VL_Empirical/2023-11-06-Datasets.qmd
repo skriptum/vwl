@@ -1,0 +1,41 @@
+# 06.11.2023 Datasets
+
+Different Ways of importing Data
+
+## Importing Datasets
+
+### CSV
+
+```{r}
+df = read.csv("data/example_datasets/variable_names.csv", sep=";")
+head(df)
+```
+
+### Stata .dta
+
+Important: Newer Stata Datasets (\>13) use `read.dta13()`
+
+```{r}
+df_stata = read.dta("data/example_datasets/maketable2.dta")
+head(df_stata)
+```
+
+### Excel .xlsx
+
+Important: Define Sheet and start rows!
+
+```{r}
+df_excel = read.xlsx("data/example_datasets/61111-0002.xlsx", sheet = "data_ed_HA", startRow=1, colNames=T)
+head(df_excel)
+```
+
+### ASCII
+
+normal text format
+
+```{r}
+df_ascii = read.table("data/example_datasets/Per_Capita_GDP_Data_1870-1987.asc", header=T)
+head(df_ascii)
+```
+
+## Creating Datasets

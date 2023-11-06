@@ -84,4 +84,50 @@ Instruments:
     - internalize externality
     - correct tax = *Pigou Tax*
 - Regulation
+    - regulate Quantities
+    - complicated information needed
 
+Price-Based Approach vs Quantity Based Approach
+
+## Distinction
+
+Right Amount of Pollution
+
+![img](../images/2023-11-06_15-50-51.jpg)
+
+- A = free market
+- B = socially optimal: SMC = SMB
+
+
+
+**Example 1**: Multiple Plants with differenct reduction costs
+
+![img](../images/2023-11-06_15-56-35.jpg)
+
+- blue line = Tax (*efficient*)
+- black line = Regulation
+
+
+
+**Example 2:** unvertainty about costs
+
+- high SMB of Reduction => Quantity Based Approach (nuclear leakage)
+- Low SMB of Reduction => Price Based Approach (kg of carbon)
+
+
+
+High SMB:![img](../images/2023-11-06_16-03-56-9283211.jpg)
+
+Assumption of MC1
+
+- C = Regulation and Tax
+
+if real MC = MC2
+
+- E = Tax 
+- A = Regulation
+- DWL Regulation  < DWL Tax
+
+
+
+**=> when Quantity is important use Regulation, else taxes**

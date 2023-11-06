@@ -1,0 +1,16 @@
+short_name;long_name;comment
+cons00a;Constraint on executive in 1900;
+euro1900;European settlements in 1900;
+democ00a;Democracy in 1900;European settlements is percent of population that was of European descent in 1900. (notes for Table 3, p. 1385)
+cons1;Constraint on executive in first year of independence;
+democ1;Democracy in first year of independence;
+logem4;Log of European Settler Mortality;
+sjlofr;Frensh legal origin;
+indtime;Years since independence;
+logpgp95;Log GDP per capita, PPP, 1995;
+loghjypl;Log output per worker in 1988 (with level of United States normalized to 1);
+avexpr;Average protection against expropriation risk, 1985-1995;
+lat_abst;Latitude;
+asia;Asia dummy;
+africa;Africa dummy;
+other;Other continent dummy;

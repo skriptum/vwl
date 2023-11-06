@@ -387,6 +387,7 @@
     - [Divison Labor](vwl5/VL_Feminist/2023-10-16-Divison-Labor.md)
     - [Reproduction](vwl5/VL_Feminist/2023-10-23-Reproduction.md)
     - [Care](vwl5/VL_Feminist/2023-11-06-Care.md)
+    - [Household](vwl5/VL_Feminist/2023-11-06-Household.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
     - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
@@ -397,4 +398,4 @@
 
 ---
 
-**338** Notizen in **28** Modulen
+**339** Notizen in **28** Modulen

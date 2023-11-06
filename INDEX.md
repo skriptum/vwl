@@ -392,8 +392,9 @@
     - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
     - [Tools](vwl5/VL_PublicEcon/2023-10-18-Tools.md)
     - [Tools2](vwl5/VL_PublicEcon/2023-10-25-Tools2.md)
+    - [Externalities](vwl5/VL_PublicEcon/2023-11-06-Externalities.md)
     - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
 ---
 
-**337** Notizen in **28** Modulen
+**338** Notizen in **28** Modulen

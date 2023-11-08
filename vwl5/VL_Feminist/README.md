@@ -23,9 +23,4 @@ Text about
 - or work on everything
 - with literature and academinc standards!
 - portfolio from the lecture: not academic standards
-- 
-
-
-
-
 

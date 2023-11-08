@@ -49,10 +49,40 @@ Solution:
 
 ## Public Provision
 
+Problems here:
+
+### Crowd Out
+
+- empirically not high
+- in laboratory very high
+
+=> not sure about this, but definitely less than full!!
+
+### Provision Mechanism
+
+possible Solution: *Contracting out*
+
+- misaligned incentives
+- risk of corruption, not always best offer
+
+=> do it yourself
+
+### Measuring Costs / Benefits
+
 Problems:
 
-- Crowd Out
-- Provision Mechanism
-- Measuring Costs / Benefits
-- measuring individual preferences
+- benefits not defined
+- opportunity cost of production
+
+=> Cost Benefit Analysis
+
+### Measuring Preferences
+
+Problems 
+
+- **Preference revelation**: people dont want to say their true value because they fear being charged 
+- **preference knowledge:** not knowing what value is to you
+- **preference aggregation:** how to combine
+
+###  
 

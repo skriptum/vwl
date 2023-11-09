@@ -1,0 +1,47 @@
+# Democracy Does Cause Growth
+
+by
+
+-   Daron Acemoglu (MIT)
+-   James A Robinson (Chicago)
+-   Suresh Naidu (Columbia)
+-   Pascual Restrepo (Boston University)
+
+## Question and Problems
+
+Does democracy cause growth?
+
+Problems with the Question:
+
+-   direct comparison between democracies / non-democracies difficult
+-   correlation with other changes
+-   indices of democracy lacking
+
+## Data
+
+Import the Data
+
+```{r}
+library(tidyverse)
+library(haven)
+```
+
+```{r}
+df <- read_dta("DDCGdata.dta")
+```
+
+```{r}
+head(df)
+```
+
+1177 Columns and around 10000 rows
+
+## Regression
+
+$$
+y_{ct} = \beta D_t + E_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+$$
+
+## Results
+
+## Questions

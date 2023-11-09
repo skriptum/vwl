@@ -12,3 +12,5 @@ venv
 .Rhistory
 .ztr-directory
 .Rproj.user
+*.rar
+*.dta

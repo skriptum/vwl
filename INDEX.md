@@ -388,6 +388,7 @@
     - [Reproduction](vwl5/VL_Feminist/2023-10-23-Reproduction.md)
     - [Care](vwl5/VL_Feminist/2023-11-06-Care.md)
     - [Household](vwl5/VL_Feminist/2023-11-06-Household.md)
+    - [Ecofeminist](vwl5/VL_Feminist/2023-11-10-Ecofeminist.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
     - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
@@ -399,4 +400,4 @@
 
 ---
 
-**340** Notizen in **28** Modulen
+**341** Notizen in **28** Modulen

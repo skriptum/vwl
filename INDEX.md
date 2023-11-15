@@ -397,8 +397,9 @@
     - [Tools2](vwl5/VL_PublicEcon/2023-10-25-Tools2.md)
     - [Externalities](vwl5/VL_PublicEcon/2023-11-06-Externalities.md)
     - [Public Goods](vwl5/VL_PublicEcon/2023-11-08-Public-Goods.md)
+    - [Cost Benefit](vwl5/VL_PublicEcon/2023-11-15-Cost-Benefit.md)
     - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
 ---
 
-**342** Notizen in **28** Modulen
+**343** Notizen in **28** Modulen

@@ -68,9 +68,44 @@ Types of Revealed Preferences
 - Natural Experiments = naturally occuring variation in prices, how much people want to wait
     - e.g.: different prices at gas stations, but longer queues 
 
+
+
 ### Value of Lives saved
 
 = most difficult issue 
+
+Approaches:
+
+- Market based (lifetime wages)
+    - poorer people = worth less
+    - older people = worth less
+- survey based (value of statistical life)
+    - ask for willingness to pay for certain risk
+- revealed preferences
+    - compensating differential = higher wages for deadlier jobs (coal miners)
+    - Problems: 
+        - Information
+        - Probabilities
+        - Bias
+        - Heterogenity 
+
+Example Project
+
+![img](../images/2023-11-15_10-56-20.jpg)
+
+## Issues
+
+- Counting Mistakes
+- Uncertainty (gov prefer certain projects = no risk = lower returns)
+- Distributional Concerns (Costs and Benefits to different people)
+
+
+
+Alternative:
+
+> **Cost-Effectiveness Analysis**: projects with immeasurable benefits => most effective project for goal
+
+
 
 ## Critique of CBA
 

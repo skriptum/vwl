@@ -1,6 +1,6 @@
-# Notizen zur VWL
+# Notizen
 
-Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, akzeptiere ich dies als Teil des Gesamtpakets.
+Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, akzeptiere ich dies als Teil des Gesamtpakets. Die Notizen sind nutzbar für **BWL** als auch **VWL** Studierende, da sich insbesondere in den ersten Semestern die Module überschneiden.
 
 Um einen schnellen Überblick über die verfügbaren Module zu erhalten, kann die Seitenliste auf der Website genutzt werden. Zusätzlich sind diese Informationen auch auf der Startseite jedes Semesters zu finden, inklusive der Namen der jeweiligen Professor:innen des Moduls. Dies erleichtert die gezielte Suche nach spezifischen Informationen und fördert eine effiziente Organisation meiner Studienunterlagen.
 

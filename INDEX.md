@@ -380,7 +380,6 @@
     - [Privatautonomie](vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie.md)
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
-    - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
     - [Übersicht](vwl5/VL_Empirical/README.md)
 - Feminist Economics
     - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
@@ -402,4 +401,4 @@
 
 ---
 
-**343** Notizen in **28** Modulen
+**342** Notizen in **28** Modulen

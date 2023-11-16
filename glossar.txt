@@ -1,4 +1,3 @@
-- plurale Ökonomik
 - Opportunitätskosten
 - Externalitäten
 - BIP

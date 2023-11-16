@@ -1,14 +1,24 @@
 # Notizen zur VWL
 
-Auf dieser Website werden alle Notizen aus den bisherigen Semestern Volkswirtschaftslehre an der MLU-Halle gesammelt. Für einige Module gibt es Zusammenfassungen, bei anderen hören die Notizen nach einigen Wochen auf. Das ganze hat kein System und muss hingenommen werden.
+Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, akzeptiere ich dies als Teil des Gesamtpakets.
 
-Eine Übersicht der Module ist in der Seitenliste zu finden, außerdem auf der Startseite jedes einzelnen Semesters. Dort sind auch die Professor:innen des jeweiligen Moduls verzeichnet.
+Um einen schnellen Überblick über die verfügbaren Module zu erhalten, kann die Seitenliste auf der Website genutzt werden. Zusätzlich sind diese Informationen auch auf der Startseite jedes Semesters zu finden, inklusive der Namen der jeweiligen Professor:innen des Moduls. Dies erleichtert die gezielte Suche nach spezifischen Informationen und fördert eine effiziente Organisation meiner Studienunterlagen.
+
+Weiterführende Links
+
+- [Über Mich](https://martenw.com/)
+- [Über VWL in Halle](https://www.wiwi.uni-halle.de/studienangebot/bachelor_vwl/)
+- [Wie kann ich mich kritisch mit VWL auseinandersetzen](glossar/Plurale-Oekonomik) (Plurale Ökonomik)
 
 
 
-|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|![GitHub repo size](https://img.shields.io/github/repo-size/skriptum/vwl)|29| 326 |
-|---|---|---|---|
-|Zuletzt upgedatet|gesamte Dateigröße|Anzahl Module| Anzahl Notizen |
+---
+
+### Allgemein
+
+|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|28| 342 |
+|---|---|---|
+|Zuletzt upgedatet|Anzahl Module| Anzahl Notizen |
 
 
 

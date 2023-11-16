@@ -67,6 +67,21 @@ ignores.append([
 # get all files in the directory and subdirectories with type {dirname : filenames}
 
 result_list = ["- [Startseite](README.md)","", "---"] # first two lines of the SUMMARY.md
+
+# Add the files in /glossar
+result_list.append("- [Glossar](glossar/Allgemein.md)")
+for file in sorted(os.listdir("glossar")):
+    if file[-3:] == ".md":
+        filename = file[:-3]
+        filename = filename.replace("_", " ")
+        filename = filename.replace("-", " ")
+        result_list.append(f"    - [{filename}](glossar/{file})")
+
+result_list.append("")  
+result_list.append("---")
+result_list.append("")
+
+# count the files and directories
 count_files = 0
 count_dirs = 0
 

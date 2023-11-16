@@ -1,6 +1,15 @@
 - [Startseite](README.md)
 
 ---
+- [Glossar](glossar/Allgemein.md)
+    - [Allgemein](glossar/Allgemein.md)
+    - [Keynesianismus](glossar/Keynesianismus.md)
+    - [Neoklassik](glossar/Neoklassik.md)
+    - [Plurale Oekonomik](glossar/Plurale-Oekonomik.md)
+    - [Tools](glossar/Tools.md)
+
+---
+
 [I. Semester](vwl1/README.md)
 
 

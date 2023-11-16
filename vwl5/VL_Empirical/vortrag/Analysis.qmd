@@ -36,12 +36,39 @@ head(df)
 
 1177 Columns and around 10000 rows
 
+```{r}
+df$
+```
+
 ## Regression
+
+Regression Formulae:
 
 $$
 y_{ct} = \beta D_t + E_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
 $$
 
-## Results
+Formula: ...
 
-## Questions
+-   $y_ct$ = log GDP per capita in country *c* at time *t*
+    -   column: `gdppercapitaconstant2000us`
+-   $D_{ct}$ = Dichotomous measure of democracy
+    -   column: `yeardem`
+-   *p* lags of log GDP for control
+-   $\alpha$ = country fixed effects
+-   $e$ = error
+
+Estimators
+
+-   within estimators
+-   HHK estimators (not implemented in R!)
+-   GMM Estimation with `pdynmc` [Intro here](https://web.archive.org/web/20220216220804/https://cran.r-project.org/web/packages/pdynmc/vignettes/pdynmc-pres-in-a-nutshell.pdf)
+
+```{r}
+library(stargazer)
+library(gmm)
+```
+
+Simple Dynamic Linear Panel Model
+
+## Results

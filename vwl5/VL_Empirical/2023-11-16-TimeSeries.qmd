@@ -123,7 +123,7 @@ mywagemodels <- list(wagemodel1,wagemodel2,wagemodel3,wagemodel4)
 stargazer(mywagemodels, type="html", out="data/mywagemodels.html")
 ```
 
-## ggplot 
+## ggplot
 
 ```{r}
 library(tidyverse)

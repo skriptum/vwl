@@ -398,6 +398,7 @@
     - [Household](vwl5/VL_Feminist/2023-11-06-Household.md)
     - [Ecofeminist](vwl5/VL_Feminist/2023-11-10-Ecofeminist.md)
     - [Transformation](vwl5/VL_Feminist/2023-11-11-Transformation.md)
+    - [Labour Market](vwl5/VL_Feminist/2023-11-20-Labour-Market.md)
     - [Übersicht](vwl5/VL_Feminist/README.md)
 - Public Economics
     - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
@@ -410,4 +411,4 @@
 
 ---
 
-**342** Notizen in **28** Modulen
+**343** Notizen in **28** Modulen

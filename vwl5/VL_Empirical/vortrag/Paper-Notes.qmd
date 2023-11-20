@@ -118,7 +118,13 @@ Formula: ...
 
 -   $\alpha$ = country fixed effects
 
+-   d = time fixed effects
+
 -   $e$ = error
+
+$$
+\frac{ \hat\beta }{1- E_{j=1}^p \hat\gamma_j}
+$$
 
 lags = countries not on different GDP trends before (stop reverse causality)
 

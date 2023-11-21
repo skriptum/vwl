@@ -165,3 +165,36 @@ P_1 +P_2 = (7/2 - 1/6Q)+ (2 - 1/3Q)
 = \frac{ 11 }{2}- \frac{ 1 }{2} Q
 $$
 
+
+
+### Bike Paths Example 
+
+individual Bike Path Demand
+
+- A: $Q=24-4P$
+- B: $Q = 14-P$
+- C: $Q = 5-1/3P$
+
+Marginal Cost of one Path = 18
+
+**Version 1**
+
+- town decides to tax evenly
+- asks residents, highest number answered gets build
+- $MC = a+b+c$, here (a=b=c)
+- 18/3 = 6 Cost Units
+
+Demands at this Price (input P=6)
+
+- A: Q=0
+- B: Q=8
+- C: Q=3
+
+=> Build 8 Paths
+
+**Version 2**: Social Optimum
+
+- solve every Demand for P
+- sum Up => SMB
+- SMB = MC = 18, solve for Q
+- insert Q into individual Demand Functions

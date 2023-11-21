@@ -203,3 +203,14 @@ Gendered impacts
 - increase in unpaid care work (closing of daycare etc.)
 - emplyoment suffered in sectors (restaurants / hospitality)
 
+
+
+## Questions
+
+- Using critiques developed by feminist political economy, describe the weaknesses in theories that characterize the labour market as a divided institution.
+
+- Given the benefits of employment for women, are low-paying precarious jobs better than no jobs?
+
+- Is economic growth based on exploitation justified if there is a promise of prosperity in the future?
+
+- Using a case study of your choice (by government or the private sector), describe how an intervention aimed at reducing gender inequality in the labour market may be undermined by women’s disproportionate responsibility for unpaid or unwaged work.

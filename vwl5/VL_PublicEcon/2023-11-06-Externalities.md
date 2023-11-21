@@ -131,3 +131,37 @@ if real MC = MC2
 
 
 **=> when Quantity is important use Regulation, else taxes**
+
+
+
+## Tutorial: Addition of Demands
+
+- Vertical Summation = Add up at Quantity Q (**Public Good**)
+- Horizontal Summation = Add up Demands at Price P
+
+Example **Horizontal**:
+
+- A: $Q = 21-6P$
+- B: $Q = 6-3P$
+
+Addition of the Quantites at given Price
+$$
+Q_1 + Q_2 = (21-6P) + (6-3P) = 27-9P \\
+9P = 27  \to P = 3 - \frac{ 1 }{9}Q
+$$
+
+
+Example **Vertical**
+
+Solve indivudally for P (Demands from above)
+
+- A: $P = \frac{ 7 }{2} - \frac{ 1 }{6}Q$
+- B: $P = 2 - \frac{ 1 }{3}Q$
+
+Sum up
+
+$$
+P_1 +P_2 = (7/2 - 1/6Q)+ (2 - 1/3Q)
+= \frac{ 11 }{2}- \frac{ 1 }{2} Q
+$$
+

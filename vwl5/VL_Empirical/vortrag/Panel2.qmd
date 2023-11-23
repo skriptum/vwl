@@ -1,0 +1,356 @@
+# DDCG - Calculating Effects (Part 2)
+
+## Imports
+
+```{r}
+library(plm)
+library(stargazer)
+```
+
+
+```{r}
+load("output/models.Rdata")
+```
+
+## Long Run Effects
+
+Calculate the long run effects for the different models with this Formula:
+
+$$
+\frac{ \hat\beta }{1- \sum_{j=1}^p \hat\gamma_j}
+$$
+
+
+```{r}
+beta_hat <- coef(model1)["dem"]
+gamma_hat <- coef(model1)["plm::lag(y, 1)"]
+
+long_run_effect_1 <- beta_hat / (1 - sum(gamma_hat))
+long_run_effect_1
+```
+
+```{r}
+beta_hat <- coef(model2)["dem"]
+gamma_hat <- (coef(model2)[2:3])
+
+long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
+long_run_effect_2
+```
+
+```{r}
+beta_hat <- coef(model2)["dem"]
+gamma_hat <- (coef(model2)[2:3])
+
+long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
+long_run_effect_2
+```
+
+
+```{r}
+beta_hat <- coef(model3)["dem"]
+gamma_hat <- (coef(model3)[2:5])
+
+long_run_effect_3 <- beta_hat / (1 - sum(gamma_hat))
+long_run_effect_3
+```
+
+```{r}
+beta_hat <- coef(model4)["dem"]
+gamma_hat <- (coef(model4)[2:9])
+
+long_run_effect_4 <- beta_hat / (1 - sum(gamma_hat))
+long_run_effect_4
+```
+
+```{r}
+long_run_effects <- c(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)
+long_run_effects
+```
+
+## Persistence
+
+Calculate the persistence of Democracy for the different models with this Formula:
+
+$$
+D_{pers} = E_{j=1}^p \hat\gamma_j
+$$
+
+```{r}
+pers1 <- sum(coef(model1)["plm::lag(y, 1)"])
+pers2 <- sum(coef(model2)[2:3])
+pers3 <- sum(coef(model3)[2:5])
+pers4 <- sum(coef(model4)[2:9])
+
+pers <- c(pers1, pers2, pers3, pers4)
+pers
+```
+
+## Effect after 25 years
+
+Calculate the short run effects fro 1-30 years:
+
+$$
+effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
+$$
+
+
+### Model 1
+
+```{r}
+dem_shortrun <- coef(model1)["dem"]
+lag1 <- (coef(model1)[2])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+
+effects <- c(effect1, effect2)
+```
+
+```{r}
+for (i in 3:30) {
+  eff <- (effects[i-1] * lag1) + effects[1]
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+eff_25_1 <- effects[25]
+eff_25_1
+```
+
+
+### Model 2
+
+```{r}
+dem_shortrun <- coef(model2)["dem"]
+lag1 <- (coef(model2)[2])
+lag2 <- (coef(model2)[3])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+
+effects <- c(effect1, effect2, effect3)
+```
+
+```{r}
+for (i in 4:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+eff_25_2 <- effects[25]
+eff_25_2
+```
+
+### Model 3
+
+```{r}
+dem_shortrun <- coef(model3)["dem"]
+lag1 <- (coef(model3)[2])
+lag2 <- (coef(model3)[3])
+lag3 <- (coef(model3)[4])
+lag4 <- (coef(model3)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+eff_25_3 <- effects[25]
+eff_25_3
+```
+
+### Model 4
+
+```{r}
+dem_shortrun <- coef(model4)["dem"]
+lag1 <- (coef(model4)[2])
+lag2 <- (coef(model4)[3])
+lag3 <- (coef(model4)[4])
+lag4 <- (coef(model4)[5])
+lag5 <- (coef(model4)[6])
+lag6 <- (coef(model4)[7])
+lag7 <- (coef(model4)[8])
+lag8 <- (coef(model4)[9])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+effect5 <- (effect4 * lag1) + (effect3 * lag2) + (effect2 * lag3) + (effect1 * lag4) + dem_shortrun
+effect6 <- (effect5 * lag1) + (effect4 * lag2) + (effect3 * lag3) + (effect2 * lag4) + (effect1 * lag5) + dem_shortrun
+effect7 <- (effect6 * lag1) + (effect5 * lag2) + (effect4 * lag3) + (effect3 * lag4) + (effect2 * lag5) + (effect1 * lag6) + dem_shortrun
+effect8 <- (effect7 * lag1) + (effect6 * lag2) + (effect5 * lag3) + (effect4 * lag4) + (effect3 * lag5) + (effect2 * lag6) + (effect1 * lag7) + dem_shortrun
+
+effects <- c(effect1, effect2, effect3, effect4, effect5, effect6, effect7, effect8)
+```
+
+```{r}
+for (i in 9:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + (effects[i-5] * lag5) + (effects[i-6] * lag6) + (effects[i-7] * lag7) + (effects[i-8] * lag8) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+eff_25_4 <- effects[25]
+eff_25_4
+```
+
+```{r}
+eff_25 <- c(eff_25_1, eff_25_2, eff_25_3, eff_25_4)
+```
+
+## Table 2
+
+Recreating the Table 2 from the ANRR Paper with the stargazer package and the models from above
+
+with
+- persistence for each model
+- long run effect
+- effect after 25 years
+- observations
+- and the standard regression output
+
+```{r}
+# names(model1$coefficients)[2] <- "lag1"
+# names(model2$coefficients)[2:3] <- c("lag1", "lag2")
+# names(model3$coefficients)[2:5] <- c("lag1", "lag2", "lag3", "lag4")
+# names(model4$coefficients)[2:9] <- c("lag1", "lag2", "lag3", "lag4", "lag5", "lag6", "lag7", "lag8")
+# 
+summary(model1)
+```
+
+```{r}
+models <- list(model1, model2, model3, model4)
+
+stargazer::stargazer(models, 
+          type = "text", 
+          title = "Table 2: Effect of Democracy on GDP Growth", 
+          dep.var.labels = "GDP Growth", 
+          covariate.labels = c("Democracy"),
+          omit.stat = c("ser", "f","adj.rsq"), 
+          keep.stat = c("n", "N"),
+          model.numbers = FALSE,
+          column.labels = c("(1)", "(2)", "(3)", "(4)")
+          )
+```
+
+## Figure 2
+
+just uses the preferred model = model 3 with 4 lags
+
+### The Trend Esitmate
+
+```{r}
+dem_shortrun <- coef(model3)["dem"]
+lag1 <- (coef(model3)[2])
+lag2 <- (coef(model3)[3])
+lag3 <- (coef(model3)[4])
+lag4 <- (coef(model3)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+### Standard Error
+
+Extract The given Standard Error from the model
+
+Repeat the same process as above to get the standard error for point in time t
+
+```{r}
+SE_estimate <- summary(model3)$coefficients[1, 2] #1 = dem coeffiecient, 2 =  Std Error
+```
+
+```{r}
+
+SE1 <- SE_estimate
+SE2 <- (SE1 * lag1) + SE_estimate
+SE3 <- (SE2 * lag1) + (SE1 * lag2) + SE_estimate
+SE4 <- (SE3 * lag1) + (SE2 * lag2) + (SE1 * lag3) + SE_estimate
+
+SEs <- c(SE1, SE2, SE3, SE4)
+```
+
+
+```{r}
+for (i in 5:30) {
+  SEi <- (SEs[i-1] * lag1) + (SEs[i-2] * lag2) + (SEs[i-3] * lag3) + (SEs[i-4] * lag4) + SEs[1]
+  SEs <- append(SEs, SEi)
+}
+```
+
+### Confidence Intervals
+
+```{r}
+upper <- vector()
+lower <- vector()
+```
+
+```{r}
+for (i in 1:30) {
+  upper <- append(upper, effects[i] + (1.96 * SEs[i]))
+  lower <- append(lower, effects[i] - (1.96 * SEs[i]))
+}
+```
+
+### Plot
+
+Create a dataframe with the trend estimate, upper and lower confidence intervals, useful for comparing with the Data from ANRR
+```{r}
+trend <- data.frame(effects, upper, lower)
+trend
+```
+
+Plot the trend estimate and the confidence intervals using ggplot()
+```{r}
+ggplot(trend, aes(x = 1:30, y = effects)) +
+  geom_line() + #trend estimate
+  geom_line(aes(y = upper), linetype = "dashed") + #upper confidence interval
+  geom_line(aes(y = lower), linetype = "dashed") + #lower confidence interval
+  geom_hline(yintercept = 0, color="gray") + #zero line
+  geom_hline(yintercept = 10, color="gray") + #10 GDP per capita log point mark
+  geom_hline(yintercept = 20, color="gray") + #20 GDP per capita log point mark
+  geom_hline(yintercept = 30, color="gray") + #30 GDP per capita log point mark
+  labs(
+    x = "Years since Democratization",  #x axis label
+    y = "Change in GDP per Capita Log Points") + #y axis label
+  theme_classic() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+```

@@ -1,0 +1,110 @@
+# DDCG - Estimating the Models (1)
+
+## Regression
+
+Regression Formulae:
+
+$$
+y_{ct} = \beta D_t + E_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+$$
+
+Formula:
+
+-   $y_ct$ = log GDP per capita in country *c* at time *t*
+    -   column: `gdppercapitaconstant2000us`
+    -   already logged with `y`
+-   $D_{ct}$ = Dichotomous measure of democracy
+    -   column: `dem`
+-   *p* lags of log GDP for control
+-   $\alpha$ = country fixed effects
+-   $e$ = error
+
+Estimator: Within Estimator
+
+Result somethin like this:
+
+![](images/2023-11-15_15-01-55.jpg)
+
+![](images/2023-11-15_15-02-02.jpg)
+
+## Replication
+
+### Imports
+```{r}
+library(plm)
+library(tidyverse)
+```
+
+### Load the Data
+```{r}
+DDCGdata <- haven::read_dta("data/DDCGdata.dta")
+
+df <- DDCGdata %>%
+  dplyr::select(1:30) %>%
+  dplyr::mutate(loggdp = log(gdppercapitaconstant2000us))
+  
+rm(DDCGdata)
+head(df)
+```
+
+Making it in a panel dataset
+
+```{r}
+pdf = pdata.frame(df, index=c("country_name", "year"))
+```
+
+Estimating the Dynamic Linear Model
+
+### Model 1 = 1 Lag
+
+```{r}
+model1 <- plm(
+  y ~ dem + plm::lag(y, 1), #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+summary(model1)
+```
+
+### Model 2 = 2 Lags
+
+```{r}
+model2 <- plm(
+  y ~ dem + plm::lag(y, 1:2) , #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+summary(model2)
+```
+
+### Model 3 = 4 Lags
+
+```{r}
+model3 <- plm(
+  y ~ dem + plm::lag(y, 1:4), #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+summary(model3)
+```
+
+### Model 4 = 8 Lags
+
+```{r}
+model4 <- plm(
+  y ~ dem + plm::lag(y, 1:8), #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+summary(model4)
+```
+
+### Save the Models to a file
+
+```{r}
+save(model1, model2, model3, model4, file = "output/models.RData")
+```

@@ -1,0 +1,72 @@
+# 23.11.2023 IV Regression
+
+## Maps
+
+```{r}
+library(sf)
+library(tidyverse)
+library(terra)
+```
+
+import the sf dataset
+
+```{r}
+World <- read_sf("data/shape/shapecountries.shp")
+```
+
+plot the shapes
+
+```{r}
+ggplot(World) + 
+  geom_sf()
+```
+
+Subsetting on smaller regions with `ext(longitude_min, longitude_max, latitude_min, latitdue_max)`
+
+```{r}
+world_v <- vect(World)
+coords_subset <- ext(5.0, 23, 47, 56)
+europe <- crop(world_v, coords_subset)
+
+europe_sf <- st_as_sf(europe)
+```
+
+Plot it again
+
+```{r}
+ggplot(europe_sf) + 
+  geom_sf()
+```
+
+## IV Regression
+
+to control for omitted variable which is exogenous with error term
+
+=\> OLS does not work
+
+Solution:
+
+-   replace with instrument variable that correlets to explanatory variable
+-   IV should be exogenous
+-   and relevant in explaining variation
+
+1.  stage:
+
+-   $x = \gamma + \delta instrument + e$
+-   leads to $\hat{x} = \hat{\gamma} + \hat{delta} instrument + residual$
+
+2.  Stage: $y = a + b \hat{x} + e$
+
+How to do in R:
+
+```{r}
+library(AER)
+load("data/dataset_AJR2001.Rdata")
+head(data)
+```
+
+```{r}
+ivreg(logpgp95 ~avexpr | logem4, data = data)
+```
+
+=\> R2 is not relevant for IV Regression!

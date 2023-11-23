@@ -1,0 +1,51 @@
+# IV Regressions
+
+$$
+y_{ct} = \beta D_{ct} + \sum_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+$$
+
+with D as IV:
+
+$$
+D_{ct} = \sum_{j=1}^p \pi_j Z_{ct-j}+ \sum_{j=1}^p \phi y_{ct-j} + \Phi_c+ \mu_t+ v_{ct}
+$$
+
+-   Z = average of democracy in Region times initial regime cell = `demreg` in dataframe
+-   D = democracy variable = `dem` variable
+-   y = log gdp per capita = `y` variable
+
+Estimated with 2SLS Regression
+
+**Replication**
+
+```{r}
+library(tidyverse)
+library(haven)
+library(AER)
+```
+
+```{r}
+DDCGdata <- read_dta("DDCGdata.dta")
+
+df <- DDCGdata %>%
+  dplyr::select(1:100) %>%
+  dplyr::mutate(loggdp = log(gdppercapitaconstant2000us))
+  
+rm(DDCGdata)
+```
+
+```{r}
+pdf = pdata.frame(df, index=c("country_name", "year"))
+head(pdf)
+```
+
+```{r}
+iv_model <- ivreg(
+    y ~ dem + lag(y, 1) + lag(y, 2) + lag(y, 3) + lag(y, 4)+ factor(country_name) + factor(year) | 
+      lag(demreg,1) + lag(y, 1) + lag(y, 2) + lag(y, 3) + lag(y, 4)+ factor(country_name) + factor(year),
+    data=pdf
+    )
+summary(iv_model)
+```
+
+Estimate of Democracy = should be somithing like .996

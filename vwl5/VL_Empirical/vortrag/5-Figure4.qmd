@@ -1,12 +1,13 @@
-Test
+# Figure 4
+
+Parametric Estimation of the Effect
 
 ```{r}
-library(haven)
-library(ggplot2)
+library(tidyverse)
 ```
 
 ```{r}
-data <- haven::read_dta("impulse_ra_alt.dta")
+data <- haven::read_dta("data/impulse_ra_alt.dta")
 data <- data %>%
   mutate(parm_numeric = as.numeric(gsub("c", "", parm))) %>%
   mutate(time = parm_numeric - 16)

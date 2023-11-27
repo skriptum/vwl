@@ -1,6 +1,6 @@
 # 16.11.2023 Time Series & other things
 
-## 1. Time Series
+## Time Series
 
 ```{r}
 library(tseries)
@@ -119,8 +119,13 @@ wagemodel4 <- plm(lwage ~ married + black + union + educ + exper + factor(year),
 Combine all and get stargazer to analyze it
 
 ```{r}
+#| results='asis' 
 mywagemodels <- list(wagemodel1,wagemodel2,wagemodel3,wagemodel4)
-stargazer(mywagemodels, type="html", out="data/mywagemodels.html")
+stargazer(
+  mywagemodels, 
+  type="html"
+  #out="data/mywagemodels.html"
+  )
 ```
 
 ## ggplot

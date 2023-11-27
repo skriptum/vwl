@@ -21,11 +21,11 @@ $$
 
 Figure:
 
-![](../images/2023-10-26_10-48-50.jpg)
+![](images/2023-10-26_10-48-50.jpg)
 
 Table:
 
-![img](../images/2023-10-26_10-55-06.jpg)
+![img](images/2023-10-26_10-55-06.jpg)
 
 -   empty lines = not included in regression
     -   every new sample = broader regression formula with dummies etc.
@@ -99,7 +99,7 @@ all_res <- list(
 coef_names <- c("Average Protection", "Latittude","Asia dummy", "Africa dummy", "Other")
 note <- "Nitzuen lorem"
 stargazer(all_res, 
-          type="text", 
+          type="html", 
           out="data/Table2_stargazer.html", omit = "Constant",
           notes.label = note,
           dep.var.labels = c("log GDP per Capita", "log output per worker"),
@@ -107,6 +107,3 @@ stargazer(all_res,
           )
 ```
 
-Result looks somewhat like this:
-
-![img](../images/2023-10-26_11-42-20.jpg)

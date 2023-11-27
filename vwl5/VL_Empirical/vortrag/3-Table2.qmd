@@ -1,4 +1,4 @@
-# DDCG - Calculating Effects (Part 2)
+# Table 2
 
 ## Imports
 
@@ -23,7 +23,7 @@ $$
 
 ```{r}
 beta_hat <- coef(model1)["dem"]
-gamma_hat <- coef(model1)["plm::lag(y, 1)"]
+gamma_hat <- coef(model1)["lag1"]
 
 long_run_effect_1 <- beta_hat / (1 - sum(gamma_hat))
 long_run_effect_1
@@ -63,8 +63,9 @@ long_run_effect_4
 ```
 
 ```{r}
-long_run_effects <- c(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)
-long_run_effects
+lre <- c(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)
+lre <- round(lre, 3)
+lre
 ```
 
 ## Persistence
@@ -76,18 +77,21 @@ D_{pers} = E_{j=1}^p \hat\gamma_j
 $$
 
 ```{r}
-pers1 <- sum(coef(model1)["plm::lag(y, 1)"])
+pers1 <- sum(coef(model1)[2])
 pers2 <- sum(coef(model2)[2:3])
 pers3 <- sum(coef(model3)[2:5])
 pers4 <- sum(coef(model4)[2:9])
 
 pers <- c(pers1, pers2, pers3, pers4)
+pers <- round(pers, 3)
 pers
 ```
 
 ## Effect after 25 years
 
 Calculate the short run effects fro 1-30 years:
+
+Formula taken from Stata Code File (`Table2_final.do`, lines 32-87 + following)
 
 $$
 effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
@@ -221,7 +225,10 @@ eff_25_4
 
 ```{r}
 eff_25 <- c(eff_25_1, eff_25_2, eff_25_3, eff_25_4)
+eff_25 <- round(eff_25, 3)
+eff_25
 ```
+
 
 ## Table 2
 
@@ -232,125 +239,46 @@ with
 - long run effect
 - effect after 25 years
 - observations
+- countries in sample
 - and the standard regression output
 
-```{r}
-# names(model1$coefficients)[2] <- "lag1"
-# names(model2$coefficients)[2:3] <- c("lag1", "lag2")
-# names(model3$coefficients)[2:5] <- c("lag1", "lag2", "lag3", "lag4")
-# names(model4$coefficients)[2:9] <- c("lag1", "lag2", "lag3", "lag4", "lag5", "lag6", "lag7", "lag8")
-# 
-summary(model1)
-```
 
 ```{r}
 models <- list(model1, model2, model3, model4)
 
-stargazer::stargazer(models, 
-          type = "text", 
+stargazer(models, 
+          type = "text", #change to "text" for easy viewing in console
+          title = "Table 2: Effect of Democracy on GDP Growth", # title
+          dep.var.labels = "GDP Growth",  
+          covariate.labels = c("Democracy"),
+          omit.stat = c("ser", "f","adj.rsq"), 
+          keep.stat = c("n", "N"), #keep observations
+          model.numbers = FALSE, # remove model numbers (are the same as column labels)
+          column.labels = c("(1)", "(2)", "(3)", "(4)"), # add column labels
+          add.lines = list( # add lines for persistence, long run effect and effect after 25 years
+            c("Persistence: ", pers[1], pers[2], pers[3], pers[4]), 
+            c("Long run effect: ", lre[1], lre[2], lre[3], lre[4]),
+            c("Effect after 25 years: ", eff_25[1], eff_25[2], eff_25[3], eff_25[4])
+            )
+          )
+```
+Save the table as a tex file
+```{r}
+#| echo=FALSE, results='asis', message=FALSE, warning=FALSE
+stargazer(models, 
+          type = "latex", 
+          out = "output/table2.tex",
           title = "Table 2: Effect of Democracy on GDP Growth", 
           dep.var.labels = "GDP Growth", 
           covariate.labels = c("Democracy"),
           omit.stat = c("ser", "f","adj.rsq"), 
           keep.stat = c("n", "N"),
           model.numbers = FALSE,
-          column.labels = c("(1)", "(2)", "(3)", "(4)")
+          column.labels = c("(1)", "(2)", "(3)", "(4)"),
+          add.lines = list(
+            c("Persistence: ", pers[1], pers[2], pers[3], pers[4]),
+            c("Long run effect: ", lre[1], lre[2], lre[3], lre[4]),
+            c("Effect after 25 years: ", eff_25[1], eff_25[2], eff_25[3], eff_25[4])
+            )
           )
-```
-
-## Figure 2
-
-just uses the preferred model = model 3 with 4 lags
-
-### The Trend Esitmate
-
-```{r}
-dem_shortrun <- coef(model3)["dem"]
-lag1 <- (coef(model3)[2])
-lag2 <- (coef(model3)[3])
-lag3 <- (coef(model3)[4])
-lag4 <- (coef(model3)[5])
-```
-
-```{r}
-effect1 <- dem_shortrun
-effect2 <- (effect1 * lag1) + dem_shortrun
-effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
-effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
-
-effects <- c(effect1,effect2, effect3, effect4)
-```
-
-```{r}
-for (i in 5:30) {
-  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
-  effects <- c(effects, eff)
-}
-```
-
-### Standard Error
-
-Extract The given Standard Error from the model
-
-Repeat the same process as above to get the standard error for point in time t
-
-```{r}
-SE_estimate <- summary(model3)$coefficients[1, 2] #1 = dem coeffiecient, 2 =  Std Error
-```
-
-```{r}
-
-SE1 <- SE_estimate
-SE2 <- (SE1 * lag1) + SE_estimate
-SE3 <- (SE2 * lag1) + (SE1 * lag2) + SE_estimate
-SE4 <- (SE3 * lag1) + (SE2 * lag2) + (SE1 * lag3) + SE_estimate
-
-SEs <- c(SE1, SE2, SE3, SE4)
-```
-
-
-```{r}
-for (i in 5:30) {
-  SEi <- (SEs[i-1] * lag1) + (SEs[i-2] * lag2) + (SEs[i-3] * lag3) + (SEs[i-4] * lag4) + SEs[1]
-  SEs <- append(SEs, SEi)
-}
-```
-
-### Confidence Intervals
-
-```{r}
-upper <- vector()
-lower <- vector()
-```
-
-```{r}
-for (i in 1:30) {
-  upper <- append(upper, effects[i] + (1.96 * SEs[i]))
-  lower <- append(lower, effects[i] - (1.96 * SEs[i]))
-}
-```
-
-### Plot
-
-Create a dataframe with the trend estimate, upper and lower confidence intervals, useful for comparing with the Data from ANRR
-```{r}
-trend <- data.frame(effects, upper, lower)
-trend
-```
-
-Plot the trend estimate and the confidence intervals using ggplot()
-```{r}
-ggplot(trend, aes(x = 1:30, y = effects)) +
-  geom_line() + #trend estimate
-  geom_line(aes(y = upper), linetype = "dashed") + #upper confidence interval
-  geom_line(aes(y = lower), linetype = "dashed") + #lower confidence interval
-  geom_hline(yintercept = 0, color="gray") + #zero line
-  geom_hline(yintercept = 10, color="gray") + #10 GDP per capita log point mark
-  geom_hline(yintercept = 20, color="gray") + #20 GDP per capita log point mark
-  geom_hline(yintercept = 30, color="gray") + #30 GDP per capita log point mark
-  labs(
-    x = "Years since Democratization",  #x axis label
-    y = "Change in GDP per Capita Log Points") + #y axis label
-  theme_classic() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ```

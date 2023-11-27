@@ -1,4 +1,4 @@
-# DDCG - Estimating the Models (1)
+# Panel Models
 
 ## Regression
 
@@ -23,9 +23,9 @@ Estimator: Within Estimator
 
 Result somethin like this:
 
-![](images/2023-11-15_15-01-55.jpg)
+![](../images/2023-11-15_15-01-55.jpg)
 
-![](images/2023-11-15_15-02-02.jpg)
+![](../images/2023-11-15_15-02-02.jpg)
 
 ## Replication
 
@@ -47,11 +47,29 @@ rm(DDCGdata)
 head(df)
 ```
 
+Creating Lags of Gdp
+
+```{r}
+df <- df %>%
+  dplyr::group_by(country_name) %>%
+  dplyr::mutate(
+    lag1 = lag(y, 1),
+    lag2 = lag(y, 2),
+    lag3 = lag(y, 3),
+    lag4 = lag(y, 4),
+    lag5 = lag(y, 5),
+    lag6 = lag(y, 6),
+    lag7 = lag(y, 7),
+    lag8 = lag(y, 8)
+  )
+```
+
 Making it in a panel dataset
 
 ```{r}
 pdf = pdata.frame(df, index=c("country_name", "year"))
 ```
+
 
 Estimating the Dynamic Linear Model
 
@@ -59,7 +77,7 @@ Estimating the Dynamic Linear Model
 
 ```{r}
 model1 <- plm(
-  y ~ dem + plm::lag(y, 1), #the equation with country fixed effects
+  y ~ dem + lag1, #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
@@ -71,7 +89,7 @@ summary(model1)
 
 ```{r}
 model2 <- plm(
-  y ~ dem + plm::lag(y, 1:2) , #the equation with country fixed effects
+  y ~ dem + lag1 + lag2 , #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
@@ -83,7 +101,7 @@ summary(model2)
 
 ```{r}
 model3 <- plm(
-  y ~ dem + plm::lag(y, 1:4), #the equation with country fixed effects
+  y ~ dem + lag1 + lag2 + lag3 + lag4, #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
@@ -95,7 +113,7 @@ summary(model3)
 
 ```{r}
 model4 <- plm(
-  y ~ dem + plm::lag(y, 1:8), #the equation with country fixed effects
+  y ~ dem + lag1 + lag2 + lag3 +lag4 +lag5 +lag6+ lag7 +lag8, #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"

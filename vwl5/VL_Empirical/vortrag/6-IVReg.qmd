@@ -1,3 +1,6 @@
+---
+eval: false
+---
 # IV Regressions
 
 $$
@@ -22,10 +25,11 @@ Estimated with 2SLS Regression
 library(tidyverse)
 library(haven)
 library(AER)
+library(plm)
 ```
 
 ```{r}
-DDCGdata <- read_dta("DDCGdata.dta")
+DDCGdata <- read_dta("data/DDCGdata.dta")
 
 df <- DDCGdata %>%
   dplyr::select(1:100) %>%

@@ -1,3 +1,6 @@
+---
+eval: false
+---
 # Channels
 
 -   Log Investment = `loginvpc`
@@ -11,21 +14,25 @@
 
 Result should look like this:
 
-![](images/2023-11-23_15-43-01.jpg)
+![](../images/2023-11-23_15-43-01.jpg)
+
+## Estimating the Models
 
 ```{r}
 library(tidyverse)
-library(haven)
 library(plm)
 ```
 
 ```{r}
-DDCGdata <- read_dta("DDCGdata.dta")
-
+DDCGdata <- haven::read_dta("data/DDCGdata.dta")
 ```
 
 ```{r}
-pdf = pdata.frame(DDCGdata, index=c("country_name", "year"))
+pdf <- pdata.frame(DDCGdata, index=c("country_name", "year"))
+rm(DDCGdata)
+```
+
+```{r}
 head(pdf)
 ```
 
@@ -39,21 +46,6 @@ model1 <- plm(
   effect = "twoways"
   )
 summary(model1)
-```
-
-Long Run
-
-```{r}
-beta_hat <- coef(model1)["dem"]
-gamma_hat <- coef(model1)[2:5]
-
-long_run_effect <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect
-```
-
-```{r}
-pers <- sum(coef(model1)[2:5])
-pers
 ```
 
 ## TFP
@@ -84,10 +76,22 @@ summary(model3)
 
 ```{r}
 model4 <- plm(
-  ltrade2 ~ dem + plm::lag(y,1:4)+ plm::lag(y,1:4)+ plm::lag(ltrade2, 1:4), #the equation with country fixed effects
+  ltrade2 ~ dem + plm::lag(y,1:4)+ plm::lag(ltrade2, 1:4), #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
   )
 summary(model4)
+```
+
+### Tax
+
+```{r}
+model5 <- plm(
+  ltax ~ dem + plm::lag(y,1:4)+ plm::lag(ltax, 1:4), #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+summary(model5)
 ```

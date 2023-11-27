@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "today"
+  navbar:
+    left:
+      - text: "Mitschriften"
+        href: "2023-10-12-Intro.qmd"
+      - text: "Vortrag"
+        href: "vortrag/1-Notes.qmd"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Mitschriften"
+        contents: "/*"
+      - section: "Vortrag"
+        contents: "vortrag/*.qmd"
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

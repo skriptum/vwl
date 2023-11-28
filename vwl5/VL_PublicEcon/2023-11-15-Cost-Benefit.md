@@ -127,3 +127,75 @@ not part of the lectrúre, but very important ([Wiki-Link](https://en.wikipedia.
 - rich people = lower marginal utility
 - no symmetry in agents
 
+
+
+## Exercise
+
+Exercise 3: City of Metropolia
+
+Example: 
+
+- new Metro, 
+- Commuters save 15 min driving time, 5 days a week, 50 weeks
+- Housing Price goes up 10000€
+- Discount Rate 5%
+
+Math
+
+- Hours saved (valued today): $15*5*50 = 3750 min = 62.5h$
+- Present Discount Value: $\frac{ 62.5 }{0.05}$
+- set equal to house price increase: $\frac{ 62.5 }{0.5}= 10000 \to 8$
+- Value of hour saved = 8
+
+---
+
+Exercise 4
+
+- Country A: risk of death = 1/20000, Cost = 5000€
+- Country B: risk of death = 1/30000, Cost = 5600€
+
+Value of Life:
+
+- Risk Difference $\frac{ 1 }{20000}- \frac{ 1 }{30000} = \frac{ 1 }{60000}$
+- Willingness to pay: 600$
+- Value of Life: $\frac{ 600 }{1/60.000} = 36.000.000$
+
+---
+
+Exercise 5: Jellystone Park
+
+- City A: Price=5, Quantity = 10
+- City B: Price= 10, Quantity = 5
+
+Calculate individual demand curve:
+
+```
+
+
+a*5+b = 10
+a*10+b= 5
+
+a*10+b = a*5+b-5
+
+5a = -5
+a = -1
+
+-10 +b = 5 
+b = 15
+
+=> -1x+15 = p
+```
+
+![img](../images/2023-11-28_17-42-38.jpg)
+
+Consumer Surplus
+$$
+\frac{ (Price_{intercept} - Price_{market}) * Quantity}{2}
+$$
+
+- City A: $\frac{ (15-5) *10}{2} = 50$
+- City B: 12.5
+
+![img](../images/2023-11-28_17-45-04.jpg)
+
+ 

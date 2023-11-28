@@ -37,14 +37,6 @@ long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
 long_run_effect_2
 ```
 
-```{r}
-beta_hat <- coef(model2)["dem"]
-gamma_hat <- (coef(model2)[2:3])
-
-long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect_2
-```
-
 
 ```{r}
 beta_hat <- coef(model3)["dem"]

@@ -201,7 +201,7 @@ jeden Tag treffen Haushalte Entscheidungen aufgrund von Budgetbeschränkungen
 
 > **Budgetbeschränkung:** Grenzen, die den Entscheidungen eines Haushaltes gesetzt sind
 
-Notation: $P_X \* X + P_Y \* Y = I$
+Notation: $P_X * X + P_Y * Y = I$
 
 * $P_X$ = Preis von Gut X
 * $X$ = Gut X
@@ -258,7 +258,11 @@ Güter lassen sich in 3 Arten einteilen anhand der Effekte, die auf sie wirken
 
 Auswirkungen einer Preissenkung:
 
-| Gut | Einkommenseffekt EE | Substitutionseffekt SE | Wirkrichtung | Ergebnis | | ----------------- | ------------------- | --------------------------- | ----------------- | ----------------------------- | | *Normale Güter* | mehr kaufen | weniger kaufen | $SE + EE \\to$ | kaufen mehr | | *Inferiore Güter* | Mehr kaufen | weniger kaufen | $SE \\to \\gets EE$ | $SE > EE$ = weniger | | *Giffen Güter* | mehr kaufen | **deutlich** weniger kaufen | $SE \\to \\gets EE$ | $SE >> EE$ = deutlich weniger |
+| Gut | Einkommenseffekt EE | Substitutionseffekt SE | Wirkrichtung | Ergebnis |
+| ----------------- | ------------------- | --------------------------- | ----------------- | ----------------------------- |
+| *Normale Güter* | mehr kaufen | weniger kaufen | $SE + EE \\to$ | kaufen mehr |
+| *Inferiore Güter* | Mehr kaufen | weniger kaufen | $SE \\to \\gets EE$ | $SE > EE$ = weniger |
+| *Giffen Güter* | mehr kaufen | **deutlich** weniger kaufen | $SE \\to \\gets EE$ | $SE >> EE$ = deutlich weniger |
 
 ## Unternehmen
 
@@ -329,7 +333,10 @@ Bestandteile:
 
 politische Möglichkeiten eines Staates:
 
-| Finanzpolitik | Geldpolitik | | ------------------------------------------------------------ | ------------------------------------------------------------ | | Mittel der **Regierung** zur Anpassung der Ausgaben / Steuern | Mittel der **Zentralbank** zur Steuerung der Geldmenge / Zinssätze | | Mittel: Verschulden + Investieren oder Sparen und Steuern senken | Mittel: Festsetzung der Zinssätze, Kauf + Verkauf Staatsanleihen |
+| Finanzpolitik | Geldpolitik |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Mittel der **Regierung** zur Anpassung der Ausgaben / Steuern | Mittel der **Zentralbank** zur Steuerung der Geldmenge / Zinssätze |
+| Mittel: Verschulden + Investieren oder Sparen und Steuern senken | Mittel: Festsetzung der Zinssätze, Kauf + Verkauf Staatsanleihen |
 
 ## Volkseinkommen
 
@@ -401,7 +408,10 @@ Quellen des Wachstums:
 
 #### Strategien
 
-| Importsubstitution | Exportförderung | | ----------------------------------------------- | -------------------------------------------- | | Ersetzen der Importe durch heimische Produktion | Steigerung der Exporte der Industrie | | Durch Subventionen des industriellen Sektors | durch Wettbewerbsmaßnahmen wie Steuersenkung |
+| Importsubstitution | Exportförderung |
+| ----------------------------------------------- | -------------------------------------------- |
+| Ersetzen der Importe durch heimische Produktion | Steigerung der Exporte der Industrie | 
+| Durch Subventionen des industriellen Sektors | durch Wettbewerbsmaßnahmen wie Steuersenkung |
 
 #### Armut
 

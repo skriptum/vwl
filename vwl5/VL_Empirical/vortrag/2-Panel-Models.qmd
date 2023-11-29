@@ -5,7 +5,7 @@
 Regression Formulae:
 
 $$
-y_{ct} = \beta D_t + E_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+y_{ct} = \beta D_t + \sum_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
 $$
 
 Formula:

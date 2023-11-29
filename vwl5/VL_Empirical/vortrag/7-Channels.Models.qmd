@@ -1,6 +1,7 @@
 ---
-eval: false
+eval: true
 ---
+
 # Channels
 
 -   Log Investment = `loginvpc`
@@ -17,6 +18,24 @@ Result should look like this:
 ![](../images/2023-11-23_15-43-01.jpg)
 
 ## Estimating the Models
+
+$$
+var_{ct} = \beta D_t + \sum_{j=1}^4 \gamma_j y_{ct-j}+  \sum_{j=1}^4 \delta_j var_{ct-j} +\alpha_c + \delta_t + \epsilon_{ct}
+$$
+4 lags = preferred specification
+
+Formula:
+
+-   $var_{ct}$ = explaining variable
+-   $y_ct$ = log GDP per capita in country *c* at time *t*
+    -   column: `gdppercapitaconstant2000us`
+    -   already logged with `y`
+-   $D_{ct}$ = Dichotomous measure of democracy
+    -   column: `dem`
+-   *p* lags of log GDP for control
+-   $\alpha$ = country fixed effects
+-   $e$ = error
+
 
 ```{r}
 library(tidyverse)
@@ -184,15 +203,19 @@ pers <- round(pers, 2)
 
 ## Creating the Table
 
-```{r}
-library(stargazer)
-```
 
 ```{r}
-stargazer(model1, model2, model3, model4, model5, model6, model7, model8, 
+models <- c(model1, model2, model3, model4, model5, model6, model7, model8)
+
+stargazer::stargazer(
+          models, 
           type = "text", 
           title = "Channels", 
-          dep.var.labels = c("Log Investment", "Log TFP", "Index Economic Reforms", "Log Trade Share", "Log Primary Enrollment", "Log Secondary Enrollment", "Log Child Mortality", "Dummy Unrest"), 
+          dep.var.labels = c(
+              "Log Investment", "Log TFP", "Index Economic Reforms", 
+              "Log Trade Share", "Log Primary Enrollment", "Log Secondary Enrollment", 
+              "Log Child Mortality", "Dummy Unrest"
+              ), 
           omit.stat = c("f", "ser", "rsq", "adj.rsq"),
           keep = "dem",
           keep.stat = "N",
@@ -201,5 +224,5 @@ stargazer(model1, model2, model3, model4, model5, model6, model7, model8,
             c("Persistence", pers)
           )
 )
-````          
+```          
 

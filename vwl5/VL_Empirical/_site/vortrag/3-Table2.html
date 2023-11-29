@@ -257,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vortrag/7-Channels.html" class="sidebar-item-text sidebar-link">
+  <a href="../vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Channels</span></a>
   </div>
 </li>
@@ -352,42 +352,31 @@ Please cite as: </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="ot">&lt;-</span> <span class="fu">coef</span>(model2)[<span class="st">"dem"</span>]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>gamma_hat <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model2)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>])</span>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="ot">&lt;-</span> <span class="fu">coef</span>(model3)[<span class="st">"dem"</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>gamma_hat <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>])</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>long_run_effect_2 <span class="ot">&lt;-</span> beta_hat <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(gamma_hat))</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>long_run_effect_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     dem 
-19.59946 </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="ot">&lt;-</span> <span class="fu">coef</span>(model3)[<span class="st">"dem"</span>]</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>gamma_hat <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>])</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>long_run_effect_3 <span class="ot">&lt;-</span> beta_hat <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(gamma_hat))</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>long_run_effect_3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>long_run_effect_3 <span class="ot">&lt;-</span> beta_hat <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(gamma_hat))</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>long_run_effect_3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 21.23958 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="ot">&lt;-</span> <span class="fu">coef</span>(model4)[<span class="st">"dem"</span>]</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>gamma_hat <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">2</span><span class="sc">:</span><span class="dv">9</span>])</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>long_run_effect_4 <span class="ot">&lt;-</span> beta_hat <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(gamma_hat))</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>long_run_effect_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="ot">&lt;-</span> <span class="fu">coef</span>(model4)[<span class="st">"dem"</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>gamma_hat <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">2</span><span class="sc">:</span><span class="dv">9</span>])</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>long_run_effect_4 <span class="ot">&lt;-</span> beta_hat <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(gamma_hat))</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>long_run_effect_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 22.00799 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>lre <span class="ot">&lt;-</span> <span class="fu">c</span>(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>lre <span class="ot">&lt;-</span> <span class="fu">round</span>(lre, <span class="dv">3</span>)</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>lre</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>lre <span class="ot">&lt;-</span> <span class="fu">c</span>(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>lre <span class="ot">&lt;-</span> <span class="fu">round</span>(lre, <span class="dv">3</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>lre</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   dem    dem    dem    dem 
 35.587 19.599 21.240 22.008 </code></pre>
@@ -401,14 +390,14 @@ Please cite as: </code></pre>
 D_{pers} = E_{j=1}^p \hat\gamma_j
 \]</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>pers1 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model1)[<span class="dv">2</span>])</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>pers2 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model2)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>])</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>pers3 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model3)[<span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>])</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>pers4 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model4)[<span class="dv">2</span><span class="sc">:</span><span class="dv">9</span>])</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>pers <span class="ot">&lt;-</span> <span class="fu">c</span>(pers1, pers2, pers3, pers4)</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>pers <span class="ot">&lt;-</span> <span class="fu">round</span>(pers, <span class="dv">3</span>)</span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>pers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>pers1 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model1)[<span class="dv">2</span>])</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>pers2 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model2)[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>])</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>pers3 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model3)[<span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>])</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>pers4 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model4)[<span class="dv">2</span><span class="sc">:</span><span class="dv">9</span>])</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>pers <span class="ot">&lt;-</span> <span class="fu">c</span>(pers1, pers2, pers3, pers4)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>pers <span class="ot">&lt;-</span> <span class="fu">round</span>(pers, <span class="dv">3</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>pers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.973 0.967 0.963 0.960</code></pre>
 </div>
@@ -424,24 +413,24 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <section id="model-1" class="level3">
 <h3 class="anchored" data-anchor-id="model-1">Model 1</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model1)[<span class="st">"dem"</span>]</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model1)[<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model1)[<span class="st">"dem"</span>]</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model1)[<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">30</span>) {</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> effects[<span class="dv">1</span>]</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">30</span>) {</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> effects[<span class="dv">1</span>]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>eff_25_1 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>eff_25_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>eff_25_1 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>eff_25_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 17.79084 </code></pre>
@@ -451,26 +440,26 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <section id="model-2" class="level3">
 <h3 class="anchored" data-anchor-id="model-2">Model 2</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model2)[<span class="st">"dem"</span>]</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model2)[<span class="dv">2</span>])</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model2)[<span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model2)[<span class="st">"dem"</span>]</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model2)[<span class="dv">2</span>])</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model2)[<span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2, effect3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2, effect3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">30</span>) {</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">30</span>) {</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>eff_25_2 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>eff_25_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>eff_25_2 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>eff_25_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 13.80001 </code></pre>
@@ -480,29 +469,29 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <section id="model-3" class="level3">
 <h3 class="anchored" data-anchor-id="model-3">Model 3</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model3)[<span class="st">"dem"</span>]</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">2</span>])</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">3</span>])</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>lag3 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">4</span>])</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>lag4 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">5</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model3)[<span class="st">"dem"</span>]</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">2</span>])</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">3</span>])</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>lag3 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">4</span>])</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>lag4 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model3)[<span class="dv">5</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>effect4 <span class="ot">&lt;-</span> (effect3 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag3) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1,effect2, effect3, effect4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>effect4 <span class="ot">&lt;-</span> (effect3 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag3) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1,effect2, effect3, effect4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">5</span><span class="sc">:</span><span class="dv">30</span>) {</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> (effects[i<span class="dv">-3</span>] <span class="sc">*</span> lag3) <span class="sc">+</span> (effects[i<span class="dv">-4</span>] <span class="sc">*</span> lag4) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">5</span><span class="sc">:</span><span class="dv">30</span>) {</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> (effects[i<span class="dv">-3</span>] <span class="sc">*</span> lag3) <span class="sc">+</span> (effects[i<span class="dv">-4</span>] <span class="sc">*</span> lag4) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>eff_25_3 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>eff_25_3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>eff_25_3 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>eff_25_3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 16.89525 </code></pre>
@@ -512,46 +501,46 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <section id="model-4" class="level3">
 <h3 class="anchored" data-anchor-id="model-4">Model 4</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model4)[<span class="st">"dem"</span>]</span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">2</span>])</span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">3</span>])</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>lag3 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">4</span>])</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>lag4 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">5</span>])</span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>lag5 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">6</span>])</span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>lag6 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">7</span>])</span>
-<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>lag7 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">8</span>])</span>
-<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>lag8 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">9</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>dem_shortrun <span class="ot">&lt;-</span> <span class="fu">coef</span>(model4)[<span class="st">"dem"</span>]</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>lag1 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">2</span>])</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>lag2 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">3</span>])</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>lag3 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">4</span>])</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>lag4 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">5</span>])</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>lag5 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">6</span>])</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>lag6 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">7</span>])</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>lag7 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">8</span>])</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>lag8 <span class="ot">&lt;-</span> (<span class="fu">coef</span>(model4)[<span class="dv">9</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>effect4 <span class="ot">&lt;-</span> (effect3 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag3) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>effect5 <span class="ot">&lt;-</span> (effect4 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag4) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>effect6 <span class="ot">&lt;-</span> (effect5 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag5) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>effect7 <span class="ot">&lt;-</span> (effect6 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect5 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag5) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag6) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>effect8 <span class="ot">&lt;-</span> (effect7 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect6 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect5 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag5) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag6) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag7) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2, effect3, effect4, effect5, effect6, effect7, effect8)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>effect1 <span class="ot">&lt;-</span> dem_shortrun</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>effect2 <span class="ot">&lt;-</span> (effect1 <span class="sc">*</span> lag1) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>effect3 <span class="ot">&lt;-</span> (effect2 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag2) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>effect4 <span class="ot">&lt;-</span> (effect3 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag3) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>effect5 <span class="ot">&lt;-</span> (effect4 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag4) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>effect6 <span class="ot">&lt;-</span> (effect5 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag5) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>effect7 <span class="ot">&lt;-</span> (effect6 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect5 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag5) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag6) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>effect8 <span class="ot">&lt;-</span> (effect7 <span class="sc">*</span> lag1) <span class="sc">+</span> (effect6 <span class="sc">*</span> lag2) <span class="sc">+</span> (effect5 <span class="sc">*</span> lag3) <span class="sc">+</span> (effect4 <span class="sc">*</span> lag4) <span class="sc">+</span> (effect3 <span class="sc">*</span> lag5) <span class="sc">+</span> (effect2 <span class="sc">*</span> lag6) <span class="sc">+</span> (effect1 <span class="sc">*</span> lag7) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effect1, effect2, effect3, effect4, effect5, effect6, effect7, effect8)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">9</span><span class="sc">:</span><span class="dv">30</span>) {</span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> (effects[i<span class="dv">-3</span>] <span class="sc">*</span> lag3) <span class="sc">+</span> (effects[i<span class="dv">-4</span>] <span class="sc">*</span> lag4) <span class="sc">+</span> (effects[i<span class="dv">-5</span>] <span class="sc">*</span> lag5) <span class="sc">+</span> (effects[i<span class="dv">-6</span>] <span class="sc">*</span> lag6) <span class="sc">+</span> (effects[i<span class="dv">-7</span>] <span class="sc">*</span> lag7) <span class="sc">+</span> (effects[i<span class="dv">-8</span>] <span class="sc">*</span> lag8) <span class="sc">+</span> dem_shortrun</span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">9</span><span class="sc">:</span><span class="dv">30</span>) {</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  eff <span class="ot">&lt;-</span> (effects[i<span class="dv">-1</span>] <span class="sc">*</span> lag1) <span class="sc">+</span> (effects[i<span class="dv">-2</span>] <span class="sc">*</span> lag2) <span class="sc">+</span> (effects[i<span class="dv">-3</span>] <span class="sc">*</span> lag3) <span class="sc">+</span> (effects[i<span class="dv">-4</span>] <span class="sc">*</span> lag4) <span class="sc">+</span> (effects[i<span class="dv">-5</span>] <span class="sc">*</span> lag5) <span class="sc">+</span> (effects[i<span class="dv">-6</span>] <span class="sc">*</span> lag6) <span class="sc">+</span> (effects[i<span class="dv">-7</span>] <span class="sc">*</span> lag7) <span class="sc">+</span> (effects[i<span class="dv">-8</span>] <span class="sc">*</span> lag8) <span class="sc">+</span> dem_shortrun</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  effects <span class="ot">&lt;-</span> <span class="fu">c</span>(effects, eff)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>eff_25_4 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>eff_25_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>eff_25_4 <span class="ot">&lt;-</span> effects[<span class="dv">25</span>]</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>eff_25_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     dem 
 17.71534 </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>eff_25 <span class="ot">&lt;-</span> <span class="fu">c</span>(eff_25_1, eff_25_2, eff_25_3, eff_25_4)</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>eff_25 <span class="ot">&lt;-</span> <span class="fu">round</span>(eff_25, <span class="dv">3</span>)</span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>eff_25</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>eff_25 <span class="ot">&lt;-</span> <span class="fu">c</span>(eff_25_1, eff_25_2, eff_25_3, eff_25_4)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>eff_25 <span class="ot">&lt;-</span> <span class="fu">round</span>(eff_25, <span class="dv">3</span>)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>eff_25</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   dem    dem    dem    dem 
 17.791 13.800 16.895 17.715 </code></pre>
@@ -564,23 +553,23 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <p>Recreating the Table 2 from the ANRR Paper with the stargazer package and the models from above</p>
 <p>with - persistence for each model - long run effect - effect after 25 years - observations - countries in sample - and the standard regression output</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>models <span class="ot">&lt;-</span> <span class="fu">list</span>(model1, model2, model3, model4)</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(models, </span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"text"</span>, <span class="co">#change to "text" for easy viewing in console</span></span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"Table 2: Effect of Democracy on GDP Growth"</span>, <span class="co"># title</span></span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="st">"GDP Growth"</span>,  </span>
-<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> <span class="fu">c</span>(<span class="st">"Democracy"</span>),</span>
-<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">omit.stat =</span> <span class="fu">c</span>(<span class="st">"ser"</span>, <span class="st">"f"</span>,<span class="st">"adj.rsq"</span>), </span>
-<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">keep.stat =</span> <span class="fu">c</span>(<span class="st">"n"</span>, <span class="st">"N"</span>), <span class="co">#keep observations</span></span>
-<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">model.numbers =</span> <span class="cn">FALSE</span>, <span class="co"># remove model numbers (are the same as column labels)</span></span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">column.labels =</span> <span class="fu">c</span>(<span class="st">"(1)"</span>, <span class="st">"(2)"</span>, <span class="st">"(3)"</span>, <span class="st">"(4)"</span>), <span class="co"># add column labels</span></span>
-<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">add.lines =</span> <span class="fu">list</span>( <span class="co"># add lines for persistence, long run effect and effect after 25 years</span></span>
-<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Persistence: "</span>, pers[<span class="dv">1</span>], pers[<span class="dv">2</span>], pers[<span class="dv">3</span>], pers[<span class="dv">4</span>]), </span>
-<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Long run effect: "</span>, lre[<span class="dv">1</span>], lre[<span class="dv">2</span>], lre[<span class="dv">3</span>], lre[<span class="dv">4</span>]),</span>
-<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Effect after 25 years: "</span>, eff_25[<span class="dv">1</span>], eff_25[<span class="dv">2</span>], eff_25[<span class="dv">3</span>], eff_25[<span class="dv">4</span>])</span>
-<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>            )</span>
-<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>models <span class="ot">&lt;-</span> <span class="fu">list</span>(model1, model2, model3, model4)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(models, </span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"text"</span>, <span class="co">#change to "text" for easy viewing in console</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"Table 2: Effect of Democracy on GDP Growth"</span>, <span class="co"># title</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="st">"GDP Growth"</span>,  </span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> <span class="fu">c</span>(<span class="st">"Democracy"</span>),</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">omit.stat =</span> <span class="fu">c</span>(<span class="st">"ser"</span>, <span class="st">"f"</span>,<span class="st">"adj.rsq"</span>), </span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">keep.stat =</span> <span class="fu">c</span>(<span class="st">"n"</span>, <span class="st">"N"</span>), <span class="co">#keep observations</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">model.numbers =</span> <span class="cn">FALSE</span>, <span class="co"># remove model numbers (are the same as column labels)</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">column.labels =</span> <span class="fu">c</span>(<span class="st">"(1)"</span>, <span class="st">"(2)"</span>, <span class="st">"(3)"</span>, <span class="st">"(4)"</span>), <span class="co"># add column labels</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">add.lines =</span> <span class="fu">list</span>( <span class="co"># add lines for persistence, long run effect and effect after 25 years</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Persistence: "</span>, pers[<span class="dv">1</span>], pers[<span class="dv">2</span>], pers[<span class="dv">3</span>], pers[<span class="dv">4</span>]), </span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Long run effect: "</span>, lre[<span class="dv">1</span>], lre[<span class="dv">2</span>], lre[<span class="dv">3</span>], lre[<span class="dv">4</span>]),</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Effect after 25 years: "</span>, eff_25[<span class="dv">1</span>], eff_25[<span class="dv">2</span>], eff_25[<span class="dv">3</span>], eff_25[<span class="dv">4</span>])</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Table 2: Effect of Democracy on GDP Growth
@@ -627,7 +616,7 @@ Note:                             *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></p
 </div>
 </div>
 <p>Save the table as a tex file</p>
-% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com % Date and time: Mon, Nov 27, 2023 - 15:47:00
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com % Date and time: Wed, Nov 29, 2023 - 07:28:00
 
 
 </section>

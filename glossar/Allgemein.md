@@ -92,3 +92,7 @@ Kritisiert, da er viele Transaktionen nicht abbildet, bspw. Care-Arbeit, Umweltd
 ### Inflation
 
 > **Inflation:** Inflation bezeichnet den anhaltenden Anstieg des allgemeinen Preisniveaus von Gütern und Dienstleistungen in einer Volkswirtschaft über einen bestimmten Zeitraum. Sie führt dazu, dass das Geld an Wert verliert, da mit der gleichen Geldmenge weniger Güter erworben werden können. Moderate Inflation wird von vielen Zentralbanken angestrebt, während zu hohe Inflation negative Auswirkungen auf die Kaufkraft und die wirtschaftliche Stabilität haben kann.
+
+
+
+<!-- adverse Selektion, moral Hazard-->

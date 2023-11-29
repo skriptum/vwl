@@ -14,3 +14,6 @@ venv
 .Rproj.user
 *.rar
 *.dta
+vwl5/VL_Empirical/_site
+.quarto
+.Rproj.user

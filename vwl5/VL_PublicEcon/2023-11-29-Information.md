@@ -80,3 +80,9 @@ in crisis, higher prices for 1., healthy people change
 4. Unemployment Insurance (1927)
 5. Long-term Care Insurance (1995)
 
+German System
+
+- solidarity
+- mandatory
+- Benefit is tied to certain event (unemployment, sickness, needs care)
+

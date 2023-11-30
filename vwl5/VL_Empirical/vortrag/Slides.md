@@ -2,6 +2,17 @@
 
 [TOC]
 
+Figures
+
+- Figure DIP
+- Figure DEM
+- figure TREND
+
+Tables
+
+- Table 2 = DLPM
+- Table 7 = Channels
+
 ---
 
 ## About the Paper
@@ -33,7 +44,7 @@ Why it is interesting:
 
 Direct OLS is without much use
 
-[FIGURE 1]
+[FIGURE DIP]
 
 ---
 
@@ -56,9 +67,11 @@ Democracy Data Sources
 
 Democracy Measure
 
-- dichotomous (either 0 or 1)
+- dichotomous / binary (either 0 or 1)
 - 1960 - 2010
 - 184 Countries
+
+[FIGURE DEM]
 
 ---
 
@@ -82,7 +95,7 @@ R Code
 model3 <- plm(
   y ~ dem + lag1 + lag2 + lag3 + lag4, #equation with 4 lags
   model="within", #The fixed effects within estimator
-  data = pdf, 
+  data = pdf, #panel data frame
   effect = "twoways" #country and year fixed effects
   )
 ```
@@ -99,7 +112,7 @@ See Appendix for Calculation of *long run effects* -> & *short-run effects* ->
 
 ## Results Figure
 
-[FIGURE 2]
+[FIGURE TREND]
 
 See Appendix for Calculation of the dynamics ->
 
@@ -111,6 +124,10 @@ Question: What are the main channels that impact growth
 
 [TABLE 7]
 
+Democratization => Economic reforms, school enrolment, more taxes
+
+=> **state capacity & human capital building**
+
 See Appendix for Calculation
 
 ---
@@ -118,10 +135,31 @@ See Appendix for Calculation
 ## Critique
 
 - Dichotomous Measure of Democracy [@pelkeReanalysingLinkDemocracy2023]
-- Short Time Frame <!-- lot of democratizations around 1990s-->
+- Short Time Frame 
 - Sensitivity to Sample Selection [@eberhardtDemocracyDoesCause2019]
 
 
+
+::: notes
+
+*Dichotomous Measure of Democracy*
+
+- not binary, scale (democracy, illiberate democracy, authoritarian rule, dictatorship)
+- newer analysis does it (Lars Pelke: Varieties of Democracy)
+
+*Short Time Frame*
+
+- only 50 years
+- only 1 of the 3 waves of democratization 
+
+*Sensitivity to Sample Selectio*
+
+- depends heavily on the eastern communist states (+ short time)
+- Markus Eberhardt Comment: 
+    - random drop of observations (ca 5%)
+    - => effect only half
+
+:::
 
 ---
 
@@ -133,7 +171,25 @@ See Appendix for Calculation
 
 ## Discussion Questions
 
+- Are there alternative political frameworks that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?
+- Could there be non-linear relationships between democracy and economic growth, e.g optimal level of democracy? 
+- 
 
+::: notes
+
+*Are there alternative political frameworks that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
+
+- elephant in the room = China (achieved both)
+- communist states in general = high state capacity
+
+
+
+Could there be non-linear relationships between democracy and economic growth, e.g optimal level of democracy? 
+
+- a level of democracy beyond which growth is hurt?
+- for example monetary policy = undemocratic in most democracy today
+
+:::
 
 ---
 

@@ -6,6 +6,7 @@ Package Imports:
 ```{r}
 library(ggplot2)
 library(plm)
+library(plotly)
 ```
 
 Model Imports
@@ -96,22 +97,20 @@ trend
 
 Plot the trend estimate and the confidence intervals using ggplot()
 ```{r}
-ggplot(trend, aes(x = 1:30, y = effects)) +
+fig <- ggplot(trend, aes(x = 1:30, y = effects)) +
   geom_line() + #trend estimate
   geom_line(aes(y = upper), linetype = "dashed") + #upper confidence interval
   geom_line(aes(y = lower), linetype = "dashed") + #lower confidence interval
-  geom_hline(yintercept = 0, color="gray") + #zero line
-  geom_hline(yintercept = 10, color="gray") + #10 GDP per capita log point mark
-  geom_hline(yintercept = 20, color="gray") + #20 GDP per capita log point mark
-  geom_hline(yintercept = 30, color="gray") + #30 GDP per capita log point mark
+  geom_hline(yintercept = seq(0,40,10), color="gray") + # horizontal lines 
   labs(
     x = "Years since Democratization",  #x axis label
-    y = "Change in GDP per Capita Log Points") + #y axis label
-  theme_classic() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+    y = "Change in GDP per Capita Log Points") +  #y axis label
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + # disable the grid
+  theme_classic() #for boring style like in paper
 ```
 
-Save the plot
+Save the plot and preview it
 ```{r}
-ggsave("output/figure2.png", width = 8, height = 6, units = "in")
+ggsave("output/FigureTrend.png",fig, width = 8, height = 6, units = "in")
+ggplotly(fig)
 ```

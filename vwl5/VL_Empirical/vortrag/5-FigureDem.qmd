@@ -1,0 +1,41 @@
+# Figure Democratization / Years
+
+a small figure from the dataset showing the number of democratization events in a given year
+
+## Imports
+
+```{r}
+library(tidyverse)
+library(plotly)
+```
+
+```{r}
+df <- haven::read_dta("data/DDCGdata.dta")
+```
+
+## Clean and build data
+
+```{r}
+d_df <- df %>% 
+  select(year, yeardem) %>% #filter columns year and indicator of democratization
+  filter(yeardem == 1) %>% #filter out democratization events
+  group_by(year) %>% #group by year
+  summarise(count = n()) #count number of events in a given year
+```
+
+## Plot
+
+```{r}
+fig <- ggplot(d_df, aes(x = year, y = count)) +
+  geom_col() + # add line
+  labs(x = "Year", y = "Number of Democratization Events") +
+  theme_classic()  + 
+  theme(panel.grid.major.y = element_line(color = "lightgray"))
+```
+
+Save the Figure and preview the Figure (interactive with `ggplotly()`)
+
+```{r}
+ggsave("output/figureDem.png", fig, width = 6, height = 4, dpi = 300)
+ggplotly(fig)
+```

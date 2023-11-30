@@ -205,11 +205,13 @@ pers <- round(pers, 2)
 
 
 ```{r}
+#| output: asis
 models <- c(model1, model2, model3, model4, model5, model6, model7, model8)
 
 stargazer::stargazer(
-          models, 
-          type = "text", 
+          model1, model2, model3, model4, model5, model6, model7, model8,
+          type = "html", 
+          out = "output/Table7.html",
           title = "Channels", 
           dep.var.labels = c(
               "Log Investment", "Log TFP", "Index Economic Reforms", 

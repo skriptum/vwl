@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>today – table2</title>
+<title>Empirical Economics with R – table2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,6 +93,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -100,38 +110,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked">
 
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">today</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="../2023-10-12-Intro.html" rel="" target="" aria-current="page">
- <span class="menu-text">Mitschriften</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../vortrag/1-Notes.html" rel="" target="">
- <span class="menu-text">Vortrag</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -140,21 +123,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vortrag/1-Notes.html">Vortrag</a></li><li class="breadcrumb-item"><a href="../vortrag/3-Table2.html">Table 2</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Empirical Economics with R</a> 
+    </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -199,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../2023-11-16-TimeSeries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">16.11.2023 Time Series &amp; other things</span></a>
+ <span class="menu-text">16.11.2023 Time Series</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -387,7 +367,7 @@ Please cite as: </code></pre>
 <h2 class="anchored" data-anchor-id="persistence">Persistence</h2>
 <p>Calculate the persistence of Democracy for the different models with this Formula:</p>
 <p><span class="math display">\[
-D_{pers} = E_{j=1}^p \hat\gamma_j
+D_{pers} = \sum_{j=1}^p \hat\gamma_j
 \]</span></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>pers1 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">coef</span>(model1)[<span class="dv">2</span>])</span>
@@ -552,71 +532,415 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <h2 class="anchored" data-anchor-id="table-2-1">Table 2</h2>
 <p>Recreating the Table 2 from the ANRR Paper with the stargazer package and the models from above</p>
 <p>with - persistence for each model - long run effect - effect after 25 years - observations - countries in sample - and the standard regression output</p>
-<div class="cell">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>models <span class="ot">&lt;-</span> <span class="fu">list</span>(model1, model2, model3, model4)</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(models, </span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"text"</span>, <span class="co">#change to "text" for easy viewing in console</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">type =</span> <span class="st">"html"</span>, <span class="co">#change to "text" for easy viewing in console</span></span>
 <span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"Table 2: Effect of Democracy on GDP Growth"</span>, <span class="co"># title</span></span>
 <span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="st">"GDP Growth"</span>,  </span>
 <span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> <span class="fu">c</span>(<span class="st">"Democracy"</span>),</span>
 <span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">omit.stat =</span> <span class="fu">c</span>(<span class="st">"ser"</span>, <span class="st">"f"</span>,<span class="st">"adj.rsq"</span>), </span>
-<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">keep.stat =</span> <span class="fu">c</span>(<span class="st">"n"</span>, <span class="st">"N"</span>), <span class="co">#keep observations</span></span>
-<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">model.numbers =</span> <span class="cn">FALSE</span>, <span class="co"># remove model numbers (are the same as column labels)</span></span>
-<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">column.labels =</span> <span class="fu">c</span>(<span class="st">"(1)"</span>, <span class="st">"(2)"</span>, <span class="st">"(3)"</span>, <span class="st">"(4)"</span>), <span class="co"># add column labels</span></span>
-<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">add.lines =</span> <span class="fu">list</span>( <span class="co"># add lines for persistence, long run effect and effect after 25 years</span></span>
-<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Persistence: "</span>, pers[<span class="dv">1</span>], pers[<span class="dv">2</span>], pers[<span class="dv">3</span>], pers[<span class="dv">4</span>]), </span>
-<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Long run effect: "</span>, lre[<span class="dv">1</span>], lre[<span class="dv">2</span>], lre[<span class="dv">3</span>], lre[<span class="dv">4</span>]),</span>
-<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Effect after 25 years: "</span>, eff_25[<span class="dv">1</span>], eff_25[<span class="dv">2</span>], eff_25[<span class="dv">3</span>], eff_25[<span class="dv">4</span>])</span>
-<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>            )</span>
-<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Table 2: Effect of Democracy on GDP Growth
-=============================================================
-                                Dependent variable:          
-                       --------------------------------------
-                                     GDP Growth              
-                         (1)       (2)       (3)       (4)   
--------------------------------------------------------------
-Democracy              0.973*** 0.651***  0.787***  0.887*** 
-                       (0.240)   (0.229)   (0.228)   (0.239) 
-                                                             
-lag1                   0.973*** 1.266***  1.238***  1.233*** 
-                       (0.003)   (0.012)   (0.013)   (0.013) 
-                                                             
-lag2                            -0.300*** -0.207*** -0.214***
-                                 (0.012)   (0.020)   (0.021) 
-                                                             
-lag3                                       -0.026    -0.021  
-                                           (0.019)   (0.021) 
-                                                             
-lag4                                      -0.043***  -0.039* 
-                                           (0.012)   (0.020) 
-                                                             
-lag5                                                 -0.019  
-                                                     (0.020) 
-                                                             
-lag6                                                  0.011  
-                                                     (0.020) 
-                                                             
-lag7                                                  0.015  
-                                                     (0.019) 
-                                                             
-lag8                                                 -0.007  
-                                                     (0.012) 
-                                                             
--------------------------------------------------------------
-Persistence:            0.973     0.967     0.963     0.96   
-Long run effect:        35.587   19.599     21.24    22.008  
-Effect after 25 years:  17.791    13.8     16.895    17.715  
-Observations            6,790     6,642     6,336     5,688  
-=============================================================
-Note:                             *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
-</div>
-</div>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">keep.stat =</span> <span class="fu">c</span>(<span class="st">"n"</span>, <span class="st">"N"</span>), <span class="co">#keep observations,</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">omit =</span> <span class="fu">c</span>(<span class="st">"lag6"</span>, <span class="st">"lag7"</span>, <span class="st">"lag8"</span>),</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">model.numbers =</span> <span class="cn">FALSE</span>, <span class="co"># remove model numbers (are the same as column labels)</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">column.labels =</span> <span class="fu">c</span>(<span class="st">"(1)"</span>, <span class="st">"(2)"</span>, <span class="st">"(3)"</span>, <span class="st">"(4)"</span>), <span class="co"># add column labels</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>          <span class="at">add.lines =</span> <span class="fu">list</span>( <span class="co"># add lines for persistence, long run effect and effect after 25 years</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Persistence: "</span>, pers[<span class="dv">1</span>], pers[<span class="dv">2</span>], pers[<span class="dv">3</span>], pers[<span class="dv">4</span>]), </span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Long run effect: "</span>, lre[<span class="dv">1</span>], lre[<span class="dv">2</span>], lre[<span class="dv">3</span>], lre[<span class="dv">4</span>]),</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="st">"Effect after 25 years: "</span>, eff_25[<span class="dv">1</span>], eff_25[<span class="dv">2</span>], eff_25[<span class="dv">3</span>], eff_25[<span class="dv">4</span>])</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<table style="text-align:center">
+<caption>
+<strong>Table 2: Effect of Democracy on GDP Growth</strong>
+</caption>
+<tbody><tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+GDP Growth
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Democracy
+</td>
+<td>
+0.973<sup>***</sup>
+</td>
+<td>
+0.651<sup>***</sup>
+</td>
+<td>
+0.787<sup>***</sup>
+</td>
+<td>
+0.887<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.240)
+</td>
+<td>
+(0.229)
+</td>
+<td>
+(0.228)
+</td>
+<td>
+(0.239)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lag1
+</td>
+<td>
+0.973<sup>***</sup>
+</td>
+<td>
+1.266<sup>***</sup>
+</td>
+<td>
+1.238<sup>***</sup>
+</td>
+<td>
+1.233<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.012)
+</td>
+<td>
+(0.013)
+</td>
+<td>
+(0.013)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lag2
+</td>
+<td>
+</td>
+<td>
+-0.300<sup>***</sup>
+</td>
+<td>
+-0.207<sup>***</sup>
+</td>
+<td>
+-0.214<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.012)
+</td>
+<td>
+(0.020)
+</td>
+<td>
+(0.021)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lag3
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.026
+</td>
+<td>
+-0.021
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.019)
+</td>
+<td>
+(0.021)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lag4
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.043<sup>***</sup>
+</td>
+<td>
+-0.039<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.012)
+</td>
+<td>
+(0.020)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lag5
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.019
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.020)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Persistence:
+</td>
+<td>
+0.973
+</td>
+<td>
+0.967
+</td>
+<td>
+0.963
+</td>
+<td>
+0.96
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Long run effect:
+</td>
+<td>
+35.587
+</td>
+<td>
+19.599
+</td>
+<td>
+21.24
+</td>
+<td>
+22.008
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Effect after 25 years:
+</td>
+<td>
+17.791
+</td>
+<td>
+13.8
+</td>
+<td>
+16.895
+</td>
+<td>
+17.715
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+6,790
+</td>
+<td>
+6,642
+</td>
+<td>
+6,336
+</td>
+<td>
+5,688
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="4" style="text-align:right">
+<sup><em></em></sup><em>p&lt;0.1; <sup><strong></strong></sup><strong>p&lt;0.05; <sup></sup></strong></em>p&lt;0.01
+</td>
+</tr>
+
+</tbody></table>
 <p>Save the table as a tex file</p>
-% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com % Date and time: Wed, Nov 29, 2023 - 07:28:00
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com % Date and time: Thu, Nov 30, 2023 - 10:43:34
 
 
 </section>

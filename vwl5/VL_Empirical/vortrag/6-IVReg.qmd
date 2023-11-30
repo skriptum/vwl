@@ -23,33 +23,70 @@ Estimated with 2SLS Regression
 
 ```{r}
 library(tidyverse)
-library(haven)
-library(AER)
 library(plm)
 ```
 
 ```{r}
-DDCGdata <- read_dta("data/DDCGdata.dta")
+DDCGdata <- haven::read_dta("data/DDCGdata.dta")
 
-df <- DDCGdata %>%
-  dplyr::select(1:100) %>%
-  dplyr::mutate(loggdp = log(gdppercapitaconstant2000us))
-  
+pdf <- pdata.frame(DDCGdata, index=c("country_name", "year"))
 rm(DDCGdata)
-```
 
-```{r}
-pdf = pdata.frame(df, index=c("country_name", "year"))
 head(pdf)
 ```
 
+Use PLM and IVReg type formula for estimation, because IVReg does not work with panel data!
+
+Model 1 = 1 Lag of the Instrument
 ```{r}
-iv_model <- ivreg(
-    y ~ dem + lag(y, 1) + lag(y, 2) + lag(y, 3) + lag(y, 4)+ factor(country_name) + factor(year) | 
-      lag(demreg,1) + lag(y, 1) + lag(y, 2) + lag(y, 3) + lag(y, 4)+ factor(country_name) + factor(year),
-    data=pdf
+iv_model_1 <- plm(
+    y ~ dem + plm::lag(y, 1:4) | 
+    plm::lag(demreg,1) + plm::lag(y, 1:4),
+    data=pdf,
+    effect = "twoways",
     )
-summary(iv_model)
+
+summary(iv_model_1)
+```
+Model 2 = 4 Lags of the Instrument
+```{r}
+iv_model_2 <- plm(
+    y ~ dem + plm::lag(y, 1:4) | 
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4),
+    data=pdf,
+    effect = "twoways",
+    )
+
+summary(iv_model_2)
 ```
 
-Estimate of Democracy = should be somithing like .996
+Model 3 = Dummies for Soviet Countries
+```{r}
+iv_model_3 <- plm(
+    y ~ dem + plm::lag(y, 1:4) + sov1 + sov2 + sov3 +sov4| 
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4) + sov1 + sov2 + sov3 +sov4,
+    data=pdf,
+    effect = "twoways",
+    )
+
+summary(iv_model_3)
+```
+
+```{r}
+iv_model_4 <- plm(
+    y ~ dem + plm::lag(y, 1:4) + rtrend2:rtrend7 | 
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4) + rtrend2:rtrend7,
+    data=pdf,
+    effect = "twoways",
+    model = "within"
+    )
+
+summary(iv_model_4)
+```
+
+## Table
+
+```{r}
+library(stargazer)
+stargazer(iv_model_1, iv_model_2, iv_model_3, iv_model_4, 
+          type = "text")

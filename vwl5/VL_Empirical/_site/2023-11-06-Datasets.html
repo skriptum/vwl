@@ -94,6 +94,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -255,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vortrag/7-Channels.html" class="sidebar-item-text sidebar-link">
+  <a href="./vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Channels</span></a>
   </div>
 </li>
@@ -315,26 +318,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">merge</span>(alldata[[<span class="dv">1</span>]], alldata[[<span class="dv">2</span>]])</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  shortnam   avexpr logpgp95   loghjypl baseco euro1900 cons1 democ00a cons00a
-1      AFG       NA       NA         NA     NA        0     1        1       1
-2      AGO 5.363636 7.770645 -3.4112477      1        8     3        0       1
-3      ARE 7.181818 9.804219         NA     NA        0    NA       NA      NA
-4      ARG 6.386364 9.133459 -0.8722738      1       60     1        3       3
-5      ARM       NA 7.682482         NA     NA        0    NA       NA      NA
-6      AUS 9.318182 9.897972 -0.1707883      1       98     7       10       7
-  extmort4   logem4 africa  lat_abst other asia
-1    93.70 4.540098      0 0.3666667     0    1
-2   280.00 5.634789      1 0.1366667     0    0
-3       NA       NA      0 0.2666667     0    1
-4    68.90 4.232656      0 0.3777778     0    0
-5       NA       NA      0 0.4444444     0    1
-6     8.55 2.145931      0 0.3000000     1    0</code></pre>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["shortnam"],"name":[1],"type":["chr"],"align":["left"]},{"label":["avexpr"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["logpgp95"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["loghjypl"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["baseco"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["euro1900"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["cons1"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["democ00a"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["cons00a"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["extmort4"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["logem4"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["africa"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["lat_abst"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["other"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["asia"],"name":[15],"type":["dbl"],"align":["right"]}],"data":[{"1":"AFG","2":"NA","3":"NA","4":"NA","5":"NA","6":"0","7":"1","8":"1","9":"1","10":"93.70","11":"4.540098","12":"0","13":"0.3666667","14":"0","15":"1","_rn_":"1"},{"1":"AGO","2":"5.363636","3":"7.770645","4":"-3.4112477","5":"1","6":"8","7":"3","8":"0","9":"1","10":"280.00","11":"5.634789","12":"1","13":"0.1366667","14":"0","15":"0","_rn_":"2"},{"1":"ARE","2":"7.181818","3":"9.804219","4":"NA","5":"NA","6":"0","7":"NA","8":"NA","9":"NA","10":"NA","11":"NA","12":"0","13":"0.2666667","14":"0","15":"1","_rn_":"3"},{"1":"ARG","2":"6.386364","3":"9.133459","4":"-0.8722738","5":"1","6":"60","7":"1","8":"3","9":"3","10":"68.90","11":"4.232656","12":"0","13":"0.3777778","14":"0","15":"0","_rn_":"4"},{"1":"ARM","2":"NA","3":"7.682482","4":"NA","5":"NA","6":"0","7":"NA","8":"NA","9":"NA","10":"NA","11":"NA","12":"0","13":"0.4444444","14":"0","15":"1","_rn_":"5"},{"1":"AUS","2":"9.318182","3":"9.897972","4":"-0.1707883","5":"1","6":"98","7":"7","8":"10","9":"7","10":"8.55","11":"2.145931","12":"0","13":"0.3000000","14":"1","15":"0","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 <p>Search for the Base country sample (should be 64)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data[<span class="fu">which</span>(data[,<span class="st">"baseco"</span>]<span class="sc">==</span><span class="dv">1</span>),])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data[<span class="fu">which</span>(data[,<span class="st">"baseco"</span>]<span class="sc">==</span><span class="dv">1</span>),])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 64</code></pre>
 </div>
@@ -344,8 +339,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="importing-datasets">Importing Datasets</h2>
 <p>Imports</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'openxlsx' was built under R version 4.1.2</code></pre>
 </div>
@@ -353,23 +348,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="csv" class="level3">
 <h3 class="anchored" data-anchor-id="csv">CSV</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">"data/example_datasets/variable_names.csv"</span>, <span class="at">sep=</span><span class="st">";"</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  short_name                                             long_name
-1    cons00a                       Constraint on executive in 1900
-2   euro1900                          European settlements in 1900
-3   democ00a                                     Democracy in 1900
-4      cons1 Constraint on executive in first year of independence
-5     democ1               Democracy in first year of independence
-6     logem4                     Log of European Settler Mortality
-                                                                                                           comment
-1                                                                                                                 
-2                                                                                                                 
-3 European settlements is percent of population that was of European descent in 1900. (notes for Table 3, p. 1385)
-4                                                                                                                 
-5                                                                                                                 
-6                                                                                                                 </code></pre>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">"data/example_datasets/variable_names.csv"</span>, <span class="at">sep=</span><span class="st">";"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["short_name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["long_name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["comment"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"cons00a","2":"Constraint on executive in 1900","3":"","_rn_":"1"},{"1":"euro1900","2":"European settlements in 1900","3":"","_rn_":"2"},{"1":"democ00a","2":"Democracy in 1900","3":"European settlements is percent of population that was of European descent in 1900. (notes for Table 3, p. 1385)","_rn_":"3"},{"1":"cons1","2":"Constraint on executive in first year of independence","3":"","_rn_":"4"},{"1":"democ1","2":"Democracy in first year of independence","3":"","_rn_":"5"},{"1":"logem4","2":"Log of European Settler Mortality","3":"","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 </section>
@@ -377,16 +364,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="stata-.dta">Stata .dta</h3>
 <p>Important: Newer Stata Datasets (&gt;13) use <code>read.dta13()</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_stata <span class="ot">=</span> <span class="fu">read.dta</span>(<span class="st">"data/example_datasets/maketable2.dta"</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_stata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  shortnam africa  lat_abst   avexpr logpgp95 other asia   loghjypl baseco
-1      AFG      0 0.3666667       NA       NA     0    1         NA     NA
-2      AGO      1 0.1366667 5.363636 7.770645     0    0 -3.4112477      1
-3      ARE      0 0.2666667 7.181818 9.804219     0    1         NA     NA
-4      ARG      0 0.3777778 6.386364 9.133459     0    0 -0.8722738      1
-5      ARM      0 0.4444444       NA 7.682482     0    1         NA     NA
-6      AUS      0 0.3000000 9.318182 9.897972     1    0 -0.1707883      1</code></pre>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_stata <span class="ot">=</span> <span class="fu">read.dta</span>(<span class="st">"data/example_datasets/maketable2.dta"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_stata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["shortnam"],"name":[1],"type":["chr"],"align":["left"]},{"label":["africa"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["lat_abst"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["avexpr"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["logpgp95"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["other"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["asia"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["loghjypl"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["baseco"],"name":[9],"type":["dbl"],"align":["right"]}],"data":[{"1":"AFG","2":"0","3":"0.3666667","4":"NA","5":"NA","6":"0","7":"1","8":"NA","9":"NA","_rn_":"1"},{"1":"AGO","2":"1","3":"0.1366667","4":"5.363636","5":"7.770645","6":"0","7":"0","8":"-3.4112477","9":"1","_rn_":"2"},{"1":"ARE","2":"0","3":"0.2666667","4":"7.181818","5":"9.804219","6":"0","7":"1","8":"NA","9":"NA","_rn_":"3"},{"1":"ARG","2":"0","3":"0.3777778","4":"6.386364","5":"9.133459","6":"0","7":"0","8":"-0.8722738","9":"1","_rn_":"4"},{"1":"ARM","2":"0","3":"0.4444444","4":"NA","5":"7.682482","6":"0","7":"1","8":"NA","9":"NA","_rn_":"5"},{"1":"AUS","2":"0","3":"0.3000000","4":"9.318182","5":"9.897972","6":"1","7":"0","8":"-0.1707883","9":"1","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 </section>
@@ -394,16 +380,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="excel-.xlsx">Excel .xlsx</h3>
 <p>Important: Define Sheet and start rows!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">=</span> <span class="fu">read.xlsx</span>(<span class="st">"data/example_datasets/61111-0002.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"data_ed_HA"</span>, <span class="at">startRow=</span><span class="dv">1</span>, <span class="at">colNames=</span>T)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  Month  CPI
-1 33239 64.0
-2 33270 64.3
-3 33298 64.3
-4 33329 64.5
-5 33359 64.7
-6 33390 65.1</code></pre>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">=</span> <span class="fu">read.xlsx</span>(<span class="st">"data/example_datasets/61111-0002.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"data_ed_HA"</span>, <span class="at">startRow=</span><span class="dv">1</span>, <span class="at">colNames=</span>T)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Month"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["CPI"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"33239","2":"64.0","_rn_":"1"},{"1":"33270","2":"64.3","_rn_":"2"},{"1":"33298","2":"64.3","_rn_":"3"},{"1":"33329","2":"64.5","_rn_":"4"},{"1":"33359","2":"64.7","_rn_":"5"},{"1":"33390","2":"65.1","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 </section>
@@ -411,23 +396,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="ascii">ASCII</h3>
 <p>normal text format</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df_ascii <span class="ot">=</span> <span class="fu">read.table</span>(<span class="st">"data/example_datasets/Per_Capita_GDP_Data_1870-1987.asc"</span>, <span class="at">header=</span>T)</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_ascii)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     AUS    AUT    BEL CAN    DNK FIN    FRA   DEU    ITA JPN NLD    NOR SWE
-1 2673.5 1066.8 1542.9 NaN 1179.0 NaN 1036.3 602.0 1276.2 NaN NaN  900.5 NaN
-2 2400.3 1133.6 1534.4 NaN 1173.6 NaN 1110.6 573.6 1258.2 NaN NaN  908.6 NaN
-3 2591.1 1132.0 1614.7 NaN 1227.6 NaN 1194.4 610.0 1238.5 NaN NaN  960.4 NaN
-4 2790.2 1095.7 1612.5 NaN 1209.7 NaN 1116.7 631.3 1279.5 NaN NaN  973.5 NaN
-5 2798.7 1134.6 1652.4 NaN 1232.4 NaN 1254.1 671.0 1271.8 NaN NaN  997.1 NaN
-6 3008.8 1130.2 1635.8 NaN 1241.2 NaN 1300.2 666.6 1298.4 NaN NaN 1016.0 NaN
-     GBR    USA
-1 1949.4 1596.0
-2 2038.9 1654.6
-3 2022.1 1736.6
-4 2051.2 1720.6
-5 2065.1 1671.8
-6 2095.3 1690.7</code></pre>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_ascii <span class="ot">=</span> <span class="fu">read.table</span>(<span class="st">"data/example_datasets/Per_Capita_GDP_Data_1870-1987.asc"</span>, <span class="at">header=</span>T)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_ascii)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["AUS"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["AUT"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["BEL"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CAN"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["DNK"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["FIN"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["FRA"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["DEU"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["ITA"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["JPN"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["NLD"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["NOR"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["SWE"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["GBR"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["USA"],"name":[15],"type":["dbl"],"align":["right"]}],"data":[{"1":"2673.5","2":"1066.8","3":"1542.9","4":"NaN","5":"1179.0","6":"NaN","7":"1036.3","8":"602.0","9":"1276.2","10":"NaN","11":"NaN","12":"900.5","13":"NaN","14":"1949.4","15":"1596.0","_rn_":"1"},{"1":"2400.3","2":"1133.6","3":"1534.4","4":"NaN","5":"1173.6","6":"NaN","7":"1110.6","8":"573.6","9":"1258.2","10":"NaN","11":"NaN","12":"908.6","13":"NaN","14":"2038.9","15":"1654.6","_rn_":"2"},{"1":"2591.1","2":"1132.0","3":"1614.7","4":"NaN","5":"1227.6","6":"NaN","7":"1194.4","8":"610.0","9":"1238.5","10":"NaN","11":"NaN","12":"960.4","13":"NaN","14":"2022.1","15":"1736.6","_rn_":"3"},{"1":"2790.2","2":"1095.7","3":"1612.5","4":"NaN","5":"1209.7","6":"NaN","7":"1116.7","8":"631.3","9":"1279.5","10":"NaN","11":"NaN","12":"973.5","13":"NaN","14":"2051.2","15":"1720.6","_rn_":"4"},{"1":"2798.7","2":"1134.6","3":"1652.4","4":"NaN","5":"1232.4","6":"NaN","7":"1254.1","8":"671.0","9":"1271.8","10":"NaN","11":"NaN","12":"997.1","13":"NaN","14":"2065.1","15":"1671.8","_rn_":"5"},{"1":"3008.8","2":"1130.2","3":"1635.8","4":"NaN","5":"1241.2","6":"NaN","7":"1300.2","8":"666.6","9":"1298.4","10":"NaN","11":"NaN","12":"1016.0","13":"NaN","14":"2095.3","15":"1690.7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 

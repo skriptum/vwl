@@ -74,15 +74,50 @@ in crisis, higher prices for 1., healthy people change
 
 ## Social Insurance
 
+German System
+
 1. Health Insurance (1883)
 2. Accident Insurance (1884)
 3. Pension Insurance (1889)
 4. Unemployment Insurance (1927)
 5. Long-term Care Insurance (1995)
 
-German System
+Characteristics 
 
 - solidarity
 - mandatory
 - Benefit is tied to certain event (unemployment, sickness, needs care)
+
+
+
+### Reasons for government intervention
+
+- Asymmetric Information
+- Externailities (e.g vacciation in health)
+- Administrative Costs
+- Redistribution
+- Paternalism
+- Samaritans Dilemma
+
+
+
+Problems: Crowd Out of Self Insurance
+
+- e.g Consumption Smoothing before unemployment
+- due to saving, borrwing, family etc
+- only very partial crowd out
+
+
+
+### Moral Hazard
+
+> **Moral Hazard**: Adverse actions taben by individuals or producers in resppnse to insurance against adverse outcomes
+
+- *ex ante*: changes in behavior that affect insured risk (smoking => lung cancer)
+- *ex post*: after risk has materialized (cancer => want every possible treatment)
+
+Problems of Moral Hazard
+
+- increase cost
+- higher taxes => deadweight loss
 

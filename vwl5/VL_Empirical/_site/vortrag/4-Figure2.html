@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>today – figure2</title>
+<title>Empirical Economics with R – figure2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,6 +93,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -100,37 +110,143 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked">
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">today</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../README.md" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vortrag/1-Notes.html">Vortrag</a></li><li class="breadcrumb-item"><a href="../vortrag/4-Figure2.html">Figure 2</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Empirical Economics with R</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Mitschriften</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-10-12-Intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12.10.2023 Acemoglu (2001)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-10-19-Stats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19.10.2023 Stats Intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-10-26-Regression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">26.10.2023 Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-11-06-Datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">06.11.2023 Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-11-09-Presentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09.11.2023 Presentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-11-16-TimeSeries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16.11.2023 Time Series &amp; other things</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2023-11-23-IV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23.11.2023 IV Regression</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Vortrag</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/1-Notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DDCG Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/2-Panel-Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/3-Table2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/4-Figure2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Figure 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/5-Figure4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figure 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/6-IVReg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV Regressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Channels</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -236,62 +352,37 @@ effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>trend <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(effects, upper, lower)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>trend</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>      effects     upper     lower
-1   0.7865534  1.234102 0.3390043
-2   1.7603898  2.762052 0.7587275
-3   2.8036453  4.398920 1.2083704
-4   3.8736421  6.077746 1.6695388
-5   4.9240935  7.725904 2.1222830
-6   5.9350510  9.312097 2.5580054
-7   6.8974998 10.822179 2.9728206
-8   7.8074204 12.249845 3.3649962
-9   8.6641860 13.594110 3.7342619
-10  9.4689336 14.856759 4.0811079
-11 10.2236886 16.040970 4.4064071
-12 10.9309110 17.150602 4.7112198
-13 11.5932251 18.189773 4.9966770
-14 12.2132709 19.162625 5.2639166
-15 12.7936247 20.073200 5.5140489
-16 13.3367576 20.925376 5.7481390
-17 13.8450170 21.722835 5.9671987
-18 14.3206192 22.469055 6.1721831
-19 14.7656493 23.167308 6.3639910
-20 15.1820651 23.820664 6.5434661
-21 15.5717020 24.432005 6.7113995
-22 15.9362797 25.004027 6.8685324
-23 16.2774084 25.539258 7.0155587
-24 16.5965954 26.040063 7.1531283
-25 16.8952517 26.508654 7.2818491
-26 17.1746976 26.947105 7.4022902
-27 17.4361685 27.357353 7.5149840
-28 17.6808206 27.741212 7.6204290
-29 17.9097356 28.100380 7.7190914
-30 18.1239259 28.436444 7.8114073</code></pre>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["effects"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["upper"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["lower"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.7865534","2":"1.234102","3":"0.3390043"},{"1":"1.7603898","2":"2.762052","3":"0.7587275"},{"1":"2.8036453","2":"4.398920","3":"1.2083704"},{"1":"3.8736421","2":"6.077746","3":"1.6695388"},{"1":"4.9240935","2":"7.725904","3":"2.1222830"},{"1":"5.9350510","2":"9.312097","3":"2.5580054"},{"1":"6.8974998","2":"10.822179","3":"2.9728206"},{"1":"7.8074204","2":"12.249845","3":"3.3649962"},{"1":"8.6641860","2":"13.594110","3":"3.7342619"},{"1":"9.4689336","2":"14.856759","3":"4.0811079"},{"1":"10.2236886","2":"16.040970","3":"4.4064071"},{"1":"10.9309110","2":"17.150602","3":"4.7112198"},{"1":"11.5932251","2":"18.189773","3":"4.9966770"},{"1":"12.2132709","2":"19.162625","3":"5.2639166"},{"1":"12.7936247","2":"20.073200","3":"5.5140489"},{"1":"13.3367576","2":"20.925376","3":"5.7481390"},{"1":"13.8450170","2":"21.722835","3":"5.9671987"},{"1":"14.3206192","2":"22.469055","3":"6.1721831"},{"1":"14.7656493","2":"23.167308","3":"6.3639910"},{"1":"15.1820651","2":"23.820664","3":"6.5434661"},{"1":"15.5717020","2":"24.432005","3":"6.7113995"},{"1":"15.9362797","2":"25.004027","3":"6.8685324"},{"1":"16.2774084","2":"25.539258","3":"7.0155587"},{"1":"16.5965954","2":"26.040063","3":"7.1531283"},{"1":"16.8952517","2":"26.508654","3":"7.2818491"},{"1":"17.1746976","2":"26.947105","3":"7.4022902"},{"1":"17.4361685","2":"27.357353","3":"7.5149840"},{"1":"17.6808206","2":"27.741212","3":"7.6204290"},{"1":"17.9097356","2":"28.100380","3":"7.7190914"},{"1":"18.1239259","2":"28.436444","3":"7.8114073"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 <p>Plot the trend estimate and the confidence intervals using ggplot()</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trend, <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">y =</span> effects)) <span class="sc">+</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="co">#trend estimate</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> upper), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> <span class="co">#upper confidence interval</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> lower), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> <span class="co">#lower confidence interval</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#zero line</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">10</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#10 GDP per capita log point mark</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">20</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#20 GDP per capita log point mark</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">30</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#30 GDP per capita log point mark</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Years since Democratization"</span>,  <span class="co">#x axis label</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Change in GDP per Capita Log Points"</span>) <span class="sc">+</span> <span class="co">#y axis label</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(), <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trend, <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">y =</span> effects)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="co">#trend estimate</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> upper), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> <span class="co">#upper confidence interval</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> lower), <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span> <span class="co">#lower confidence interval</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#zero line</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">10</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#10 GDP per capita log point mark</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">20</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#20 GDP per capita log point mark</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">30</span>, <span class="at">color=</span><span class="st">"gray"</span>) <span class="sc">+</span> <span class="co">#30 GDP per capita log point mark</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Years since Democratization"</span>,  <span class="co">#x axis label</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Change in GDP per Capita Log Points"</span>) <span class="sc">+</span> <span class="co">#y axis label</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(), <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="4-Figure2_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Save the plot</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"output/figure2.png"</span>, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">units =</span> <span class="st">"in"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"output/figure2.png"</span>, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">units =</span> <span class="st">"in"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

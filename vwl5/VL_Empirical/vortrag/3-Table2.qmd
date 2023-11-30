@@ -65,7 +65,7 @@ lre
 Calculate the persistence of Democracy for the different models with this Formula:
 
 $$
-D_{pers} = E_{j=1}^p \hat\gamma_j
+D_{pers} = \sum_{j=1}^p \hat\gamma_j
 $$
 
 ```{r}
@@ -236,15 +236,17 @@ with
 
 
 ```{r}
+#| output: asis
 models <- list(model1, model2, model3, model4)
 
 stargazer(models, 
-          type = "text", #change to "text" for easy viewing in console
+          type = "html", #change to "text" for easy viewing in console
           title = "Table 2: Effect of Democracy on GDP Growth", # title
           dep.var.labels = "GDP Growth",  
           covariate.labels = c("Democracy"),
           omit.stat = c("ser", "f","adj.rsq"), 
-          keep.stat = c("n", "N"), #keep observations
+          keep.stat = c("n", "N"), #keep observations,
+          omit = c("lag6", "lag7", "lag8"),
           model.numbers = FALSE, # remove model numbers (are the same as column labels)
           column.labels = c("(1)", "(2)", "(3)", "(4)"), # add column labels
           add.lines = list( # add lines for persistence, long run effect and effect after 25 years

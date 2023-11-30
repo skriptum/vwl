@@ -94,6 +94,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -257,7 +260,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vortrag/7-Channels.html" class="sidebar-item-text sidebar-link">
+  <a href="./vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Channels</span></a>
   </div>
 </li>
@@ -395,49 +398,13 @@ Please cite as: </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/dataset_AJR2001.Rdata"</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  shortnam  lat_abst   avexpr logpgp95 baseco   logem4 africa asia   loghjypl
-1      AFG 0.3666667       NA       NA     NA 4.540098      0    1         NA
-2      AGO 0.1366667 5.363636 7.770645      1 5.634789      1    0 -3.4112477
-3      ARE 0.2666667 7.181818 9.804219     NA       NA      0    1         NA
-4      ARG 0.3777778 6.386364 9.133459      1 4.232656      0    0 -0.8722738
-5      ARM 0.4444444       NA 7.682482     NA       NA      0    1         NA
-6      AUS 0.3000000 9.318182 9.897972      1 2.145931      0    0 -0.1707883
-  other rich4 catho80 muslim80    no_cpm80 f_brit f_french sjlofr     avelf
-1     0     0     0.0     99.3   0.6999969      1        0      1 0.4484412
-2     0     0    68.7      0.0  11.5000038      0        0      1 0.7727550
-3     0     0     0.4     94.9   4.3999987      1        0      0        NA
-4     0     0    91.6      0.2   5.5000014      0        0      1 0.1769318
-5     0     0     0.0      0.0 100.0000000      0        0      0        NA
-6     1     1    29.6      0.2  46.7000008      1        0      0 0.1127971
-  temp1 temp2 temp3 temp4 temp5 humid1 humid2 humid3 humid4 steplow deslow
-1    10    14    40   -21    11     51     80     22     70       1      1
-2    26    28    37    14    21     77     84     74     78       1      1
-3    NA    NA    NA    NA    NA     NA     NA     NA     NA      NA     NA
-4    17    25    40    -6     6     81     92     60     79       1      0
-5     8    12    40   -27    10     62     91     36     75       0      0
-6    17    18    43   -10     3     56     85     35     64       1      1
-  stepmid desmid drystep drywint edes1975 landlock goldm iron silv zinc oilres
-1       0      0       0       0        0        1     0    0    0    0      0
-2       0      0       0       0        0        0     0    0    0    0 146000
-3      NA     NA      NA      NA        0        0    NA   NA   NA   NA     NA
-4       0      1       0       0       90        0     0    0    0    0  46900
-5       1      0       0       0        0        0     0    0    0    0      0
-6       0      0       0       0       99        0     3   16    9   12  99100
-  malfal94 yellow leb95 imr95 meantemp  lt100km   latabs euro1900 democ1 cons1
-1  0.00372      0    NA    NA       NA       NA       NA        0      1     1
-2  0.95000      1 46.49 125.0 22.94133 0.118758 0.136667        8      0     3
-3  0.01230      0    NA    NA       NA       NA       NA        0     NA    NA
-4  0.00000      0 72.89  21.8 17.10000 0.123089 0.377778       60      1     1
-5  0.00000      0    NA    NA       NA       NA       NA        0     NA    NA
-6  0.00000      1 78.25   5.6 20.90000 0.198958 0.300000       98     10     7
-  indtime democ00a cons00a
-1     195        1       1
-2      20        0       1
-3      NA       NA      NA
-4     170        3       3
-5      NA       NA      NA
-6      94       10       7</code></pre>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["shortnam"],"name":[1],"type":["chr"],"align":["left"]},{"label":["lat_abst"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["avexpr"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["logpgp95"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["baseco"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["logem4"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["africa"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["asia"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["loghjypl"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["other"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["rich4"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["catho80"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["muslim80"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["no_cpm80"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["f_brit"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["f_french"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["sjlofr"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["avelf"],"name":[18],"type":["dbl"],"align":["right"]},{"label":["temp1"],"name":[19],"type":["dbl"],"align":["right"]},{"label":["temp2"],"name":[20],"type":["dbl"],"align":["right"]},{"label":["temp3"],"name":[21],"type":["dbl"],"align":["right"]},{"label":["temp4"],"name":[22],"type":["dbl"],"align":["right"]},{"label":["temp5"],"name":[23],"type":["dbl"],"align":["right"]},{"label":["humid1"],"name":[24],"type":["dbl"],"align":["right"]},{"label":["humid2"],"name":[25],"type":["dbl"],"align":["right"]},{"label":["humid3"],"name":[26],"type":["dbl"],"align":["right"]},{"label":["humid4"],"name":[27],"type":["dbl"],"align":["right"]},{"label":["steplow"],"name":[28],"type":["dbl"],"align":["right"]},{"label":["deslow"],"name":[29],"type":["dbl"],"align":["right"]},{"label":["stepmid"],"name":[30],"type":["dbl"],"align":["right"]},{"label":["desmid"],"name":[31],"type":["dbl"],"align":["right"]},{"label":["drystep"],"name":[32],"type":["dbl"],"align":["right"]},{"label":["drywint"],"name":[33],"type":["dbl"],"align":["right"]},{"label":["edes1975"],"name":[34],"type":["dbl"],"align":["right"]},{"label":["landlock"],"name":[35],"type":["dbl"],"align":["right"]},{"label":["goldm"],"name":[36],"type":["dbl"],"align":["right"]},{"label":["iron"],"name":[37],"type":["dbl"],"align":["right"]},{"label":["silv"],"name":[38],"type":["dbl"],"align":["right"]},{"label":["zinc"],"name":[39],"type":["dbl"],"align":["right"]},{"label":["oilres"],"name":[40],"type":["dbl"],"align":["right"]},{"label":["malfal94"],"name":[41],"type":["dbl"],"align":["right"]},{"label":["yellow"],"name":[42],"type":["dbl"],"align":["right"]},{"label":["leb95"],"name":[43],"type":["dbl"],"align":["right"]},{"label":["imr95"],"name":[44],"type":["dbl"],"align":["right"]},{"label":["meantemp"],"name":[45],"type":["dbl"],"align":["right"]},{"label":["lt100km"],"name":[46],"type":["dbl"],"align":["right"]},{"label":["latabs"],"name":[47],"type":["dbl"],"align":["right"]},{"label":["euro1900"],"name":[48],"type":["dbl"],"align":["right"]},{"label":["democ1"],"name":[49],"type":["dbl"],"align":["right"]},{"label":["cons1"],"name":[50],"type":["dbl"],"align":["right"]},{"label":["indtime"],"name":[51],"type":["dbl"],"align":["right"]},{"label":["democ00a"],"name":[52],"type":["dbl"],"align":["right"]},{"label":["cons00a"],"name":[53],"type":["dbl"],"align":["right"]}],"data":[{"1":"AFG","2":"0.3666667","3":"NA","4":"NA","5":"NA","6":"4.540098","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"99.3","14":"0.6999969","15":"1","16":"0","17":"1","18":"0.4484412","19":"10","20":"14","21":"40","22":"-21","23":"11","24":"51","25":"80","26":"22","27":"70","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"1","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00372","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"1","50":"1","51":"195","52":"1","53":"1","_rn_":"1"},{"1":"AGO","2":"0.1366667","3":"5.363636","4":"7.770645","5":"1","6":"5.634789","7":"1","8":"0","9":"-3.4112477","10":"0","11":"0","12":"68.7","13":"0.0","14":"11.5000038","15":"0","16":"0","17":"1","18":"0.7727550","19":"26","20":"28","21":"37","22":"14","23":"21","24":"77","25":"84","26":"74","27":"78","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"146000","41":"0.95000","42":"1","43":"46.49","44":"125.0","45":"22.94133","46":"0.118758","47":"0.136667","48":"8","49":"0","50":"3","51":"20","52":"0","53":"1","_rn_":"2"},{"1":"ARE","2":"0.2666667","3":"7.181818","4":"9.804219","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.4","13":"94.9","14":"4.3999987","15":"1","16":"0","17":"0","18":"NA","19":"NA","20":"NA","21":"NA","22":"NA","23":"NA","24":"NA","25":"NA","26":"NA","27":"NA","28":"NA","29":"NA","30":"NA","31":"NA","32":"NA","33":"NA","34":"0","35":"0","36":"NA","37":"NA","38":"NA","39":"NA","40":"NA","41":"0.01230","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"3"},{"1":"ARG","2":"0.3777778","3":"6.386364","4":"9.133459","5":"1","6":"4.232656","7":"0","8":"0","9":"-0.8722738","10":"0","11":"0","12":"91.6","13":"0.2","14":"5.5000014","15":"0","16":"0","17":"1","18":"0.1769318","19":"17","20":"25","21":"40","22":"-6","23":"6","24":"81","25":"92","26":"60","27":"79","28":"1","29":"0","30":"0","31":"1","32":"0","33":"0","34":"90","35":"0","36":"0","37":"0","38":"0","39":"0","40":"46900","41":"0.00000","42":"0","43":"72.89","44":"21.8","45":"17.10000","46":"0.123089","47":"0.377778","48":"60","49":"1","50":"1","51":"170","52":"3","53":"3","_rn_":"4"},{"1":"ARM","2":"0.4444444","3":"NA","4":"7.682482","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"0.0","14":"100.0000000","15":"0","16":"0","17":"0","18":"NA","19":"8","20":"12","21":"40","22":"-27","23":"10","24":"62","25":"91","26":"36","27":"75","28":"0","29":"0","30":"1","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00000","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"5"},{"1":"AUS","2":"0.3000000","3":"9.318182","4":"9.897972","5":"1","6":"2.145931","7":"0","8":"0","9":"-0.1707883","10":"1","11":"1","12":"29.6","13":"0.2","14":"46.7000008","15":"1","16":"0","17":"0","18":"0.1127971","19":"17","20":"18","21":"43","22":"-10","23":"3","24":"56","25":"85","26":"35","27":"64","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"99","35":"0","36":"3","37":"16","38":"9","39":"12","40":"99100","41":"0.00000","42":"1","43":"78.25","44":"5.6","45":"20.90000","46":"0.198958","47":"0.300000","48":"98","49":"10","50":"7","51":"94","52":"10","53":"7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 <p>Table 2: Estimation of Models 1-4 for both datasets</p>
@@ -450,24 +417,24 @@ Please cite as: </code></pre>
 <li><code>loghjypl</code> = Log output per worker in 1988 (US normalized to 1)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>m_T2_world_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>m_T2_base_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#latitude added</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>m_T2_world_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst,<span class="at">data=</span>data)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>m_T2_base_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># continent dummies</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>m_T2_world_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other,<span class="at">data=</span>data)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>m_T2_base_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># other dependent variable</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>m_T2_world_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span>avexpr, <span class="at">data=</span>data)</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>m_T2_base_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>m_T2_world_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>m_T2_base_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#latitude added</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>m_T2_world_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst,<span class="at">data=</span>data)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>m_T2_base_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># continent dummies</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>m_T2_world_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other,<span class="at">data=</span>data)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>m_T2_base_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># other dependent variable</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>m_T2_world_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span>avexpr, <span class="at">data=</span>data)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>m_T2_base_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Summary of the first Regression</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m_T2_world_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m_T2_world_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -491,21 +458,21 @@ F-statistic: 171.4 on 1 and 109 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <p>Now we have the Regression Models, but until now no Table to present these</p>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>all_res <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  m_T2_world_1, m_T2_base_1,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  m_T2_world_2, m_T2_base_2,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  m_T2_world_3, m_T2_base_3,</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  m_T2_world_4, m_T2_base_4</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>coef_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Average Protection"</span>, <span class="st">"Latittude"</span>,<span class="st">"Asia dummy"</span>, <span class="st">"Africa dummy"</span>, <span class="st">"Other"</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>note <span class="ot">&lt;-</span> <span class="st">"Nitzuen lorem"</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(all_res, </span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">type=</span><span class="st">"html"</span>, </span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">out=</span><span class="st">"data/Table2_stargazer.html"</span>, <span class="at">omit =</span> <span class="st">"Constant"</span>,</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">notes.label =</span> note,</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">"log GDP per Capita"</span>, <span class="st">"log output per worker"</span>),</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> coef_names</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>all_res <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  m_T2_world_1, m_T2_base_1,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  m_T2_world_2, m_T2_base_2,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  m_T2_world_3, m_T2_base_3,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  m_T2_world_4, m_T2_base_4</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>coef_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Average Protection"</span>, <span class="st">"Latittude"</span>,<span class="st">"Asia dummy"</span>, <span class="st">"Africa dummy"</span>, <span class="st">"Other"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>note <span class="ot">&lt;-</span> <span class="st">"Nitzuen lorem"</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(all_res, </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">type=</span><span class="st">"html"</span>, </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">out=</span><span class="st">"data/Table2_stargazer.html"</span>, <span class="at">omit =</span> <span class="st">"Constant"</span>,</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">notes.label =</span> note,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">"log GDP per Capita"</span>, <span class="st">"log output per worker"</span>),</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> coef_names</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="text-align:center">
 <tbody><tr>

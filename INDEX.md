@@ -387,7 +387,8 @@
     - [Vertrag](vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md)
     - [AGB](vwl5/VL_Zivilrecht/2023-10-27-AGB.md)
     - [Privatautonomie](vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie.md)
-    - [Schadensersatz](vwl5/VL_Zivilrecht/2023-17-11-Schadensersatz.md)
+    - [Schadensersatz](vwl5/VL_Zivilrecht/2023-11-17-Schadensersatz.md)
+    - [Gewaehrleistung](vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung.md)
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
     - [Übersicht](vwl5/VL_Empirical/README.md)
@@ -414,4 +415,4 @@
 
 ---
 
-**346** Notizen in **28** Modulen
+**347** Notizen in **28** Modulen

@@ -24,6 +24,12 @@ Problems for the question:
 
 =\>  DiD / panel data estimates not good idea
 
+## Literature
+
+*Notes here also from other papers*
+
+
+
 ## Approaches
 
 First:

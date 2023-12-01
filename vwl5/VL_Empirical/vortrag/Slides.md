@@ -21,36 +21,56 @@ Question
 
 Authors
 
--   Daron Acemoglu
+-   [Daron Acemoglu](https://economics.mit.edu/sites/default/files/styles/facutly_profile_feature_image/public/2022-12/daron-acemoglu30.jpg?h=620fd1cb&itok=2p17a0hs) (MIT)
 
--   James A Robinson
+-   [James A. Robinson](https://harris.uchicago.edu/files/styles/square/public/2022-01/james-robinson-headshot-2022.jpeg?itok=NVPPH7Na) (U. of Chicago)
 
--   Suresh Naidu
+-   [Suresh Naidu](https://www.sipa.columbia.edu/sites/default/files/styles/1_1_1536x1536/public/2023-10/Suresh%20Naidu%20Headshot.png.jpeg?itok=atidRtoO) (Columbia)
 
--   Pascual Restrepo
+-   [Pascual Restrepo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fifs.org.uk%2Finequality%2Fwp-content%2Fuploads%2F2022%2F03%2FPascual-Restrepo-1.jpg&f=1&nofb=1&ipt=f7bbe9b625908183da52bcb9c3d1cb8ab1a2d2d4f47670feb0a38645567d3d99&ipo=images) (Boston U.)
+
+[Cover of JPE](https://economics.sas.upenn.edu/sites/default/files/2020-02/jpe%20jan2020.jpg)
+
+::: notes
+
+- research by 4 economicst from top-university
+- very prominent paper, widely recognized
+- impact on literature / research
+
+:::
 
 
 ---
-## Research Question
+## Literature on Growth and Democracy
 
-Why it is interesting:
+Existing Literature
+
+
+
+
 
 ---
 
 ## Problem: GDP Diversity and Dip
 
 - heterogeneity of GDP growth
-- Dip of GDP before democratization
+- Dip of GDP preceding democratization
 
-Direct OLS is without much use
+-> direct OLS not applicable
 
 [FIGURE DIP]
 
----
+::: notes
 
-## Literature
+2 problems in the research
 
-Existing Literature
+- GDP growth = **very** heterogenous
+- before a democratization = decline in growth
+    - often reason for protests etc
+
+[Figure]
+
+:::
 
 
 
@@ -58,20 +78,29 @@ Existing Literature
 
 ## Data
 
-Democracy Data Sources
-
-- Freedom House Index [@gorokhovskaiaFreedomHouseReport]
-- Polity IV Database [@marshallPolityIVProject]
-- Cheibub et al [@cheibubDemocracyDictatorshipRevisited2010]
-- Boix et al [@boixCompleteDataSet2013]
-
 Democracy Measure
 
-- dichotomous / binary (either 0 or 1)
-- 1960 - 2010
-- 184 Countries
+- constructed from different sources
+- dichotomous 
+- 1960 - 2010, 184 Countries
+
+Growth Data = World Bank
 
 [FIGURE DEM]
+
+::: notes
+
+*Democracy Measure*
+
+- constructed from 4 different data sources (Freedom House, Polity IV, 2 papers)
+- dichotomous / binary: either 0 (not democracy) or 1 (democracy)
+- 1960-2010 (50 years), 184 countries
+
+*Growth Data* (gdp per capita, 2000) & other economic variables  = World Bank
+
+Figure: 122 democratizations in this time frame
+
+:::
 
 ---
 
@@ -92,7 +121,7 @@ $$
 R Code
 
 ```R
-model3 <- plm(
+model <- plm(
   y ~ dem + lag1 + lag2 + lag3 + lag4, #equation with 4 lags
   model="within", #The fixed effects within estimator
   data = pdf, #panel data frame
@@ -108,6 +137,10 @@ model3 <- plm(
 
 See Appendix for Calculation of *long run effects* -> & *short-run effects* ->
 
+::: notes
+
+:::
+
 ---
 
 ## Results Figure
@@ -115,6 +148,17 @@ See Appendix for Calculation of *long run effects* -> & *short-run effects* ->
 [FIGURE TREND]
 
 See Appendix for Calculation of the dynamics ->
+
+:::
+
+- black = trend estimate
+- dashed = 95 % confidence intervals
+
+after 25 years = **XX**
+
+=> effect levelling off = "one off"
+
+:::
 
 ---
 
@@ -152,7 +196,7 @@ See Appendix for Calculation
 - only 50 years
 - only 1 of the 3 waves of democratization 
 
-*Sensitivity to Sample Selectio*
+*Sensitivity to Sample Selection*
 
 - depends heavily on the eastern communist states (+ short time)
 - Markus Eberhardt Comment: 
@@ -171,23 +215,29 @@ See Appendix for Calculation
 
 ## Discussion Questions
 
-- Are there alternative political frameworks that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?
-- Could there be non-linear relationships between democracy and economic growth, e.g optimal level of democracy? 
-- 
+1. Are there <u>alternative political frameworks</u> that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?
+2. Could there be <u>non-linear relationships</u> between democracy and economic growth, e.g optimal level of democracy? 
+3. What actionable <u>policy recommendations</u> can be drawn from the observed link between democracy and economic growth?
+
+
 
 ::: notes
 
-*Are there alternative political frameworks that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
+*Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
 
 - elephant in the room = China (achieved both)
 - communist states in general = high state capacity
 
 
 
-Could there be non-linear relationships between democracy and economic growth, e.g optimal level of democracy? 
+*Could there be **non-linear relationships** between democracy and economic growth, e.g optimal level of democracy?* 
 
 - a level of democracy beyond which growth is hurt?
 - for example monetary policy = undemocratic in most democracy today
+
+
+
+*What are the **Policy Implications** drawn from the link*
 
 :::
 

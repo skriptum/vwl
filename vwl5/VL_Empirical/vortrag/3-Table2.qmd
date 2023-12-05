@@ -1,8 +1,9 @@
-# Table 2
+# Fixed Effects Table
 
 ## Imports
 
 ```{r}
+#| output: false
 library(plm)
 library(stargazer)
 ```
@@ -26,7 +27,6 @@ beta_hat <- coef(model1)["dem"]
 gamma_hat <- coef(model1)["lag1"]
 
 long_run_effect_1 <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect_1
 ```
 
 ```{r}
@@ -34,7 +34,6 @@ beta_hat <- coef(model2)["dem"]
 gamma_hat <- (coef(model2)[2:3])
 
 long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect_2
 ```
 
 
@@ -43,7 +42,6 @@ beta_hat <- coef(model3)["dem"]
 gamma_hat <- (coef(model3)[2:5])
 
 long_run_effect_3 <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect_3
 ```
 
 ```{r}
@@ -51,7 +49,6 @@ beta_hat <- coef(model4)["dem"]
 gamma_hat <- (coef(model4)[2:9])
 
 long_run_effect_4 <- beta_hat / (1 - sum(gamma_hat))
-long_run_effect_4
 ```
 
 ```{r}
@@ -222,16 +219,22 @@ eff_25
 ```
 
 
-## Table 2
+## Table FE
 
 Recreating the Table 2 from the ANRR Paper with the stargazer package and the models from above
 
 with
+
 - persistence for each model
+
 - long run effect
+
 - effect after 25 years
+
 - observations
+
 - countries in sample
+
 - and the standard regression output
 
 
@@ -241,8 +244,8 @@ models <- list(model1, model2, model3, model4)
 
 stargazer(models, 
           type = "html", #change to "text" for easy viewing in console
-          title = "Table 2: Effect of Democracy on GDP Growth", # title
-          dep.var.labels = "GDP Growth",  
+          title = "Effect of Democracy on (Log) GDP per Capita", # title
+          dep.var.labels = "Log GDP per Capita",  
           covariate.labels = c("Democracy"),
           omit.stat = c("ser", "f","adj.rsq"), 
           keep.stat = c("n", "N"), #keep observations,
@@ -250,29 +253,32 @@ stargazer(models,
           model.numbers = FALSE, # remove model numbers (are the same as column labels)
           column.labels = c("(1)", "(2)", "(3)", "(4)"), # add column labels
           add.lines = list( # add lines for persistence, long run effect and effect after 25 years
-            c("Persistence: ", pers[1], pers[2], pers[3], pers[4]), 
-            c("Long run effect: ", lre[1], lre[2], lre[3], lre[4]),
-            c("Effect after 25 years: ", eff_25[1], eff_25[2], eff_25[3], eff_25[4])
+            c("Persistence: ", pers), 
+            c("Long run effect: ", lre),
+            c("Effect after 25 years: ", eff_25)
             )
           )
 ```
 Save the table as a tex file
 ```{r}
-#| echo=FALSE, results='asis', message=FALSE, warning=FALSE
+#| results: asis 
+#| message: false
+#| warning: false
 stargazer(models, 
-          type = "latex", 
-          out = "output/table2.tex",
-          title = "Table 2: Effect of Democracy on GDP Growth", 
-          dep.var.labels = "GDP Growth", 
+          type = "latex", #change to "text" for easy viewing in console
+          out = "output/table_fe.tex",
+          title = "Effect of Democracy on (Log) GDP per Capita", # title
+          dep.var.labels = "Log GDP per Capita",  
           covariate.labels = c("Democracy"),
           omit.stat = c("ser", "f","adj.rsq"), 
-          keep.stat = c("n", "N"),
-          model.numbers = FALSE,
-          column.labels = c("(1)", "(2)", "(3)", "(4)"),
-          add.lines = list(
-            c("Persistence: ", pers[1], pers[2], pers[3], pers[4]),
-            c("Long run effect: ", lre[1], lre[2], lre[3], lre[4]),
-            c("Effect after 25 years: ", eff_25[1], eff_25[2], eff_25[3], eff_25[4])
+          keep.stat = c("n", "N"), #keep observations,
+          omit = c("lag6", "lag7", "lag8"),
+          model.numbers = FALSE, # remove model numbers (are the same as column labels)
+          column.labels = c("(1)", "(2)", "(3)", "(4)"), # add column labels
+          add.lines = list( # add lines for persistence, long run effect and effect after 25 years
+            c("Persistence: ", pers), 
+            c("Long run effect: ", lre),
+            c("Effect after 25 years: ", eff_25)
             )
           )
 ```

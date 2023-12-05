@@ -1,59 +1,54 @@
----
-eval: true
----
+# Channels of Democracy
 
-# Channels
+Potential Channels mentioned and their respective variables:
 
 -   Log Investment = `loginvpc`
 -   Log TFP = `ltfp`
--   INdex Economic Reforms: `marketref`
+-   Index Economic Reforms: `marketref`
 -   Trade Share = `ltrade`
+-   Government Expenditure = `lgov`
 -   Primary Enrollment = `lprienr`
 -   Secondary enrollement = `lsecenr`
 -   Child Mortality = `lmort`
 -   Dummy Unrest = `unrestn`
 
-Result should look like this:
-
-![](../images/2023-11-23_15-43-01.jpg)
-
-## Estimating the Models
+## Formula
 
 $$
-var_{ct} = \beta D_t + \sum_{j=1}^4 \gamma_j y_{ct-j}+  \sum_{j=1}^4 \delta_j var_{ct-j} +\alpha_c + \delta_t + \epsilon_{ct}
+var_{ct} = \beta D_{ct} + \sum_{j=1}^4 \gamma_j y_{ct-j}+  \sum_{j=1}^4 \delta_j var_{ct-j} +\alpha_c + \theta_t + \epsilon_{ct}
 $$
-4 lags = preferred specification
+p = 4 lags = preferred specification
 
-Formula:
+Explanation:
 
 -   $var_{ct}$ = explaining variable
 -   $y_ct$ = log GDP per capita in country *c* at time *t*
-    -   column: `gdppercapitaconstant2000us`
-    -   already logged with `y`
 -   $D_{ct}$ = Dichotomous measure of democracy
-    -   column: `dem`
--   *p* lags of log GDP for control
+-   *4* lags of log GDP for control
+-   *4* lags of the explaining variable for control
 -   $\alpha$ = country fixed effects
+-   $\theta$ = time fixed effects
 -   $e$ = error
 
 
+## Imports 
+
 ```{r}
+#| output: false
 library(tidyverse)
 library(plm)
 ```
 
 ```{r}
 DDCGdata <- haven::read_dta("data/DDCGdata.dta")
-```
 
-```{r}
 pdf <- pdata.frame(DDCGdata, index=c("country_name", "year"))
 rm(DDCGdata)
-```
 
-```{r}
 head(pdf)
 ```
+
+## Models
 
 ### Investment Share
 
@@ -64,7 +59,6 @@ model1 <- plm(
   data = pdf, 
   effect = "twoways"
   )
-summary(model1)
 ```
 
 ### TFP
@@ -76,7 +70,6 @@ model2 <- plm(
   data = pdf, 
   effect = "twoways"
   )
-summary(model2)
 ```
 
 ### Reforms
@@ -88,7 +81,6 @@ model3 <- plm(
   data = pdf, 
   effect = "twoways"
   )
-summary(model3)
 ```
 
 ### Trade
@@ -100,60 +92,66 @@ model4 <- plm(
   data = pdf, 
   effect = "twoways"
   )
-summary(model4)
 ```
+### Government Expenditure
+
+```{r}
+model5 <- plm(
+  lgov ~ dem + plm::lag(y,1:4)+ plm::lag(lgov, 1:4), #the equation with country fixed effects
+  model="within", #The fixed effects within estimator
+  data = pdf, 
+  effect = "twoways"
+  )
+```
+
 
 ### Primary Enrollment
 
 ```{r}
-model5 <- plm(
+model6 <- plm(
   lprienr ~ dem + plm::lag(y,1:4)+ plm::lag(lprienr, 1:4), #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
   )
-summary(model5)
 ```
 
 ### Secondary Enrollment
 
 ```{r}
-model6 <- plm(
+model7 <- plm(
   lsecenr ~ dem + plm::lag(y,1:4)+ plm::lag(lsecenr, 1:4), #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
   )
-summary(model6)
 ```
 
 ### Child Mortality
 
 ```{r}
-model7 <- plm(
+model8 <- plm(
   lmort ~ dem + plm::lag(y,1:4)+ plm::lag(lmort, 1:4), #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
   )
-summary(model7)
 ```
 
 ### Unrest
 
 ```{r}
-model8 <- plm(
+model9 <- plm(
   unrestn ~ dem + plm::lag(y,1:4)+ plm::lag(unrestn, 1:4), #the equation with country fixed effects
   model="within", #The fixed effects within estimator
   data = pdf, 
   effect = "twoways"
   )
-summary(model8)
 ```
 ## Additional Infos about the Models
 
 ```{r}
-models <- list(model1, model2, model3, model4, model5, model6, model7, model8)
+models <- list(model1, model2, model3, model4, model5, model6, model7, model8, model9)
 ```
 
 
@@ -169,7 +167,7 @@ $$
 ```{r}
 lre <- list()
 
-for (i in 1:8) {
+for (i in 1:9) {
   beta_hat <- coef(models[[i]])["dem"]
   gamma_hat <- coef(models[[i]])[6:9]
   
@@ -184,13 +182,13 @@ lre <- round(lre, 2)
 Calculate the persistence for the different models with this Formula:
 
 $$
-\sum_{j=1}^p \hat\gamma_j
+D_{pers} = \sum_{j=1}^p \hat\gamma_j
 $$
 
 ```{r}
 persistence <- list()
 
-for (i in 1:8) {
+for (i in 1:9) {
   gamma_hat <- coef(models[[i]])[6:9]
   
   persistence[[i]] <- sum(gamma_hat)
@@ -206,17 +204,17 @@ pers <- round(pers, 2)
 
 ```{r}
 #| output: asis
-models <- c(model1, model2, model3, model4, model5, model6, model7, model8)
+models <- list(model1, model2, model3, model4, model5, model6, model7, model8, model9)
 
 stargazer::stargazer(
-          model1, model2, model3, model4, model5, model6, model7, model8,
+          models,
           type = "html", 
-          out = "output/Table7.html",
-          title = "Channels", 
+          covariate.labels = c("Democracy"),
+          title = "Effects of Democracy on Potential Channels", 
           dep.var.labels = c(
               "Log Investment", "Log TFP", "Index Economic Reforms", 
-              "Log Trade Share", "Log Primary Enrollment", "Log Secondary Enrollment", 
-              "Log Child Mortality", "Dummy Unrest"
+              "Log Trade Share", "Log of Gov. Exp.","Log Primary Enrollment", 
+              "Log Secondary Enrollment", "Log Child Mortality", "Dummy Unrest"
               ), 
           omit.stat = c("f", "ser", "rsq", "adj.rsq"),
           keep = "dem",
@@ -227,4 +225,30 @@ stargazer::stargazer(
           )
 )
 ```          
+Saving the Table as Tex
 
+```{r}
+#| results: asis 
+#| message: false
+#| warning: false
+stargazer::stargazer(
+          models,
+          type = "latex",
+          out = "output/table_channels.tex",
+          covariate.labels = c("Democracy"),
+          column.sep.width = "0.01pt",
+          title = "Effects of Democracy on Potential Channels", 
+          dep.var.labels = c(
+              "Log Investment", "Log TFP", "Index Economic Reforms", 
+              "Log Trade Share", "Log of Gov. Exp.","Log Primary Enrollment", 
+              "Log Secondary Enrollment", "Log Child Mortality", "Dummy Unrest"
+              ), 
+          omit.stat = c("f", "ser", "rsq", "adj.rsq"),
+          keep = "dem",
+          keep.stat = "N",
+          add.lines = list(
+            c("Long Run Effect", lre),
+            c("Persistence", pers)
+          )
+)
+```

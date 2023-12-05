@@ -1,9 +1,10 @@
-# Figure 2
+# Figure Trend
 
 just uses the preferred model = model 3 with 4 lags
 
 Package Imports:
 ```{r}
+#| output: false
 library(ggplot2)
 library(plm)
 library(plotly)
@@ -45,7 +46,7 @@ for (i in 5:30) {
 }
 ```
 
-### Standard Error
+## Standard Error
 
 Extract The given Standard Error from the model
 
@@ -73,7 +74,12 @@ for (i in 5:30) {
 }
 ```
 
-### Confidence Intervals
+## Confidence Intervals
+
+Calculate the upper and lower confidence intervals for each point in time t using:
+
+- the standard error for each point in time t
+- the critical value for a 95% confidence interval (1.96)
 
 ```{r}
 upper <- vector()
@@ -87,7 +93,7 @@ for (i in 1:30) {
 }
 ```
 
-### Plot
+## Plot
 
 Create a dataframe with the trend estimate, upper and lower confidence intervals, useful for comparing with the Data from ANRR
 ```{r}
@@ -101,7 +107,7 @@ fig <- ggplot(trend, aes(x = 1:30, y = effects)) +
   geom_line() + #trend estimate
   geom_line(aes(y = upper), linetype = "dashed") + #upper confidence interval
   geom_line(aes(y = lower), linetype = "dashed") + #lower confidence interval
-  geom_hline(yintercept = seq(0,40,10), color="gray") + # horizontal lines 
+  geom_hline(yintercept = seq(0,30,10), color="gray") + # horizontal lines 
   labs(
     x = "Years since Democratization",  #x axis label
     y = "Change in GDP per Capita Log Points") +  #y axis label
@@ -111,6 +117,6 @@ fig <- ggplot(trend, aes(x = 1:30, y = effects)) +
 
 Save the plot and preview it
 ```{r}
-ggsave("output/FigureTrend.png",fig, width = 8, height = 6, units = "in")
+ggsave("output/FigureTrend.png",fig, width = 8, height = 5, units = "in")
 ggplotly(fig)
 ```

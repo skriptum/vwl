@@ -1,4 +1,4 @@
-# Panel Models
+# Fixed Effects Models
 
 ## Regression
 
@@ -10,38 +10,37 @@ $$
 
 Formula:
 
--   $y_ct$ = log GDP per capita in country *c* at time *t*
-    -   column: `gdppercapitaconstant2000us`
-    -   already logged with `y`
--   $D_{ct}$ = Dichotomous measure of democracy
-    -   column: `dem`
+-   $y_{ct}$ = log GDP per capita in country *c* at time *t* = column `y`
+-   $D_{ct}$ = Dichotomous measure of democracy = column: `dem`
 -   *p* lags of log GDP for control
 -   $\alpha$ = country fixed effects
+-   $\delta$ = time fixed effects
 -   $e$ = error
 
 Estimator: Within Estimator
-
-Result somethin like this:
-
-![](../images/2023-11-15_15-01-55.jpg)
-
-![](../images/2023-11-15_15-02-02.jpg)
 
 ## Replication
 
 ### Imports
 ```{r}
+#| output: false
 library(plm)
 library(tidyverse)
 ```
 
 ### Load the Data
+
+Dataset avaibable online at: [https://economics.mit.edu/people/faculty/daron-acemoglu/data-archive](https://economics.mit.edu/people/faculty/daron-acemoglu/data-archive)
+
+- Download as .rar Archive File (not openable on MacOS)
+- Unpack with [The Unarchiver](https://theunarchiver.com/) (free)
+- Open the .dta file with R
+
 ```{r}
 DDCGdata <- haven::read_dta("data/DDCGdata.dta")
 
 df <- DDCGdata %>%
-  dplyr::select(1:30) %>%
-  dplyr::mutate(loggdp = log(gdppercapitaconstant2000us))
+  dplyr::select(1:30)
   
 rm(DDCGdata)
 head(df)

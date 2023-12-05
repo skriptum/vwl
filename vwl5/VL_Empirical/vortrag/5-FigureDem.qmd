@@ -1,10 +1,11 @@
-# Figure Democratization / Years
+# Figure Democratizations
 
 a small figure from the dataset showing the number of democratization events in a given year
 
 ## Imports
 
 ```{r}
+#| output: false
 library(tidyverse)
 library(plotly)
 ```
@@ -36,6 +37,6 @@ fig <- ggplot(d_df, aes(x = year, y = count)) +
 Save the Figure and preview the Figure (interactive with `ggplotly()`)
 
 ```{r}
-ggsave("output/figureDem.png", fig, width = 6, height = 4, dpi = 300)
+ggsave("output/figureDem.png", fig, width = 10, height = 4, dpi = 300)
 ggplotly(fig)
 ```

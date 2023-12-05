@@ -28,7 +28,37 @@ Problems for the question:
 
 *Notes here also from other papers*
 
+Question dates back to 1959 (lipset hypothesis)
 
+Lipset: $\text{economic growth} \to \text{democracy}$
+
+
+
+1990s: 
+
+- conitnius variables of democracy + simple regressions (OLS, problematic)
+- (eg [@barroDemocracyGrowth1996]) 
+- no clear /negative effect
+- confirm Lipset hypothesis (growht => democracy)
+
+Barro: $\text{democracy} \to \text{growth} \downarrow$
+
+2000s:
+
+- binary measures of democracy + Diff in Diff
+- mixed / postiive / not significant effects
+- eg [@giavazziEconomicPoliticalLiberalizations2005]
+
+Giavazzi: $\text{democracy} \rightsquigarrow \text{growth}$
+
+modern aproaches: Acemoglu
+
+- different strategies
+- as guess from Title: positive results
+
+Acemoglu: $\text{democracy} \implies \text{growth}$
+
+Meta Analysis [@colagrossiDoesDemocracyCause2020]
 
 ## Approaches
 

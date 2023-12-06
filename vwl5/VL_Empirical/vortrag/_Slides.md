@@ -122,11 +122,11 @@ with $p = \{1,2,4,8\}$
 
 ```{=latex}
 % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-% Date and time: Mon, Dec 04, 2023 - 12:49:16
+% Date and time: Tue, Dec 05, 2023 - 15:32:38
 \begin{table}[!htbp] \centering 
   \caption{Effect of Democracy on (Log) GDP per Capita} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\begin{tabular}{@{\extracolsep{0.1pt}}lcccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
  & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
@@ -159,7 +159,7 @@ Effect after 25 years:  & 17.791 & 13.8 & 16.895 & 17.715 \\
 Observations & 6,790 & 6,642 & 6,336 & 5,688 \\ 
 \hline 
 \hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\textit{Note:}  & \multicolumn{4}{r}{The reported coefficient on democracy is multiplied by 100. Replication of Table 2 in ANRR (2019)} \\ 
 \end{tabular} 
 \end{table} 
 ```

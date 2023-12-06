@@ -411,8 +411,9 @@
     - [Cost Benefit](vwl5/VL_PublicEcon/2023-11-15-Cost-Benefit.md)
     - [Climate](vwl5/VL_PublicEcon/2023-11-22-Climate.md)
     - [Information](vwl5/VL_PublicEcon/2023-11-29-Information.md)
+    - [Inequality](vwl5/VL_PublicEcon/2023-12-06-Inequality.md)
     - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
 ---
 
-**347** Notizen in **28** Modulen
+**348** Notizen in **28** Modulen

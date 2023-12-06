@@ -243,7 +243,7 @@ with
 models <- list(model1, model2, model3, model4)
 
 stargazer(models, 
-          type = "html", #change to "text" for easy viewing in console
+          type = "text", #change to "text" for easy viewing in console
           title = "Effect of Democracy on (Log) GDP per Capita", # title
           dep.var.labels = "Log GDP per Capita",  
           covariate.labels = c("Democracy"),
@@ -256,7 +256,9 @@ stargazer(models,
             c("Persistence: ", pers), 
             c("Long run effect: ", lre),
             c("Effect after 25 years: ", eff_25)
-            )
+            ),
+          notes = "The reported coefficient on democracy is multiplied by 100. Replication of Table 2 in ANRR (2019)",
+          notes.append = FALSE # add notes to the end of the table
           )
 ```
 Save the table as a tex file
@@ -279,6 +281,8 @@ stargazer(models,
             c("Persistence: ", pers), 
             c("Long run effect: ", lre),
             c("Effect after 25 years: ", eff_25)
-            )
+            ),
+          notes = "The reported coefficient on democracy is multiplied by 100. Replication of Table 2 in ANRR (2019)",
+          notes.append = FALSE # add notes to the end of the table
           )
 ```

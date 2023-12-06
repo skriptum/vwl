@@ -105,9 +105,9 @@ $$
 
 -   *p* lags of log GDP for control
 
--   $\alpha$ = country fixed effects
+-   $\alpha$ = country fixed effects (filter out the heterogenity)
 
--   d = time fixed effects
+-   d = time fixed effects (filter out the effects of in one year many countries democratizing)
 
 -   $e$ = error term
 
@@ -121,7 +121,15 @@ lets look at results ->
 
 [TABLE 2]
 
-
+- different number of lags = authors preffered specification = 4 lags
+- log level estimate
+    - one unit of x (binary indicator = democratization)
+    - 100*Beta % change (already multiplied by 100 in table)
+- preferred specification = column 3
+    - Democratiztaion leads to  0.78% increase in GDP this year
+    - after 25 years = 16.895% increase
+    - Long run = 21.40% higher Gdp per Capita
+    - SE = small, statistically significant
 
 ---
 
@@ -137,6 +145,10 @@ lets look at results ->
 after 25 years = **16,895** % higher GDP
 
 => effect levelling off = "one off"
+
+- no different trend for given country after democratization
+- just higher gdp per capita
+- important for the statistical model!
 
 
 
@@ -187,6 +199,8 @@ Democratization => **state capacity & human capital building**
 
 ## References
 
+...
+
 ---
 
 *Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
@@ -203,9 +217,11 @@ Democratization => **state capacity & human capital building**
 
 
 
-*What are the **Policy Implications** drawn from the link*
+*What are the **Policy Implications** drawn from the link between democracy and growth* 
 
-
+- especially if it only average effect
+- what if there is a "dip" in life quality after democratization 
+    - think post-soviet states
 
 ---
 
@@ -238,6 +254,8 @@ $$
 waves of democratization
 
 -   external factor that influences both demotracy and GDP
+-   not rely on country democracy value!
 -   regionally limited due to similiar politics  culture etc.
 -   7 regions in world
 -   confirm results
+

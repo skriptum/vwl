@@ -1,8 +1,6 @@
 # Notizen
 
-Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, akzeptiere ich dies als Teil des Gesamtpakets. Die Notizen sind nutzbar für **BWL** als auch **VWL** Studierende, da sich insbesondere in den ersten Semestern die Module überschneiden.
-
-Um einen schnellen Überblick über die verfügbaren Module zu erhalten, kann die Seitenliste auf der Website genutzt werden. Zusätzlich sind diese Informationen auch auf der Startseite jedes Semesters zu finden, inklusive der Namen der jeweiligen Professor:innen des Moduls. Dies erleichtert die gezielte Suche nach spezifischen Informationen und fördert eine effiziente Organisation meiner Studienunterlagen.
+Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, ist das Teil des Gesamtpakets. Die Notizen sind nutzbar für **BWL** als auch **VWL** Studierende, da sich insbesondere in den ersten Semestern die Module überschneiden.
 
 Weiterführende Links
 
@@ -16,7 +14,7 @@ Weiterführende Links
 
 ### Allgemein
 
-|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|28| 342 |
+|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|28| 355 |
 |---|---|---|
 |Zuletzt upgedatet|Anzahl Module| Anzahl Notizen |
 
@@ -24,18 +22,20 @@ Weiterführende Links
 
 ---
 
+
+
 ### 1. Semester
 
-| Modul                        | Professor:in             | Übersicht                                            | Zusammenfassung                                              |
-| ---------------------------- | ------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
-| Buchführung                  | Dr. Bernd Schuster       | [Übersicht](vwl1/VL_Buchfuehrung/README.md)          | [Buchungsaetze](vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze.md) |
-| BWL                          | Prof. Dr. Julia Seeger   | [Übersicht](vwl1/VL_BWL/README.md)                   | [Zusammenfassung](vwl1/VL_BWL/2021-10-00-Zusammenfassung.md) |
-| Mathematik I                 | PD. Maren Hantke         | [Übersicht](vwl1/VL_Mathe1/README.md)                |                                                              |
-| Statistik I                  | Prof. Dr. Claudia Decker | [Übersicht](vwl1/VL_Statistik1/README.md)            | [Zusammenfassung](vwl1/VL_Statistik1/2021-10-00-Zusammenfassung.md) |
-| Grund. Volkswirtschaftslehre | Prof. Dr. Lars Börner    | [Übersicht](vwl1/VL_VWL/README.md)                   | [Zusammenfassung](vwl1/VL_VWL/2021-10-00-Zusammenfassung.md) |
-| Wirtschaftsinformatik        | Prof. Dr. Taieb Mellouli | [Übersicht](vwl1/VL_Wirtschaftsinformatik/README.md) | [Zusammenfassung](vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md) |
+| Modul                        | Professor:in   | Übersicht                                            | Zusammenfassung                                              |
+| ---------------------------- | -------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| Buchführung                  | Bernd Schuster | [Übersicht](vwl1/VL_Buchfuehrung/README.md)          | [Buchungsaetze](vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze.md) |
+| BWL                          | Julia Seeger   | [Übersicht](vwl1/VL_BWL/README.md)                   | [Zusammenfassung](vwl1/VL_BWL/2021-10-00-Zusammenfassung.md) |
+| Mathematik I                 | Maren Hantke   | [Übersicht](vwl1/VL_Mathe1/README.md)                |                                                              |
+| Statistik I                  | Claudia Decker | [Übersicht](vwl1/VL_Statistik1/README.md)            | [Zusammenfassung](vwl1/VL_Statistik1/2021-10-00-Zusammenfassung.md) |
+| Grund. Volkswirtschaftslehre | Lars Börner    | [Übersicht](vwl1/VL_VWL/README.md)                   | [Zusammenfassung](vwl1/VL_VWL/2021-10-00-Zusammenfassung.md) |
+| Wirtschaftsinformatik        | Taieb Mellouli | [Übersicht](vwl1/VL_Wirtschaftsinformatik/README.md) | [Zusammenfassung](vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md) |
 
----
+
 
 ### 2. Semester
 
@@ -48,7 +48,7 @@ Weiterführende Links
 | Stadtökonomie (Leipzig)     | Melanie Krause    | [Übersicht](vwl2/VL_Stadt/README.md)      | [Hausarbeit](vwl2/VL_Stadt/hausarbeit/Hausarbeit.html)       |
 | Mathe II                    | Maren Hantke      | [Übersicht](vwl2/VL_Mathe2/README.md)     |                                                              |
 
----
+
 
 ### 3. Semester
 
@@ -58,15 +58,10 @@ Weiterführende Links
 | Makroökonomik I                    | Oliver Holtemöller | [Übersicht](vwl3/VL_Makro1/README.md)   |                                                              |
 | Monetäre Ökonomik                  | Malte Rieth        | [Übersicht](vwl3/VL_Monetär/README.md)  | [Zusammenfassung](vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md) |
 | Ethik der Sozialen Marktwirtschaft | Ingo Pies          | [Übersicht](vwl3/VL_Ethik/README.md)    | [Zusammenfassung](vwl3/VL_Ethik/2022-10-00-Zusammenfassung.md) |
-| Wachstum, Verteilung (Leipzig)     | Melanie Krause-    | [Übersicht](vwl3/VL_Wachstum/README.md) |                                                              |
-
-außerdem: **Exzellenzseminar Wirtschaftsethik**
-
-- Seminararbeit als [Website](https://uploads.martenw.com/Hayek/Ausarbeitung.html)
+| Wachstum, Verteilung (Leipzig)     | Melanie Krause     | [Übersicht](vwl3/VL_Wachstum/README.md) |                                                              |
+| Exzellenzseminar Wirtschaftsethik  | Ingo Pies          |                                         | [Seminararbeit](https://uploads.martenw.com/Hayek/Ausarbeitung.html) |
 
 
-
----
 
 ### 4. Semester
 
@@ -78,16 +73,16 @@ außerdem: **Exzellenzseminar Wirtschaftsethik**
 | Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoÖko/README.md)         |                                                              |
 | Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          | [Texte](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)              |
 
----
+
 
 ###  5. Semester
 
-| Modul                          | Prof              | Übersicht                                  |      |
-| ------------------------------ | ----------------- | ------------------------------------------ | ---- |
-| Data Science                   | Klaus Schmerler   | [Übersicht](vwl5/VL_DataScience/README.md) |      |
-| Empirical Economics with R     | Hakon Albers      | [Übersicht](vwl5/VL_Empirical/README.md)   |      |
-| Feminist Economics (Karlsruhe) | Amelie Betz       | [Übersicht](vwl5/VL_Feminist/README.md)    |      |
-| Innovation Economics           | Inez Labucay      | [Übersicht](vwl5/VL_Innovation/README.md)  |      |
-| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md)  |      |
-| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)                |      |
+| Modul                          | Prof              | Übersicht                                 |                                                              |
+| ------------------------------ | ----------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| Empirical Economics with R     | Hakon Albers      | [Übersicht](vwl5/VL_Empirical/README.md)  | [Presentation](https://uploads.martenw.com/DDCG/_Slides.pdf) |
+| Feminist Economics (Karlsruhe) | Amelie Betz       | [Übersicht](vwl5/VL_Feminist/README.md)   |                                                              |
+| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md) |                                                              |
+| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)               |                                                              |
+| Research Seminar               | Lars Börner       |                                           |                                                              |
 
+also for Empirical Economics with R: [Replication Code](https://skriptum.github.io/DDCG/2023-10-12-Intro.html)

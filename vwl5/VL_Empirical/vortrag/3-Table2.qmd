@@ -243,7 +243,7 @@ with
 models <- list(model1, model2, model3, model4)
 
 stargazer(models, 
-          type = "text", #change to "text" for easy viewing in console
+          type = "html", #change to "text" for easy viewing in console
           title = "Effect of Democracy on (Log) GDP per Capita", # title
           dep.var.labels = "Log GDP per Capita",  
           covariate.labels = c("Democracy"),

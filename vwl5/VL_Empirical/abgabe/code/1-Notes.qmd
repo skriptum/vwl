@@ -1,0 +1,369 @@
+# DDCG Notes
+
+## Intro
+
+-   Daron Acemoglu
+
+-   James A Robinson
+
+-   Suresh Naidu
+
+-   Pascual Restrepo
+
+published 2019, *Journal of Political Economy*
+
+Problems for the question:
+
+-   Democary Indices
+
+-   institutional differences between Dem / non-Dem
+
+-   correlation with other changes
+
+-   slumps in GDP before democratization
+
+=\>  DiD / panel data estimates not good idea
+
+## Literature
+
+*Notes here also from other papers*
+
+Question dates back to 1959 (lipset hypothesis)
+
+Lipset: $\text{economic growth} \to \text{democracy}$
+
+
+
+1990s: 
+
+- conitnius variables of democracy + simple regressions (OLS, problematic)
+- (eg [@barroDemocracyGrowth1996]) 
+- no clear /negative effect
+- confirm Lipset hypothesis (growht => democracy)
+
+Barro: $\text{democracy} \to \text{growth} \downarrow$
+
+2000s:
+
+- binary measures of democracy + Diff in Diff
+- mixed / postiive / not significant effects
+- eg [@giavazziEconomicPoliticalLiberalizations2005]
+
+Giavazzi: $\text{democracy} \rightsquigarrow \text{growth}$
+
+modern aproaches: Acemoglu
+
+- different strategies
+- as guess from Title: positive results
+
+Acemoglu: $\text{democracy} \implies \text{growth}$
+
+Meta Analysis [@colagrossiDoesDemocracyCause2020]
+
+## Approaches
+
+First:
+
+-   country fixed effects
+
+-   control with lags
+
+    -   esp. pre-dem GDP dip
+
+=\> ensure that deomcratizations are (conditionally) uncorrelated to past GDP
+
+=\> robust estimates of 20% higher GDP pC after 25 years
+
+Second:
+
+-   semiparametric treatment effects framework
+
+    -   statistical model to analyze treatment effect on outcome
+
+    -   mix of parametric and non-parametric methods
+
+    -   flexible approach
+
+-   democratization influences distribution of potential GDP afterwards (time-dsitribution)
+
+Third:
+
+-   Instrumental Variable Approach
+
+-   regional waves of democratization
+
+    -   differ from economic shocks
+
+**=\> all approaches 25% increase**
+
+## Channels:
+
+-   investment +
+
+-   schooling +
+
+-   economic reforms
+
+-   public services +
+
+-   social unrest -
+
+**possible other Literature**
+
+-   Schumpeter: theoretical arguments against
+
+-   Barro: empirical arguments against
+
+-   Comments on Paper?
+
+## Data
+
+Democracy INdex (consolidated and dichotomous)
+
+Sources:
+
+-   [Freedom House](https://freedomhouse.org/) (free, partly free, unfree)
+
+-   [Polity IV](https://www.systemicpeace.org/polity/polity4x.htm) (-10, +10)
+
+-   Cheibub et al (@cheibubDemocracyDictatorshipRevisited2010)
+
+-   Boix et al (@boixCompleteDataSet2013)
+
+measure is also for short lived democracies!
+
+either 0 or 1
+
+Outcome Variable: log GDP p.C 2000 Dollars (World Bank)
+
+## Regression
+
+### First Approach
+
+$$
+y_{ct} = \beta D_t + E_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+$$
+
+Formula: ...
+
+-   $y_ct$ = log GDP per capita in country *c* at time *t*
+
+-   $D_{ct}$ = Dichotomous measure of democracy
+
+-   *p* lags of log GDP for control
+
+-   $\alpha$ = country fixed effects
+
+-   d = time fixed effects
+
+-   $e$ = error
+
+$$
+\frac{ \hat\beta }{1- E_{j=1}^p \hat\gamma_j}
+$$
+
+lags = countries not on different GDP trends before (stop reverse causality)
+
+Results: (Table 2) weirdly split on two pages
+
+![](images/2023-11-15_15-01-55.jpg) ![](images/2023-11-15_15-02-02.jpg)
+
+Estimators:
+
+-   **within estimator** (aka [fixed effects model](https://en.wikipedia.org/wiki/Fixed_effects_model))
+
+-   GMM estimator (@arellanoTestsSpecificationPanel1991)
+
+-   HKK Estimates(@hahnBiasCorrectedInstrumental2001)
+
+why switch?
+
+-   Nickell Bias (not enough time periods compared to entities), always in within estimator
+
+    -   just theoretical
+
+    -   they have enough times, therefore ok
+
+-   bias of fixed-effects estimator
+
+-   use other methods, but not that widespread
+
+    -   GMM has their own biases (asymptitic bias, too many Ts)
+
+    -   HHK similar to first
+
+**Robustness:**
+
+-   omitted variable between GDP and Democracy
+
+    -   other approaches
+
+-   different levels of income before democratization
+
+    -   solve by using just subsample with similar wealth
+
+-   have dummy for post-soviet transition to democracy
+
+-   other ommited variables controls:
+
+    -   unrest before democracy is good for growth
+
+        -   also controlled for in other approaches and lags of unrest
+
+    -   external trade influences both
+
+        -   control for external financial flows
+
+    -   demographic changes
+
+        -   also controlled for
+
+### Second Approach
+
+Prblem of First: linearity assumption of GDP growth
+
+semi-parametric
+
+-   no parametric assumption for GDP development
+
+-   but assumption for likelihood of transition to democracy
+
+Assumption:
+
+-   transitions to democracy preceded by dip
+
+-   no other confounding factors that influence propensity to democratize
+
+Results:
+
+-   confirmation of assumption
+
+-   results similar to first approach
+
+-   used three different methods
+
+### Third Approach
+
+waves of democratization
+
+-   external factor that influences both demotracy and GDP
+
+-   alleviates errors in democracy measure
+
+-   regionally limited due to similiar politics  culture etc.
+
+e.g Soviet Union fall
+
+7 regions
+
+1.  Africa
+
+2.  East Asia + Pacifics
+
+3.  Eastern Europe + Central Asia
+
+4.  Western Europe + other developed countries
+
+5.  Latin America + Carribean
+
+6.  MENA
+
+7.  South Asia
+
+Wave definition
+
+-   significant determinants of democracy
+
+-   but wothout trend effect on GDP
+
+=\> different Approach, but similiar estimates
+
+## Mechanisms
+
+potential channels and data
+
+-   \% investment GDP (logs)
+
+-   TFP (log)
+
+-   measure of economic reform (Giuliano 2013) 0-100
+
+-   \% trade GDP (log)
+
+-   \% taxes of GDP (log)
+
+-   primary school enrollment
+
+-   secondary school enrollment
+
+-   child mortality (log)
+
+-   social unrest dummy
+
+Estimation
+
+$m_{ct} = \beta D_{ct} + \sum_{j=1}^p \gamma_j y_{ct-j} + \sum_{j=1}^p \eta_j m_{ct-j} + \alpha_c + \delta_t+\epsilon_{ct}$
+
+Results: Democracy =\>
+
+-   economic reforms
+
+-   tax rev.
+
+-   enrollment school
+
+-   some evidence
+
+    -   invstment
+
+    -   opnennes to trade
+
+    -   less social unrest
+
+=\> Democracy: more taxes, more investment in school, econ. reforms
+
+Critiqie of DDCG:
+
+-   Dem. needs certain preconditions (human capital, institutions)
+
+-   Team controls for
+
+-   =\> high human capital (educated), democracy = more growth
+
+    -   high ed. = reduce stakes of distributional conflicts
+
+## Conclusion
+
+Skepticism about democracy always existed (see Plato)
+
+but effects of democarcy are there!
+
+-   more than others argued (esp Barro)
+
+## Critique
+
+-   not enough explaining, why choose which specification
+
+    -   in every approach choose the one that is most similar results to others
+
+-   dichotomous democracy index
+
+    -   democratization is a flowing element
+
+-   regional analysis
+
+    -   size  of regions
+
+------------------------------------------------------------------------
+
+Linear Dynamic Panel Model
+
+-   **Linear:** Assumes proportional relationships between variables.
+
+-   **Dynamic:** Includes lagged values of the dependent variable to capture temporal dependencies.
+
+-   **Panel:** Analyzes data with both cross-sectional (different entities) and time-series (observations over time) dimensions.
+
+-   **Fixed Effects:** Incorporates parameters specific to each entity in the panel, capturing time-invariant characteristics.
+
+-   **Model Purpose:** Used to analyze how changes in variables, such as GDP, relate to each other over time, considering individual entity characteristics and historical patterns.

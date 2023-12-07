@@ -7,6 +7,7 @@ author: Marten Walk
 format: 
   beamer:
     theme: Boadilla
+    keep-tex: true
 
 linkcolor: blue
 number-equations: true
@@ -18,22 +19,11 @@ nocite: |
   @*
 ---
 
-## About the Paper
+## Introduction
 
 :::: {.columns}
 
 ::: {.column width="60%"}
-
-\
-
-Authors
-
--   Daron ***A***cemoglu (MIT)
--   Suresh ***N***aidu (Columbia)
--   James ***R***obinson (U. of Chicago)
--   Pascual ***R***estrepo (Boston U.)
-
-
 
 \
 
@@ -44,6 +34,21 @@ Publication:
 - Journal of Political Economy (JPE)
 - Working Paper (NBER): 03/2014
 - Final Publication: 02/2019 
+
+
+
+\
+
+
+
+Authors
+
+-   Daron ***A***cemoglu (MIT)
+-   Suresh ***N***aidu (Columbia)
+-   James ***R***obinson (U. of Chicago)
+-   Pascual ***R***estrepo (Boston U.)
+
+
 
 
 :::
@@ -70,8 +75,6 @@ Publication:
 | @giavazziEconomicPoliticalLiberalizations2005 | $\text{democracy} \rightsquigarrow \text{growth}$ |
 | @acemogluDemocracyDoesCause2019               | $\text{democracy} \implies \text{growth}$         |
 : Literature Examples
-
-Meta Analysis: @colagrossiDoesDemocracyCause2020
 
 ---
 
@@ -159,7 +162,7 @@ Effect after 25 years:  & 17.791 & 13.8 & 16.895 & 17.715 \\
 Observations & 6,790 & 6,642 & 6,336 & 5,688 \\ 
 \hline 
 \hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{4}{r}{The reported coefficient on democracy is multiplied by 100. Replication of Table 2 in ANRR (2019)} \\ 
+\textit{Note:}  & \multicolumn{4}{r}{Coefficient on democracy is multiplied by 100} \\ 
 \end{tabular} 
 \end{table} 
 ```
@@ -174,24 +177,28 @@ Observations & 6,790 & 6,642 & 6,336 & 5,688 \\
 
 ---
 
-## Channels
-
-| ![Table Channles](output/Table_Channels.jpg)    |
-| ------------------------------------------------------------ |
-: Effects of Democracy on Potential Mechanisms
-
-
-Democratization => **state capacity & human capital building**
 
 
 ## Interlude: Replication in R
 
+- [Figure Democratizations](https://skriptum.github.io/DDCG/vortrag/5-FigureDem.html)
 - [Model Specification](https://skriptum.github.io/DDCG/vortrag/2-Panel-Models.html)
 - [Results Table](https://skriptum.github.io/DDCG/vortrag/3-Table2.html) 
-- [Trend Estimate](https://skriptum.github.io/DDCG/vortrag/4-Figure2.html#plot)
-- [Channels Table](https://skriptum.github.io/DDCG/vortrag/6-IVReg.html)
+- [Figure Trend](https://skriptum.github.io/DDCG/vortrag/4-Figure2.html#plot)
+- [Channels](https://skriptum.github.io/DDCG/vortrag/7-Channels.Models.html)
+
+---
+
+## Channels
+
+| ![Table Channles](output/Table_Channels.jpg)   |
+| ---------------------------------------------- |
+ : Effects of Democracy on Potential Mechanisms 
 
 
+Democratization => **state capacity & human capital building**
+
+see online Appendix for Replication
 
 ---
 
@@ -203,6 +210,25 @@ Democratization => **state capacity & human capital building**
 
 ---
 
+## Summary
+
+
+
+![Effects of Democracy](../images/2023-12-06_17-17-36.jpg)
+
+
+
+---
+
+## Discussion
+
+1. Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?
+2. What actionable **policy recommendations** can be drawn from the observed link between democracy and economic growth?
+
+
+
+---
+
 ## References
 
 \tiny
@@ -211,36 +237,6 @@ Democratization => **state capacity & human capital building**
 :::
 
 \normalsize
-
----
-
-## Discussion Questions
-
-1. Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?
-2. Could there be **non-linear relationships** between democracy and economic growth, e.g optimal level of democracy? 
-3. What actionable **policy recommendations** can be drawn from the observed link between democracy and economic growth?
-
-
-
-::: notes
-
-*Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
-
-- elephant in the room = China (achieved both)
-- communist states in general = high state capacity
-
-
-
-*Could there be **non-linear relationships** between democracy and economic growth, e.g optimal level of democracy?* 
-
-- a level of democracy beyond which growth is hurt?
-- for example monetary policy = undemocratic in most democracy today
-
-
-
-*What are the **Policy Implications** drawn from the link*
-
-:::
 
 
 

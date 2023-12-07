@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Empirical Economics with R – regression</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2023-10-12-Intro.html">Mitschriften</a></li><li class="breadcrumb-item"><a href="./2023-10-26-Regression.html">26.10.2023 Regression</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Empirical Economics with R</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Mitschriften</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-12-Intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12.10.2023 Acemoglu (2001)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-19-Stats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19.10.2023 Stats Intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-26-Regression.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">26.10.2023 Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-06-Datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">06.11.2023 Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-09-Presentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09.11.2023 Presentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-16-TimeSeries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16.11.2023 Time Series</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-23-IV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23.11.2023 IV Regression</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Vortrag</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/1-Notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DDCG Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/2-Panel-Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fixed Effects Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/3-Table2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fixed Effects Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/4-Figure2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figure Trend</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/5-FigureDem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figure Democratizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/6-IVReg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV Regressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Channels of Democracy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#regression" id="toc-regression" class="nav-link active" data-scroll-target="#regression">26.10.2023 Regression</a>
+  <ul class="collapse">
+  <li><a href="#intro" id="toc-intro" class="nav-link" data-scroll-target="#intro">Intro</a></li>
+  <li><a href="#acemoglus-regression" id="toc-acemoglus-regression" class="nav-link" data-scroll-target="#acemoglus-regression">Acemoglus Regression</a>
+  <ul class="collapse">
+  <li><a href="#interlude-regression-interpretation" id="toc-interlude-regression-interpretation" class="nav-link" data-scroll-target="#interlude-regression-interpretation">Interlude: Regression Interpretation</a></li>
+  </ul></li>
+  <li><a href="#recreation-of-the-table" id="toc-recreation-of-the-table" class="nav-link" data-scroll-target="#recreation-of-the-table">Recreation of the Table</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="regression" class="level1">
+<h1>26.10.2023 Regression</h1>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>Dependent Variable = intercept + ß explanatory variable + error</p>
+<p><span class="math display">\[
+y = \alpha + \beta x + \mu
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\beta\)</span> estimated with Ordinary Least Squares (OLS)</li>
+<li>explanatory variable = should be exogenous</li>
+</ul>
+</section>
+<section id="acemoglus-regression" class="level2">
+<h2 class="anchored" data-anchor-id="acemoglus-regression">Acemoglus Regression</h2>
+<p>Formula</p>
+<p><span class="math display">\[
+\log y_i = \mu + aR_i+\bf{X}_i \gamma+ \epsilon
+\]</span></p>
+<p>Figure:</p>
+<p><img src="images/2023-10-26_10-48-50.jpg" class="img-fluid"></p>
+<p>Table:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/2023-10-26_10-55-06.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">img</figcaption>
+</figure>
+</div>
+<ul>
+<li>empty lines = not included in regression
+<ul>
+<li>every new sample = broader regression formula with dummies etc.</li>
+</ul></li>
+<li><span class="math inline">\(R^2 = 0.62\)</span>: goodness of fit of regression line
+<ul>
+<li>quite good here (explains 62% of the variance)</li>
+</ul></li>
+<li>Sample 7/8 new dependent variable to make it more solid</li>
+</ul>
+<section id="interlude-regression-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interlude-regression-interpretation">Interlude: Regression Interpretation</h3>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Abhängige Var.</th>
+<th>Erklärende Var.</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level-Level</td>
+<td>y</td>
+<td><span class="math inline">\(x_j\)</span></td>
+<td><span class="math inline">\(\Delta \hat{y} = \beta_j \Delta x_j\)</span></td>
+</tr>
+<tr class="even">
+<td>Level-Log</td>
+<td>y</td>
+<td><span class="math inline">\(log(x_j)\)</span></td>
+<td><span class="math inline">\(\Delta \hat{y} = \frac{\beta_j}{100} \% \Delta x_j\)</span></td>
+</tr>
+<tr class="odd">
+<td>Log-Level</td>
+<td><em>log(y)</em></td>
+<td><span class="math inline">\(x_j\)</span></td>
+<td><span class="math inline">\(\% \Delta \hat{y} = 100 \beta_j \Delta x_j\)</span></td>
+</tr>
+<tr class="even">
+<td>Log-Log</td>
+<td><em>log(y)</em></td>
+<td><em>log(x)</em></td>
+<td><span class="math inline">\(\% \Delta \hat{y} = \beta_j \% \Delta x_j\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>=&gt; ours is log-level</p>
+</section>
+</section>
+<section id="recreation-of-the-table" class="level2">
+<h2 class="anchored" data-anchor-id="recreation-of-the-table">Recreation of the Table</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Paket 'stargazer' wurde unter R Version 4.1.2 erstellt</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Please cite as: </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> R package version 5.2.3. https://CRAN.R-project.org/package=stargazer </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/dataset_AJR2001.Rdata"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["shortnam"],"name":[1],"type":["chr"],"align":["left"]},{"label":["lat_abst"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["avexpr"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["logpgp95"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["baseco"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["logem4"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["africa"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["asia"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["loghjypl"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["other"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["rich4"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["catho80"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["muslim80"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["no_cpm80"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["f_brit"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["f_french"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["sjlofr"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["avelf"],"name":[18],"type":["dbl"],"align":["right"]},{"label":["temp1"],"name":[19],"type":["dbl"],"align":["right"]},{"label":["temp2"],"name":[20],"type":["dbl"],"align":["right"]},{"label":["temp3"],"name":[21],"type":["dbl"],"align":["right"]},{"label":["temp4"],"name":[22],"type":["dbl"],"align":["right"]},{"label":["temp5"],"name":[23],"type":["dbl"],"align":["right"]},{"label":["humid1"],"name":[24],"type":["dbl"],"align":["right"]},{"label":["humid2"],"name":[25],"type":["dbl"],"align":["right"]},{"label":["humid3"],"name":[26],"type":["dbl"],"align":["right"]},{"label":["humid4"],"name":[27],"type":["dbl"],"align":["right"]},{"label":["steplow"],"name":[28],"type":["dbl"],"align":["right"]},{"label":["deslow"],"name":[29],"type":["dbl"],"align":["right"]},{"label":["stepmid"],"name":[30],"type":["dbl"],"align":["right"]},{"label":["desmid"],"name":[31],"type":["dbl"],"align":["right"]},{"label":["drystep"],"name":[32],"type":["dbl"],"align":["right"]},{"label":["drywint"],"name":[33],"type":["dbl"],"align":["right"]},{"label":["edes1975"],"name":[34],"type":["dbl"],"align":["right"]},{"label":["landlock"],"name":[35],"type":["dbl"],"align":["right"]},{"label":["goldm"],"name":[36],"type":["dbl"],"align":["right"]},{"label":["iron"],"name":[37],"type":["dbl"],"align":["right"]},{"label":["silv"],"name":[38],"type":["dbl"],"align":["right"]},{"label":["zinc"],"name":[39],"type":["dbl"],"align":["right"]},{"label":["oilres"],"name":[40],"type":["dbl"],"align":["right"]},{"label":["malfal94"],"name":[41],"type":["dbl"],"align":["right"]},{"label":["yellow"],"name":[42],"type":["dbl"],"align":["right"]},{"label":["leb95"],"name":[43],"type":["dbl"],"align":["right"]},{"label":["imr95"],"name":[44],"type":["dbl"],"align":["right"]},{"label":["meantemp"],"name":[45],"type":["dbl"],"align":["right"]},{"label":["lt100km"],"name":[46],"type":["dbl"],"align":["right"]},{"label":["latabs"],"name":[47],"type":["dbl"],"align":["right"]},{"label":["euro1900"],"name":[48],"type":["dbl"],"align":["right"]},{"label":["democ1"],"name":[49],"type":["dbl"],"align":["right"]},{"label":["cons1"],"name":[50],"type":["dbl"],"align":["right"]},{"label":["indtime"],"name":[51],"type":["dbl"],"align":["right"]},{"label":["democ00a"],"name":[52],"type":["dbl"],"align":["right"]},{"label":["cons00a"],"name":[53],"type":["dbl"],"align":["right"]}],"data":[{"1":"AFG","2":"0.3666667","3":"NA","4":"NA","5":"NA","6":"4.540098","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"99.3","14":"0.6999969","15":"1","16":"0","17":"1","18":"0.4484412","19":"10","20":"14","21":"40","22":"-21","23":"11","24":"51","25":"80","26":"22","27":"70","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"1","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00372","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"1","50":"1","51":"195","52":"1","53":"1","_rn_":"1"},{"1":"AGO","2":"0.1366667","3":"5.363636","4":"7.770645","5":"1","6":"5.634789","7":"1","8":"0","9":"-3.4112477","10":"0","11":"0","12":"68.7","13":"0.0","14":"11.5000038","15":"0","16":"0","17":"1","18":"0.7727550","19":"26","20":"28","21":"37","22":"14","23":"21","24":"77","25":"84","26":"74","27":"78","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"146000","41":"0.95000","42":"1","43":"46.49","44":"125.0","45":"22.94133","46":"0.118758","47":"0.136667","48":"8","49":"0","50":"3","51":"20","52":"0","53":"1","_rn_":"2"},{"1":"ARE","2":"0.2666667","3":"7.181818","4":"9.804219","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.4","13":"94.9","14":"4.3999987","15":"1","16":"0","17":"0","18":"NA","19":"NA","20":"NA","21":"NA","22":"NA","23":"NA","24":"NA","25":"NA","26":"NA","27":"NA","28":"NA","29":"NA","30":"NA","31":"NA","32":"NA","33":"NA","34":"0","35":"0","36":"NA","37":"NA","38":"NA","39":"NA","40":"NA","41":"0.01230","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"3"},{"1":"ARG","2":"0.3777778","3":"6.386364","4":"9.133459","5":"1","6":"4.232656","7":"0","8":"0","9":"-0.8722738","10":"0","11":"0","12":"91.6","13":"0.2","14":"5.5000014","15":"0","16":"0","17":"1","18":"0.1769318","19":"17","20":"25","21":"40","22":"-6","23":"6","24":"81","25":"92","26":"60","27":"79","28":"1","29":"0","30":"0","31":"1","32":"0","33":"0","34":"90","35":"0","36":"0","37":"0","38":"0","39":"0","40":"46900","41":"0.00000","42":"0","43":"72.89","44":"21.8","45":"17.10000","46":"0.123089","47":"0.377778","48":"60","49":"1","50":"1","51":"170","52":"3","53":"3","_rn_":"4"},{"1":"ARM","2":"0.4444444","3":"NA","4":"7.682482","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"0.0","14":"100.0000000","15":"0","16":"0","17":"0","18":"NA","19":"8","20":"12","21":"40","22":"-27","23":"10","24":"62","25":"91","26":"36","27":"75","28":"0","29":"0","30":"1","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00000","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"5"},{"1":"AUS","2":"0.3000000","3":"9.318182","4":"9.897972","5":"1","6":"2.145931","7":"0","8":"0","9":"-0.1707883","10":"1","11":"1","12":"29.6","13":"0.2","14":"46.7000008","15":"1","16":"0","17":"0","18":"0.1127971","19":"17","20":"18","21":"43","22":"-10","23":"3","24":"56","25":"85","26":"35","27":"64","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"99","35":"0","36":"3","37":"16","38":"9","39":"12","40":"99100","41":"0.00000","42":"1","43":"78.25","44":"5.6","45":"20.90000","46":"0.198958","47":"0.300000","48":"98","49":"10","50":"7","51":"94","52":"10","53":"7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p>Table 2: Estimation of Models 1-4 for both datasets</p>
+<p>Table Column Names:</p>
+<ul>
+<li><code>logpgp95</code>= Log GDP per capita, PPP, 1995</li>
+<li><code>avexpr</code> = Average protection against expropriation risk, 1985-1995</li>
+<li><code>baseco</code> = Dummy variable for countries in the base sample (colonized)</li>
+<li><code>lat_abst</code> = Absolute value of latitude</li>
+<li><code>loghjypl</code> = Log output per worker in 1988 (US normalized to 1)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>m_T2_world_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>m_T2_base_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#latitude added</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>m_T2_world_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst,<span class="at">data=</span>data)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>m_T2_base_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># continent dummies</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>m_T2_world_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span>avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other,<span class="at">data=</span>data)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>m_T2_base_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(logpgp95 <span class="sc">~</span> avexpr <span class="sc">+</span> lat_abst <span class="sc">+</span> asia <span class="sc">+</span> africa <span class="sc">+</span> other, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># other dependent variable</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>m_T2_world_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span>avexpr, <span class="at">data=</span>data)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>m_T2_base_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(loghjypl <span class="sc">~</span> avexpr, <span class="at">data=</span>data[<span class="fu">which</span>(data<span class="sc">$</span>baseco<span class="sc">==</span><span class="dv">1</span>),])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Summary of the first Regression</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m_T2_world_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = logpgp95 ~ avexpr, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.9020 -0.3160  0.1380  0.4225  1.4406 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  4.62609    0.30058   15.39   &lt;2e-16 ***
+avexpr       0.53187    0.04062   13.09   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7179 on 109 degrees of freedom
+  (52 Beobachtungen als fehlend gelöscht)
+Multiple R-squared:  0.6113,    Adjusted R-squared:  0.6078 
+F-statistic: 171.4 on 1 and 109 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Now we have the Regression Models, but until now no Table to present these</p>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>all_res <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  m_T2_world_1, m_T2_base_1,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  m_T2_world_2, m_T2_base_2,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  m_T2_world_3, m_T2_base_3,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  m_T2_world_4, m_T2_base_4</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>coef_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Average Protection"</span>, <span class="st">"Latittude"</span>,<span class="st">"Asia dummy"</span>, <span class="st">"Africa dummy"</span>, <span class="st">"Other"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>note <span class="ot">&lt;-</span> <span class="st">"Nitzuen lorem"</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(all_res, </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">type=</span><span class="st">"html"</span>, </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>          <span class="at">out=</span><span class="st">"data/Table2_stargazer.html"</span>, <span class="at">omit =</span> <span class="st">"Constant"</span>,</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>          <span class="at">notes.label =</span> note,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>          <span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">"log GDP per Capita"</span>, <span class="st">"log output per worker"</span>),</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>          <span class="at">covariate.labels =</span> coef_names</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>          )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<table style="text-align:center">
+<tbody><tr>
+<td colspan="9" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="8">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="8" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="6">
+log GDP per Capita
+</td>
+<td colspan="2">
+log output per worker
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+<td>
+(5)
+</td>
+<td>
+(6)
+</td>
+<td>
+(7)
+</td>
+<td>
+(8)
+</td>
+</tr>
+<tr>
+<td colspan="9" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Average Protection
+</td>
+<td>
+0.532<sup>***</sup>
+</td>
+<td>
+0.522<sup>***</sup>
+</td>
+<td>
+0.463<sup>***</sup>
+</td>
+<td>
+0.468<sup>***</sup>
+</td>
+<td>
+0.390<sup>***</sup>
+</td>
+<td>
+0.401<sup>***</sup>
+</td>
+<td>
+0.446<sup>***</sup>
+</td>
+<td>
+0.457<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.041)
+</td>
+<td>
+(0.061)
+</td>
+<td>
+(0.055)
+</td>
+<td>
+(0.064)
+</td>
+<td>
+(0.051)
+</td>
+<td>
+(0.059)
+</td>
+<td>
+(0.039)
+</td>
+<td>
+(0.061)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Latittude
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.872<sup>*</sup>
+</td>
+<td>
+1.577<sup>**</sup>
+</td>
+<td>
+0.333
+</td>
+<td>
+0.875
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.488)
+</td>
+<td>
+(0.710)
+</td>
+<td>
+(0.445)
+</td>
+<td>
+(0.628)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Asia dummy
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.153
+</td>
+<td>
+-0.577<sup>**</sup>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.155)
+</td>
+<td>
+(0.231)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Africa dummy
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.916<sup>***</sup>
+</td>
+<td>
+-0.881<sup>***</sup>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.166)
+</td>
+<td>
+(0.170)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Other
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.304
+</td>
+<td>
+0.107
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.375)
+</td>
+<td>
+(0.382)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="9" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+111
+</td>
+<td>
+64
+</td>
+<td>
+111
+</td>
+<td>
+64
+</td>
+<td>
+111
+</td>
+<td>
+64
+</td>
+<td>
+108
+</td>
+<td>
+61
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.611
+</td>
+<td>
+0.540
+</td>
+<td>
+0.623
+</td>
+<td>
+0.574
+</td>
+<td>
+0.715
+</td>
+<td>
+0.714
+</td>
+<td>
+0.554
+</td>
+<td>
+0.486
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.608
+</td>
+<td>
+0.533
+</td>
+<td>
+0.616
+</td>
+<td>
+0.561
+</td>
+<td>
+0.702
+</td>
+<td>
+0.689
+</td>
+<td>
+0.550
+</td>
+<td>
+0.477
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+0.718 (df = 109)
+</td>
+<td>
+0.713 (df = 62)
+</td>
+<td>
+0.711 (df = 108)
+</td>
+<td>
+0.692 (df = 61)
+</td>
+<td>
+0.626 (df = 105)
+</td>
+<td>
+0.582 (df = 58)
+</td>
+<td>
+0.713 (df = 106)
+</td>
+<td>
+0.709 (df = 59)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+171.438<sup>***</sup> (df = 1; 109)
+</td>
+<td>
+72.816<sup>***</sup> (df = 1; 62)
+</td>
+<td>
+89.047<sup>***</sup> (df = 2; 108)
+</td>
+<td>
+41.179<sup>***</sup> (df = 2; 61)
+</td>
+<td>
+52.738<sup>***</sup> (df = 5; 105)
+</td>
+<td>
+28.946<sup>***</sup> (df = 5; 58)
+</td>
+<td>
+131.705<sup>***</sup> (df = 1; 106)
+</td>
+<td>
+55.828<sup>***</sup> (df = 1; 59)
+</td>
+</tr>
+<tr>
+<td colspan="9" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Nitzuen lorem
+</td>
+<td colspan="8" style="text-align:right">
+<sup><em></em></sup><em>p&lt;0.1; <sup><strong></strong></sup><strong>p&lt;0.05; <sup></sup></strong></em>p&lt;0.01
+</td>
+</tr>
+
+</tbody></table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

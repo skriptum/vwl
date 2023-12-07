@@ -1,0 +1,333 @@
+# IV Regressions
+
+## Model
+
+First Stage:
+
+$$
+y_{ct} = \beta D_{ct} + \sum_{j=1}^p \gamma_j y_{ct-j} + \alpha_c + \delta_t + \epsilon_{ct}
+$$
+
+Second Stage: with D as IV
+
+$$
+D_{ct} = \sum_{j=1}^p \pi_j Z_{ct-j}+ \sum_{j=1}^p \phi y_{ct-j} + \Phi_c+ \mu_t+ v_{ct}
+$$
+
+-   Z = average of democracy in Region times initial regime cell = `demreg` in dataframe
+-   D = democracy variable = `dem` variable
+-   y = log gdp per capita = `y` variable
+
+Estimated with 2SLS Regression
+
+## Imports
+
+```{r}
+library(tidyverse)
+library(plm)
+library(stargazer)
+```
+
+```{r}
+DDCGdata <- haven::read_dta("../data/DDCGdata.dta")
+
+pdf <- pdata.frame(DDCGdata, index=c("country_name", "year"))
+rm(DDCGdata)
+
+head(pdf)
+```
+
+## Estimation
+Use PLM and IVReg type formula for estimation, because IVReg does not work with panel data!
+
+### Model 1 = 1 Lag of the Instrument
+
+```{r}
+iv_model_1 <- plm(
+    y ~ dem + plm::lag(y, 1:4) | 
+    plm::lag(demreg,1) + plm::lag(y, 1:4),
+    data=pdf,
+    effect = "twoways",
+    )
+
+summary(iv_model_1)
+```
+
+### Model 2 = 4 Lags of the Instrument
+
+preferred specification!
+
+```{r}
+iv_model_2 <- plm(
+    y ~ dem + plm::lag(y, 1:4) | 
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4), # 4 lags of the instrument
+    data=pdf,
+    effect = "twoways",
+    )
+
+summary(iv_model_2)
+```
+
+### Model 3 = Dummies for Soviet Countries
+
+```{r}
+iv_model_3 <- plm(
+    y ~ dem + plm::lag(y, 1:4) + sov1 + sov2 + sov3 +sov4| #soviet (satellite) dummies
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4) + sov1 + sov2 + sov3 +sov4,
+    data=pdf,
+    effect = "twoways",
+    )
+
+summary(iv_model_3)
+```
+
+### Model 4 = Regional Trends
+```{r}
+iv_model_4 <- plm(
+    y ~ dem + plm::lag(y, 1:4) + rtrend2 + rtrend3 + rtrend4+ rtrend5 +rtrend6 +rtrend7 | #seven regions and their trends
+    plm::lag(demreg,1:4) + plm::lag(y, 1:4) + rtrend2 + rtrend3 + rtrend4+ rtrend5 +rtrend6 +rtrend7,
+    data=pdf,
+    effect = "twoways",
+    model = "within"
+    )
+
+summary(iv_model_4)
+```
+
+## Long Run Effects
+
+```{r}
+beta_hat <- coef(iv_model_1)["dem"]
+gamma_hat <- (coef(iv_model_1)[2:5])
+
+long_run_effect_1 <- beta_hat / (1 - sum(gamma_hat))
+```
+
+```{r}
+beta_hat <- coef(iv_model_2)["dem"]
+gamma_hat <- (coef(iv_model_2)[2:5])
+
+long_run_effect_2 <- beta_hat / (1 - sum(gamma_hat))
+```
+
+```{r}
+beta_hat <- coef(iv_model_3)["dem"]
+gamma_hat <- (coef(iv_model_3)[2:5])
+
+long_run_effect_3 <- beta_hat / (1 - sum(gamma_hat))
+```
+
+```{r}
+beta_hat <- coef(iv_model_4)["dem"]
+gamma_hat <- (coef(iv_model_4)[2:5])
+
+long_run_effect_4 <- beta_hat / (1 - sum(gamma_hat))
+```
+
+```{r}
+lre <- c(long_run_effect_1, long_run_effect_2, long_run_effect_3, long_run_effect_4)
+lre <- round(lre, 3)
+lre
+```
+
+## Short Run Effect
+
+Calculate the short run effects fro 1-30 years:
+
+Formula taken from Stata Code File (`Table2_final.do`, lines 32-87 + following)
+$$
+effect_{t} = \hat\beta + \sum_{j=1}^p \hat\gamma_j * effect_{t-j}
+$$
+```{r}
+sre <- c()
+```
+
+
+### Model 1
+
+```{r}
+dem_shortrun <- coef(iv_model_1)["dem"]
+lag1 <- (coef(iv_model_1)[2])
+lag2 <- (coef(iv_model_1)[3])
+lag3 <- (coef(iv_model_1)[4])
+lag4 <- (coef(iv_model_1)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+sre <- c(sre, effects[25])
+```
+
+### Model 2
+
+```{r}
+dem_shortrun <- coef(iv_model_2)["dem"]
+lag1 <- (coef(iv_model_2)[2])
+lag2 <- (coef(iv_model_2)[3])
+lag3 <- (coef(iv_model_2)[4])
+lag4 <- (coef(iv_model_2)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+sre <- c(sre, effects[25])
+```
+
+### Model 3
+
+```{r}
+dem_shortrun <- coef(iv_model_3)["dem"]
+lag1 <- (coef(iv_model_3)[2])
+lag2 <- (coef(iv_model_3)[3])
+lag3 <- (coef(iv_model_3)[4])
+lag4 <- (coef(iv_model_3)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+sre <- c(sre, effects[25])
+```
+
+### Model 4
+
+```{r}
+dem_shortrun <- coef(iv_model_4)["dem"]
+lag1 <- (coef(iv_model_4)[2])
+lag2 <- (coef(iv_model_4)[3])
+lag3 <- (coef(iv_model_4)[4])
+lag4 <- (coef(iv_model_4)[5])
+```
+
+```{r}
+effect1 <- dem_shortrun
+effect2 <- (effect1 * lag1) + dem_shortrun
+effect3 <- (effect2 * lag1) + (effect1 * lag2) + dem_shortrun
+effect4 <- (effect3 * lag1) + (effect2 * lag2) + (effect1 * lag3) + dem_shortrun
+
+effects <- c(effect1,effect2, effect3, effect4)
+```
+
+```{r}
+for (i in 5:30) {
+  eff <- (effects[i-1] * lag1) + (effects[i-2] * lag2) + (effects[i-3] * lag3) + (effects[i-4] * lag4) + dem_shortrun
+  effects <- c(effects, eff)
+}
+```
+
+```{r}
+sre <- c(sre, effects[25])
+```
+
+```{r}
+sre <- round(sre, 3)
+sre
+```
+
+## Persistence
+
+Calculate the persistence of Democracy for the different models with this Formula:
+
+$$
+D_{pers} = \sum_{j=1}^p \hat\gamma_j
+$$
+
+```{r}
+pers1 <- sum(coef(iv_model_1)[2:5])
+pers2 <- sum(coef(iv_model_2)[2:5])
+pers3 <- sum(coef(iv_model_3)[2:5])
+pers4 <- sum(coef(iv_model_4)[2:5])
+
+pers <- c(pers1, pers2, pers3, pers4)
+pers <- round(pers, 3)
+pers
+```
+
+## Table
+
+```{r}
+#| output: asis
+models <- list(iv_model_1, iv_model_2, iv_model_3, iv_model_4)
+
+stargazer(models, 
+          type = "html",
+          title = "Effect of Democracy on (Log) GDP per Capita",
+          keep = c("dem"),
+          column.labels = c("1 Lag", "4 Lags", "Soviet Dummies", "Regional Trends"),
+          dep.var.labels = "Dependent Variable",
+          covariate.labels = c("Democracy"),
+          omit.stat = c("ser", "rsq", "adj.rsq", "f"),
+          add.lines = list( # add lines for persistence, long run effect and effect after 25 years
+            c("Persistence: ", pers),
+            c("Long run effect: ", lre),
+            c("Effect after 25 years: ", sre)
+            )
+          )
+```
+Save to Tex:
+
+```{r}
+#| output: false
+#| message: false
+#| warning: false
+
+stargazer(models, 
+          type = "latex",
+          out = "../data/table_iv.tex",
+          title = "Effect of Democracy on (Log) GDP per Capita",
+          keep = c("dem"),
+          column.labels = c("1 Lag", "4 Lags", "Soviet Dummies", "Regional Trends"),
+          dep.var.labels = "Dependent Variable",
+          covariate.labels = c("Democracy"),
+          omit.stat = c("ser", "rsq", "adj.rsq", "f"),
+          add.lines = list( # add lines for persistence, long run effect and effect after 25 years
+            c("Persistence: ", pers),
+            c("Long run effect: ", lre),
+            c("Effect after 25 years: ", sre)
+            )
+          )
+```

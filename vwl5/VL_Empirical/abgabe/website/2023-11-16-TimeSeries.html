@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Empirical Economics with R – timeseries</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2023-10-12-Intro.html">Mitschriften</a></li><li class="breadcrumb-item"><a href="./2023-11-16-TimeSeries.html">16.11.2023 Time Series</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Empirical Economics with R</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Mitschriften</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-12-Intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12.10.2023 Acemoglu (2001)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-19-Stats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19.10.2023 Stats Intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-10-26-Regression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">26.10.2023 Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-06-Datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">06.11.2023 Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-09-Presentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">09.11.2023 Presentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-16-TimeSeries.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">16.11.2023 Time Series</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2023-11-23-IV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23.11.2023 IV Regression</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Vortrag</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/1-Notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DDCG Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/2-Panel-Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fixed Effects Models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/3-Table2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fixed Effects Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/4-Figure2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figure Trend</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/5-FigureDem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figure Democratizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/6-IVReg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV Regressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vortrag/7-Channels.Models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Channels of Democracy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#time-series" id="toc-time-series" class="nav-link active" data-scroll-target="#time-series">16.11.2023 Time Series</a>
+  <ul class="collapse">
+  <li><a href="#time-series-1" id="toc-time-series-1" class="nav-link" data-scroll-target="#time-series-1">Time Series</a></li>
+  <li><a href="#panel-data" id="toc-panel-data" class="nav-link" data-scroll-target="#panel-data">Panel Data</a></li>
+  <li><a href="#ggplot" id="toc-ggplot" class="nav-link" data-scroll-target="#ggplot">ggplot</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="time-series" class="level1">
+<h1>16.11.2023 Time Series</h1>
+<section id="time-series-1" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-1">Time Series</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tseries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo </code></pre>
+</div>
+</div>
+<p><strong>Import Data</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"data/Per_Capita_GDP_Data_1870-1987.asc"</span>, <span class="at">header=</span>T)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["AUS"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["AUT"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["BEL"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CAN"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["DNK"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["FIN"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["FRA"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["DEU"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["ITA"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["JPN"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["NLD"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["NOR"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["SWE"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["GBR"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["USA"],"name":[15],"type":["dbl"],"align":["right"]}],"data":[{"1":"2673.5","2":"1066.8","3":"1542.9","4":"NaN","5":"1179.0","6":"NaN","7":"1036.3","8":"602.0","9":"1276.2","10":"NaN","11":"NaN","12":"900.5","13":"NaN","14":"1949.4","15":"1596.0","_rn_":"1"},{"1":"2400.3","2":"1133.6","3":"1534.4","4":"NaN","5":"1173.6","6":"NaN","7":"1110.6","8":"573.6","9":"1258.2","10":"NaN","11":"NaN","12":"908.6","13":"NaN","14":"2038.9","15":"1654.6","_rn_":"2"},{"1":"2591.1","2":"1132.0","3":"1614.7","4":"NaN","5":"1227.6","6":"NaN","7":"1194.4","8":"610.0","9":"1238.5","10":"NaN","11":"NaN","12":"960.4","13":"NaN","14":"2022.1","15":"1736.6","_rn_":"3"},{"1":"2790.2","2":"1095.7","3":"1612.5","4":"NaN","5":"1209.7","6":"NaN","7":"1116.7","8":"631.3","9":"1279.5","10":"NaN","11":"NaN","12":"973.5","13":"NaN","14":"2051.2","15":"1720.6","_rn_":"4"},{"1":"2798.7","2":"1134.6","3":"1652.4","4":"NaN","5":"1232.4","6":"NaN","7":"1254.1","8":"671.0","9":"1271.8","10":"NaN","11":"NaN","12":"997.1","13":"NaN","14":"2065.1","15":"1671.8","_rn_":"5"},{"1":"3008.8","2":"1130.2","3":"1635.8","4":"NaN","5":"1241.2","6":"NaN","7":"1300.2","8":"666.6","9":"1298.4","10":"NaN","11":"NaN","12":"1016.0","13":"NaN","14":"2095.3","15":"1690.7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p>Bind the Column and Data set together = <code>cbind()</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>startyear <span class="ot">&lt;-</span> <span class="dv">1870</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>year <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span>startyear, <span class="at">to=</span> <span class="dv">1987</span>, <span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>data_GDP <span class="ot">&lt;-</span> <span class="fu">cbind</span>(year, data) </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data_GDP) <span class="co"># new year column</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["year"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["AUS"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["AUT"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["BEL"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["CAN"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["DNK"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["FIN"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["FRA"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["DEU"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["ITA"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["JPN"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["NLD"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["NOR"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["SWE"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["GBR"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["USA"],"name":[16],"type":["dbl"],"align":["right"]}],"data":[{"1":"1870","2":"2673.5","3":"1066.8","4":"1542.9","5":"NaN","6":"1179.0","7":"NaN","8":"1036.3","9":"602.0","10":"1276.2","11":"NaN","12":"NaN","13":"900.5","14":"NaN","15":"1949.4","16":"1596.0","_rn_":"1"},{"1":"1871","2":"2400.3","3":"1133.6","4":"1534.4","5":"NaN","6":"1173.6","7":"NaN","8":"1110.6","9":"573.6","10":"1258.2","11":"NaN","12":"NaN","13":"908.6","14":"NaN","15":"2038.9","16":"1654.6","_rn_":"2"},{"1":"1872","2":"2591.1","3":"1132.0","4":"1614.7","5":"NaN","6":"1227.6","7":"NaN","8":"1194.4","9":"610.0","10":"1238.5","11":"NaN","12":"NaN","13":"960.4","14":"NaN","15":"2022.1","16":"1736.6","_rn_":"3"},{"1":"1873","2":"2790.2","3":"1095.7","4":"1612.5","5":"NaN","6":"1209.7","7":"NaN","8":"1116.7","9":"631.3","10":"1279.5","11":"NaN","12":"NaN","13":"973.5","14":"NaN","15":"2051.2","16":"1720.6","_rn_":"4"},{"1":"1874","2":"2798.7","3":"1134.6","4":"1652.4","5":"NaN","6":"1232.4","7":"NaN","8":"1254.1","9":"671.0","10":"1271.8","11":"NaN","12":"NaN","13":"997.1","14":"NaN","15":"2065.1","16":"1671.8","_rn_":"5"},{"1":"1875","2":"3008.8","3":"1130.2","4":"1635.8","5":"NaN","6":"1241.2","7":"NaN","8":"1300.2","9":"666.6","10":"1298.4","11":"NaN","12":"NaN","13":"1016.0","14":"NaN","15":"2095.3","16":"1690.7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><strong>Define Time Series</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data_ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(data_GDP, startyear)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(data_ts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "mts"    "ts"     "matrix"</code></pre>
+</div>
+</div>
+<pre><code>[1] "mts"    "ts"     "matrix"</code></pre>
+<p>MTS = multiple Time Series</p>
+<p><strong>apply diff</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>us_diff <span class="ot">&lt;-</span> <span class="fu">diff</span>(<span class="fu">log</span>(data_ts[,<span class="st">"USA"</span>]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li>Take the Column USA</li>
+<li>log the GDP</li>
+<li>now take the Difference <span class="math inline">\(\Delta y = y_{t} - y_{t-1}\)</span></li>
+</ol>
+<p>=&gt; Growth Rate of Log GDP in USA</p>
+<p><strong>Plot</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data_ts[,<span class="fu">c</span>(<span class="st">"USA"</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2023-11-16-TimeSeries_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(us_diff)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="2023-11-16-TimeSeries_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="panel-data" class="level2">
+<h2 class="anchored" data-anchor-id="panel-data">Panel Data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Paket 'plm' wurde unter R Version 4.1.2 erstellt</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Paket 'stargazer' wurde unter R Version 4.1.2 erstellt</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Please cite as: </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code> R package version 5.2.3. https://CRAN.R-project.org/package=stargazer </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(wagepan, <span class="at">package=</span><span class="st">'wooldridge'</span>) <span class="co"># directly from package witoout loading</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(wagepan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["nr"],"name":[1],"type":["int"],"align":["right"]},{"label":["year"],"name":[2],"type":["int"],"align":["right"]},{"label":["agric"],"name":[3],"type":["int"],"align":["right"]},{"label":["black"],"name":[4],"type":["int"],"align":["right"]},{"label":["bus"],"name":[5],"type":["int"],"align":["right"]},{"label":["construc"],"name":[6],"type":["int"],"align":["right"]},{"label":["ent"],"name":[7],"type":["int"],"align":["right"]},{"label":["exper"],"name":[8],"type":["int"],"align":["right"]},{"label":["fin"],"name":[9],"type":["int"],"align":["right"]},{"label":["hisp"],"name":[10],"type":["int"],"align":["right"]},{"label":["poorhlth"],"name":[11],"type":["int"],"align":["right"]},{"label":["hours"],"name":[12],"type":["int"],"align":["right"]},{"label":["manuf"],"name":[13],"type":["int"],"align":["right"]},{"label":["married"],"name":[14],"type":["int"],"align":["right"]},{"label":["min"],"name":[15],"type":["int"],"align":["right"]},{"label":["nrthcen"],"name":[16],"type":["int"],"align":["right"]},{"label":["nrtheast"],"name":[17],"type":["int"],"align":["right"]},{"label":["occ1"],"name":[18],"type":["int"],"align":["right"]},{"label":["occ2"],"name":[19],"type":["int"],"align":["right"]},{"label":["occ3"],"name":[20],"type":["int"],"align":["right"]},{"label":["occ4"],"name":[21],"type":["int"],"align":["right"]},{"label":["occ5"],"name":[22],"type":["int"],"align":["right"]},{"label":["occ6"],"name":[23],"type":["int"],"align":["right"]},{"label":["occ7"],"name":[24],"type":["int"],"align":["right"]},{"label":["occ8"],"name":[25],"type":["int"],"align":["right"]},{"label":["occ9"],"name":[26],"type":["int"],"align":["right"]},{"label":["per"],"name":[27],"type":["int"],"align":["right"]},{"label":["pro"],"name":[28],"type":["int"],"align":["right"]},{"label":["pub"],"name":[29],"type":["int"],"align":["right"]},{"label":["rur"],"name":[30],"type":["int"],"align":["right"]},{"label":["south"],"name":[31],"type":["int"],"align":["right"]},{"label":["educ"],"name":[32],"type":["int"],"align":["right"]},{"label":["tra"],"name":[33],"type":["int"],"align":["right"]},{"label":["trad"],"name":[34],"type":["int"],"align":["right"]},{"label":["union"],"name":[35],"type":["int"],"align":["right"]},{"label":["lwage"],"name":[36],"type":["dbl"],"align":["right"]},{"label":["d81"],"name":[37],"type":["int"],"align":["right"]},{"label":["d82"],"name":[38],"type":["int"],"align":["right"]},{"label":["d83"],"name":[39],"type":["int"],"align":["right"]},{"label":["d84"],"name":[40],"type":["int"],"align":["right"]},{"label":["d85"],"name":[41],"type":["int"],"align":["right"]},{"label":["d86"],"name":[42],"type":["int"],"align":["right"]},{"label":["d87"],"name":[43],"type":["int"],"align":["right"]},{"label":["expersq"],"name":[44],"type":["int"],"align":["right"]}],"data":[{"1":"13","2":"1980","3":"0","4":"0","5":"1","6":"0","7":"0","8":"1","9":"0","10":"0","11":"0","12":"2672","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"0","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"1","27":"0","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"0","36":"1.197540","37":"0","38":"0","39":"0","40":"0","41":"0","42":"0","43":"0","44":"1","_rn_":"1"},{"1":"13","2":"1981","3":"0","4":"0","5":"0","6":"0","7":"0","8":"2","9":"0","10":"0","11":"0","12":"2320","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"0","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"1","27":"1","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"1","36":"1.853060","37":"1","38":"0","39":"0","40":"0","41":"0","42":"0","43":"0","44":"4","_rn_":"2"},{"1":"13","2":"1982","3":"0","4":"0","5":"1","6":"0","7":"0","8":"3","9":"0","10":"0","11":"0","12":"2940","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"0","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"1","27":"0","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"0","36":"1.344462","37":"0","38":"1","39":"0","40":"0","41":"0","42":"0","43":"0","44":"9","_rn_":"3"},{"1":"13","2":"1983","3":"0","4":"0","5":"1","6":"0","7":"0","8":"4","9":"0","10":"0","11":"0","12":"2960","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"0","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"1","27":"0","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"0","36":"1.433213","37":"0","38":"0","39":"1","40":"0","41":"0","42":"0","43":"0","44":"16","_rn_":"4"},{"1":"13","2":"1984","3":"0","4":"0","5":"0","6":"0","7":"0","8":"5","9":"0","10":"0","11":"0","12":"3071","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"0","20":"0","21":"0","22":"1","23":"0","24":"0","25":"0","26":"0","27":"1","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"0","36":"1.568125","37":"0","38":"0","39":"0","40":"1","41":"0","42":"0","43":"0","44":"25","_rn_":"5"},{"1":"13","2":"1985","3":"0","4":"0","5":"1","6":"0","7":"0","8":"6","9":"0","10":"0","11":"0","12":"2864","13":"0","14":"0","15":"0","16":"0","17":"1","18":"0","19":"1","20":"0","21":"0","22":"0","23":"0","24":"0","25":"0","26":"0","27":"0","28":"0","29":"0","30":"0","31":"0","32":"14","33":"0","34":"0","35":"0","36":"1.699891","37":"0","38":"0","39":"0","40":"0","41":"1","42":"0","43":"0","44":"36","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p>Get Panel Data from thsi with <code>pdata.frame()</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>wagepan.p <span class="ot">&lt;-</span> <span class="fu">pdata.frame</span>(wagepan, <span class="at">index=</span><span class="fu">c</span>(<span class="st">"nr"</span>,<span class="st">"year"</span>) ) <span class="co">#added HA: individual index and time index</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pdim</span>(wagepan.p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Balanced Panel: n = 545, T = 8, N = 4360</code></pre>
+</div>
+</div>
+<ul>
+<li>n = number of individuals / regions = 545</li>
+<li>T = Number of observations of the indiviudals = 8</li>
+<li>N = n*T</li>
+</ul>
+<p><strong>Regressions with <code>plm()</code></strong></p>
+<p>1) Simple linear Regression with all data pooled</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>wagemodel1 <span class="ot">&lt;-</span> <span class="fu">plm</span>(lwage <span class="sc">~</span> married <span class="sc">+</span> union <span class="sc">+</span> exper, <span class="at">data=</span>wagepan.p, <span class="at">model=</span><span class="st">"pooling"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>2) now same as above but with controls</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>wagemodel2 <span class="ot">&lt;-</span> <span class="fu">plm</span>(lwage <span class="sc">~</span> married <span class="sc">+</span> black <span class="sc">+</span> union <span class="sc">+</span> educ <span class="sc">+</span> exper, <span class="at">data=</span>wagepan.p, <span class="at">model=</span><span class="st">"pooling"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>3) estimate fixed effects model (based on “within-transformation” of data) &lt;–&gt; pooling model</p>
+<p><strong>NOTE: use for my Acemoglu Paper!!</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>wagemodel3 <span class="ot">&lt;-</span> <span class="fu">plm</span>(lwage <span class="sc">~</span> married <span class="sc">+</span> union <span class="sc">+</span> educ <span class="sc">+</span> exper, <span class="at">data=</span>wagepan.p, <span class="at">model=</span><span class="st">"within"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Summary</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(wagemodel3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Oneway (individual) effect Within Model
+
+Call:
+plm(formula = lwage ~ married + union + educ + exper, data = wagepan.p, 
+    model = "within")
+
+Balanced Panel: n = 545, T = 8, N = 4360
+
+Residuals:
+    Min.  1st Qu.   Median  3rd Qu.     Max. 
+-4.14628 -0.12503  0.01232  0.16205  1.48094 
+
+Coefficients:
+         Estimate Std. Error t-value  Pr(&gt;|t|)    
+married 0.0610384  0.0182929  3.3367 0.0008558 ***
+union   0.0837910  0.0194140  4.3160 1.629e-05 ***
+exper   0.0598672  0.0025835 23.1726 &lt; 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Total Sum of Squares:    572.05
+Residual Sum of Squares: 476.43
+R-Squared:      0.16715
+Adj. R-Squared: 0.047646
+F-statistic: 255.026 on 3 and 3812 DF, p-value: &lt; 2.22e-16</code></pre>
+</div>
+</div>
+<p>4) same, but with year dummy for shock absorption</p>
+<p>Used with <code>factor(year)</code> for easy year incuding of the variables</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>wagemodel4 <span class="ot">&lt;-</span> <span class="fu">plm</span>(lwage <span class="sc">~</span> married <span class="sc">+</span> black <span class="sc">+</span> union <span class="sc">+</span> educ <span class="sc">+</span> exper <span class="sc">+</span> <span class="fu">factor</span>(year), <span class="at">data=</span>wagepan.p, <span class="at">model=</span><span class="st">"pooling"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Combine all and get stargazer to analyze it</p>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>mywagemodels <span class="ot">&lt;-</span> <span class="fu">list</span>(wagemodel1,wagemodel2,wagemodel3,wagemodel4)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  mywagemodels, </span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type=</span><span class="st">"html"</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#out="data/mywagemodels.html"</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<table style="text-align:center">
+<tbody><tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="4">
+lwage
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+married
+</td>
+<td>
+0.174<sup>***</sup>
+</td>
+<td>
+0.113<sup>***</sup>
+</td>
+<td>
+0.061<sup>***</sup>
+</td>
+<td>
+0.111<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.016)
+</td>
+<td>
+(0.016)
+</td>
+<td>
+(0.018)
+</td>
+<td>
+(0.016)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+black
+</td>
+<td>
+</td>
+<td>
+-0.145<sup>***</sup>
+</td>
+<td>
+</td>
+<td>
+-0.140<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.023)
+</td>
+<td>
+</td>
+<td>
+(0.023)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+union
+</td>
+<td>
+0.169<sup>***</sup>
+</td>
+<td>
+0.184<sup>***</sup>
+</td>
+<td>
+0.084<sup>***</sup>
+</td>
+<td>
+0.187<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.018)
+</td>
+<td>
+(0.017)
+</td>
+<td>
+(0.019)
+</td>
+<td>
+(0.017)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+educ
+</td>
+<td>
+</td>
+<td>
+0.103<sup>***</sup>
+</td>
+<td>
+</td>
+<td>
+0.092<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.004)
+</td>
+<td>
+</td>
+<td>
+(0.005)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+exper
+</td>
+<td>
+0.025<sup>***</sup>
+</td>
+<td>
+0.050<sup>***</sup>
+</td>
+<td>
+0.060<sup>***</sup>
+</td>
+<td>
+0.030<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.003)
+</td>
+<td>
+(0.005)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1981
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.078<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.030)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1982
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.097<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.031)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1983
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.107<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.033)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1984
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.140<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.036)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1985
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.160<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.040)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1986
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.188<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.044)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+factor(year)1987
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.211<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.048)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+1.370<sup>***</sup>
+</td>
+<td>
+0.031
+</td>
+<td>
+</td>
+<td>
+0.164<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.020)
+</td>
+<td>
+(0.062)
+</td>
+<td>
+</td>
+<td>
+(0.074)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+4,360
+</td>
+<td>
+4,360
+</td>
+<td>
+4,360
+</td>
+<td>
+4,360
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.077
+</td>
+<td>
+0.183
+</td>
+<td>
+0.167
+</td>
+<td>
+0.188
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.076
+</td>
+<td>
+0.183
+</td>
+<td>
+0.048
+</td>
+<td>
+0.185
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+120.319<sup>***</sup> (df = 3; 4356)
+</td>
+<td>
+195.684<sup>***</sup> (df = 5; 4354)
+</td>
+<td>
+255.026<sup>***</sup> (df = 3; 3812)
+</td>
+<td>
+83.642<sup>***</sup> (df = 12; 4347)
+</td>
+</tr>
+<tr>
+<td colspan="5" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="4" style="text-align:right">
+<sup><em></em></sup><em>p&lt;0.1; <sup><strong></strong></sup><strong>p&lt;0.05; <sup></sup></strong></em>p&lt;0.01
+</td>
+</tr>
+
+</tbody></table>
+</section>
+<section id="ggplot" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot">ggplot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ ggplot2 3.3.5     ✔ purrr   0.3.4
+✔ tibble  3.1.5     ✔ dplyr   1.0.7
+✔ tidyr   1.1.4     ✔ stringr 1.4.0
+✔ readr   2.0.2     ✔ forcats 0.5.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::between() masks plm::between()
+✖ dplyr::filter()  masks stats::filter()
+✖ dplyr::lag()     masks plm::lag(), stats::lag()
+✖ dplyr::lead()    masks plm::lead()</code></pre>
+</div>
+</div>
+<p>Replicating the Data from AJR 2001</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/dataset_AJR2001.Rdata"</span>)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["shortnam"],"name":[1],"type":["chr"],"align":["left"]},{"label":["lat_abst"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["avexpr"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["logpgp95"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["baseco"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["logem4"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["africa"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["asia"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["loghjypl"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["other"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["rich4"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["catho80"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["muslim80"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["no_cpm80"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["f_brit"],"name":[15],"type":["dbl"],"align":["right"]},{"label":["f_french"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["sjlofr"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["avelf"],"name":[18],"type":["dbl"],"align":["right"]},{"label":["temp1"],"name":[19],"type":["dbl"],"align":["right"]},{"label":["temp2"],"name":[20],"type":["dbl"],"align":["right"]},{"label":["temp3"],"name":[21],"type":["dbl"],"align":["right"]},{"label":["temp4"],"name":[22],"type":["dbl"],"align":["right"]},{"label":["temp5"],"name":[23],"type":["dbl"],"align":["right"]},{"label":["humid1"],"name":[24],"type":["dbl"],"align":["right"]},{"label":["humid2"],"name":[25],"type":["dbl"],"align":["right"]},{"label":["humid3"],"name":[26],"type":["dbl"],"align":["right"]},{"label":["humid4"],"name":[27],"type":["dbl"],"align":["right"]},{"label":["steplow"],"name":[28],"type":["dbl"],"align":["right"]},{"label":["deslow"],"name":[29],"type":["dbl"],"align":["right"]},{"label":["stepmid"],"name":[30],"type":["dbl"],"align":["right"]},{"label":["desmid"],"name":[31],"type":["dbl"],"align":["right"]},{"label":["drystep"],"name":[32],"type":["dbl"],"align":["right"]},{"label":["drywint"],"name":[33],"type":["dbl"],"align":["right"]},{"label":["edes1975"],"name":[34],"type":["dbl"],"align":["right"]},{"label":["landlock"],"name":[35],"type":["dbl"],"align":["right"]},{"label":["goldm"],"name":[36],"type":["dbl"],"align":["right"]},{"label":["iron"],"name":[37],"type":["dbl"],"align":["right"]},{"label":["silv"],"name":[38],"type":["dbl"],"align":["right"]},{"label":["zinc"],"name":[39],"type":["dbl"],"align":["right"]},{"label":["oilres"],"name":[40],"type":["dbl"],"align":["right"]},{"label":["malfal94"],"name":[41],"type":["dbl"],"align":["right"]},{"label":["yellow"],"name":[42],"type":["dbl"],"align":["right"]},{"label":["leb95"],"name":[43],"type":["dbl"],"align":["right"]},{"label":["imr95"],"name":[44],"type":["dbl"],"align":["right"]},{"label":["meantemp"],"name":[45],"type":["dbl"],"align":["right"]},{"label":["lt100km"],"name":[46],"type":["dbl"],"align":["right"]},{"label":["latabs"],"name":[47],"type":["dbl"],"align":["right"]},{"label":["euro1900"],"name":[48],"type":["dbl"],"align":["right"]},{"label":["democ1"],"name":[49],"type":["dbl"],"align":["right"]},{"label":["cons1"],"name":[50],"type":["dbl"],"align":["right"]},{"label":["indtime"],"name":[51],"type":["dbl"],"align":["right"]},{"label":["democ00a"],"name":[52],"type":["dbl"],"align":["right"]},{"label":["cons00a"],"name":[53],"type":["dbl"],"align":["right"]}],"data":[{"1":"AFG","2":"0.3666667","3":"NA","4":"NA","5":"NA","6":"4.540098","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"99.3","14":"0.6999969","15":"1","16":"0","17":"1","18":"0.4484412","19":"10","20":"14","21":"40","22":"-21","23":"11","24":"51","25":"80","26":"22","27":"70","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"1","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00372","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"1","50":"1","51":"195","52":"1","53":"1","_rn_":"1"},{"1":"AGO","2":"0.1366667","3":"5.363636","4":"7.770645","5":"1","6":"5.634789","7":"1","8":"0","9":"-3.4112477","10":"0","11":"0","12":"68.7","13":"0.0","14":"11.5000038","15":"0","16":"0","17":"1","18":"0.7727550","19":"26","20":"28","21":"37","22":"14","23":"21","24":"77","25":"84","26":"74","27":"78","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"146000","41":"0.95000","42":"1","43":"46.49","44":"125.0","45":"22.94133","46":"0.118758","47":"0.136667","48":"8","49":"0","50":"3","51":"20","52":"0","53":"1","_rn_":"2"},{"1":"ARE","2":"0.2666667","3":"7.181818","4":"9.804219","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.4","13":"94.9","14":"4.3999987","15":"1","16":"0","17":"0","18":"NA","19":"NA","20":"NA","21":"NA","22":"NA","23":"NA","24":"NA","25":"NA","26":"NA","27":"NA","28":"NA","29":"NA","30":"NA","31":"NA","32":"NA","33":"NA","34":"0","35":"0","36":"NA","37":"NA","38":"NA","39":"NA","40":"NA","41":"0.01230","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"3"},{"1":"ARG","2":"0.3777778","3":"6.386364","4":"9.133459","5":"1","6":"4.232656","7":"0","8":"0","9":"-0.8722738","10":"0","11":"0","12":"91.6","13":"0.2","14":"5.5000014","15":"0","16":"0","17":"1","18":"0.1769318","19":"17","20":"25","21":"40","22":"-6","23":"6","24":"81","25":"92","26":"60","27":"79","28":"1","29":"0","30":"0","31":"1","32":"0","33":"0","34":"90","35":"0","36":"0","37":"0","38":"0","39":"0","40":"46900","41":"0.00000","42":"0","43":"72.89","44":"21.8","45":"17.10000","46":"0.123089","47":"0.377778","48":"60","49":"1","50":"1","51":"170","52":"3","53":"3","_rn_":"4"},{"1":"ARM","2":"0.4444444","3":"NA","4":"7.682482","5":"NA","6":"NA","7":"0","8":"1","9":"NA","10":"0","11":"0","12":"0.0","13":"0.0","14":"100.0000000","15":"0","16":"0","17":"0","18":"NA","19":"8","20":"12","21":"40","22":"-27","23":"10","24":"62","25":"91","26":"36","27":"75","28":"0","29":"0","30":"1","31":"0","32":"0","33":"0","34":"0","35":"0","36":"0","37":"0","38":"0","39":"0","40":"0","41":"0.00000","42":"0","43":"NA","44":"NA","45":"NA","46":"NA","47":"NA","48":"0","49":"NA","50":"NA","51":"NA","52":"NA","53":"NA","_rn_":"5"},{"1":"AUS","2":"0.3000000","3":"9.318182","4":"9.897972","5":"1","6":"2.145931","7":"0","8":"0","9":"-0.1707883","10":"1","11":"1","12":"29.6","13":"0.2","14":"46.7000008","15":"1","16":"0","17":"0","18":"0.1127971","19":"17","20":"18","21":"43","22":"-10","23":"3","24":"56","25":"85","26":"35","27":"64","28":"1","29":"1","30":"0","31":"0","32":"0","33":"0","34":"99","35":"0","36":"3","37":"16","38":"9","39":"12","40":"99100","41":"0.00000","42":"1","43":"78.25","44":"5.6","45":"20.90000","46":"0.198958","47":"0.300000","48":"98","49":"10","50":"7","51":"94","52":"10","53":"7","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p>Simple:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>data, <span class="fu">aes</span>(<span class="at">x =</span> logem4, <span class="at">y=</span>logpgp95)) <span class="sc">+</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 82 rows containing non-finite values (stat_smooth).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 82 rows containing missing values (geom_point).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="2023-11-16-TimeSeries_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Advanced:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>figure <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> logem4, <span class="at">y=</span>logpgp95)) <span class="sc">+</span> <span class="co">#Settler mortality and GDP per Cap</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_point() + #if we want to use points</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span>data[,<span class="dv">1</span>]),<span class="at">hjust=</span><span class="dv">0</span>, <span class="at">vjust=</span><span class="dv">0</span>) <span class="sc">+</span> <span class="co">#if we want the country names as points</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">color=</span><span class="st">"black"</span>,<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span> </span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">8</span>), <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="fl">10.5</span>)) <span class="sc">+</span> </span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Figure 1 from AJR (2001) with ggplot()"</span>,</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Log of European Settler Mortality"</span>, </span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Log GDP per capita, PPP, 1995"</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>figure</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 82 rows containing non-finite values (stat_smooth).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 82 rows containing missing values (geom_text).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="2023-11-16-TimeSeries_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

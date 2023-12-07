@@ -2,17 +2,20 @@
 
 ## About the Paper
 
-- research by 4 economists from top-university
-    - Acemlgu & Robinson (know already from Settlers Mortality Paper)
-    - 2 other Professors
+Democracy Does Cause Growth
+
 - very prominent paper, widely recognized
-- impact on literature / research
-    - as most papers by acemoglu
 - published = JPE
     - Wokring Paper 2014
     - Final Publication 2019
 
+- research by 4 economists from top-university
+    - Acemlgu & Robinson (know already from Settlers Mortality Paper)
+    - 2 other Professors
+- impact on literature / research
+    - as most papers by acemoglu
 
+*Lets talk about existinng Research*
 
 
 ---
@@ -29,6 +32,8 @@
 - Acemoglu et al 2019: conclusive evidence:
     -  Democracy => growth
 
+*So, how do they do it*?
+
 ---
 
 ## Data
@@ -39,13 +44,13 @@
 - dichotomous / binary: either 0 (not democracy) or 1 (democracy)
 - 1960-2010 (50 years), 184 countries
 
-*Growth Data* (gdp per capita, 2000 Dollars) & other economic variables  = World Bank
-
 [FIGURE DEMOCRATIZATIONS]
 
 122 democratizations in this time frame, most around 1990s (post soviet transformations)
 
+*Growth Data* (gdp per capita, 2000 Dollars) & other economic variables  = World Bank
 
+=> cross country sample of data
 
 ---
 
@@ -61,11 +66,7 @@
 
 standard OLS not applicable
 
-- omitted variable bias
-
-
-
-
+*How to the Authors overcome the Problems?*
 
 ---
 
@@ -73,21 +74,21 @@ standard OLS not applicable
 
 
 
-*Different Approaches*
+*Use many Approaches*
 
 1. ***Dynamic Linear Panel Model** with Fixed Effects*
 2. *Semiparametric Estimation* (relax assumption of linear relationship)
 3. *Instrument Variable Regression* (regional waves of democratization)
 
+see other Approaches in Appendix
+
 Explanation
 
-MOdel focuses on "switchers" (countries that democratise)
-
 - **Dynamic**: Lags of variables (to account for the Dip)
-- **linear**: Linear relationship assumption (democracy and growth)
+- **linear**: Linear relationship assumption between democracy and growth
 - **Panel**: cross country comparison
 - **Within Estimator**: Estimator for Fixed Effects Models
-    - country fixed effecrs
+    - country fixed effects
     - year fixed effects
 
 
@@ -103,7 +104,7 @@ $$
 
 -   $D_{ct}$ = Dichotomous measure of democracy
 
--   *p* lags of log GDP for control
+-   *p* = number of lags of log GDP for control
 
 -   $\alpha$ = country fixed effects (filter out the heterogenity)
 
@@ -121,21 +122,26 @@ lets look at results ->
 
 [TABLE 2]
 
-- different number of lags = authors preffered specification = 4 lags
+- different number of lags (1,2,4,8) 
 - log level estimate
     - one unit of x (binary indicator = democratization)
     - 100*Beta % change (already multiplied by 100 in table)
 - preferred specification = column 3
-    - Democratiztaion leads to  0.78% increase in GDP this year
+    - SE = small, statistically significant (for all except one year)
+    - on average: **Democratiztaion leads to  0.78% increase in GDP** 
+        - in the year the country democratises
     - after 25 years = 16.895% increase
     - Long run = 21.40% higher Gdp per Capita
-    - SE = small, statistically significant
 
 ---
 
 ## Trend Estimate
 
 [FIGURE TREND]
+
+x-Axis = number of years after democratization
+
+y Axis = change in gdp per capita log points
 
 
 
@@ -147,18 +153,9 @@ after 25 years = **16,895** % higher GDP
 => effect levelling off = "one off"
 
 - no different trend for given country after democratization
-- just higher gdp per capita
-- important for the statistical model!
+- transitory, just higher gdp per capita
 
 
-
----
-
-## Channels
-
-[TABLE CHANNELS]
-
-Democratization => **state capacity & human capital building**
 
 ---
 
@@ -172,36 +169,75 @@ Democratization => **state capacity & human capital building**
 
 
 
+*so, lets understand why Democracy causes growth*
+
+---
+
+## Channels
+
+[TABLE CHANNELS]
+
+*big table, important cells highlighted*
+
+Main Channels
+
+- more investment
+- Economic Reforms
+- Government Expenditure
+- Enrollment (Primary + Secondary)
+
+essentially: Democratization => **state capacity & human capital building**
+
+fits existing research on Question
+
+- Paper later in this course on state capacity
+- Romer endogenous growth => human capital focus
+
+
+
 ---
 
 ## Critique
 
-*Dichotomous Measure of Democracy*
+*1: Measure of Democracy*
 
-- not binary, scale (democracy, illiberate democracy, authoritarian rule, dictatorship)
-- newer analysis does it (Lars Pelke: Varieties of Democracy)
+- Democracy: not binary, but scale (democracy, authoritarian rule, dictatorship)
+- newer analysis does it (Lars Pelke: Varieties of Democracy index)
+- Research not conclusive yet
 
-*Short Time Frame*
+
+
+2: *Short Time Frame*
 
 - only 50 years
-- only 1 of the 3 waves of democratization 
-
-*Sensitivity to Sample Selection*
-
-- depends heavily on the eastern communist states (+ short time)
-- Markus Eberhardt Comment: 
-    - random drop of observations (ca 5%)
-    - => effect only half
+- only 1 of the 3 waves of democratization we historically had
 
 
+
+3: Markus Eberhardt Comment
+
+- Sensitivity to Sample Selection
+
+- long run effect => only half the magnitude 
+
+*that was it, lets summarize*
+
+---
+
+## Summary
+
+Results show: democratization => one off effect on gdp per capita (causes growth)
+
+mailny trough
+
+- higher state capacity
+- buildup of human capital
+
+*also prepared some discussion questions while researching*
 
 ---
 
-## References
-
-...
-
----
+## Discussion
 
 *Are there **alternative political frameworks** that could also facilitate these mechanisms (state capacity and education expansion) or is it easier in democracies?* 
 
@@ -210,18 +246,17 @@ Democratization => **state capacity & human capital building**
 
 
 
-*Could there be **non-linear relationships** between democracy and economic growth, e.g optimal level of democracy?* 
-
-- a level of democracy beyond which growth is hurt?
-- for example monetary policy = undemocratic in most democracy today
-
-
-
 *What are the **Policy Implications** drawn from the link between democracy and growth* 
 
 - especially if it only average effect
-- what if there is a "dip" in life quality after democratization 
+- what if there is a "dip" in gdp per cap after democratization 
     - think post-soviet states
+
+
+
+---
+
+## References
 
 ---
 

@@ -1,7 +1,7 @@
 - [Startseite](README.md)
 
 ---
-- [Glossar](glossar/Allgemein.md)
+- Glossar
     - [Allgemein](glossar/Allgemein.md)
     - [Keynesianismus](glossar/Keynesianismus.md)
     - [Neoklassik](glossar/Neoklassik.md)

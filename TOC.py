@@ -69,7 +69,7 @@ ignores.append([
 result_list = ["- [Startseite](README.md)","", "---"] # first two lines of the SUMMARY.md
 
 # Add the files in /glossar
-result_list.append("- [Glossar](glossar/Allgemein.md)")
+result_list.append("- Glossar")
 for file in sorted(os.listdir("glossar")):
     if file[-3:] == ".md":
         filename = file[:-3]

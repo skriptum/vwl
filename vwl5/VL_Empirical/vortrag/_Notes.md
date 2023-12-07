@@ -26,8 +26,8 @@ Democracy Does Cause Growth
 - dates back to Lipset Hypothesis (1959): 
     - growth => democracy
 - 90s: first econometric tests : 
-    - simple OLS Regressions (Robert Barro) => negative effect
-- 2000s: more advanced statistical methods 
+    - simple Diff in Diff  (Robert Barro) => negative effect
+- 2000s: more advanced statistical methods, example Giavazzi & Tabellini
     - => inconclusive, nto always significnat
 - Acemoglu et al 2019: conclusive evidence:
     -  Democracy => growth
@@ -52,6 +52,8 @@ Democracy Does Cause Growth
 
 => cross country sample of data
 
+*what does the data show us? that we have 2 problems*
+
 ---
 
 ## Problem: GDP Diversity and Dip
@@ -64,7 +66,7 @@ Democracy Does Cause Growth
 
 [FIGURE DIP]
 
-standard OLS not applicable
+standard Diff in Diff not applicable
 
 *How to the Authors overcome the Problems?*
 
@@ -74,13 +76,13 @@ standard OLS not applicable
 
 
 
-*Use many Approaches*
+*Use 3 novel Approaches*
 
 1. ***Dynamic Linear Panel Model** with Fixed Effects*
 2. *Semiparametric Estimation* (relax assumption of linear relationship)
 3. *Instrument Variable Regression* (regional waves of democratization)
 
-see other Approaches in Appendix
+
 
 Explanation
 
@@ -124,10 +126,11 @@ lets look at results ->
 
 - different number of lags (1,2,4,8) 
 - log level estimate
-    - one unit of x (binary indicator = democratization)
+    - change one unit of x (binary indicator = democratization)
     - 100*Beta % change (already multiplied by 100 in table)
 - preferred specification = column 3
-    - SE = small, statistically significant (for all except one year)
+    - SE = small, 
+    - results statistically significant (for all except one year)
     - on average: **Democratiztaion leads to  0.78% increase in GDP** 
         - in the year the country democratises
     - after 25 years = 16.895% increase
@@ -141,7 +144,7 @@ lets look at results ->
 
 x-Axis = number of years after democratization
 
-y Axis = change in gdp per capita log points
+y Axis = change in gdp per capita log points compared to nondemocracies
 
 
 

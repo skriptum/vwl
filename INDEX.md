@@ -391,6 +391,13 @@
     - [Gewaehrleistung](vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung.md)
     - [Übersicht](vwl5/VL_Zivilrecht/README.md)
 - Empirical Economics
+    - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
+    - [Stats](vwl5/VL_Empirical/2023-10-19-Stats.md)
+    - [Regression](vwl5/VL_Empirical/2023-10-26-Regression.md)
+    - [Datasets](vwl5/VL_Empirical/2023-11-06-Datasets.md)
+    - [Presentation](vwl5/VL_Empirical/2023-11-09-Presentation.md)
+    - [TimeSeries](vwl5/VL_Empirical/2023-11-16-TimeSeries.md)
+    - [IV](vwl5/VL_Empirical/2023-11-23-IV.md)
     - [Übersicht](vwl5/VL_Empirical/README.md)
 - Feminist Economics
     - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
@@ -416,4 +423,4 @@
 
 ---
 
-**348** Notizen in **28** Modulen
+**355** Notizen in **28** Modulen

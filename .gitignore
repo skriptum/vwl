@@ -17,3 +17,4 @@ venv
 vwl5/VL_Empirical/docs
 .quarto
 .Rproj.user
+!vwl5/VL_Empirical/vortrag/_Slides.pdf

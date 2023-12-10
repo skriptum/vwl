@@ -78,3 +78,31 @@ Voraussetzungen
 
 
 
+Beispiel Stellvertretung
+
+```
+B bittet Sekretär S Geschenk für Mutter zu kaufen für max 50€.
+
+S geht in Laden von V., kauft Blumen für 40€ und sagt dass Rechnung auf B
+
+B verweigert V. die Begleichung später, da Mutter Blumenallergie
+```
+
+Kann V von B die Herausgabe von 40€ fordern?
+
+aus [§433 BGB](https://www.gesetze-im-internet.de/bgb/__433.html) II:
+
+Kaufvertrag zw V und B?
+
+- Angebot des B?
+    - eigene WE? (-) da keine WE von B
+    - WE des S [§164 BGB](https://www.gesetze-im-internet.de/bgb/__164.html)?
+        - hatte Handlungspielraum (Preis)? (+)
+        - im fremden Namen? (+)
+        - Vertretungsmacht? (+) *Innenvollmacht* [§167 BGB](https://www.gesetze-im-internet.de/bgb/__167.html)
+    - Agnebot des B (+)
+- Annahme des V (+)
+- => Kaufvertrag
+
+=> Anspruch des V an B
+

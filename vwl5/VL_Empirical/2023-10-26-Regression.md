@@ -46,7 +46,7 @@ Table:
 
 ## Recreation of the Table
 
-```{r}
+```r
 library(stargazer)
 load("data/dataset_AJR2001.Rdata")
 head(data)
@@ -62,7 +62,7 @@ Table Column Names:
 -   `lat_abst` = Absolute value of latitude
 -   `loghjypl` = Log output per worker in 1988 (US normalized to 1)
 
-```{r}
+```r
 m_T2_world_1 <- lm(logpgp95 ~ avexpr, data=data)
 m_T2_base_1 <- lm(logpgp95 ~ avexpr, data=data[which(data$baseco==1),])
 
@@ -81,14 +81,14 @@ m_T2_base_4 <- lm(loghjypl ~ avexpr, data=data[which(data$baseco==1),])
 
 Summary of the first Regression
 
-```{r}
+```r
 summary(m_T2_world_1)
 ```
 
 
 Now we have the Regression Models, but until now no Table to present these
 
-```{r}
+```r
 #| results: asis
 all_res <- list(
   m_T2_world_1, m_T2_base_1,

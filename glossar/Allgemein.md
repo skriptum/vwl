@@ -23,8 +23,8 @@ Begriffe:
 
 Für weitere Begriffsdefinitionen siehe
 
-- [Glossar Keynesianismus](glossar/Keynesianismus.md) 
-- [Glossar Neoklassik](glossar/Neoklassik.md) 
+- [Glossar Keynesianismus](Keynesianismus.md) 
+- [Glossar Neoklassik](Neoklassik.md) 
 
 ---
 

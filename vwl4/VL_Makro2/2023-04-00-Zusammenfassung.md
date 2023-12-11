@@ -235,12 +235,6 @@ Connection of both Models
 
 Assumption: $N = Y$
 
-| Supply Side                                                  | Demand Side                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![img](../../../../Desktop/screenshots/2023-08-01_21-13-34.jpg) | ![img](../../../../Desktop/screenshots/2023-08-01_21-13-39.jpg) |
-
-
-
 ## Government
 
 Role = Fiscal Policy in Crisis, when k > 1 (output gap)

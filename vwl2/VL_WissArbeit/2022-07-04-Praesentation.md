@@ -31,11 +31,10 @@ wie gestaltet man eine Rede / Referat / Vortrag?
 ## Poster
 
 Aufbau:
-![](2022-07-04_10.43.03.jpg)
+![](../images/2022-07-04_10.43.03.jpg)
 Gestaltung:
 - Überschrift: 60pt
 - Text: 20pt
 - weißer Hintergrund 
 - sans-serif Schriftarten
-
 

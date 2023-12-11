@@ -1,4 +1,4 @@
-# Notizen
+# Marten's Notizen
 
 Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, ist das Teil des Gesamtpakets. Die Notizen sind nutzbar für **BWL** als auch **VWL** Studierende, da sich insbesondere in den ersten Semestern die Module überschneiden.
 
@@ -10,19 +10,7 @@ Weiterführende Links
 
 
 
----
-
-### Allgemein
-
-|![Repo Updated Badge](https://badges.strrl.dev/updated/skriptum/vwl)|28| 355 |
-|---|---|---|
-|Zuletzt upgedatet|Anzahl Module| Anzahl Notizen |
-
-
-
----
-
-
+## Semesterübersicht
 
 ### 1. Semester
 
@@ -56,7 +44,7 @@ Weiterführende Links
 | ---------------------------------- | ------------------ | --------------------------------------- | ------------------------------------------------------------ |
 | Mikroökonomik II                   | Amelie Wuppermann  | [Übersicht](vwl3/VL_Mikro2/README.md)   |                                                              |
 | Makroökonomik I                    | Oliver Holtemöller | [Übersicht](vwl3/VL_Makro1/README.md)   |                                                              |
-| Monetäre Ökonomik                  | Malte Rieth        | [Übersicht](vwl3/VL_Monetär/README.md)  | [Zusammenfassung](vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md) |
+| Monetäre Ökonomik                  | Malte Rieth        | [Übersicht](vwl3/VL_Monetaer/README.md) | [Zusammenfassung](vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md) |
 | Ethik der Sozialen Marktwirtschaft | Ingo Pies          | [Übersicht](vwl3/VL_Ethik/README.md)    | [Zusammenfassung](vwl3/VL_Ethik/2022-10-00-Zusammenfassung.md) |
 | Wachstum, Verteilung (Leipzig)     | Melanie Krause     | [Übersicht](vwl3/VL_Wachstum/README.md) |                                                              |
 | Exzellenzseminar Wirtschaftsethik  | Ingo Pies          |                                         | [Seminararbeit](https://uploads.martenw.com/Hayek/Ausarbeitung.html) |
@@ -70,7 +58,7 @@ Weiterführende Links
 | Angewandte Ökonomik                 | Ingo Pies          | [Übersicht](vwl4/VL_Angewandte/README.md)    | [Texte](vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md)        |
 | International Economics             | Lars Börner        | [Übersicht](vwl4/VL_International/README.md) | [Zusammenfassung](vwl4/VL_International/2023-04-00-Zusammenfassung.md) |
 | Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        | [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md) |
-| Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoÖko/README.md)         |                                                              |
+| Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoEco/README.md)         | [Vortrag Slides](https://uploads.martenw.com/Climate_Models/index.html#0) |
 | Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          | [Texte](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)              |
 
 

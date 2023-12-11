@@ -2,20 +2,20 @@
 
 ## Time Series
 
-```{r}
+```r
 library(tseries)
 ```
 
 **Import Data**
 
-```{r}
+```r
 data <- read.table("data/Per_Capita_GDP_Data_1870-1987.asc", header=T)
 head(data)
 ```
 
 Bind the Column and Data set together = `cbind()`
 
-```{r}
+```r
 startyear <- 1870
 year <- seq(from=startyear, to= 1987, by=1)
 data_GDP <- cbind(year, data) 
@@ -24,7 +24,7 @@ head(data_GDP) # new year column
 
 **Define Time Series**
 
-```{r}
+```r
 data_ts <- ts(data_GDP, startyear)
 class(data_ts)
 ```
@@ -37,7 +37,7 @@ MTS = multiple Time Series
 
 **apply diff**
 
-```{r}
+```r
 us_diff <- diff(log(data_ts[,"USA"]))
 ```
 
@@ -49,29 +49,29 @@ us_diff <- diff(log(data_ts[,"USA"]))
 
 **Plot**
 
-```{r}
+```r
 plot(data_ts[,c("USA")])
 ```
 
-```{r}
+```r
 plot(us_diff)
 ```
 
 ## Panel Data
 
-```{r}
+```r
 library(plm)
 library(stargazer)
 ```
 
-```{r}
+```r
 data(wagepan, package='wooldridge') # directly from package witoout loading
 head(wagepan)
 ```
 
 Get Panel Data from thsi with `pdata.frame()`
 
-```{r}
+```r
 wagepan.p <- pdata.frame(wagepan, index=c("nr","year") ) #added HA: individual index and time index
 pdim(wagepan.p)
 ```
@@ -84,13 +84,13 @@ pdim(wagepan.p)
 
 1\) Simple linear Regression with all data pooled
 
-```{r}
+```r
 wagemodel1 <- plm(lwage ~ married + union + exper, data=wagepan.p, model="pooling")
 ```
 
 2\) now same as above but with controls
 
-```{r}
+```r
 wagemodel2 <- plm(lwage ~ married + black + union + educ + exper, data=wagepan.p, model="pooling")
 ```
 
@@ -98,13 +98,13 @@ wagemodel2 <- plm(lwage ~ married + black + union + educ + exper, data=wagepan.p
 
 **NOTE: use for my Acemoglu Paper!!**
 
-```{r}
+```r
 wagemodel3 <- plm(lwage ~ married + union + educ + exper, data=wagepan.p, model="within")
 ```
 
 Summary
 
-```{r}
+```r
 summary(wagemodel3)
 ```
 
@@ -112,13 +112,13 @@ summary(wagemodel3)
 
 Used with `factor(year)` for easy year incuding of the variables
 
-```{r}
+```r
 wagemodel4 <- plm(lwage ~ married + black + union + educ + exper + factor(year), data=wagepan.p, model="pooling")
 ```
 
 Combine all and get stargazer to analyze it
 
-```{r}
+```r
 #| results='asis' 
 mywagemodels <- list(wagemodel1,wagemodel2,wagemodel3,wagemodel4)
 stargazer(
@@ -130,20 +130,20 @@ stargazer(
 
 ## ggplot
 
-```{r}
+```r
 library(tidyverse)
 ```
 
 Replicating the Data from AJR 2001
 
-```{r}
+```r
 load("data/dataset_AJR2001.Rdata")
 head(data)
 ```
 
 Simple:
 
-```{r}
+```r
 ggplot(data=data, aes(x = logem4, y=logpgp95)) +
     geom_point() + 
     geom_smooth(method="lm")
@@ -151,7 +151,7 @@ ggplot(data=data, aes(x = logem4, y=logpgp95)) +
 
 Advanced:
 
-```{r}
+```r
 figure <- ggplot(data, aes(x = logem4, y=logpgp95)) + #Settler mortality and GDP per Cap
   #geom_point() + #if we want to use points
   geom_text(aes(label=data[,1]),hjust=0, vjust=0) + #if we want the country names as points

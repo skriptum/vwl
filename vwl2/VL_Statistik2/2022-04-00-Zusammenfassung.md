@@ -30,13 +30,13 @@ Zusammenfassung für das Modul Statistik II
 - [**Schätzen**](#schätzen)
 
 
-# Wahrscheinlichkeiten
+## Wahrscheinlichkeiten
 
 Ergebnisse $\{ w_{1}, w_{2},... \} = \Omega$  Ergebnismenge
 
 Ereignis = eine Teilmenge der Ergebnismenge $A \subseteq  \Omega$
 
-## Mengen
+### Mengen
 
 - Schnittmenge $A \cap B$
 - Vereinigungsmenge $A \cup B$
@@ -44,7 +44,7 @@ Ereignis = eine Teilmenge der Ergebnismenge $A \subseteq  \Omega$
 
 ![Mengen](../images/2022-07-24_12.36.13.jpg)
 
-## Laplace-Wahrscheinlichkeit
+### Laplace-Wahrscheinlichkeit
 
 einfachste Wahrscheinlichkeit: 
 $$
@@ -52,7 +52,7 @@ P(A) = \frac{m}{n} = \frac{\text{Anzahl Ereignisse A}}{\text{Gesamtzahl Ereignis
 $$
 Beispiel: 20 Menschen in Raum, davon 10 cool => Wahrscheinlichkeit mit coolen Menschen zu reden: $P(A) = \frac{10}{20} = 0.5 = 50\%$
 
-## bedingte Wahrscheinlichkeit
+### bedingte Wahrscheinlichkeit
 
 Wahrscheinlichkeit von Ereignis A, wenn B schon eingetreten ist = bedingte Wahrscheinlichkeit A gegeben B = $P(A | B)$
 
@@ -71,7 +71,7 @@ wie hoch ist die Wahrscheinlichkeit, dass zufällige Person vor dir Porschefahre
 
 $P(A \cap B) = P(A|B) \cdot P(B)= 0.5 \cdot 0.1 = 0.05 = 5\%$
 
-## totale Wahrscheinlichkeit
+### totale Wahrscheinlichkeit
 
 wenn die Bedingungen die Ergebnismenge disjunkt zerlegen, heißt alle Möglichkeiten darstellen, bspw. regnet und regnet nicht = $B ; \bar{B}$
 
@@ -88,7 +88,7 @@ $P(A) = 0.05+0.045 = 0.095 = 9,5 \%$
 
 
 
-## Satz von Bayes
+### Satz von Bayes
 
 mit diesem lässt sich in Verbindung mit der totalen Wahrscheinlichket eine Umkehranalyse betreiben:
 $$
@@ -107,7 +107,7 @@ Graphik der Rückwärtsanalyse
 
 ![Graphisch veranschaulicht](../images/2022-07-24_19.21.36.jpg)
 
-## Unabhängigkeit
+### Unabhängigkeit
 
 zweier Ereignisse = kein Zusammenhang:
 
@@ -124,7 +124,7 @@ $0.05 \neq 0.0095$ : ist nicht zufällig!
 
 
 
-# Stichproben
+## Stichproben
 
 Wir wollen aus den Eigenschaften einer großen Menge die Eigenschaften einer Stichprobe benennen: bspw. wir wissen alles über Würfel, wie wahrscheinlich ist dann eine Stichprobe, bei der 3 Mal hintereinander eine 6 gewürfelt wird.
 
@@ -148,7 +148,7 @@ Anzahl möglicher Stichproben:
 
 
 
-# Zufallsvariabeln (Eindimensional)
+## Zufallsvariabeln (Eindimensional)
 
 [Empfehlenswertes Video](https://www.youtube.com/watch?v=-drfVhwHZcU) zum grundlegenden Verstehen!
 
@@ -170,7 +170,7 @@ Arten von Zufallsvariablen:
 
 
 
-## Dichte- und Verteilungsfunktion
+### Dichte- und Verteilungsfunktion
 
 Verteilung der Zufallsvariable (stetig oder diskret) = Dichtefunktion *f(x)* genannt
 
@@ -178,7 +178,7 @@ Kumulieren der Dichtefunktion = Verteilungsfunktion $F(x) = \sum f(x_i)$
 
 ![2022-07-25_11.38.24](../images/2022-07-25_11.38.24.jpg)
 
-### Berechnung der Verteilungsfunktion
+#### Berechnung der Verteilungsfunktion
 
 bei stetigen Variablen muss die Verteilungsfunktion aufwendiger berechnet werden = Integrieren
 
@@ -201,7 +201,7 @@ Beispielrechnung:  $P(X \le x) = F(x) = \int_{-\infty}^x f(t)dt$
 und der Test $P(x \le X) = \int_a^x f(x)$
 
 
-## Rechnen mit der Verteilungsfunktion 
+### Rechnen mit der Verteilungsfunktion 
 
 Würfelwürfe zwischen 2 und einschließlich 5: 
 
@@ -226,7 +226,7 @@ Lösung: $F(50)$
 
 weiteres in der Formelsammlung
 
-### Modus
+#### Modus
 
 Definition: x-Wert, bei dem f(x) maximal
 
@@ -235,7 +235,7 @@ Definition: x-Wert, bei dem f(x) maximal
 
 ![2022-05-10_11.26.55](../images/2022-05-10_11.26.55.jpg)
 
-### Erwartungswert E(X)
+#### Erwartungswert E(X)
 
 Gegenstück zu arithmetischen MIttel, meist "Schwerpunkt" / Symmetriestelle der Funktion
 
@@ -262,13 +262,13 @@ $$
 
 graphische Darstellung:![2022-05-10_11.40.55](../images/2022-05-10_11.40.55.jpg)
 
-### Quantile
+#### Quantile
 
 ![2022-07-25_12.36.33](../images/2022-07-25_12.36.33.jpg)
 
 Berechnung: entweder ablesen, kompliziert berechnen oder mit [Normalverteilung](#normalverteilung) später
 
-### Varianz + Standardabweichung
+#### Varianz + Standardabweichung
 
 wie bei Statistik I
 
@@ -291,7 +291,7 @@ Var(x) = 15.666 - 3.5^2 = 3.4166 \\
 \sigma_X = \sqrt{3.4166} \approx 1.8480
 $$
 
-# Zufallsvariablen (mehrdimensional)
+## Zufallsvariablen (mehrdimensional)
 
 jetzt eine Abbildung von Stichproben auf mehrere Variablen, beispielsweise Studierende mit Alter X und Notenschnitt Y
 
@@ -311,7 +311,7 @@ für diskrete Verteilungen:
 | --------------------------------------------------------- | --------------------------------------------------------- |
 | ![2022-07-25_13.45.04](../images/2022-07-25_13.45.04.jpg) | ![2022-07-25_13.45.33](../images/2022-07-25_13.45.33.jpg) |
 
-## bedingte Dichte
+### bedingte Dichte
 
 - von X gegeben Y = $\frac{\text{Wahrscheinlichkeit dass beides eintritt}}{\text{Wahrscheinlichkeit dass y eintritt}} \to f_X = \frac{f(x,y)}{f_Y(y)}$
 
@@ -331,13 +331,13 @@ Beispiel in erster Zeile, erster Spalte: $f(x=0 | \underbrace{y=0}_{gegeben})= \
 
 ---
 
-## stochastische Unabhängigkeit
+### stochastische Unabhängigkeit
 
 gegeben, wenn $f(x,y) = f_X(x) \cdot f_Y(y)$
 
 im Beispiel: $f(0,0)\to \underbrace{\frac{1}{16} \neq \frac{1}{8} \cdot \frac{1}{16}}_{nicht \ unabh.} \gets f_X(x) \cdot f_Y(y)$
 
-## Kovarianz
+### Kovarianz
 
 Allgemein: $Cov(X,Y)= E\Big[ \big(X-E(X)\big) - \big( Y - E(Y) \big) \Big]$
 
@@ -373,15 +373,15 @@ und dann ganz viel Müll, letztendlich: $Cov(X,Y) = 0$
 
 => gibt Zusammenhang zwischen Anzahl Köpfe und Anzahl Wechsel, aber nicht stochastisch unabhängig!
 
-# Verteilungen
+## Verteilungen
 
 für Verteilungen gibt es einige typische, anhand derer Sachen einfacher berechenbar sind, insbesondere von Interesse ist die Normalverteilung
 
-## Diskrete Verteilungen
+### Diskrete Verteilungen
 
 Verteilungen mit diskreten (abzählbaren) Zufallsvariablen
 
-### Bernoulli Verteilung
+#### Bernoulli Verteilung
 
 binäre Verteilung als 0 oder 1
 
@@ -393,7 +393,7 @@ ist Spezialfall der Binomialverteilung: $X \sim Bin(1,p)$
 
 
 
-### Binomialverteilung
+#### Binomialverteilung
 
 Dichtefunktion: 
 $$
@@ -409,7 +409,7 @@ Binomialverteilung = Situation Ziehen mit Zurücklegen
 - n Kugeln ziehen mit Zurücklegen
 - $X \sim Bin(n,p)$ mit $p = M / N$
 
-### hypergeometrische Verteilung
+#### hypergeometrische Verteilung
 
 Ziehen ohne Zurücklegen
 
@@ -422,7 +422,7 @@ $$
 f(x_i) = \frac{ \binom{M}{x_i} * \binom{N-M}{n-x_i} }{ \binom{N}{n}}
 $$
 
-### Poisson Verteilung
+#### Poisson Verteilung
 
 X diskrete Zufallsvariable: 0, 1, 2, ...
 
@@ -432,7 +432,7 @@ auch *Verteilung der seltenen Ereignisse*
 
 ![2022-05-17_12-20](../images/2022-05-17_12-20.png)
 
-## Normalverteilung
+### Normalverteilung
 
 *"The one Verteilung to rule them all"*
 
@@ -444,7 +444,7 @@ kovergiert gegen 0, Fläche unter Kurve = 1
 
 Schreibweise: $N(\mu, p)$
 
-### Standardnormalverteilung
+#### Standardnormalverteilung
 
 Falls $\mu = 0$ und $\sigma^2 = 1 \to$ N(0,1) = *Standardnormalverteilung*
 
@@ -454,7 +454,7 @@ Dichte $\phi(z)$ und Verteilungsfunktion $\Phi(z)$ der SNV
 
 praktisch für: wir haben eine Verteilung, transformieren sie zu SNV, berechnen was wir berechnen wollen und transformieren zurück
 
-### Rechnungen
+#### Rechnungen
 
 **Wahrscheinlichkeit**
 
@@ -463,10 +463,10 @@ $\phi(x) = ?$ also Höhe der Normalverteilung an bestimmten X-Wert:
 Rechnerisch: mit *R*, bspw. [hier](https://www.online-ide.com/online_r_compiler)
 
 ```R
-x = 1 # das x
-m = 0 # das mu der Verteilung
-sd = 1 # die Standardabweichung
-# Berechnung der Höhe mit pnorm()
+x = 1 ## das x
+m = 0 ## das mu der Verteilung
+sd = 1 ## die Standardabweichung
+## Berechnung der Höhe mit pnorm()
 dnorm(x,m,sd)
 ```
 
@@ -485,10 +485,10 @@ Wahrscheinlichkeitsrechnungen bei der Normalverteilung: Wie hoch ist die W., das
 Rechnerisch: mit *R*, bspw. [hier](https://www.online-ide.com/online_r_compiler)
 
 ```R
-p = 1 # der gesuchte Wert
-m = 0 # das mu der Verteilung
-sd = 1 # die Standardabweichung (Wurzel der Varianz!)
-# Berechnung der Wahrscheinlichkeit mit pnorm()
+p = 1 ## der gesuchte Wert
+m = 0 ## das mu der Verteilung
+sd = 1 ## die Standardabweichung (Wurzel der Varianz!)
+## Berechnung der Wahrscheinlichkeit mit pnorm()
 pnorm(p,m,sd)
 ```
 
@@ -513,10 +513,10 @@ bei welchem Wert werden 69 % der Ereignisse abgedeckt?
 Rechnerisch:
 
 ```R
-q = 0.69 # der gesuchte Wert
-m = 0 # Mittelwert mu der Verteilung
-sd = 1 # die Standardabweichung
-# Berechnung der Wahrscheinlichkeit mit pnorm()
+q = 0.69 ## der gesuchte Wert
+m = 0 ## Mittelwert mu der Verteilung
+sd = 1 ## die Standardabweichung
+## Berechnung der Wahrscheinlichkeit mit pnorm()
 qnorm(p,m,sd)
 ```
 
@@ -528,7 +528,7 @@ Output
 
 
 
-# Schätzen
+## Schätzen
 
 Wir wollen aus den Eigenschaften einer Stichprobe Informationen über die Grundgesamtheit in Erfahrung bringen, bspw. über Würfelwürfe etwas über die Gezinktheit eines Würfels = **induktive Statistik**
 
@@ -547,7 +547,7 @@ Methoden zu Bsp.:
 
 hoffen wir mal ne :grin:
 
-## Punktschätzer
+### Punktschätzer
 
 - Suchen Parameter $\theta$ der Stichprobe $X_1,...,X_n$
 - Punktschätzer ist Funktion $t(X_1,...,X_n)$
@@ -581,7 +581,7 @@ Var(t_1) = Var[\frac{3}{6}(X_1+2 X_2 - X_3)] \\
 $$
 
 
-## Intervallschätzer
+### Intervallschätzer
 
 Interesse ist Angabe eines Intervalls, das den Parameter enthält
 
@@ -592,16 +592,16 @@ Wahrscheinlichkeit $\alpha$ ($0 \le \alpha \le 1$) gegeben (genannt *Irrtumswahr
 Erinnerung: Standardabweichung $\sigma = \sqrt{Varianz: \ \sigma^2}$
 
 ```R
-n <- 39       # Stichprobengröße
-mean <- 7.77  # Stichprobenmittel
-sd <- 0.46     # Stichprobenabweichung (Schätzung)
-a <- 0.05     # alpha
+n <- 39       ## Stichprobengröße
+mean <- 7.77  ## Stichprobenmittel
+sd <- 0.46     ## Stichprobenabweichung (Schätzung)
+a <- 0.05     ## alpha
 
-error <- qnorm(1-a/2)*sd/sqrt(n) # Fehler berechnen mit Normalv.
+error <- qnorm(1-a/2)*sd/sqrt(n) ## Fehler berechnen mit Normalv.
 high <- mean + error
 low <- mean - error
 
-print(c(low, high)) # untere Grenze, obere Grenze
+print(c(low, high)) ## untere Grenze, obere Grenze
 ```
 
 
@@ -611,19 +611,19 @@ print(c(low, high)) # untere Grenze, obere Grenze
 nur bei $n\ge 30$, weil erst dann t-Verteilung = SNV
 
 ```R
-n <- 39       # Stichprobengröße
-mean <- 7.77  # Stichprobenmittel
-s <- 0.46     # Stichprobenabweichung (Schätzung)
-a <- 0.05     # alpha
+n <- 39       ## Stichprobengröße
+mean <- 7.77  ## Stichprobenmittel
+s <- 0.46     ## Stichprobenabweichung (Schätzung)
+a <- 0.05     ## alpha
 
-margin <- qt(1-a/2,df=n-1)*s/sqrt(n) # Konfidenzfehler aus t-Verteilung
+margin <- qt(1-a/2,df=n-1)*s/sqrt(n) ## Konfidenzfehler aus t-Verteilung
 high <- mean + margin
 low <- mean - margin
 
-print(c(low, high)) # untere Grenze, obere Grenze
+print(c(low, high)) ## untere Grenze, obere Grenze
 ```
 
-## Tests
+### Tests
 
 wir haben eine Hypothese und eine derzeitige Meinung
 
@@ -689,13 +689,13 @@ Stichprobe mit 36 Schrauben, Durchschnitt=9.7, Varianz= 0.5
 
 ```R
 library(compositions)
-# x <- c() # wenn reale Daten
-x <- rnorm(36,9.7, 0.5) # oder erstellen (n,mean,sd)
+## x <- c() ## wenn reale Daten
+x <- rnorm(36,9.7, 0.5) ## oder erstellen (n,mean,sd)
 
 Gauss.test(x, y = NULL,
-       mean = 10, # Nullhypothese über mu
-       sd = 0.5, # die Varianz der Grundgesamtheit
-       alternative =  "two.sided") # "two.sided", "less", "greater"
+       mean = 10, ## Nullhypothese über mu
+       sd = 0.5, ## die Varianz der Grundgesamtheit
+       alternative =  "two.sided") ## "two.sided", "less", "greater"
 ```
 
 Output:
@@ -713,15 +713,15 @@ Maschine muss rekalibriert werden, um Durchschnitt von 10cm wiederzubekommen.
 **t-test** in R
 
 ```R
-# x <- c() # wenn reale Daten der Stichprobe
-x <- rnorm(29,85.74, 3.43) # oder erstellen (n,mean,sd)
+## x <- c() ## wenn reale Daten der Stichprobe
+x <- rnorm(29,85.74, 3.43) ## oder erstellen (n,mean,sd)
 
 t.test(x, y = NULL,
-       alternative =  "two.sided", # "two.sided", "less", "greater"
+       alternative =  "two.sided", ## "two.sided", "less", "greater"
        mu = 84.1,
        conf.level = 0.95,)
 
-# Output: true mean is not equal to 84.1 
+## Output: true mean is not equal to 84.1 
 ```
 
 

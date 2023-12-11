@@ -1,5 +1,3 @@
-
-
 # Zusammenfassung Öffentliches Recht
 
 Zusammenfassung für das Modul *"Öffentliches Recht für Wirtschaftswissenschaftler:innen"*
@@ -21,9 +19,9 @@ Zusammenfassung für das Modul *"Öffentliches Recht für Wirtschaftswissenschaf
     - [Staat & Wirtschaft](#staat-amp-wirtschaft)
 - [Europarecht](#europarecht)
 
-# Überblick
+## Überblick
 
-## Abgrenzung
+### Abgrenzung
 
 |                 | öffentliches Recht             | Strafrecht       | Zivilrecht                     |
 | :-------------- | :----------------------------- | :--------------- | :----------------------------- |
@@ -34,7 +32,7 @@ Zusammenfassung für das Modul *"Öffentliches Recht für Wirtschaftswissenschaf
 
 
 
-## Rechtsnorm
+### Rechtsnorm
 
 ```mermaid
 graph LR
@@ -46,7 +44,7 @@ graph LR
   E & G --> Rechtsfolge
 ```
 
-## Subsumtion
+### Subsumtion
 
 Schritte:
 
@@ -55,7 +53,7 @@ Schritte:
 3. Subsumtion
 4. Schlussatz
 
-## Rechtsebenen
+### Rechtsebenen
 
 Rechtsfolge:
 
@@ -92,7 +90,7 @@ Normenkollisionen und Lösung
 
 
 
-## Auslegung von Recht
+### Auslegung von Recht
 
 > **Auslegung:** Begründung, warum dieses oder jenes Verständnis des Gesetzes vorzugswürdig ist
 
@@ -107,13 +105,13 @@ Methoden der Auslegung:
 
 Außerdem: richtlinienkonforme Auslegung, verfassungskonforme Auslegung
 
-# Verfassungsrecht
+## Verfassungsrecht
 
 - Staatsorganisationsrecht
 - Grundrechte
 - Verfassungsprozessrecht
 
-## Staatsorganisationsrecht
+### Staatsorganisationsrecht
 
 regelt Prinzipien, Aufbau, Funktionsweise des Staates
 
@@ -140,14 +138,14 @@ daraus entstehende Prinzipien
 5. Rechtstaatprinzip
     - Verhätlnismäßigkeit, faire Verfahren, Rechtsweg, Willkürverbot
 
-### Organe
+#### Organe
 
 - Bundestag `Art. 38ff. GG`
 - Bundesrat `Art. 50ff. GG ` 
 - Bundespräsident `Art. 54ff. GG` 
 - BVerfassungsgericht `Art 93ff. GG`
 
-### Gesetzgebungskompetenz
+#### Gesetzgebungskompetenz
 
 *Grundsatz*: Länderkompetenz gem `Art. 70 I GG`
 
@@ -167,7 +165,7 @@ daraus entstehende Prinzipien
 - Sachzusammenhang (bundesweite politische Parteien)
 - Annex
 
-## Grundrechte
+### Grundrechte
 
 Abgrenzung zu Staatsziele = abstrakt, nicht einklagbar, wie:
 
@@ -175,7 +173,7 @@ Abgrenzung zu Staatsziele = abstrakt, nicht einklagbar, wie:
 - Europäische Integration
 - Gleichberechtigung
 
-### Unterteilung
+#### Unterteilung
 
 - **Freiheitsrechte** `Art. 4,6,8 GG`
     - Versammlung, Glaube ...
@@ -184,7 +182,7 @@ Abgrenzung zu Staatsziele = abstrakt, nicht einklagbar, wie:
 - **Teilhaberechte** `Art. 17 GG`
     - gleichwertige Lebensverhältnisse
 
-### Funktion
+#### Funktion
 
 - **Abwehrrechte** (*status negativus*) der Bürger gegen den Staat
 - **Leistungsrechte** (*status positivus*) der Bürger von dem Staat
@@ -199,7 +197,7 @@ Abgrenzung zu Staatsziele = abstrakt, nicht einklagbar, wie:
 
 Drittwirkung von Grundrechten = strahlen in den privaten Raum aus, bspw. Diskrimierungsverbot auf Arbeit
 
-### Prüfschema Freiheitsgrundrechte
+#### Prüfschema Freiheitsgrundrechte
 
 ---
 
@@ -242,7 +240,7 @@ Abwägungsprozess
 
 bei einzelnen Grundrechten gibt es genauere Schranken, Verhältnismäßigkeiten etc
 
-## Verfassungsprozessrecht
+### Verfassungsprozessrecht
 
 befasst sich mit den Gerichtsverfahren vor Verfassungsgerichten
 
@@ -270,7 +268,7 @@ end
 
 **merke:** BVerfG ist keine Superrevisionsinstanz (die können Fälle ablehnen)
 
-### Verfahren vor dem BVerfG
+#### Verfahren vor dem BVerfG
 
 - Verfassungsbeschwerde nach `Art. 93 I 4a` (jedermann):
     - Öffentliche Gewalt greift in Grundrechte ein
@@ -283,7 +281,7 @@ end
 - Bund-Länder Streit `Art. 93 I 4`:
     - Kompetenzabrenzung zwischen BUndesländern spezifisch
 
-### Zulässigkeitskriterien
+#### Zulässigkeitskriterien
 
 - Zuständigkeit des BVerfG (nach oben genannten Kriterien)
 - Beschwerdegegenstand (Akt des Staats gegen GR)
@@ -295,13 +293,13 @@ end
 
 
 
-# Verwaltungsrecht
+## Verwaltungsrecht
 
 > **Verwaltung:** jedes administrative Handeln, das dem Vollzug öffentlich-rechtlicher Vorschriften dient
 
 jedes Handeln bedarf einer Rechtsgrundlage, Verwaltungsrecht => Regeln für staatliches Handeln
 
-## Verwaltungsakt
+### Verwaltungsakt
 
 > ***Verwaltungsakt §35 VwVfG:***
 >
@@ -318,7 +316,7 @@ Rechtsfolgen eines Verwaltungsaktes
 - Vollstreckungsfunktion
     - wenn nicht Baum gefällt, dann gibts Schläge
 
-### Klagen gegen VA
+#### Klagen gegen VA
 
 Prüfungschema:
 
@@ -334,7 +332,7 @@ Klagearten:
 - **Anfechtungsklage ** `§42 Abs. 1 2 VwGO`: Kläger:in möchte, dass belastender VA aufgehoben wird (bspw. Aufhebung Gebührenbescheid)
 - **Verpflichtungsklage** `§42 Abs. 1 2 VwGO`: Kläger:in möchte dass VG einen begünstigenden VA erlässt (bspw. Gehnehmigung)
 
-### Ermessen
+#### Ermessen
 
 Behörden haben bei Entscheidungen meist Ermessen nach `§40 VwVfG`, dieses Ermessen kann von Gerichten überprüft werden `§114 VwGO`
 
@@ -345,7 +343,7 @@ Ermessensfehler:
 - Ermessensfehlgebrauch
 - Ermessensreduzierung auf Null
 
-## Staat & Wirtschaft
+### Staat & Wirtschaft
 
 Handlungen des Staates in der Wirtschaft:
 
@@ -355,7 +353,7 @@ Handlungen des Staates in der Wirtschaft:
 
 
 
-### Gewerbeordnung 
+#### Gewerbeordnung 
 
 > **Gewerbe:** jeder auf Gewinnerzielung gerichtete, auf Dauer angelegte selbstständige Tätigkeit, die nicht Urpoduktion, Ausübung eines freien Berufes oder Verwaltung eigenenen Vermögens darstellt
 
@@ -371,7 +369,7 @@ typische Unzuverlässigkeiten:
 - fehlende Sozialversicherungsbeiträge
 - Betrug
 
-# Europarecht
+## Europarecht
 
 wichtige Institutionen:
 
@@ -386,7 +384,7 @@ wichtige Institutionen:
 
 > **Artikel 3 AEUV:** Ziel der Union ist es, den Frieden, ihre Werte und das Wohlergehen ihrer Völker zu fördern
 
-## Rechtslage
+### Rechtslage
 
 Hierarchie
 
@@ -416,7 +414,7 @@ definiert in `Art. 2f AEUV`:
 - **geteilte** Z.: Verkehr, Energie, Forschung
 - **keine** Z: Bildung, Jugend, Sport
 
-## Binnenmarkt
+### Binnenmarkt
 
 Freiheiten:
 
@@ -427,4 +425,4 @@ Freiheiten:
 
 meistverhandelt vor dem EuGH: Dassonville, Cassis, DocMorris
 
-## Grundrechte
+### Grundrechte

@@ -1,6 +1,6 @@
 # Wirtschaftsinformatik
 
-### Übersicht
+## Übersicht
 
 1. [Allgemein](#allgemein)
     - [Daten](#daten)
@@ -52,7 +52,7 @@
 
 Speicherung in **Datenbanken!**
 
-# Datenbanksystem
+## Datenbanksystem
 
 System aus *Datenbankmanagementsystem* und *Datenbank*
 
@@ -63,7 +63,7 @@ System aus *Datenbankmanagementsystem* und *Datenbank*
 | sicher (mit Zugriffsrechten)           | Vorteil: intuitiv + einfache Speicherung   |
 | Beispiele: MySQL, SQLite,...           | Darstellung mit Entity-Relationship-Modell |
 
-## relationelles Modell
+### relationelles Modell
 
 Ansammlung von Tabellen, die mithilfe von Schlüsseln verbunden werden
 
@@ -74,7 +74,7 @@ um diese Tabellen auf einheitliches System zu bringen : **Normalisierung** in me
 
 Ausganstabelle: ![22-02-07_15-11](../images/22-02-07_15-11.jpg)
 
-### 1. Normalform
+#### 1. Normalform
 
 | Vorgang                   | Anwendung                                              |
 | ------------------------- | ------------------------------------------------------ |
@@ -83,7 +83,7 @@ Ausganstabelle: ![22-02-07_15-11](../images/22-02-07_15-11.jpg)
 
 ![22-02-07_15-13](../images/22-02-07_15-13.jpg)
 
-### 2. Normalform
+#### 2. Normalform
 
 > **(funktionelle) Abhängigkeit:** wenn ein Attribut immer durch ein anderes Attribut bestimmt wird, ist es abhängig von ihm
 
@@ -98,7 +98,7 @@ Beispiel:
 
 ![22-02-07_15-15](../images/22-02-07_15-15.jpg)
 
-### 3. Normalform
+#### 3. Normalform
 
 | Vorgehen                                                 | Anwendung                                                    |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
@@ -106,7 +106,7 @@ Beispiel:
 
 ![22-02-07_16-31](../images/22-02-07_16-31.jpg)
 
-## Entity-Relationship-Modell
+### Entity-Relationship-Modell
 
 - Modell zur Beschreibung der Systematik einer Datenbank
 
@@ -125,7 +125,7 @@ Umwandlungsregeln zu einer Datenbank:
 - n:m Kardinalität mithilfe eigener Tabelle darstellen
 - 1:n Kardinalität: in Tabelle des n-Typs den Primärschlüssel des 1-Typs
 
-# Geschäftsprozessmanagement
+## Geschäftsprozessmanagement
 
 > **GPM:** Strategie der prozessorientierten Unternehmensführung
 
@@ -151,7 +151,7 @@ Umsetzung mit *Geschäftsprozessmodellierung*
 
 > **GPM:** Identifikation, Analyse, Gestaltung von Geschäftsprozessen
 
-## Modellierung mit EPK
+### Modellierung mit EPK
 
 > **EPK:** Ereignisgesteuerte Prozessketten, Modellierungsprache
 
@@ -189,7 +189,7 @@ Regeln:
 
 Verfeinerung: Unter-EPK zur genaueren Darstellung einer Funktion
 
-### Erweiterte EPK (eEPK) 
+#### Erweiterte EPK (eEPK) 
 
 erweitert EPK um Objekte, die an Funktionen angefügt werden können
 
@@ -199,7 +199,7 @@ erweitert EPK um Objekte, die an Funktionen angefügt werden können
 
 Beispiel für eEPK![22-02-07_18-16](../images/22-02-07_18-16.png)
 
-## Modellierung mit ARIS
+### Modellierung mit ARIS
 
 - ***Ar**chitektur integrierter **I**nformations**S**ysteme*
 - Architekturmodell für Erweiterung der EPK
@@ -219,7 +219,7 @@ Leistungssicht Beispiel:![2022-02-08_11.33.53](../images/2022-02-08_11.33.53.jpg
 
 
 
-## Prozessoptimierung
+### Prozessoptimierung
 
 Ziele:
 
@@ -234,7 +234,7 @@ Ziele:
 | **Process Reengineering**           | große weitgreifende Veränderung | von Geschäftsleitung ausgehend | schlagartig implementiert |
 | **Continous Process Optimitsation** | kleine Schritte                 | von Mitarbeitern ausgehend     | kontinuerlich             |
 
-### Prozessautomatisierung
+#### Prozessautomatisierung
 
 - Erleichterung von Aufgaben
 - für Prozesse mit geringer Intensität und hohem Wiederholgsgrad
@@ -244,9 +244,9 @@ Ziele:
 
 
 
-# Anwendungssysteme AWS
+## Anwendungssysteme AWS
 
-## Informationssystem
+### Informationssystem
 
 > **IS:** soziotechnisches Systeme zur Bereistellung von Information + Kommunikation
 
@@ -255,7 +255,7 @@ Ziele:
 
 ![2022-02-07_19.20.37](../images/2022-02-07_19.20.37.jpg)
 
-## AW-Systeme
+### AW-Systeme
 
 > **AWS:** Softwaresystem zur Durchführung von Aufgaben in unterschiedlichen Unternehmensbereichen
 
@@ -273,7 +273,7 @@ Daten in AWS:
     - Darstellung: *grafisch | alphanumerisch*
     - Zeitbezug: *historisch | aktuell*
 
-### Innerbetriebliche AWSysteme
+#### Innerbetriebliche AWSysteme
 
 ![22-01-13_20-25](../images/22-01-13_20-25.jpg)
 
@@ -294,7 +294,7 @@ Risiko:
 - Abhängig von einem Anbieter
 - Verlust der Unternehmenseigenheiten da vorgefertigtes Paket
 
-### Unternehmensübergreifende AWS
+#### Unternehmensübergreifende AWS
 
 ![22-01-13_20-16](../images/22-01-13_20-16.jpg)
 
@@ -321,13 +321,13 @@ Arten der Integration:
 
 
 
-# UML
+## UML
 
 > **Unified Modelling Language:** standardisierte Sprache zur Beschreibung von Softwarekonzepten / systemen
 
 - viele verschiedene Arten von Diagrammen, am wichtigsten das Klassendiagramm
 
-## Klassendiagramm
+### Klassendiagramm
 
 > **Klasse:** Objekttyp, der Struktur von Objekten darstellt
 
@@ -344,7 +344,7 @@ bestehen aus:
 
 
 
-### Beziehungen zwischen Klassen
+#### Beziehungen zwischen Klassen
 
 | Beziehungstyp                | Beschreibung                                                 | Bild                                            |
 | ---------------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
@@ -360,7 +360,7 @@ Beispiel:
 
 ![22-02-08_10-02](../images/22-02-08_10-02.png)
 
-## Use-Case-Diagramm
+### Use-Case-Diagramm
 
 weiterer wichtiger Diagrammtyp
 
@@ -376,7 +376,7 @@ Verbindungen im Use-Case-Diagram:
 
 ---
 
-# Überlappendes Phasenmodell
+## Überlappendes Phasenmodell
 
 Modell zur Entwicklung von Software
 

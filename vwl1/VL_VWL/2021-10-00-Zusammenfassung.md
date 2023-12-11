@@ -74,9 +74,9 @@
 2. Wie wird es produziert?
 3. Wer produziert es?
 
-# Mikroökonomik
+## Mikroökonomik
 
-## Vorteil
+### Vorteil
 
 * *absoluter Vorteil:* Prduzent hat niedrigere Stückkosten als Konkurrent
 * *relativer Vorteil:* Produzent hat niedrigere Opportunitätskosten pro Einheit als Konkurrent
@@ -85,7 +85,7 @@
 
 => Handel ist förderlich, aufgrund starker positiver Wohlfahrtseffekte, kann aber zu kurzfristiger Umverteilung führen
 
-## Produktionsmöglichkeitenkurve
+### Produktionsmöglichkeitenkurve
 
 > **Production Possibilities Frontier (PPF):** zeigt alle Kombinationen von zwei Gütern, die von Individuen/ Unternehmen / Gesellschaft produziert oder konsumiert werden können
 
@@ -102,9 +102,9 @@ Eigenschaften:
 
 > **Marginal Rate of Transformation (MRT):** lokale Steigerung der Kurve an einem Punkt
 
-## Märkte
+### Märkte
 
-### ökonomische Systeme
+#### ökonomische Systeme
 
 | Marktwirtschaft | Planwirtschaft | 
 | -------------------------------------------- | ------------------------------------------------ |
@@ -112,7 +112,7 @@ Eigenschaften:
 
 => reale Systeme immer Mischform
 
-### der Markt
+#### der Markt
 
 > **Markt:** Institution zum Kaufen / Verkaufen; basierend auf Preismechanismus
 
@@ -124,7 +124,7 @@ Eigenschaften:
     * Arbeitsmarkt, Kapitalmarkt, Ölmarkt, ...
   * **Produktmarkt:** Markt, auf dem Waren und Dienstleistungen getauscht werden
 
-### Nachfrage
+#### Nachfrage
 
 > **Gesetz der Nachfrage:** Nachfrage nach Produktfällt bei steigendem Preis
 
@@ -144,7 +144,7 @@ Darstellung mit Nachfragekurve (hier auch aggregierte Nachfrage):
 * schneidet X wegen Grenznutzen
 * schneidet Y wegen Einkommensgrenze
 
-### Angebot
+#### Angebot
 
 > **Gesetz des Angebots:** positive Beziehung Preis <--> Menge
 
@@ -159,7 +159,7 @@ Darstellung mit Angebitskurve![22-02-11_22-53](../images/22-02-11_22-53.png)
 * immer rot
 * positive Steigung
 
-### Marktgleichgewicht
+#### Marktgleichgewicht
 
 > Zustand, in dem Angebot = Gleichgewicht
 
@@ -177,7 +177,7 @@ alternative Mechanismen der Verteilung:
 * *Schlangestehen:* => verlorene Lebenszeit, Schwarzmarkt
 * *Rationierung* => Mangel, Korruption
 
-## Wohlfahrt
+### Wohlfahrt
 
 > **Wohlfahrt:** Nutzen aller Individuen in einem aggregierten Markt
 
@@ -195,7 +195,7 @@ Wohlfahrtsverlust: bei fehlendem Marktgleichgewicht wie bei *Preisgrenzen, Minim
 
 ![21-11-12_18-02](../images/21-11-12_18-02.jpg)
 
-## Haushalte
+### Haushalte
 
 jeden Tag treffen Haushalte Entscheidungen aufgrund von Budgetbeschränkungen
 
@@ -215,7 +215,7 @@ Auswirkungen einer Preissenkung:
 * andere Güter werden *"relativ"* billiger
 * ![21-11-17_11-31](../images/21-11-17_11-31.jpg)
 
-### Nutzen
+#### Nutzen
 
 > **Nutzen:** erzeugte Zufriedenheit bei Konsumenten durch ein Produkt
 
@@ -230,7 +230,7 @@ Haushalte agieren *nutzenmaximierend* => beste Streuung der Ausgaben für optima
 | ![21-11-17_11-38](../images/21-11-17_11-38.jpg) | ![21-11-17_11-37](../images/21-11-17_11-37.jpg) |
 | Gesamtnutzen steigt immer weiter | der Grenznutzen nimmt aber ab! |
 
-### Effekte einer Preisänderung
+#### Effekte einer Preisänderung
 
 * ein Preisrückgang führt *ceteribus paribus* zu mehr Nutzen, da Haushalt "reicher"
   * **Einkommenseffekt**
@@ -248,7 +248,7 @@ Anwendung auf den Arbeitsmarkt:
 
 ![21-11-17_12-13](../images/21-11-17_12-13.jpg)
 
-### Güterarten
+#### Güterarten
 
 Güter lassen sich in 3 Arten einteilen anhand der Effekte, die auf sie wirken
 
@@ -264,7 +264,7 @@ Auswirkungen einer Preissenkung:
 | *Inferiore Güter* | Mehr kaufen | weniger kaufen | $SE \\to \\gets EE$ | $SE > EE$ = weniger |
 | *Giffen Güter* | mehr kaufen | **deutlich** weniger kaufen | $SE \\to \\gets EE$ | $SE >> EE$ = deutlich weniger |
 
-## Unternehmen
+### Unternehmen
 
 > **Unternehmen:** Organisation, die Ressourcen (Inputs) zu Produkten (Outputs) umwandelt
 
@@ -278,7 +278,7 @@ Zeithorizonte eines Unternehmens:
 * **kurzfristig:** feste Produktionsgröße (bspw. Anzahl Maschinen) + keine Neueuntritte in Markt
 * **langfristig:** keine festen Produktionsfaktoren + Neueintritte
 
-### Technologiewahl
+#### Technologiewahl
 
 Unternehmen suchen optimale Produktionsmethode für Kostenminimierung
 
@@ -299,14 +299,14 @@ Problem aller Technologien: *Gesetz des abnehmenden Ertrags*:
 
 Durchschnittsprodukt = $\\frac{Gesamtprodukt}{Anzahl \\ Einheiten}$
 
-### Transaktionskosten
+#### Transaktionskosten
 
 > **Transaktionskosten:** fallen an, wenn ein Geschäft abgeschlossen wird. je unübersichtlicher der Markt, desto höher die Kosten
 
 * *ex-ante*: vor Abschluss, bspw. Maklerkosten
 * *ex-post*: nach Abschluss, bspw. Transportkosten
 
-## Marktversagen/Externalitäten
+### Marktversagen/Externalitäten
 
 > **Externalitäten:** Handlung einer Partei, die zu Kosten / Nutzen anderer Parte führt
 
@@ -318,7 +318,7 @@ Arten von Gütern der Öffentlichkeit: ![22-02-12_18-35](../images/22-02-12_18-3
 
 Probleme öffentlicher Güter: *Trittbrettfahrer* (warum zahlen, wenn du es mir nicht wegnehmen kannst?)
 
-# Makroökonomik
+## Makroökonomik
 
 befasst sich mit Determinanten des Volkseinkommens und aggregierten Preisen/ Verbrauch
 
@@ -329,7 +329,7 @@ Bestandteile:
 * Staat
 * Rest der Welt
 
-### Der Staat
+#### Der Staat
 
 politische Möglichkeiten eines Staates:
 
@@ -338,7 +338,7 @@ politische Möglichkeiten eines Staates:
 | Mittel der **Regierung** zur Anpassung der Ausgaben / Steuern | Mittel der **Zentralbank** zur Steuerung der Geldmenge / Zinssätze |
 | Mittel: Verschulden + Investieren oder Sparen und Steuern senken | Mittel: Festsetzung der Zinssätze, Kauf + Verkauf Staatsanleihen |
 
-## Volkseinkommen
+### Volkseinkommen
 
 Messung mit *BIP*
 
@@ -349,7 +349,7 @@ Messung mit *BIP*
 
 Darstelllung des Volkseinkommens über Zeit anhand des Konjunkturzyklus: ![21-12-07_10-21](../images/21-12-07_10-21.jpg)
 
-## Arbeitslosigkeit
+### Arbeitslosigkeit
 
 > **arbeitslos:** Person, 16 Jahre oder älter und auf der Suche nach Arbeit
 
@@ -362,7 +362,7 @@ Kategorien:
   * **strukturell:** aufgrund der Wirtschaftsstruktur fehlende Jobs
 * **konjunkturelle Arbeitslosigkeit:** aufgrund der aktuellen Wirtschaftslage
 
-## Inflation
+### Inflation
 
 > **Inflation:** allgemeiner Anstieg des Preisniveaus über einen Zetraum, gemessen mit *CPI/VPI*
 
@@ -373,7 +373,7 @@ Folgen:
 * milde Inflation (\~2%) = gut, führt zu Ausgabenfreude der Konsumenten
 * starke Inflation: schadet, insbesondere Arbeitnehmern und hilft Schuldnern
 
-## Wirtschaftswachstum
+### Wirtschaftswachstum
 
 Geschichte:
 
@@ -395,9 +395,9 @@ Quellen des Wachstums:
 * **Qualität der Arbeit**: bessere Bildung der Arbeitnehmer (universitär, etc)
 * **Qualität des Kapitals**: neue Technologien + Innovationen
 
-## Entwicklungsländer
+### Entwicklungsländer
 
-#### Probleme
+##### Probleme
 
 * *Kapitalflucht*: Gled fließt außerhalb des Landes
 * *Brain Drain*: gebildete verlassen Land und gehen in reichere Länder
@@ -406,14 +406,14 @@ Quellen des Wachstums:
   * keine Rechtsgrundlage
   * keine Durchsetzung von Verträgen
 
-#### Strategien
+##### Strategien
 
 | Importsubstitution | Exportförderung |
 | ----------------------------------------------- | -------------------------------------------- |
 | Ersetzen der Importe durch heimische Produktion | Steigerung der Exporte der Industrie | 
 | Durch Subventionen des industriellen Sektors | durch Wettbewerbsmaßnahmen wie Steuersenkung |
 
-#### Armut
+##### Armut
 
 * **relative Armut**: Haushaltseinkommen weniger als 60% des mittleren Einkommens (abhängig von Land)
 * **absolute Armut**: Haushaltseinkommen weniger als 3.10$ pro Tag (Weltbank legt fest)
@@ -423,11 +423,11 @@ aufgrund fehlender Startmöglichkeiten kann nie Wachstum indziert werden = Teufe
 
 ![22-02-12_20-25](../images/22-02-12_20-25.jpg)
 
-# Forschungstrends
+## Forschungstrends
 
 welche Forschungstrends gibts in der aktuellen Volkswirtschaftslehre?
 
-### Experimente
+#### Experimente
 
 * **natürliche Experimente**: die "Natur" entscheidet darüber, welche Gruppe man zugeteilt wird
   * bspw. dein Wohnort in einem oder anderen Bundesland und dann wird zwischen Bundesländern unterschieden
@@ -435,9 +435,9 @@ welche Forschungstrends gibts in der aktuellen Volkswirtschaftslehre?
 
 => Nobelpreis der letzten beiden Jahre
 
-# Lesematerial
+## Lesematerial
 
-### Mindestlohn - IFO:[Link](https://www.ifo.de/DocDL/sd-2020-04-knabe-schoeb-thum-etal-mindestlohn-2020-04-15.pdf)
+#### Mindestlohn - IFO:[Link](https://www.ifo.de/DocDL/sd-2020-04-knabe-schoeb-thum-etal-mindestlohn-2020-04-15.pdf)
 
 * IFO-Institut: eher konservative monetaristische Ansichten aus München
 * hatte vor Einführung prognostiziert, dass der MIndestlohn 1. Million Arbeitsplätze kostet
@@ -453,7 +453,7 @@ Mindestlohn ist schlecht, weil:
 * Mindestlohn ersetzt nur Grundsicherung, führt nicht zu Einkommensteigerungen
   * WTF: Was ist das bitte für nen Argument, ist doch wünschenswert dass Leute nen guten Lohn statt Hartz IV bekommen (meine Meinung)!
 
-### Mindestlohn - DIW : [Link](https://www.diw.de/de/diw_01.c.824335.de/nachrichten/ist_ein_mindestlohn_von_zwoelf_euro_sinnvoll.html)
+#### Mindestlohn - DIW : [Link](https://www.diw.de/de/diw_01.c.824335.de/nachrichten/ist_ein_mindestlohn_von_zwoelf_euro_sinnvoll.html)
 
 * DIW: eher progressives Institut aus Berlin
 

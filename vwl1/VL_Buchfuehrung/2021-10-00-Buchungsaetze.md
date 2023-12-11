@@ -1,4 +1,4 @@
-### Übersicht
+# Buchführung: Buchungssätze
 
 - [Industriekontenrahmen](#industriekontenrahmen)
 - [Standardbuchungssätze](#standardbuchungssätze)
@@ -18,7 +18,7 @@
     - [Jahresabschluss/eröffnung](#jahresabschlusseröffnung)
 - [Buchführungspflicht](#buchführungspflicht)
 
-# Industriekontenrahmen
+## Industriekontenrahmen
 
 > **IKR:**  einheitliches übersichtliches Kontenordnungssystem, nicht gestzl. Verpflichtet
 
@@ -33,13 +33,13 @@ Aufbau mit Beispielkonten
 
 
 
-# Standardbuchungssätze
+## Standardbuchungssätze
 
 
 
-## Roh / Hilf / Betriebstoffe
+### Roh / Hilf / Betriebstoffe
 
-### Einkauf (auf Ziel)
+#### Einkauf (auf Ziel)
 
 ```
 200 Rohstoffe (oder 202 oder 203)
@@ -65,13 +65,13 @@ an
 an 2001 Bezugskosten 
 ```
 
-### Verbrauch
+#### Verbrauch
 ```
 600 Aufwendung für Rohstoffe (oder 602 oder 603)
 an 200 Rohstoffe
 ```
 
-### Verkauf (von Fertigerzeugnissen)
+#### Verkauf (von Fertigerzeugnissen)
 
 ```
 240 Forderungen
@@ -82,9 +82,9 @@ an
 
 
 
-## Handelsware
+### Handelsware
 
-### Einkauf
+#### Einkauf
 
 ```
 228 Handelswaren
@@ -93,7 +93,7 @@ an
 44 Verbindlichkeiten / 280 Bank / ...
 ```
 
-### Wareineinsatz (Entnahme aus Lager)
+#### Wareineinsatz (Entnahme aus Lager)
 
 ```
 608 Aufwendungen Fuer Handelswaren
@@ -101,7 +101,7 @@ an
 228 Handelswaren
 ```
 
-### Verkauf
+#### Verkauf
 
 ```
 240 Forderungen
@@ -112,11 +112,11 @@ an
 
 
 
-## Rücksendungen
+### Rücksendungen
 
 einfach nur Umdrehen des entgegengesetzten Buchungssatzes
 
-### an Lieferanten
+#### an Lieferanten
 
 1) Einkauf von Lieferanten`
 ```
@@ -133,7 +133,7 @@ an
 260 Vorsteuer
 ```
 
-### von Kunden
+#### von Kunden
 
 1. Original Buchung
 
@@ -155,9 +155,9 @@ an
 
 
 
-## Nachlässe
+### Nachlässe
 
-### im Einkauf
+#### im Einkauf
 
 1. Einkaufsbuchung
 
@@ -185,7 +185,7 @@ an
 200 Rohstoffe
 ```
 
-### im Verkauf
+#### im Verkauf
 
 1. Verkaufsbuchung
 
@@ -215,9 +215,9 @@ an
 
 
 
-## Skonto
+### Skonto
 
-### Lieferantenskonto
+#### Lieferantenskonto
 
 = Minderung der Anschaffungskosten
 
@@ -231,7 +231,7 @@ an
 280 Bank
 ```
 
-### Kundenskonto
+#### Kundenskonto
 
 = Schmälerung der Umsatzerlöse
 
@@ -245,7 +245,7 @@ an
 
 
 
-## Löhne
+### Löhne
 
 Berechnung
 
@@ -297,9 +297,9 @@ an 280 Bank
 
 
 
-## Anlagen
+### Anlagen
 
-### Anschaffung
+#### Anschaffung
 
 1: Buchung der Anschaffung (nebenkosten **nicht** gesondert)
 
@@ -320,7 +320,7 @@ an
 280 Bank
 ```
 
-### Abschreibung
+#### Abschreibung
 
 | Art       | Beschreibung                                        | Beispiel              |
 | --------- | --------------------------------------------------- | --------------------- |
@@ -338,7 +338,7 @@ an 07 Maschinen / ...
 
 Maschinenkonto zeigt dann Restbuchwert, praktisch
 
-### Verkauf
+#### Verkauf
 
 1. Buchung des Erlöses
 
@@ -358,9 +358,9 @@ an 07 Maschinen
 
 
 
-## Geringwertige Wirtschaftsgüter GWG
+### Geringwertige Wirtschaftsgüter GWG
 
-### Anschaffung + Vollabschreibung
+#### Anschaffung + Vollabschreibung
 
 1. Anschaffung
 
@@ -378,7 +378,7 @@ an
 an 0890 GWG
 ```
 
-### Anschaffung + Abschreibung über Nutzungsdauer
+#### Anschaffung + Abschreibung über Nutzungsdauer
 
 1. Anschaffung
 
@@ -398,7 +398,7 @@ an 086 BGA
 
 
 
-## Innerbetriebliche Leistungen
+### Innerbetriebliche Leistungen
 
 Leistungen, die nur von Betrieb genutzt werden und *nicht umsatzsteuerpflichtig* sind
 
@@ -419,9 +419,9 @@ an 802 GuV
 
 
 
-## Steuern
+### Steuern
 
-### Aktivierungspflichtige Steuern
+#### Aktivierungspflichtige Steuern
 
 = Anschaffungsnebenkosten wie Grunderwerbssteuer / Zölle
 
@@ -452,21 +452,21 @@ Buchung:
 an 280 Bank          108.270
 ```
 
-### abzugsfähige Steuern
+#### abzugsfähige Steuern
 
 ```
 702 Grundssteuer / 703 Kfzsteuern / 708 Verbauchsteuern
 an 280 Bank
 ```
 
-### Nichtabzugsfähige Steuern
+#### Nichtabzugsfähige Steuern
 
 ```
 770 Gewerbesteuer / 771 Körperschafsteuer / 772 Kapitalertragssteuer
 an 280 Bank
 ```
 
-#### Privatsteuern
+##### Privatsteuern
 
 nicht abzugsfähige Steuern wie Einkommensteuer, Solidaritätszuschlag, Kirchensteuer:
 
@@ -475,7 +475,7 @@ nicht abzugsfähige Steuern wie Einkommensteuer, Solidaritätszuschlag, Kirchen
 an 280 Bank
 ```
 
-### Umsatzsteuer (durchlaufende Steuer)
+#### Umsatzsteuer (durchlaufende Steuer)
 
 Schritte:
 
@@ -489,14 +489,14 @@ an 280 Bank
 
 
 
-### Steuernachzahlungen
+#### Steuernachzahlungen
 
 ```
 7021 Grundsteuer-Vorjahre / 7701 Gewerbesteuer Vorjahre / ...
 an 280 Bank
 ```
 
-### Steuererstattung
+#### Steuererstattung
 
 wie Rückbuchung, nur andere Unterkonten
 
@@ -506,7 +506,7 @@ an
 7702 Gewerbesteuer-Steuererstattug / 7032 Kfz-Steuererstattung
 ```
 
-### Steuerberatung
+#### Steuerberatung
 
 1. Betrieblich
 
@@ -524,16 +524,16 @@ an 280 Bank
 
 
 
-## Zinsen
+### Zinsen
 
-### Zinserhalt
+#### Zinserhalt
 
 ```
 280 Bank
 an 571 Zinsertrag
 ```
 
-### Zinszahlung
+#### Zinszahlung
 
 ```
 751 Zinsaufwendungen
@@ -542,18 +542,18 @@ an 280 Bank
 
 
 
-## Privatkonto
+### Privatkonto
 
 Entnahme auf Sollseite; Einlagen auf Habenseite
 
-### Entnahme von Konto
+#### Entnahme von Konto
 
 ```
 3001 Privat
 an 280 Bank
 ```
 
-### Entnahme von Waren/Leistungen
+#### Entnahme von Waren/Leistungen
 
 sind umsatzsteuerpflichtig!
 
@@ -564,7 +564,7 @@ an
 480 Umsatzsteuer
 ```
 
-### Einlage von Anlagen
+#### Einlage von Anlagen
 
 ```
 084 Fuhrpark / 07 Maschinen / ...
@@ -573,7 +573,7 @@ an 3001 Privat
 
 
 
-## Jahresabgrenzung
+### Jahresabgrenzung
 
 wenn Zahlungen in einem Jahr getätigt/genommen werden, aber ganz / teilweise zu anderem Jahr gehören
 
@@ -592,7 +592,7 @@ graph TD
 
 
 
-### aktive Rechnungsabgrenzung ARA
+#### aktive Rechnungsabgrenzung ARA
 
 ```
 670 Mietaufwendungen / 680 büromaterial / ...
@@ -601,7 +601,7 @@ an
 280 Bank
 ```
 
-### passive Rechnungsabgrenzung PRA
+#### passive Rechnungsabgrenzung PRA
 
 ```
 280 Bank
@@ -610,14 +610,14 @@ an
 490 PRA
 ```
 
-### Sonstige Verbindlichkeiten
+#### Sonstige Verbindlichkeiten
 
 ```
 670 Mietaufwand / ...
 an 480 übrige sonstige Forderungen
 ```
 
-### Sonstige Forderungen
+#### Sonstige Forderungen
 
 ```
 269 übrige sonstige Forderungen
@@ -626,22 +626,22 @@ an 540 Mieterträge
 
 
 
-## Jahresabschluss/eröffnung
+### Jahresabschluss/eröffnung
 
 1. alle Unterkonten Saldo bilden
 2. an jeweiliges Überkonto umbuchen
 3. je nach Kontoart auf SBK oder GuV buchen
 
-### Eröffnungsbuchungen
+#### Eröffnungsbuchungen
 
-#### Aktivkonten
+##### Aktivkonten
 
 ```
 200 Rohstoffe / 280 Bank / ...
 an 800 Eröffnungsbilanzkonto EBK
 ```
 
-#### Passivkonten
+##### Passivkonten
 
 ```
 800 Eröffnungsbilanzkonto EBK
@@ -650,23 +650,23 @@ an 44 Verbindlichkeiten / 300 Eigenkapital / ...
 
 
 
-### Abschluss von Erfolgskonten
+#### Abschluss von Erfolgskonten
 
-#### Ertragskonten
+##### Ertragskonten
 
 ```
 571 Zinserträge / 51 Umsatzerlöse / ...
 an 802 Gewinn und Verlust GuV
 ```
 
-#### Aufwandskonten
+##### Aufwandskonten
 
 ```
 802 Gewinn und Verlust GuV
 an 670 Mietuafwand / ...
 ```
 
-#### Abschluss des GuV
+##### Abschluss des GuV
 
 Saldo bilden; bei Gewinn
 
@@ -684,16 +684,16 @@ an 802 GuV
 
 
 
-### Schlussbilanzbuchungen
+#### Schlussbilanzbuchungen
 
-#### Aktivkonten
+##### Aktivkonten
 
 ```
 801 Schlussbilanzkonto SBK
 an 07 Maschinen / 084 Fuhrpark / ...
 ```
 
-#### Passivkonten
+##### Passivkonten
 
 ```
 44 Verbindlichkeiten / 300 Eigenkapital / ...
@@ -702,9 +702,9 @@ an 801 Schlussbilanzkonto SBK
 
 
 
-# Buchführungspflicht
+## Buchführungspflicht
 
-## Handelsrecht
+### Handelsrecht
 
 Buchführungspflicht laut Handelsgestzbuch HBG:
 
@@ -727,7 +727,7 @@ Nicht buchführungspflichtig:
 
 >**Freiberufler/Selbständige**: maßgeblich in eigener Person seinem Unternehmen Mitarbeiter (meist Akademisch)
 
-## Steuerrecht
+### Steuerrecht
 
 Buchführungspflicht nach Abgabenordnung AO
 

@@ -743,7 +743,7 @@ Ursachen für Ausweitung Angebot (langfristig)
 
 
 
-# Nicht alles mit barer Münze nehmen
+## Nicht alles mit barer Münze nehmen
 
 manchmal muss man Pies kritisch gegenüber stehen!
 

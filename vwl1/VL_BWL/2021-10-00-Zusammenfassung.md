@@ -21,7 +21,7 @@ Zusammenfassung für das Wintersemester 2021 bei [Prof. Dr. Julia Müller-Seeger
     - [4.1 Leistungsprozesse](#leistungsprozesse)
     - [4.2 Finanzprozesse](#finanzprozesse)
 
-# Allgemein
+## Allgemein
 
 > **Wirtschaften**: Disponieren über knappe Güter als Gegenstand von Marktprozessen
 
@@ -30,20 +30,20 @@ Prinzipien profitorientierter Unternehmen:
 - *Minimumprinzip:* Input minimieren
 - *Extremumprinzip:* optimales Verhältnis von Output ~ Input
 
-## Rechtsformen
+### Rechtsformen
 1. Personengesellschaft: (OHG,...)
     - Risiko lastet auf Unternehmer
 2. Kapitalgesellschaft: (AG, GmbH,...)
     - haftungsbeschränkt
 3. Mischformen, staatliche Formen, …
 
-## Gliederung der Unternehmen
+### Gliederung der Unternehmen
 - *nach Produktart:* Dienstleistung | Sachleistung
 - *nach Wirtschaftszweig*: Industrie, Handel, …
 - *nach Größe:* klein, mittel, groß
 - *nach regionalen Ausmaß:* lokal, regional, national, international, multinational
 
-### internationale Unternehmen
+#### internationale Unternehmen
 Unterscheidung inter- und multinationl:
 
 - **international:** Produktion Inland; Absatz auch Ausland
@@ -56,7 +56,7 @@ Unterscheidung inter- und multinationl:
 
 Arten des Auslandseinsatzes (steigend intern.): $Export < Lizenz < Direktinvestition < Auslandsniederlassung$
 
-# Management
+## Management
 > **Management:** zielgerichtete und ökonomische Steuerung/Organisation der menschlichen Handlung
 
 Ausgangspunkt des Management: *Aufgabe*
@@ -68,7 +68,7 @@ Schritte des Management:
 | Übersicht verschafften                                  | Einheiten zusammenfassen |
 | relevante Elemente erfassen (Personen, Abteilungen,...) | Verteilung der Aufgaben  |
 
-## Managementsystem
+### Managementsystem
 > **Managementsystem**: alle Instrumente, mit denen Managementfunktionen erfüllt werden
 2 Arten: 
 
@@ -78,7 +78,7 @@ Schritte des Management:
 | offensiv agieren              | defensiv reagieren         |
 | "Richtige Dinge tun"          | "Dinge richtig tun"        |
 
-### Bestandteile
+#### Bestandteile
 
 | Organisationsystem        | Informationsystem           | Planungs- / Kontrollsystem | Personalführungsystem | Controlling              |
 | ------------------------- | --------------------------- | -------------------------- | --------------------- | ------------------------ |
@@ -88,7 +88,7 @@ Schritte des Management:
 |                           | Lagerung                    | flexibel                   | Personalentwicklung   |                          |
 |                           | Verarbeitung                | budgetbeschränkt           |                       |                          |
 
-### Techniken
+#### Techniken
 
 - *Kreativitätstechnik:* zur Ideengewinnung, bspw. Brainstorming
 - *Scoringtechnik*: Bewertungsmethode zur Gewichtung
@@ -96,7 +96,7 @@ Schritte des Management:
 - *Extrapolationstechnik*: Fortschreibung der Vergangenheit in Zukunft
 - *Szenariotechnik:* Entwicklung von Szenarien
 
-## Führung
+### Führung
 > **Führungsstil:** längerfristige Muster im Verhalten von Führungskräften
 
 | Führung vs                 | Management                 |
@@ -105,7 +105,7 @@ Schritte des Management:
 | Weiterentwicklung          | Ordnung des Existenten     |
 | Motivation der Mitarbeiter | Zuordnung von Mitarbeitern |
 
-### Ziele der Führung
+#### Ziele der Führung
 
 - Motivation
 - Kohäsion (Zusammenhalt)
@@ -116,7 +116,7 @@ Führungstheorien:
 - *merkmalsbezogen:* Eigenschaftstheorie, Verhaltenstheorie (beide eher historisch)
 - *prozessbezogen:* Interaktionstheorie, Transformationstheorie (eher moderne) 
 
-### Führungstile
+#### Führungstile
 
 | autoritär                                    | partizipativ                                        |
 |----------------------------------------------|-----------------------------------------------------|
@@ -124,7 +124,7 @@ Führungstheorien:
 | klare Rollenverteilung                       | Teilhabe von Mitarbeitern                           |
 | braucht: Niveaugefälle und einfache Aufgaben | braucht: engagierte Mitarbeiter + kreative Probleme |
 
-# Strategisches Management
+## Strategisches Management
  > **Strategisches Management:** systematischer Prozess, in dem längerfristige Vorteile im Wettbewerb aufgebaut und erhalten werden
 
  - erlaubt proaktives Handeln statt Reaktion auf Veränderung
@@ -132,7 +132,7 @@ Führungstheorien:
 
 Bestandteile:
 ![22-02-04_19-08](../images/22-02-04_19-08.png)
-### Entwicklung von Strategien
+#### Entwicklung von Strategien
 $Vision \implies Leitbild \implies Ziele \implies \textbf{Strategie}$ 
 - **Vision:** langfristige Idee für Unternehmen
     - sinnstiftend
@@ -146,7 +146,7 @@ $Vision \implies Leitbild \implies Ziele \implies \textbf{Strategie}$
     - ökologisch
     - sozial
 
-### Geschäftsmodell
+#### Geschäftsmodell
 > **Geschäftsmodell** : Grundprinzip des Unternehmens in der Wertschöpfung
 
 Elemente:
@@ -167,12 +167,12 @@ Analyse mit **Business-Model-Canvas:**
 
 ![22-02-04_19-28](../images/22-02-04_19-28.png)
 
-## Strategische Prinzipien
+### Strategische Prinzipien
 `Leitfrage: "Was wollen wir als Unternehmen produzieren?"`
 
-### Produktlebenszyklus
+#### Produktlebenszyklus
 Analyse eines Produktes anhand von 5 Phasen: ![22-02-04_19-33](../images/22-02-04_19-33.png)
-### Economies of Scale / Scope
+#### Economies of Scale / Scope
 
 |              | Economies of Scale                    | Economies of Scope                         |
 |--------------|---------------------------------------|--------------------------------------------|
@@ -180,18 +180,18 @@ Analyse eines Produktes anhand von 5 Phasen: ![22-02-04_19-33](../images/22-02-0
 | Beschreibung | Kostenvorteile durch hohe Stückzahlen | Kostenvorteile durch breite Produktpalette |
 | Gründe:      | Verteilung der Fixkosten              | Verhandlungsmacht / Finanzstärke           |
 |              | Großmengenrabatte                     | gemeinsame Nutzung einer Ressource         |
-### ROI
+#### ROI
 > **Return on Investment:** Kennzahl für unternehmerischen Erfolg, auch Kapitalrendite
 
 Berechnung: $ROI = \frac{Gewinn}{eingesetztes \ Kapital}$
 
 
-## Strategische Umweltanalyse
+### Strategische Umweltanalyse
 `Leitfrage: "Was will der Markt?"`
 phasenbasierter Ansatz zur Unternehmensanalyse
 ![22-02-04_19-45.png](../images/22-02-04_19-45.png)
 
-### PEST
+#### PEST
 > Analyse in 4 Dimensionen, meist bezogen auf eine Region, ein Landes.
 
 Für jede Dimension anhand der Indikatoren erlaubt Bewertung der allgemeinen Situation des Landes, nicht nur nach finanziellen Gesichtspunkten
@@ -203,7 +203,7 @@ Für jede Dimension anhand der Indikatoren erlaubt Bewertung der allgemeinen Sit
 | Regulierung  | Schlüsselindustrien | Konsumentenverhalten | Patente          |
 | Stabilität   | Infrastruktur       | Mobilität            | Innovationen     |
 
-### Porters Five Forces
+#### Porters Five Forces
 > Analyse der Stärke des Wettbewerbs und der Machtverteilung in einer Branche
 
 ![22-02-04_20-06](../images/22-02-04_20-06.png)
@@ -223,9 +223,9 @@ Für jede Dimension anhand der Indikatoren erlaubt Bewertung der allgemeinen Sit
 
 > **Vorwärts / Rückwärtsintegration:** Übernahme von vorhergehenden / nachgeordneten Schritten in der Verwertungskette
 
-## Strategische Unternehmensanalyse
+### Strategische Unternehmensanalyse
 `Leifrage: "Wie ist unser Unternehmen aufgestellt?"`
-### Customer Value Analysis (CVA)
+#### Customer Value Analysis (CVA)
 > **Kundennutzenanalyse:** Analyse der Verlangen der Kunden im Vergleich von eigenen Produkten zu Konkurrenzprodukten
 
 | Bestandteil            | Vorgehen                                       |
@@ -238,12 +238,12 @@ Für jede Dimension anhand der Indikatoren erlaubt Bewertung der allgemeinen Sit
 Vorlage: ![22-02-05_17-33.jpg](../images/22-02-05_17-33.jpg)
 anhand des *relativen Preises* und der *relativen Qualität* lässt sich dann eine Customer Value Map erstellen
 
-#### Customer Value Map
+##### Customer Value Map
 anhand des *relativen Preises* und der *relativen Qualität* aus CVA lässt sich dann eine Customer Value Map erstellen
 
 ![22-02-05_17-46.png](../images/22-02-05_17-46.png)
 
-### Value Chain Analysis
+#### Value Chain Analysis
 > **Value Chain Analyse** Analyse des Nutzens, die ein Unternehmen in seiner Wertschöpfungskette betreibt
 
 muss immer auf jeweiliges Unternehmen individuell angepasst werden! 
@@ -260,7 +260,7 @@ Bestandteile:
 
 ![22-02-05_17-53.png](../images/22-02-05_17-53.png)
 
-### Kompetenzanalyse
+#### Kompetenzanalyse
 dient zum Herausfinden der Kernkomeptenz
 
 > **Kernkompetenz:** eine Technologien / Prozesse / Know-How, die:
@@ -271,7 +271,7 @@ dient zum Herausfinden der Kernkomeptenz
 ![22-02-05_18-01.JPG](../images/22-02-05_18-01.JPG)
 
 
-## SWOT
+### SWOT
 
 aus den gesammelten Ergebnissen der internen und externen Analyse => **SWOT**-Analyse
 
@@ -282,7 +282,7 @@ Darstellung in Tableau zur Ableitung von Strategien und Komeptenzen, die entwick
 
 ![22-02-05_18-06.png](../images/22-02-05_18-06.png)
 
-## Strategieformulierung 
+### Strategieformulierung 
 
 ` Leitfrage: "Wo wollen wir als Unternehmen hin?"`
 
@@ -293,7 +293,7 @@ Ebenen der Strategieformulierung:
 | Gesamtunernehmen   | in welche Märtke wollen wir?         | BCG-Portfolio |
 | Geschäftseinheiten | wie erhalten wir Wettbewerbsvorteile | Ansoff-Matrix |
 
-### BCG-Portfoliomethode
+#### BCG-Portfoliomethode
 
 beschreibt Strategien, die in verschiedenen Produktlebensphasen angewandt werden sollten
 
@@ -312,7 +312,7 @@ beschreibt Strategien, die in verschiedenen Produktlebensphasen angewandt werden
 
 ![22-02-06_11-21.png](../images/22-02-06_11-21.png)
 
-### generische Strategien nach Porter
+#### generische Strategien nach Porter
 
 | Strategie          | Beschreibung                              | Beispiel |
 |--------------------|-------------------------------------------|----------|
@@ -322,7 +322,7 @@ beschreibt Strategien, die in verschiedenen Produktlebensphasen angewandt werden
 
 ![ generische Strategien](../images/22-02-06_11-29.png " generische Strategien")
 
-### Ansoff Matrix
+#### Ansoff Matrix
 
 > **Ansoff-Matrix:** bexchreibt Wachstumstrategien in bestehendem + neuen Markt
 
@@ -334,7 +334,7 @@ Arten der Diversifikation:
 - **Vertikal**: Integration vor / nachgelagerter Tätigkeiten
 - **lateral**: in komplett neuen Bereich, risikoreich
 
-## Strategiebewertung mit Balanced Scorecard
+### Strategiebewertung mit Balanced Scorecard
 
 > **Balanced-Scorecard**: Methode zur Bewertung / Kontrolle von Unternehmensstrategien in 4 Bereichen, sowohl monetär als auch nicht-monetär
 
@@ -353,9 +353,9 @@ Schritte in jedem Bereich:
 ![22-02-06_11-43.png](../images/22-02-06_11-43.png)
 nach gewissen Zeitraum bewerten, ob Zielgrößen erreicht wurden und wenn nicht: **anpassen**
 
-# Betriebliche Prozesse
+## Betriebliche Prozesse
 
-## Leistungsprozesse
+### Leistungsprozesse
 
 > **Leistungsprozesse:** Prozesse in einem Unternehmen zur Produkt/Leistungserstellung und Verwertung
 
@@ -387,7 +387,7 @@ Phasen: $Beschaffung \implies Produktion \implies Absatz$
         - Kommunikation: *wie bekommt der Kunde was mit?*
         - Distribution: *wie kommt es zum Kunden?*
 
-## Finanzprozesse
+### Finanzprozesse
 
 > Spiegelung der Leistungsprozesse aus finanzieller Sichtweise
 
@@ -400,7 +400,7 @@ Kategorien von Finanzströmen:
 - **kapitalzuführend** (Gewinne, Zinsen)
 - **kapitalentziehend** (Verluste, Zinszahlungen)
 
-### Finanzplanung
+#### Finanzplanung
 
 Darstellung der finanziellen Ziele eines Unternehmens und kommende Investitionen
 

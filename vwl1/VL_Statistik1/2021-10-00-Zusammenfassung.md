@@ -60,7 +60,7 @@ Beispiel:
 | uncool | 20          | 20/30 = *0.666* | 0.333+0.666 = 1 |
 |        | $\sum = 30$ |               1 |                 |
 
-# Lagemaße
+## Lagemaße
 
 > Indikatoren zur Beschreibung der Lage eines Datensatzes
 

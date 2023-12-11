@@ -1,428 +1,76 @@
-- [Startseite](README.md)
+# Marten's Notizen
 
----
-- Glossar
-    - [Allgemein](glossar/Allgemein.md)
-    - [Keynesianismus](glossar/Keynesianismus.md)
-    - [Neoklassik](glossar/Neoklassik.md)
-    - [Plurale Oekonomik](glossar/Plurale-Oekonomik.md)
-    - [Tools](glossar/Tools.md)
+Auf dieser Website sind sämtliche Mitschriften aus den bisherigen Semestern meines Volkswirtschaftslehre-Studiums an der MLU-Halle gesammelt. Hier findet man Zusammenfassungen für einige Module, während die Notizen für andere Module nach einigen Wochen enden können. Obwohl die Struktur nicht perfekt ist, ist das Teil des Gesamtpakets. Die Notizen sind nutzbar für **BWL** als auch **VWL** Studierende, da sich insbesondere in den ersten Semestern die Module überschneiden.
 
----
+Weiterführende Links
 
-[I. Semester](vwl1/README.md)
+- [Über Mich](https://martenw.com/)
+- [Über VWL in Halle](https://www.wiwi.uni-halle.de/studienangebot/bachelor_vwl/)
+- [Wie kann ich mich kritisch mit VWL auseinandersetzen](glossar/Plurale-Oekonomik) (Plurale Ökonomik)
 
 
-- VWL 
-    - [Formelsammlung](vwl1/VL_VWL/2021-10-00-Formelsammlung.md)
-    - [Zusammenfassung](vwl1/VL_VWL/2021-10-00-Zusammenfassung.md)
-    - [Einfuehrung](vwl1/VL_VWL/2021-10-18-Einfuehrung.md)
-    - [Uebung1](vwl1/VL_VWL/2021-10-18-Uebung1.md)
-    - [Knappheit](vwl1/VL_VWL/2021-10-27-Knappheit.md)
-    - [Angebot Nachfrage](vwl1/VL_VWL/2021-11-02-Angebot_Nachfrage.md)
-    - [Marktmechanismus](vwl1/VL_VWL/2021-11-12-Marktmechanismus.md)
-    - [Uebung2](vwl1/VL_VWL/2021-11-12-Uebung2.md)
-    - [Haushalte](vwl1/VL_VWL/2021-11-17-Haushalte.md)
-    - [Unternehmen](vwl1/VL_VWL/2021-11-24-Unternehmen.md)
-    - [Lesenotizen](vwl1/VL_VWL/2021-11-29-Lesenotizen.md)
-    - [Marktversagen](vwl1/VL_VWL/2021-12-01-Marktversagen.md)
-    - [Makro](vwl1/VL_VWL/2021-12-07-Makro.md)
-    - [Messung](vwl1/VL_VWL/2021-12-13-Messung.md)
-    - [Arbeitslosigkeit](vwl1/VL_VWL/2022-01-13-Arbeitslosigkeit.md)
-    - [Wachstum](vwl1/VL_VWL/2022-01-21-Wachstum.md)
-    - [Entwicklungsländer](vwl1/VL_VWL/2022-01-24-Entwicklungsländer.md)
-    - [Einkommen](vwl1/VL_VWL/2022-02-12-Einkommen.md)
-    - [Uebung](vwl1/VL_VWL/2022-02-12-Uebung.md)
-    - [Übersicht](vwl1/VL_VWL/README.md)
-- Mathe
-    - [Einfuehrung](vwl1/VL_Mathe1/2021-10-11-Einfuehrung.md)
-    - [Matrizen](vwl1/VL_Mathe1/2021-10-14-Matrizen.md)
-    - [Linear](vwl1/VL_Mathe1/2021-10-18-Linear.md)
-    - [inverses](vwl1/VL_Mathe1/2021-10-25-inverses.md)
-    - [Determinanten](vwl1/VL_Mathe1/2021-10-28-Determinanten.md)
-    - [Determinante2](vwl1/VL_Mathe1/2021-11-01-Determinante2.md)
-    - [Eigenwerte](vwl1/VL_Mathe1/2021-11-08-Eigenwerte.md)
-    - [Fibonacci](vwl1/VL_Mathe1/2021-11-11-Fibonacci.md)
-    - [Quadrat](vwl1/VL_Mathe1/2021-11-15-Quadrat.md)
-    - [Austausch](vwl1/VL_Mathe1/2021-11-22-Austausch.md)
-    - [Graphen](vwl1/VL_Mathe1/2021-11-25-Graphen.md)
-    - [Simplexverfahren](vwl1/VL_Mathe1/2021-11-29-Simplexverfahren.md)
-    - [Simplex2](vwl1/VL_Mathe1/2021-12-06-Simplex2.md)
-    - [Simplex komplex](vwl1/VL_Mathe1/2021-12-13-Simplex-komplex.md)
-    - [Dualitaet](vwl1/VL_Mathe1/2022-01-10-Dualitaet.md)
-    - [Dualitaet2](vwl1/VL_Mathe1/2022-01-13-Dualitaet2.md)
-    - [Transport](vwl1/VL_Mathe1/2022-01-17-Transport.md)
-    - [Transport2](vwl1/VL_Mathe1/2022-01-24-Transport2.md)
-    - [Übersicht](vwl1/VL_Mathe1/README.md)
-- Buchführung
-    - [Buchungsaetze](vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze.md)
-    - [Einfuehrung](vwl1/VL_Buchfuehrung/2021-10-12-Einfuehrung.md)
-    - [Geschaeftsfall](vwl1/VL_Buchfuehrung/2021-10-14-Geschaeftsfall.md)
-    - [Rechtliches](vwl1/VL_Buchfuehrung/2021-10-19-Rechtliches.md)
-    - [Grundsaetze](vwl1/VL_Buchfuehrung/2021-10-21-Grundsaetze.md)
-    - [Inventur](vwl1/VL_Buchfuehrung/2021-10-26-Inventur.md)
-    - [Bilanz](vwl1/VL_Buchfuehrung/2021-10-28-Bilanz.md)
-    - [Bestaende](vwl1/VL_Buchfuehrung/2021-11-02-Bestaende.md)
-    - [Buchungen](vwl1/VL_Buchfuehrung/2021-11-04-Buchungen.md)
-    - [Buecher](vwl1/VL_Buchfuehrung/2021-11-09-Buecher.md)
-    - [Erfolgskonten](vwl1/VL_Buchfuehrung/2021-11-11-Erfolgskonten.md)
-    - [IKR](vwl1/VL_Buchfuehrung/2021-11-18-IKR.md)
-    - [Einkauf](vwl1/VL_Buchfuehrung/2021-11-22-Einkauf.md)
-    - [Zahllast](vwl1/VL_Buchfuehrung/2021-11-24-Zahllast.md)
-    - [Fallstudien1](vwl1/VL_Buchfuehrung/2021-11-26-Fallstudien1.md)
-    - [Ruecksendungen](vwl1/VL_Buchfuehrung/2021-11-30-Ruecksendungen.md)
-    - [Fallstudien2](vwl1/VL_Buchfuehrung/2021-12-03-Fallstudien2.md)
-    - [Loehne](vwl1/VL_Buchfuehrung/2021-12-06-Loehne.md)
-    - [Fallstudien3](vwl1/VL_Buchfuehrung/2021-12-10-Fallstudien3.md)
-    - [Sachanlagen](vwl1/VL_Buchfuehrung/2021-12-13-Sachanlagen.md)
-    - [GWG](vwl1/VL_Buchfuehrung/2022-01-06-GWG.md)
-    - [Verkauf Anlagen](vwl1/VL_Buchfuehrung/2022-01-08-Verkauf-Anlagen.md)
-    - [Steuern](vwl1/VL_Buchfuehrung/2022-01-09-Steuern.md)
-    - [Abschluss](vwl1/VL_Buchfuehrung/2022-01-11-Abschluss.md)
-    - [Bestand](vwl1/VL_Buchfuehrung/2022-01-12-Bestand.md)
-    - [Übersicht](vwl1/VL_Buchfuehrung/README.md)
-- Statistik 
-    - [Zusammenfassung](vwl1/VL_Statistik1/2021-10-00-Zusammenfassung.md)
-    - [Notizen](vwl1/VL_Statistik1/2021-10-18-Notizen.md)
-    - [Rechenregeln](vwl1/VL_Statistik1/2021-10-18-Rechenregeln.md)
-    - [Darstellungen](vwl1/VL_Statistik1/2021-10-27-Darstellungen.md)
-    - [Haeufigkeiten](vwl1/VL_Statistik1/2021-11-05-Haeufigkeiten.md)
-    - [Lagemaße](vwl1/VL_Statistik1/2021-11-16-Lagemaße.md)
-    - [Streuungsmaße](vwl1/VL_Statistik1/2021-11-22-Streuungsmaße.md)
-    - [Schiefemaße](vwl1/VL_Statistik1/2021-11-29-Schiefemaße.md)
-    - [Mehrdimension](vwl1/VL_Statistik1/2021-12-06-Mehrdimension.md)
-    - [Korrelation](vwl1/VL_Statistik1/2022-01-10-Korrelation.md)
-    - [Regression](vwl1/VL_Statistik1/2022-01-17-Regression.md)
-    - [Regression2](vwl1/VL_Statistik1/2022-01-25-Regression2.md)
-    - [Fallbeispiel](vwl1/VL_Statistik1/2022-02-03-Fallbeispiel.md)
-    - [Übersicht](vwl1/VL_Statistik1/README.md)
-- Wirtschaftsinfo
-    - [Zusammenfassung](vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md)
-    - [Einfuehrung](vwl1/VL_Wirtschaftsinformatik/2021-10-18-Einfuehrung.md)
-    - [Datenbank](vwl1/VL_Wirtschaftsinformatik/2021-10-25-Datenbank.md)
-    - [ERM](vwl1/VL_Wirtschaftsinformatik/2021-11-03-ERM.md)
-    - [Normalisierung](vwl1/VL_Wirtschaftsinformatik/2021-11-06-Normalisierung.md)
-    - [Geschaeftsprozess](vwl1/VL_Wirtschaftsinformatik/2021-11-15-Geschaeftsprozess.md)
-    - [Modellierung](vwl1/VL_Wirtschaftsinformatik/2021-11-17-Modellierung.md)
-    - [Analyse](vwl1/VL_Wirtschaftsinformatik/2021-11-19-Analyse.md)
-    - [AWSysteme](vwl1/VL_Wirtschaftsinformatik/2021-11-22-AWSysteme.md)
-    - [AWS2 Integration](vwl1/VL_Wirtschaftsinformatik/2021-11-25-AWS2-Integration.md)
-    - [UML](vwl1/VL_Wirtschaftsinformatik/2021-11-29-UML.md)
-    - [UML2](vwl1/VL_Wirtschaftsinformatik/2021-12-06-UML2.md)
-    - [SoftwareEntwicklung](vwl1/VL_Wirtschaftsinformatik/2022-02-07-SoftwareEntwicklung.md)
-    - [Übersicht](vwl1/VL_Wirtschaftsinformatik/README.md)
-- BWL
-    - [Zusammenfassung](vwl1/VL_BWL/2021-10-00-Zusammenfassung.md)
-    - [Grundlagen](vwl1/VL_BWL/2021-10-14-Grundlagen.md)
-    - [Management](vwl1/VL_BWL/2021-10-25-Management.md)
-    - [Strategie](vwl1/VL_BWL/2021-11-04-Strategie.md)
-    - [Economies](vwl1/VL_BWL/2021-11-09-Economies.md)
-    - [Umweltanalyse](vwl1/VL_BWL/2021-11-15-Umweltanalyse.md)
-    - [Unternehmensanalyse](vwl1/VL_BWL/2021-11-20-Unternehmensanalyse.md)
-    - [SWOT](vwl1/VL_BWL/2021-11-27-SWOT.md)
-    - [BCG](vwl1/VL_BWL/2021-12-07-BCG.md)
-    - [BalancedScore](vwl1/VL_BWL/2021-12-16-BalancedScore.md)
-    - [Leistungsprozesse](vwl1/VL_BWL/2022-01-11-Leistungsprozesse.md)
-    - [Finanzprozesse](vwl1/VL_BWL/2022-01-18-Finanzprozesse.md)
-    - [Übersicht](vwl1/VL_BWL/README.md)
 
----
+## Semesterübersicht
 
-[II. Semester](vwl2/README.md)
+### 1. Semester
+
+| Modul                        | Professor:in   | Übersicht                                            | Zusammenfassung                                              |
+| ---------------------------- | -------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| Buchführung                  | Bernd Schuster | [Übersicht](vwl1/VL_Buchfuehrung/README.md)          | [Buchungsaetze](vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze.md) |
+| BWL                          | Julia Seeger   | [Übersicht](vwl1/VL_BWL/README.md)                   | [Zusammenfassung](vwl1/VL_BWL/2021-10-00-Zusammenfassung.md) |
+| Mathematik I                 | Maren Hantke   | [Übersicht](vwl1/VL_Mathe1/README.md)                |                                                              |
+| Statistik I                  | Claudia Decker | [Übersicht](vwl1/VL_Statistik1/README.md)            | [Zusammenfassung](vwl1/VL_Statistik1/2021-10-00-Zusammenfassung.md) |
+| Grund. Volkswirtschaftslehre | Lars Börner    | [Übersicht](vwl1/VL_VWL/README.md)                   | [Zusammenfassung](vwl1/VL_VWL/2021-10-00-Zusammenfassung.md) |
+| Wirtschaftsinformatik        | Taieb Mellouli | [Übersicht](vwl1/VL_Wirtschaftsinformatik/README.md) | [Zusammenfassung](vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md) |
 
 
-- Wissenschaftliches Arbeiten
-    - [Einfuehrung](vwl2/VL_WissArbeit/2022-04-14-Einfuehrung.md)
-    - [Themenfindung](vwl2/VL_WissArbeit/2022-04-22-Themenfindung.md)
-    - [Organisation](vwl2/VL_WissArbeit/2022-05-01-Organisation.md)
-    - [Literaturrecherche](vwl2/VL_WissArbeit/2022-05-10-Literaturrecherche.md)
-    - [Literaturanalyse](vwl2/VL_WissArbeit/2022-05-20-Literaturanalyse.md)
-    - [Zitieren](vwl2/VL_WissArbeit/2022-05-23-Zitieren.md)
-    - [normative Oekonomik](vwl2/VL_WissArbeit/2022-05-30-normative-Oekonomik.md)
-    - [positive Theorie](vwl2/VL_WissArbeit/2022-06-07-positive-Theorie.md)
-    - [qualitativ](vwl2/VL_WissArbeit/2022-06-19-qualitativ.md)
-    - [quantitativ](vwl2/VL_WissArbeit/2022-06-23-quantitativ.md)
-    - [Schreibprozess](vwl2/VL_WissArbeit/2022-06-28-Schreibprozess.md)
-    - [Praesentation](vwl2/VL_WissArbeit/2022-07-04-Praesentation.md)
-    - [Übersicht](vwl2/VL_WissArbeit/README.md)
-- Recht für WiWi
-    - [Zusammenfassung](vwl2/VL_Recht-WiWi/2022-04-00-Zusammenfassung.md)
-    - [Einfuehrung](vwl2/VL_Recht-WiWi/2022-04-03-Einfuehrung.md)
-    - [Rechtsgebiete](vwl2/VL_Recht-WiWi/2022-04-15-Rechtsgebiete.md)
-    - [Subsumtion](vwl2/VL_Recht-WiWi/2022-04-22-Subsumtion.md)
-    - [Mehrebenensystem](vwl2/VL_Recht-WiWi/2022-05-04-Mehrebenensystem.md)
-    - [Verfassungsrecht](vwl2/VL_Recht-WiWi/2022-05-09-Verfassungsrecht.md)
-    - [Auslegung](vwl2/VL_Recht-WiWi/2022-05-17-Auslegung.md)
-    - [Staatsorganisation](vwl2/VL_Recht-WiWi/2022-05-21-Staatsorganisation.md)
-    - [Grundrechte I](vwl2/VL_Recht-WiWi/2022-06-02-Grundrechte-I.md)
-    - [Grundrechte II](vwl2/VL_Recht-WiWi/2022-06-10-Grundrechte-II.md)
-    - [Prozessrecht](vwl2/VL_Recht-WiWi/2022-06-17-Prozessrecht.md)
-    - [Verwaltungsrecht](vwl2/VL_Recht-WiWi/2022-06-21-Verwaltungsrecht.md)
-    - [Verwaltungsrecht II](vwl2/VL_Recht-WiWi/2022-07-01-Verwaltungsrecht-II.md)
-    - [Europarecht](vwl2/VL_Recht-WiWi/2022-07-08-Europarecht.md)
-    - [Übersicht](vwl2/VL_Recht-WiWi/README.md)
-- Stadtökonomie (Leipzig)
-    - [Alonso Muth Mills](vwl2/VL_Stadt/2022-04-12-Alonso-Muth-Mills.md)
-    - [AMM 2](vwl2/VL_Stadt/2022-04-24-AMM-2.md)
-    - [Oekonomometrie](vwl2/VL_Stadt/2022-05-06-Oekonomometrie.md)
-    - [Entstehung](vwl2/VL_Stadt/2022-05-10-Entstehung.md)
-    - [Politik](vwl2/VL_Stadt/2022-05-17-Politik.md)
-    - [Agglomeration](vwl2/VL_Stadt/2022-05-24-Agglomeration.md)
-    - [Immobilienmarkt](vwl2/VL_Stadt/2022-05-31-Immobilienmarkt.md)
-    - [Übersicht](vwl2/VL_Stadt/README.md)
-- Mikroökonomik
-    - [Formelsammlung](vwl2/VL_Mikro/2022-04-00-Formelsammlung.md)
-    - [Einfuehrung](vwl2/VL_Mikro/2022-04-06-Einfuehrung.md)
-    - [Haushalte](vwl2/VL_Mikro/2022-04-07-Haushalte.md)
-    - [Effekte](vwl2/VL_Mikro/2022-04-14-Effekte.md)
-    - [Unternehmen](vwl2/VL_Mikro/2022-04-22-Unternehmen.md)
-    - [Unternehmen2](vwl2/VL_Mikro/2022-04-27-Unternehmen2.md)
-    - [Guetermarkt](vwl2/VL_Mikro/2022-05-04-Guetermarkt.md)
-    - [Arbeitsmarkt](vwl2/VL_Mikro/2022-05-05-Arbeitsmarkt.md)
-    - [Kapitalmarkt](vwl2/VL_Mikro/2022-05-15-Kapitalmarkt.md)
-    - [Versicherung](vwl2/VL_Mikro/2022-05-20-Versicherung.md)
-    - [Monopol](vwl2/VL_Mikro/2022-05-21-Monopol.md)
-    - [Gueter](vwl2/VL_Mikro/2022-05-31-Gueter.md)
-    - [Externe Effekte](vwl2/VL_Mikro/2022-06-05-Externe-Effekte.md)
-    - [Übersicht](vwl2/VL_Mikro/README.md)
-- Mathematik II
-    - [Tools](vwl2/VL_Mathe2/2022-04-00-Tools.md)
-    - [Übersicht](vwl2/VL_Mathe2/README.md)
-- Statistik II
-    - [Zusammenfassung](vwl2/VL_Statistik2/2022-04-00-Zusammenfassung.md)
-    - [Einfuehrung](vwl2/VL_Statistik2/2022-04-05-Einfuehrung.md)
-    - [Wahrscheinlichkeit](vwl2/VL_Statistik2/2022-04-15-Wahrscheinlichkeit.md)
-    - [Stichproben](vwl2/VL_Statistik2/2022-04-25-Stichproben.md)
-    - [Dichte](vwl2/VL_Statistik2/2022-05-01-Dichte.md)
-    - [Varianz](vwl2/VL_Statistik2/2022-05-10-Varianz.md)
-    - [Verteilungen](vwl2/VL_Statistik2/2022-05-17-Verteilungen.md)
-    - [Normalverteilung](vwl2/VL_Statistik2/2022-05-27-Normalverteilung.md)
-    - [NormalVtlg 2](vwl2/VL_Statistik2/2022-06-02-NormalVtlg-2.md)
-    - [Schaetzer](vwl2/VL_Statistik2/2022-06-05-Schaetzer.md)
-    - [Tests](vwl2/VL_Statistik2/2022-06-07-Tests.md)
-    - [Tests2](vwl2/VL_Statistik2/2022-06-20-Tests2.md)
-    - [Übersicht](vwl2/VL_Statistik2/README.md)
 
----
+### 2. Semester
 
-[III. Semester](vwl3/README.md)
+| Modul                       | Professor:in      | Übersicht                                 | Zusammenfassung                                              |
+| --------------------------- | ----------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| Statistik II                | Claudia Becker    | [Übersicht](vwl2/VL_Statistik2/README.md) | [Zusammenfassung](vwl2/VL_Statistik2/2022-04-00-Zusammenfassung.md) |
+| Wissenschaftliches Arbeiten | Amelie Wuppermann | [Übersicht](vwl2/VL_WissArbeit/README.md) |                                                              |
+| Mikröokonomik I             | Ingo Pies         | [Übersicht](vwl2/VL_Mikro/README.md)      | [Formelsammlung](vwl2/VL_Mikro/2022-04-00-Formelsammlung.md) |
+| Recht für WiWi              | Katja Rath        | [Übersicht](vwl2/VL_Recht-WiWi/README.md) | [Zusammenfassung](vwl2/VL_Recht-WiWi/2022-04-00-Zusammenfassung.md) |
+| Stadtökonomie (Leipzig)     | Melanie Krause    | [Übersicht](vwl2/VL_Stadt/README.md)      | [Hausarbeit](vwl2/VL_Stadt/hausarbeit/Hausarbeit.html)       |
+| Mathe II                    | Maren Hantke      | [Übersicht](vwl2/VL_Mathe2/README.md)     |                                                              |
 
 
-- Makroökonomik I
-    - [Einfuehrung](vwl3/VL_Makro1/2022-10-13-Einfuehrung.md)
-    - [Kapital](vwl3/VL_Makro1/2022-10-20-Kapital.md)
-    - [Gesamtwirtschaft](vwl3/VL_Makro1/2022-10-27-Gesamtwirtschaft.md)
-    - [Erweiterungen](vwl3/VL_Makro1/2022-11-09-Erweiterungen.md)
-    - [Umwelt](vwl3/VL_Makro1/2022-11-10-Umwelt.md)
-    - [Romer](vwl3/VL_Makro1/2022-11-17-Romer.md)
-    - [Arbeit](vwl3/VL_Makro1/2022-11-24-Arbeit.md)
-    - [Geld](vwl3/VL_Makro1/2022-11-30-Geld.md)
-    - [Wirtschaftspolitik](vwl3/VL_Makro1/2022-12-06-Wirtschaftspolitik.md)
-    - [Kurzfristig](vwl3/VL_Makro1/2022-12-15-Kurzfristig.md)
-    - [Globalisierung](vwl3/VL_Makro1/2022-12-22-Globalisierung.md)
-    - [Produktion Beschaeftigung](vwl3/VL_Makro1/2023-01-19-Produktion-Beschaeftigung.md)
-    - [Wirtschaftspolitik](vwl3/VL_Makro1/2023-01-26-Wirtschaftspolitik.md)
-    - [Fiskalpolitik](vwl3/VL_Makro1/2023-02-02-Fiskalpolitik.md)
-    - [Übersicht](vwl3/VL_Makro1/README.md)
-- Mikroökonomik II
-    - [Konsumenten1](vwl3/VL_Mikro2/2022-10-25-Konsumenten1.md)
-    - [Marshall](vwl3/VL_Mikro2/2022-11-02-Marshall.md)
-    - [Hicksche](vwl3/VL_Mikro2/2022-11-07-Hicksche.md)
-    - [Effekte](vwl3/VL_Mikro2/2022-11-13-Effekte.md)
-    - [Verhalten I](vwl3/VL_Mikro2/2022-11-20-Verhalten_I.md)
-    - [Risiko](vwl3/VL_Mikro2/2022-11-30-Risiko.md)
-    - [Versicherung](vwl3/VL_Mikro2/2022-12-02-Versicherung.md)
-    - [Verhalten II](vwl3/VL_Mikro2/2022-12-10-Verhalten_II.md)
-    - [Intertemporal](vwl3/VL_Mikro2/2022-12-15-Intertemporal.md)
-    - [Verhalten III](vwl3/VL_Mikro2/2022-12-22-Verhalten_III.md)
-    - [Spieltheorie](vwl3/VL_Mikro2/2023-01-12-Spieltheorie.md)
-    - [Erweiterung](vwl3/VL_Mikro2/2023-01-19-Erweiterung.md)
-    - [Strategie](vwl3/VL_Mikro2/2023-01-26-Strategie.md)
-    - [Übersicht](vwl3/VL_Mikro2/README.md)
-- Wirtschaftssoziologie
-    - [Einfuehrung](vwl3/VL_Soziologie/2022-10-19-Einfuehrung.md)
-    - [Luhmann](vwl3/VL_Soziologie/2022-10-26-Luhmann.md)
-    - [Markt](vwl3/VL_Soziologie/2022-11-09-Markt.md)
-    - [Geld](vwl3/VL_Soziologie/2022-11-16-Geld.md)
-    - [Übersicht](vwl3/VL_Soziologie/README.md)
-- Wachstum und Nachhaltigkeit
-    - [Formelsammlung](vwl3/VL_Wachstum/2022-10-10-Formelsammlung.md)
-    - [BIP](vwl3/VL_Wachstum/2022-10-11-BIP.md)
-    - [Solow](vwl3/VL_Wachstum/2022-10-18-Solow.md)
-    - [Humankapital](vwl3/VL_Wachstum/2022-10-25-Humankapital.md)
-    - [Konvergenz](vwl3/VL_Wachstum/2022-11-01-Konvergenz.md)
-    - [Romer](vwl3/VL_Wachstum/2022-11-08-Romer.md)
-    - [Einkommen](vwl3/VL_Wachstum/2022-11-15-Einkommen.md)
-    - [Verteilung](vwl3/VL_Wachstum/2022-11-22-Verteilung.md)
-    - [Ungleichheit](vwl3/VL_Wachstum/2022-11-29-Ungleichheit.md)
-    - [Mobilitaet](vwl3/VL_Wachstum/2022-12-06-Mobilitaet.md)
-    - [Wechselwirkung](vwl3/VL_Wachstum/2022-12-13-Wechselwirkung.md)
-    - [Kuznet](vwl3/VL_Wachstum/2022-12-20-Kuznet.md)
-    - [IPAT](vwl3/VL_Wachstum/2023-01-10-IPAT.md)
-    - [Klima Solow](vwl3/VL_Wachstum/2023-01-17-Klima-Solow.md)
-    - [Umweltpolitik](vwl3/VL_Wachstum/2023-01-24-Umweltpolitik.md)
-    - [Übersicht](vwl3/VL_Wachstum/README.md)
-- Ethik der Soz. Marktwirtschaft
-    - [Zusammenfassung](vwl3/VL_Ethik/2022-10-00-Zusammenfassung.md)
-    - [Theorie des NL](vwl3/VL_Ethik/2022-10-10-Theorie_des_NL.md)
-    - [Argumentation](vwl3/VL_Ethik/2022-10-11-Argumentation.md)
-    - [MarktMoral](vwl3/VL_Ethik/2022-10-18-MarktMoral.md)
-    - [Zentralsteuerung](vwl3/VL_Ethik/2022-10-25-Zentralsteuerung.md)
-    - [Ordoliberal](vwl3/VL_Ethik/2022-11-01-Ordoliberal.md)
-    - [Dilemmata](vwl3/VL_Ethik/2022-11-08-Dilemmata.md)
-    - [Spieltheorie](vwl3/VL_Ethik/2022-11-15-Spieltheorie.md)
-    - [Wirtschaftspolitik](vwl3/VL_Ethik/2022-11-22-Wirtschaftspolitik.md)
-    - [Umweltpolitik](vwl3/VL_Ethik/2022-12-06-Umweltpolitik.md)
-    - [Marxismus](vwl3/VL_Ethik/2022-12-13-Marxismus.md)
-    - [Energie](vwl3/VL_Ethik/2022-12-20-Energie.md)
-    - [Unternehmensbindung](vwl3/VL_Ethik/2022-12-22-Unternehmensbindung.md)
-    - [Unternehmen](vwl3/VL_Ethik/2023-01-10-Unternehmen.md)
-    - [Korruption](vwl3/VL_Ethik/2023-01-17-Korruption.md)
-    - [Zivilgesellschaft](vwl3/VL_Ethik/2023-01-24-Zivilgesellschaft.md)
-    - [Ordonomik](vwl3/VL_Ethik/2023-02-01-Ordonomik.md)
-    - [Übersicht](vwl3/VL_Ethik/README.md)
-- Monetäre Ökonomik
-    - [Zusammenfassung](vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md)
-    - [Zenralbank1](vwl3/VL_Monetaer/2022-10-18-Zenralbank1.md)
-    - [Inflation](vwl3/VL_Monetaer/2022-10-25-Inflation.md)
-    - [Anleihe](vwl3/VL_Monetaer/2022-11-01-Anleihe.md)
-    - [Klimawandel](vwl3/VL_Monetaer/2022-11-08-Klimawandel.md)
-    - [Risiko](vwl3/VL_Monetaer/2022-11-15-Risiko.md)
-    - [Zinsstruktur](vwl3/VL_Monetaer/2022-11-22-Zinsstruktur.md)
-    - [Finanzmarkt](vwl3/VL_Monetaer/2022-11-29-Finanzmarkt.md)
-    - [Zentralbank2](vwl3/VL_Monetaer/2022-12-11-Zentralbank2.md)
-    - [Finanzkrisen](vwl3/VL_Monetaer/2022-12-20-Finanzkrisen.md)
-    - [Zinssatz](vwl3/VL_Monetaer/2023-01-10-Zinssatz.md)
-    - [Instrumente](vwl3/VL_Monetaer/2023-01-17-Instrumente.md)
-    - [Geld](vwl3/VL_Monetaer/2023-01-24-Geld.md)
-    - [Geld2](vwl3/VL_Monetaer/2023-01-31-Geld2.md)
-    - [Übersicht](vwl3/VL_Monetaer/README.md)
 
----
+### 3. Semester
 
-[IV. Semester](vwl4/README.md)
+| Modul                              | Professor:in       | Übersicht                               | Zusammenfassung                                              |
+| ---------------------------------- | ------------------ | --------------------------------------- | ------------------------------------------------------------ |
+| Mikroökonomik II                   | Amelie Wuppermann  | [Übersicht](vwl3/VL_Mikro2/README.md)   |                                                              |
+| Makroökonomik I                    | Oliver Holtemöller | [Übersicht](vwl3/VL_Makro1/README.md)   |                                                              |
+| Monetäre Ökonomik                  | Malte Rieth        | [Übersicht](vwl3/VL_Monetaer/README.md) | [Zusammenfassung](vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md) |
+| Ethik der Sozialen Marktwirtschaft | Ingo Pies          | [Übersicht](vwl3/VL_Ethik/README.md)    | [Zusammenfassung](vwl3/VL_Ethik/2022-10-00-Zusammenfassung.md) |
+| Wachstum, Verteilung (Leipzig)     | Melanie Krause     | [Übersicht](vwl3/VL_Wachstum/README.md) |                                                              |
+| Exzellenzseminar Wirtschaftsethik  | Ingo Pies          |                                         | [Seminararbeit](https://uploads.martenw.com/Hayek/Ausarbeitung.html) |
 
 
-- Angewandte Ökonomik
-    - [Lesenotizen](vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md)
-    - [Makro](vwl4/VL_Angewandte/2023-04-19-Makro.md)
-    - [Mikro](vwl4/VL_Angewandte/2023-04-26-Mikro.md)
-    - [Wert](vwl4/VL_Angewandte/2023-05-03-Wert.md)
-    - [Normativ](vwl4/VL_Angewandte/2023-05-10-Normativ.md)
-    - [Geldpolitik](vwl4/VL_Angewandte/2023-05-17-Geldpolitik.md)
-    - [Innovation](vwl4/VL_Angewandte/2023-05-26-Innovation.md)
-    - [Steuern](vwl4/VL_Angewandte/2023-05-31-Steuern.md)
-    - [Kriminal](vwl4/VL_Angewandte/2023-06-07-Kriminal.md)
-    - [Demokratie](vwl4/VL_Angewandte/2023-06-14-Demokratie.md)
-    - [Familie](vwl4/VL_Angewandte/2023-06-21-Familie.md)
-    - [Terrorismus](vwl4/VL_Angewandte/2023-06-28-Terrorismus.md)
-    - [Geschichte](vwl4/VL_Angewandte/2023-07-05-Geschichte.md)
-    - [Ordonomik](vwl4/VL_Angewandte/2023-07-12-Ordonomik.md)
-    - [Übersicht](vwl4/VL_Angewandte/README.md)
-- International Economics
-    - [Zusammenfassung](vwl4/VL_International/2023-04-00-Zusammenfassung.md)
-    - [Start](vwl4/VL_International/2023-04-20-Start.md)
-    - [Labour](vwl4/VL_International/2023-04-27-Labour.md)
-    - [RicardoModel](vwl4/VL_International/2023-05-04-RicardoModel.md)
-    - [Specific Factor](vwl4/VL_International/2023-05-11-Specific-Factor.md)
-    - [Heckscher](vwl4/VL_International/2023-06-01-Heckscher.md)
-    - [Standard Trade](vwl4/VL_International/2023-06-15-Standard-Trade.md)
-    - [Economies of Scale](vwl4/VL_International/2023-06-22-Economies-of-Scale.md)
-    - [Trade Policy](vwl4/VL_International/2023-07-05-Trade-Policy.md)
-    - [Political Economy](vwl4/VL_International/2023-07-12-Political-Economy.md)
-    - [Developing Countries](vwl4/VL_International/2023-07-13-Developing-Countries.md)
-    - [Controversies](vwl4/VL_International/2023-07-20-Controversies.md)
-    - [Übersicht](vwl4/VL_International/README.md)
-- Makroökonomik II
-    - [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md)
-    - [Firm](vwl4/VL_Makro2/2023-04-13-Firm.md)
-    - [Labour](vwl4/VL_Makro2/2023-04-14-Labour.md)
-    - [Banks](vwl4/VL_Makro2/2023-04-27-Banks.md)
-    - [BanksII](vwl4/VL_Makro2/2023-04-28-BanksII.md)
-    - [BanksIII](vwl4/VL_Makro2/2023-05-04-BanksIII.md)
-    - [Fluctuations](vwl4/VL_Makro2/2023-05-08-Fluctuations.md)
-    - [Fiscal](vwl4/VL_Makro2/2023-05-24-Fiscal.md)
-    - [Stylized Facts](vwl4/VL_Makro2/2023-05-26-Stylized-Facts.md)
-    - [Debt](vwl4/VL_Makro2/2023-06-07-Debt.md)
-    - [Inflation](vwl4/VL_Makro2/2023-06-21-Inflation.md)
-    - [Tutorial Revision](vwl4/VL_Makro2/2023-08-00-Tutorial-Revision.md)
-    - [Tutorial1](vwl4/VL_Makro2/2023-08-00-Tutorial1.md)
-    - [Tutorial2](vwl4/VL_Makro2/2023-08-00-Tutorial2.md)
-    - [Tutorial3](vwl4/VL_Makro2/2023-08-00-Tutorial3.md)
-    - [Tutorial4](vwl4/VL_Makro2/2023-08-00-Tutorial4.md)
-    - [Tutorial5](vwl4/VL_Makro2/2023-08-00-Tutorial5.md)
-    - [Tutorial6](vwl4/VL_Makro2/2023-08-00-Tutorial6.md)
-    - [Übersicht](vwl4/VL_Makro2/README.md)
-- Sozial-Ökologische Systeme
-    - [Einfuehrung](vwl4/VL_SoEco/2023-04-17-Einfuehrung.md)
-    - [System](vwl4/VL_SoEco/2023-04-24-System.md)
-    - [Lever](vwl4/VL_SoEco/2023-05-15-Lever.md)
-    - [Food System](vwl4/VL_SoEco/2023-05-22-Food-System.md)
-    - [Resource](vwl4/VL_SoEco/2023-05-27-Resource.md)
-    - [Climate Models](vwl4/VL_SoEco/2023-06-26-Climate-Models.md)
-    - [Übersicht](vwl4/VL_SoEco/README.md)
-    - [](vwl4/VL_SoEco/Vortrag.md)
-- Wirtschaftspolitik
-    - [Lesenotizen](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)
-    - [Start](vwl4/VL_WiPo/2023-04-20-Start.md)
-    - [Rationale](vwl4/VL_WiPo/2023-04-27-Rationale.md)
-    - [Marktversagen](vwl4/VL_WiPo/2023-05-04-Marktversagen.md)
-    - [Makro](vwl4/VL_WiPo/2023-05-11-Makro.md)
-    - [Inflation](vwl4/VL_WiPo/2023-05-25-Inflation.md)
-    - [Konjunktur](vwl4/VL_WiPo/2023-06-01-Konjunktur.md)
-    - [Institutionen](vwl4/VL_WiPo/2023-06-08-Institutionen.md)
-    - [Wohlfahrt](vwl4/VL_WiPo/2023-07-06-Wohlfahrt.md)
-    - [Wohlfahrt II](vwl4/VL_WiPo/2023-07-14-Wohlfahrt-II.md)
-    - [Übersicht](vwl4/VL_WiPo/README.md)
 
----
+### 4. Semester
 
-[V. Semester](vwl5/README.md)
+| Modul                               | Prof               | Übersicht                                    | Zusammenfassung                                              |
+| ----------------------------------- | ------------------ | -------------------------------------------- | ------------------------------------------------------------ |
+| Angewandte Ökonomik                 | Ingo Pies          | [Übersicht](vwl4/VL_Angewandte/README.md)    | [Texte](vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md)        |
+| International Economics             | Lars Börner        | [Übersicht](vwl4/VL_International/README.md) | [Zusammenfassung](vwl4/VL_International/2023-04-00-Zusammenfassung.md) |
+| Macroeconomics II                   | Wolf Grieben       | [Übersicht](vwl4/VL_Makro2/README.md)        | [Zusammenfassung](vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md) |
+| Ökonomik sozial-ökologische Systeme | Bartosz Bartkowski | [Übersicht](vwl4/VL_SoEco/README.md)         | [Vortrag Slides](https://uploads.martenw.com/Climate_Models/index.html#0) |
+| Wirtschaftspolitik                  | Lars Börner        | [Übersicht](vwl4/VL_WiPo/README.md)          | [Texte](vwl4/VL_WiPo/2023-04-00-Lesenotizen.md)              |
 
 
-- Economic History
-    - [Vortrag](vwl5/VL_EconHistory/2023-12-11-Vortrag.md)
-    - [Übersicht](vwl5/VL_EconHistory/README.md)
-- Zivilrecht
-    - [Intro](vwl5/VL_Zivilrecht/2023-10-17-Intro.md)
-    - [Vertrag](vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md)
-    - [AGB](vwl5/VL_Zivilrecht/2023-10-27-AGB.md)
-    - [Privatautonomie](vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie.md)
-    - [Vertragsende](vwl5/VL_Zivilrecht/2023-11-10-Vertragsende.md)
-    - [Schadensersatz](vwl5/VL_Zivilrecht/2023-11-17-Schadensersatz.md)
-    - [Gewaehrleistung](vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung.md)
-    - [Übersicht](vwl5/VL_Zivilrecht/README.md)
-- Empirical Economics
-    - [Intro](vwl5/VL_Empirical/2023-10-12-Intro.md)
-    - [Stats](vwl5/VL_Empirical/2023-10-19-Stats.md)
-    - [Regression](vwl5/VL_Empirical/2023-10-26-Regression.md)
-    - [Datasets](vwl5/VL_Empirical/2023-11-06-Datasets.md)
-    - [Presentation](vwl5/VL_Empirical/2023-11-09-Presentation.md)
-    - [TimeSeries](vwl5/VL_Empirical/2023-11-16-TimeSeries.md)
-    - [IV](vwl5/VL_Empirical/2023-11-23-IV.md)
-    - [Übersicht](vwl5/VL_Empirical/README.md)
-- Feminist Economics
-    - [Intro](vwl5/VL_Feminist/2023-10-09-Intro.md)
-    - [Divison Labor](vwl5/VL_Feminist/2023-10-16-Divison-Labor.md)
-    - [Reproduction](vwl5/VL_Feminist/2023-10-23-Reproduction.md)
-    - [Care](vwl5/VL_Feminist/2023-11-06-Care.md)
-    - [Household](vwl5/VL_Feminist/2023-11-06-Household.md)
-    - [Ecofeminist](vwl5/VL_Feminist/2023-11-10-Ecofeminist.md)
-    - [Transformation](vwl5/VL_Feminist/2023-11-11-Transformation.md)
-    - [Labour Market](vwl5/VL_Feminist/2023-11-20-Labour-Market.md)
-    - [Übersicht](vwl5/VL_Feminist/README.md)
-- Public Economics
-    - [Intro](vwl5/VL_PublicEcon/2023-10-11-Intro.md)
-    - [Tools](vwl5/VL_PublicEcon/2023-10-18-Tools.md)
-    - [Tools2](vwl5/VL_PublicEcon/2023-10-25-Tools2.md)
-    - [Externalities](vwl5/VL_PublicEcon/2023-11-06-Externalities.md)
-    - [Public Goods](vwl5/VL_PublicEcon/2023-11-08-Public-Goods.md)
-    - [Cost Benefit](vwl5/VL_PublicEcon/2023-11-15-Cost-Benefit.md)
-    - [Climate](vwl5/VL_PublicEcon/2023-11-22-Climate.md)
-    - [Information](vwl5/VL_PublicEcon/2023-11-29-Information.md)
-    - [Inequality](vwl5/VL_PublicEcon/2023-12-06-Inequality.md)
-    - [Übersicht](vwl5/VL_PublicEcon/README.md)
 
----
+###  5. Semester
 
-**357** Notizen in **28** Modulen
+| Modul                          | Prof              | Übersicht                                 |                                                              |
+| ------------------------------ | ----------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| Empirical Economics with R     | Hakon Albers      | [Übersicht](vwl5/VL_Empirical/README.md)  | [Presentation](https://uploads.martenw.com/DDCG/_Slides.pdf) |
+| Feminist Economics (Karlsruhe) | Amelie Betz       | [Übersicht](vwl5/VL_Feminist/README.md)   |                                                              |
+| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md) |                                                              |
+| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)               |                                                              |
+| Research Seminar               | Lars Börner       |                                           |                                                              |
+
+also for Empirical Economics with R: [Replication Code](https://skriptum.github.io/DDCG/2023-10-12-Intro.html)

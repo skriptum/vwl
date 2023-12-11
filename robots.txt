@@ -1,0 +1,9 @@
+# Robots.txt File
+# allow all pages to be crawled
+
+User-agent: *
+Allow: /
+
+# Sitemap at base sitemap.xml
+Sitemap: http://vwl.martenw.com/sitemap.xml
+

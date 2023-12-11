@@ -1,0 +1,797 @@
+root: index
+subtrees:
+
+- caption: "Inhaltsverzeichnis"    
+  hidden: True
+  maxdepth: 1
+  titlesonly: True
+  entries:
+
+
+  - file: glossar/Allgemein
+    title: "Glossar"
+    entries:
+
+
+    - file: glossar/Keynesianismus.md
+      title: "Keynesianismus"
+    
+
+    - file: glossar/Neoklassik.md
+      title: "Neoklassik"
+    
+
+    - file: glossar/Plurale-Oekonomik.md
+      title: "Plurale Oekonomik"
+    
+
+    - file: glossar/Tools.md
+      title: "Tools"
+    
+
+  - file: vwl1/README
+    title: I. Semester
+    entries:
+    
+    - file: vwl1/VL_VWL/README
+      title: VWL 
+      entries:
+      - file: vwl1/VL_VWL/2021-10-00-Formelsammlung.md
+        title: Formelsammlung
+      - file: vwl1/VL_VWL/2021-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl1/VL_VWL/2021-10-18-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl1/VL_VWL/2021-10-18-Uebung1.md
+        title: Uebung1
+      - file: vwl1/VL_VWL/2021-10-27-Knappheit.md
+        title: Knappheit
+      - file: vwl1/VL_VWL/2021-11-02-Angebot_Nachfrage.md
+        title: Angebot Nachfrage
+      - file: vwl1/VL_VWL/2021-11-12-Marktmechanismus.md
+        title: Marktmechanismus
+      - file: vwl1/VL_VWL/2021-11-12-Uebung2.md
+        title: Uebung2
+      - file: vwl1/VL_VWL/2021-11-17-Haushalte.md
+        title: Haushalte
+      - file: vwl1/VL_VWL/2021-11-24-Unternehmen.md
+        title: Unternehmen
+      - file: vwl1/VL_VWL/2021-11-29-Lesenotizen.md
+        title: Lesenotizen
+      - file: vwl1/VL_VWL/2021-12-01-Marktversagen.md
+        title: Marktversagen
+      - file: vwl1/VL_VWL/2021-12-07-Makro.md
+        title: Makro
+      - file: vwl1/VL_VWL/2021-12-13-Messung.md
+        title: Messung
+      - file: vwl1/VL_VWL/2022-01-13-Arbeitslosigkeit.md
+        title: Arbeitslosigkeit
+      - file: vwl1/VL_VWL/2022-01-21-Wachstum.md
+        title: Wachstum
+      - file: vwl1/VL_VWL/2022-01-24-Entwicklungsländer.md
+        title: Entwicklungsländer
+      - file: vwl1/VL_VWL/2022-02-12-Einkommen.md
+        title: Einkommen
+      - file: vwl1/VL_VWL/2022-02-12-Uebung.md
+        title: Uebung
+    - file: vwl1/VL_Mathe1/README
+      title: Mathe
+      entries:
+      - file: vwl1/VL_Mathe1/2021-10-11-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl1/VL_Mathe1/2021-10-14-Matrizen.md
+        title: Matrizen
+      - file: vwl1/VL_Mathe1/2021-10-18-Linear.md
+        title: Linear
+      - file: vwl1/VL_Mathe1/2021-10-25-inverses.md
+        title: inverses
+      - file: vwl1/VL_Mathe1/2021-10-28-Determinanten.md
+        title: Determinanten
+      - file: vwl1/VL_Mathe1/2021-11-01-Determinante2.md
+        title: Determinante2
+      - file: vwl1/VL_Mathe1/2021-11-08-Eigenwerte.md
+        title: Eigenwerte
+      - file: vwl1/VL_Mathe1/2021-11-11-Fibonacci.md
+        title: Fibonacci
+      - file: vwl1/VL_Mathe1/2021-11-15-Quadrat.md
+        title: Quadrat
+      - file: vwl1/VL_Mathe1/2021-11-22-Austausch.md
+        title: Austausch
+      - file: vwl1/VL_Mathe1/2021-11-25-Graphen.md
+        title: Graphen
+      - file: vwl1/VL_Mathe1/2021-11-29-Simplexverfahren.md
+        title: Simplexverfahren
+      - file: vwl1/VL_Mathe1/2021-12-06-Simplex2.md
+        title: Simplex2
+      - file: vwl1/VL_Mathe1/2021-12-13-Simplex-komplex.md
+        title: Simplex komplex
+      - file: vwl1/VL_Mathe1/2022-01-10-Dualitaet.md
+        title: Dualitaet
+      - file: vwl1/VL_Mathe1/2022-01-13-Dualitaet2.md
+        title: Dualitaet2
+      - file: vwl1/VL_Mathe1/2022-01-17-Transport.md
+        title: Transport
+      - file: vwl1/VL_Mathe1/2022-01-24-Transport2.md
+        title: Transport2
+    - file: vwl1/VL_Buchfuehrung/README
+      title: Buchführung
+      entries:
+      - file: vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze.md
+        title: Buchungsaetze
+      - file: vwl1/VL_Buchfuehrung/2021-10-12-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl1/VL_Buchfuehrung/2021-10-14-Geschaeftsfall.md
+        title: Geschaeftsfall
+      - file: vwl1/VL_Buchfuehrung/2021-10-19-Rechtliches.md
+        title: Rechtliches
+      - file: vwl1/VL_Buchfuehrung/2021-10-21-Grundsaetze.md
+        title: Grundsaetze
+      - file: vwl1/VL_Buchfuehrung/2021-10-26-Inventur.md
+        title: Inventur
+      - file: vwl1/VL_Buchfuehrung/2021-10-28-Bilanz.md
+        title: Bilanz
+      - file: vwl1/VL_Buchfuehrung/2021-11-02-Bestaende.md
+        title: Bestaende
+      - file: vwl1/VL_Buchfuehrung/2021-11-04-Buchungen.md
+        title: Buchungen
+      - file: vwl1/VL_Buchfuehrung/2021-11-09-Buecher.md
+        title: Buecher
+      - file: vwl1/VL_Buchfuehrung/2021-11-11-Erfolgskonten.md
+        title: Erfolgskonten
+      - file: vwl1/VL_Buchfuehrung/2021-11-18-IKR.md
+        title: IKR
+      - file: vwl1/VL_Buchfuehrung/2021-11-22-Einkauf.md
+        title: Einkauf
+      - file: vwl1/VL_Buchfuehrung/2021-11-24-Zahllast.md
+        title: Zahllast
+      - file: vwl1/VL_Buchfuehrung/2021-11-26-Fallstudien1.md
+        title: Fallstudien1
+      - file: vwl1/VL_Buchfuehrung/2021-11-30-Ruecksendungen.md
+        title: Ruecksendungen
+      - file: vwl1/VL_Buchfuehrung/2021-12-03-Fallstudien2.md
+        title: Fallstudien2
+      - file: vwl1/VL_Buchfuehrung/2021-12-06-Loehne.md
+        title: Loehne
+      - file: vwl1/VL_Buchfuehrung/2021-12-10-Fallstudien3.md
+        title: Fallstudien3
+      - file: vwl1/VL_Buchfuehrung/2021-12-13-Sachanlagen.md
+        title: Sachanlagen
+      - file: vwl1/VL_Buchfuehrung/2022-01-06-GWG.md
+        title: GWG
+      - file: vwl1/VL_Buchfuehrung/2022-01-08-Verkauf-Anlagen.md
+        title: Verkauf Anlagen
+      - file: vwl1/VL_Buchfuehrung/2022-01-09-Steuern.md
+        title: Steuern
+      - file: vwl1/VL_Buchfuehrung/2022-01-11-Abschluss.md
+        title: Abschluss
+      - file: vwl1/VL_Buchfuehrung/2022-01-12-Bestand.md
+        title: Bestand
+    - file: vwl1/VL_Statistik1/README
+      title: Statistik 
+      entries:
+      - file: vwl1/VL_Statistik1/2021-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl1/VL_Statistik1/2021-10-18-Notizen.md
+        title: Notizen
+      - file: vwl1/VL_Statistik1/2021-10-18-Rechenregeln.md
+        title: Rechenregeln
+      - file: vwl1/VL_Statistik1/2021-10-27-Darstellungen.md
+        title: Darstellungen
+      - file: vwl1/VL_Statistik1/2021-11-05-Haeufigkeiten.md
+        title: Haeufigkeiten
+      - file: vwl1/VL_Statistik1/2021-11-16-Lagemaße.md
+        title: Lagemaße
+      - file: vwl1/VL_Statistik1/2021-11-22-Streuungsmaße.md
+        title: Streuungsmaße
+      - file: vwl1/VL_Statistik1/2021-11-29-Schiefemaße.md
+        title: Schiefemaße
+      - file: vwl1/VL_Statistik1/2021-12-06-Mehrdimension.md
+        title: Mehrdimension
+      - file: vwl1/VL_Statistik1/2022-01-10-Korrelation.md
+        title: Korrelation
+      - file: vwl1/VL_Statistik1/2022-01-17-Regression.md
+        title: Regression
+      - file: vwl1/VL_Statistik1/2022-01-25-Regression2.md
+        title: Regression2
+      - file: vwl1/VL_Statistik1/2022-02-03-Fallbeispiel.md
+        title: Fallbeispiel
+    - file: vwl1/VL_Wirtschaftsinformatik/README
+      title: Wirtschaftsinfo
+      entries:
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-10-18-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-10-25-Datenbank.md
+        title: Datenbank
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-03-ERM.md
+        title: ERM
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-06-Normalisierung.md
+        title: Normalisierung
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-15-Geschaeftsprozess.md
+        title: Geschaeftsprozess
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-17-Modellierung.md
+        title: Modellierung
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-19-Analyse.md
+        title: Analyse
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-22-AWSysteme.md
+        title: AWSysteme
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-25-AWS2-Integration.md
+        title: AWS2 Integration
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-11-29-UML.md
+        title: UML
+      - file: vwl1/VL_Wirtschaftsinformatik/2021-12-06-UML2.md
+        title: UML2
+      - file: vwl1/VL_Wirtschaftsinformatik/2022-02-07-SoftwareEntwicklung.md
+        title: SoftwareEntwicklung
+    - file: vwl1/VL_BWL/README
+      title: BWL
+      entries:
+      - file: vwl1/VL_BWL/2021-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl1/VL_BWL/2021-10-14-Grundlagen.md
+        title: Grundlagen
+      - file: vwl1/VL_BWL/2021-10-25-Management.md
+        title: Management
+      - file: vwl1/VL_BWL/2021-11-04-Strategie.md
+        title: Strategie
+      - file: vwl1/VL_BWL/2021-11-09-Economies.md
+        title: Economies
+      - file: vwl1/VL_BWL/2021-11-15-Umweltanalyse.md
+        title: Umweltanalyse
+      - file: vwl1/VL_BWL/2021-11-20-Unternehmensanalyse.md
+        title: Unternehmensanalyse
+      - file: vwl1/VL_BWL/2021-11-27-SWOT.md
+        title: SWOT
+      - file: vwl1/VL_BWL/2021-12-07-BCG.md
+        title: BCG
+      - file: vwl1/VL_BWL/2021-12-16-BalancedScore.md
+        title: BalancedScore
+      - file: vwl1/VL_BWL/2022-01-11-Leistungsprozesse.md
+        title: Leistungsprozesse
+      - file: vwl1/VL_BWL/2022-01-18-Finanzprozesse.md
+        title: Finanzprozesse
+
+  - file: vwl2/README
+    title: II. Semester
+    entries:
+    
+    - file: vwl2/VL_WissArbeit/README
+      title: Wissenschaftliches Arbeiten
+      entries:
+      - file: vwl2/VL_WissArbeit/2022-04-14-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl2/VL_WissArbeit/2022-04-22-Themenfindung.md
+        title: Themenfindung
+      - file: vwl2/VL_WissArbeit/2022-05-01-Organisation.md
+        title: Organisation
+      - file: vwl2/VL_WissArbeit/2022-05-10-Literaturrecherche.md
+        title: Literaturrecherche
+      - file: vwl2/VL_WissArbeit/2022-05-20-Literaturanalyse.md
+        title: Literaturanalyse
+      - file: vwl2/VL_WissArbeit/2022-05-23-Zitieren.md
+        title: Zitieren
+      - file: vwl2/VL_WissArbeit/2022-05-30-normative-Oekonomik.md
+        title: normative Oekonomik
+      - file: vwl2/VL_WissArbeit/2022-06-07-positive-Theorie.md
+        title: positive Theorie
+      - file: vwl2/VL_WissArbeit/2022-06-19-qualitativ.md
+        title: qualitativ
+      - file: vwl2/VL_WissArbeit/2022-06-23-quantitativ.md
+        title: quantitativ
+      - file: vwl2/VL_WissArbeit/2022-06-28-Schreibprozess.md
+        title: Schreibprozess
+      - file: vwl2/VL_WissArbeit/2022-07-04-Praesentation.md
+        title: Praesentation
+    - file: vwl2/VL_Recht-WiWi/README
+      title: Recht für WiWi
+      entries:
+      - file: vwl2/VL_Recht-WiWi/2022-04-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl2/VL_Recht-WiWi/2022-04-03-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl2/VL_Recht-WiWi/2022-04-15-Rechtsgebiete.md
+        title: Rechtsgebiete
+      - file: vwl2/VL_Recht-WiWi/2022-04-22-Subsumtion.md
+        title: Subsumtion
+      - file: vwl2/VL_Recht-WiWi/2022-05-04-Mehrebenensystem.md
+        title: Mehrebenensystem
+      - file: vwl2/VL_Recht-WiWi/2022-05-09-Verfassungsrecht.md
+        title: Verfassungsrecht
+      - file: vwl2/VL_Recht-WiWi/2022-05-17-Auslegung.md
+        title: Auslegung
+      - file: vwl2/VL_Recht-WiWi/2022-05-21-Staatsorganisation.md
+        title: Staatsorganisation
+      - file: vwl2/VL_Recht-WiWi/2022-06-02-Grundrechte-I.md
+        title: Grundrechte I
+      - file: vwl2/VL_Recht-WiWi/2022-06-10-Grundrechte-II.md
+        title: Grundrechte II
+      - file: vwl2/VL_Recht-WiWi/2022-06-17-Prozessrecht.md
+        title: Prozessrecht
+      - file: vwl2/VL_Recht-WiWi/2022-06-21-Verwaltungsrecht.md
+        title: Verwaltungsrecht
+      - file: vwl2/VL_Recht-WiWi/2022-07-01-Verwaltungsrecht-II.md
+        title: Verwaltungsrecht II
+      - file: vwl2/VL_Recht-WiWi/2022-07-08-Europarecht.md
+        title: Europarecht
+    - file: vwl2/VL_Stadt/README
+      title: Stadtökonomie (Leipzig)
+      entries:
+      - file: vwl2/VL_Stadt/2022-04-12-Alonso-Muth-Mills.md
+        title: Alonso Muth Mills
+      - file: vwl2/VL_Stadt/2022-04-24-AMM-2.md
+        title: AMM 2
+      - file: vwl2/VL_Stadt/2022-05-06-Oekonomometrie.md
+        title: Oekonomometrie
+      - file: vwl2/VL_Stadt/2022-05-10-Entstehung.md
+        title: Entstehung
+      - file: vwl2/VL_Stadt/2022-05-17-Politik.md
+        title: Politik
+      - file: vwl2/VL_Stadt/2022-05-24-Agglomeration.md
+        title: Agglomeration
+      - file: vwl2/VL_Stadt/2022-05-31-Immobilienmarkt.md
+        title: Immobilienmarkt
+    - file: vwl2/VL_Mikro/README
+      title: Mikroökonomik
+      entries:
+      - file: vwl2/VL_Mikro/2022-04-00-Formelsammlung.md
+        title: Formelsammlung
+      - file: vwl2/VL_Mikro/2022-04-06-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl2/VL_Mikro/2022-04-07-Haushalte.md
+        title: Haushalte
+      - file: vwl2/VL_Mikro/2022-04-14-Effekte.md
+        title: Effekte
+      - file: vwl2/VL_Mikro/2022-04-22-Unternehmen.md
+        title: Unternehmen
+      - file: vwl2/VL_Mikro/2022-04-27-Unternehmen2.md
+        title: Unternehmen2
+      - file: vwl2/VL_Mikro/2022-05-04-Guetermarkt.md
+        title: Guetermarkt
+      - file: vwl2/VL_Mikro/2022-05-05-Arbeitsmarkt.md
+        title: Arbeitsmarkt
+      - file: vwl2/VL_Mikro/2022-05-15-Kapitalmarkt.md
+        title: Kapitalmarkt
+      - file: vwl2/VL_Mikro/2022-05-20-Versicherung.md
+        title: Versicherung
+      - file: vwl2/VL_Mikro/2022-05-21-Monopol.md
+        title: Monopol
+      - file: vwl2/VL_Mikro/2022-05-31-Gueter.md
+        title: Gueter
+      - file: vwl2/VL_Mikro/2022-06-05-Externe-Effekte.md
+        title: Externe Effekte
+    - file: vwl2/VL_Mathe2/README
+      title: Mathematik II
+      entries:
+      - file: vwl2/VL_Mathe2/2022-04-00-Tools.md
+        title: Tools
+    - file: vwl2/VL_Statistik2/README
+      title: Statistik II
+      entries:
+      - file: vwl2/VL_Statistik2/2022-04-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl2/VL_Statistik2/2022-04-05-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl2/VL_Statistik2/2022-04-15-Wahrscheinlichkeit.md
+        title: Wahrscheinlichkeit
+      - file: vwl2/VL_Statistik2/2022-04-25-Stichproben.md
+        title: Stichproben
+      - file: vwl2/VL_Statistik2/2022-05-01-Dichte.md
+        title: Dichte
+      - file: vwl2/VL_Statistik2/2022-05-10-Varianz.md
+        title: Varianz
+      - file: vwl2/VL_Statistik2/2022-05-17-Verteilungen.md
+        title: Verteilungen
+      - file: vwl2/VL_Statistik2/2022-05-27-Normalverteilung.md
+        title: Normalverteilung
+      - file: vwl2/VL_Statistik2/2022-06-02-NormalVtlg-2.md
+        title: NormalVtlg 2
+      - file: vwl2/VL_Statistik2/2022-06-05-Schaetzer.md
+        title: Schaetzer
+      - file: vwl2/VL_Statistik2/2022-06-07-Tests.md
+        title: Tests
+      - file: vwl2/VL_Statistik2/2022-06-20-Tests2.md
+        title: Tests2
+
+  - file: vwl3/README
+    title: III. Semester
+    entries:
+    
+    - file: vwl3/VL_Makro1/README
+      title: Makroökonomik I
+      entries:
+      - file: vwl3/VL_Makro1/2022-10-13-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl3/VL_Makro1/2022-10-20-Kapital.md
+        title: Kapital
+      - file: vwl3/VL_Makro1/2022-10-27-Gesamtwirtschaft.md
+        title: Gesamtwirtschaft
+      - file: vwl3/VL_Makro1/2022-11-09-Erweiterungen.md
+        title: Erweiterungen
+      - file: vwl3/VL_Makro1/2022-11-10-Umwelt.md
+        title: Umwelt
+      - file: vwl3/VL_Makro1/2022-11-17-Romer.md
+        title: Romer
+      - file: vwl3/VL_Makro1/2022-11-24-Arbeit.md
+        title: Arbeit
+      - file: vwl3/VL_Makro1/2022-11-30-Geld.md
+        title: Geld
+      - file: vwl3/VL_Makro1/2022-12-06-Wirtschaftspolitik.md
+        title: Wirtschaftspolitik
+      - file: vwl3/VL_Makro1/2022-12-15-Kurzfristig.md
+        title: Kurzfristig
+      - file: vwl3/VL_Makro1/2022-12-22-Globalisierung.md
+        title: Globalisierung
+      - file: vwl3/VL_Makro1/2023-01-19-Produktion-Beschaeftigung.md
+        title: Produktion Beschaeftigung
+      - file: vwl3/VL_Makro1/2023-01-26-Wirtschaftspolitik.md
+        title: Wirtschaftspolitik
+      - file: vwl3/VL_Makro1/2023-02-02-Fiskalpolitik.md
+        title: Fiskalpolitik
+    - file: vwl3/VL_Mikro2/README
+      title: Mikroökonomik II
+      entries:
+      - file: vwl3/VL_Mikro2/2022-10-25-Konsumenten1.md
+        title: Konsumenten1
+      - file: vwl3/VL_Mikro2/2022-11-02-Marshall.md
+        title: Marshall
+      - file: vwl3/VL_Mikro2/2022-11-07-Hicksche.md
+        title: Hicksche
+      - file: vwl3/VL_Mikro2/2022-11-13-Effekte.md
+        title: Effekte
+      - file: vwl3/VL_Mikro2/2022-11-20-Verhalten_I.md
+        title: Verhalten I
+      - file: vwl3/VL_Mikro2/2022-11-30-Risiko.md
+        title: Risiko
+      - file: vwl3/VL_Mikro2/2022-12-02-Versicherung.md
+        title: Versicherung
+      - file: vwl3/VL_Mikro2/2022-12-10-Verhalten_II.md
+        title: Verhalten II
+      - file: vwl3/VL_Mikro2/2022-12-15-Intertemporal.md
+        title: Intertemporal
+      - file: vwl3/VL_Mikro2/2022-12-22-Verhalten_III.md
+        title: Verhalten III
+      - file: vwl3/VL_Mikro2/2023-01-12-Spieltheorie.md
+        title: Spieltheorie
+      - file: vwl3/VL_Mikro2/2023-01-19-Erweiterung.md
+        title: Erweiterung
+      - file: vwl3/VL_Mikro2/2023-01-26-Strategie.md
+        title: Strategie
+    - file: vwl3/VL_Soziologie/README
+      title: Wirtschaftssoziologie
+      entries:
+      - file: vwl3/VL_Soziologie/2022-10-19-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl3/VL_Soziologie/2022-10-26-Luhmann.md
+        title: Luhmann
+      - file: vwl3/VL_Soziologie/2022-11-09-Markt.md
+        title: Markt
+      - file: vwl3/VL_Soziologie/2022-11-16-Geld.md
+        title: Geld
+    - file: vwl3/VL_Wachstum/README
+      title: Wachstum und Nachhaltigkeit
+      entries:
+      - file: vwl3/VL_Wachstum/2022-10-10-Formelsammlung.md
+        title: Formelsammlung
+      - file: vwl3/VL_Wachstum/2022-10-11-BIP.md
+        title: BIP
+      - file: vwl3/VL_Wachstum/2022-10-18-Solow.md
+        title: Solow
+      - file: vwl3/VL_Wachstum/2022-10-25-Humankapital.md
+        title: Humankapital
+      - file: vwl3/VL_Wachstum/2022-11-01-Konvergenz.md
+        title: Konvergenz
+      - file: vwl3/VL_Wachstum/2022-11-08-Romer.md
+        title: Romer
+      - file: vwl3/VL_Wachstum/2022-11-15-Einkommen.md
+        title: Einkommen
+      - file: vwl3/VL_Wachstum/2022-11-22-Verteilung.md
+        title: Verteilung
+      - file: vwl3/VL_Wachstum/2022-11-29-Ungleichheit.md
+        title: Ungleichheit
+      - file: vwl3/VL_Wachstum/2022-12-06-Mobilitaet.md
+        title: Mobilitaet
+      - file: vwl3/VL_Wachstum/2022-12-13-Wechselwirkung.md
+        title: Wechselwirkung
+      - file: vwl3/VL_Wachstum/2022-12-20-Kuznet.md
+        title: Kuznet
+      - file: vwl3/VL_Wachstum/2023-01-10-IPAT.md
+        title: IPAT
+      - file: vwl3/VL_Wachstum/2023-01-17-Klima-Solow.md
+        title: Klima Solow
+      - file: vwl3/VL_Wachstum/2023-01-24-Umweltpolitik.md
+        title: Umweltpolitik
+    - file: vwl3/VL_Ethik/README
+      title: Ethik der Soz. Marktwirtschaft
+      entries:
+      - file: vwl3/VL_Ethik/2022-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl3/VL_Ethik/2022-10-10-Theorie_des_NL.md
+        title: Theorie des NL
+      - file: vwl3/VL_Ethik/2022-10-11-Argumentation.md
+        title: Argumentation
+      - file: vwl3/VL_Ethik/2022-10-18-MarktMoral.md
+        title: MarktMoral
+      - file: vwl3/VL_Ethik/2022-10-25-Zentralsteuerung.md
+        title: Zentralsteuerung
+      - file: vwl3/VL_Ethik/2022-11-01-Ordoliberal.md
+        title: Ordoliberal
+      - file: vwl3/VL_Ethik/2022-11-08-Dilemmata.md
+        title: Dilemmata
+      - file: vwl3/VL_Ethik/2022-11-15-Spieltheorie.md
+        title: Spieltheorie
+      - file: vwl3/VL_Ethik/2022-11-22-Wirtschaftspolitik.md
+        title: Wirtschaftspolitik
+      - file: vwl3/VL_Ethik/2022-12-06-Umweltpolitik.md
+        title: Umweltpolitik
+      - file: vwl3/VL_Ethik/2022-12-13-Marxismus.md
+        title: Marxismus
+      - file: vwl3/VL_Ethik/2022-12-20-Energie.md
+        title: Energie
+      - file: vwl3/VL_Ethik/2022-12-22-Unternehmensbindung.md
+        title: Unternehmensbindung
+      - file: vwl3/VL_Ethik/2023-01-10-Unternehmen.md
+        title: Unternehmen
+      - file: vwl3/VL_Ethik/2023-01-17-Korruption.md
+        title: Korruption
+      - file: vwl3/VL_Ethik/2023-01-24-Zivilgesellschaft.md
+        title: Zivilgesellschaft
+      - file: vwl3/VL_Ethik/2023-02-01-Ordonomik.md
+        title: Ordonomik
+    - file: vwl3/VL_Monetaer/README
+      title: Monetäre Ökonomik
+      entries:
+      - file: vwl3/VL_Monetaer/2022-10-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl3/VL_Monetaer/2022-10-18-Zenralbank1.md
+        title: Zenralbank1
+      - file: vwl3/VL_Monetaer/2022-10-25-Inflation.md
+        title: Inflation
+      - file: vwl3/VL_Monetaer/2022-11-01-Anleihe.md
+        title: Anleihe
+      - file: vwl3/VL_Monetaer/2022-11-08-Klimawandel.md
+        title: Klimawandel
+      - file: vwl3/VL_Monetaer/2022-11-15-Risiko.md
+        title: Risiko
+      - file: vwl3/VL_Monetaer/2022-11-22-Zinsstruktur.md
+        title: Zinsstruktur
+      - file: vwl3/VL_Monetaer/2022-11-29-Finanzmarkt.md
+        title: Finanzmarkt
+      - file: vwl3/VL_Monetaer/2022-12-11-Zentralbank2.md
+        title: Zentralbank2
+      - file: vwl3/VL_Monetaer/2022-12-20-Finanzkrisen.md
+        title: Finanzkrisen
+      - file: vwl3/VL_Monetaer/2023-01-10-Zinssatz.md
+        title: Zinssatz
+      - file: vwl3/VL_Monetaer/2023-01-17-Instrumente.md
+        title: Instrumente
+      - file: vwl3/VL_Monetaer/2023-01-24-Geld.md
+        title: Geld
+      - file: vwl3/VL_Monetaer/2023-01-31-Geld2.md
+        title: Geld2
+
+  - file: vwl4/README
+    title: IV. Semester
+    entries:
+    
+    - file: vwl4/VL_Angewandte/README
+      title: Angewandte Ökonomik
+      entries:
+      - file: vwl4/VL_Angewandte/2023-04-00-Lesenotizen.md
+        title: Lesenotizen
+      - file: vwl4/VL_Angewandte/2023-04-19-Makro.md
+        title: Makro
+      - file: vwl4/VL_Angewandte/2023-04-26-Mikro.md
+        title: Mikro
+      - file: vwl4/VL_Angewandte/2023-05-03-Wert.md
+        title: Wert
+      - file: vwl4/VL_Angewandte/2023-05-10-Normativ.md
+        title: Normativ
+      - file: vwl4/VL_Angewandte/2023-05-17-Geldpolitik.md
+        title: Geldpolitik
+      - file: vwl4/VL_Angewandte/2023-05-26-Innovation.md
+        title: Innovation
+      - file: vwl4/VL_Angewandte/2023-05-31-Steuern.md
+        title: Steuern
+      - file: vwl4/VL_Angewandte/2023-06-07-Kriminal.md
+        title: Kriminal
+      - file: vwl4/VL_Angewandte/2023-06-14-Demokratie.md
+        title: Demokratie
+      - file: vwl4/VL_Angewandte/2023-06-21-Familie.md
+        title: Familie
+      - file: vwl4/VL_Angewandte/2023-06-28-Terrorismus.md
+        title: Terrorismus
+      - file: vwl4/VL_Angewandte/2023-07-05-Geschichte.md
+        title: Geschichte
+      - file: vwl4/VL_Angewandte/2023-07-12-Ordonomik.md
+        title: Ordonomik
+    - file: vwl4/VL_International/README
+      title: International Economics
+      entries:
+      - file: vwl4/VL_International/2023-04-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl4/VL_International/2023-04-20-Start.md
+        title: Start
+      - file: vwl4/VL_International/2023-04-27-Labour.md
+        title: Labour
+      - file: vwl4/VL_International/2023-05-04-RicardoModel.md
+        title: RicardoModel
+      - file: vwl4/VL_International/2023-05-11-Specific-Factor.md
+        title: Specific Factor
+      - file: vwl4/VL_International/2023-06-01-Heckscher.md
+        title: Heckscher
+      - file: vwl4/VL_International/2023-06-15-Standard-Trade.md
+        title: Standard Trade
+      - file: vwl4/VL_International/2023-06-22-Economies-of-Scale.md
+        title: Economies of Scale
+      - file: vwl4/VL_International/2023-07-05-Trade-Policy.md
+        title: Trade Policy
+      - file: vwl4/VL_International/2023-07-12-Political-Economy.md
+        title: Political Economy
+      - file: vwl4/VL_International/2023-07-13-Developing-Countries.md
+        title: Developing Countries
+      - file: vwl4/VL_International/2023-07-20-Controversies.md
+        title: Controversies
+    - file: vwl4/VL_Makro2/README
+      title: Makroökonomik II
+      entries:
+      - file: vwl4/VL_Makro2/2023-04-00-Zusammenfassung.md
+        title: Zusammenfassung
+      - file: vwl4/VL_Makro2/2023-04-13-Firm.md
+        title: Firm
+      - file: vwl4/VL_Makro2/2023-04-14-Labour.md
+        title: Labour
+      - file: vwl4/VL_Makro2/2023-04-27-Banks.md
+        title: Banks
+      - file: vwl4/VL_Makro2/2023-04-28-BanksII.md
+        title: BanksII
+      - file: vwl4/VL_Makro2/2023-05-04-BanksIII.md
+        title: BanksIII
+      - file: vwl4/VL_Makro2/2023-05-08-Fluctuations.md
+        title: Fluctuations
+      - file: vwl4/VL_Makro2/2023-05-24-Fiscal.md
+        title: Fiscal
+      - file: vwl4/VL_Makro2/2023-05-26-Stylized-Facts.md
+        title: Stylized Facts
+      - file: vwl4/VL_Makro2/2023-06-07-Debt.md
+        title: Debt
+      - file: vwl4/VL_Makro2/2023-06-21-Inflation.md
+        title: Inflation
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial-Revision.md
+        title: Tutorial Revision
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial1.md
+        title: Tutorial1
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial2.md
+        title: Tutorial2
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial3.md
+        title: Tutorial3
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial4.md
+        title: Tutorial4
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial5.md
+        title: Tutorial5
+      - file: vwl4/VL_Makro2/2023-08-00-Tutorial6.md
+        title: Tutorial6
+    - file: vwl4/VL_SoEco/README
+      title: Sozial-Ökologische Systeme
+      entries:
+      - file: vwl4/VL_SoEco/2023-04-17-Einfuehrung.md
+        title: Einfuehrung
+      - file: vwl4/VL_SoEco/2023-04-24-System.md
+        title: System
+      - file: vwl4/VL_SoEco/2023-05-15-Lever.md
+        title: Lever
+      - file: vwl4/VL_SoEco/2023-05-22-Food-System.md
+        title: Food System
+      - file: vwl4/VL_SoEco/2023-05-27-Resource.md
+        title: Resource
+      - file: vwl4/VL_SoEco/2023-06-26-Climate-Models.md
+        title: Climate Models
+      - file: vwl4/VL_SoEco/Vortrag.md
+        title: 
+    - file: vwl4/VL_WiPo/README
+      title: Wirtschaftspolitik
+      entries:
+      - file: vwl4/VL_WiPo/2023-04-00-Lesenotizen.md
+        title: Lesenotizen
+      - file: vwl4/VL_WiPo/2023-04-20-Start.md
+        title: Start
+      - file: vwl4/VL_WiPo/2023-04-27-Rationale.md
+        title: Rationale
+      - file: vwl4/VL_WiPo/2023-05-04-Marktversagen.md
+        title: Marktversagen
+      - file: vwl4/VL_WiPo/2023-05-11-Makro.md
+        title: Makro
+      - file: vwl4/VL_WiPo/2023-05-25-Inflation.md
+        title: Inflation
+      - file: vwl4/VL_WiPo/2023-06-01-Konjunktur.md
+        title: Konjunktur
+      - file: vwl4/VL_WiPo/2023-06-08-Institutionen.md
+        title: Institutionen
+      - file: vwl4/VL_WiPo/2023-07-06-Wohlfahrt.md
+        title: Wohlfahrt
+      - file: vwl4/VL_WiPo/2023-07-14-Wohlfahrt-II.md
+        title: Wohlfahrt II
+
+  - file: vwl5/README
+    title: V. Semester
+    entries:
+    
+    - file: vwl5/VL_EconHistory/README
+      title: Economic History
+      entries:
+      - file: vwl5/VL_EconHistory/2023-12-11-Vortrag.md
+        title: Vortrag
+    - file: vwl5/VL_Zivilrecht/README
+      title: Zivilrecht
+      entries:
+      - file: vwl5/VL_Zivilrecht/2023-10-17-Intro.md
+        title: Intro
+      - file: vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md
+        title: Vertrag
+      - file: vwl5/VL_Zivilrecht/2023-10-27-AGB.md
+        title: AGB
+      - file: vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie.md
+        title: Privatautonomie
+      - file: vwl5/VL_Zivilrecht/2023-11-10-Vertragsende.md
+        title: Vertragsende
+      - file: vwl5/VL_Zivilrecht/2023-11-17-Schadensersatz.md
+        title: Schadensersatz
+      - file: vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung.md
+        title: Gewaehrleistung
+    - file: vwl5/VL_Empirical/README
+      title: Empirical Economics
+      entries:
+      - file: vwl5/VL_Empirical/2023-10-12-Intro.md
+        title: Intro
+      - file: vwl5/VL_Empirical/2023-10-19-Stats.md
+        title: Stats
+      - file: vwl5/VL_Empirical/2023-10-26-Regression.md
+        title: Regression
+      - file: vwl5/VL_Empirical/2023-11-06-Datasets.md
+        title: Datasets
+      - file: vwl5/VL_Empirical/2023-11-09-Presentation.md
+        title: Presentation
+      - file: vwl5/VL_Empirical/2023-11-16-TimeSeries.md
+        title: TimeSeries
+      - file: vwl5/VL_Empirical/2023-11-23-IV.md
+        title: IV
+    - file: vwl5/VL_Feminist/README
+      title: Feminist Economics
+      entries:
+      - file: vwl5/VL_Feminist/2023-10-09-Intro.md
+        title: Intro
+      - file: vwl5/VL_Feminist/2023-10-16-Divison-Labor.md
+        title: Divison Labor
+      - file: vwl5/VL_Feminist/2023-10-23-Reproduction.md
+        title: Reproduction
+      - file: vwl5/VL_Feminist/2023-11-06-Care.md
+        title: Care
+      - file: vwl5/VL_Feminist/2023-11-06-Household.md
+        title: Household
+      - file: vwl5/VL_Feminist/2023-11-10-Ecofeminist.md
+        title: Ecofeminist
+      - file: vwl5/VL_Feminist/2023-11-11-Transformation.md
+        title: Transformation
+      - file: vwl5/VL_Feminist/2023-11-20-Labour-Market.md
+        title: Labour Market
+    - file: vwl5/VL_PublicEcon/README
+      title: Public Economics
+      entries:
+      - file: vwl5/VL_PublicEcon/2023-10-11-Intro.md
+        title: Intro
+      - file: vwl5/VL_PublicEcon/2023-10-18-Tools.md
+        title: Tools
+      - file: vwl5/VL_PublicEcon/2023-10-25-Tools2.md
+        title: Tools2
+      - file: vwl5/VL_PublicEcon/2023-11-06-Externalities.md
+        title: Externalities
+      - file: vwl5/VL_PublicEcon/2023-11-08-Public-Goods.md
+        title: Public Goods
+      - file: vwl5/VL_PublicEcon/2023-11-15-Cost-Benefit.md
+        title: Cost Benefit
+      - file: vwl5/VL_PublicEcon/2023-11-22-Climate.md
+        title: Climate
+      - file: vwl5/VL_PublicEcon/2023-11-29-Information.md
+        title: Information
+      - file: vwl5/VL_PublicEcon/2023-12-06-Inequality.md
+        title: Inequality

@@ -11,7 +11,8 @@ semesters = {
     "vwl2": "II. Semester", 
     "vwl3": "III. Semester", 
     "vwl4": "IV. Semester",
-    "vwl5": "V. Semester"}
+    "vwl5": "V. Semester"
+    }
 
 
 dir_names = {
@@ -45,7 +46,6 @@ dir_names = {
     "VL_EconHistory": "Economic History",
     "VL_Empirical": "Empirical Economics",
     "VL_Feminist": "Feminist Economics",
-    "VL_Innovation": "Innovation Economics",
     "VL_PublicEcon": "Public Economics",
     "VL_Zivilrecht": "Zivilrecht",
 }
@@ -65,72 +65,92 @@ ignores.append([
 
 #%%
 # get all files in the directory and subdirectories with type {dirname : filenames}
+result_list = ["root: index", "subtrees:"] # first two lines of the SUMMARY.md
 
-result_list = ["- [Startseite](README.md)","", "---"] # first two lines of the SUMMARY.md
+
+result_list.append(f"""
+- caption: "Inhaltsverzeichnis"    
+  hidden: True
+  maxdepth: 1
+  titlesonly: True
+  entries:
+""")
 
 # Add the files in /glossar
-result_list.append("- Glossar")
+
+result_list.append(f"""
+  - file: glossar/Allgemein
+    title: "Glossar"
+    entries:
+""")
+
+
+## Add the files in /glossar
 for file in sorted(os.listdir("glossar")):
-    if file[-3:] == ".md":
+    if file[-3:] == ".md" and file != "Allgemein.md":
         filename = file[:-3]
         filename = filename.replace("_", " ")
         filename = filename.replace("-", " ")
-        result_list.append(f"    - [{filename}](glossar/{file})")
+        result_list.append(f"""
+    - file: glossar/{file}
+      title: "{filename}"
+    """)
 
-result_list.append("")  
-result_list.append("---")
-result_list.append("")
+#%%
 
 # count the files and directories
 count_files = 0
 count_dirs = 0
 
+
 for semester, desc in semesters.items():
 
     # add the semester as a headline
-    
-    result_list.append(f"[{desc}]({semester}/README.md)") 
-    result_list.append("")
-    result_list.append(f"")
+
+    result_list.append(f"""
+  - file: {semester}/README
+    title: {desc}
+    entries:
+    """)
 
     for dir in os.listdir(semester):
 
         if dir in dir_names.keys():
 
             # add the directory name as a headline
-            result_list.append(f"- {dir_names[dir]}") 
+            result_list.append(f"    - file: {semester}/{dir}/README")
+            result_list.append(f"      title: {dir_names[dir]}")
+            result_list.append(f"      entries:")
+
             count_dirs += 1 # count the directories
 
             for file in sorted(os.listdir(f"{semester}/{dir}")):
+                # ignore README
                 if file == "README.md":
+                    # dont add the README to the list
+                    pass
 
-                    # add the README.md as an overview
-                    result_list.append(f"    - [Übersicht]({semester}/{dir}/{file})")
-                    count_files += 1 # count the files 
-                    continue
-
-                if file not in ignores:
+                elif file not in ignores:
                     if file[-3:] == ".md": # only add markdown files, not directories
                         filename = file[11:-3]
                         filename = filename.replace("_", " ")
                         filename = filename.replace("-", " ")
 
                         # add the file to the list
-                        result_list.append(f"    - [{filename}]({semester}/{dir}/{file})")
-                        count_files += 1 # count the files
 
-    # add a line break after each semester  
-    result_list.append("")  
-    result_list.append("---")
-    result_list.append("")                  
+                        result_list.append(f"      - file: {semester}/{dir}/{file}")
+                        result_list.append(f"        title: {filename}")
+
+                        count_files += 1 # count the files
+              
 
 
 # add the number of files and directories to the end of the SUMMARY.md
-result_list.append(f"**{count_files}** Notizen in **{count_dirs}** Modulen")
+#result_list.append(f"**{count_files}** Notizen in **{count_dirs}** Modulen")
 
-with open("INDEX.md", "w") as f:
+with open("_toc.yml", "w") as f:
     f.writelines(line + '\n' for line in result_list)
-    print("INDEX.md updated")
+    print("TOC updated")
 
 # %%
  

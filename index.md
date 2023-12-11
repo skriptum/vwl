@@ -12,6 +12,8 @@ Weiterführende Links
 
 ## Semesterübersicht
 
+Überblick über die Module aller Semester
+
 ### 1. Semester
 
 | Modul                        | Professor:in   | Übersicht                                            | Zusammenfassung                                              |

@@ -2,10 +2,9 @@
 
 *99 Cent* by Andreas Gursky
 
-# Volkswirtschaftslehre
+# 1. Semester VWL
 
-> alle Notizen zu meinem Studium der Volkswirtschaftslehre in Halle
-> 
+Notizen für alle Module aus dem ersten Semester VWL
 
 
 ## Module

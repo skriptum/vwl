@@ -6,7 +6,7 @@
 
 *99 Cent* by Andreas Gursky
 
-# Notizen im zweiten Semester
+# 2. Semester VWL
 
 1: Semester: [hier](https://vwl1.martenw.com/#/)
 3: Semester: [hier](https://vwl3.martenw.com/#/)

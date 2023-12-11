@@ -2,7 +2,7 @@
 
 *99 Cent* by Andreas Gursky
 
-# Volkswirtschaftslehre
+# 3. Semester VWL
 
 meine Notizen zu den Modulen im dritten Semester
 

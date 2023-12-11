@@ -1,0 +1,86 @@
+# 31.05.2023 Steuern
+
+
+
+## Laffer Curve
+
+![img](../images/2023-05-31_10-32-34.jpg)
+
+=> maximales Steueraufkommen = Steuern nicht 100%
+
+**KRITIK:** Empirisch bringen Steuersenkungen nur Haushaltsdefizite (siehe Reagan)
+
+![img](../images/2023-05-31_10-36-17.jpg)
+
+## Regierungsformen
+
+- Demokratie: Wiederwahlanreize
+- Stabile Autokratie: Steuereinnahmen maximieren (langfristig)
+- Unstabile Autokratie: kurzfrsitig Einnahmen 
+
+
+
+Stabile Autokratie
+
+- Reziprokregel: Steuereinahmen bis BIP = $1/t$
+- Interesse an langfristigen Investitionen, wenn auch geringer als Demokratie
+
+
+
+Demokratie: Rent Seeking
+
+
+
+## Mathematik dazu
+
+![img](../images/2023-07-05_10-27-55.jpg)
+
+optimiere: 
+$$
+C = t * Y(t,A)- A
+$$
+
+- *t* = Steuersatz
+- *A* = Affluence
+
+$$
+\frac{ dC }{dA} = t * \frac{ dY }{dA}- 1 = 0 \\
+\frac{ dC }{dt} = y- t \frac{ dy }{dt} = 0
+$$
+
+- marginaler Effekt 
+- und inframarginaler Effekt
+
+=> Demokraite: Bürger hat bei Wahl eigenes Bewusstsein, dass er Steuern zahlen muss...
+
+
+
+## Rent Seeking
+
+> **Rent Seeking:** treben von Interessengruppen, Unternehmen und anderen Marktakteuren nach der Erschließung, Verteidigung oder Verbesserung von  Einkommenserzielungschancen im Marktbereich mithilfe politisch erwirkter Privilegien
+
+Beispiele:
+
+- Ladnwirtschaftssubventionen EU
+- Kohlesubventionen
+- Diesellobbying
+
+Effekte: ![img](../images/2023-07-21_13-50-48.jpg)
+
+bei fixem Faktor => Rente verbleibt bei Produzenten
+
+
+
+## Folgen von Markteinschränkungen
+
+- Schädigung der inländifschen Konsumenten
+    - höhere Preise
+    - weniger Konkurrenz
+- Schädigung ausländischer Produzenten
+- Schädigung inländischer Produzenten 
+    - fehlende Wettbewerbsfähigkeit
+    - Produzenten andere Zweige durch Retaliation
+- Einschärnkung internationale Solidarität
+    - Katastrophenbewältigung erschwert
+    - Nahrungsmittelhandel = wichtig
+

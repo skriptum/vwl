@@ -1,0 +1,55 @@
+# 24.04.2023 System
+
+## Rückkoppelung
+
+auch *Feedback Loops*:
+
+> **Rückkoppelung:** Mikroverhalten => Makrophänomen => Verändertes Mikroverhalten
+
+- negativ (schwächend) oder positiv (stärkend)
+- Beispiel: 
+    - Albedo und Klimawandel als verstärkender Effekt
+    - Bank Runs
+
+## Resilienz
+
+> capacity of a system to absord disturbance and reorganize while undergoing change
+
+- um Ausgangszweck und Struktur zu behalten
+- auch unerünschte Resilienz (Pfadabhängigkeit)
+    - QWERTZ-Tastatur
+
+
+
+resilienter Zustand: *basin of attraction*:
+
+![img](../images/2023-04-24_12-52-37.jpg)
+
+
+
+## Transformation
+
+Wechsel zwischen zwei *basins of attraction*
+
+- getriggert durch Hebelwirkungen (leverage point)
+- Komplex, da Mikro Veränderungen nicht bekannt
+- Transformation $\neq$ Veränderungen
+    - nur wenn wir es wollen
+
+
+
+## Kapitalformen
+
+Beachte: Unterschied Bestand Fluss
+
+Kapitalformen in SES:
+
+- Finanzielles Kapital (Cash)
+- Physisches K.
+- Soziales K. (Beziehungen)
+- Naturkapital (ecosystem services)
+- Symbolisches Kapital (Darstellung an Gruppenmitglieder)
+- Kulturelles K. (Habitus)
+
+
+

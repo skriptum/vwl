@@ -1,0 +1,65 @@
+# 18.11.2021 Industriekontenrahmen
+
+
+
+> **Kontenrahmen:** 
+>
+> - einheitliches, übersichtliches, rationelles Kontenordnungssystem
+> - Ausgangspunkt für betriebsindivudelle **Kontenpläne**
+
+Anwendung von KR: keine gesetzl. Pflicht!, nur Empfehlung
+
+IKR = zwei Kreissystem:
+
+![21-11-18_13-33](../images/21-11-18_13-33.jpg)
+
+**in Praxis:** Kosten+Leistungsrechnung tabellarisch in Staffelform, nicht in Kontenform
+
+### Aufbau IKR
+
+nach Abschlussgliederungsprinzip
+
+- jedes Konto hat eigene Kontonummer
+- dekadisches System (0-9)
+    1. Stelle der Kontonummer: Kontoklasse 
+
+    2. Stelle: Kontengruppe
+
+    3. Stelle: Kontenart
+
+    4. Stelle: Unterart
+- Klassen stimmen mit Bilanzpositionen überein 
+
+Kontenbezeichnungen Rechnungskreis *I*:
+
+
+- **0-2: Aktivkonten** (Abschluss über Haben SBK)
+	0. Anlagevermögen
+	1. Finanzanlagen
+	2. Umlaufvermögen
+
+- **3-4: Passivkonten** (Abschluss: Soll SBK)
+	3. Eigenkapital
+	4. Verbindlichkeiten
+- **5: Ertragskonten**: (Abschluss: Haben GuV)
+- **6-7: Aufwandskonten ** (Abschluss: Soll GuV)
+	6.  Betriebsaufwendungen
+	7. sonstige Aufwendungen
+	
+- **8: Abschlusskonten**: SBK, EBK, GuV, etc
+
+Bemerkungen zu Konten!:
+
+- *15* Wertpapiere des Anlagevermögens: nur langfristige Papiere bspw. von Lieferanten etc.
+- *220* Fertige Erzeugnisse: nicht benutzen, nur Abschluss
+- *260* Vorsteuer: beim Einkauf gezahlte Ust, quasi Forderung gegenüber dem Finanzamt
+- *37* Rückstellungen: Angst vor Klagen, für Schadensfälle
+- *480* Umsatzsteuer: Verbindlichkeit gegenüber Finanzamt
+- *62* Löhne + Gehälter
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+# 28.04.2023 Banks II
+
+## Rates
+
+banks set lending rate $r > r^p$ policy rate and based on:
+
+- Risk of default
+- risk tolerance 
+- amount of bank equity
+- degree of competition in banking sector
+
+
+
+the higher $r \uparrow \implies L^S \downarrow$ Liquidity Supply lower
+
+## Setting the Rate / Liquidity
+
+based on the interest rate
+
+Formula for Rate
+$$
+r = (1+ \mu^B) \ r^P ,\text{ with mark-up} = \mu^B
+$$
+
+
+Profit of a commercial Bank:
+$$
+V_B = 
+\frac{rL^S - r^p (L^S-D-e)}{e}
+-\frac{var(v)}{2 \tau}* 
+\frac{L^S}{e}^2
+$$
+
+- r = lending rate
+- $r^p$ = policy rate
+- $L^S$ = credit supply
+- $D$ = customer deposits
+- $e$ = equity
+- $\tau$ = risk tolerance
+- $v$ = uncertain part of returns on loands
+- $var(v)$ = riskiness of v
+
+Terms explained:
+
+- $rL^S$ = interest return on Loans
+- $rL^S - r^p (L^S-D-e)$ = financing costs for credit not backed
+- $(\frac{L^S}{e})^2$ = Bank Leverage
+- $var(v) * \frac{L^S}{e}^2$ = total risk of bank
+
+
+
+Refinancing Options of Banks:
+
+- Interbanking Market
+- loans from CB
+- new deposits
+
+
+
+**Derivation**
+
+What is the optimal credit supply?
+$$
+\frac{\delta V_B}{\delta L^S} =
+\frac{r-r^p}{e}  -\frac{var(v)L^S}{\tau e^2} = 0
+$$
+rewrite to determine the mark-up
+$$
+r - r^p = \frac{var(v)L^S}{\tau e} \\ 
+\implies L^S = \frac{\tau e}{var (v)} * (r-r^p)
+$$
+logic: when to supply more?
+
+- higher risk tolerance $\tau$
+- higher equity $e$
+- larger proft margin (markup) = higher incentive to supply 
+- higher risk = lower supply
+
+## Demand Liquidity
+
+credit demand of private sector
+$$
+I = L^D = \bar{I} - a * r
+$$
+- I = autonomous / independent demand
+- a = interest rate elasticity of investment demand 
+    - how flexible are firms to "switch banks"
+
+## Equilibrium
+
+$$
+\overbrace{\frac{\tau e}{var (v)} * (r-r^p)}^{Supply} =
+\overbrace{\bar{I}-a*r}^{Demand}
+$$
+solve for r
+$$
+r [\frac{\tau e}{var (v)}+a] = \frac{r^p \tau e}{var(v)}+ \bar{I} \\
+$$
+leads to:
+$$
+r = \frac
+{\frac{r^p \tau e}{var(v)}+ \bar{I}}
+{\frac{\tau e}{var (v)}+a} 
+= 
+\frac{r^p + \frac{\bar{I}* var(v)}{\tau e}}
+{1+ \frac{a * var(v)}{\tau e}}
+$$
+Conclusions: interest **rate increases**:
+
+1. with higher autonomous demand $\bar{I}$ : 
+    - more competition for loans (constant)
+2. with higher policy rate $r^p$
+    - because of passtrough
+3. lower interest rate elasticity a
+    - lower a = firms demand less flexible = less punishable = easier to hike markup
+4. riskiness of loans
+5. lower risk tolerance / lower equity
+
+claims 3+4+5 further proofs needed
+
+
+
+## Information asymmetry
+
+- Moral Hazard (ex post)
+- adverse selection (ex ante)
+    - low risks dont want average rate, but high risks do
+    - banks react and limit credit
+
+=> banks require equity as incentive
+
+
+
+
+
+**=> in exam: do math and get points**
+
+obwohl diese Mathematik extrem kompliziert ist...
+

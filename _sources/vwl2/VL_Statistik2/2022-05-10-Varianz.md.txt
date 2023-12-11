@@ -1,0 +1,158 @@
+# 10.05.2022 Varianz
+
+Analog zur empirischen Statistik
+
+## Varianz
+
+Allgemeiner Verschiebungssatz: $Var(X) = E(X^2)-(E(X))^2$
+
+für **diskrete** *X*:
+$$
+Var(x) = \sum_{i=1}^\infty x_i^2 *f(x_i) - (E(X))^2
+$$
+für **stetige** *X*
+$$
+Var(x) = \int_{-\infty}^\infty x^2 *f(x)dx - (E(X))^2
+$$
+
+Transformation:
+$$
+Y & = a*X+b \\
+\to Var(Y) & = a^2 * Var(X)
+$$
+
+
+## Standardabweichung
+
+Definition: $\sigma_X = \sqrt{Var(X)}$
+
+lineare Transformation: $\sigma_Y = |a| * \sigma_X$
+
+## Beispiel
+
+### diskretes X
+
+- X  = Augenzahl bei einmaligen Würfel
+
+- Gezinkter Würfel:
+
+| Zahl            | 1    | 2    | 3    | 4    | 5    | 6    |
+| --------------- | ---- | ---- | ---- | ---- | ---- | ---- |
+| $\bold{f(x_i)}$ | 3/20 | 3/20 | 3/20 | 3/20 | 3/20 | 1/4  |
+
+- Erwartungswert *E(X) = 3.75*
+
+Berechnung: $Var(X) = E(X^2)- (E(X))^2$
+$$
+E(X^2) \sum_{i=1}^\infty x_i^2 *f(x_i) = \sum_{i=1}^6 x_i^2 * f(x_i) \\
+(1^2+2^2+3^2+4^2+5^2) * \frac{3}{20} + g^2*\frac{1}{4} = 17.25 \\
+
+\text{Standardabweichung:} \\
+E(X^2)- (E(X))^2 = 17.25 - 3.75^2 = \bold{3.1875} \\
+\text{Varianz:} \\
+\sigma_X = \sqrt{3.1875} = \bold{1.7854}
+$$
+
+### stetiges X
+
+wieder Wartezeit auf Straßenbahn, die alle 6 Minuten kommt
+
+- *E(X) = 3* (aus letzter Woche)
+
+$$
+\begin{aligned}
+E(X^2) &= \int_{-\infty}^\infty x^2 *f(x)dx  = \int_0^6 x^2 *f(x)dx \\
+&= \int_0^6 x^2 * \frac{1}{6}dx \\
+&= \frac{1}{6} * \Big(\frac{1}{2} x^2 \Big)\bigg|_0^6 \\
+&= \frac{1}{12} *(36-0) = 12
+\end{aligned}
+$$
+
+Varianz: $E(X^2)-(E(X))^2 = 12-3^2 = 3$
+
+Standardabweichung: $\sigma_X = \sqrt{3} = 1.7321$
+
+
+
+## Mehrdimensionale Zufallsvariablen
+
+analog zu Statistik I Häufigkeitsverteilungen
+
+benötigt werden:
+
+- gemeinsame Dichte
+- Randdichte
+- bedingte Dichte
+
+hier nur 2 Variablen!
+
+### Gemeinsame Dichte
+
+#### diskreter Fall
+
+![2022-05-10_12.36.45](../images/2022-05-10_12.36.45.jpg)
+
+Allgemein: $f_{X,Y}(x_i,y_j)= P(X=x_i,Y=y_j)$
+
+#### stetiger Fall
+
+gemeinsame Dichte: $f_{X,Y} (x,y)$
+
+
+
+### Bedingte Dichte
+
+Analog zu eindimensionaler P(A|B):
+$$
+\text{diskreter Fall: } f_{X,Y}(x_i) &= \frac{f_{X,Y}(x_i, y_j)}{f_Y(y_j)} \\
+
+\text{stetiger Fall: } f_{X,Y}(x) &= \frac{f_{X,Y}(x, y)}{f_Y(y)}
+$$
+
+## Unabhängigkeit
+
+bei mehrdimensionalen Zufallsvariablen
+
+X und Y sind *stochastisch* unabhängig, wenn
+
+- $f_{X,Y} (x,y) = f_X(x) * f_Y(y)$ = Produkt der Randdichten
+
+## Kovarianz
+
+Definition: $Cov(X,Y) = E\big( \ (X-E(X)) * \big(Y-E(Y))\ \big)$
+
+#### Korrelationskoeffizient
+
+Definition (rho): $\rho(X,Y) = \frac{Cov(X,Y)}{\sqrt{Var(X) * Var(Y)}}$
+
+- Wertebereich: $-1 \le \rho \le 1$
+- Betrag = Stärke
+- Vorzeichen = Richtung
+- bei $\rho=0$ unkorreliert, nicht immer unabhängig
+
+#### diskrete Variablen
+
+vereinfacht:  
+$$
+Cov(X,Y) &= E(X*Y) - E(X)*E(Y) \\
+
+\text{mit } & E(X*Y)=\sum_{i=1}^\infty \sum_{j=1}^\infty x_i*y_j * f_{X,Y} (x_i,y_j)
+$$
+
+#### stetige Variablen
+
+$$
+Cov(X,Y) &= E(X*Y) - E(X)*E(Y) \\
+
+\text{mit } & E(X*Y)=\int_{-\infty}^\infty \int_{-\infty}^\infty x_i*y_j * f_{X,Y} (x,y) \ dx \ dy
+$$
+
+- sauberes Integrieren, erst inneres, dann äußeres
+
+### Transformationen 
+
+- $X \to a * X+b$
+- $Y \to c*Y +d $
+
+=> $Cov(aX+b, cY+d) = a*c*Cov(X,Y)$
+

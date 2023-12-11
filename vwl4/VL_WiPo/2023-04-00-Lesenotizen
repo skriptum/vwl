@@ -1,0 +1,1645 @@
+<!doctype html>
+<html class="no-js" lang="de" data-content_root="../../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Stichwortverzeichnis" href="../../genindex" /><link rel="search" title="Suche" href="../../search" /><link rel="next" title="20.04.2023 Start" href="2023-04-20-Start" /><link rel="prev" title="Wirtschaftspolitik" href="README" />
+        <link rel="canonical" href="https://vwl.martenw.com/vwl4/VL_WiPo/2023-04-00-Lesenotizen" />
+
+    <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>Lesenotizen - Marten&#39;s Notizen</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-primary: #336699;
+  --color-brand-content: #336699;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index"><div class="brand">Marten's Notizen</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index">
+  
+  
+  <span class="sidebar-brand-text">Marten's Notizen</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search" role="search">
+  <input class="sidebar-search" placeholder="Suche" name="q" aria-label="Suche">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Inhaltsverzeichnis</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../glossar/Allgemein">Glossar</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Glossar</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../glossar/Keynesianismus">Keynesianismus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../glossar/Neoklassik">Neoklassik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../glossar/Plurale-Oekonomik">Plurale Oekonomik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../glossar/Tools">Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vwl1/README">I. Semester</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of I. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_VWL/README">VWL</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of VWL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-10-00-Formelsammlung">Formelsammlung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-10-18-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-10-18-Uebung1">Uebung1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-10-27-Knappheit">Knappheit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-02-Angebot_Nachfrage">Angebot Nachfrage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-12-Marktmechanismus">Marktmechanismus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-12-Uebung2">Uebung2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-17-Haushalte">Haushalte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-24-Unternehmen">Unternehmen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-29-Lesenotizen">Notizen zum Lesematerial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-11-29-Lesenotizen#notizen-zum-zweiten-text-coase-cap">Notizen zum zweiten Text Coase-Cap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-12-01-Marktversagen">Marktversagen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-12-07-Makro">Makro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2021-12-13-Messung">Messung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2022-01-13-Arbeitslosigkeit">Arbeitslosigkeit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2022-01-21-Wachstum">Wachstum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2022-01-24-Entwicklungsl%C3%A4nder">Entwicklungsländer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2022-02-12-Einkommen">Einkommen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_VWL/2022-02-12-Uebung">Uebung</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_Mathe1/README">Mathe</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Mathe</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-10-11-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-10-14-Matrizen">Matrizen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-10-18-Linear">Linear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-10-25-inverses">inverses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-10-28-Determinanten">Determinanten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-01-Determinante2">Determinante2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-08-Eigenwerte">Eigenwerte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-11-Fibonacci">Fibonacci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-15-Quadrat">Quadrat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-22-Austausch">Austausch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-25-Graphen">Graphen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-11-29-Simplexverfahren">Simplexverfahren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-12-06-Simplex2">Simplex2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2021-12-13-Simplex-komplex">Simplex komplex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2022-01-10-Dualitaet">Dualitaet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2022-01-13-Dualitaet2">Dualitaet2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2022-01-17-Transport">Transport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Mathe1/2022-01-24-Transport2">Transport2</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/README">Buchführung</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Buchführung</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-00-Buchungsaetze">Buchungsaetze</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-12-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-14-Geschaeftsfall">Geschaeftsfall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-19-Rechtliches">Rechtliches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-21-Grundsaetze">Grundsaetze</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-26-Inventur">Inventur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-10-28-Bilanz">Bilanz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-02-Bestaende">Bestaende</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-04-Buchungen">Buchungen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-09-Buecher">Buecher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-11-Erfolgskonten">Erfolgskonten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-18-IKR">IKR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-22-Einkauf">Einkauf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-24-Zahllast">Zahllast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-26-Fallstudien1">Fallstudien1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-11-30-Ruecksendungen">Ruecksendungen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-12-03-Fallstudien2">Fallstudien2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-12-06-Loehne">Loehne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-12-10-Fallstudien3">Fallstudien3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2021-12-13-Sachanlagen">Sachanlagen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2022-01-06-GWG">GWG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2022-01-08-Verkauf-Anlagen">Verkauf Anlagen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2022-01-09-Steuern">Steuern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2022-01-11-Abschluss">Abschluss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Buchfuehrung/2022-01-12-Bestand">Bestand</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_Statistik1/README">Statistik</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Statistik</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-10-18-Notizen">Notizen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-10-18-Rechenregeln">Rechenregeln</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-10-27-Darstellungen">Darstellungen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-11-05-Haeufigkeiten">Haeufigkeiten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-11-16-Lagema%C3%9Fe">Lagemaße</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-11-22-Streuungsma%C3%9Fe">Streuungsmaße</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-11-29-Schiefema%C3%9Fe">Schiefemaße</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2021-12-06-Mehrdimension">Mehrdimension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2022-01-10-Korrelation">Korrelation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2022-01-17-Regression">Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2022-01-25-Regression2">Regression2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Statistik1/2022-02-03-Fallbeispiel">Fallbeispiel</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/README">Wirtschaftsinfo</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Wirtschaftsinfo</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-10-18-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-10-25-Datenbank">Datenbank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-03-ERM">ERM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-06-Normalisierung">Normalisierung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-15-Geschaeftsprozess">Geschaeftsprozess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-17-Modellierung">Modellierung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-19-Analyse">Analyse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-22-AWSysteme">AWSysteme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-25-AWS2-Integration">AWS2 Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-11-29-UML">UML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2021-12-06-UML2">UML2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_Wirtschaftsinformatik/2022-02-07-SoftwareEntwicklung">SoftwareEntwicklung</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl1/VL_BWL/README">BWL</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of BWL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-10-14-Grundlagen">Grundlagen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-10-25-Management">Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-11-04-Strategie">Strategie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-11-09-Economies">Economies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-11-15-Umweltanalyse">Umweltanalyse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-11-20-Unternehmensanalyse">Unternehmensanalyse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-11-27-SWOT">SWOT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-12-07-BCG">BCG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2021-12-16-BalancedScore">BalancedScore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2022-01-11-Leistungsprozesse">Leistungsprozesse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl1/VL_BWL/2022-01-18-Finanzprozesse">Finanzprozesse</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vwl2/README">II. Semester</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of II. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_WissArbeit/README">Wissenschaftliches Arbeiten</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Wissenschaftliches Arbeiten</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-04-14-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-04-22-Themenfindung">22.04.2022 Themenfindung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-04-22-Themenfindung#eingrenzung">Eingrenzung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-05-01-Organisation">Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-05-10-Literaturrecherche">Literaturrecherche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-05-20-Literaturanalyse">Literaturanalyse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-05-23-Zitieren">Zitieren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-05-30-normative-Oekonomik">normative Oekonomik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-06-07-positive-Theorie">positive Theorie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-06-19-qualitativ">qualitativ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-06-23-quantitativ">quantitativ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-06-28-Schreibprozess">Schreibprozess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_WissArbeit/2022-07-04-Praesentation">Praesentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/README">Recht für WiWi</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of Recht für WiWi</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-04-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-04-03-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-04-15-Rechtsgebiete">Rechtsgebiete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-04-22-Subsumtion">Subsumtion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-05-04-Mehrebenensystem">Mehrebenensystem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-05-09-Verfassungsrecht">Verfassungsrecht</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-05-17-Auslegung">Auslegung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-05-21-Staatsorganisation">Staatsorganisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-06-02-Grundrechte-I">Grundrechte I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-06-10-Grundrechte-II">Grundrechte II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-06-17-Prozessrecht">Prozessrecht</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-06-21-Verwaltungsrecht">Verwaltungsrecht</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-07-01-Verwaltungsrecht-II">Verwaltungsrecht II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Recht-WiWi/2022-07-08-Europarecht">Europarecht</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_Stadt/README">Stadtökonomie (Leipzig)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of Stadtökonomie (Leipzig)</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-04-12-Alonso-Muth-Mills">Alonso Muth Mills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-04-24-AMM-2">AMM 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-05-06-Oekonomometrie">Oekonomometrie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-05-10-Entstehung">Entstehung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-05-17-Politik">Politik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-05-24-Agglomeration">Agglomeration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Stadt/2022-05-31-Immobilienmarkt">Immobilienmarkt</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_Mikro/README">Mikroökonomik</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of Mikroökonomik</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-00-Formelsammlung">Formelsammlung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-06-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-07-Haushalte">Haushalte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-14-Effekte">Effekte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-22-Unternehmen">Unternehmen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-04-27-Unternehmen2">Unternehmen2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-04-Guetermarkt">Guetermarkt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-05-Arbeitsmarkt">Arbeitsmarkt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-15-Kapitalmarkt">Kapitalmarkt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-20-Versicherung">Versicherung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-21-Monopol">Monopol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-05-31-Gueter">Gueter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mikro/2022-06-05-Externe-Effekte">Externe Effekte</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_Mathe2/README">Mathematik II</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of Mathematik II</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Mathe2/2022-04-00-Tools">Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl2/VL_Statistik2/README">Statistik II</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of Statistik II</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-04-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-04-05-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-04-15-Wahrscheinlichkeit">Wahrscheinlichkeit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-04-25-Stichproben">Stichproben</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-05-01-Dichte">Dichte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-05-10-Varianz">Varianz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-05-17-Verteilungen">Verteilungen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-05-27-Normalverteilung">Normalverteilung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-06-02-NormalVtlg-2">NormalVtlg 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-06-05-Schaetzer">Schaetzer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-06-07-Tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl2/VL_Statistik2/2022-06-20-Tests2">Tests2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vwl3/README">III. Semester</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of III. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Makro1/README">Makroökonomik I</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of Makroökonomik I</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-10-13-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-10-20-Kapital">20.10.2022 Markt, Staat &amp; Kapitalakkumulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-10-20-Kapital#ubung-1">Übung 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-10-27-Gesamtwirtschaft">Gesamtwirtschaft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-09-Erweiterungen">09.11.2022 Erweiterungen des Solow-Modells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-09-Erweiterungen#ubung">Übung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-10-Umwelt">Umwelt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-17-Romer">Romer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-24-Arbeit">Arbeit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-11-30-Geld">Geld</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-12-06-Wirtschaftspolitik">Wirtschaftspolitik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-12-15-Kurzfristig">Kurzfristig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2022-12-22-Globalisierung">Globalisierung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2023-01-19-Produktion-Beschaeftigung">Produktion Beschaeftigung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2023-01-26-Wirtschaftspolitik">Wirtschaftspolitik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Makro1/2023-02-02-Fiskalpolitik">Fiskalpolitik</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Mikro2/README">Mikroökonomik II</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of Mikroökonomik II</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-10-25-Konsumenten1">Konsumenten1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-02-Marshall">Marshall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-07-Hicksche">Hicksche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-13-Effekte">13.11.2022 Effekte und Arten von Gütern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-13-Effekte#ubung">Übung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-20-Verhalten_I">Verhalten I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-11-30-Risiko">Risiko</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-12-02-Versicherung">Versicherung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-12-10-Verhalten_II">Verhalten II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-12-15-Intertemporal">Intertemporal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2022-12-22-Verhalten_III">Verhalten III</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2023-01-12-Spieltheorie">Spieltheorie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2023-01-19-Erweiterung">Erweiterung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Mikro2/2023-01-26-Strategie">Strategie</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Soziologie/README">Wirtschaftssoziologie</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of Wirtschaftssoziologie</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Soziologie/2022-10-19-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Soziologie/2022-10-26-Luhmann">Luhmann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Soziologie/2022-11-09-Markt">Markt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Soziologie/2022-11-16-Geld">Geld</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Wachstum/README">Wachstum und Nachhaltigkeit</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of Wachstum und Nachhaltigkeit</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-10-10-Formelsammlung">Formelsammlung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-10-11-BIP">11.10.2022 Wachstum 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-10-11-BIP#ubung-1">Übung 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-10-18-Solow">Solow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-10-25-Humankapital">Humankapital</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-01-Konvergenz">01.11.2022 Konvergenz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-01-Konvergenz#ubung-2">Übung 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-08-Romer">Romer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-15-Einkommen">Einkommen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-22-Verteilung">Verteilung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-11-29-Ungleichheit">Ungleichheit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-12-06-Mobilitaet">Mobilitaet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-12-13-Wechselwirkung">Wechselwirkung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2022-12-20-Kuznet">Kuznet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2023-01-10-IPAT">IPAT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2023-01-17-Klima-Solow">Klima Solow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Wachstum/2023-01-24-Umweltpolitik">Umweltpolitik</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Ethik/README">Ethik der Soz. Marktwirtschaft</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of Ethik der Soz. Marktwirtschaft</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-10-10-Theorie_des_NL">Theorie des NL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-10-11-Argumentation">Argumentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-10-18-MarktMoral">MarktMoral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-10-25-Zentralsteuerung">Zentralsteuerung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-11-01-Ordoliberal">Ordoliberal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-11-08-Dilemmata">Dilemmata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-11-15-Spieltheorie">Spieltheorie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-11-22-Wirtschaftspolitik">Wirtschaftspolitik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-12-06-Umweltpolitik">Umweltpolitik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-12-13-Marxismus">Marxismus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-12-20-Energie">Energie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2022-12-22-Unternehmensbindung">Unternehmensbindung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2023-01-10-Unternehmen">Unternehmen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2023-01-17-Korruption">Korruption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2023-01-24-Zivilgesellschaft">Zivilgesellschaft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Ethik/2023-02-01-Ordonomik">Ordonomik</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl3/VL_Monetaer/README">Monetäre Ökonomik</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle navigation of Monetäre Ökonomik</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-10-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-10-18-Zenralbank1">Zenralbank1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-10-25-Inflation">25.10.2022 Inflation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-10-25-Inflation#ubung">Übung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-11-01-Anleihe">Anleihe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-11-08-Klimawandel">Klimawandel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-11-15-Risiko">Risiko</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-11-22-Zinsstruktur">Zinsstruktur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-11-29-Finanzmarkt">Finanzmarkt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-12-11-Zentralbank2">Zentralbank2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2022-12-20-Finanzkrisen">Finanzkrisen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-10-Zinssatz">Zinssatz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-17-Instrumente">Instrumente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-24-Geld">Geld</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-31-Geld2">31.01.2023 Geld II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-31-Geld2#geldschopfung-von-geschaftsbanken">Geldschöpfung von Geschäftsbanken</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl3/VL_Monetaer/2023-01-31-Geld2#finanzinnovation">Finanzinnovation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../README">IV. Semester</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle navigation of IV. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Angewandte/README">Angewandte Ökonomik</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle navigation of Angewandte Ökonomik</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-04-00-Lesenotizen">Lesenotizen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-04-19-Makro">Makro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-04-26-Mikro">Mikro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-05-03-Wert">Wert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-05-10-Normativ">Normativ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-05-17-Geldpolitik">Geldpolitik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-05-26-Innovation">Innovation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-05-31-Steuern">Steuern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-06-07-Kriminal">Kriminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-06-14-Demokratie">Demokratie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-06-21-Familie">Familie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-06-28-Terrorismus">Terrorismus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-07-05-Geschichte">Geschichte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Angewandte/2023-07-12-Ordonomik">Ordonomik</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_International/README">International Economics</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle navigation of International Economics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-04-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-04-20-Start">Start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-04-27-Labour">Labour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-05-04-RicardoModel">RicardoModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-05-11-Specific-Factor">Specific Factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-06-01-Heckscher">Heckscher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-06-15-Standard-Trade">Standard Trade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-06-22-Economies-of-Scale">Economies of Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-07-05-Trade-Policy">Trade Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-07-12-Political-Economy">Political Economy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-07-13-Developing-Countries">Developing Countries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_International/2023-07-20-Controversies">Controversies</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Makro2/README">Makroökonomik II</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle navigation of Makroökonomik II</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-00-Zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-13-Firm">Firm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-14-Labour">Labour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-27-Banks">27.04.2023 Banks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-27-Banks#credit-demand-of-private-sector-i-l-d-bar-i-a-r-equilibrium-overbrace-frac-tau-e-var-v-r-r-p-supply-overbrace-bar-i-a-r-demand-solve-for-r-r-frac-tau-e-var-v-a-frac-r-p-tau-e-var-v-bar-i-leads-to-r-frac-frac-r-p-tau-e-var-v-bar-i-frac-tau-e-var-v-a">credit demand of private sector
+$<span class="math notranslate nohighlight">\(
+I = L^D = \bar{I} - a * r
+\)</span><span class="math notranslate nohighlight">\(
+Equilibrium: 
+\)</span><span class="math notranslate nohighlight">\(
+\overbrace{\frac{\tau e}{var (v)} * (r-r^p)}^{Supply} =
+\overbrace{\bar{I}-a*r}^{Demand}
+\)</span><span class="math notranslate nohighlight">\(
+solve for r
+\)</span><span class="math notranslate nohighlight">\(
+r [\frac{\tau e}{var (v)}+a] = \frac{r^p \tau e}{var(v)}+ \bar{I} \\
+\)</span><span class="math notranslate nohighlight">\(
+leads to:
+\)</span>$
+r = \frac
+{\frac{r^p \tau e}{var(v)}+ \bar{I}}
+{\frac{\tau e}{var (v)}+a}</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-28-BanksII">28.04.2023 Banks II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-04-28-BanksII#solve-for-r-r-frac-tau-e-var-v-a-frac-r-p-tau-e-var-v-bar-i-leads-to-r-frac-frac-r-p-tau-e-var-v-bar-i-frac-tau-e-var-v-a">solve for r
+$<span class="math notranslate nohighlight">\(
+r [\frac{\tau e}{var (v)}+a] = \frac{r^p \tau e}{var(v)}+ \bar{I} \\
+\)</span><span class="math notranslate nohighlight">\(
+leads to:
+\)</span>$
+r = \frac
+{\frac{r^p \tau e}{var(v)}+ \bar{I}}
+{\frac{\tau e}{var (v)}+a}</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-05-04-BanksIII">BanksIII</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-05-08-Fluctuations">Fluctuations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-05-24-Fiscal">Fiscal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-05-26-Stylized-Facts">Stylized Facts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-06-07-Debt">Debt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-06-21-Inflation">Inflation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial-Revision">Tutorial Revision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial1">Tutorial1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial2">Tutorial2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial3">Tutorial3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial4">Tutorial4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial5">Tutorial5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Makro2/2023-08-00-Tutorial6">Tutorial6</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_SoEco/README">Sozial-Ökologische Systeme</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle navigation of Sozial-Ökologische Systeme</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-04-17-Einfuehrung">Einfuehrung</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-04-24-System">System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-05-15-Lever">Lever</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-05-22-Food-System">Food System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-05-27-Resource">Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/2023-06-26-Climate-Models">Climate Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/Vortrag">Allgemein</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/Vortrag#geschichte">Geschichte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/Vortrag#kritik">Kritik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/Vortrag#alternative">Alternative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_SoEco/Vortrag#diskussionfragen">Diskussionfragen</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="README">Wirtschaftspolitik</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle navigation of Wirtschaftspolitik</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Lesenotizen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-04-20-Start">Start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-04-27-Rationale">Rationale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-05-04-Marktversagen">Marktversagen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-05-11-Makro">Makro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-05-25-Inflation">Inflation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-06-01-Konjunktur">Konjunktur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-06-08-Institutionen">Institutionen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-07-06-Wohlfahrt">Wohlfahrt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2023-07-14-Wohlfahrt-II">Wohlfahrt II</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../vwl5/README">V. Semester</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle navigation of V. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl5/VL_EconHistory/README">Economic History</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle navigation of Economic History</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_EconHistory/2023-12-11-Vortrag">Vortrag</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/README">Zivilrecht</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle navigation of Zivilrecht</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-10-17-Intro">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-10-24-Vertrag">Vertrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-10-27-AGB">AGB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-11-05-Privatautonomie">Privatautonomie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-11-10-Vertragsende">Vertragsende</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-11-17-Schadensersatz">Schadensersatz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung">Gewaehrleistung</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl5/VL_Empirical/README">Empirical Economics</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle navigation of Empirical Economics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-10-12-Intro">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-10-19-Stats">Stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-10-26-Regression">Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-11-06-Datasets">Datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-11-09-Presentation">Presentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-11-16-TimeSeries">TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Empirical/2023-11-23-IV">IV</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl5/VL_Feminist/README">Feminist Economics</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle navigation of Feminist Economics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-10-09-Intro">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-10-16-Divison-Labor">Divison Labor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-10-23-Reproduction">Reproduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-06-Care">Care</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-06-Household">Household</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-10-Ecofeminist">Ecofeminist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-11-Transformation">11.11.2023 Transformation of the Economy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-11-Transformation#id1">Buen vivir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_Feminist/2023-11-20-Labour-Market">Labour Market</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../vwl5/VL_PublicEcon/README">Public Economics</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" role="switch" type="checkbox"/><label for="toctree-checkbox-34"><div class="visually-hidden">Toggle navigation of Public Economics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-10-11-Intro">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-10-18-Tools">Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-10-25-Tools2">Tools2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-11-06-Externalities">Externalities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-11-08-Public-Goods">Public Goods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-11-15-Cost-Benefit">Cost Benefit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-11-22-Climate">Climate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-11-29-Information">Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../vwl5/VL_PublicEcon/2023-12-06-Inequality">Inequality</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="lesenotizen">
+<h1>Lesenotizen<a class="headerlink" href="#lesenotizen" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#_lesenotizen"><span class="xref myst">Lesenotizen</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#_2a-digitale-macht"><span class="xref myst">2a) Digitale Macht</span></a></p></li>
+<li><p><a class="reference internal" href="#_2b-kartellrecht-digital"><span class="xref myst">2b) Kartellrecht digital</span></a></p></li>
+<li><p><a class="reference internal" href="#_3a-ezb-in-der-krise"><span class="xref myst">3a) EZB in der Krise</span></a></p></li>
+<li><p><a class="reference internal" href="#_3b-haushaltspezifische-inflationsraten"><span class="xref myst">3b) Haushaltspezifische Inflationsraten</span></a></p></li>
+<li><p><a class="reference internal" href="#_3c-kann-ezb-inflation-eind%C3%A4mmen"><span class="xref myst">3c) Kann EZB Inflation eindämmen?</span></a></p></li>
+<li><p><a class="reference internal" href="#_4a-deindustrialisierung"><span class="xref myst">4a) Deindustrialisierung</span></a></p></li>
+<li><p><a class="reference internal" href="#_4b-green-economy"><span class="xref myst">4b) Green Economy</span></a></p></li>
+<li><p><a class="reference internal" href="#_5a-klimageld"><span class="xref myst">5a) Klimageld</span></a></p></li>
+<li><p><a class="reference internal" href="#_5b-nachhaltige-soziale-marktwirtschaft"><span class="xref myst">5b) nachhaltige Soziale Marktwirtschaft</span></a></p></li>
+<li><p><a class="reference internal" href="#_5c-einkommens%C3%A4nderung-umweltauswirkungen"><span class="xref myst">5c) Einkommensänderung - Umweltauswirkungen</span></a></p></li>
+<li><p><a class="reference internal" href="#_6a-fff-und-politischer-wandel"><span class="xref myst">6a) FFF und politischer Wandel</span></a></p></li>
+<li><p><a class="reference internal" href="#_6b-gr%C3%BCne-regierungen"><span class="xref myst">6b) grüne Regierungen</span></a></p></li>
+<li><p><a class="reference internal" href="#_6c-kohle-lobbyismus"><span class="xref myst">6c) Kohle Lobbyismus</span></a></p></li>
+</ul>
+</li>
+</ul>
+<section id="a-digitale-macht">
+<h2>2a) Digitale Macht<a class="headerlink" href="#a-digitale-macht" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Big Data als Geschäftsmodell: Wie mit der Macht der Internetfirmen umgehen?&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Katarina</span> <span class="n">Barley</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2018</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Verschwimmung online-offline</p></li>
+<li><p>Alle industriellen Revolutionen - wie umgehen?
+=&gt; staatliche Aufabe = Gestaltung + Folgenschätzung</p></li>
+</ul>
+<section id="zustand">
+<h3>Zustand<a class="headerlink" href="#zustand" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>starke Dependenz auf Digitalplattformen</p>
+<ul>
+<li><p>GDP-Benefit = 17500$ Suchaschinen</p></li>
+</ul>
+</li>
+<li><p>Potenzial für Gesellschaft</p></li>
+<li><p>aber Bedrohund Diskurs durch Tracking</p></li>
+<li><p>Diskriminierung aufgrund Bias</p></li>
+</ul>
+</section>
+<section id="forderung">
+<h3>Forderung<a class="headerlink" href="#forderung" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Überprüfbarkeit von Algorithmen</p></li>
+<li><p>Mithilfe Transparenz</p></li>
+<li><p>Entscheidungsschwach bei Usern über Ausmaß Digitalisierung</p>
+<ul>
+<li><p>Selbstbestimmung</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="b-kartellrecht-digital">
+<h2>2b) Kartellrecht digital<a class="headerlink" href="#b-kartellrecht-digital" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;KOnzernmacht in der Digitalen Welt&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="s2">&quot;Kampagne Konzernmacht beschränken&quot;</span>
+<span class="n">date</span><span class="p">:</span> <span class="n">Dez</span> <span class="mi">2018</span>
+</pre></div>
+</div>
+<section id="id1">
+<h3>Zustand<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>soziale Ungleichheit durch Digitalisierung</p>
+<ul>
+<li><p>Verschiebung Arbeit + Kapital</p></li>
+</ul>
+</li>
+<li><p>entfesselter Wettbewerb</p></li>
+<li><p>Negative Folgen insbesondere. Schwellenländer</p></li>
+</ul>
+<section id="daten-als-rohstoff">
+<h4>Daten als Rohstoff<a class="headerlink" href="#daten-als-rohstoff" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Daten = Rohstoff neuer Ökonomie</p></li>
+<li><p>Auswertung über Persönlichkeit etc</p></li>
+<li><p>Unzureichende Infos</p></li>
+</ul>
+<p>Vorteile Großunternehmen:</p>
+<ul class="simple">
+<li><p>Datenvorpsrung</p></li>
+<li><p>Netzwerk Effekte</p></li>
+<li><p>Kombination von Diensten</p></li>
+</ul>
+<p>=&gt; Gatekeeper</p>
+<p>Problem:</p>
+<ul class="simple">
+<li><p>Erfassung großer Unternehmen</p></li>
+<li><p>keine Wettbewerbstheorien</p></li>
+<li><p>Kartellrecht: Monopole nicht verboten</p></li>
+</ul>
+<p>Folge: Monopoelisierung</p>
+<ul class="simple">
+<li><p>auf Angebot + Nachfrageseite</p></li>
+<li><p>Demokratiegefahr</p></li>
+</ul>
+</section>
+<section id="intransparente-algorithmen">
+<h4>intransparente Algorithmen<a class="headerlink" href="#intransparente-algorithmen" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Geheimhaltung von Algo</p></li>
+<li><p>Potenzial der Manipulation</p>
+<ul>
+<li><p>Bspw. Suchmaschinen</p></li>
+<li><p>Emotionalität gefördert</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="forderungen">
+<h3>Forderungen<a class="headerlink" href="#forderungen" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>stärkeres Kartellrecht</p>
+<ul>
+<li><p>für Schutz der Demokratie</p></li>
+</ul>
+</li>
+<li><p>Einschränkung Akquisitionen</p></li>
+</ul>
+<p>Kartellrecht Anpassungen:</p>
+<ul class="simple">
+<li><p>Ansatz überdenken, dass Monopole erlaubt sind</p>
+<ul>
+<li><p>nur Konsumentenwohlfahrt relevant</p></li>
+<li><p>Reduziert auf Preise</p></li>
+</ul>
+</li>
+<li><p>Missbrauch untersuchen</p>
+<ul>
+<li><p>Mittelaufstockung für Behörde</p></li>
+</ul>
+</li>
+<li><p>Sektoruntersuchungen</p></li>
+<li><p>Kopplungsverbot</p></li>
+<li><p>Selbtsbevorzugungsverbot</p></li>
+<li><p>Datenschutzaspekt stärken</p>
+<ul>
+<li><p>Bei Untersuchtung Marktstellung</p></li>
+<li><p>Bei Fusionen</p></li>
+</ul>
+</li>
+<li><p>Vorsorgeprinzip bei Fusionen</p></li>
+</ul>
+<p>Zusätzlich:</p>
+<ul class="simple">
+<li><p>Datenschutz stärken</p></li>
+<li><p>Algorithmentransparenz</p></li>
+</ul>
+<p>=&gt; soziale Marktwirtschaft im digitalen Zeitalter</p>
+<p>Transformation mitdenken!</p>
+</section>
+</section>
+<section id="a-ezb-in-der-krise">
+<h2>3a) EZB in der Krise<a class="headerlink" href="#a-ezb-in-der-krise" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Die Europäische Zentralbank und ihre Rolle in der Krise&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Peter</span> <span class="n">Becker</span> <span class="n">et</span> <span class="n">al</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2020</span>
+</pre></div>
+</div>
+<section id="ezb-aufbau">
+<h3>EZB Aufbau<a class="headerlink" href="#ezb-aufbau" title="Link to this heading">#</a></h3>
+<p>Aufgaben</p>
+<ul class="simple">
+<li><p>einheitliche Geldpolitik Euroraum</p></li>
+<li><p>Preisstabilität</p></li>
+</ul>
+<p>Aufbau</p>
+<ul class="simple">
+<li><p>Direktorium (6 unabhängige)</p></li>
+<li><p>EZB-Rat (Dir. + nationale Zentralbankchefs)</p></li>
+</ul>
+<p><img alt="img" src="../../_images/2023-05-02_15-14-18.jpg" /></p>
+<ul class="simple">
+<li><p>Entschiedungsprozesse im Konsens!</p></li>
+<li><p>aber keine Lähmung, da im Notfall Mehrheitsregel</p></li>
+</ul>
+<p>Unabhängigkeit: (da effektivere Zieldurchsetzung)</p>
+<ul class="simple">
+<li><p>politische / institutionelle U.</p></li>
+<li><p>Funktionelle U. (Eigene Zielsetzung von 2%)</p></li>
+<li><p>Persönliche U. (keine Amtsenthebung, einmalig)</p></li>
+<li><p>Finanzielle U. (eigenes Kapital)</p></li>
+<li><p>Rechtliche U. (vor EuGH bspw.)</p></li>
+</ul>
+</section>
+<section id="instrumente">
+<h3>Instrumente<a class="headerlink" href="#instrumente" title="Link to this heading">#</a></h3>
+<p>bis Krise: Leitzinsfestsetzung (unkritisch)</p>
+<p>Danach: Erweiterung der Instrumente da Untergrenze erreicht</p>
+<ul class="simple">
+<li><p>Liquiditätsausweitung insbesondere durch Offenmarktgeschäfte</p></li>
+<li><p>Ankauf Staatsanleihen</p></li>
+</ul>
+<p>=&gt; einzige Institution, die Euro gerettet hat</p>
+</section>
+<section id="kritik-an-ezb">
+<h3>Kritik an EZB<a class="headerlink" href="#kritik-an-ezb" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Mandat</p>
+<ul>
+<li><p>Überschreitung des Kompetenzbereichs</p></li>
+<li><p>durch OMT (Offenmarktgechäfte) = Staatsfinanzierung</p></li>
+<li><p>BVerfG- Urteil</p></li>
+</ul>
+</li>
+<li><p>Geldpolitischer Kurs</p>
+<ul>
+<li><p>Niedrigzins = Sparenteignung</p></li>
+<li><p>Deutschland profitiert nicht davon</p></li>
+</ul>
+</li>
+<li><p>Leigitimation</p>
+<ul>
+<li><p>Technokraten mit politischer Führungsrolle</p></li>
+<li><p>insbesondere bei Troika</p></li>
+<li><p>Exekutive übernimmt Handlungen</p></li>
+</ul>
+</li>
+</ul>
+<p>Problem der EZB:</p>
+<ul class="simple">
+<li><p>sie ist einziger Akteur, der wirklich den Euro rettet</p></li>
+<li><p>fehlende Fiskalpolitik der Mitgliedsstaaten</p></li>
+<li><p>keine Alternativen</p></li>
+<li><p>und sie macht inzwischen viel Outreach</p></li>
+</ul>
+<p>=&gt; institutionelle Architektur der Eurozone muss sich weiterentwickeln!</p>
+</section>
+</section>
+<section id="b-haushaltspezifische-inflationsraten">
+<h2>3b) Haushaltspezifische Inflationsraten<a class="headerlink" href="#b-haushaltspezifische-inflationsraten" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;IMK Policy Brief: Haushaltsspezifische Teuerungsraten&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Silke</span> <span class="n">Tober</span>
+<span class="n">date</span><span class="p">:</span> <span class="n">Jan</span> <span class="mi">2022</span>
+</pre></div>
+</div>
+<p>Haushalte = markante Unterschiede in individueller Inflation</p>
+<ul class="simple">
+<li><p>je nach Haushaltstyp und Einkommen</p>
+<ul>
+<li><p>PKW-Fortbewegung vs Bahn</p></li>
+<li><p>Heizöl vs Strom/Gas Heizung</p></li>
+<li><p>Anzahl Kinder / Menschen im Haushalt</p></li>
+</ul>
+</li>
+<li><p>Berechnug anhand Einkommens/Verbraucherstichprobe Destatis</p></li>
+</ul>
+<p><img alt="img" src="../../_images/2023-05-02_15-35-33.jpg" /></p>
+<p>Ergebnisse</p>
+<ul class="simple">
+<li><p>höchste Inflation: Paar mit mittlerem Einkommen, 2 Kinder</p></li>
+<li><p>aber: geringe Einkommen nicht so stark</p>
+<ul>
+<li><p>da sich PKW überhaupt nicht leisten können etc.</p></li>
+<li><p>aber Preisanstieg Lebensmittel + Energie = schwer substituierbar</p></li>
+<li><p>Hartz IV = Stromkosten werden nicht übernommen</p></li>
+</ul>
+</li>
+</ul>
+<p>Gründe:</p>
+<ul class="simple">
+<li><p>starker Anstieg Energiepreise</p>
+<ul>
+<li><p>Kraftstoffe</p></li>
+<li><p>Haushaltsenergie</p></li>
+<li><p>indiriekt dadurch Nahrungsmittel</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="c-kann-ezb-inflation-eindammen">
+<h2>3c) Kann EZB Inflation eindämmen?<a class="headerlink" href="#c-kann-ezb-inflation-eindammen" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Kann die EZB die Inflation eindämmen&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="s2">&quot;Bundeszentrale für politische Bildung&quot;</span>
+<span class="n">date</span><span class="p">:</span> <span class="n">Jan</span> <span class="mi">2023</span>
+</pre></div>
+</div>
+<section id="ja-peter-bofinger">
+<h3>Ja - Peter Bofinger<a class="headerlink" href="#ja-peter-bofinger" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Inflation ist nicht EZB-verursacht</p>
+<ul>
+<li><p>nciht aufgrund Geldschwemme</p></li>
+<li><p>Nachfrage = unter Vorkrisenniveau</p></li>
+</ul>
+</li>
+<li><p>kolelktive Fehleinschätzung aller</p></li>
+</ul>
+<p>Aktion der EZB:</p>
+<ul class="simple">
+<li><p>Aktiv sein</p></li>
+<li><p>Erwartungen nicht verfestigen</p>
+<ul>
+<li><p>Kerninflationsanstieg bekämpfen</p></li>
+</ul>
+</li>
+<li><p>EZB = extreme Zinserhöhungen im letzten Jahr</p></li>
+<li><p>zwar späte Reaktion, aber mit langem Atem reicht es aus</p>
+<ul>
+<li><p>insbesondere Abflauen Energiepreise</p></li>
+</ul>
+</li>
+</ul>
+<p>Problem:</p>
+<ul class="simple">
+<li><p>Entscheidung zw. Wirtschaftseinbruch und hoher Inflation</p></li>
+<li><p>Lohnentwicklung kommt erst noch</p></li>
+</ul>
+</section>
+<section id="nein-thomas-mayer">
+<h3>Nein - Thomas Mayer<a class="headerlink" href="#nein-thomas-mayer" title="Link to this heading">#</a></h3>
+<p>also im Prinzip ja aber nein</p>
+<ul class="simple">
+<li><p>Inflation = Monetaristisch</p></li>
+<li><p>und aufgrund Überhang Geldnachfrage verursacht</p>
+<ul>
+<li><p>Überhang Geldangebot</p></li>
+</ul>
+</li>
+<li><p>komisches Beispiel um das ganze zu veranschaulichen… (Motor)</p></li>
+</ul>
+<p>Lösung:</p>
+<ul class="simple">
+<li><p>neben den Zinserhöhungen</p></li>
+<li><p>Anleiheverkäufe der Staaten</p></li>
+</ul>
+<p>aber:</p>
+<ul class="simple">
+<li><p>Staaten haben hohe Schuldenquoten</p></li>
+<li><p>keine Möglichkeit, höhere Zinsen zu zahlen</p></li>
+<li><p>Furcht vor Anstieg der Arbeitslosigkeit</p></li>
+<li><p>„dumme Politiker“ die Fiskalpolitik machen</p></li>
+</ul>
+</section>
+</section>
+<section id="a-deindustrialisierung">
+<h2>4a) Deindustrialisierung<a class="headerlink" href="#a-deindustrialisierung" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="n">Deindustrialisierung</span><span class="p">,</span> <span class="n">Transformation</span> <span class="n">und</span> <span class="n">eine</span> <span class="n">moderne</span> <span class="n">Industriepolitik</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Arno</span> <span class="n">Brandt</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2022</span>
+</pre></div>
+</div>
+<p>Stand:</p>
+<ul class="simple">
+<li><p>Anteil verarbeitendes Gewerbe = Rückgang in modernen Volkswirtschaften</p></li>
+<li><p>hohe Energiepreise = Belastung für Industrie</p></li>
+</ul>
+<p>Analyse:</p>
+<ul class="simple">
+<li><p>Unterscheidung kurz/mittel/langfristig</p></li>
+<li><p>Stabilisierung der Energiepreise kurzfristig von BReg</p>
+<ul>
+<li><p>mittelfristige Stabilität verbessert</p></li>
+<li><p>Erleichtert zukünftige Anpsasungsleistungen</p></li>
+</ul>
+</li>
+<li><p>Grüne Transformation = neue Anpassung</p>
+<ul>
+<li><p>Dekarbonisierung der Industrie</p></li>
+<li><p>Problem = Pfadabhängigkeiten</p></li>
+<li><p>Märkte = keine Rettung dann</p></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; neue Struktur / Industriepolitik</p>
+<ul class="simple">
+<li><p>gesellschaftliche Ziele</p></li>
+<li><p>Missionsorientierte Politik (nach Mazzucato)</p></li>
+<li><p>Neubestimmung Verhätlnis Staat / Markt</p></li>
+<li><p>nicht kurzfristig denken</p></li>
+</ul>
+<p>Vergleich zu USA / China</p>
+<ul class="simple">
+<li><p>beide inzischen aktive Industriepolitik</p>
+<ul>
+<li><p>Made in China 2025</p></li>
+<li><p>Investment Reduction Act</p></li>
+</ul>
+</li>
+<li><p>beide protektionistisch</p></li>
+<li><p>China = strategische Ausrichtung</p>
+<ul>
+<li><p>Subventionen für Solarindustrie</p></li>
+</ul>
+</li>
+</ul>
+<p>Reaktion der EU</p>
+<ul class="simple">
+<li><p>gegen Protektionismus</p></li>
+<li><p>Diversifikation Absatzmärkte</p></li>
+<li><p>Großprojekte</p></li>
+<li><p>Digital und Ökologische Transformation vereinen</p>
+<ul>
+<li><p>wie im NextGen Programm der EU</p></li>
+</ul>
+</li>
+<li><p>nicht nur Innovation, auch sozialtransformation</p></li>
+</ul>
+</section>
+<section id="b-green-economy">
+<h2>4b) Green Economy<a class="headerlink" href="#b-green-economy" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Übergang in eine Green Economy: Systemische Hemmnisse und praktische Lösungsansätze&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Elke</span> <span class="n">Örtl</span><span class="p">,</span> <span class="n">Umweltbundesamt</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2017</span>
+</pre></div>
+</div>
+<p>Was braucht es für den Übergang in eine Green Economy?</p>
+<section id="herausforderungen-auf-globaler-ebene">
+<h3>Herausforderungen auf globaler Ebene<a class="headerlink" href="#herausforderungen-auf-globaler-ebene" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>planetare Grenzen = absolut</p>
+<ul>
+<li><p>begrenzte Menge an CO2-Senken, Fläche, …</p></li>
+<li><p>bei wachsender Weltbevölkerung</p></li>
+</ul>
+</li>
+<li><p>Klimawandel</p>
+<ul>
+<li><p>besondere Grenze der Aufnahmefähigkeit der Atmosphäre</p></li>
+<li><p>zivilisatorische Grenze jetzt Emission, nicht Verfügbarkeit Öl</p></li>
+<li><p>Pariser Abkommen = globale Vereinbarung</p></li>
+</ul>
+</li>
+<li><p>Urbanisierung</p>
+<ul>
+<li><p>Mehrheit der Menschen = Konzentration in Stadt</p></li>
+<li><p>gleichwertige Lebensverhältnisse</p></li>
+<li><p>Probleme: Ressourcen, Abwasser, Versorgung</p></li>
+</ul>
+</li>
+<li><p>Rohstoffverbrauch</p>
+<ul>
+<li><p>Gesamtes Periodensystem</p></li>
+<li><p>wenig Recycling</p></li>
+</ul>
+</li>
+<li><p>Reboundeffekt gegen Effizienz</p>
+<ul>
+<li><p>keine Entkopplung</p></li>
+<li><p>trotz Effizienz Anstieg des absoluten Ressourcenverbrauchs</p></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; Grenzen sind absilut, Menschliches Verhalten ist nicht angepasst</p>
+</section>
+<section id="auswirkungen-auf-energie-und-rohstoffwirtschaft">
+<h3>Auswirkungen auf Energie und Rohstoffwirtschaft<a class="headerlink" href="#auswirkungen-auf-energie-und-rohstoffwirtschaft" title="Link to this heading">#</a></h3>
+<p>Interdependenz zwischen beiden</p>
+<p>notwenidige Änderungen:</p>
+<ul class="simple">
+<li><p>Energiewende (20% des Endenergiebedarfes)</p>
+<ul>
+<li><p>Energieversorgung muss <em>vollständig</em> dekarbonisiert werden</p></li>
+<li><p>alles aus regenerativem Strom mit anschließender Umwanldung (Power to X)</p></li>
+<li><p>Problem: Fluktuation</p>
+<ul>
+<li><p>aber eurpäisches Verbundnetz</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Verkehrswende (30% Endenergiebedarfs)</p>
+<ul>
+<li><p>ÖPNV</p></li>
+<li><p>Elektrisierung des Verkehrs</p></li>
+<li><p>Schiffverkehr = nur über Treibstoffe aus regenerativen Quellen</p></li>
+</ul>
+</li>
+<li><p>Wärmewende (50% des Endenergiebedarfs)</p>
+<ul>
+<li><p>Wärmepumpen für kleinere Häuser</p></li>
+<li><p>Fernwärme für größere</p></li>
+</ul>
+</li>
+</ul>
+<p>Bemerkungen:</p>
+<ul class="simple">
+<li><p>Kohleausstieg unvermeidbar</p></li>
+<li><p>CCS nicht für fossile Brennstoffe sondern Biomasse</p></li>
+<li><p>Power to X sehr relevant</p></li>
+<li><p>Abfallverbrennung als Großkraftwerke</p>
+<ul>
+<li><p>Grundlast / Reservefähig</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="konsequenzen-fur-recycling-und-entsorgung">
+<h3>Konsequenzen für Recycling und Entsorgung<a class="headerlink" href="#konsequenzen-fur-recycling-und-entsorgung" title="Link to this heading">#</a></h3>
+<p>Neue Recycling:</p>
+<ul class="simple">
+<li><p>Ausweitung der Rohstoffe  (bisher Glas, Papier etc.)</p></li>
+<li><p>auf Seltene Erden, Lithium …</p></li>
+<li><p>auf globaler Ebene</p></li>
+</ul>
+<p>Problem:</p>
+<ul class="simple">
+<li><p>keine weltweiten Sammelsysteme</p></li>
+<li><p>Dissipation (geringere Konzentration)</p></li>
+<li><p>hochwertigeres Recycling</p></li>
+</ul>
+<p>Klärschlamm</p>
+<ul class="simple">
+<li><p>Abfallprodukt aus Kläranlage</p></li>
+<li><p>Möglichkeit zur Wiederverwertung</p>
+<ul>
+<li><p>insbesondere angesammelter Phosphor (endlicher Rohstoff)</p></li>
+<li><p>in thermischer Verarbeitung</p></li>
+</ul>
+</li>
+<li><p>außerdem: neue Stoffströme aus neuen Industrien</p></li>
+<li><p>Recycling / Verbrennung schließen sich nciht aus</p></li>
+</ul>
+</section>
+<section id="vision">
+<h3>Vision<a class="headerlink" href="#vision" title="Link to this heading">#</a></h3>
+<p>für globale Herausforderungen = globale Lösungen</p>
+<ul class="simple">
+<li><p>Energiewende + Rohstoffwende</p>
+<ul>
+<li><p>Bedingen einander</p></li>
+<li><p>sind notwendig, aber nciht hinreichend</p></li>
+</ul>
+</li>
+<li><p>aktive Gestaltung des Strukturwandels</p>
+<ul>
+<li><p>auch Technologieoffenheit (aber strategisch eingesetzt)</p></li>
+</ul>
+</li>
+<li><p>Städte = neue Industriestandorte</p>
+<ul>
+<li><p>aufgrund standortnahen Recyclings</p></li>
+</ul>
+</li>
+<li><p>über Wachstum nachdenken</p>
+<ul>
+<li><p>was soll wachsen, was soll schrumpfen?</p></li>
+</ul>
+</li>
+</ul>
+<p>=&gt; wir brauchen eine Green Economy</p>
+</section>
+</section>
+<section id="a-klimageld">
+<h2>5a) Klimageld<a class="headerlink" href="#a-klimageld" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Hohe Zustimmung für Klimageld – vor allem bei Personen mit großen Sorgen um die eigene wirtschaftliche Situation&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">DIW</span> <span class="n">Aktuell</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2022</span>
+</pre></div>
+</div>
+<p>Zahlung aus CO2-Steuereinnahmen an jeden Bürger</p>
+<ul class="simple">
+<li><p>für Sozialausgleich von Klimapolitik</p></li>
+<li><p>verteilungspolitisch sinnvoll</p></li>
+</ul>
+<p>Studie zu Akzeptanz von Klimageld</p>
+<ul class="simple">
+<li><p>Methodik: repräsentative Befragung zu 7 verschiedenen Methoden</p></li>
+<li><p>höchste Zustimmung: Klimageld (drei Viertel) und Pendlerpauschale</p>
+<ul>
+<li><p>Insbesondere bei Geringverdienern</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="img" src="../../_images/2023-05-02_18-04-34.jpg" /></p>
+<p>Soziodemografische Faktoren dabei</p>
+<p><img alt="img" src="../../_images/2023-05-02_18-05-41.jpg" /></p>
+</section>
+<section id="b-nachhaltige-soziale-marktwirtschaft">
+<h2>5b) nachhaltige Soziale Marktwirtschaft<a class="headerlink" href="#b-nachhaltige-soziale-marktwirtschaft" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Ökologische Transformation fair gestalten: Die soziale Frage ist keine Nebensache&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Daniel</span> <span class="n">Posch</span><span class="p">,</span> <span class="n">Bertelsmann</span> <span class="n">Stiftung</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2023</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Wohlstand für alle innerhalb planetarer Grenzen</p>
+</div></blockquote>
+<p>Zustand:</p>
+<ul class="simple">
+<li><p>Klimawandel verschärft Ungleichheit</p></li>
+<li><p>zwischen Ländern (Norden Süden)</p></li>
+<li><p>aber auch innerhalb Land zw. Einkommensgruppen</p></li>
+<li><p>Einkommensdezil = starker Zusammenhang</p>
+<ul>
+<li><p>Betroffenheit von CC</p></li>
+<li><p>und Beitrag zu CC</p></li>
+</ul>
+</li>
+</ul>
+<p>Ungleichheit = Emissionstreiber, da</p>
+<ol class="arabic simple">
+<li><p>Conspicuous Consumption von Mittelschicht = schädigend</p></li>
+<li><p>keine Mittelschicht = keine weite Verbreitung von Innovation</p></li>
+<li><p>politische Einflussnahme Reicher gegen Schutz</p></li>
+<li><p>Vermögenswerte Reicher Menschen = emissionsintensiv</p></li>
+</ol>
+<p><img alt="img" src="../../_images/2023-05-02_18-17-14.jpg" /></p>
+<section id="ungleiche-beitrag">
+<h3>ungleiche Beitrag<a class="headerlink" href="#ungleiche-beitrag" title="Link to this heading">#</a></h3>
+<p>Verteilung der GHG-Emissionen</p>
+<ul class="simple">
+<li><p>Global: Nord-Süd Verhältnis</p>
+<ul>
+<li><p>Industrienationen = historische Emissionen akkumuliert</p></li>
+</ul>
+</li>
+<li><p>Deutschland: Reich-Arm</p>
+<ul>
+<li><p>trotz sinkenden Emissionen (verdeckt)</p></li>
+<li><p>Emissionen konzentrieren sich an Spitze</p></li>
+<li><p>stärkere Reduktion bei ärmeren</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="img" src="../../_images/2023-05-02_18-23-20.jpg" /></p>
+</section>
+<section id="betroffenheit-und-ungleichheit">
+<h3>Betroffenheit und Ungleichheit<a class="headerlink" href="#betroffenheit-und-ungleichheit" title="Link to this heading">#</a></h3>
+<p>niedrigere Einkommen = stärker betroffen</p>
+<ul class="simple">
+<li><p>höhere Exposition</p>
+<ul>
+<li><p>öfter in Regionen mit Starkwetterereignissen (auch DE)</p></li>
+<li><p>schlechtere Gebäude</p></li>
+</ul>
+</li>
+<li><p>Niedrigere Bewältigungskapazität</p>
+<ul>
+<li><p>Preissteigerungen</p></li>
+<li><p>kein Geld für Anpassungen</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="konsequenzen-fur-klimapolitik">
+<h3>Konsequenzen für Klimapolitik<a class="headerlink" href="#konsequenzen-fur-klimapolitik" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>kann regressive Verteilungswirkung haben</p>
+<ul>
+<li><p>muss aber nicht!</p></li>
+<li><p>insbesondere CO2 Preis = regressiv</p></li>
+<li><p>stärkere Belastung unterer Einkommen bei Energie</p></li>
+</ul>
+</li>
+<li><p>Muss sozial abgefedert werden</p>
+<ul>
+<li><p>beispielsweise über Klimagled</p></li>
+</ul>
+</li>
+<li><p>in Kombination mit Investitionen</p>
+<ul>
+<li><p>insbesondere öffentlich</p></li>
+<li><p>Fördermittel für Wärmewende</p></li>
+</ul>
+</li>
+</ul>
+<p>mögliches Instrument: <em>Klimasoli</em></p>
+<blockquote>
+<div><p><strong>Klimasoli:</strong> zweckgebundene Form der progressiven Besteuerung hoher Einkommen und Vermögen gepaart mit einer Nutzungsabgabe auf ausgewählte (besonders) energieintensive Konsumkategorien” (Posch, 2023, p. 8)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>stark bei oberen Einkommensgruppen</p></li>
+<li><p>Reduzierung Luxusemissionen</p></li>
+<li><p>Verteilung der sozialgerechten Transformationlast</p></li>
+</ul>
+<p>außerdem: Klimakreditkarte</p>
+<blockquote>
+<div><p><strong>Klimakreditkarte:</strong> subventionierter Bezug vordefinierter Menge an lebenswichtigen Gütern</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>für einkommenschwache</p></li>
+<li><p>nach Subventionsmenge = Marktpreis</p></li>
+<li><p>wie Gaspreisbremse? (nur ohne Begrenzung auf Gruppen)</p></li>
+</ul>
+</section>
+</section>
+<section id="c-einkommensanderung-umweltauswirkungen">
+<h2>5c) Einkommensänderung - Umweltauswirkungen<a class="headerlink" href="#c-einkommensanderung-umweltauswirkungen" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="n">Wirkungen</span> <span class="n">veränderter</span> <span class="n">Einkommen</span> <span class="n">auf</span> <span class="n">den</span> <span class="n">Ressourcenverbrauch</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Lea</span> <span class="n">Elsemann</span><span class="p">,</span> <span class="n">Umweltbundesamt</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2021</span>
+</pre></div>
+</div>
+<p>Treiber von stärkerer Umweltbelastung:</p>
+<ul class="simple">
+<li><p>Einkommen</p></li>
+<li><p>Landnutzung</p></li>
+<li><p>Bildungsabschluss (aber nicht welche Richtung)</p></li>
+<li><p>Wohnortgröße (negativer Zusammenhang)</p>
+<ul>
+<li><p>Menschen in Großstädten weniger als auf Land</p></li>
+</ul>
+</li>
+<li><p>Alter (negaitver Z.)</p></li>
+</ul>
+<p>Fazit:</p>
+<ul class="simple">
+<li><p>Einkommen = zentraler Treiber Ressourcenverbrauch</p>
+<ul>
+<li><p>vor allem wegen Mobilität</p></li>
+<li><p>und mehr Wohnfläche</p></li>
+</ul>
+</li>
+<li><p>keine Entkopplung</p></li>
+<li><p>höhere Bildung = mehr Mobilität = mehr Verbrauch</p></li>
+<li><p>Alter</p>
+<ul>
+<li><p>mehr Ressourcen Wohnen</p></li>
+<li><p>weniger Ressourcen Mobilität</p></li>
+</ul>
+</li>
+<li><p>Stadt = weniger</p></li>
+</ul>
+<p>=&gt; Umwelt Kuznets Kurve = nicht empirisch belegt</p>
+<ul class="simple">
+<li><p>Ordnungspolitik statt Informationskampagnen</p></li>
+<li><p>Fokus: Mobilität dekarbonisieren</p>
+<ul>
+<li><p>Anreizsysteme (möglicherweise progressiv)</p></li>
+</ul>
+</li>
+<li><p>außerdem: Wohnen</p>
+<ul>
+<li><p>Wohnflächen redutzieren / effizienter nutzen</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="a-fff-und-politischer-wandel">
+<h2>6a) FFF und politischer Wandel<a class="headerlink" href="#a-fff-und-politischer-wandel" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Die grüne Transformation in Wirtschaft und Politik – wo liegen Chancen und Risiken?&quot;</span>
+<span class="n">subtitle</span><span class="p">:</span> <span class="s2">&quot;Trägt die Fridays-for-Future-Bewegung zum politischen Klimawandel bei?&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">ifo</span> <span class="n">Schnelldienst</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2022</span>
+</pre></div>
+</div>
+<p>Hypothese: FFF Demonstrationen erhöhen den Stimmenanteil der Grünen</p>
+<section id="problem">
+<h3>Problem:<a class="headerlink" href="#problem" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Zuordnung der Demonstrierenden zu Wahlkreisen</p></li>
+<li><p>regionale Stärke der Demos</p></li>
+</ul>
+</section>
+<section id="methodik-big-data-economics">
+<h3>Methodik: (Big Data Economics)<a class="headerlink" href="#methodik-big-data-economics" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Website von FFF / lokale Gruppen</p></li>
+<li><p>Demoanmeldungen Polizei</p></li>
+<li><p>Mobilitätsmatrix Telefondaten</p></li>
+</ul>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Wahlergebnisse = \beta * Streikpartizipation
+\]</div>
+</div>
+<p>Kontrolle:</p>
+<ul class="simple">
+<li><p>Niederschlag</p></li>
+<li><p>Kontrolle Umweltbewusstsein</p></li>
+</ul>
+</section>
+<section id="ergebnisse">
+<h3>Ergebnisse:<a class="headerlink" href="#ergebnisse" title="Link to this heading">#</a></h3>
+<p>Mehr Streik:</p>
+<ul class="simple">
+<li><p>mehr Stimmen für Grüne</p></li>
+<li><p>Mehr Wahlbeteiligung</p></li>
+<li><p>Aber v.a. Wanderung</p>
+<ul>
+<li><p>v.a von SPD / Linke</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="b-grune-regierungen">
+<h2>6b) grüne Regierungen<a class="headerlink" href="#b-grune-regierungen" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Die grüne Transformation in Wirtschaft und Politik – wo liegen Chancen und Risiken?&quot;</span>
+<span class="n">subtitle</span><span class="p">:</span> <span class="s2">&quot;Grüne Regierungen: Liefern sie das, was sie versprechen?&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">ifo</span> <span class="n">Schnelldienst</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2022</span>
+</pre></div>
+</div>
+<p>Regierungswechsel in BW = quasi-exogen (Fukushima)</p>
+<p>Methode:</p>
+<ul class="simple">
+<li><p>Vergleich reales BW mit syntethischem Kontroll-BW</p></li>
+<li><p>synthetisches BW = for Landtagswahl fortgeführtes</p></li>
+</ul>
+<p>Kontrolle mit anderen Bundesländern</p>
+<p>ergebnisse:</p>
+<ul class="simple">
+<li><p>keine Reaktion CO2 und Energieträger</p></li>
+<li><p>weniger Windkraft</p></li>
+<li><p>inklusivere Schulbildung</p></li>
+</ul>
+<p>aber: keine kausalen Effekte!</p>
+<blockquote>
+<div><p>“Manche strukturellen Reformen lassen sich am ehesten von politischen Parteien durchsetzen, von denen man es nicht erwartet”</p>
+</div></blockquote>
+<p>Only Nixon could go to China</p>
+</section>
+<section id="c-kohle-lobbyismus">
+<h2>6c) Kohle Lobbyismus<a class="headerlink" href="#c-kohle-lobbyismus" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="s2">&quot;Lobbyismus: Bezahlt, um zu verhindern&quot;</span>
+<span class="n">author</span><span class="p">:</span> <span class="n">Cindy</span> <span class="n">Baxter</span><span class="p">,</span> <span class="n">Böll</span> <span class="n">Stiftung</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2015</span>
+</pre></div>
+</div>
+<p>Kohle Lobby = wichtiger Bestandteil der Klimapolitik</p>
+<p>Methoden:</p>
+<ul class="simple">
+<li><p>Erneuerbare diskreditieren</p></li>
+<li><p>Grenzwerte verhindern</p></li>
+<li><p>staatliche Energiekonzerne entsenden Vertreter</p></li>
+</ul>
+<p><img alt="img" src="../../_images/2023-05-04_11-18-40.jpg" /></p>
+<p>USA:</p>
+<ul class="simple">
+<li><p>Spendengelder (an Republikaner)</p></li>
+<li><p>Gesetze selber schreiben (ALEC)</p></li>
+</ul>
+<p>Australien</p>
+<ul class="simple">
+<li><p>Positionen besetzen</p></li>
+<li><p>Stimmung in Medien gegen Klimawandel</p></li>
+</ul>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="2023-04-20-Start">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">20.04.2023 Start</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="README">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Wirtschaftspolitik</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; marten w.
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Lesenotizen</a><ul>
+<li><a class="reference internal" href="#a-digitale-macht">2a) Digitale Macht</a><ul>
+<li><a class="reference internal" href="#zustand">Zustand</a></li>
+<li><a class="reference internal" href="#forderung">Forderung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#b-kartellrecht-digital">2b) Kartellrecht digital</a><ul>
+<li><a class="reference internal" href="#id1">Zustand</a><ul>
+<li><a class="reference internal" href="#daten-als-rohstoff">Daten als Rohstoff</a></li>
+<li><a class="reference internal" href="#intransparente-algorithmen">intransparente Algorithmen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#forderungen">Forderungen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-ezb-in-der-krise">3a) EZB in der Krise</a><ul>
+<li><a class="reference internal" href="#ezb-aufbau">EZB Aufbau</a></li>
+<li><a class="reference internal" href="#instrumente">Instrumente</a></li>
+<li><a class="reference internal" href="#kritik-an-ezb">Kritik an EZB</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#b-haushaltspezifische-inflationsraten">3b) Haushaltspezifische Inflationsraten</a></li>
+<li><a class="reference internal" href="#c-kann-ezb-inflation-eindammen">3c) Kann EZB Inflation eindämmen?</a><ul>
+<li><a class="reference internal" href="#ja-peter-bofinger">Ja - Peter Bofinger</a></li>
+<li><a class="reference internal" href="#nein-thomas-mayer">Nein - Thomas Mayer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-deindustrialisierung">4a) Deindustrialisierung</a></li>
+<li><a class="reference internal" href="#b-green-economy">4b) Green Economy</a><ul>
+<li><a class="reference internal" href="#herausforderungen-auf-globaler-ebene">Herausforderungen auf globaler Ebene</a></li>
+<li><a class="reference internal" href="#auswirkungen-auf-energie-und-rohstoffwirtschaft">Auswirkungen auf Energie und Rohstoffwirtschaft</a></li>
+<li><a class="reference internal" href="#konsequenzen-fur-recycling-und-entsorgung">Konsequenzen für Recycling und Entsorgung</a></li>
+<li><a class="reference internal" href="#vision">Vision</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-klimageld">5a) Klimageld</a></li>
+<li><a class="reference internal" href="#b-nachhaltige-soziale-marktwirtschaft">5b) nachhaltige Soziale Marktwirtschaft</a><ul>
+<li><a class="reference internal" href="#ungleiche-beitrag">ungleiche Beitrag</a></li>
+<li><a class="reference internal" href="#betroffenheit-und-ungleichheit">Betroffenheit und Ungleichheit</a></li>
+<li><a class="reference internal" href="#konsequenzen-fur-klimapolitik">Konsequenzen für Klimapolitik</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#c-einkommensanderung-umweltauswirkungen">5c) Einkommensänderung - Umweltauswirkungen</a></li>
+<li><a class="reference internal" href="#a-fff-und-politischer-wandel">6a) FFF und politischer Wandel</a><ul>
+<li><a class="reference internal" href="#problem">Problem:</a></li>
+<li><a class="reference internal" href="#methodik-big-data-economics">Methodik: (Big Data Economics)</a></li>
+<li><a class="reference internal" href="#ergebnisse">Ergebnisse:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#b-grune-regierungen">6b) grüne Regierungen</a></li>
+<li><a class="reference internal" href="#c-kohle-lobbyismus">6c) Kohle Lobbyismus</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=a53d6cbc"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/tabs.js?v=3ee01567"></script>
+    <script src="../../_static/translations.js?v=70a09b52"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

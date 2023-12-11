@@ -1,0 +1,78 @@
+# 06.12.2021 UML 2 
+
+andere Diagrammtypen als Klassendiagramme, nur wichtig ist das **Use-Case-Diagramm**
+
+### weitere Diagramme
+
+#### Use-Case-Diagramm
+
+![21-12-06_12-12](../images/21-12-06_12-12.png)
+
+Verbindungen im Use-Case-Diagram:
+
+- **Erweiterung** <<extend\>\> : optionale Ausführung 
+    - Optional bei Abhebung: nach 3 Versuchen Konfsizierung
+- **Unteranwendung** <<includes\>\> : notwendige Bedingung
+    - Geldabhebung benötigt Authentifizierung der Karte
+- **Verallgemeinerung** (Vererbung )![21-12-06_12-16](../images/21-12-06_12-16.jpg)
+
+
+
+#### Interaktionsdiagramme
+
+Beschreibung zeitlicher Interaktionen zwischen Objekten
+
+Interaktion erfolgt mithilfe von **Nachrichten**
+
+- von Sender -> Empfänger
+- besitzt Namen,
+- Parameter
+- Nachrichtenlaufzeit
+
+![21-12-06_12-42](../images/21-12-06_12-42.jpg)
+
+
+
+#### Kommunikationsdiagramm
+
+nützlich für viele Objekte, Nummerierung der Nachrichten
+
+![21-12-06_12-54](../images/21-12-06_12-54.jpg)
+
+
+
+#### Zustandsdiagramm
+
+ Beschreibung des Verhaltens eines Teilsystems im Zeitverlauf
+
+- Zustand als Knoten
+- Zustandsübergänge durch Pfeil mit Beschriftung
+- Beginn und Ende als schwarzer Punkt
+
+![21-12-06_13-13](../images/21-12-06_13-13.jpg)
+
+
+
+#### Aktivitätsdiagramm
+
+Beschreibung des Ablaufes eines Anwendungsfalles
+
+![21-12-06_13-20](../images/21-12-06_13-20.jpg)
+
+---
+
+### Object Constraint Language OCL
+
+formale Erweiterung von UML für Sicherheitsrelevante Maschinen
+
+- Verwendung von Vor- / Nachbedigungen für Methoden / Schleifen
+- Darstellung Konditionen als "Post-It" mit umgeknickter Ecke und gestrichelter Linie
+
+![21-12-06_13-53](../images/21-12-06_13-53.jpg)
+
+Konditionen wurden hier als **pre** und **post** dargestellt als Checks
+
+Weiteres Beispiel mit Allquantor 
+
+![21-12-06_14-08](../images/21-12-06_14-08.jpg)
+

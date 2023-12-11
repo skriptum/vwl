@@ -1,0 +1,120 @@
+# 24.01.2023 Geld 
+
+*Cash rules everything around me, CREAM*
+
+## Funktionen
+
+- **Tauschmittel**
+    - allgemeine Akzeptanz von allen
+    - senkt Transaktionskosten = liquide
+    - ermöglicht Arbeitsteilung
+- **Recheneinheit**
+    - Preise werden in Geldeinheiten ausgedrückt
+    - Vergleichbarkeit
+- **Wertaufbewahrungsfunktion**
+    - Geld kann zum Sparen verwendet werden
+    - Vermögensübertrag in nächste Periode
+    - einfach zu lagern
+
+
+
+## Definitionen
+
+**Enge Definitionen**: Münzen und Scheine (Währung)
+
+**Breitere Definitionen**: Währung + Giro + Sichteinlagen
+
+- **M1**: Währung + Sichteinlagen
+- **M2**: M1+ Termineinlagen + Spareinlagen
+- **M3**: M2 + Geldmarktinstrumente (repos), Schuldverschreibungen
+
+
+
+```mermaid
+graph TB
+Bargeld & Sicheinlagen --> M1{Menge M1}
+M1 & Spareinlagen & Termineinlagen --> M2{Menge M2}
+M2 & Schuldverschreibungen & Geldmarktinstrumente --> M3{Menge M3}
+```
+
+
+
+
+
+- Währung $\in$ Geld
+- aber Geld $\neq$ Vermögen
+- Geldmengen haben Einfluss auf Realwirtschaft
+
+
+
+### Einflüsse
+
+auf Inflation;
+
+- früher starke Rolle
+- heute weniger, da mehr Zwischenformen von Geld
+
+![img](../images/2023-01-24_17-15-20.jpg)
+
+## Geldschöpfung
+
+> **Everyone can create Money, the problem is getting it accepted**
+>
+> ~ Hyman Minsky
+
+Banken als Vermittler von Krediten
+
+Parteien:
+
+- Zentralbank
+- Banken
+- Kontoinhaber
+
+Zentralbank Bilanz
+
+| Aktiva                     | Passiva           |
+| -------------------------- | ----------------- |
+| Anleihen                   | Bargeld im Umlauf |
+| Kredite an Finanzinstitute | Reserven          |
+
+
+
+Offenmarktgeschäfte der ZB mit GB (Geschäftsbank)
+
+| Aktiva          | Passiva        |
+| --------------- | -------------- |
+| Anleihen   +100 | Reserven  +100 |
+
+Geschäftsbank
+
+| Aktiva            | Passiva               |
+| ----------------- | --------------------- |
+| Anleihen     -100 | Sichteinlagen    +100 |
+| Reserven   +100   |                       |
+
+sie hat mehr Reserven = Kreditvergabe!
+
+Kreditnehmer:
+
+| Aktiva                | Passiva |
+| --------------------- | ------- |
+| Sichteinlagen    +100 |         |
+
+
+
+- Znetralbankhandeln
+- Erhöhung der kredittätigkeit mit *Geldmengenmultiplikator*
+- Höheres BIP
+
+Geldmengenmultiplikator = Inverse von Reserveanforderungen
+
+
+
+### Kritik an Modell
+
+- Banken verleihen nur mit ZB-Liquidität
+- kann Kreditwachstum vor Finanzkrisen nicht erklären
+- Widerspriuich zu ZB-Politik heutzutage mit Zinssetzung als erstes Mittel
+
+
+

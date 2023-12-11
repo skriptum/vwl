@@ -1,0 +1,186 @@
+# 09.01.2022 Steuern
+
+> der Nanny-Staat nimmt uns unsere hart erarbeiteten Gewinne weg :weary: 
+
+
+
+### Aktivierungspflichtige Steuern
+
+> **Aktivierungspflichtige Steuern:** Steuern und Abgaben, die Anschaffungsnebenkosten sind, Bsp. Zölle / Grunderwerbssteuer
+
+
+
+#### Beispiel Grunderwerbsteuer
+
+Kauf eines Grundstückes gegen Bankscheck für *100.000*, zzgl.
+
+- 5000€ Grunderwerbsteuer (5%), **umsatzsteuerfrei**
+- 1500€ Notarkosten
+- 1200€ Vermessungskosten
+- 300€ Grundbuchkosten . **umsatzsteuerfrei**
+
+
+
+gesamte Kosten:
+
+```
+Anschaffungspreis Grundstück        100.000
++ Anschaffungsnebenkosten             8.000
+    - davon Umsatzsteuerpflichtig: 2.700
+-------------------------------
+= Anschaffungskosten                108.000
+```
+
+
+
+Buchung:
+
+```
+05 Grundstücke       108.000
+260 Vorsteuer            270 (10% von 2700)
+an 280 Bank          108.270
+```
+
+**merke:** es wird nicht alles aufgeteilt gebucht, sondern komplett raufgehauen
+
+
+
+### Abzugsfähige Steuern
+
+> **Abzugsfähige Steuern:** gewinnmindernder handels+steuerrechtlicher Aufwand, auch *Betriebsteuern* wie Kfz-Steuer, Grundsteuer, Verbrauchsteuern (Bier, Strom,...)
+
+ 
+
+#### Beispiel Grundsteuer
+
+Beispiel: Überweisen 2000€ Grundsteuer an Finanzamt
+
+```
+702 Grundsteuer 
+an 280 Bank
+```
+
+
+
+### Nichtabzugsfähige Steuern
+
+> **Nichtabzugsfähige Steuern**: nicht gewinnmindernde Steuern , werden aus Gewinn  *vor Steuern* gezahlt
+
+Beispiele:
+
+- Gewerbesteuer (Konto 770)
+- Körperschaftsteuer, Soli (771)
+- Kapitalertragsteuer (772)
+
+Buchung Beispiel:
+
+```
+771 Körperschaftsteuer
+an 280 Bank
+```
+
+
+
+**merke:** da diese Steuern Gewinn nicht mindern dürfen => werden dem Gewinn wieder hinzugerechnet (außerhalb der Buchführung)
+
+#### Privatsteuern
+
+>  **Privatsteuer:** nichtabzugsfähige Steuern, die von Eigentümer/Gesellschaftern gezahl werden
+
+Beispiel: Einkommensteuer, Kirchensteuern
+
+Buchung über Privatkonto
+
+```
+3001 Privat
+an 280 Bank
+```
+
+
+
+### Durchlaufende Steuern
+
+> **Durchlaufsteuer:** im Auftrag des Finanzamtes von anderen Steuerpflichtigen einbehaltene Steuer, bspw. USt. oder Lohnsteuer (von AN)
+
+Buchung der USt. als auch AN-Steuern bereits bekannt
+
+```
+483 Verb. ggü. Finanzbehörden
+an 280 Bank
+```
+
+
+
+
+
+## Steuernachzahlungen + -erstattungen
+
+Video 25
+
+### Nachzahlungen
+
+Erfassung: mit *Nachbuchungen*, aber über Unterkonten
+
+I. Beispiel: Nachzahlung der Grundsteuer für vergangenes Jahr
+
+```
+1) Nachzahlung
+7021 Grundsteuer-Vorjahre
+an 280 Bank
+
+2) Abschluss
+702 Grundsteuer
+an 7021 Grundsteuer-Vorjahre
+```
+
+II. Beispiel: Nachzahlung der Gewerbesteuer 
+
+```
+7701 Gewerbesteuer-Vorjahre
+an 280 Bank
+```
+
+Abschluss ebenfalls über Oberkonto (hier 770)
+
+
+
+### Steuererstattungen
+
+Erfassung: wie Rückbuchungen, aber mit anderen Unterkonten
+
+I. Beispiel: KFZ-Steuererstattung
+
+```
+280 Bank
+an 7032 KFZ-Steuererstattung Vorjahr
+```
+
+II. Beispiel: Gewerbe-Steuererstattung
+
+```
+280 Bank
+an 7702 Gewerbe-Steuererstattung
+```
+
+
+
+### Steuerberatungskosten
+
+Erfassung:
+
+- Betrieblich: `667 Rechts- und Beratungskosten`
+- Privat: Sollseite `3001 Privat`
+
+Standardbuchung: Beratung für private Steuererklärung
+
+```
+3001 Privat
+an 280 Bank
+```
+
+das ist eine *Privatentnahme*
+
+
+
+
+

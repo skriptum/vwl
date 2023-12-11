@@ -1,0 +1,110 @@
+#   24.11.2021 Zahllast + Bezugskosten
+
+(Video 15)
+
+### Buchung der Zahllast
+
+Berechnung der Zahllast
+
+```
+  Umsatzsteuer (Verkauf)
+- Vorsteuer (Einkauf)
+---------------------------
+= Zahllast an Finanzamt
+```
+
+
+
+Allgemein gilt: kleineres Konto von Ust und Vorsteuer zuerst abschließen -> aufs andere gegenbuchen!, dann Abschluss
+
+Monatlich (Jan-Nov) durchführen ; Dez. Jahresabschluss Ausnahme
+
+---
+
+#### Beispiel
+
+da Vorsteuer kleiner als Umsatzsteuer => dort eintragen	
+
+260 Vorsteuer
+
+| Soll    | Habe            |
+| ------- | --------------- |
+| 300     | (1) 300 (Saldo) |
+| **300** | **300**         |
+
+480 Umsatzsteuer
+
+| Soll                          | Haben   |
+| ----------------------------- | ------- |
+| (1) 300 (von Vorsteuer)       | 975     |
+| (2) 675 Saldo => **Zahllast** |         |
+| **975**                       | **975** |
+
+Buchungen:
+
+1. 480 Umsatzsteuer an 260 Vorsteuer (300)
+2. 480 Umsatzsteuer an 280 Bank (2)
+
+Zahllast an Finanzamt überweisen! (bis 10. des Monats)
+
+---
+
+
+
+#### Bilanzierung der Zahllast
+
+nur im Dezember, da nicht einfach über Bank abgeschlossen
+
+Passivierung: 
+
+-  wenn USt > Vorsteuer
+- über "sonstige Verbindlichkeiten" der SBK (Passiv)
+
+Aktivierung: entgegengesetzt, aber seltener
+
+
+
+### USt. bei Eigenverbrauch
+
+Entnahmen etc. unterliegen ebenfalls Umsatzsteuer!
+
+aber auf separates Konto *542 "Entnahme von Gegenständen"*
+
+
+
+## Bezugskosten
+
+(Video 16)
+
+> **Bezugskosten**: Anschaffungskosten wie Fracht, Zoll, Verpackung
+
+Berechnung:
+
+```
+Anschaffungspreis (netto)
++ Anschaffungsnebenkosten (netto)
+- Anschaffungsminderungskosten (netto)
+-------------------------------------
+= Anschaffungskosten
+```
+
+Bezugskosten werden auf Unterkonto des jeweiligen Stoffkontos gebucht 
+
+Unterkonten:
+
+- 200**1** Bezugskosten Rohstoffe
+- 202**2** Bezugskosten Hilfsstoffe
+- ...
+
+Standardbuchungssatz:
+
+```haskell
+1) buchung der bezugskosten
+2001 Bezugskosten Rohstoffe
+260 Vorsteuer 
+an 44 Verbindlichkeiten
+2) umbuchung auf hauptkonto zum abschluss
+200 Rohstoffe
+an 2001 Bezugskosten 
+```
+

@@ -1,0 +1,101 @@
+# 28.10.2022 Was ist soziologisch an der Wirtschaft?
+
+## Parsons AGIL-System
+
+- verschiedene Subsysteme der Gesellschaft
+
+> **Gesellschaft:** selbstreproduzierendes System zur Lösung von Problemen
+
+im AGIL Schema: notwendig für Reproduktion sind:
+
+| *Adaptation*: Gesellschaft muss sich anpassen können         | *Goal*: G. muss Ziele Erreichen                     |
+| ------------------------------------------------------------ | --------------------------------------------------- |
+| ***Latency*: G. braucht Wertesystem, das aufrecht erhalten wird** | ***Integration*: G. braucht sozialen Zusammenhalt** |
+
+
+
+- **Adaptation**: Gesellschaft muss sich anpassen können = *Wirtschaft*
+- **Goal**: G. muss Ziele Erreichen = *Politik*
+- **Integration:** G. braucht sozialen Zusammenhalt = *Gemeinschaft*
+- **Latency:** G. braucht Wertesystem, das aufrecht erhalten wird = *Kultur*
+
+jede Funktion wird in modernen Gesellschaften von unterschiedlichen Subsystemen bereitgestellet
+
+
+
+Wirtschaft hat Strukturfunktion der **Adaptation**
+- an Ressourcenlage anpassen (insb. Kapital)
+
+- = Maximierung materieller Bedürfnisse
+- und sie ist wieder ein System, also wieder ein AGIL-System
+
+![AGIL](../images/2022-10-28_12-46-41.png)
+
+Beispielhafte Interdependenzen zwischen Subsystemen
+
+- Wirtschaft - Politik:
+    - Wirtschaft <-- Politik = Input von Rahmenbedingungen
+    - Wirtschaft --> Politik = Output von Macht / Legitimierung
+- Wirtschaft - Kultur
+    - Wirtschaft <-- Kultur = Wertesystem der beibehaltung von Verträgen
+    - Wirtschaft --> Gemeinwesen = Output kulturelle Güter
+- Wirtschaft - Gemeinwesen
+    - Wirtschaft <-- Gemeinschaft = Input von Arbeitskräfte
+
+
+
+## Luhmann
+
+seine funktional-strukturelle Systemtheorie: sozialtheoretischer Rahmen der Wirtschaft als System (und Forschungsgegenstand)
+
+grundlegende Idee: *funktionale Differenzierung* in modernen Gesellschaften
+
+- jedes Subsystem hat spezifische Funktion
+
+
+
+> **System:** Struktur zur *Funktion*serfüllung (Lösung eines Problems)
+
+> **Gesellschaft:** Gesamtsystem, das sich durch *Kommunikation* von Umwelt unterscheidet, ist *autopoietisches System* (selbsterhaltend)
+
+- keine Kommunikation = keine Gesellschaft
+- Kommunikation = Informationen werden:
+    1. Sortiert (Selektiert)
+    2. Mitgeteilt und 
+    3. Verstanden 
+- wenn alles 3, dann sinnvolle Kommunikation
+- Erleichtert wird das ganze durch *Medien*
+- Medien $\neq$ Zeitungen, sondern Sprache etc, die die Schritte erleichtern
+    - Bspw. Winken wird universell verstanden = Medium
+
+### (moderne) Wirtschaft unter Luhmann
+
+historische Voraussetzung: Geld als Medium
+
+> **Ökonomie:** autonomes Teil*system* der Gesellschaft, beide folgen unterschiedlichen Codes
+
+Grundoperation: *Zahlungen / Nicht-Zahlung*
+
+- alle Elemente der Ö sind Ableitungen aus dieser Zahlung
+
+- bspw. Zahlungen mache aus Menschen Käufer / Verkäufer, aus Dingen Waren,
+
+    - durch Zahlung wird Umwelt ein wirtschaftliches Element
+
+- Zahlungen zirkulieren = selbstreferentiell
+
+- Profitmotiv = Steigerung der Produktion
+
+- Zusammenhang zwischen Preis und Zahlung
+
+    ```mermaid
+        graph LR
+        Preis --Übergabe--> Zahlung
+        Zahlung --Information--> Preis
+    ```
+
+
+**= Wirtschaft ist operativ geschlossen und selbsterhaltend**
+
+
+

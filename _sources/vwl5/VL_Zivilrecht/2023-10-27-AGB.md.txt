@@ -1,0 +1,62 @@
+# 27.10.2023 AGB
+
+Vertragschluss im Internet
+
+Warenangebot auf Internetseite
+
+- IdR *invitio ad offerendum*
+- Anbieter muss Zugang der bestellung unverzüglich bestätigen (Mail)
+
+
+
+**Onlineversteigerung**
+
+- Einstellen des Versteigerungsobjektes: Angebot und Verkauf an Meistbietenden
+- kommt auch zustande, wenn Preis sehr niedrig
+- Eigengebote nichtig
+
+
+
+## Definitionen
+
+Was sind AGB? = Vertragsbedingungen
+
+- vorformuliert für Vielzahl von Verträgen
+- von einer Partei gestellt
+- vor Abschluss des Vertrages
+
+
+
+Wie werden AGB Bestandteil eines Vertrages?
+
+- ausdrücklicher Hinweis uaf AGb bei Vertrag
+- Einverständnis auch konkludent
+
+
+
+## Wirksamkeit 
+
+Kontrolle der Klausel
+
+1. §309 BGB: immer unwirksam
+2. § 308 BGB: Wertung des Anwenders
+3. § 307 BGB: Generalklausel
+
+
+
+Rechtsfolgen unwirksamer AGB
+
+- keine Wirkung
+- übriger Vertrag bleibt
+- gestzliche Vorschriften ersetzen
+- Verbot der geltungserhatlenden Redultion (wohlwoolendes Lesen + Auslegen)
+
+
+
+Prüfschema:
+
+1. Anwendungsbereich §310 IV 1
+2. Vorliegen von AGB, § 305 I BGB
+3. Einebziehung §§ 305 II 
+4. Inhaltskontrolle § 309 BGB
+5. Rechtsfolgen § 306 BGB

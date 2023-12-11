@@ -1,0 +1,85 @@
+# 10.01.2023 IPAT-Gleichung
+
+
+
+## Definition
+
+> Handlungsprinzip mit Fokus auf Langfristigkeit, sodass Ressourcen sich daerhaft erhalten
+
+- 3 Säulen: Ökologie, Ökonomie, Sozial
+- Treiber der ökologischen Auswirkungen: CO2, Feinstaub, Abwässer, Abfall
+
+## IPAT-Modell
+
+Bestimmung des **I**mpacts, den wir auf die Umwelt haben
+$$
+\underset{\text{Impact}}{I} = \underset{\text{Population}}{P} \cdot \underset{\text{Affluence}}{A} \cdot \underset{\text{Technology}}{T}
+$$
+
+- Affluence = Wohlstand, gemessen pro Kopf
+- Technology = Emissionen pro Produktionseinheit
+
+Bedeutung:
+
+- Bei steigender Weltbevölkerung und Wohlstand
+- muss Technologie besser werden
+
+![img](../images/2023-01-10_09-46-51.jpg)
+
+### Bevölkerung
+
+Einflüsse:
+
+- Fertilität
+    - Bildung (insb. Frauen)
+    - Gesundheitssystem
+- Mortalität
+    - Kindersterblichkeit
+    - Gesundheitssystem
+
+Entwicklung Veölkerung
+
+![img](../images/2023-01-10_09-57-17.jpg)
+
+Kurzfristig: Wachstum mit geringer Rate; Langfristig: Rückgang
+
+Entwicklung Fertilitätsraten ![img](../images/2023-01-10_10-08-01.jpg)
+
+
+
+## Umwelt-Kuznets-Kurve 
+
+![2023-01-11_10-16-20](../images/2023-01-11_10-16-20-3342213.jpg)
+
+Annahme, dass mit steigendem Wohlstand Umweltbelastung nachlässt
+
+- **niedriger** Entwicklungs.: Subsistenzwirtschaft
+- **mittlerer** Entwicklungs.: Industrialisierung, Ressourcenabbau
+- **hoher** Entwicklungs.: Umweltbewusstsein, Dienstleistungen
+
+Empirie aus 90ern: 
+
+- gilt eher für lokale Schadstoffe (Schwefel, Feinstaub)
+- nicht für globale ($CO_2$)
+
+![2023-01-10_10-19-49](../images/2023-01-10_10-19-49.jpg)
+
+neuere Erkenntnisse nach *Schmalensee et al (1998)*
+
+- nur CO2
+- Kontrolle länderspezifischer Aspekte
+
+![2023-01-10_10-26-16](../images/2023-01-10_10-26-16.jpg)
+
+- langfristig sinkende CO2-Belastung p.P
+
+
+
+
+
+Fazit:
+
+- genauer Verlauf / Gipfel kein Konsens
+- kein Selbstläufer
+- globale Emissionen nicht nachweisbar (CO2)
+

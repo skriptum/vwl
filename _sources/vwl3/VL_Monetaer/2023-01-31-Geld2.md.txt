@@ -1,0 +1,144 @@
+## 31.01.2023 Geld II
+
+## Geldschöpfung von Geschäftsbanken
+
+Parteien:
+
+- Bank
+- Kreditnehmer
+- Zentralbank
+
+
+
+### Vorgehen
+
+- Bank vergibt einen Kredit - als Giralgeld
+    - Erhöhung der Suchteinlagen des Kreditnehmers
+    - Geld wird Geschöpft!
+- Kreditnehmer zieht Geld ab (und damit Reserven)
+- diese Reserven kommen von anderen Schuldnern aber wieder rein
+    - vielleicht aber nicht genug
+
+
+
+```mermaid
+graph TD
+A --ZBGeld--> B(Verkäufer B) 
+B --Ware--> A
+
+Bank --Giralgeld--> A(Kreditnehmer A)
+B --Giralgeld--> Bank
+
+```
+
+- Bank hat Interesse daran, Kredite auszugeben (Zinsen)
+    - unter Umständen Reserveanforderungen nicht mehr erfüllt werden
+- Interbankenmarkt haben Banken Reservenüberschuss und verkaufen
+
+
+
+Aufschwung:
+
+- alle Banken vergeben Kredite (da Ausfallrisiko gering)
+- Nachfrage nach Reserven auf IB-Markt steigt
+    - Zins steigt
+
+
+
+### Handeln der Zentralbank 
+
+- Zinsen steigen
+- oder Reserven erhöhen
+- kann nicht Menge und Preis setzen (entweder|oder)
+- Meist
+    - Zentralbank will Zinsen halten
+        - Reserve wird erhöht
+    - um Zinsen zu halten = höhere Geldmenge
+    - Geld wurde geschöpft!
+
+
+
+### Implikationen
+
+- Banken sind keine Intermediäre, sondern Kreateure des Geldes
+- erklärt Bankenkrisen extrem gut
+    - plötzliches Absinken der Kreditwürdigkeit
+    - hat explosive Wirkung
+- seit 2008 stärker angenommen
+- Kreditwachstum = Kreditblase = Finanzkrise
+
+
+
+**erklärender Film**: [Oeconomia](https://www.zdf.de/filme/dokumentarfilm-in-3sat/oeconomia-104.html)
+
+[![2023-01-31_17-10-34](../images/2023-01-31_17-10-34.jpg)](https://www.zdf.de/filme/dokumentarfilm-in-3sat/oeconomia-104.html)
+
+## Finanzinnovation
+
+Finanzkrise 2007 = Bankrun auf Schattenbanken
+
+
+
+Kreditvergabe alt:
+
+- Kreditvergabe gegen Forderung (Haus)
+- Gewinn durch Zinsen nach vollständiger Rückazhlung
+- Sicherheiten = Verlustrisiko, deswegen Auswahl
+- *"originate to hold"* Modell
+
+
+
+Neu:
+
+- Verkaufen der Rückzahlungsforderungen
+    - aber schwer handelbar
+- Forderungen werden *verbrieft*
+- *"originate to distribute"* Modell
+
+
+
+> **Verbriefung:** Portfolio aus vielen Einzelpositionen (bspw. Krediten) zur Risikostreuung
+
+Portfoliobildung mit unterschiedlichen Risiken:
+
+- höhere Risiken in eine tranche
+- Mischung mit risikoloseren in anderen
+- Ratingagenturen geben für gute meist AAA
+
+
+
+Folgen:
+
+- rating on the edge
+- Ratingagenturen wurden miteinbezogen
+- große Reihe an Investoren kauft AAA
+    - ohne Kredite und Schuldner zu kennen
+- sobald Ausfallwahrscheinlichkeiten sich ändern = Chaos
+
+Methode:
+
+![2023-01-31_17-33-50](../images/2023-01-31_17-33-50.jpg)
+
+> **Special Purpose Vehicles (SPV):** Verbriefungsorganisationen der Banken, meist shady Tochtergesellschaft
+
+- verbriefen einzelne Kredite zu Tranchen
+- verkaufen diese an Investoren, insbesondere SIVs
+
+
+
+> **Special Investment Vehicles (SIV)**: Vehikel tur Verkürzung von Kreditlaufzeiten
+
+- kaufen Kredite und verkürzen Laufzeiten durch Asset backed commercial Papiers
+
+Problem: langfristige Forderungen und kurzfristige Finanzierung
+
+- wie Banken, nur ohne Aufsicht
+- gegenüber SIVs gab es einen Bankrun
+- aber es sit noch von Bank gesichert
+- Kreditmarkt = :boom:
+
+
+
+**empfehlenswerter Film** [The Big Short](https://www.youtube.com/watch?v=vgqG3ITMv1Q)
+
+![2023-01-31_17-23-52](../images/2023-01-31_17-23-52.jpg)

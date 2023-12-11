@@ -1,5 +1,6 @@
 cd "/Users/marten/Nextcloud/uni"
 
+# new TOC
 echo "updating TOC"
 python3 TOC.py
 

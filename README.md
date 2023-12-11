@@ -8,5 +8,4 @@ Weiterführende Links
 - [Über VWL in Halle](https://www.wiwi.uni-halle.de/studienangebot/bachelor_vwl/)
 - [Wie kann ich mich kritisch mit VWL auseinandersetzen](glossar/Plurale-Oekonomik) (Plurale Ökonomik)
 
-
-
+Dieses Repository sammelt alle Notizen und veröffentlicht sie mithilfe von Sphinx

@@ -70,7 +70,7 @@ suppress_warnings = ["myst.header", "myst.xref_missing"]
 
 html_theme = "furo"
 html_title = "Marten's Notizen"
-html_baseurl = 'https://vwl.martenw.com/#/'
+html_baseurl = 'https://vwl.martenw.com/'
 html_file_suffix = ""
 html_extra_path = ["robots.txt"]
 html_static_path = ["_static"]

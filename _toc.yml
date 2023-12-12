@@ -738,6 +738,8 @@ subtrees:
         title: Schadensersatz
       - file: vwl5/VL_Zivilrecht/2023-12-01-Gewaehrleistung.md
         title: Gewaehrleistung
+      - file: vwl5/VL_Zivilrecht/2023-12-08-Sachenrecht.md
+        title: Sachenrecht
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:

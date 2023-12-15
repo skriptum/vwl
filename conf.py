@@ -37,6 +37,7 @@ extensions = [
     'sphinx_sitemap',
     "sphinx_reredirects",
     'notfound.extension',
+    'sphinxemoji.sphinxemoji'
 ]
 
 # -- Options for extlinks ----------------------------------------------------

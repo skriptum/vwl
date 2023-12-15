@@ -10,6 +10,23 @@ Weiterführende Links
 
 
 
+::::{grid} 3
+
+:::{grid-item-card}  28
+Anzahl Module
+:::
+
+:::{grid-item-card}  330
+Anzahl Notizen
+:::
+
+:::{grid-item-card}  5
+Anzahl Semester
+:::
+
+::::
+
+
 ## Semesterübersicht
 
 Überblick über die Module aller Semester

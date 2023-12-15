@@ -147,6 +147,7 @@ for semester, desc in semesters.items():
 
 # add the number of files and directories to the end of the SUMMARY.md
 #result_list.append(f"**{count_files}** Notizen in **{count_dirs}** Modulen")
+print(f"**{count_files}** Notizen in **{count_dirs}** Modulen")
 
 with open("_toc.yml", "w") as f:
     f.writelines(line + '\n' for line in result_list)

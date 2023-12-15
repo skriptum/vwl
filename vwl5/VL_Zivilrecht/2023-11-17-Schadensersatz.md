@@ -27,8 +27,8 @@ im Vertragsverhältnis
 1. Schuldverhältnis: 
     - Turnier gegen 150€ Teilnahme
 1. Pflichverletzung = nachteilige Abweichung:
-    - Springturnier wurde ausgerichtet (**Leistungspflicht** :white_check_mark: )
-    - aber Fangständer (**Rücksichtnahmepflicht** :x: )
+    - Springturnier wurde ausgerichtet (**Leistungspflicht**  + )
+    - aber Fangständer (**Rücksichtnahmepflicht**  - )
 1. Vertretenmüssen `§276 BGB`
     - Vorsatz = absichtliche Pflichtverletzung
     - Fahrlässigkeit = Außerachtlassen der Sorgfalt

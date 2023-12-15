@@ -1,6 +1,11 @@
 # 08.12.23 Sachenrecht
 
-Erinnerung Trennungs / Asbtraktionsprinzip
+Erinnerung 
+
+- **Trennungsprinzip**: zwischen Verpflichtung und Verfügungsgeschäft
+- **Abstraktionsprinzip**: Wirksamkeit beider Sachen einzeln betrachten (eins unwirksma =! anderes unwirksam)
+
+
 
 - Kaufvertrag nach §433 BGB = beidseitig
 - Übereignung nach §929 BGB = einseitig
@@ -87,4 +92,25 @@ Wer ist Eigentümer? X. Übertragung an X war rechtens
 
 
 
+
+## Beispielfall
+
+```
+E ist Eigentümer Auto
+Dieb D klaut dieses und verkauft an X
+X kauft ohne in Fahrzeugbrief zu schauen
+E will Auto von E
+```
+
+Anspruch auf Herausgabe von E an X, [§985](https://www.gesetze-im-internet.de/bgb/__985.html)
+
+- E = Eigentümer? 
+    - ursprünglicher Eigentümer (+)
+    - Eigentumsverlust durch Übereignung D an X: [§929](https://www.gesetze-im-internet.de/bgb/__929.html)
+        - Einigung zw. D und X (+)
+        - Übergabe (+)
+        - Verfügungsberechtigung (-)
+            - X nicht Eigentümer (-)
+            - gutgläubiger Erwerb?
+                - Da nicht Fahrzeugbrief zeigen lassen (-)
 

@@ -113,4 +113,8 @@ Anspruch auf Herausgabe von E an X, [§985](https://www.gesetze-im-internet.de/b
             - X nicht Eigentümer (-)
             - gutgläubiger Erwerb?
                 - Da nicht Fahrzeugbrief zeigen lassen (-)
+- X = Besitzer (+)
+- Kein Recht an Besitz 
+
+=> Herausgabenanspruch
 

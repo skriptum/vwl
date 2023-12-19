@@ -24,3 +24,30 @@ Text about
 - with literature and academinc standards!
 - portfolio from the lecture: not academic standards
 
+
+
+Infos:
+
+- Reflektionsteil = wichtigster Teil
+    - muss nicht längster Sein
+    - Bewertungsbogen dafür
+    - selbst strukturien
+    - Fragen
+        - warum Kurs
+        - wie Thema fanden
+        - wieso Expertensession so aufgebaut etc.
+    - bisschen wie Essay vom Style
+- wissenschaftlicher Teil
+    - eigene Themenwahl
+- harter Cut = nicht erwünscht
+    - Übergang schaffen
+    - Reflektion warum dieses Thema
+- Portfolio
+    - vor allem von Expertenrunde
+    - nicht bewertet
+    - Bisschen Länge
+- Aufbau:
+    - Start Page
+    - Selbstreflektion
+    - wissenschaftlicher Teil
+    - Portfolio (+ Motivationschreiben etc.)

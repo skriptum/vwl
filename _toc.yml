@@ -740,6 +740,8 @@ subtrees:
         title: Gewaehrleistung
       - file: vwl5/VL_Zivilrecht/2023-12-08-Sachenrecht.md
         title: Sachenrecht
+      - file: vwl5/VL_Zivilrecht/2023-12-15-Kreditsicherheit.md
+        title: Kreditsicherheit
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:
@@ -797,3 +799,5 @@ subtrees:
         title: Information
       - file: vwl5/VL_PublicEcon/2023-12-06-Inequality.md
         title: Inequality
+      - file: vwl5/VL_PublicEcon/2023-12-13-Redistribution.md
+        title: Redistribution

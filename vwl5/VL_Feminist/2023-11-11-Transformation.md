@@ -31,8 +31,6 @@ Author: Martha Lanza
 Publication: Conference Paper
 ```
 
-# Buen vivir
-
 Case Study of Feminist Approach in Bolivia
 
 ### Definitions

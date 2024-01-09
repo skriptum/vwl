@@ -1,0 +1,186 @@
+# Mindestlohn und Populismus
+
+Regression von AFD Wahlergebnissen und Mindestlohnbeziehern in einem Kreis
+
+## Import der Daten
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+mindestlohn <- read_csv2("WSI_mindestlohn.csv")
+wahlergebnisse <- read_csv2("Wahlergebnisse.csv")
+```
+
+Clean up the data
+
+```{r}
+wahl <- wahlergebnisse %>%
+  rename(
+     "kreis" = "...2", 
+     "waehler" = "...5",
+     "afd_stimmen" = "...57",
+     "name" = "...3",
+     "land" = "© Der Bundeswahlleiter, Wiesbaden 2022"
+  ) %>%
+  mutate(afd_prozent = as.numeric(afd_stimmen) / as.numeric(waehler)) %>% # calculate afd percentage
+  select(kreis, name, land, waehler, afd_stimmen, afd_prozent) %>% 
+  slice(6:nrow(.)) %>%#remove unused rows with metadata and total germany
+  filter(!is.na(kreis))
+
+```
+
+```{r}
+lohn <- mindestlohn %>%
+  rename(
+    "kreis" = "...1",
+    "name" = "Region",
+    "lohn_prozent" = "Anteil in Prozent der Beschäftigten mit Mindestlohn-anspruch"
+  ) %>%
+  select(kreis, name, lohn_prozent) %>%
+  # select kreis with 4 or 5 digits
+  filter(
+    nchar(kreis) == 4 | nchar(kreis) == 5
+  ) %>%
+  # add leading zero to kreis with 4 digits
+  mutate(
+    kreis = ifelse(
+      nchar(kreis) == 4, 
+      paste0("0", kreis), 
+      kreis)
+  )
+
+```
+
+Show difference between the two datasets
+
+```{r}
+wahl %>%
+  filter(!kreis %in% lohn$kreis) %>%
+  select(kreis, name) %>%
+  arrange(kreis)
+```
+
+Hamburg is missing, get data from WSI website
+
+```{r}
+lohn <- lohn %>%
+  add_row(kreis = "02000", name = "Hamburg", lohn_prozent = 14.7) %>%
+  add_row(kreis = "11100", name = "Berlin Ost", lohn_prozent = 17.8) %>%
+  add_row(kreis = "11200", name = "Berlin West", lohn_prozent = 17.8)
+```
+
+Merge the two datasets
+
+```{r}
+wahl_lohn <- wahl %>%
+  left_join(lohn, by = "kreis") %>%
+  mutate(
+    lohn_prozent = lohn_prozent/100,
+    name = name.x
+    ) %>%
+  select(kreis, name, land, afd_prozent, lohn_prozent)
+```
+
+## Regression
+
+```{r}
+wahl_lohn %>%
+  ggplot(aes(x = lohn_prozent, y = afd_prozent)) +
+  geom_point(shape = 1) +
+  geom_point(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    color = "red",
+  ) + 
+  geom_text(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    label = "SB",
+    vjust = 1.3,
+    hjust = 0,
+    color = "red"
+  ) + 
+  geom_smooth(method = "lm", se = T) +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+summary(
+  lm(
+    afd_prozent ~ lohn_prozent, 
+    data = wahl_lohn
+  )
+)
+```
+
+### Ost West
+
+```{r}
+länder <- wahl_lohn$land %>% unique()
+ost_names <- c("BB", "BE", "MV", "SN", "ST", "TH")
+
+wahl_lohn <- wahl_lohn %>%
+  mutate(
+    ost = ifelse(land %in% ost_names, 1, 0)
+  )
+```
+
+plot with color marker for kreis=16072
+
+```{r}
+wahl_lohn %>%
+  ggplot(aes(x = lohn_prozent, y = afd_prozent)) +
+  geom_point(shape = wahl_lohn$ost) +
+  geom_smooth(method = "lm", se = T) +
+  geom_point(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    color = "red",
+  ) + 
+  geom_text(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    label = "SB",
+    vjust = 1.3,
+    hjust = 0,
+    color = "red"
+  ) +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  theme_minimal()
+```
+
+Dummy for ost
+
+```{r}
+summary(
+  lm(
+    afd_prozent ~ lohn_prozent + ost, 
+    data = wahl_lohn
+  )
+)
+```
+
+### GDP per capita
+
+### Unemployment Rate
+
+from Regionalstatistik [13211-02-05-4](https://www.regionalstatistik.de/genesis//online?operation=table&code=13211-02-05-4&bypass=true&levelindex=0&levelid=1704816689633#abreadcrumb)
+
+acces with Wiesbaden Package
+
+### Population Density
+
+### Foreigners Rate
+
+

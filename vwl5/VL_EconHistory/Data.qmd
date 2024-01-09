@@ -9,10 +9,20 @@
 library(tidyverse)
 library(wid)
 library(countrycode)
+library(plm)
 ```
+
+## Democracy Data
 
 ```{r}
 DDCG <- haven::read_dta("data/DDCGdata.dta")
+```
+
+Clean the Data
+
+```{r}
+DDCG <- DDCG %>%
+  dplyr::select("country_name","wbcode","dem","y", "yeardem", "year", "demreg")
 ```
 
 Get the Country Codes from the DDCG to download the respective WID Data
@@ -32,6 +42,8 @@ iso2 <- countrycode(iso3,
             ))
 ```
 
+## 1% Data WID
+
 ```{r}
 WID <- download_wid(
   indicators = "sptinc", # Shares of pre-tax national income
@@ -43,16 +55,8 @@ WID <- download_wid(
 )
 ```
 
-
-## Clean and Merge
-
-Clean unused Data from DDCG
-```{r}
-DDCG <- DDCG %>%
-  dplyr::select("country_name","wbcode","dem","y", "yeardem", "year")
-```
-
 Convert WID to ISO3 Country Codes
+
 ```{r}
 #| cache: true
 WID <- WID %>%
@@ -71,51 +75,258 @@ WID <- WID %>%
   filter(variable == "sptinc992j")
 ```
 
-
-
 Merge the two Data Sets
+
 ```{r}
 data <- DDCG %>%
   left_join(WID, by = c("wbcode" = "iso3", "year" = "year")) %>%
-  select(country_name, wbcode, year, dem, y, yeardem, top)
+  select(country_name, wbcode, year, dem, y, yeardem, top, demreg) %>%
+  mutate(ltop = log(top)) #logarithmize
 ```
 
-still duplicates here?
-
-
-## Model
-
-```{r}
-library(plm)
-```
+## 1% Fixed Effects Models
 
 Build general model
+
 ```{r}
 pdf <- pdata.frame(data, index = c("wbcode", "year"))
 ```
 
-Simple Model
+### Simple Model with Log
+
 ```{r}
 model <- plm(
-  log(top) ~ dem,
+  ltop ~ dem,
   data = pdf,
   model = "within",
   effect = "twoways"
   )
 summary(model)
 ```
-Simple linear model:
+
+-   0.07\*100 = 7% change in share= lower share of top 1% rises
+-   statistically significant
+-   but R2 is very low (not good at explaining)
+    -   but R2 is in Fix Ef Model not that good at explaining?
+
+### Model with 2 Lags
 
 ```{r}
-model2 <- lm(
-  log(top) ~ dem,
-  data = pdf
+model2 <- plm(
+  ltop ~ dem + plm::lag(ltop, 1:2),
+  data = pdf,
+  model = "within",
+  effect = "twoways"
   )
 summary(model2)
 ```
 
-- Negative Coefficient = lower share of top 1%
-- statistically significant
-- but R2 is very low (not good at explaining)
+-   coefficient not significant!
+-   R2 very good because of the lag...
 
-Same with top 10%?
+## IV Model
+
+```{r}
+iv_model_1 <- plm(
+    y ~ dem  | 
+    plm::lag(demreg,1:4),
+    data=pdf,
+    effect = "twoways",
+    )
+summary(iv_model_1)
+```
+
+= nope
+
+## shorter time frame
+
+with years from 1980
+
+```{r}
+data_t2 <- data %>%
+  filter(year >= 1980)
+```
+
+```{r}
+pdf_t2 <- pdata.frame(data_t2, index = c("wbcode", "year"))
+
+model_t2 <- plm(
+  ltop ~ dem,
+  data = pdf_t2,
+  model = "within",
+  effect = "twoways"
+  )
+summary(model_t2)
+```
+
+= nope, similar to normal
+
+## Wealth instead of Income
+
+WID Code = shweal992j
+
+```{r}
+WID_wealth <- download_wid(
+  indicators = "shweal", # Shares of pre-tax national income
+  areas = iso2, # In the United States
+  years = 1960:2010, # Time period: 2010-2015
+  perc = "p99p100", # Top 1% only
+  pop = "j", # Population
+  include_extrapolations = TRUE, # Include extrapolations
+)
+```
+
+Fix
+
+```{r}
+WID_wealth <- WID_wealth %>%
+  mutate(iso3 = countrycode(country, origin = "iso2c", destination = "iso3c", 
+                            custom_match = c(
+                              "NR" = "NAU", 
+                              "RO" = "ROM", 
+                              "RS" = "SER", 
+                              "SG" = "SIN", 
+                              "TW" = "TAW", 
+                              "AE" = "UAE", 
+                              "CD" = "ZAR")
+                            )) %>%
+  rename(top = value) %>%
+  #only take values where variable = sptinc992j
+  filter(variable == "shweal992j")
+```
+
+```{r}
+data_wealth <- DDCG %>%
+  left_join(WID_wealth, by = c("wbcode" = "iso3", "year" = "year")) %>%
+  select(country_name, wbcode, year, dem, y, yeardem, top, demreg) %>%
+  mutate(ltop = log(top)) #logarithmize
+```
+
+```{r}
+pdf_wealth <- pdata.frame(data_wealth, index = c("wbcode", "year"))
+```
+
+Model
+
+```{r}
+model_wealth <- plm(
+  ltop ~ dem,
+  data = pdf_wealth,
+  model = "within",
+  effect = "twoways"
+  )
+summary(model_wealth)
+```
+
+## Tests with other Income Shares
+
+### 10%
+
+```{r}
+WID10 <- download_wid(
+  indicators = "sptinc", # Shares of pre-tax national income
+  areas = iso2, # In the United States
+  years = 1960:2010, # Time period: 2010-2015
+  perc = "p90p100", # Top 1% only
+  pop = "j", # Population
+  include_extrapolations = TRUE, # Include extrapolations
+)
+```
+
+Convert WID to ISO3 Country Codes
+
+```{r}
+#| cache: true
+WID10 <- WID10 %>%
+  mutate(iso3 = countrycode(country, origin = "iso2c", destination = "iso3c", 
+                            custom_match = c(
+                              "NR" = "NAU", 
+                              "RO" = "ROM", 
+                              "RS" = "SER", 
+                              "SG" = "SIN", 
+                              "TW" = "TAW", 
+                              "AE" = "UAE", 
+                              "CD" = "ZAR")
+                            )) %>%
+  rename(top = value) %>%
+  #only take values where variable = sptinc992j
+  filter(variable == "sptinc992j")
+```
+
+Merge the two Data Sets
+
+```{r}
+data10 <- DDCG %>%
+  left_join(WID10, by = c("wbcode" = "iso3", "year" = "year")) %>%
+  select(country_name, wbcode, year, dem, y, yeardem, top)
+pdf10 <- pdata.frame(data10, index = c("wbcode", "year"))
+```
+
+Simple Model
+
+```{r}
+model10_1 <- plm(
+  log(top) ~ dem,
+  data = pdf10,
+  model = "within",
+  effect = "twoways"
+  )
+summary(model10_1)
+```
+
+= similar to before
+
+### 50%
+
+```{r}
+WID50 <- download_wid(
+  indicators = "sptinc", # Shares of pre-tax national income
+  areas = iso2, # In the United States
+  years = 1960:2010, # Time period: 2010-2015
+  perc = "p50p100", # Top 1% only
+  pop = "j", # Population
+  include_extrapolations = TRUE, # Include extrapolations
+)
+```
+
+Convert WID to ISO3 Country Codes
+
+```{r}
+WID50 <- WID50 %>%
+  mutate(iso3 = countrycode(country, origin = "iso2c", destination = "iso3c", 
+                            custom_match = c(
+                              "NR" = "NAU", 
+                              "RO" = "ROM", 
+                              "RS" = "SER", 
+                              "SG" = "SIN", 
+                              "TW" = "TAW", 
+                              "AE" = "UAE", 
+                              "CD" = "ZAR")
+                            )) %>%
+  rename(top = value) %>%
+  #only take values where variable = sptinc992j
+  filter(variable == "sptinc992j")
+```
+
+Merge the two Data Sets
+
+```{r}
+data50 <- DDCG %>%
+  left_join(WID50, by = c("wbcode" = "iso3", "year" = "year")) %>%
+  select(country_name, wbcode, year, dem, y, yeardem, top)
+pdf50 <- pdata.frame(data50, index = c("wbcode", "year"))
+```
+
+Simple Model
+
+```{r}
+model50_1 <- plm(
+  log(top) ~ dem,
+  data = pdf50,
+  model = "within",
+  effect = "twoways"
+  )
+summary(model50_1)
+```
+
+= bad at everything

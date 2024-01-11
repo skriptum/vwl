@@ -1,0 +1,299 @@
+# Regression
+
+```{r}
+library(wiesbaden)
+library(tidyverse)
+```
+
+```{r}
+cred <- c(user="RE010711", password="pvehhCcaYiNK8FnmsgHB", db="regio")
+test_login(cred)
+```
+
+```{r}
+wahl_lohn <- readRDS("data/wahl_lohn.Rds")
+```
+
+## Simple Regression
+
+```{r}
+ggplot(aes(x = lohn_prozent, y = afd_prozent), data = wahl_lohn) +
+  geom_point(shape = 1) +
+  geom_smooth(method = "lm", se = T) +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  theme_minimal() + #scientific theme
+  #coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35)) + #start at 0,0
+  # for Sonneberg (16072)
+  geom_point(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    color = "red",
+  ) + 
+  geom_text(
+    data = wahl_lohn %>% filter(kreis == "16072"),
+    label = "SB",
+    vjust = 1.3,
+    hjust = 0,
+    color = "red"
+  )
+
+```
+
+```{r}
+model_basic <- lm(
+    afd_prozent ~ lohn_prozent, 
+    data = wahl_lohn
+  )
+summary(model_basic)
+```
+
+## Ost West
+
+```{r}
+länder <- wahl_lohn$land %>% unique()
+ost_names <- c("BB", "BE", "MV", "SN", "ST", "TH")
+
+wahl_lohn <- wahl_lohn %>%
+  mutate(
+    ost = ifelse(land %in% ost_names, 1, 0)
+  )
+```
+
+Dummy for ost
+
+```{r}
+model_ost <- lm(
+    afd_prozent ~ lohn_prozent + ost, 
+    data = wahl_lohn
+  )
+summary(model_ost)
+```
+
+Plot
+
+```{r}
+wahl_lohn %>%
+  ggplot(aes(x = lohn_prozent, y = afd_prozent)) +
+  geom_point(aes(color = factor(ost))) +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  scale_color_manual(values = c("red", "blue"), name="Osten") + #color of points
+  theme_minimal() + #scientific theme
+  coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35))  #start at 0,0
+```
+
+## Unemployment Rate
+
+from Regionalstatistik [13211-02-05-4](https://www.regionalstatistik.de/genesis//online?operation=table&code=13211-02-05-4&bypass=true&levelindex=0&levelid=1704816689633#abreadcrumb)
+
+```{r}
+d <- retrieve_datalist(tableseries="13211*", genesis=cred)
+subset(d, grepl("Kreise", description)) 
+```
+
+```{r}
+data <- retrieve_data(tablename="13211KJ009", genesis=cred)
+head(data)
+```
+
+```{r}
+arbeit_data <- data %>% 
+  filter(JAHR == 2021) %>%
+  select(kreis = KREISE, arbeitslosenquote = ERWP10_val) %>%
+  # remove rows with more than 5 digits in kreis
+  filter(nchar(kreis) == 5)
+```
+
+Merge
+
+```{r}
+wahl_lohn_arbeit <- wahl_lohn %>%
+  left_join(arbeit_data, by = "kreis")
+```
+
+```{r}
+model_arbeit <- lm(
+    afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote, 
+    data = wahl_lohn_arbeit
+  )
+summary(model_arbeit)
+```
+
+Plot with scale for arbeitslosenquote
+
+```{r}
+wahl_lohn_arbeit %>%
+  ggplot(aes(x = lohn_prozent, y = afd_prozent)) +
+  geom_point(aes(color = arbeitslosenquote)) +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  scale_color_viridis_c(name = "Arbeitslosenquote", option="magma", direction=-1) + #color of points
+  theme_minimal() + #scientific theme
+  coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35))  #start at 0,0
+
+```
+
+## GDP per Capita
+
+Regionalstatistik [82111](https://www.regionalstatistik.de/genesis//online?operation=table&code=82111-01-05-4&bypass=true&levelindex=0&levelid=1704893343488#abreadcrumb)
+
+```{r}
+d <- retrieve_datalist(tableseries="82111*", genesis=cred)
+subset(d, grepl("Kreise", description)) 
+```
+
+```{r}
+data <- retrieve_data(tablename="82111KJ008", genesis=cred)
+head(data)
+```
+
+```{r}
+gdp_data <- data %>% 
+  filter(JAHR == 2021) %>%
+  select(kreis = KREISE, gdp = BIP804_val) %>%
+  # remove rows with more than 5 digits in kreis
+  filter(nchar(kreis) == 5)
+```
+
+```{r}
+gdp_data %>%
+  filter(!kreis %in% wahl_lohn$kreis) %>%
+  select(kreis) %>%
+  arrange(kreis)
+```
+
+16056 (Eisenach) not present in Wahl_Lohn Data..., because Eisenach Kreis doesnt exist anymore, it is now Wartburgkreis (16063)
+
+Merge
+
+```{r}
+wahl_lohn_gdp <- wahl_lohn_arbeit %>%
+  left_join(gdp_data, by = "kreis")
+```
+
+Model
+
+```{r}
+model_gdp <- lm(
+    afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp), 
+    data = wahl_lohn_gdp
+  )
+summary(model_gdp)
+```
+
+## Population Density & Foreigners Rate
+
+Regionalstatistik [99910](https://www.regionalstatistik.de/genesis//online?operation=table&code=AI002-1-5&bypass=true&levelindex=0&levelid=1704894307140#abreadcrumb)
+
+
+```{r}
+d <- retrieve_datalist(tableseries="99910*", genesis=cred)
+subset(d, grepl("Bevölkerung", description)) 
+```
+
+```{r}
+data <- retrieve_data(tablename="99910KJA02", genesis=cred)
+head(data)
+```
+
+```{r}
+pop_data <- data %>% 
+  filter(JAHR == 2021) %>%
+  select(kreis = KREISE, 
+         pop = AI0201_val, #population density je km2
+         foreigners = AI0208_val #foreigners rate in %
+         ) %>%
+  # remove rows with more than 5 digits in kreis
+  filter(nchar(kreis) == 5)
+```
+
+Merge
+```{r}
+wahl_lohn_pop <- wahl_lohn_gdp %>%
+  left_join(pop_data, by = "kreis")
+```
+
+```{r}
+model_pop <- lm(
+    afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + log(pop), 
+    data = wahl_lohn_pop
+  )
+summary(model_pop)
+```
+
+## Foreigners Rate
+
+gleiche Tabelle wie Einwohnerzahl
+
+```{r}
+model_foreign <- lm(
+    afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + foreigners, 
+    data = wahl_lohn_pop
+  )
+summary(model_foreign)
+```
+)
+## Avg. Age
+
+```{r}
+d <- retrieve_datalist(tableseries="12411*", genesis=cred)
+subset(d, grepl("Kreise", description)) 
+```
+
+```{r}
+data <- retrieve_data(tablename="12411KJ019", genesis=cred)
+head(data)
+```
+
+```{r}
+age_data <- data %>% 
+  filter(STAG == "31.12.2021") %>%
+  select(kreis = KREISE, 
+         age = BEV519_val #avg age
+         ) %>%
+  # remove rows with more than 5 digits in kreis
+  filter(nchar(kreis) == 5)
+```
+
+Merge
+```{r}
+wahl_lohn_age <- wahl_lohn_pop %>%
+  left_join(age_data, by = "kreis")
+```
+
+```{r}
+model_age <- lm(
+    afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + foreigners + age, 
+    data = wahl_lohn_age
+  )
+summary(model_age)
+```
+
+
+## Model Table
+
+```{r}
+library(stargazer)
+```
+
+```{r}
+stargazer(model_basic, model_arbeit, model_gdp, model_pop, model_foreign, type = "text")
+```
+

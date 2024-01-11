@@ -88,7 +88,7 @@ Intro:
 
 
 
-Nobel Prize of Sveriges Riksbank economics
+### Nobel Prize of Sveriges Riksbank economics
 
 - biggest achievement in Economics 
 - historically only third women to receive (Goldin, Duflo, Ostrom)
@@ -99,7 +99,7 @@ Nobel Prize of Sveriges Riksbank economics
 
 
 
-about goldin
+### about goldin
 
 - educated at University of Chicago = heart of neoliberalism
 - under Gary Becker (marginal choice analysis of women)
@@ -114,41 +114,92 @@ about goldin
 
 Goldins Take on
 
-- Household (Chapter 5)
-    - analysis of Different earnings men and women
-    - deviation of Gary Beckers Way
-    - trajectories of pay after birth for father / mother (parenthood effect)
-    - regular on Gender Pay Gap News Channels
-        - But: no deviations from standard household
-        - only white middle class women focused
-        - no single parents etc...
-        - rising share of non-common households therefore not included
+### Household (Chapter 6)
 
-- Labor-Market Inequality (Chapter 6)
-    - Analysis for lower Inequality in 1950s etc.
-    - demand for lower skilled workers
-    - and war price controls
+Neoclassical
 
-- historical perspective
+- Household = Black Box
+- income pooling
+- equal benefit of household income
+- exmeplified Gary Becker: household as firm, profit maximizing
 
-    - disputed common perspective that progress => more women in labor
-    - showed with new historical data that before industrialization = women more equal work
+Goldin
 
-    - Goldins U
+- analysis of Different earnings men and women
+- deviation of Gary Beckers Way
+- trajectories of pay after birth for father / mother 
+    - parenthood effect
+    - "price of being female"
+- Household not understood as bacl box, but as shaped by societal / economic forces
+
+But in most of her work
+
+- no deviations from standard household
+- apparingly white middle class women focused
+- no single parents etc...
+- rising share of non-common households therefore not included
+
+---
+
+### Labor-Market Inequality (Chapter 6)
+
+Neoclassic Classical
+
+- labour amrket = demand & supply
+- shaped by human capital
+    - = human capital theory Mincer
+- explains gendered pay effects, because women less human capital
+- growth = more demand = more women in labor force
+
+FPE:
+
+- barriers to human capital accumulation (e.g cost of education)
+- accumulation of privilege by men
+- reinforcemnt of stereotypes in household
+- housework in general not being taken into account
 
 
-- Feminist Movements
-    - newest paper (why women won)
-    - describing fights of womens movement for rights
-    - explains legal hurdles / societal obstacles overcome
-    - also describes antifeminist movements (past + today)
+
+Goldin
+
+- historical analyis of reasons women were not working
+    - regulations against women taking jobs
+    - societal norms
+
+- but model of women = human capital rational model
+- changing nature of society = more rational to invest in education etc.
+- middle way
 
 
 
+### Feminist Movements
+
+FPE: 
+
+- developed out of feminist movement / collective action
+- "Research can be a central component in praxis, providing a guide to, and a reflection on action."
+- analyze potential for movements and describe womens movements
+
+Goldin similar
+
+- does not stop at analyzing abstract technological changes
+- analyze their impacts on society
+    - i.e pill, not the theoretical possibilities of cheap birth control
+    - but research the implementation of legal right to the pill had
+    - more than just innovation, but legal implementation
+- describing fights of womens movement for rights
+- explains legal hurdles / societal obstacles overcome
+- also describes antifeminist movements (past + today)
 
 
 
-and her not exisitng takes on (@Kesar)
+### Gloabl South: and her not exisitng takes
+
+- hypothesis of Goldins U: 
+- historical trajectory of women's emplyoment over countries development
+- applicable to all countries
+
+But: Kesar describes not hold everytime
 
 - global south (not advanced economics)
 - informal jobs more common there
@@ -156,7 +207,7 @@ and her not exisitng takes on (@Kesar)
 
 
 
-Research Ways change (@Small)
+### Research Ways change (@Small)
 
 - shift to instituational economics
 - cites feminist economists
@@ -177,6 +228,16 @@ Research Ways change (@Small)
     - more gaps open for more FPE in mainstream
     - maybe one day it will also be teached in mainstream economics
 - i wouldnt need to take extra classes like this, but would be included in my curriculum
+
+
+
+Conclusion
+
+- spaces for connecting schools of thought learned
+- new research uncovered in process
+- 
+
+
 
 ## Portfolio
 

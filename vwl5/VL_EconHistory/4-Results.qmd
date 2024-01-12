@@ -1,0 +1,107 @@
+# Results
+
+## Imports
+```{r}
+library(stargazer)
+library(tidyr)
+```
+
+```{r}
+load("data/models.RData")
+```
+
+```{r}
+models <- list(
+  model_basic,
+  model_arbeit,
+  model_gdp,
+  model_pop,
+  model_foreign,
+  model_age
+)
+```
+
+```{r}
+wahl_lohn <- readRDS("data/wahl_lohn_2.rds")
+```
+
+```{r}
+```
+
+
+## Regression Model Table
+
+```{r}
+stargazer(models, type = "text")
+```
+
+## Plots
+
+Basic plot with SB
+
+```{r}
+ggplot(aes(x = lohn_prozent, y = afd_prozent), data = wahl_lohn) +
+  geom_point(shape = 1) +
+  geom_smooth(method = "lm", se = T) +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  theme_minimal() #+ #scientific theme
+  #coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35)) + #start at 0,0
+  # for Sonneberg (16072)
+  # geom_point(
+  #   data = wahl_lohn %>% filter("kreis" == "16072"),
+  #   color = "red",
+  # ) + 
+  # geom_text(
+  #   data = wahl_lohn %>% filter("kreis" == "16072"),
+  #   label = "SB",
+  #   vjust = 1.3,
+  #   hjust = 0,
+  #   color = "red"
+  # )
+```
+
+Plot with east germany
+
+```{r}
+ggplot(aes(x = lohn_prozent, y = afd_prozent), data = wahl_lohn) +
+  geom_point(aes(color = factor(ost))) +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  scale_color_manual(values = c("red", "blue"), name="Osten") + #color of points
+  theme_minimal() + #scientific theme
+  coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35))  #start at 0,0
+```
+
+
+Plot with scale for arbeitslosenquote
+
+```{r}
+ggplot(aes(x = lohn_prozent, y = afd_prozent), data = wahl_lohn) +
+  geom_point(aes(color = arbeitslosenquote)) +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Anteil Mindestlohnbezieher",
+    y = "AfD Stimmen in %",
+    title = "AfD Stimmen und Mindestlohnbezieher",
+    subtitle = "Kreisebene",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  ) +
+  scale_color_viridis_c(name = "Arbeitslosenquote", option="magma", direction=-1) + #color of points
+  theme_minimal() + #scientific theme
+  coord_cartesian(xlim = c(0, 0.5), ylim = c(0, 0.35))  #start at 0,0
+```
+
+## Maps
+

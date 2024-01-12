@@ -2,6 +2,19 @@
 
 Regression von AFD Wahlergebnissen und Mindestlohnbeziehern in einem Kreis
 
+## Data Sources
+
+Wahlergebnisse AfD: [Bundeswahlleiter](https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99.html)
+
+Mindestlohnbezieher: [Wirtschaft- und Sozialwissenschaftliches Institut (Hans Böckler Stiftung)](https://www.wsi.de/de/sonderauswertung-43368-mindestlohnanhebung-43374.htm)
+
+based on:
+- BA Arbeit
+- Destatis
+- SOEP
+berechnet vom WSI
+
+
 ## Import der Daten
 
 ```{r}

@@ -6,8 +6,8 @@ library(tidyverse)
 ```
 
 ```{r}
-cred <- c(user="RE010711", password="pvehhCcaYiNK8FnmsgHB", db="regio")
-test_login(cred)
+#credentials saved via save_credentials()
+test_login(genesis=c(db="regio")) #test login
 ```
 
 ```{r}
@@ -82,14 +82,14 @@ arbeit_data <- data %>%
 Merge
 
 ```{r}
-wahl_lohn_arbeit <- wahl_lohn %>%
+wahl_lohn <- wahl_lohn %>%
   left_join(arbeit_data, by = "kreis")
 ```
 
 ```{r}
 model_arbeit <- lm(
     afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote, 
-    data = wahl_lohn_arbeit
+    data = wahl_lohn
   )
 summary(model_arbeit)
 ```
@@ -130,7 +130,7 @@ gdp_data %>%
 Merge
 
 ```{r}
-wahl_lohn_gdp <- wahl_lohn_arbeit %>%
+wahl_lohn <- wahl_lohn %>%
   left_join(gdp_data, by = "kreis")
 ```
 
@@ -139,7 +139,7 @@ Model
 ```{r}
 model_gdp <- lm(
     afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp), 
-    data = wahl_lohn_gdp
+    data = wahl_lohn
   )
 summary(model_gdp)
 ```
@@ -172,17 +172,52 @@ pop_data <- data %>%
 
 Merge
 ```{r}
-wahl_lohn_pop <- wahl_lohn_gdp %>%
+wahl_lohn <- wahl_lohn %>%
   left_join(pop_data, by = "kreis")
 ```
 
 ```{r}
 model_pop <- lm(
     afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + log(pop), 
-    data = wahl_lohn_pop
+    data = wahl_lohn
   )
 summary(model_pop)
 ```
+
+## Hartz IV
+
+Regionalstatistik [AI](https://www.regionalstatistik.de/genesis//online?operation=table&code=AI-S-04&bypass=true&levelindex=0&levelid=1705078025766#abreadcrumb)
+
+take d from question before, it is the same
+```{r}
+data <- retrieve_data(tablename="99910KJA21", genesis=cred)
+head(data)
+```
+
+```{r}
+hartz_data <- data %>% 
+  filter(JAHR == 2021) %>%
+  select(kreis = KREISE, 
+         hartz = AI2102_val #hartz IV rate in %
+         ) %>%
+  # remove rows with more than 5 digits in kreis
+  filter(nchar(kreis) == 5)
+```
+
+Merge
+```{r}
+wahl_lohn <- wahl_lohn %>%
+  left_join(hartz_data, by = "kreis")
+```
+
+```{r}
+model_hartz <- lm(
+    afd_prozent ~ lohn_prozent + ost + arbeitslosenquote + log(gdp) + log(pop) + hartz, 
+    data = wahl_lohn
+  )
+summary(model_hartz)
+```
+
 
 ## Foreigners Rate
 
@@ -191,7 +226,7 @@ gleiche Tabelle wie Einwohnerzahl
 ```{r}
 model_foreign <- lm(
     afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + foreigners, 
-    data = wahl_lohn_pop
+    data = wahl_lohn
   )
 summary(model_foreign)
 ```
@@ -220,18 +255,29 @@ age_data <- data %>%
 
 Merge
 ```{r}
-wahl_lohn_age <- wahl_lohn_pop %>%
+wahl_lohn <- wahl_lohn %>%
   left_join(age_data, by = "kreis")
 ```
 
 ```{r}
 model_age <- lm(
     afd_prozent ~ lohn_prozent + ost+ arbeitslosenquote + log(gdp) + foreigners + age, 
-    data = wahl_lohn_age
+    data = wahl_lohn
   )
 summary(model_age)
 ```
 
+## Linke 
+
+```{r}
+model_linke <- lm(
+    linke_prozent ~ lohn_prozent, 
+    data = wahl_lohn
+  )
+summary(model_linke)
+```
+
+=> not significant in all variants, low R2 in basic variant
 
 ## Save Data
 
@@ -244,9 +290,10 @@ save(
   model_pop, 
   model_foreign, 
   model_age,
+  model_hartz,
   file = "data/models.RData")
 ```
 
 ```{r}
-saveRDS(wahl_lohn_age, "data/wahl_lohn_2.RDS")
+saveRDS(wahl_lohn, "data/wahl_lohn_mod.RDS")
 ```

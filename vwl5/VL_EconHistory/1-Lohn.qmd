@@ -14,9 +14,38 @@ Sonneberg also: district with the highest proportion of minimum wage earners in 
 
 Research Question: What is the connection between minimum wage and populism?
 
+additional about Sonneberg:
+
+- thüringenweit höchste Industriedichte
+- schon damals viele Arbeiter, die erst rot und dann NS gewählt haben (Wiki)
+- Thüringen erste NSDAP Regierungsbeteiligung
+  - [Spiegel](https://www.spiegel.de/geschichte/nsdap-1930-probelauf-der-diktatur-a-e9e83be9-0002-0001-0000-000207602126)
+  - [MDR](https://www.mdr.de/geschichte/ns-zeit/politik-gesellschaft/mustergau-thueringen-gleichschaltung-100.html)
+- auch genannt SPielzeugstadt
+- [Wahlergebnisse hsitorisch](https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00023432/wahlenundabstimmungsergebnissse_1920-1995.pdf) S.90 
+  - Stadt mit meisten NSDAP Stimmen 1929
+
 ## Literature
 
+- Ncihtwähler
+- Globalisierungsverlierer
+- Einkommen varieren
+- Alterstruktur wie andere Parteien
+
+
 ## Data
+
+## Data Sources
+
+Vote Share AfD: [Bundeswahlleiter](https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99.html)
+
+Minimum Wage: [Wirtschaft- und Sozialwissenschaftliches Institut (Hans Böckler Stiftung)](https://www.wsi.de/de/sonderauswertung-43368-mindestlohnanhebung-43374.htm)
+
+based on:
+- BA Arbeit
+- Destatis
+- SOEP
+berechnet vom WSI
 
 ## Method
 

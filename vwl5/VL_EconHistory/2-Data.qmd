@@ -2,19 +2,6 @@
 
 Regression von AFD Wahlergebnissen und Mindestlohnbeziehern in einem Kreis
 
-## Data Sources
-
-Wahlergebnisse AfD: [Bundeswahlleiter](https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99.html)
-
-Mindestlohnbezieher: [Wirtschaft- und Sozialwissenschaftliches Institut (Hans Böckler Stiftung)](https://www.wsi.de/de/sonderauswertung-43368-mindestlohnanhebung-43374.htm)
-
-based on:
-- BA Arbeit
-- Destatis
-- SOEP
-berechnet vom WSI
-
-
 ## Import der Daten
 
 ```{r}
@@ -34,15 +21,18 @@ wahl <- wahlergebnisse %>%
      "kreis" = "...2", 
      "waehler" = "...5",
      "afd_stimmen" = "...57",
+     "linke_stimmen" = "...59",
      "name" = "...3",
      "land" = "© Der Bundeswahlleiter, Wiesbaden 2022"
   ) %>%
   mutate(
     afd_prozent = as.numeric(afd_stimmen) / as.numeric(waehler),
+    linke_prozent = as.numeric(linke_stimmen) / as.numeric(waehler),
     waehler = as.numeric(waehler),
-    afd_stimmen = as.numeric(afd_stimmen)
+    afd_stimmen = as.numeric(afd_stimmen),
+    linke_stimmen = as.numeric(linke_stimmen)
     ) %>% # calculate afd percentage
-  select(kreis, name, land, waehler, afd_stimmen, afd_prozent) %>% 
+  select(kreis, name, land, waehler, afd_stimmen, afd_prozent, linke_prozent) %>% 
   slice(6:nrow(.)) %>%#remove unused rows with metadata and total germany
   filter(!is.na(kreis))
 
@@ -108,7 +98,7 @@ wahl_lohn <- wahl %>%
     lohn_prozent = lohn_prozent/100,
     name = name.x
     ) %>%
-  select(kreis, name, land, afd_prozent, lohn_prozent)
+  select(kreis, name, land, afd_prozent, lohn_prozent, linke_prozent)
 ```
 
 Regression in next file, save the data frame

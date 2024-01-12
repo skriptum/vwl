@@ -3,7 +3,8 @@
 ## Imports
 ```{r}
 library(stargazer)
-library(tidyr)
+library(tidyverse)
+library(patchwork)
 ```
 
 ```{r}
@@ -17,7 +18,8 @@ models <- list(
   model_gdp,
   model_pop,
   model_foreign,
-  model_age
+  model_age,
+  model_hartz
 )
 ```
 
@@ -29,11 +31,6 @@ wahl_lohn <- readRDS("data/wahl_lohn_2.rds")
 ```
 
 
-## Regression Model Table
-
-```{r}
-stargazer(models, type = "text")
-```
 
 ## Plots
 
@@ -105,3 +102,55 @@ ggplot(aes(x = lohn_prozent, y = afd_prozent), data = wahl_lohn) +
 
 ## Maps
 
+Load GEOJSON Data for Kreise
+
+Data Source = Regionalatlas Statistikportal
+
+```{r}
+spdf <- sf::read_sf("data/kreise_1.geojson")
+```
+
+Merge
+
+```{r}
+geodata <- spdf %>% 
+  left_join(wahl_lohn, by = c("schluessel" = "kreis"))
+```
+
+Afd Stimmen
+
+```{r}
+afd_map <- ggplot(geodata) +
+  geom_sf(aes(fill = afd_prozent)) +
+  scale_fill_viridis_c(name = "AfD in %", option="magma", direction=-1) +
+  theme_minimal() +
+  labs(
+    title = "AfD Vote Share",
+  )
+```
+
+Mindestlohn
+
+```{r}
+lohn_map <- ggplot(geodata) +
+  geom_sf(aes(fill = lohn_prozent)) +
+  scale_fill_viridis_c(name = "MW %", option="magma", direction=-1) +
+  theme_minimal() +
+  labs(
+    title = "Minimum Wage Recipients",
+    subtitle = "District Level",
+    caption = "Daten: WSI, Bundeswahlleiter"
+  )
+```
+
+both maps next to each other
+
+```{r}
+afd_map + lohn_map + plot_annotation(subtitle = "Daten: WSI, Bundeswahlleiter")
+```
+
+## Regression Model Table
+
+```{r}
+stargazer(models, type = "text")
+```

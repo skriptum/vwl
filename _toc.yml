@@ -742,6 +742,8 @@ subtrees:
         title: Sachenrecht
       - file: vwl5/VL_Zivilrecht/2023-12-15-Kreditsicherheit.md
         title: Kreditsicherheit
+      - file: vwl5/VL_Zivilrecht/2024-01-12-Deliktrecht.md
+        title: Deliktrecht
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:

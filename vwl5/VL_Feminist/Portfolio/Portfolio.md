@@ -76,6 +76,16 @@ Learnings of the course for future
 
 
 
+new:
+
+role of men in discussion was shown
+
+- me included, always talked more
+- critical reflection of my own actions
+- how to create spaces that are more open to participatio from women
+
+- especially in our local group of Pluralist Economics
+
 
 
 ## Nobel Prize and Feminist Economics
@@ -210,18 +220,23 @@ But: Kesar describes not hold everytime
 ### Research Ways change (@Small)
 
 - shift to instituational economics
-- cites feminist economists
+- cites feminist economists lately
 - more textual / narrative than most neoclassical 
 - historical analysis, not just mathematics
 
 
 
-=> gradual movement into more heterodox direction
+### Summary
+
+=> Claudia Goldin gradual movement into more heterodox direction
 
 - started as neoclassical economist
 - moved into new directiosn (institutionalist / feminist)
 - new topics and research methods
 - not yet fully FPE, but starting to cite them
+
+
+
 - openend possibilities for more women in economics
     - Graduate Program onyl for women
 - Nobel Prize = acknowledgement of this research in mainstream
@@ -235,7 +250,15 @@ Conclusion
 
 - spaces for connecting schools of thought learned
 - new research uncovered in process
-- 
+
+
+
+
+
+- Critical self evaluation
+- Privileges in our economy
+- Distribution of care
+- notnjust academic, also personal
 
 
 

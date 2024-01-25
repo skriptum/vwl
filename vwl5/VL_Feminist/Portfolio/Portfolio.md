@@ -149,6 +149,18 @@ But in most of her work
 - no single parents etc...
 - rising share of non-common households therefore not included
 
+
+
+**Personally**:
+
+- Economic Household Analysis based on any rational choice model = nonsense
+    - including coinstrained rationality by Goldin
+- statistically describing the differences and then going more towards FPE / sociology worth more to me
+- major part of the course showing me alternatives to this
+- neoclassical household learned in education not really convincing
+
+
+
 ---
 
 ### Labor-Market Inequality (Chapter 6)
@@ -179,6 +191,8 @@ Goldin
 - but model of women = human capital rational model
 - changing nature of society = more rational to invest in education etc.
 - middle way
+
+
 
 
 
@@ -226,6 +240,16 @@ But: Kesar describes not hold everytime
 
 
 
+**PErsonal**:
+
+- found her recent research quite convincing
+- her historical narration of feminist movements = good way of doing things
+- i always believed in the power of movements & politicla change
+    - especially shown by the different movements in the seminar
+- now by a person with nobel rpize confirmed
+
+
+
 ### Summary
 
 => Claudia Goldin gradual movement into more heterodox direction
@@ -243,6 +267,13 @@ But: Kesar describes not hold everytime
     - more gaps open for more FPE in mainstream
     - maybe one day it will also be teached in mainstream economics
 - i wouldnt need to take extra classes like this, but would be included in my curriculum
+
+
+
+**Personal** would love to see more of FPE & Goldin in standard bachelors
+
+- more people get to know the school of thought
+- more option to reflect like we did in the course
 
 
 

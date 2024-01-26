@@ -744,6 +744,10 @@ subtrees:
         title: Kreditsicherheit
       - file: vwl5/VL_Zivilrecht/2024-01-12-Deliktrecht.md
         title: Deliktrecht
+      - file: vwl5/VL_Zivilrecht/2024-01-19-Handelsrecht.md
+        title: Handelsrecht
+      - file: vwl5/VL_Zivilrecht/2024-01-26-Wettbewerb.md
+        title: Wettbewerb
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:

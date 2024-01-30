@@ -69,7 +69,7 @@ Building on these learnings, the next chapter delves into a scientific analysis 
 
 `\pagebreak`{=latex}
 
-# Feminist Economics and the Mainstream {#essay}
+# Feminist Critique of Economic Paradigms {#essay}
 
 In this chapter, I embark on an analytical exploration of Claudia Goldin's body of work, employing a feminist economics perspective as the guiding lens. A fundamental query underscores my examination: does Claudia Goldin align with the designation of a feminist economist? The context of the 2023 Nobel Prize in Economic Sciences, awarded upon her, serves as a catalyst for my investigation, prompting me to scrutinize whether this recognition signifies the incorporation of feminist economics into the mainstream discourse. 
 
@@ -137,6 +137,8 @@ The Nobel Prize awarded to her recognizes the significance of her research in ma
 
 I'm eager to see more of Feminist Political Economy (FPE) incorporated into standard bachelor's programs. This could expose a broader audience to this valuable school of thought and offer additional chances for reflective learning, akin to the discussions we had in this course. The Nobel Prize acknowledging Goldin's work feels like a promising step toward making these perspectives a more integral part of mainstream economic education.
 
+`\pagebreak`{=latex}
+
 # Conclusion
 
 The course has equipped me with valuable insights for the future. I now aim to incorporate class and gender considerations more prominently into economic analyses, recognizing the significance of these dimensions. The exposure to the concept of intersectionality, a perspective less emphasized in my prior education, has broadened my understanding. Additionally, the course has better prepared me for discussions with neoclassical economists about gender topics, where before I sometimes failed to convincingly argue with them. 
@@ -181,14 +183,14 @@ also available [online](https://miro.com/app/board/uXjVNMmzLXg=/)
 
 `\pagebreak`{=latex}
 
-## Notes {-}
+## Course Notes {-}
 
 My notes on the lectures are available in an Online Appendix, because the Tool I use for note taking does not lend itself very well to a paged approach in a PDF. 
 
 - [09.10.2023 Introduction to FPE](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-09-Intro.html)
 - [16.10.2023 Global Division of Labor](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-16-Divison-Labor.html)
 - [23.10.2023 Reproduction](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-23-Reproduction.html)
-- [06.11.2023 Care](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-06-Care.html)
+- [30.10.2023 Care](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-30-Care.html)
 - [06.11.2023 Households](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-06-Household.html)
 - [10.11.2023 Ecofeminism](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html)
     - [Text: FPE and Sustainable Development Goals](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html#fpe-sdg-goals)

@@ -99,6 +99,8 @@ When delving into her specific works, Goldin takes a nuanced approach. In scruti
 
 Yet, it's essential to note that a significant portion of Goldin's work adheres to the standard neoclassical household model. Predominantly focused on apparently white middle-class women in high-income countries, her analyses often omit deviations from this norm, such as single-parent households. The rising prevalence of non-common households remains largely unexplored in her work, underscoring certain limitations in the scope of her research.
 
+On a personal level, delving into economic household analysis rooted in rational choice models, especially those championed by Goldin, has felt unconvincing. The constrained rationality framework she employs seems limiting, and I find more value in statistically describing the nuanced differences. This course has been pivotal in steering me towards alternatives, leaning more towards the sociological approach employed by Feminist Political Economy. It has made me question the neoclassical household model ingrained in my education, leaving me unconvinced of its true explanatory power.
+
 ## Labour Market
 
 In the neoclassical framework, the labor market is predominantly seen as a playground governed by the forces of demand and supply. This perspective emphasizes the concept of human capital, as elucidated in the human capital theory by Gary Becker and Jacob Mincer. Human capital theory posits that individuals invest in their education and skills, considering them as valuable assets in the labor market [@mincerOntheJobTrainingCosts1962]. The Gender Wage Gap in this framework is a result of diverging preferences of both genders to invest in their individual human capital.
@@ -125,17 +127,21 @@ As described by @abrahamAcknowledgementWomenWork2023, in the case of India, the 
 
 Goldin's research has witnessed a notable shift in her approach. While her earlier work predominantly employed a neoclassical methodology involving extensive mathematics and regressions, recent publications signal a move towards a more narrative approach rooted in institutional economics. Drawing inspiration from feminist epistemologists and economists, including Julia Nelson, as acknowledged in [@smallIntellectualTraditionsNobel2023], she cites their influence in her latest book [@goldinCareerFamily2021]. This evolution, emphasizing historical analysis over mathematical abstraction, underscores Goldin's dedication to exploring economic phenomena within historical contexts. This marks a significant departure from her earlier Beckerian Approach, reflecting a substantial transformation in her research trajectory.
 
+Personally, I've been impressed by Goldin's recent research shift. Her move towards a more narrative approach, especially in detailing the history of feminist movements, has caught my attention. It aligns with my belief in the power of movements and political change, a perspective reaffirmed by the diverse movements like the Kurdish we explored in the seminar. It's quite something to see a Nobel Prize-winning economist endorsing the impact of these movements.
+
 ## Summary
 
 Claudia Goldin's intellectual journey has evolved from a neoclassical economist to exploring new realms such as institutionalism and feminism. This progression is marked not only by changes in her research topics and methods but also by a growing acknowledgment of feminist perspectives, though she's not entirely anchored in Feminist Political Economy (FPE) yet. This shift has tangible outcomes, notably the establishment of a graduate program exclusively for women, reflecting Goldin's commitment to fostering inclusivity in economics. 
 
 The Nobel Prize awarded to her recognizes the significance of her research in mainstream economics, potentially paving the way for more substantial integration of feminist economics into the mainstream. It could "open a gap" for economist more situated within the feminist school to reach the mainstream of economics. Maybe one day, it will also be teached in undergraduate degrees, eliminating the need for specialized classes like this one, because it is already included in the curriculum. 
 
+I'm eager to see more of Feminist Political Economy (FPE) incorporated into standard bachelor's programs. This could expose a broader audience to this valuable school of thought and offer additional chances for reflective learning, akin to the discussions we had in this course. The Nobel Prize acknowledging Goldin's work feels like a promising step toward making these perspectives a more integral part of mainstream economic education.
+
 # Conclusion
 
-The course has equipped me with valuable insights for the future. I now aim to incorporate class and gender considerations more prominently into economic analyses, recognizing the significance of these dimensions. The exposure to the concept of intersectionality, a perspective less emphasized in my prior education, has broadened my understanding.. Additionally, the course has better prepared me for discussions with neoclassical economists about gender topics, where before I sometimes failed to convincingly argue with them. 
+The course has equipped me with valuable insights for the future. I now aim to incorporate class and gender considerations more prominently into economic analyses, recognizing the significance of these dimensions. The exposure to the concept of intersectionality, a perspective less emphasized in my prior education, has broadened my understanding. Additionally, the course has better prepared me for discussions with neoclassical economists about gender topics, where before I sometimes failed to convincingly argue with them. 
 
-Perhaps most notably, I have developed an appreciation for qualitative research, expanding beyond my previous quantitative orientation, which will enrich my approach to future research endeavors. Also writing a course paper for the first time. Additionally, this exam, though sometimes challenging, has marked my introduction to crafting a course paper, which will certainly be useful in my studies.
+Perhaps most notably, I have developed an appreciation for qualitative research, expanding beyond my previous quantitative orientation, which will enrich my approach to future research endeavors. Additionally, this exam, though sometimes challenging, has marked my introduction to crafting a course paper, which will certainly be useful in my future studies.
 
 Through critical self-evaluation, I've been examining my own perspectives and biases. It's been eye-opening to understand the privileges in our economic systems and notice how care responsibilities are distributed unevenly. These reflections are not just academic but have personal resonance as I grapple with a deeper understanding of these complex issues due to this course.
 
@@ -177,7 +183,7 @@ also available [online](https://miro.com/app/board/uXjVNMmzLXg=/)
 
 ## Notes {-}
 
-available in Online Appendix
+My notes on the lectures are available in an Online Appendix, because the Tool I use for note taking does not lend itself very well to a paged approach in a PDF. 
 
 - [09.10.2023 Introduction to FPE](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-09-Intro.html)
 - [16.10.2023 Global Division of Labor](https://vwl.martenw.com/vwl5/VL_Feminist/2023-10-16-Divison-Labor.html)
@@ -185,10 +191,14 @@ available in Online Appendix
 - [06.11.2023 Care](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-06-Care.html)
 - [06.11.2023 Households](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-06-Household.html)
 - [10.11.2023 Ecofeminism](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html)
+    - [Text: FPE and Sustainable Development Goals](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html#fpe-sdg-goals)
+    - [Text: FPE and Green New Deal](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html#fpe-green-new-deal)
+    - [Text: Pipes, Peace and Profit](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-10-Ecofeminist.html#fpe-case-study-in-ukraine)
+
 - [11.11.2023 Transformation of the Economy](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-11-Transformation.html)
 - [20.11.2023 Labor Market Inequalities](https://vwl.martenw.com/vwl5/VL_Feminist/2023-11-20-Labour-Market.html)
 
-
+`\pagebreak`{=latex}
 
 ## Affidavit of Authorship {-}
 

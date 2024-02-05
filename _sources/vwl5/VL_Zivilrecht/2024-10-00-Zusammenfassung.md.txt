@@ -33,11 +33,13 @@ graph LR
 
 > **Willenserklärung:** private Willensäußerung, die unmittelbar auf das Herbeiführen einer Rechtsfolge gerichtet ist
 
-:::{dropdown} Fall 1
+---
 
-```
-L will seinen Lamborghini verkaufen, weil es ein neues Modell gibt. Z spricht mit ihm und vereinbart mündlich einen Kaufpreis von 80.000€. 2 Tage später steht er vor der Tür mit dem Geld, L will jedoch nicht den Lambo rausrücken, da er von Dana ein besseres Angebot erhalten hat.
-```
+Fall 1
+
+:::{dropdown} 
+
+> L will seinen Lamborghini verkaufen, weil es ein neues Modell gibt. Z spricht mit ihm und vereinbart mündlich einen Kaufpreis von 80.000€. 2 Tage später steht er vor der Tür mit dem Geld, L will jedoch nicht den Lambo rausrücken, da er von Dana ein besseres Angebot erhalten hat.
 
 Anspruch auf Übergabe gemäß §433 BGB
 
@@ -51,6 +53,25 @@ Anspruch auf Übergabe gemäß §433 BGB
     - => Vertragsschluss
 
 Ergebnis: Anspruch auf Übergabe und Übereignung des Lamborghini aus §433
+
+:::
+
+Fall 2
+
+:::{dropdown}
+
+> Geschäftsmann G möchte zu einer wichtigen Konferenz. Allerdings springt sein Fahrzeug nicht an. Deshalbt bittet er seinen Nachbar N, ihn zum Flughafen zu fahren. N sagt spontan zu. 
+> Unterwegs geraten sie in einen heftigen Streit. N setzt daraufhin den G an der nächsten Raststätte ab.
+
+Anspruch nach § 662 BGB
+
+- Willenserklräung des N
+    - Abgrenzung Rechtsbindungswille | bloße Gefälligkeit 
+        - nach sozialer Bedeutung, Interessen der Handelnden
+        - hier: Transport zum Flughafen ist durchaus sozialüblich
+        - hier Gefälligkeit
+
+=> kein Anspruch
 
 :::
 

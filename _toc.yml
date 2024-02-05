@@ -724,6 +724,8 @@ subtrees:
     - file: vwl5/VL_Zivilrecht/README
       title: Zivilrecht
       entries:
+      - file: vwl5/VL_Zivilrecht/2023-10-00-Zusammenfassung.md
+        title: Zusammenfassung
       - file: vwl5/VL_Zivilrecht/2023-10-17-Intro.md
         title: Intro
       - file: vwl5/VL_Zivilrecht/2023-10-24-Vertrag.md
@@ -748,8 +750,6 @@ subtrees:
         title: Handelsrecht
       - file: vwl5/VL_Zivilrecht/2024-01-26-Wettbewerb.md
         title: Wettbewerb
-      - file: vwl5/VL_Zivilrecht/2024-10-00-Zusammenfassung.md
-        title: Zusammenfassung
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:

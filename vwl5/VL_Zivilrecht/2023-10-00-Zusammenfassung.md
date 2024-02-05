@@ -2,12 +2,31 @@
 
 Fokus:
 
-- Vertrag Beginn / Ende
-- Gewährleistung
-- Schadensersatz
-- Sachenrecht
-- Übereignung
+- Vertragschluss
+    - Fälle 1 (Vertragschluss)
+    - Slides 2
+- Vertragsende
+    - Slides 5
+    - Fälle 4
 
+- Gewährleistung
+    - Slides 8
+
+- Schadensersatz
+    - Fälle 5
+    - Slides 6
+- Sachenrecht
+    - Fälle 6
+    - Slides 9
+    - Übereignung!
+
+
+
+anderes:
+
+- Stellvertertung
+    - Fälle 03
+    - 
 
 
 ## Verträge
@@ -18,9 +37,9 @@ Fokus:
 
 > **Rechtsgeschäft:** besteht aus mindestens einer Willenserklärung, die darauf gerichtet ist, eine bestimmte Rechtsfolge herbeizuführen.
 
-### Vertragsschluss
+### Willenserklärungen
 
-durch zwei übereinstimmende Willenserklärungen (WE)
+> **Willenserklärung:** private Willensäußerung, die unmittelbar auf das Herbeiführen einer Rechtsfolge gerichtet ist
 
 ```mermaid
 graph LR
@@ -31,13 +50,64 @@ graph LR
 - Antrag: empfagnsbedürftige WE
 - Annahme: WE mit vorbehaltloser Zustimmung
 
-> **Willenserklärung:** private Willensäußerung, die unmittelbar auf das Herbeiführen einer Rechtsfolge gerichtet ist
+
+
+Arten von WE
+
+- ausdrücklich = gesagt
+- konkludent = ergibt sich
+- Schweigen = nicht wichtig
+
+
+
+WE zu unterscheiden von
+
+- Gefälligkeitszusage (bspw unter Nachbarn)
+- invitio ad offerendum (Auslage in Laden)
+
+
+
+empfangsbedürftige WE: Abgabe und Zugang
+
+- Abgabe = willentliche Entäußerung einer Erklärung
+- Zugang = im Machtbereich (Möglichkeit der Kenntnisnahme)
+
+
+
+### Vertragsschluss
+
+= durch zwei übereinstimmende WE
+
+![img](../images/2024-02-05_15-36-42.jpg)
+
+Grundsatz des BGB = Privatautonomie
+
+begrenzt durch: 
+
+- Formerfodernisse (gesetzlich): §126ff
+- Geschäftsfähigkeit
+    - 7-17 Jahre: beschränkt geschäftsfähig
+    - 18+: voll geschäftsfähig
+- Verbote
+    - Hehlerei
+    - Wucher
+    - Sittenwidrigkeit (Ausnutzung Notsituation etc.)
+
+### Stellvertreter & Bote
+
+
+
+
+
+
+
+
 
 ---
 
 Fall 1
 
-:::{dropdown} 
+:::{dropdown} Lamborghini
 
 > L will seinen Lamborghini verkaufen, weil es ein neues Modell gibt. Z spricht mit ihm und vereinbart mündlich einen Kaufpreis von 80.000€. 2 Tage später steht er vor der Tür mit dem Geld, L will jedoch nicht den Lambo rausrücken, da er von Dana ein besseres Angebot erhalten hat.
 
@@ -58,7 +128,7 @@ Ergebnis: Anspruch auf Übergabe und Übereignung des Lamborghini aus §433
 
 Fall 2
 
-:::{dropdown}
+:::{dropdown} Nachbarschaftshilfe
 
 > Geschäftsmann G möchte zu einer wichtigen Konferenz. Allerdings springt sein Fahrzeug nicht an. Deshalbt bittet er seinen Nachbar N, ihn zum Flughafen zu fahren. N sagt spontan zu. 
 > Unterwegs geraten sie in einen heftigen Streit. N setzt daraufhin den G an der nächsten Raststätte ab.

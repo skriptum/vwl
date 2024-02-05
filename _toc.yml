@@ -748,6 +748,8 @@ subtrees:
         title: Handelsrecht
       - file: vwl5/VL_Zivilrecht/2024-01-26-Wettbewerb.md
         title: Wettbewerb
+      - file: vwl5/VL_Zivilrecht/2024-10-00-Zusammenfassung.md
+        title: Zusammenfassung
     - file: vwl5/VL_Empirical/README
       title: Empirical Economics
       entries:

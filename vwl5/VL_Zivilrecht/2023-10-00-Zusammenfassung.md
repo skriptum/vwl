@@ -76,7 +76,7 @@ empfangsbedürftige WE: Abgabe und Zugang
 
 ### Vertragsschluss
 
-= durch zwei übereinstimmende WE
+= durch zwei übereinstimmende WE §433
 
 ![img](../images/2024-02-05_15-36-42.jpg)
 
@@ -86,7 +86,10 @@ begrenzt durch:
 
 - Formerfodernisse (gesetzlich): §126ff
 - Geschäftsfähigkeit
-    - 7-17 Jahre: beschränkt geschäftsfähig
+    - 7-17 Jahre: beschränkt geschäftsfähig, WE zählt wenn
+        - rechtlich vorteilhaft
+        - gesetzlicher Vertreter
+        - Leistung mit eigenen Mitteln
     - 18+: voll geschäftsfähig
 - Verbote
     - Hehlerei
@@ -95,11 +98,22 @@ begrenzt durch:
 
 ### Stellvertreter & Bote
 
+**Bote:** leitet fertige, fremde WE weiter
 
+**Stellvertreter:** gibt eigene WE ab
 
+- Passivvertretung = vertritt Empfänger von WE
+- Aktivvertretung = vertritt Sender von WE
 
+Voraussetzungen
 
-
+1. Zulässigkeit
+2. Abgabe eigener WE
+3. Offenkundigkeit
+4. im Rahmen der Vertretungsmacht
+    - durch Vollmacht (Innen- / Außenvollmacht)
+    - oder gesetzlich (Eltern)
+    - durch Rechts-schein
 
 
 
@@ -107,7 +121,7 @@ begrenzt durch:
 
 Fall 1
 
-:::{dropdown} Lamborghini
+:::{dropdown} Lamborghini Kaufvertrag
 
 > L will seinen Lamborghini verkaufen, weil es ein neues Modell gibt. Z spricht mit ihm und vereinbart mündlich einen Kaufpreis von 80.000€. 2 Tage später steht er vor der Tür mit dem Geld, L will jedoch nicht den Lambo rausrücken, da er von Dana ein besseres Angebot erhalten hat.
 
@@ -125,6 +139,8 @@ Anspruch auf Übergabe gemäß §433 BGB
 Ergebnis: Anspruch auf Übergabe und Übereignung des Lamborghini aus §433
 
 :::
+
+---
 
 Fall 2
 
@@ -145,4 +161,154 @@ Anspruch nach § 662 BGB
 
 :::
 
+---
+
+Fall 3
+
+:::{dropdown} Stellvertretung
+
+> B bittet Sekretär S Geschenk für Mutter zu kaufen für max 50€.
+>
+> S geht in Laden von V., kauft Blumen für 40€ und sagt dass Rechnung auf B
+>
+> B verweigert V. die Begleichung später, da Mutter Blumenallergie
+
+Kann V von B die Herausgabe von 40€ fordern?
+
+aus [§433 BGB](https://www.gesetze-im-internet.de/bgb/__433.html) II:
+
+Kaufvertrag zw V und B?
+
+- Angebot des B?
+    - eigene WE? (-) da keine WE von B
+    - WE des S [§164 BGB](https://www.gesetze-im-internet.de/bgb/__164.html)?
+        - hatte Handlungspielraum (Preis)? (+)
+        - im fremden Namen? (+)
+        - Vertretungsmacht? (+) *Innenvollmacht* [§167 BGB](https://www.gesetze-im-internet.de/bgb/__167.html)
+    - Agnebot des B (+)
+- Annahme des V (+)
+- => Kaufvertrag
+
+=> Anspruch des V an B
+
+:::
+
+---
+
 ### Vertragsende
+
+5 Arten
+
+**1. Erfüllung** §362 = Bewirken der Leistung
+
+- richtige Leistung
+- richtige Art und Weise
+- richtiger Ort
+- richtige Zeit
+- richtiger Schuldner
+
+
+
+**2. Anfechtung** $142: WE wird unwirksam rückwirkend
+
+- Gründe
+    - Irrtümer §119
+    - falsche Übermittlung §120
+    - Unzulässige Willensbeinflussung §123
+- Voraussetzungen
+    - Anfechtungsgrund
+    - Anfechtungserklärung
+    - Anfechtungsfrist
+
+
+
+**3. Widerruf**
+
+- ohne Angabe von Gründen
+- nur für Verbraucher (§13) ggü. Unternehmer (§14)
+- Voraussetzungen
+    - Widerrufsrecht §312 (außerhalb von Geschäftsraum, Fernabsatzvertrag)
+    - formlose Erklärung
+    - Frist (14 Tage nach Erhalt)
+
+
+
+**4. Rücktritt**
+
+- beidseitig möglich
+- Vorraussetzungen §323
+    - gegenseitiger Vertrag
+    - Rücktrittsgrund
+    - Frist erfolglos
+    - Rücktrittserklärung
+    - Abschlussgründe
+- Folgen §346
+    - Rückgewähr Leistung
+    - Wertersatz
+    - Schadensersatz
+
+
+
+**5. Kündigung**
+
+= Beendigung von Dauerschuldverhältnissen (miete etc.)
+
+- ordentliche Kündigung: 
+    - keine Leistungstörung
+    - Kündigungsfristen
+- außerordentliche Kündigung (§314)
+
+---
+
+Fall 1
+
+:::{dropdown} Widerruf
+
+> K bestellt Buch für 50€ am 15.11 für privat, wird geliefert am 20.11. 
+>
+> K mag das Buch gar nicht, fordert Widerruf am 2.12 per Brief, der am 6.12 ankommt
+>
+> V meint, Verpackung entfernt => ist unverkäuflich, fordert 50€ ein
+
+- Kaufvertrag
+    - Angebot der K (+)
+    - Annahme des V (+)
+    - Kaufvertrag (+)
+- Widerruf wirksam? §355
+    - Verbrauchervertrag? §310
+        - V = Unternehmer (+)
+        - K = Verbraucher (+)
+        - entgeltliche Leistung (+)
+    - Fernabsattzvertrag (+)
+    - => Widerrufsrecht
+- Widerrufsfrist
+    - Beginn §356 ab Erhalt (20.11)
+    - Innerhalb Frist (4.12) abgesendet (+)
+
+=> rechtmäßiger Widerruf, V kreigt kein Geld
+
+:::
+
+---
+
+Fall 2
+
+:::{dropdown} 
+
+> K bestellt Blumengesteck für Beerdigung an 09.11. V verpsricht, bis zu dem Tag fertig zu sein.
+>
+> Am 09.11 will K Blumen haben, V sagt dass er noch 1 Tag braucht.
+>
+> K erklärt "für null und nichtig" und zahlt nicht.
+
+- Kaufvertrag (+)
+- Rücktrittsrecht §323 
+    - keine Leistung (+)
+    - hier: Termin war entscheidend, wurde auch mitgeteilt
+    - => Rücktrittsrecht
+- Rücktrittserklärung (+) ("Null und Nichtig")
+- Folgen: Erlöschen der Leistung
+
+=> nicht zahlen ist rechtmäßig
+
+:::

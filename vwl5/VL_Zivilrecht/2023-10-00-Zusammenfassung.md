@@ -140,9 +140,7 @@ Ergebnis: Anspruch auf Übergabe und Übereignung des Lamborghini aus §433
 
 :::
 
----
-
-Fall 2
+Fall Nachbarschaftshilfe
 
 :::{dropdown} Nachbarschaftshilfe
 
@@ -161,9 +159,7 @@ Anspruch nach § 662 BGB
 
 :::
 
----
-
-Fall 3
+Fall Stellvertretung
 
 :::{dropdown} Stellvertretung
 
@@ -260,7 +256,7 @@ Kaufvertrag zw V und B?
 
 ---
 
-Fall 1
+Fall Widerruf
 
 :::{dropdown} Widerruf
 
@@ -289,9 +285,7 @@ Fall 1
 
 :::
 
----
-
-Fall 2
+Fall Blumenkauf
 
 :::{dropdown} 
 
@@ -310,5 +304,155 @@ Fall 2
 - Folgen: Erlöschen der Leistung
 
 => nicht zahlen ist rechtmäßig
+
+:::
+
+## Schadensersatz
+
+Vertragspflichten:
+
+- Primärpflichten (§241)
+    - Leistungspflicht
+    - Rücksichtnahme
+- Sekundärpflihten 
+    - Rückabwicklung (§346) 
+    - Schadensersatz (§280)
+
+
+
+Voraussetzungen Schadensersatz §280
+
+- Schuldverhältnis
+- Pflichtverletzung = nachteilige Abweichung
+- Vertretenmüssen §276 (Vorsatz / Fahrlässigkeit)
+- Schaden = unfreiwillige Vermögenseinbuße
+
+---
+
+Fall Pferdeturnier
+
+:::{dropdown} Pferdeturnier
+
+> P richtet Reitturnier aus, an dem G mit Pferd Fanta für 150€ Teilnahmegebühr teilnimmt.
+>
+> Beim Turnier trifft Fanta auf vorschriftswidrigen Fangständer und wird eingeschläfert
+>
+> Schadensersatz einklagbar?
+
+1. Schuldverhätlnis: Turnier für 150€ Teilnahme (+)
+2. Pflichtverletzung: 
+    - Leistungspflicht: Turnier wurde ausgerichtet (+)
+    - Rücksichtspflicht: sclecht aufgestellter Fangständer (-)
+3. Vertretenmüssen
+    - Vorsatz = absichtliche Pflichtverletzung (-)
+    - Fahrlässigkeit (+) (auch wenn von Mitarbeiter aufgestellt)
+4. Schaden = Pferd eingeschläfert = Einbuße (+)
+
+=> Schadensersatzpflicht
+
+:::
+
+## Gewährleistung
+
+Rechte des Käufers nach §437 bei Mängeln
+
+Voraussetzung: **Mangel**
+
+- Sachmangel $434
+    - subjektive Anforderungen
+    - objektive Anforderungen
+    - Sachgemäße Montage
+- Rechtsmangel §435
+
+Rechte des Käufers
+
+- **Nacherfüllung** 
+- **Rücktritt**, braucht
+    - Kaufvertrag
+    - Fälligkeit
+    - Mangel
+    - Fristsetzung
+    - Rücktrittserklärung
+- **Minderung**
+- **Schadensersatz**
+
+
+
+## Sachenrecht
+
+= Beziehung zw. Sachen und Personen
+
+> **Sache §90**: körperliche Gegenstände, beweglich oder unbeweglich
+
+> **Eigentum §903 BGB**: umfassendes dingliches Recht, nach Belieben mit Sache verfahren
+
+> **Besitz §854:** tatsächlcihe Herrschaft
+
+Übereignung:
+
+```mermaid
+graph TD
+Übertragung --> Rechtsgeschäftlich & Gesetzlich
+Rechtsgeschäftlich --> beweglich & unbeweglich
+```
+
+**bewegliche Sache §929**
+
+- Einigung
+- Übergabe
+- Berechtigung
+    - auch gutgläubiger Erwerb §932
+    - außer gestohlen §935
+
+**unbewegliche Sachen**
+
+- Einigung (mit Anwesenheit bie Notar) §925
+- Eintragung
+- Berechtigung
+    - wenn Grundbuch falsch, trotzdem ok §892
+
+**gesetzlicher Erwerb**
+
+- Ersitzung §900
+- Verbindung §946
+- Fund §965
+
+---
+
+Fall bewegliche Sache
+
+:::{dropdown} Autokauf
+
+> E ist Eigentümer Auto, Dieb D klaut dieses und verkauft an X.
+> X kauft ohne in Fahrzeugbrief zu schauen. E will Auto von X
+
+Anspruch auf Herausgabe von E an X, [§985](https://www.gesetze-im-internet.de/bgb/__985.html)
+
+- E = Eigentümer? 
+    - ursprünglicher Eigentümer (+)
+    - Eigentumsverlust durch Übereignung D an X: [§929](https://www.gesetze-im-internet.de/bgb/__929.html)
+        - Einigung zw. D und X (+)
+        - Übergabe (+)
+        - Verfügungsberechtigung (-)
+            - X nicht Eigentümer (-)
+            - gutgläubiger Erwerb?
+                - Da nicht Fahrzeugbrief zeigen lassen (-)
+- X = Besitzer (+)
+- Kein Recht an Besitz 
+
+=> Herausgabenanspruch
+
+:::
+
+Fall Hauseigentum
+
+:::{dropdown} Hausübereignung
+
+> A ist Egentümer und stirbt. Sohn S lässt sich als Eigentümer eintragen (mit Erbschein)
+> S übertragt an X. Danach Testament: Freund F ist Alleinerbe
+
+Wer ist Eigentümer? 
+
+X, da gutgläubig erworben und Glaube an Richtigkeit des Grundbuches
 
 :::

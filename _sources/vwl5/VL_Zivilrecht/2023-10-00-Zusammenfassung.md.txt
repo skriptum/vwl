@@ -1,32 +1,8 @@
 # Zivilrecht Zusammenfassung
 
-Fokus:
-
-- Vertragschluss
-    - Fälle 1 (Vertragschluss)
-    - Slides 2
-- Vertragsende
-    - Slides 5
-    - Fälle 4
-
-- Gewährleistung
-    - Slides 8
-
-- Schadensersatz
-    - Fälle 5
-    - Slides 6
-- Sachenrecht
-    - Fälle 6
-    - Slides 9
-    - Übereignung!
 
 
-
-anderes:
-
-- Stellvertertung
-    - Fälle 03
-    - 
+[TOC]
 
 
 ## Verträge
@@ -456,3 +432,93 @@ Wer ist Eigentümer?
 X, da gutgläubig erworben und Glaube an Richtigkeit des Grundbuches
 
 :::
+
+## Kreditsicherheiten
+
+Arten:
+
+- Personalsicherheit (Person mit Vermögen steht ein, Bürgschaft)
+- Realsicherheit (Gegenstand)
+
+Realsicherheiten:
+
+- **Sicherungsübereignung §930**: Eigentum geht an Gläubiger, bleibt aber im Besitz des Schuldners)
+- **Eigentumsvorbehalt §449**: Eigentum bei Käufer mit Bedingung, bspw. Ratenabzahlung)
+- **Hypothek §1113**: Eintragung des Pfändungsrechts in Grundbuch
+    - nicht Anspruch an Zahlung
+    - heute eher Grundschuld (nicht an eine bestimmte Forderung gebunden)
+- **Bürgschaft §765**
+
+
+
+## Deliktrecht
+
+Schadensersatz außerhalb von Vertragsverhältnis = §823
+
+1. Rechtsgutverletzung
+    - Leben, Körper, Gesundheit = Unversehrtheit
+    - Freiheit = Bewegungsfreiheit
+    - Eigentum = Beschädigung von Sachen
+    - sonstige Rechte = allg. Persönlichkeitsrecht (Beleidigung), Recht am Gewerbe (Streik, Boykott)
+2. Verletzungshandlung (Tun oder Unterlassen)
+3. Haftungsbegründete Kausalität (Handlung -> Rechtsgutverletzung)
+4. Rechtswidrigkeit der Handlung (Einwilligung, Notwehr)
+5. Verschulden 
+    - Vorsatz / Fahrlässigkeit
+    - Deliktsfähig (> 18J)
+6. Schaden (Vermögenseinbuße)
+7. Haftungsausfüllende Kausaliät  (Rechtsgutverletzung -> Schaden)
+
+
+
+## Handelsrecht
+
+how to Kaufmann nach HGB
+
+```mermaid
+graph TD
+K(Kaufmannseigenschaft)
+K --> 1(Betrieb eines Handelsgewerbes) & 2(Betrieb eingetragenes Gewerbe) & 3(Gesellschaftsform)
+1 --§1--> a(Ist-K) 
+1 --§2--> b(Kann-K) 
+1 --§3--> c(uneigentlicher K)
+2 --§5--> d(Fiktiv-K.)
+3 --§6--> e(Form-K.)
+```
+
+**Firma** §17 HGB: Name, unter dem Kaufleite Geschäfte betreiben
+
+**Handelsregister**: zentrales Medium zur Publizität
+
+**Handlesgeschäft**: Geschäfte eines Kaufmanns, Vereinfachung von Rechten
+
+
+
+## Gesellschaftsrecht
+
+Unternehmensformen
+
+- Einzelunternehmen (Kaufmann, Freiberufler)
+- Personengesellschaft (OHG, GbR, KG)
+- Kapitalgesellschaft (AG, GmbH)
+
+Gesellschaften
+
+- **Gesellschaft bürgerlichen Rechts GbR**
+    - formlose Gründung
+    - Haftung: persönlich und Gesellschaftsvermögen
+- **Offene Handelsgesellschaft**
+    - wie GBR nur mit Handelszweck
+    - nur mit EIntragung ins Handelsregister
+- **Kommanditgesellschaft**
+    - Vollhaftung Komplementäre
+    - beschränkt Haftung Kommanditisten
+- **GmbH**
+    - beschränkte Haftung (nur G.Verm. = 25.000)
+    - Notar + Handelsregister
+- **AG**
+    - Vorstand + Aufsichtsrat
+    - höhers Basiskapital (50.000)
+    - Aktienausgabe erlaubt
+
+=> Form wählen nach Nutzbarkeit

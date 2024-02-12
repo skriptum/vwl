@@ -56,7 +56,7 @@ graph LR
 
 - Ausdrückliche  WE (ich sage etwas)
 - konkludente WE (ergibt sich aus der Handlung)
-- Schweigen
+- Schweigen (nicht!)
 
 
 

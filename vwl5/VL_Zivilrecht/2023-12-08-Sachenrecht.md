@@ -3,7 +3,7 @@
 Erinnerung 
 
 - **Trennungsprinzip**: zwischen Verpflichtung und Verfügungsgeschäft
-- **Abstraktionsprinzip**: Wirksamkeit beider Sachen einzeln betrachten (eins unwirksma =! anderes unwirksam)
+- **Abstraktionsprinzip**: Wirksamkeit beider Sachen einzeln betrachten (eins unwirksma $\neq$ anderes unwirksam)
 
 
 

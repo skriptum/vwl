@@ -789,6 +789,8 @@ subtrees:
     - file: vwl5/VL_PublicEcon/README
       title: Public Economics
       entries:
+      - file: vwl5/VL_PublicEcon/2023-10-00-Zusammenfassung.md
+        title: Zusammenfassung
       - file: vwl5/VL_PublicEcon/2023-10-11-Intro.md
         title: Intro
       - file: vwl5/VL_PublicEcon/2023-10-18-Tools.md

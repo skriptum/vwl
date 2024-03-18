@@ -2,6 +2,14 @@
 
 Study of Government in our Economy
 
+Main Questions
+
+1. When should Government intervene?
+2. How?
+3. What is the Effect of interventions?
+
+
+
 [TOC]
 
 ## Government Expenditure
@@ -143,6 +151,9 @@ Problems
 - type of market failure
 - positive / negative
 - production / consumption based
+    - consumption: individuals consumptions harms others
+    - production: firms production harms others
+
 
 = create difference between **Social Marginal Cost** and **Private Marginal Cost**
 
@@ -224,6 +235,7 @@ Disocunting Future Costs to *Present Discount Value*
 $$
 PDV = \frac{ F_1 }{1+r}+\frac{ F_2 }{(1+r)^2}+\frac{ F_3 }{(1+r)^3}+...
 $$
+for infinite: $\frac{ cost_{per year} }{r}$
 
 ### Measuring Benefits
 
@@ -235,3 +247,130 @@ Methods:
 - Market Based = wages
 - survey based
 - revealed preferences
+
+Example ![img](../images/2023-11-15_10-56-20.jpg)
+
+### Issues
+
+- Counting Mistakes
+- Menschenwürde
+- Uncertainty
+- Distribution Effects
+
+Alternative: Cost Effectiveness Analysis
+
+
+
+## Asymmetric Information
+
+> **asymmetric Information:** different actors have differing levels of information in market
+
+Example: Insurance Market with low risk / high risk people
+
+- average price of insurance = too high for low risk, to cheap for others
+- low risk cannot proof they are low risk
+
+=> market failure and adverse selection
+
+market based solution: pooling equilibrium, separating equilibrium
+
+
+
+### Problems
+
+> **Adverse Selection**: market situation where buyers and sellers have different information => unequal distribution of benefits to both parties
+
+=> public insurance with mandatory (e.g Krankenkassen)
+
+
+
+> **Moral Hazard**: Adverse actions taben by individuals or producers in response to insurance against adverse outcomes
+
+- *ex ante*: changes in behavior that affect insured risk (smoking => lung cancer)
+- *ex post*: after risk has materialized (cancer => want every possible treatment)
+
+=> only partial insurance, not full (e.g Arbeitslosengeld 1)
+
+
+
+## Inequality
+
+measureable in Income and Wealth
+
+Graphical Representation:
+
+| Lorenz Curve                                                 | Gini Coefficient                                          |
+| ------------------------------------------------------------ | --------------------------------------------------------- |
+| ![img](../../../../Desktop/screenshots/2024-03-18_13-22-45.jpg) | ![2024-03-18_13-22-36](../images/2024-03-18_13-22-36.jpg) |
+
+*Equity Effiency Tradeoff*: Societal Decision between these two
+
+- Pareto Efficiency: one person better off without making other person worse off
+- Problem: tyranny of status quo
+
+
+
+### Social Welfare Function
+
+Aggregation of indivudal utilities in Society
+
+Requirements:
+
+- indidividualistic
+- pareto criterion (higher W for pareto-superior distributions)
+- inequality aversion
+
+=> no correct SWF!
+
+
+
+## Welfare Redistribution
+
+Program Characteristics:
+
+- Eligibility
+    - Categorical: restricted to some demographic (e.g Kindergeld)
+    - means-tested: restricted by income (e.g Wohngeld)
+    - many are both: (e.g Bürgergeld)
+- Type
+    - Cash Welfare
+    - In-Kind (e,g freie Kita)
+
+Leakage in Welfare Programs (Okuns Leaky Bucket)
+
+- Administrative Costs
+- Deadweight Loss of Taxation
+- moral hazard (of the poor)
+
+Benefit Example
+$$
+B = G-(\tau \times w \times h)
+$$
+
+- G = maximum benefit
+- $\tau$ = reduction rate
+- $w$ = wage
+- $h$​ = hours worked
+
+at $\tau=0.5$
+
+![img](../images/2023-12-19_10-10-07.jpg)
+
+Iron Triangle of Welfare (choose only 2)
+
+- encourage work
+- resdistribute more
+- lowe costs
+
+
+
+Solutions (only partly)
+
+- *Categorical welfare Systems* (compensate for lack of earnings capacity, e.g disabled)
+- *ordeal mechanisms* (work requirements etc.)
+- *outside option* (higher minimum wage)
+
+
+
+## Taxation
+

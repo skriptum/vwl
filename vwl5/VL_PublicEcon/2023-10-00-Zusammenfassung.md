@@ -2,6 +2,8 @@
 
 Study of Government in our Economy
 
+[TOC]
+
 ## Government Expenditure
 
 > **Wagners Law:** Government expenditure grows not only in absolute terms, but also in relative to overall economy
@@ -81,3 +83,155 @@ only under specific conditions!
 
 
 ## Empirical Tools
+
+Correlation vs possible flows of causation
+
+- A -> B
+- B -> A
+- C -> A & B (third factor)
+
+
+
+> **Bias**: source of difference between groups, that is correlated with treatment but not due to t
+
+solved with random assignment in groups
+
+### Randomized Control Trials
+
+2 random groups (treatment & placebo)
+
+Problems
+
+- **external validity**: to other contexts
+- **attrition**: reduction of sample size over time (threat to **internal validity**)
+- **Expense**
+
+### Observational Data
+
+**Time Series Analysis**: Correlation over Time
+
+- no spearation of correlation / causation
+- excluded variables
+
+
+
+**Cross Sectional Regression**: statistical magic
+
+- add control variables for better results
+- regression line for showing
+
+
+
+**quasi-experiments**: change in economic environment create nearly identical groups
+
+- often used in Difference in Difference (DiD) Models
+- have to argument that bias is not relevant in this context
+
+
+
+**structural modelling**: Estimation of Policy Effect on individual decisions (e.g income effects)
+
+- structural estimation
+- reduced form estimates
+
+
+
+## Externalities
+
+> **externality**: indirect cost / benefit to uninvolved third party
+
+- type of market failure
+- positive / negative
+- production / consumption based
+
+= create difference between **Social Marginal Cost** and **Private Marginal Cost**
+
+> **Private Marginal Cost (PMC):** direct cost to produce one good
+
+> **Social Marginal Cost (SMC):** PMC + costs imposed on others
+
+Example: ![img](../images/2023-11-06_15-26-06.jpg)
+
+Solution => internalize Externalities
+
+### Private Sector Solution
+
+> **Coase Theorem:** well defined property rights + negotiations => socially optimal market quantity
+
+damaged can demand compensation from damager 
+
+- does not depend on who owns rights (either damage payment or payment for not damaging)
+- Problems: 
+    - Assignment
+    - Free Rider
+    - Holdouts 
+    - Transaction Costs
+
+![img](../images/2023-11-06_15-36-19.jpg)
+
+=> only for specific problems!
+
+### Public Solutions
+
+**Taxation** / Subsidies = price Based approach
+
+- pigouvian taxes
+- align PMC and SMC
+- for low SMB of Reduction (Co2)
+
+
+
+**Regulation** = quantity based approach
+
+- can be complicated
+- and inefficient
+- for high SMB of Reduction (nuclear leakage)
+
+
+
+right amount of pollution:
+
+![img](../images/2023-11-06_15-50-51.jpg)
+
+### Public Goods
+
+| *Types of Goods* | Excludable   | Non-excludable    |
+| ---------------- | ------------ | ----------------- |
+| **rival**        | private good | club good         |
+| **non-rival**    | common good  | ***public good*** |
+
+Example: atmosphere as a sink for emissions
+
+Provision: aggregate demands (vertically)
+
+Problems with Public Provision of Goods
+
+- Crowd Out
+- Provision Mechanism
+- Measuring Costs / Benefites
+- Measuring Preferences
+
+
+
+## Cost-Benefit Analysis
+
+### Measuring Costs
+
+- Normal Costs (Capital, Operation, Maintenance)
+- Opportunity Costs (in imperfect markets)
+
+Disocunting Future Costs to *Present Discount Value*
+$$
+PDV = \frac{ F_1 }{1+r}+\frac{ F_2 }{(1+r)^2}+\frac{ F_3 }{(1+r)^3}+...
+$$
+
+### Measuring Benefits
+
+- Time Savings Measuring
+- Live Saved Valuation
+
+Methods:
+
+- Market Based = wages
+- survey based
+- revealed preferences

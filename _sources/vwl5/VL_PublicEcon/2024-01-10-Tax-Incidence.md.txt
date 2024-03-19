@@ -44,10 +44,10 @@ Exampel from before, but other side![img](../images/2024-01-16_12-32-11.jpg)
 
 ### Elasticity
 
-| inelastic demand                          | elastic demand                                               |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| ![img](../images/2024-01-16_12-34-03.jpg) | ![](../../../../Desktop/screenshots/2024-01-16_12-34-15.jpg) |
-| burden at consumers                       | burden at producers                                          |
+| inelastic demand                          | elastic demand                         |
+| ----------------------------------------- | -------------------------------------- |
+| ![img](../images/2024-01-16_12-34-03.jpg) | ![](../images/2024-01-16_12-34-15.jpg) |
+| burden at consumers                       | burden at producers                    |
 
 Vice-versa for supply side
 

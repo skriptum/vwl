@@ -1,8 +1,23 @@
 # Zivilrecht Zusammenfassung
 
+Inhaltsverzeichnis
+
+* [Verträge](#verträge)
+   + [Willenserklärungen](#willenserklärungen)
+   + [Vertragsschluss](#vertragsschluss)
+   + [Stellvertreter & Bote](#stellvertreter-bote)
+   + [Vertragsende](#vertragsende)
+* [Schadensersatz](#schadensersatz)
+* [Gewährleistung](#gewährleistung)
+* [Sachenrecht](#sachenrecht)
+* [Kreditsicherheiten](#kreditsicherheiten)
+* [Deliktrecht](#deliktrecht)
+* [Handelsrecht](#handelsrecht)
+* [Gesellschaftsrecht](#gesellschaftsrecht)
 
 
-[TOC]
+
+
 
 
 ## Verträge

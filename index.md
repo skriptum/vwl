@@ -88,8 +88,8 @@ Anzahl Semester
 | ------------------------------ | ----------------- | ----------------------------------------- | ------------------------------------------------------------ |
 | Empirical Economics with R     | Hakon Albers      | [Übersicht](vwl5/VL_Empirical/README.md)  | [Presentation](https://uploads.martenw.com/DDCG/_Slides.pdf) |
 | Feminist Economics (Karlsruhe) | Amelie Betz       | [Übersicht](vwl5/VL_Feminist/README.md)   |                                                              |
-| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md) |                                                              |
-| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)               |                                                              |
+| Public Economics               | Amelie Wuppermann | [Übersicht](vwl5/VL_PublicEcon/README.md) | [Zusammenfassung](vwl5/VL_PublicEcon/2023-10-00-Zusammenfassung.md) |
+| Zivilrecht                     | Hannes Henke      | [Übersicht](vwl5/README.md)               | [Zusammenfassung](vwl5/VL_Zivilrecht/2023-10-00-Zusammenfassung.md) |
 | Research Seminar               | Lars Börner       |                                           |                                                              |
 
 also for Empirical Economics with R: [Replication Code](https://skriptum.github.io/DDCG/2023-10-12-Intro.html)

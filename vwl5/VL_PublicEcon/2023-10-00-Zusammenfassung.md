@@ -1,16 +1,30 @@
 # Public Economics: Summary
 
+Table of Contents
+
+ * [Government Expenditure](#government-expenditure)
+ * [Theory of Welfare Economics](#theory-of-welfare-economics)
+ * [Empirical Tools](#empirical-tools)
+ * [Externalities](#externalities)
+ * [Cost-Benefit Analysis](#cost-benefit-analysis)
+ * [Asymmetric Information](#asymmetric-information)
+ * [Inequality](#inequality)
+ * [Welfare Redistribution](#welfare-redistribution)
+ * [Taxation](#taxation)
+ * [Tax Incidence](#tax-incidence)
+ * [Tax Inefficiency](#tax-inefficiency)
+ * [Debt](#debt)
+
+---
+
 Study of Government in our Economy
 
 Main Questions
 
 1. When should Government intervene?
 2. How?
-3. What is the Effect of interventions?
-
-
-
-[TOC]
+3. What is the Effect?
+4. Why do politicians intervene the way they do?
 
 ## Government Expenditure
 
@@ -374,3 +388,229 @@ Solutions (only partly)
 
 ## Taxation
 
+### General
+
+> **Tax (German Law)**: cash payment without a specific return, mandatory for all
+
+> **Tax (economics):** compulsory levy without a (individual or group-specific) service in return
+
+Goals:
+
+- generate Revenue
+- increase equity
+- change individual behavior
+
+
+
+Effective Tax Rates on Income
+
+![img](../images/2023-12-22_11-42-58.jpg)
+
+Red = effective Tax, green = marginal tax
+
+> **marginal tax rate**: percentage of the next euro of taxable income paid
+
+> **effective tax rate:** percentage of total income paid
+
+
+
+Fairness in Tax System:
+
+- **Vertical equity**: Strong shoulders pay more
+- **Horizontal equity**: similar individuals pay equal amounts
+
+
+
+### Haig Simons Principle
+
+taxable income = reflect **ability to pay** 
+
+=> deductions for life situations, e.g Pendlerpauschale
+
+- but deviations also existent, e.g deduction for charitable giving
+- to induce crowd in and consumer sovereignty
+- cost = lost gov revenue
+
+
+
+### Unit of Taxation
+
+on what income should taxes be levied? (Family, Marriage, Individual)
+
+- Individual
+    - no equity across couples (with same aggregated income, but different shares)
+    - but fair taxation for everybody
+
+- Family 
+    - income aggregated on family level and taxed
+    - = marriage tax, because shared filing = more expensive
+
+- Marriage Splitting
+    - income splitted on 2 members of marriage
+    - and then taxed
+    - disincentivizes work for poorer member of HH
+
+
+
+
+## Tax Incidence
+
+Three Rules
+
+1. Statutory Burden $\neq$ economic burden
+2. side of the market = irrelevant
+3. party with inelastic supply = bear taxes
+
+
+
+> **Economic Incidence**: burden of taxation measured by change in resources available
+
+> **statutory incidence:** burden borne by party that sends check to gov.
+
+
+
+| inelastic demand                          | elastic demand                         |
+| ----------------------------------------- | -------------------------------------- |
+| ![img](../images/2024-01-16_12-34-03.jpg) | ![](../images/2024-01-16_12-34-15.jpg) |
+| burden at consumers                       | burden at producers                    |
+
+
+
+> **gross price**: market price
+
+> **after-tax price:** gross price - tax (if producer tax) or + tax (if consumer side)
+
+
+
+### General Equilibrium Tax Incidence
+
+until now: only *partial equilibrium tax incidence* (impact on one market)
+
+> **General equilibrium tax incidence:** Analysis that considers
+> the effects on related markets of a tax imposed on one marke
+
+depends on
+
+- **long run / short run** = shifting elasticities
+    - capital in short run = fixed, bears burden
+    - in long run = more volatile
+- **tax scope** = non-taxed substitutes
+- **spill-over effects**
+    - income effect = lower real income
+    - substitution effect
+    - complementary effect = reduce consumption of complementary goods (e.g beer tax and snacknuts consumption)
+
+
+
+## Tax Inefficiency
+
+Tax System: Trade off between **Equity & effiency** 
+
+Tax = creates Deadweight Loss (DWL), depends on
+
+- Elasticities (higher elasticity = higher DWL)
+- Tax height
+
+$$
+DWL = \frac{ \epsilon_s \epsilon_d }{2 (\epsilon_s - \epsilon_d) } * \tau^2 * \frac{ Q }{P}
+$$
+
+**marginal DWL:** increase in DWL per unit of taxation
+
+Implications for Efficiency:
+
+- depends on *preexisting distortions*
+- progressive tax = higher DWL
+- smooth taxes > high short taxes
+
+
+
+### Optimal Taxation
+
+
+
+**for Commodities:** by Frank Ramsay: ratio of marginal DWL = marginal Revenue
+
+Formula:
+
+$$
+\frac{ MDWL_i }{MR_i} = \lambda
+$$
+
+ratio $\lambda$ = should besame for all goods
+
+Example 
+
+$$
+\frac{ MDWL_A }{MR_A} > \frac{ MDWL_B }{MR_B}
+$$
+
+- increase taxation on B
+- lower on A
+
+-> elasticity rule: good with higher elast. = lower tax
+
+- but not good for equity (caviar = high elast, wheat = low)
+
+
+
+**for Income:**
+
+- total income in society = fixed
+- same utility function
+- After = everyone same income
+
+Formula: $\frac{ MU }{MR} = \lambda$ same for all (MR = marginal Revenue)
+
+
+
+## Debt
+
+> **Governemtn Debt:** amount gov. borrowed on financial markets
+
+> **government deficits / surplus:** yearly increase / decrease 
+
+Types of gov. debt:
+
+- *Explicit*: official debt given out by the financial ministry
+- *implicit:* explicit + promised payouts in the future (e.g pensions etc.)
+
+Calculation of implicit debt:
+
+Present Discounted Value:
+
+$$
+PDV = \frac{ F_1 }{1+r}+\frac{ F_2 }{1+r}+...
+$$
+
+but:
+
+- very hard to calculate
+- (heroic) assumptions about r and F
+
+=> focus on explict debt!
+
+
+
+### Effects
+
+Short Run: Stabilization
+
+- **Automatic stabilization**: automaitc policies e.g unemployment insurance
+- **Discretionary stabilisation**: policy actions taken in response (e.g Gaspreisbremse)
+
+= good for the economy
+
+
+
+Long Run: Negative?
+
+- limited private capital investment
+- less economic growth due to less private investment
+
+Reality:
+
+- depends on capital markets
+- and what the debt is used for...
+
+=> evidence is inconclusive

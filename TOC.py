@@ -11,7 +11,8 @@ semesters = {
     "vwl2": "II. Semester", 
     "vwl3": "III. Semester", 
     "vwl4": "IV. Semester",
-    "vwl5": "V. Semester"
+    "vwl5": "V. Semester",
+    "vwl6": "VI. Semester",
     }
 
 
@@ -48,6 +49,11 @@ dir_names = {
     "VL_Feminist": "Feminist Economics",
     "VL_PublicEcon": "Public Economics",
     "VL_Zivilrecht": "Zivilrecht",
+
+    "VL_Econometrics": "Econometrics",
+    "VL_Umwelt": "Umweltökonomie",
+    "VL_Sozialismus": "Sozialismus",
+    "VL_SO2": "State, Economy, Society"
 }
 
 #%%

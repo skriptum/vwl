@@ -16,7 +16,7 @@ Weiterführende Links
 Anzahl Module
 :::
 
-:::{grid-item-card}  330
+:::{grid-item-card}  340
 Anzahl Notizen
 :::
 

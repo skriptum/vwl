@@ -823,3 +823,24 @@ subtrees:
         title: Test Exam
       - file: vwl5/VL_PublicEcon/2024-01-31-Summary.md
         title: Summary
+
+  - file: vwl6/README
+    title: VI. Semester
+    entries:
+    
+    - file: vwl6/VL_Econometrics/README
+      title: Econometrics
+      entries:
+      - file: vwl6/VL_Econometrics/2024-04-02-Intro.md
+        title: Intro
+    - file: vwl6/VL_Umwelt/README
+      title: Umweltökonomie
+      entries:
+    - file: vwl6/VL_Sozialismus/README
+      title: Sozialismus
+      entries:
+    - file: vwl6/VL_SO2/README
+      title: State, Economy, Society
+      entries:
+      - file: vwl6/VL_SO2/2024-04-03-Einfuehrung.md
+        title: Einfuehrung

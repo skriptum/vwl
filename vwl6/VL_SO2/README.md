@@ -1,5 +1,7 @@
 # State, Economy and Society
 
+bei Reinhold Sackmann
+
 Klausur:
 
 - 2 Aufsatzfragen (1 wählen)
@@ -7,4 +9,6 @@ Klausur:
 - 90 Minuten
 
 entweder Hausarbeit oder Klausur
+
+
 

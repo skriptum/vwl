@@ -16,7 +16,7 @@ Weiterführende Links
 Anzahl Module
 :::
 
-:::{grid-item-card}  330
+:::{grid-item-card}  340
 Anzahl Notizen
 :::
 
@@ -93,3 +93,13 @@ Anzahl Semester
 | Research Seminar               | Lars Börner       |                                           |                                                              |
 
 also for Empirical Economics with R: [Replication Code](https://skriptum.github.io/DDCG/2023-10-12-Intro.html)
+
+### 6. Semester
+
+| Modul                                | Prof              | Übersicht                                   | Zusammenfassung |
+| ------------------------------------ | ----------------- | ------------------------------------------- | --------------- |
+| Sozialistische Ökonomien             | Magnus Neubert    | [Übersicht](vwl6/VL_Sozialismus/README.md)  |                 |
+| Umweltökonomie                       | Bartos Bartkowski | [Übersicht](vwl6/README.md)                 |                 |
+| Introductory Econometrics            | Christoph Wunder  | [Übersicht](vwl6/VL_Econometrics/README.md) |                 |
+| Economy, State, Society (Soziologie) | Reinhold Sackmann | [Übersicht](vwl6/VL_SO2/README.md)          |                 |
+

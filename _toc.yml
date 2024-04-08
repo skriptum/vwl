@@ -836,9 +836,13 @@ subtrees:
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:
+      - file: vwl6/VL_Umwelt/2024-04-08-Intro.md
+        title: Intro
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:
+      - file: vwl6/VL_Sozialismus/2024-04-04-Intro.md
+        title: Intro
     - file: vwl6/VL_SO2/README
       title: State, Economy, Society
       entries:

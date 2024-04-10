@@ -53,7 +53,7 @@ dir_names = {
     "VL_Econometrics": "Econometrics",
     "VL_Umwelt": "Umweltökonomie",
     "VL_Sozialismus": "Sozialismus",
-    "VL_SO2": "State, Economy, Society"
+    "VL_Macrometrics": "Macroeconometrics"
 }
 
 #%%

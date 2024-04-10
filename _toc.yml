@@ -843,8 +843,6 @@ subtrees:
       entries:
       - file: vwl6/VL_Sozialismus/2024-04-04-Intro.md
         title: Intro
-    - file: vwl6/VL_SO2/README
-      title: State, Economy, Society
+    - file: vwl6/VL_Macrometrics/README
+      title: Macroeconometrics
       entries:
-      - file: vwl6/VL_SO2/2024-04-03-Einfuehrung.md
-        title: Einfuehrung

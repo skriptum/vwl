@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="Umweltökonomie" href="../VL_Umwelt/README.html" /><link rel="prev" title="03.04.2024 Introduction to Econometrics" href="2024-04-02-Intro.html" />
+<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="16.04.2024 Multiple Regression" href="2024-04-16-Multiple-Regression.html" /><link rel="prev" title="03.04.2024 Introduction to Econometrics" href="2024-04-02-Intro.html" />
         <link rel="canonical" href="https://vwl.martenw.com/vwl6/VL_Econometrics/2024-04-11-Simple-Regression.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -656,19 +656,19 @@ r = \frac
 <li class="toctree-l2 current has-children"><a class="reference internal" href="README.html">Econometrics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle navigation of Econometrics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="2024-04-02-Intro.html">Intro</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Simple Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-04-16-Multiple-Regression.html">Multiple Regression</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Umwelt/README.html">Umweltökonomie</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle navigation of Umweltökonomie</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-08-Intro.html">Intro</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-15-Urschleim.html">Urschleim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-22-sozial-oeko.html">sozial oeko</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-29-Naturkapital.html">Naturkapital</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Sozialismus/README.html">Sozialismus</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle navigation of Sozialismus</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-04-Intro.html">Intro</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Macrometrics/README.html">Macroeconometrics</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle navigation of Macroeconometrics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../VL_Macrometrics/2024-04-03-Intro.html">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-18-Marx.html">Marx</a></li>
 </ul>
 </li>
 </ul>
@@ -795,24 +795,76 @@ R^2 =&amp; \frac{ \text{Total Sum of Squars}}{\text{Sum of Squared Errors}} \\
 TSS =&amp; \sum(y_i - \bar{y})^2 \\
 SSE =&amp; \sum(\hat{\epsilon}_i)^2 = \sum(y_i-\hat{y_i})^2
 \)</span>$</p>
-<section id="algebraic-properties-of-ols-r2">
-<h3>Algebraic Properties of OLS / R2<a class="headerlink" href="#algebraic-properties-of-ols-r2" title="Link to this heading">#</a></h3>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-f
-\]</div>
-</div>
-</section>
 </section>
 <section id="units">
 <h2>Units<a class="headerlink" href="#units" title="Link to this heading">#</a></h2>
+<p>Example:  <span class="math notranslate nohighlight">\(wage = \beta_0 + \beta_1 educ + e\)</span>​​, wage measured in $</p>
+<p>Rules:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(dependent * c \implies\hat{\beta_1} * c\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(independent * c \implies \hat{\beta_1}/c\)</span>​ and vice versa (not intercept!)</p></li>
+</ul>
+<p>Interpretation of Logs etc.</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>dependent</p></th>
+<th class="head"><p>independent</p></th>
+<th class="head"><p>interpretation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Level-Level</p></td>
+<td><p>y</p></td>
+<td><p><span class="math notranslate nohighlight">\(x_j\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Delta \hat{y} = \beta_j \Delta x_j\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Level-Log</p></td>
+<td><p>y</p></td>
+<td><p><span class="math notranslate nohighlight">\(log(x_j)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Delta \hat{y} = \frac{\beta_j}{100} \% \Delta x_j\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Log-Level</p></td>
+<td><p><em>log(y)</em></p></td>
+<td><p><span class="math notranslate nohighlight">\(x_j\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\% \Delta \hat{y} = 100 \beta_j \Delta x_j\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Log-Log</p></td>
+<td><p><em>log(y)</em></p></td>
+<td><p><em>log(x)</em></p></td>
+<td><p><span class="math notranslate nohighlight">\(\% \Delta \hat{y} = \beta_j \% \Delta x_j\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="expected-values">
 <h2>Expected Values<a class="headerlink" href="#expected-values" title="Link to this heading">#</a></h2>
+<p>Assumptions for unbiasedness</p>
+<ol class="arabic simple">
+<li><p>Linear in parameters (model represents truth)</p></li>
+<li><p>random sample of population</p></li>
+<li><p>Sample variation of x</p></li>
+<li><p>zero conditional mean: <span class="math notranslate nohighlight">\(E(u|x)=0\)</span></p></li>
+</ol>
+<p>=&gt; OLS = unbiased estimator if</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(E(OLS) = \theta\)</span>: mean of many samples = always the same</p></li>
+<li><p><span class="math notranslate nohighlight">\(E(\hat{\beta}_{0,1}) = \beta_{0,1}\)</span>: mean of estimate = truth</p></li>
+</ul>
+<section id="variance-of-ols">
+<h3>Variance of OLS<a class="headerlink" href="#variance-of-ols" title="Link to this heading">#</a></h3>
+<p>Assumption 5: <span class="math notranslate nohighlight">\(Var(u|x) = \sigma^2\)</span> (homoskedasticity)</p>
+<p><img alt="img" src="../../_images/2024-04-16_14-15-04.jpg" /></p>
+<p>Variance of <span class="math notranslate nohighlight">\(\beta_1\)</span></p>
+<ul class="simple">
+<li><p>larger error variance =&gt; larger <em>Var</em></p></li>
+<li><p>larger variability of <em>x</em> =&gt; larger <em>Var</em></p></li>
+<li><p>larger sample =&gt; lower <em>Var</em></p></li>
+</ul>
+<p>Standard Error: <span class="math notranslate nohighlight">\(se(\beta_1) = \frac{ \theta^2 }{\sqrt{SST_x}}\)</span></p>
 </section>
-<section id="regression-trough-origin">
-<h2>Regression trough Origin<a class="headerlink" href="#regression-trough-origin" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -821,12 +873,12 @@ f
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../VL_Umwelt/README.html">
+          <a class="next-page" href="2024-04-16-Multiple-Regression.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Umweltökonomie</div>
+                <div class="title">16.04.2024 Multiple Regression</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -873,13 +925,12 @@ f
             <ul>
 <li><a class="reference internal" href="#">11.04.2024 Simple Regression</a><ul>
 <li><a class="reference internal" href="#basics">Basics</a></li>
-<li><a class="reference internal" href="#ols-estimator">OLS Estimator</a><ul>
-<li><a class="reference internal" href="#algebraic-properties-of-ols-r2">Algebraic Properties of OLS / R2</a></li>
+<li><a class="reference internal" href="#ols-estimator">OLS Estimator</a></li>
+<li><a class="reference internal" href="#units">Units</a></li>
+<li><a class="reference internal" href="#expected-values">Expected Values</a><ul>
+<li><a class="reference internal" href="#variance-of-ols">Variance of OLS</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#units">Units</a></li>
-<li><a class="reference internal" href="#expected-values">Expected Values</a></li>
-<li><a class="reference internal" href="#regression-trough-origin">Regression trough Origin</a></li>
 </ul>
 </li>
 </ul>

@@ -1,4 +1,0 @@
-# Macroeconometrics
-
-by Malte Rieth
-

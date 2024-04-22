@@ -835,6 +835,8 @@ subtrees:
         title: Intro
       - file: vwl6/VL_Econometrics/2024-04-11-Simple-Regression.md
         title: Simple Regression
+      - file: vwl6/VL_Econometrics/2024-04-16-Multiple-Regression.md
+        title: Multiple Regression
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:
@@ -842,13 +844,14 @@ subtrees:
         title: Intro
       - file: vwl6/VL_Umwelt/2024-04-15-Urschleim.md
         title: Urschleim
+      - file: vwl6/VL_Umwelt/2024-04-22-sozial-oeko.md
+        title: sozial oeko
+      - file: vwl6/VL_Umwelt/2024-04-29-Naturkapital.md
+        title: Naturkapital
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:
       - file: vwl6/VL_Sozialismus/2024-04-04-Intro.md
         title: Intro
-    - file: vwl6/VL_Macrometrics/README
-      title: Macroeconometrics
-      entries:
-      - file: vwl6/VL_Macrometrics/2024-04-03-Intro.md
-        title: Intro
+      - file: vwl6/VL_Sozialismus/2024-04-18-Marx.md
+        title: Marx

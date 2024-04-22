@@ -93,17 +93,57 @@ TSS =& \sum(y_i - \bar{y})^2 \\
 SSE =& \sum(\hat{\epsilon}_i)^2 = \sum(y_i-\hat{y_i})^2
 $$
 
-### Algebraic Properties of OLS / R2
-
-
-$$
-f
-$$
-
  
 
 ## Units
 
+Example:  $wage = \beta_0 + \beta_1 educ + e$​​, wage measured in $
+
+Rules:
+
+- $dependent * c \implies\hat{\beta_1} * c$
+- $independent * c \implies \hat{\beta_1}/c$​ and vice versa (not intercept!)
+
+
+
+Interpretation of Logs etc.
+
+| Model       | dependent | independent | interpretation                                       |
+| ----------- | --------- | ----------- | ---------------------------------------------------- |
+| Level-Level | y         | $x_j$       | $\Delta \hat{y} = \beta_j \Delta x_j$                |
+| Level-Log   | y         | $log(x_j)$  | $\Delta \hat{y} = \frac{\beta_j}{100} \% \Delta x_j$ |
+| Log-Level   | *log(y)*  | $x_j$       | $\% \Delta \hat{y} = 100 \beta_j \Delta x_j$         |
+| Log-Log     | *log(y)*  | *log(x)*    | $\% \Delta \hat{y} = \beta_j \% \Delta x_j$          |
+
+
+
 ## Expected Values
 
-## Regression trough Origin
+Assumptions for unbiasedness
+
+1. Linear in parameters (model represents truth)
+2. random sample of population
+3. Sample variation of x
+4. zero conditional mean: $E(u|x)=0$
+
+=> OLS = unbiased estimator if 
+
+- $E(OLS) = \theta$: mean of many samples = always the same
+- $E(\hat{\beta}_{0,1}) = \beta_{0,1}$: mean of estimate = truth
+
+
+
+### Variance of OLS
+
+ Assumption 5: $Var(u|x) = \sigma^2$ (homoskedasticity)
+
+![img](../images/2024-04-16_14-15-04.jpg)
+
+Variance of $\beta_1$
+
+- larger error variance => larger *Var*
+- larger variability of *x* => larger *Var*
+- larger sample => lower *Var*
+
+Standard Error: $se(\beta_1) = \frac{ \theta^2 }{\sqrt{SST_x}}$
+

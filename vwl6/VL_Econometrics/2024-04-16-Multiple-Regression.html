@@ -140,7 +140,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -670,10 +670,16 @@ r = \frac
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-04-Intro.html">Intro</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-18-Marx.html">Marx</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-25-Schockindustrie.html">Schockindustrie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-02-Soviet-Ende.html">Soviet Ende</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html">23.05.2024 Effects in the Long run</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html#education-and-investment">Education and Investment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html#model">Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-06-13-ASV-Empirie.html">ASV Empirie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html">Allgemein</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#wirtschaftsgeschichte">Wirtschaftsgeschichte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#refresher">Refresher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#socialist-growth-revisited">Socialist Growth Revisited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#regional-divergence">Regional Divergence</a></li>
 </ul>
 </li>
 </ul>
@@ -706,7 +712,7 @@ r = \frac
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -727,6 +733,61 @@ r = \frac
 wage = \beta_0 + \beta_1 educ+\beta_2 experience + \epsilon
 \]</div>
 </div>
+<p><strong>Interpretation</strong> <span class="math notranslate nohighlight">\(\beta_1\)</span> = change in <em>y</em> w.r.t <span class="math notranslate nohighlight">\(x_1\)</span>, holding all other factors fixed</p>
+<p><strong>Assumption</strong> here: <span class="math notranslate nohighlight">\(E(u | x_1,x_2) = 0\)</span> :</p>
+<ul class="simple">
+<li><p>u same for all combinations of <span class="math notranslate nohighlight">\(x_1, x_2\)</span></p></li>
+</ul>
+<section id="ols-expected-value">
+<h2>OLS Expected Value<a class="headerlink" href="#ols-expected-value" title="Link to this heading">#</a></h2>
+<p>Assumptions:</p>
+<ol class="arabic simple">
+<li><p>parameters (<span class="math notranslate nohighlight">\(\beta_i\)</span>​) are linear (<em>variables can be nonlinear</em>)</p></li>
+<li><p>random sample of population</p></li>
+<li><p>no perfect collinearity</p>
+<ul class="simple">
+<li><p>variables are not constant</p></li>
+<li><p>no perfect linearity of variables</p></li>
+<li><p>nonlinear functions of same variable are allowed, e.g <span class="math notranslate nohighlight">\(y = \beta_0+\beta_1 x + \beta_2 x^2+u\)</span></p></li>
+</ul>
+</li>
+<li><p>zero conditional mean: <span class="math notranslate nohighlight">\(E(u | x_1,x_2,...) = 0\)</span></p></li>
+</ol>
+<p>=&gt; estimate = truth: <span class="math notranslate nohighlight">\(E(\hat{ \beta }) = \beta\)</span></p>
+<section id="misspecification">
+<h3>Misspecification<a class="headerlink" href="#misspecification" title="Link to this heading">#</a></h3>
+<p>Irrelevant Variables</p>
+<ul class="simple">
+<li><p>no effect on unbiasedness</p></li>
+<li><p>effect on variance of OLS-estimator</p></li>
+</ul>
+<p>Omitted Variable Bias</p>
+<ul class="simple">
+<li><p>true model: <span class="math notranslate nohighlight">\(y = \beta_0+\beta_1 x_1 + \beta_2 x_2\)</span></p></li>
+<li><p>our model: <span class="math notranslate nohighlight">\(\hat{ y } = \hat{ \beta_1 } + \hat{ \beta_2 } \hat{ \delta }\)</span> (delta = slope between <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>)</p></li>
+<li><p>=&gt; <span class="math notranslate nohighlight">\(Bias(\beta_1) = E(\beta_1)-\beta_1\)</span></p></li>
+</ul>
+</section>
+</section>
+<section id="ols-variance">
+<h2>OLS Variance<a class="headerlink" href="#ols-variance" title="Link to this heading">#</a></h2>
+<p>5th assumption: <strong>Homoskedasticity</strong></p>
+<ul class="simple">
+<li><p>error <em>u</em> = same variance for all given values</p></li>
+<li><p><span class="math notranslate nohighlight">\(Var(u | x_1,...) = \sigma^2\)</span></p></li>
+</ul>
+<p>Variance formula</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Var (\hat{ \beta_1 }) = \frac{ \sigma^2 }{SST_j(1-R_j^2)}
+\]</div>
+</div>
+<ul class="simple">
+<li><p>SST = total sample variation</p></li>
+<li><p>R = R-sqaured</p></li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -772,8 +833,31 @@ wage = \beta_0 + \beta_1 educ+\beta_2 experience + \epsilon
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">16.04.2024 Multiple Regression</a><ul>
+<li><a class="reference internal" href="#ols-expected-value">OLS Expected Value</a><ul>
+<li><a class="reference internal" href="#misspecification">Misspecification</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ols-variance">OLS Variance</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

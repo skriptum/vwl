@@ -1,0 +1,86 @@
+---
+title: "Kucik"
+format: html
+---
+
+## Kucik Replication
+
+Data
+
+```{r}
+library(tidyverse)
+library(plm)
+```
+
+```{r}
+yugoslavia_growth <- data.frame(
+  Region = c(rep("Bosnia", 4), rep("Croatia", 4), rep("Kosovo", 4), rep("Macedonia", 4), 
+             rep("Montenegro", 4), rep("Serbia", 4), rep("Slovenia", 4), rep("Vojvodina", 4)),
+  Growth_Period = rep(c("1953–61", "1961–71", "1971–81", "1981–6"), 8),
+  Labour_Productivity = c(5.0, 7.4, 4.1, 4.4, 5.9, 8.1, 4.3, 2.0, 2.5, 9.7, 5.4, 2.3, 5.0, 8.5, 3.5, 3.8,
+                          5.7, 7.3, 4.7, 2.0, 5.5, 6.9, 4.9, 2.5, 6.7, 7.2, 4.1, 1.6, 6.4, 8.8, 4.5, 2.3),
+  Physical_Capital_Deepening = c(2.1, 3.7, 2.4, 1.6, 1.3, 3.6, 2.3, 0.9, 1.8, 4.5, 2.9, 0.5, 2.6, 4.1, 1.5, 0.8,
+                                  3.8, 3.1, 2.3, 0.8, 2.4, 3.4, 1.9, 1.1, 1.3, 2.9, 2.3, 0.4, 1.3, 3.2, 3.0, 1.0),
+  Human_Capital_Deepening = c(1.6, 1.3, 1.4, 0.7, 1.5, 0.9, 0.8, 0.5, 1.4, 1.8, 1.4, 0.3, 1.8, 1.3, 0.9, 0.7,
+                               1.7, 1.0, 1.2, 0.5, 1.5, 1.0, 1.0, 0.6, 1.3, 0.6, 0.5, 0.3, 1.4, 0.7, 0.9, 0.3),
+  TFP = c(1.2, 2.4, 0.3, 2.1, 3.0, 3.6, 1.2, 0.6, -0.6, 3.3, 1.1, 1.5, 0.7, 3.1, 1.1, 2.3, 0.2, 3.1, 1.3, 0.7,
+          1.6, 2.6, 2.0, 0.8, 4.1, 3.6, 1.3, 0.9, 3.8, 4.8, 0.6, 1.0)
+)
+```
+
+```{r}
+# clean data frame, make a separate DF just for TFP
+
+yugoslavia_growth_tfp <- yugoslavia_growth %>%
+  select(Region, Growth_Period, TFP) %>%
+  spread(key = Growth_Period, value = TFP)
+```
+
+
+```{r}
+# line plot
+
+yugoslavia_growth_tfp %>%
+  gather(key = "Growth_Period", value = "TFP", -Region) %>%
+  ggplot(aes(x = Growth_Period, y = TFP, group = Region, color = Region)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "TFP Growth in Yugoslavia by Region",
+       x = "Growth Period",
+       y = "TFP Growth") +
+  theme_minimal()
+```
+
+```{r}
+# adjust colors for the northern regions (Vojvodina, Slovenia, Croatia)
+
+yugoslavia_growth_tfp %>%
+  gather(key = "Growth_Period", value = "TFP", -Region) %>%
+  ggplot(aes(x = Growth_Period, y = TFP, group = Region, color = Region)) +
+  geom_line() +
+  geom_point(size=1.5) +
+  scale_color_manual(values = c("red", "blue", "red", "red", "red", "red", "blue", "blue")) +
+  labs(title = "TFP Growth in Yugoslavia by Region",
+       x = "Growth Period",
+       y = "TFP Growth")
+```
+
+adjust the shapes of the points, each region different shape
+
+```{r}
+# adjust the shapes of the points, each region different shape
+
+yugoslavia_growth_tfp %>%
+  gather(key = "Growth_Period", value = "TFP", -Region) %>%
+  ggplot(aes(x = Growth_Period, y = TFP, group = Region, color = Region, shape = Region)) +
+  geom_line() +
+  geom_point(size=2) +
+  scale_color_manual(values = c("red", "blue", "red", "red", "red", "red", "blue", "blue")) +
+  scale_shape_manual(values = c(0, 1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "TFP Growth in Yugoslavia by Region",
+       x = "Growth Period",
+       y = "TFP Growth") +
+  theme_minimal()
+```
+
+```{r}

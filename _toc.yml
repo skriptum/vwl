@@ -837,6 +837,8 @@ subtrees:
         title: Simple Regression
       - file: vwl6/VL_Econometrics/2024-04-16-Multiple-Regression.md
         title: Multiple Regression
+      - file: vwl6/VL_Econometrics/2024-05-03-Distribution.md
+        title: Distribution
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:
@@ -848,6 +850,8 @@ subtrees:
         title: sozial oeko
       - file: vwl6/VL_Umwelt/2024-04-29-Naturkapital.md
         title: Naturkapital
+      - file: vwl6/VL_Umwelt/2024-05-13-Bewertung.md
+        title: Bewertung
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:

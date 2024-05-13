@@ -19,5 +19,4 @@ Klausuren
 
 - Umweltökonomik: 11.07.2024
 - Econometrics: 15.07.2024
-- Makroökonometrie: 19.07.24
 - Socialist Economics: 13.06.24

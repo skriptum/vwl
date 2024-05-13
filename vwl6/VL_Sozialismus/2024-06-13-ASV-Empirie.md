@@ -129,9 +129,3 @@ externer Schock
 - wenn 1965 reformen wichtig für downfall waren, warum dann erst ab 71 sichtbar?
 - sozialismus = abweichung von perfket competitive economy?
 
-
-
-
-
-
-

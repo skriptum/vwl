@@ -3,11 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="prev" title="Macroeconometrics" href="README.html" />
-        <link rel="canonical" href="https://vwl.martenw.com/vwl6/VL_Macrometrics/2024-04-03-Intro.html" />
+<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="Umweltökonomie" href="../VL_Umwelt/README.html" /><link rel="prev" title="16.04.2024 Multiple Regression" href="2024-04-16-Multiple-Regression.html" />
+        <link rel="canonical" href="https://vwl.martenw.com/vwl6/VL_Econometrics/2024-05-03-Distribution.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>03.04.2024 Intro - Marten&#39;s Notizen</title>
+        <title>03.05.2024 OLS Distribution and Tests - Marten&#39;s Notizen</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -653,22 +653,35 @@ r = \frac
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../README.html">VI. Semester</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" role="switch" type="checkbox"/><label for="toctree-checkbox-35"><div class="visually-hidden">Toggle navigation of VI. Semester</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Econometrics/README.html">Econometrics</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle navigation of Econometrics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../VL_Econometrics/2024-04-02-Intro.html">Intro</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../VL_Econometrics/2024-04-11-Simple-Regression.html">Simple Regression</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="README.html">Econometrics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle navigation of Econometrics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="2024-04-02-Intro.html">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-04-11-Simple-Regression.html">Simple Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-04-16-Multiple-Regression.html">Multiple Regression</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Umwelt/README.html">Umweltökonomie</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle navigation of Umweltökonomie</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-08-Intro.html">Intro</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-15-Urschleim.html">Urschleim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-22-sozial-oeko.html">sozial oeko</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-04-29-Naturkapital.html">Naturkapital</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-05-13-Bewertung.html">Bewertung</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Sozialismus/README.html">Sozialismus</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle navigation of Sozialismus</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-04-Intro.html">Intro</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current has-children"><a class="reference internal" href="README.html">Macroeconometrics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle navigation of Macroeconometrics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-18-Marx.html">Marx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-04-25-Schockindustrie.html">Schockindustrie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-02-Soviet-Ende.html">Soviet Ende</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html">23.05.2024 Effects in the Long run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html#education-and-investment">Education and Investment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-05-23-Long-Run.html#model">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/2024-06-13-ASV-Empirie.html">ASV Empirie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html">Allgemein</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#wirtschaftsgeschichte">Wirtschaftsgeschichte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#refresher">Refresher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#socialist-growth-revisited">Socialist Growth Revisited</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Sozialismus/_Slides.html#regional-divergence">Regional Divergence</a></li>
 </ul>
 </li>
 </ul>
@@ -707,201 +720,33 @@ r = \frac
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="intro">
-<h1>03.04.2024 Intro<a class="headerlink" href="#intro" title="Link to this heading">#</a></h1>
-<blockquote>
-<div><p><strong>Ökonometrie</strong> : statistische Methoden zur Beantwortung ökonomischer Fragestellungen</p>
-</div></blockquote>
-<p>= Theorie + Daten + Methoden =&gt; empirische Resultate</p>
-<p>Makroökonometrie</p>
+          <section class="tex2jax_ignore mathjax_ignore" id="ols-distribution-and-tests">
+<h1>03.05.2024 OLS Distribution and Tests<a class="headerlink" href="#ols-distribution-and-tests" title="Link to this heading">#</a></h1>
+<section id="sampling-distribution-of-ols-estimator">
+<h2>Sampling Distribution of OLS-Estimator<a class="headerlink" href="#sampling-distribution-of-ols-estimator" title="Link to this heading">#</a></h2>
+<p>Assumption:</p>
 <ul class="simple">
-<li><p><em>lange Frist</em>: Querschnittszusammenhänge (bspw. Solow)</p></li>
-<li><p><em>kurze Frist</em>: Zeitreihenzusammenhänge (Konjunktur)</p></li>
+<li><p>error <span class="math notranslate nohighlight">\(\epsilon\)</span>​​ = independent of explanatory variables</p></li>
+<li><p>normally distributed with mean = 0 and sd = <span class="math notranslate nohighlight">\(\sigma^2\)</span></p></li>
 </ul>
-<p>Daten:</p>
+<p>=&gt; depends on empirical topic</p>
+<p>e.g Wage regression</p>
 <ul class="simple">
-<li><p>US: Federal Reserve St Louis (<em>FRED</em>)</p></li>
-<li><p>Eurozone: EZB</p></li>
-<li><p>Deutschland: Bundesbank, Destatis</p></li>
+<li><p>wage &gt; 0 <span class="math notranslate nohighlight">\(\neq\)</span> normal distributed</p></li>
+<li><p>minimum wage =&gt; population eran exaclty minimum</p></li>
 </ul>
-<p>Modelle</p>
-<ul class="simple">
-<li><p><em>Einfachregression</em>: 1 regressand, 1 Regressor</p></li>
-<li><p><em>multiples Regressionsmodell</em>: 1 Regressand, 2+ Regressor</p></li>
-<li><p><em>Mehrgleichungsmodelle:</em> 2+ Regressand, 2+ Regressor</p></li>
-</ul>
-<section id="einfache-regression">
-<h2>Einfache Regression<a class="headerlink" href="#einfache-regression" title="Link to this heading">#</a></h2>
-<p>lineares Modell:
-$<span class="math notranslate nohighlight">\(
-y_i = \beta_0+ \beta_1 x_1 + ... + \epsilon_i
-\)</span>$</p>
-<p>Notation:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(y_i\)</span> = skalare Zufallsvariable</p></li>
-<li><p><span class="math notranslate nohighlight">\(y\)</span> = Vektor von Zufallsvariablen (ohne Index)</p></li>
-<li><p><span class="math notranslate nohighlight">\(Y\)</span>​ = Matrix</p></li>
-<li><p><span class="math notranslate nohighlight">\(\beta_n\)</span> = wahre Parameter; <span class="math notranslate nohighlight">\(\hat{\beta}_n\)</span> = geschätzte Parameter</p></li>
-<li><p><span class="math notranslate nohighlight">\(\epsilon_i\)</span> = Fehlerterme, <span class="math notranslate nohighlight">\(\hat{\epsilon}_i\)</span>​</p></li>
-</ul>
-<p>Arten von Daten</p>
-<ul class="simple">
-<li><p>Querschnittsdaten: <span class="math notranslate nohighlight">\(y = \{y_i\}_{i=1,...,n}\)</span></p></li>
-<li><p>Zeitreihendaten: <span class="math notranslate nohighlight">\(y = {y_t}_{t=1,...,n}\)</span></p></li>
-</ul>
-<p>Schätzungen</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\hat{y}_i = \hat{\beta_0} + \hat{\beta_1} x_i + ...
-\]</div>
-</div>
-<p>dann Residuen: <span class="math notranslate nohighlight">\(\hat{\epsilon_i} = y_i - \hat{y_i}\)</span></p>
-<p><img alt="img" src="../../_images/2024-04-11_17-47-39.jpg" /></p>
-</section>
-<section id="ols">
-<h2>OLS<a class="headerlink" href="#ols" title="Link to this heading">#</a></h2>
-<p>Ordinary Least Squares = Minimiere die Quadrate der Residuen</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-min \sum_1^n(\hat{\epsilon})^2 = 
-min \sum_1^n(\epsilon-\beta_0-\beta_1 x)^2
-\]</div>
-</div>
-<p>Herleitung (siehe jedes Lehrbuch ever)</p>
+<p>=&gt; solve with <em>log</em></p>
+<p>Theorem</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\beta_1 =&amp; \frac
-	{\widehat{Cov}_{xy}}
-	{\widehat{Var}_x} 
-= \frac
-	{\sum (y_i-\bar{y})(x_i - \bar{x})}
-	{\sum (x_i-\bar x)^2}
-\\
-\beta_0 =&amp; (\bar{y}- \hat{\beta_1} \bar{x})
-\end{split}\]</div>
-</div>
-<section id="r-squared">
-<h3>R-Squared<a class="headerlink" href="#r-squared" title="Link to this heading">#</a></h3>
-<p><span class="math notranslate nohighlight">\(\mathbf{R^2}\)</span>​​ = Anpassungsgüte</p>
-<p>Berechnung</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-R^2 =&amp; \frac{ \text{Total Sum of Squars}}{\text{Sum of Squared Errors}} \\
-TSS =&amp; \sum(y_i - \bar{y})^2 \\
-SSE =&amp; \sum(\hat{\epsilon}_i)^2 = \sum(y_i-\hat{y_i})^2
-\end{split}\]</div>
-</div>
-<ul class="simple">
-<li><p>Bereich: <span class="math notranslate nohighlight">\( 0 &lt; R^2 &lt; 1\)</span> (no fit - perfect fit)</p></li>
-<li><p><span class="math notranslate nohighlight">\(R^2\)</span> = Anteil der Varianz, der durch Regression erklärt werden kann</p></li>
-</ul>
-</section>
-</section>
-<section id="beispiel-konvergenz">
-<h2>Beispiel Konvergenz<a class="headerlink" href="#beispiel-konvergenz" title="Link to this heading">#</a></h2>
-<p>Hypothese: arme Länder wachsen Schneller</p>
-<p>Modell: <span class="math notranslate nohighlight">\(y = \beta_0 + \beta_1x+\epsilon\)</span></p>
-<ul class="simple">
-<li><p>Regressor: BIP p.P = x</p></li>
-<li><p>Regressand: Wachstumsrate BIP</p></li>
-</ul>
-<p>Hypothese: <span class="math notranslate nohighlight">\(\beta_1 &lt; 0\)</span></p>
-<p>Schätzung: <span class="math notranslate nohighlight">\(\hat{y} = 3.6889 - 0.1162 x, R^2 = 0.5087\)</span></p>
-<p><img alt="img" src="../../_images/2024-04-11_18-10-49.jpg" /></p>
-</section>
-<section id="multiple-regression">
-<h2>Multiple Regression<a class="headerlink" href="#multiple-regression" title="Link to this heading">#</a></h2>
-<p>Allgemein</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-y_1 = \beta_0 + \beta_1 x_1i + ... + \beta_n x_{ni} + \epsilon_i, i=1,...,n
-\]</div>
-</div>
-<p>Darstellung als Vektoren:</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-y = \begin{pmatrix}
- y_1\\
- ...\\
- y_n
-\end{pmatrix} ;
-\beta  = \begin{pmatrix}
- \beta_1\\
- ...\\
- \beta_n
-\end{pmatrix};
-x_1 =  \begin{pmatrix}
- x_{1,1}\\
- ...\\
- x_{1,n}
-\end{pmatrix};x_2=... \\
-\end{split}\]</div>
-</div>
-<p>Zusammenfassen der Regressanden als Matrix</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-X = (1 \ x_1 \ x_2 \ ... \ x_n)
-\]</div>
-</div>
-<p>Schreibweise dann: <span class="math notranslate nohighlight">\(y = X\beta+ \epsilon\)</span></p>
-<p>Berechnungen dann:</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\hat{y} = X\hat{\beta} + \hat{\epsilon} \\
-\hat{\epsilon} = y - \hat{y} = y- X\hat{\beta} \\
-\hat{\beta} = (X'X)^{-1} X'y
+\implies \hat{ \beta_j } \sim Normal[\beta_j, Var(\beta_j)] \\
 \end{split}\]</div>
 </div>
 </section>
-<section id="statistische-eigenschaften-ols">
-<h2>Statistische Eigenschaften OLS<a class="headerlink" href="#statistische-eigenschaften-ols" title="Link to this heading">#</a></h2>
-<p>Annahmen des Regressionsmodells</p>
-<ol class="arabic simple">
-<li><p>Linearität des Zusammenhangs (Modell beschreibt Wirklichkeit)</p></li>
-<li><p>Regressoren linear unabhängig</p></li>
-<li><p>Erwartungswert Störterme null: <span class="math notranslate nohighlight">\(E(\epsilon_i)=0\)</span></p></li>
-<li><p>Varianz der Störterme = konstant: <span class="math notranslate nohighlight">\(Var(\epsilon_i)= \sigma^2\)</span> (Homoskedastizität)</p></li>
-<li><p>Störterme unkorreliert: <span class="math notranslate nohighlight">\(Cov(\epsilon_i,\epsilon_j)=0\)</span>​</p></li>
-<li><p>Störterme stochastisch unabhängig von Regressoren</p>
-<ul class="simple">
-<li><p>starke Annahme</p></li>
-<li><p>Schwächer: Exogenität der Regressoren</p></li>
-<li><p><span class="math notranslate nohighlight">\(E(\epsilon| X)=0\)</span></p></li>
-</ul>
-</li>
-<li><p>Normalität der Fehlerterme: <span class="math notranslate nohighlight">\(\epsilon \in N(0, \sigma^2I_n)\)</span> (Normalverteilung)</p></li>
-</ol>
-<p>Vereinfachungen</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-Cov(\epsilon_i,\epsilon_j) = E(\epsilon_i,\epsilon_j) \\
-Var(\epsilon_i) = E(\epsilon_i^2) \\
-E(\vec{\epsilon}) = 0
-\end{split}\]</div>
-</div>
-<p>Eigenschaften von geschätztem <span class="math notranslate nohighlight">\(\hat{\beta}\)</span></p>
-<ul class="simple">
-<li><p>Unverzerrt: <span class="math notranslate nohighlight">\(E(\hat{\beta})= E(\beta)\)</span>​</p>
-<ul>
-<li><p>Durchscnitt der Schätzung = echter Durchschnitt</p></li>
-</ul>
-</li>
-<li><p>geringe Varianz</p></li>
-<li><p>konsistent (je größere Stichprobe = näher an Wahrheit)</p></li>
-</ul>
-</section>
-<section id="hypothesentests">
-<h2>Hypothesentests<a class="headerlink" href="#hypothesentests" title="Link to this heading">#</a></h2>
-<p><strong>S. 48</strong></p>
+<section id="t-statistic">
+<h2>t-statistic<a class="headerlink" href="#t-statistic" title="Link to this heading">#</a></h2>
+<p><strong>4.2!</strong></p>
 </section>
 </section>
 
@@ -910,15 +755,23 @@ E(\vec{\epsilon}) = 0
       <footer>
         
         <div class="related-pages">
-          
-          <a class="prev-page" href="README.html">
+          <a class="next-page" href="../VL_Umwelt/README.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Umweltökonomie</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="2024-04-16-Multiple-Regression.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Macroeconometrics</div>
+                <div class="title">16.04.2024 Multiple Regression</div>
                 
               </div>
             </a>
@@ -952,16 +805,9 @@ E(\vec{\epsilon}) = 0
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">03.04.2024 Intro</a><ul>
-<li><a class="reference internal" href="#einfache-regression">Einfache Regression</a></li>
-<li><a class="reference internal" href="#ols">OLS</a><ul>
-<li><a class="reference internal" href="#r-squared">R-Squared</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#beispiel-konvergenz">Beispiel Konvergenz</a></li>
-<li><a class="reference internal" href="#multiple-regression">Multiple Regression</a></li>
-<li><a class="reference internal" href="#statistische-eigenschaften-ols">Statistische Eigenschaften OLS</a></li>
-<li><a class="reference internal" href="#hypothesentests">Hypothesentests</a></li>
+<li><a class="reference internal" href="#">03.05.2024 OLS Distribution and Tests</a><ul>
+<li><a class="reference internal" href="#sampling-distribution-of-ols-estimator">Sampling Distribution of OLS-Estimator</a></li>
+<li><a class="reference internal" href="#t-statistic">t-statistic</a></li>
 </ul>
 </li>
 </ul>

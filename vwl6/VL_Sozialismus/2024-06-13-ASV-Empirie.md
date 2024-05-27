@@ -118,6 +118,10 @@ externer Schock
 
 => jugoslawischen Wirtschaft den Todesstoß gegeben
 
+![img](../images/2024-05-20_14-58-40.jpg)
+
+aus [CIA Report](https://www.cia.gov/readingroom/docs/DOC_0005361799.pdf) , p.8
+
 ## Kritik / Gedanken
 
 - Finanzielle Unterstützung von *Mercatus Center* (neoliberaler Think Tank)

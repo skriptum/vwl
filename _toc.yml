@@ -850,8 +850,10 @@ subtrees:
         title: sozial oeko
       - file: vwl6/VL_Umwelt/2024-04-29-Naturkapital.md
         title: Naturkapital
-      - file: vwl6/VL_Umwelt/2024-05-13-Bewertung.md
+      - file: vwl6/VL_Umwelt/2024-05-06-Bewertung.md
         title: Bewertung
+      - file: vwl6/VL_Umwelt/2024-05-27-Verhalten.md
+        title: Verhalten
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:
@@ -863,6 +865,8 @@ subtrees:
         title: Schockindustrie
       - file: vwl6/VL_Sozialismus/2024-05-02-Soviet-Ende.md
         title: Soviet Ende
+      - file: vwl6/VL_Sozialismus/2024-05-16-Paper-Idee.md
+        title: Paper Idee
       - file: vwl6/VL_Sozialismus/2024-05-23-Long-Run.md
         title: Long Run
       - file: vwl6/VL_Sozialismus/2024-06-13-ASV-Empirie.md

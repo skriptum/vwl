@@ -79,9 +79,11 @@ logic: when to supply more?
 ## Demand Liquidity
 
 credit demand of private sector
+
 $$
 I = L^D = \bar{I} - a * r
 $$
+
 - I = autonomous / independent demand
 - a = interest rate elasticity of investment demand 
     - how flexible are firms to "switch banks"
@@ -92,19 +94,23 @@ $$
 \overbrace{\frac{\tau e}{var (v)} * (r-r^p)}^{Supply} =
 \overbrace{\bar{I}-a*r}^{Demand}
 $$
+
 solve for r
+
 $$
 r [\frac{\tau e}{var (v)}+a] = \frac{r^p \tau e}{var(v)}+ \bar{I} \\
 $$
+
 leads to:
+
 $$
 r = \frac
 {\frac{r^p \tau e}{var(v)}+ \bar{I}}
-{\frac{\tau e}{var (v)}+a} 
-= 
+{\frac{\tau e}{var (v)}+a} = 
 \frac{r^p + \frac{\bar{I}* var(v)}{\tau e}}
 {1+ \frac{a * var(v)}{\tau e}}
 $$
+
 Conclusions: interest **rate increases**:
 
 1. with higher autonomous demand $\bar{I}$ : 

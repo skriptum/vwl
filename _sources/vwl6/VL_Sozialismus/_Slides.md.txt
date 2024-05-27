@@ -129,4 +129,28 @@ Anreizstruktur für den Produktionsfaktor = Verzerrung / Abweichung
 
 ---
 
+
+
 ![TFP Wachstum in verschiedenen Regionen](../images/2024-05-02_12-32-08.jpg)
+
+---
+
+
+
+## Ölschock
+
+![img](../images/2024-05-20_14-58-40.jpg)
+
+## 
+
+## 
+
+
+
+## Kritik
+
+- Mercatus-Funding
+- Öl-Schock in kapitalistischer Peripherie
+
+
+

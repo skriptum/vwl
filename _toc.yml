@@ -856,6 +856,8 @@ subtrees:
         title: Verhalten
       - file: vwl6/VL_Umwelt/2024-06-10-Politik.md
         title: Politik
+      - file: vwl6/VL_Umwelt/2024-06-17-Politik-II.md
+        title: Politik II
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:

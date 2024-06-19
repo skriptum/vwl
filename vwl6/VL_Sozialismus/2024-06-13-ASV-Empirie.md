@@ -6,10 +6,9 @@ Leonard Kukic
 
 - Assistant Prof: Universitad Madrid
 - Topics: Economic History, Eastern Europe
+- PhD + MA LSE
 
-2018: 
 
-2020:
 
 ## Wirtschaftsgeshichte Jugoslawiens
 
@@ -22,7 +21,7 @@ Leonard Kukic
   - softere Targets, keine Kollektivierung
   - zentralen Investment-Fond (staatliches Kapital)
 - 65-74: Marktsozialismus
-  - GATT-Beitritt (WTO Pred.)
+  - GATT-Beitritt (WTO Vorreiter)
   - Einbindung internationaler Handel
   - Arbeiterräte in Firmen
   - Banken als Finanziers
@@ -32,26 +31,6 @@ Leonard Kukic
   - Backlash gegen Liberalisierung
   - Tito stirbt
   - ethnische / politische streitigkeiten über Zukunft
-
-## Definitionen
-
-**Solow Modell** 
-
-- exogenes long-run growth model
-- Cobb Douglas Produktionsfunktion
-- grundlage von Growth Accounting (erwähnt in Paper)
-- Versuch zu erklären, warum einige Länder arm, andere reich sind
-    - basierend auf Kapitalstock / Labor Force / Investments etc
-
-
-
-
-**TFP** = Total Factor Productivity
-
-- Effizienz der Verwendung der beiden Produktionsfaktoren in Output
-- "Measure of our Ignorance" = was wir nicht messen können
-- Institutionen, Culture, Geography, Technology
-- insbesondere wichtig, wenn Wirtschaft weiter entwickelt ist
 
 
 
@@ -65,17 +44,37 @@ Wachstumsfaktoren Analyse mit Business Cycle Accounting
 - wedges = abweichung vom "perfekten Pfad"
 - vergleich mit anderen staaten (Griechenland, USA, ...)
 
+### Refresher
+
+
+
+**Solow Modell** 
+
+- exogenes long-run growth model
+- Cobb Douglas Produktionsfunktion
+- grundlage von Growth Accounting (erwähnt in Paper)
+- Versuch zu erklären, warum einige Länder arm, andere reich sind
+    - basierend auf Kapitalstock / Labor Force / Investments etc
+
+
+
+**Labor wedge:** structure of incentives determining provision of labor  
+
+- Anreizstruktur für einen bestimmten Produktionsfaktor
+
+sozialistische firma = distorted version of perfectly competitve economy
+
+
+
+### Ergebnisse
+
 Ergebisse:
 
 - TFP = insgesmat wichtig für Wachstum
 - ab 1980: sinkendes TFP Growth
 - besonders relecant aber: labor wedge sinkt
 
-> **Labor wedge:** structure of incentives determining provision of labor  
->
-> => interpreted as distortion arising due to increased taxation
 
-sozialistische firma = distorted version of perfectly competitve economy
 
 
 
@@ -94,11 +93,12 @@ Grund für Labor Wedge: 1965 Reform
 
 ## Paper 2: Divergence
 
-> **(Solow)-Convergence** (Conditional)
->
-> - Tendenz dass sich arme Länder höhere Wachstumsrate haben
-> - sich reichen damit annähern (Catch Up Growth)
-> - typisches Beispiel: Südstaaten Nordstaaten USA
+
+
+Analyse in Jugoslawien: 
+
+- reichere Regionen: ehemaliges Austro-ungarn (stärkere INdustralisierung)
+- Ärmere Regionen: ehemaliges osmanisches Reich
 
 
 
@@ -106,8 +106,114 @@ reichere Regionen
 
 - höheres Ausgangsniveau = Vergangenheit in Austro-ungarn
 - und dann auch noch mehr Wachstum
+- War ein Land, vergleichbar als wäre UK und Kongo in einer Nation verbunden
 
-![img](../images/2024-05-02_12-31-14.jpg)
+
+
+**Frage** des papers: Warum keine Konvergenz?
+
+
+
+**Daten**: von westlicher Seite konstruierte Wachstumsdaten, da Original Daten viele verscihede Problematiken hatten (Preisverzerrung, Inflation, etc)
+
+**Modell**: Standard Growth Accounting Model
+
+
+
+### Refrheser
+
+**(Solow)-Convergence** (Conditional)
+
+- Tendenz dass sich arme Länder höhere Wachstumsrate haben
+- sich reichen damit annähern (Catch Up Growth)
+- typisches Beispiel: Südstaaten Nordstaaten USA
+- durch Insituttionene etc.
+
+
+
+**TFP** = Total Factor Productivity
+
+- Effizienz der Verwendung der beiden Produktionsfaktoren in Output
+- "Measure of our Ignorance" = was wir nicht messen können
+- Institutionen, Culture, Geography, Technology
+- insbesondere wichtig, wenn Wirtschaft weiter entwickelt ist
+
+
+
+### Ergebnisse
+
+konvergenz bei Phyischem Kapital und Humankapital
+
+- Asuweitung der Bildung (sozialistisch typisch)
+- Ausweitung des physischen Kapitals (durch soft budget constraint)
+
+
+
+insbesondere verantwortlich Divergenz: TFP
+
+- gerade schon gelernt: TFP war wichtigster Wachstumstreiber
+- reichere Regionen = stärkeres Wachstum
+- insbesondere in 60er und 70er, = Wachstumsphase
+
+Kontraintuitiv:
+
+- im gegensatz zu Rest von Europa in der Zeit
+- oder in YG die Zeit davor + danach
+- innerhalb eines Landes sind Institutionen / Geographie / etc meistens ähnlich
+
+
+
+![img](../images/2024-06-12_15-11-39.jpg)
+
+
+
+## Gründe
+
+Warum?
+
+- Firmen im Süden: softer budget constraint
+    - mehr Misallokation 
+    - weniger technologische Druck
+- Norden = besser integriert in Welthandel
+    - Technoligische Frontier 
+    - dadurch effizientere Technologie = TFP
+- wenig interregionale Labour Migration
+    - außer bischen Slowenien
+    - größtenteils in Westen
+    - Grenzöffnung in 60ern
+
+
+
+1965 Reform
+
+- Firmen maximieren Löhne 
+    - auch über den Gleichgewichtslohn / Produktivitäswachstum
+- beschränken Eintritt von labour Entry
+
+
+
+
+
+## Kritik / Gedanken
+
+- Finanzielle Unterstützung von *Mercatus Center* (neoliberaler Think Tank)
+    - gibt dem ganzen ein Geschmäckle
+    - abneigung gegen gewerkschaften / income per worker maximizing
+    - marginal productivity
+- wie hat der Öl schock andere Länder gebrochen (die kapitalistisch waren)
+    - bspw. **XX?**
+- regionale Divergenzen in gescheiterten Ländern? (Russland etc)
+    - erklärender Faktor?
+    - in yugoslawien gab es auch sehr wenig interregionalen Handel / Austausch
+    - und keine Migration
+- politische Folgen
+- Lohn als keynesianische Komponente 
+    - Lhnkompression stärker
+    - Vorteile für Gesellschaft
+    - Aggregate Demand
+
+
+
 
 ## Rolle des Ölschocks
 
@@ -117,19 +223,4 @@ externer Schock
 - energieineffizienz der Wirtschaft = teuer
 
 => jugoslawischen Wirtschaft den Todesstoß gegeben
-
-![img](../images/2024-05-20_14-58-40.jpg)
-
-aus [CIA Report](https://www.cia.gov/readingroom/docs/DOC_0005361799.pdf) , p.8
-
-## Kritik / Gedanken
-
-- Finanzielle Unterstützung von *Mercatus Center* (neoliberaler Think Tank)
-    - gibt dem ganzen ein Geschmäckle
-    - abneigung gegen gewerkschaften / income per worker maximizing
-    
-- wie hat der Öl schock andere Länder gebrochen (die kapitalistisch waren)
-    - bspw. **XX?**
-- wenn 1965 reformen wichtig für downfall waren, warum dann erst ab 71 sichtbar?
-- sozialismus = abweichung von perfket competitive economy?
 

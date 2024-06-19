@@ -1,12 +1,18 @@
 ---
-format: 
-  beamer:
-    theme: Madrid
-title: ASV Empirie
+format: pptx
+title: ASV
 date: "13 06 2024"
 date-format: medium
 author: "Marten Walk"
+bibliography: Sozialismus.bib
 ---
+
+## Empirie zur Arbeiterselbstverwaltung
+
+![e4abf151e1e3193b92245e7b6587ea58](../images/e4abf151e1e3193b92245e7b6587ea58.jpg)
+
+von Marten Walk
+
 
 ---
 
@@ -14,11 +20,37 @@ author: "Marten Walk"
 
 :::: {.columns}
 
+::: {.column width="50%"}
+
+[@kukicSocialistGrowthRevisited2018]
+
+\
+
+![](../images/2024-04-30_18-36-53.jpeg){height=40%}
+
+:::
+
+::: {.column width="50%"}
+
+[@kukicOriginsRegionalDivergence2020]
+
+\
+
+![](../images/2024-04-30_18-36-49.jpg){height=40%}
+
+:::
+
+::::
+
+---
+
+:::: {.columns}
+
 ::: {.column width="60%"}
 
-über den Autor
-
-
+- Visiting Professor
+- Universität Carlos III Madrid
+- LSE Economic History (MA, PhD)
 
 :::
 
@@ -30,33 +62,6 @@ author: "Marten Walk"
 
 ::::
 
-
-
----
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-**Kukić, Leonard**. “Socialist Growth Revisited: Insights from Yugoslavia.” *European Review of Economic History* 22, no. 4 (November 1, 2018)
-
-\
-
-![EREH Cover](../images/2024-04-30_18-36-53.jpeg){height=40%}
-
-:::
-
-::: {.column width="50%"}
-
-**Kukić, Leonard**. “Origins of Regional Divergence: Economic Growth in Socialist Yugoslavia †.” *The Economic History Review* 73, no. 4 (November 2020)
-
-\
-
-![EHR Cover](../images/2024-04-30_18-36-49.jpg){height=40%}
-
-:::
-
-::::
 
 ---
 
@@ -112,7 +117,7 @@ Anreizstruktur für den Produktionsfaktor = Verzerrung / Abweichung
 
 ::: {.column width="50%"}
 
-![Labor Wedge (Kukic 2018)](../images/2024-05-02_11-54-22.jpg)
+![Labor Wedge](../images/2024-05-02_11-54-22.jpg)
 
 :::
 
@@ -122,30 +127,42 @@ Anreizstruktur für den Produktionsfaktor = Verzerrung / Abweichung
 
 ## Regional Divergence
 
+Sind die ärmeren und reicheren Regionen Jugoslawiens konvergiert?
+
+Model: Standard Growth Accounting Model
+
 ##### **Convergence**
 
 - arme Länder = höheres Wachstum (*Catch-Up*)
 - Angleichung der Einkommensniveaus
 
----
 
 
 
-![TFP Wachstum in verschiedenen Regionen](../images/2024-05-02_12-32-08.jpg)
 
 ---
 
+![Regional TFP Growth Rates](../images/2024-06-12_15-11-39-8197919.jpg)
 
+---
+
+## Gründe
+
+- softer budget-constraints (Süden)
+- stärkere Integration in den Welthandel (Norden)
+- institutionelle Kapazitäten
+
+---
 
 ## Ölschock
 
-![img](../images/2024-05-20_14-58-40.jpg)
+<!-- ![img](../images/2024-05-20_14-58-40.jpg)-->
 
-## 
+![Foreign trade of Yugoslavia, million USD](../images/2024-06-12_16-59-52.jpg)
 
-## 
+Aus [@yarashevichEconomicReasonsBreakup2013]
 
-
+---
 
 ## Kritik
 
@@ -154,3 +171,10 @@ Anreizstruktur für den Produktionsfaktor = Verzerrung / Abweichung
 
 
 
+---
+
+## Bibliographie
+
+:::{#references}
+
+:::

@@ -854,9 +854,13 @@ subtrees:
         title: Bewertung
       - file: vwl6/VL_Umwelt/2024-05-27-Verhalten.md
         title: Verhalten
+      - file: vwl6/VL_Umwelt/2024-06-10-Politik.md
+        title: Politik
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:
+      - file: vwl6/VL_Sozialismus/2024-04-00-Paper-Idee.md
+        title: Paper Idee
       - file: vwl6/VL_Sozialismus/2024-04-04-Intro.md
         title: Intro
       - file: vwl6/VL_Sozialismus/2024-04-18-Marx.md
@@ -865,8 +869,6 @@ subtrees:
         title: Schockindustrie
       - file: vwl6/VL_Sozialismus/2024-05-02-Soviet-Ende.md
         title: Soviet Ende
-      - file: vwl6/VL_Sozialismus/2024-05-16-Paper-Idee.md
-        title: Paper Idee
       - file: vwl6/VL_Sozialismus/2024-05-23-Long-Run.md
         title: Long Run
       - file: vwl6/VL_Sozialismus/2024-06-13-ASV-Empirie.md

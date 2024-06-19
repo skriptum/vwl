@@ -1,0 +1,79 @@
+# 10.06.2024 Politik
+
+> **Externalitäten**: Auseinanderfallen von privaten | gesellschaftlichem Nutzen
+
+Lösung: Steuern / Subventionen
+
+Probleme: Information über soziale Kosten, Transaktionskosten
+
+Ansätze zu Externalitäten
+
+- Pigou: Steuer
+- Coase: Verhandlungen
+- Ostrom: dezentrale Governance
+- Baumol / Oates: Standard-Preis-Ansatz (bspw. Emissionshandel)
+
+
+
+> **Vorsorgeprinzip:** Vermeidung von Umweltgefahren über akute Gefahr hinaus
+
+Voraussetzung:
+
+- begründete Gefahrvermutung
+- Unsicherheit
+- Strategie zur Reduzierung
+
+
+
+> **Verursacherprinzip**: Internalisierung beim Verursacher (meist Gerechtigkeitsgründe)
+
+Probleme:
+
+- wer ist Verursacher (Nutzungskonflikte)
+- mehr als zwei Seiten bei Umweltproblem
+- Internationale Regulierung?!
+
+
+
+## Umweltpolitik
+
+![img](../images/2024-06-19_13-19-22.jpg)
+
+- **Ziel** adäquanz
+- **Instrument** Adäquanz
+- **Behaviorale** Adäquanz
+- **Objekt** Adäquanz
+
+
+
+### Instrumente
+
+- Ordnungsrecht = Verbote / Gebote
+    - Quoten
+    - Emissionsttandards (absolut / relativ)
+    - Technologiestandards
+- Anreize (positiv / negativ)
+    - Lenkungsteuern
+    - Emissionshandel (cap & trade)
+    - Subventionen
+- sonstige "weiche" Instrumente 
+    - Beschafffung
+    - Siegel 
+    - Nudges
+
+
+
+Analyse von Instrumenten
+
+| Kriterium                  | Emissionsstandard | Steuer / Subvention | Zertifikate |
+| -------------------------- | ----------------- | ------------------- | ----------- |
+| *Wirksamkeit*              | +                 | +                   | +           |
+| *Wirkungsgeschwindigkeit*  | -                 | ++                  | +(+)        |
+| *Statische Effizienz*      | -                 | +                   | +           |
+| *Dynamische Anreizwirkung* | -                 | ++                  | +           |
+
+Statische Effizienz = niedrigste mögliche Kosten
+
+dynamische Effizienz = gute Anreize für umweltfreundliche Innovation
+
+kontextabhängig => **Policy Mix**

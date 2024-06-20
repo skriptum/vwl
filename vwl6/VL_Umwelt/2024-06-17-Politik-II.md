@@ -70,3 +70,5 @@ Forderungen:
 - BGE
 - Maximallohn
 - Lokale Währungen
+
+ 

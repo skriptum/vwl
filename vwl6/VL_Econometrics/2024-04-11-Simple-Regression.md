@@ -145,5 +145,5 @@ Variance of $\beta_1$
 - larger variability of *x* => larger *Var*
 - larger sample => lower *Var*
 
-Standard Error: $se(\beta_1) = \frac{ \theta^2 }{\sqrt{SST_x}}$
+Standard Error: $se(\beta_1) = \frac{ \sigma^2 }{\sqrt{SST_x}}$
 

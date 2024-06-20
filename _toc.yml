@@ -839,6 +839,8 @@ subtrees:
         title: Multiple Regression
       - file: vwl6/VL_Econometrics/2024-05-03-Distribution.md
         title: Distribution
+      - file: vwl6/VL_Econometrics/2024-06-20-Test-Exam.md
+        title: Test Exam
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:

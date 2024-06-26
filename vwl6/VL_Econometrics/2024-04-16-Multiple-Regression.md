@@ -24,7 +24,7 @@ $$
 
 ## OLS Expected Value
 
-Assumptions:
+Assumptions: (for a normal CLM = Classical Linear Model)
 
 1. parameters ($\beta_i$​) are linear (*variables can be nonlinear*)
 2. random sample of population

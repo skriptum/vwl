@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="Umweltökonomie" href="../VL_Umwelt/README.html" /><link rel="prev" title="16.04.2024 Multiple Regression" href="2024-04-16-Multiple-Regression.html" />
+<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="26.05.2024 Multiple Linear Regression II" href="2024-05-26-Asymptotic.html" /><link rel="prev" title="16.04.2024 Multiple Regression" href="2024-04-16-Multiple-Regression.html" />
         <link rel="canonical" href="https://vwl.martenw.com/vwl6/VL_Econometrics/2024-05-03-Distribution.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -631,6 +631,9 @@
 <li class="toctree-l3"><a class="reference internal" href="2024-04-11-Simple-Regression.html">Simple Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2024-04-16-Multiple-Regression.html">Multiple Regression</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-05-26-Asymptotic.html">Asymptotic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-06-01-Applications.html">Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-06-20-Test-Exam.html">Test Exam</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Umwelt/README.html">Umweltökonomie</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle navigation of Umweltökonomie</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -641,6 +644,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-05-06-Bewertung.html">Bewertung</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-05-27-Verhalten.html">Verhalten</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-06-10-Politik.html">Politik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-06-17-Politik-II.html">Politik II</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Sozialismus/README.html">Sozialismus</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle navigation of Sozialismus</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -727,7 +731,162 @@
 </section>
 <section id="t-statistic">
 <h2>t-statistic<a class="headerlink" href="#t-statistic" title="Link to this heading">#</a></h2>
-<p><strong>4.2!</strong></p>
+<p>Normal Model with CLM Assumptions</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ...+ \beta_k x_k + u
+\]</div>
+</div>
+<p>Distribution of Beta =&gt; follows T-distribution</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+(\hat{ \beta_j }- \beta_j) / se(\hat{ \beta_j }) \sim t_{n-k-1}
+\]</div>
+</div>
+<p>Test the Null Hypothesis (<span class="math notranslate nohighlight">\(H_0 : \beta_j \le 0\)</span>)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+t_{\beta_j} = \hat{ \beta_j } / se(\beta_j)
+\]</div>
+</div>
+<hr class="docutils" />
+<p><strong>Example</strong>: hourly wage equation for <em>n=526</em></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+ln \widehat{ \text{wage} } = 
+\underset{(.104)}{.284} + 
+\underset{(.007)}{.092 \cdot educ} + 
+\underset{(.0017)}{.0041\cdot exper}+ 
+\underset{(.003)}{.022 \cdot tenure}
+\]</div>
+</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\beta_{exper} \le 0\)</span> vs <span class="math notranslate nohighlight">\(H_1: \beta_{exper} &gt; 0\)</span>​</p></li>
+<li><p>Test Statistic: <span class="math notranslate nohighlight">\(t_{\beta_j} = \hat{ \beta_j } / se(\beta_j)\)</span></p></li>
+<li><p>Rejection Rule:</p>
+<ul>
+<li><p>calculate distribution value</p>
+<ul>
+<li><p>use normal distribution, because <em>df&gt;120</em></p></li>
+<li><p>choose significance level = 5%</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(N(0.95) = 1.645\)</span></p></li>
+</ul>
+</li>
+<li><p>Calculate <span class="math notranslate nohighlight">\(t_{exper} = \frac{ 0.0041 }{0.0017}= 2.41\)</span></p></li>
+<li><p>2.41 &gt; 1.645 =&gt; <span class="math notranslate nohighlight">\(H_1\)</span> accepted</p></li>
+</ul>
+<p>=&gt; variable is different from 0 =&gt; <strong>good</strong></p>
+</section>
+<section id="confidence-intervals">
+<h2>Confidence Intervals<a class="headerlink" href="#confidence-intervals" title="Link to this heading">#</a></h2>
+<p>= interval estimates</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\hat{ \beta_j } \pm c \cdot se(\hat{ \beta_j })
+\]</div>
+</div>
+<p>Example:</p>
+<ul class="simple">
+<li><p>given: degrees of freedom = 25, Confidence = 95%</p></li>
+<li><p>c = 2.06 (<a class="reference external" href="https://www.omnicalculator.com/statistics/critical-value?c=EUR&amp;amp;v=which_test:2,alpha:0.05,prec:4,tdf:25,alt:0.000000000000000">look here</a>)</p></li>
+<li><p><span class="math notranslate nohighlight">\([\hat{ \beta_j }-2.06 \cdot se(\hat{ \beta_j }),\hat{ \beta_j }+2.06 \cdot se(\hat{ \beta_j })]\)</span></p></li>
+</ul>
+</section>
+<section id="test-hypotheses-multiple-parameters">
+<h2>Test Hypotheses: Multiple Parameters<a class="headerlink" href="#test-hypotheses-multiple-parameters" title="Link to this heading">#</a></h2>
+<p>Test a single hypothesis with more than one <span class="math notranslate nohighlight">\(\beta\)</span></p>
+<p>Example: Returns to Education at junior colleges vs. four year colleges</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\ln wage = \beta_0+ \beta_1 junior + \beta_2 univ+ \beta_3 exper + u
+\]</div>
+</div>
+<p>Result:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\ln wage = 
+\underset{.021}{1.472} + 
+\underset{.0069}{.0667} junior +
+\underset{.0023}{.0769} univ +
+\underset{.0002}{.0049} exper
+\]</div>
+</div>
+<p>Numerator: <span class="math notranslate nohighlight">\(\hat{ \beta_1 }-\hat{ \beta_2 } = 0.0067-0.0769 = -0.0102\)</span></p>
+<p>Denominator: fucking complicated?!!!!!</p>
+</section>
+<section id="f-test">
+<h2>F-Test<a class="headerlink" href="#f-test" title="Link to this heading">#</a></h2>
+<p><em>probably (hopefully) not relevant</em></p>
+<p>to test mutliple hypothesis at the same time</p>
+<p><strong>Example</strong>: Salary of a Baseball Player</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\ln salary = \beta_0+\beta_1 years + \beta_2 gamesyr + \beta_3 bavg + \beta_4 hrunsyr + \beta_5 rbisyr + u
+\]</div>
+</div>
+<p>Hypothesis: after controlling for years and games/yr, the other performance statistics do not have any effect</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+H_0: \beta_3=0, \beta_4 = 0, \beta_5 = 0
+\]</div>
+</div>
+<p>Results in unrestricted Model:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\ln \widehat{salary} = 
+\underset{0.29}{11.19} + 
+\underset{0.0121}{0.0689} years +
+\underset{0.0026}{0.0126} gamesyr + \\
+\underset{0.0011}{0.0009} bavg +
+\underset{0.0161}{0.0144} hrunsyr +
+\underset{0.0072}{0.0108} rbisyr \\
+SSR = 183.186, R^2 = 0.6728
+\end{split}\]</div>
+</div>
+<p>Result in restricted Model</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\ln \widehat{salary} =
+\underset{.11}{11.22} +
+\underset{.0125}{.0713} years +
+\underset{.0013}{.0202} gamesyr \\
+SSR = 198.311, R^2 = .5971
+\end{split}\]</div>
+</div>
+<p>F-Test</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+F = \frac{ (SSR_r -SSR_{ur})/q}{SSR_{ur}/(n-k-1)}
+\]</div>
+</div>
+<ul class="simple">
+<li><p>Question: increase in SSR large enough to consider dropping?</p></li>
+<li><p>F = always nonnegative</p></li>
+<li><p><em>q</em> = <span class="math notranslate nohighlight">\(df_r-df_{ur}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(n-k-1 = df_{ur}\)</span></p></li>
+</ul>
+<p>Rejection Rule: c is taken from F distribution</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+F &gt; c, \text{ with c =} F_{q,n-k-1}(1-\alpha)
+\]</div>
+</div>
+<p>also often used: F-Statistic to test all variables (confirm that they are different from 0)</p>
 </section>
 </section>
 
@@ -736,12 +895,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../VL_Umwelt/README.html">
+          <a class="next-page" href="2024-05-26-Asymptotic.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Umweltökonomie</div>
+                <div class="title">26.05.2024 Multiple Linear Regression II</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -789,6 +948,9 @@
 <li><a class="reference internal" href="#">03.05.2024 OLS Distribution and Tests</a><ul>
 <li><a class="reference internal" href="#sampling-distribution-of-ols-estimator">Sampling Distribution of OLS-Estimator</a></li>
 <li><a class="reference internal" href="#t-statistic">t-statistic</a></li>
+<li><a class="reference internal" href="#confidence-intervals">Confidence Intervals</a></li>
+<li><a class="reference internal" href="#test-hypotheses-multiple-parameters">Test Hypotheses: Multiple Parameters</a></li>
+<li><a class="reference internal" href="#f-test">F-Test</a></li>
 </ul>
 </li>
 </ul>

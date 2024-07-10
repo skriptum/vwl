@@ -7,6 +7,8 @@ Methoden der ökonomischen Bewertung
 - Offenbarte Präferenzen
 - Geäußerte Präferenzen
 
+
+
 ## Wert
 
 > **Wert** = Einheit einer entscheidungsrelevanter Größe, meist Geld

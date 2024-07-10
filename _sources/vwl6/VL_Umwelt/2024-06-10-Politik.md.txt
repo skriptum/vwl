@@ -1,4 +1,8 @@
-# 10.06.2024 Politik
+# 10.06.2024 Politik & Externalitäten
+
+
+
+## Externalitäten
 
 > **Externalitäten**: Auseinanderfallen von privaten | gesellschaftlichem Nutzen
 
@@ -6,14 +10,25 @@ Lösung: Steuern / Subventionen
 
 Probleme: Information über soziale Kosten, Transaktionskosten
 
-Ansätze zu Externalitäten
+Ansätze zur Internalisierung:
 
-- Pigou: Steuer
-- Coase: Verhandlungen
-- Ostrom: dezentrale Governance
-- Baumol / Oates: Standard-Preis-Ansatz (bspw. Emissionshandel)
+- **Pigou**: Steuer
+    - Ansatz: gesellschaftl. Kosten = private Kosten -> Internalisierung
+    - Problem: Information über soziale Kosten
+
+- **Coase**: Verhandlungen
+    - Ansatz: bilatere Verhandlungen über Nutzungskonflikt
+    - Problem: Transaktionskosten, Durchsetzung
+
+- **Ostrom**: dezentrale Governance
+- **Baumol** / Oates: Standard-Preis-Ansatz (bspw. Emissionshandel)
+    - Festlegen eines Standards (bspw. Emissionshöchstmenge)
+    - Preisbildung auf Märkten (bspw. Zertifikate)
 
 
+
+
+## Prinzipien der Umweltpolitik
 
 > **Vorsorgeprinzip:** Vermeidung von Umweltgefahren über akute Gefahr hinaus
 
@@ -39,6 +54,8 @@ Probleme:
 
 ![img](../images/2024-06-19_13-19-22.jpg)
 
+wie geht gute Politik?
+
 - **Ziel** adäquanz
 - **Instrument** Adäquanz
 - **Behaviorale** Adäquanz
@@ -60,6 +77,12 @@ Probleme:
     - Beschafffung
     - Siegel 
     - Nudges
+
+
+
+Lenkungsteuern: 
+
+![img](../images/2024-07-10_12-36-58-0613367.jpg)
 
 
 

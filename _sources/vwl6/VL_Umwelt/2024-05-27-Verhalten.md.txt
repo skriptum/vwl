@@ -1,13 +1,27 @@
 # 27.05.2024 Umweltrelevantes Verhalten
 
+Problem: Leute wollen sich umweltfreundlich verhalten, aber tun es dann in der Realität nicht (Bewusstsein $\neq$ Verhalten)
+
+Warum?
+
+- Falsche Informationen = teilweise
+- Unterkomplexe Darstellung 
+- Individualismus
+
 
 
 ## Heuristics and Biases
 
-- Ankerheuristik = Orientierung an bekannten Zahlen
-- Verfügbarkeitsheuristik 
-- Repräsentativitätsheuristik
-- Verlustaversion
+Arten der begrenzten Rationaliät (Daumenregeln etc.)
+
+
+
+- **Ankerheuristik** = Orientierung an bekannten Zahlen
+- **Verfügbarkeitsheuristik** = Ereignisse an die man sich leicht erinnert -> gefühlt häufiger
+- **Repräsentativitätsheuristik**
+- **Verlustaversion** = 100€ verlieren = mehr Nutzenverlust als 100€ gewinnen 
+
+
 
 ## Relative Motivation
 
@@ -27,13 +41,17 @@ Veblen: Conspicous Consumption
 - Protzen
 - verwand mit Positionale Güter (Fred Hirsch)
 
+
+
 ## Sozial eingebettetes Verhalten
 
 Bordieu: 
 
-- Habiturs
+- Habitus
 - Kulturelles Kapital => Symbolisches Kapital => Sozialkapital
 - Soziale Identität
+
+
 
 Luhmann:
 
@@ -41,6 +59,33 @@ Luhmann:
 - Hermetische Systeme
 
 Diffusion von Innovation
+
+
+
+## Motivation
+
+individuelle Handlung = vielschrittiger Prozess
+
+- begrenzt von vielen Faktoren (Gesellschaft, Geld, etc)
+- soziale Dilemmata erschweren Handeln
+
+```mermaid
+graph 
+subgraph Handlungspielraum
+Z(Problemerkennung) --> A(Identifizierung der Lösung) --> B(Implementierung) --> C(Verinnerlichung kontin)
+end
+a[[soziale Barrieren]] -.-> Handlungspielraum
+b[[ökonomische Barrieren]] -.-> Handlungspielraum
+c[[regulatorische Barrieren]] -.-> Handlungspielraum
+d[[technologiusche Barrieren]] -.-> Handlungspielraum
+```
+
+=> kollektives Handeln in Institutionen benötigt!
+
+- bspw. soziale Norme / Rechte / Steuern
+- Insbesondere großskalige Probleme
+
+
 
 ## Übung: 
 

@@ -13,7 +13,7 @@ Methoden der ökonomischen Bewertung
 
 > **Wert** = Einheit einer entscheidungsrelevanter Größe, meist Geld
 
-beachte: Tauschwert vs. Nutzwert
+beachte: **Tauschwert vs. Nutzwert** (Diamanten vs Wasser)
 
 ökonomischer Wert
 
@@ -38,7 +38,7 @@ Beispiele:
 
 - Vermeidungskosten
 - Opportunitätskosten
-- Ersatzkosten
+- Ersatzkosten (Flutmauer statt Aue)
 
 Vorteil: wenig Aufwand
 
@@ -52,6 +52,8 @@ Formulierung einer Produktionsfunktion für auf Märkten gehandeltes Gut
 
 ![img](../images/2024-05-13_14-34-51.jpg)
 
+Kalkulation des Beitrags der Erde / Biene zu Endprodukt
+
 Nachteil: aufwendig, nur für nutzungsabhängige Werte
 
 
@@ -61,7 +63,13 @@ Nachteil: aufwendig, nur für nutzungsabhängige Werte
 Grundidee: Entscheidungen auf Märkten mit Umweltgütern
 
 - auf Nachfrageseite
-- Bsp.: Reiseausgaben zu Nationalparks = Bereitschaft für NAturgut zu zahlen
+- mit statistischen Methoden
+
+
+
+**Reisekostenmethode**
+
+Reiseausgaben zu Nationalparks = Bereitschaft für NAturgut zu zahlen
 
 
 

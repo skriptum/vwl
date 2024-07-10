@@ -140,7 +140,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -702,7 +702,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -710,14 +710,54 @@
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="naturkapital">
 <h1>29.04.2024 Naturkapital<a class="headerlink" href="#naturkapital" title="Link to this heading">#</a></h1>
-<p>Naturkapital = Bestandsgröße der natürlichen</p>
-<p>Ökosystemleistungen:</p>
+<blockquote>
+<div><p><strong>Naturkapital</strong>: Bestandsgröße der natürlichen Produktionsfaktoren</p>
+</div></blockquote>
 <ul class="simple">
-<li><p>Direkte / indifrekte Beiträge von ökosystemen zu menschlichem Wohlergehen</p></li>
-<li><p>weit gefasste</p></li>
+<li><p>wächst nach!</p></li>
+<li><p>Bestandsgröße</p></li>
+</ul>
+<div class="mermaid">
+            graph LR
+Investitionen--&gt;![(Naturkapital)]--&gt;Ökosystemleistungen
+        </div><blockquote>
+<div><p><strong>Ökosystemleistungen</strong>: Direkte / indifrekte Beiträge von ökosystemen zu menschlichem Wohlergehen</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>weit gefasster Begriff</p></li>
 <li><p>antropozentrische Perspektive</p></li>
 <li><p>an Nutzen für Menschen gebunden</p></li>
 </ul>
+<p><img alt="img" src="../../_images/2024-07-10_12-29-55.jpg" /></p>
+<p>Kategorien von Ökosystemleistungen</p>
+<ul class="simple">
+<li><p>Versorgung</p></li>
+<li><p>Regulierung</p></li>
+<li><p>Kulturelle</p></li>
+</ul>
+<p>Beispiele für Ökosyatemleistungen</p>
+<ul class="simple">
+<li><p>Nahrungsmittelproduktion</p></li>
+<li><p>Landschaftsästhetik</p></li>
+<li><p>…</p></li>
+</ul>
+<p><img alt="img" src="../../_images/2024-07-10_12-36-58.jpg" /></p>
+<section id="arten-der-nachhaltigkeit">
+<h2>Arten der Nachhaltigkeit<a class="headerlink" href="#arten-der-nachhaltigkeit" title="Link to this heading">#</a></h2>
+<p>schwache Nachhaltigkeit = Substituierbarkeit</p>
+<p>Starke Nachhaltigkeit = wenig Substituierbarkeit</p>
+<ul class="simple">
+<li><p>kritisches Naturkapital</p></li>
+<li><p>absolut notwendig</p></li>
+<li><p>teil des fairen Vermächtnisses für die nächste Generation</p>
+<ul>
+<li><p>Notwendige (stabiles Klima)</p></li>
+<li><p>Nützliche (Forst)</p></li>
+<li><p>Außergewöhnliche (Lüneburger Heide)</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -763,8 +803,27 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">29.04.2024 Naturkapital</a><ul>
+<li><a class="reference internal" href="#arten-der-nachhaltigkeit">Arten der Nachhaltigkeit</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -778,5 +837,7 @@
     <script src="../../_static/tabs.js?v=3ee01567"></script>
     <script src="../../_static/translations.js?v=70a09b52"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     </body>
 </html>

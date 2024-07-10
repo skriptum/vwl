@@ -94,3 +94,32 @@ $$
 | ----------------- | ---- | ---- | ---- | ---- | ---- | ---- |
 | $(x-\hat{ x })^2$ |      |      |      |      |      |      |
 
+
+
+
+
+
+
+## ToDo
+
+- Normale Regression berechnen
+    - SE der Regression
+    - SE von einem Koeffizienten
+- R^2 aus R-Ergebnissen berechnen (7.4)
+- Konfidenzintervall (7.3)
+- Hypothesen und Test
+    - t-Verteilung
+    - Normalverteilung
+- partielle Effekte
+- Marginal Effekte
+- R-Code anschauen
+- Percentage / percentage Points
+
+
+
+
+
+
+
+
+

@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="20.06.2024 Test Exam" href="2024-06-20-Test-Exam.html" /><link rel="prev" title="26.05.2024 Multiple Linear Regression II" href="2024-05-26-Asymptotic.html" />
+<link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" /><link rel="search" title="Suche" href="../../search.html" /><link rel="next" title="08.06.2024 Binary Variables" href="2024-06-08-Binary-Variables.html" /><link rel="prev" title="26.05.2024 Multiple Linear Regression II" href="2024-05-26-Asymptotic.html" />
         <link rel="canonical" href="https://vwl.martenw.com/vwl6/VL_Econometrics/2024-06-01-Applications.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
@@ -633,7 +633,9 @@
 <li class="toctree-l3"><a class="reference internal" href="2024-05-03-Distribution.html">Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2024-05-26-Asymptotic.html">Asymptotic</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-06-08-Binary-Variables.html">Binary Variables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="2024-06-20-Test-Exam.html">Test Exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2024-07-08-Schmierblatt.html">Schmierblatt</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Umwelt/README.html">Umweltökonomie</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle navigation of Umweltökonomie</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -645,6 +647,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-05-27-Verhalten.html">Verhalten</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-06-10-Politik.html">Politik</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-06-17-Politik-II.html">Politik II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VL_Umwelt/2024-07-01-Klausur.html">Klausur</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../VL_Sozialismus/README.html">Sozialismus</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle navigation of Sozialismus</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -854,6 +857,36 @@ Model 2&amp; RDintens = \beta_0 + \beta_1 sales +\beta_2 sales^2+ u  \\
 </section>
 <section id="prediction">
 <h2>Prediction<a class="headerlink" href="#prediction" title="Link to this heading">#</a></h2>
+<p>Confidence Intervals for <span class="math notranslate nohighlight">\(\theta_0 = \hat{ \theta_0 }\pm 2 \cdot se(\hat{ \theta_0 })\)</span>​</p>
+<ul class="simple">
+<li><p>variance of prediction = smallest at mean values of <span class="math notranslate nohighlight">\(x_j\)</span></p></li>
+</ul>
+<p>How to predict <span class="math notranslate nohighlight">\(y\)</span> if formula is only <span class="math notranslate nohighlight">\(\ln y\)</span>, e.g <span class="math notranslate nohighlight">\(\ln salary = \beta_0 + \beta_1 x_k + ... + u\)</span></p>
+<ul class="simple">
+<li><p>For given <span class="math notranslate nohighlight">\(x_k = 5000\)</span> =&gt; <span class="math notranslate nohighlight">\(\ln salary = 7.013\)</span></p></li>
+</ul>
+<p>Methods</p>
+<ul class="simple">
+<li><p><strong>Naive</strong>: <span class="math notranslate nohighlight">\(y = e^{\ln y} = exp(7.013) = 1110.983\)</span> (Underestimates the result!)</p></li>
+<li><p><strong>Smearing</strong>:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\hat{ y } = \hat{ \alpha_0 } \cdot exp(\ln y)\)</span></p></li>
+<li><p>calculate <span class="math notranslate nohighlight">\(\hat{ \alpha_0 } = n^{-1} \sum_{i=1}^n exp(\hat{ u_i })\)</span></p></li>
+<li><p>Result: <span class="math notranslate nohighlight">\(y = 1.136 \cdot exp(7.013) = 1262.076\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>regression</strong></p>
+<ul>
+<li><p>fucking complicated, create a new regression just for it</p></li>
+<li><p>Result: <span class="math notranslate nohighlight">\(1117 \cdot exp(7.013) = 1240.967\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>normality assumption</strong></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(y = \exp \frac{RSS^2 }{2} \exp (\ln y) =\exp \frac{0.50477^2 }{2} \exp (7.013)= 1261.929 \)</span></p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -862,12 +895,12 @@ Model 2&amp; RDintens = \beta_0 + \beta_1 sales +\beta_2 sales^2+ u  \\
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="2024-06-20-Test-Exam.html">
+          <a class="next-page" href="2024-06-08-Binary-Variables.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">20.06.2024 Test Exam</div>
+                <div class="title">08.06.2024 Binary Variables</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

@@ -843,8 +843,12 @@ subtrees:
         title: Asymptotic
       - file: vwl6/VL_Econometrics/2024-06-01-Applications.md
         title: Applications
+      - file: vwl6/VL_Econometrics/2024-06-08-Binary-Variables.md
+        title: Binary Variables
       - file: vwl6/VL_Econometrics/2024-06-20-Test-Exam.md
         title: Test Exam
+      - file: vwl6/VL_Econometrics/2024-07-08-Schmierblatt.md
+        title: Schmierblatt
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:
@@ -864,6 +868,8 @@ subtrees:
         title: Politik
       - file: vwl6/VL_Umwelt/2024-06-17-Politik-II.md
         title: Politik II
+      - file: vwl6/VL_Umwelt/2024-07-01-Klausur.md
+        title: Klausur
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:

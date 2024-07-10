@@ -157,3 +157,31 @@ why not include *beer consumption*?
 
 
 ## Prediction
+
+Confidence Intervals for $\theta_0 = \hat{ \theta_0 }\pm 2 \cdot se(\hat{ \theta_0 })$​
+
+- variance of prediction = smallest at mean values of $x_j$
+
+
+
+How to predict $y$ if formula is only $\ln y$, e.g $\ln salary = \beta_0 + \beta_1 x_k + ... + u$
+
+- For given $x_k = 5000$ => $\ln salary = 7.013$
+
+Methods
+
+- **Naive**: $y = e^{\ln y} = exp(7.013) = 1110.983$ (Underestimates the result!)
+- **Smearing**: 
+    - $\hat{ y } = \hat{ \alpha_0 } \cdot exp(\ln y)$
+    - calculate $\hat{ \alpha_0 } = n^{-1} \sum_{i=1}^n exp(\hat{ u_i })$
+    - Result: $y = 1.136 \cdot exp(7.013) = 1262.076$
+- **regression**
+    - fucking complicated, create a new regression just for it
+    - Result: $1117 \cdot exp(7.013) = 1240.967$
+- **normality assumption**
+    - $y = \exp \frac{RSS^2 }{2} \exp (\ln y) =\exp \frac{0.50477^2 }{2} \exp (7.013)= 1261.929 $
+
+
+
+
+

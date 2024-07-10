@@ -847,8 +847,6 @@ subtrees:
         title: Binary Variables
       - file: vwl6/VL_Econometrics/2024-06-20-Test-Exam.md
         title: Test Exam
-      - file: vwl6/VL_Econometrics/2024-07-08-Schmierblatt.md
-        title: Schmierblatt
     - file: vwl6/VL_Umwelt/README
       title: Umweltökonomie
       entries:
@@ -870,6 +868,8 @@ subtrees:
         title: Politik II
       - file: vwl6/VL_Umwelt/2024-07-01-Klausur.md
         title: Klausur
+      - file: vwl6/VL_Umwelt/2024-07-10-Zusammenfassung.md
+        title: Zusammenfassung
     - file: vwl6/VL_Sozialismus/README
       title: Sozialismus
       entries:

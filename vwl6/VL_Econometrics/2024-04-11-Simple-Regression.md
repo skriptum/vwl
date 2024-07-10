@@ -108,12 +108,12 @@ Rules:
 
 Interpretation of Logs etc.
 
-| Model       | dependent | independent | interpretation                                       |
-| ----------- | --------- | ----------- | ---------------------------------------------------- |
-| Level-Level | y         | $x_j$       | $\Delta \hat{y} = \beta_j \Delta x_j$                |
-| Level-Log   | y         | $log(x_j)$  | $\Delta \hat{y} = \frac{\beta_j}{100} \% \Delta x_j$ |
-| Log-Level   | *log(y)*  | $x_j$       | $\% \Delta \hat{y} = 100 \beta_j \Delta x_j$         |
-| Log-Log     | *log(y)*  | *log(x)*    | $\% \Delta \hat{y} = \beta_j \% \Delta x_j$          |
+| Model       | dependent | explanatory/independent | interpretation                                       |
+| ----------- | --------- | ----------------------- | ---------------------------------------------------- |
+| Level-Level | y         | $x_j$                   | $\Delta \hat{y} = \beta_j \Delta x_j$                |
+| Level-Log   | y         | $log(x_j)$              | $\Delta \hat{y} = \frac{\beta_j}{100} \% \Delta x_j$ |
+| Log-Level   | *log(y)*  | $x_j$                   | $\% \Delta \hat{y} = 100 \beta_j \Delta x_j$         |
+| Log-Log     | *log(y)*  | *log(x)*                | $\% \Delta \hat{y} = \beta_j \% \Delta x_j$          |
 
 
 

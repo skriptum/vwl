@@ -70,3 +70,9 @@ $$
 
 - SST = total sample variation
 - R = R-sqaured
+
+
+
+6th Assumption: 
+
+Normality of Errors

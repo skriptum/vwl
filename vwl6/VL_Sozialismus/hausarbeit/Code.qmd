@@ -10,7 +10,7 @@ Economic Downfall of Yugoslavia - economic inevitability or political failure?
 library(tidyverse)
 library(maddison)
 library(ggthemes)
-library(zoo)
+#library(zoo)
 ```
 
 ## Comparison with other Countries
@@ -51,6 +51,7 @@ comp_data %>%
 ```
 
 Plot the growth rate of gdp
+
 ```{r}
 # growth rate = (gdp(t) - gdp(t-1)) / gdp(t-1)
 comp_data %>%
@@ -62,13 +63,11 @@ comp_data %>%
   geom_point()
 ```
 
-
-## Debt 
+## Debt
 
 ```{r}
 debt <- read_csv2("data/debt.csv")
 ```
-
 
 Clean
 
@@ -97,7 +96,6 @@ debt %>%
 ```{r}
 trade <- read_csv2("data/trade.csv")
 ```
-
 
 combine text of type column and category column
 
@@ -130,7 +128,7 @@ trade %>%
   geom_line(aes(y=IMPORTS_Total - EXPORTS_Total, color="green")) 
 ```
 
-Plot the composition of imports (all rows that begin with IMPORTS_, except the IMPORTS_Total) over all years
+Plot the composition of imports (all rows that begin with IMPORTS\_, except the IMPORTS_Total) over all years
 
 ```{r}
 trade %>%
@@ -225,6 +223,7 @@ ggplot(aes(x = year, y = G_revenue_percent), data=facts) +
 ```{r}
 exchange <- read_csv("data/exchange_rate.csv")
 ```
+
 ```{r}
 exchange <- exchange %>%
   t(.) %>%
@@ -257,6 +256,7 @@ exchange %>%
 ```{r}
 bop <- read_csv("data/bop.csv")
 ```
+
 clean
 
 ```{r}
@@ -284,6 +284,7 @@ bop %>%
   geom_col(aes(y = imports, fill = "blue")) +
   geom_line(aes(y = trade_balance), color = "black") 
 ```
+
 Current Account Balance
 
 ```{r}

@@ -1,4 +1,4 @@
-cd "/Users/marten/Nextcloud/uni"
+cd "/Users/marten/Documents/vwl"
 
 # new TOC
 echo "updating TOC"

@@ -47,7 +47,7 @@ comp_data %>%
     legend.title = element_blank(),
     panel.border = element_rect(fill = NA, color = "black"),
     )
-#ggsave("GDP_per_capita.png", width = 10, height = 6, dpi = 300)
+#ggsave("images/GDP_per_capita.png", width = 10, height = 6, dpi = 300)
 ```
 
 Plot the growth rate of gdp
@@ -100,7 +100,7 @@ trade <- read_csv2("data/trade.csv")
 combine text of type column and category column
 
 ```{r}
-trade$Type <- paste(trade$Type, trade$Category, sep = " ")
+trade$Type <- paste(trade$Type, trade$Category, sep = "_")
 trade$Category <- NULL
 trade$Type <- gsub(" ", "_", trade$Type)
 ```
@@ -128,7 +128,7 @@ trade %>%
   geom_line(aes(y=IMPORTS_Total - EXPORTS_Total, color="green")) 
 ```
 
-Plot the composition of imports (all rows that begin with IMPORTS\_, except the IMPORTS_Total) over all years
+Plot the composition of imports (all rows that begin with IMPORTS_, except the IMPORTS_Total) over all years
 
 ```{r}
 trade %>%
@@ -295,6 +295,39 @@ bop %>%
   #geom_col(aes(y = remit), fill = "blue")
 ```
 
+## Migration
+
+```{r}
+migration <- read_csv("data/migration.csv")
+```
+Plot the number of migrants and net migration
+
+```{r}
+ggplot(migration, aes(x=year))+
+  geom_line(aes(y=nr_emigration/1000,color="Nr. of Emigrants")) +
+  geom_point(aes(y=nr_emigration/1000), color="blue", shape=5) +
+  geom_line(aes(y=net/1000, color="Net Migration"))+
+  geom_point(aes(y=net/1000), color="red", shape=6) +
+  #styling
+  scale_color_brewer(palette = "Set1")+  
+  labs(
+    title = "Yugoslav Migration 1968-1985",
+    x = "Year",
+    y = "Migrants in Thousands",
+    ) +
+  geom_hline(yintercept=0, color="grey")+
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    ) +
+  scale_y_continuous(n.breaks=6)+
+  xlim(c(1967,1985)) 
+#ggsave("images/migration.png", width=10, height=6, dpi=300)
+```
+
+
 # Combine some Data
 
 ```{r}
@@ -317,11 +350,42 @@ comb <- comb %>%
 ## Energy Imports as share of GDP
 
 ```{r}
-comb %>%
+imports_gdp_plot <- comb %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=IMPORTS_Mineral_fuels/gdp_dollar), color="red") 
-              
+    geom_line(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), color="red")  +
+    geom_point(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), shape=5, color="red")
+imports_gdp_plot
 ```
+
+```{r}
+imports_total_plot <- comb %>%
+  ggplot(aes(x = year)) +
+    geom_line(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), color="blue") +
+    geom_point(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), shape=5, color="blue")
+imports_total_plot
+```
+
+```{r}
+#imports_gdp_plot +
+imports_total_plot + 
+  scale_color_brewer(palette = "Set1")+  
+  labs(
+    x = "Year",
+    #y = "% of GDP",
+    y = "% of Imports"
+    ) +
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    ) +
+  xlim(c(1957,1990))
+
+#ggsave("images/imports_gdp.png", width = 6, height = 6, dpi = 300)
+ggsave("images/imports_total.png", width = 6, height = 6, dpi = 300)
+```
+
 
 ### Gross Debt as % of GDP and Servicing as % of GDP
 
@@ -338,11 +402,20 @@ comb %>%
 ```{r}
 comb %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=remit), color="red")  #absolute
+    geom_line(aes(y=remit/1000000), color="orange") +  #absolute
+    geom_point(aes(y=remit/1000000), color="orange", shape=5)
     #geom_line(aes(y=remit/gdp_dollar*100), color="blue") #relative to GDP
 ```
 
+```{r}
+comb %>%
+  ggplot(aes(x = year)) +
+    geom_line(aes(y=remit/gdp_dollar*100), color="blue") #relative to GDP
+    geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5)
+```
+
 sinking share of worker remittances, absolutely numbers down as well as relative
+
 
 ### Trade Balance as % of GDP
 

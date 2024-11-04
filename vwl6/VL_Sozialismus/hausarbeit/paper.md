@@ -1,4 +1,9 @@
-# Yugoslav Socialism's Collapse - A crisis made abroad?
+---
+title: Yugoslav Socialism's Collapse - A crisis made abroad?
+format: pdf
+toc: true
+lof: true
+---
 
 The early 1990s marked a pivotal moment in world history, famously described as the "end of history" by political theorist Francis Fukuyama [@fukuyamaEndHistory1989]. With the collapse of the Soviet Union and the widespread adoption of liberal capitalism, it seemed as though Western democratic capitalism had triumphed as the ultimate and unchallenged form of socio-economic organization. Amidst this global shift, socialism—the greatest socio-political experiment of the 20th century—appeared to be consigned to the past, discredited and dismantled across much of the globe.
 
@@ -30,6 +35,8 @@ Additional economic factors are highlighted by Kukić [@kukicOriginsRegionalDive
 
 While all these explanations offer valid insights, the collapse of a system as complex as Yugoslavia’s can never be attributed to a single cause. However, arguments that focus solely on internal economic inefficiencies fall short of explaining why other, similarly diverse countries experienced comparable trajectories in the 1980s. Despite their different political and economic systems, these countries exhibited strikingly similar patterns of decline, suggesting that broader external factors played a critical role beyond internal dynamics.
 
+![GDP p.C. in selected countries](./images/GDP_per_capita.png)
+
 In the following sections, I will outline the key external shocks and their overlapping effects that may explain the similar trajectories taken by many countries during this period. These factors are crucial in understanding why external forces, rather than internal inefficiencies alone, are to blame for the collapse of Yugoslavia’s economic system.
 
 ## Data
@@ -43,9 +50,17 @@ Many of the additional data sources used throughout this analysis are drawn from
 
 The oil shocks of 1973 and 1979 marked a turning point in the global economy, as sudden and dramatic increases in oil prices sent shockwaves through oil-dependent nations worldwide. These crises saw global oil prices nearly triple, rising by almost 300%, and profoundly disrupted the economic stability of many countries. For Yugoslavia—a nation without domestic oil production and heavily reliant on imported energy—these shocks presented a formidable challenge that would strain its economic model. 
 
-During this tumultuous period, the impact on Yugoslavia’s economy was stark: the share of energy imports in total imports surged from about 5% in the 1960s to nearly 30% by the early 1980s. Similarly, energy imports as a share of GDP rose sharply, climbing from roughly 1% in the 1960s to almost 15% at the beginning of the 1980s. These shifts underscored the country’s growing vulnerability to external economic forces and contributed to the mounting pressures on its socialist economy.
+During this tumultuous period, the impact on Yugoslavia’s economy was stark: the share of energy imports in total imports surged from about 5% in the 1960s to nearly 30% by the early 1980s (see @fig-imports2). Similarly, energy imports as a share of GDP rose sharply, climbing from roughly 1% in the 1960s to almost 15% at the beginning of the 1980s, as visible in @fig-imports1. These shifts underscored the country’s growing vulnerability to external economic forces and contributed to the mounting pressures on its socialist economy.
 
-**XX Grafik % of GDP / Imports**
+
+::: {#fig-imports layout-ncol=2}
+![Mineral Fuel Imports as % of GDP](./images/imports_gdp.png){#fig-imports1}
+
+![Mineral Fuel Imports as % of Total Imports](./images/imports_total.png){#fig-imports2}
+
+The Impact of Rising Energy Prices on Imports
+:::
+
 
 Even for advanced Western nations like Germany, the two oil shocks triggered significant crises. However, for a less developed country like Yugoslavia, whose currency was weaker on international markets, affording these costly imports became nearly impossible. As Rogel [@rogelBreakupYugoslaviaIts2004] explains, "for a country like Yugoslavia, which was greatly dependent on imported fuel paid for in hard currency, the oil price crisis alone could have resulted in financial ruin" (p. 14).
 
@@ -61,11 +76,17 @@ The second option—boosting exports—proved only partially successful and fell
 
 Additionally, countries that had previously been key destinations for Yugoslav emigrants, such as Germany and France, closed their borders to economic migrants. Germany, in particular, ended its "Anwerbeabkommen" (recruitment agreement) in 1973 following the first oil shock, and further tightened immigration rules in 1979 after the second. This shift made it increasingly difficult for Yugoslav workers to find employment abroad, reducing the flow of remittances—an important source of hard currency for Yugoslavia’s economy.
 
-**XX Grafik absolute Zahl Migranten / Zahlungströme**
+As a result, the number of emigrants dropped significantly, and Yugoslavia began to experience net negative migration, with more people returning to the country than leaving it. In the 1970s, a record 230,000 people emigrated, but by the following decade, this figure had fallen to just 30,000 and continued to decline, as shown in @fig-migrants.  [@meznaric17YugoslaviaEmigration1993]. 
 
-As a result, the number of emigrants dropped significantly, and Yugoslavia began to experience net negative migration, with more people returning to the country than leaving it. In the 1970s, a record 230,000 people emigrated, but by the following decade, this figure had fallen to just 30,000 and continued to decline, as shown in @fig-migrants [@meznaric17YugoslaviaEmigration1993]. This sharp reduction in emigration further strained the economy by limiting remittances, which had been a crucial source of foreign currency.
+![Migration in Yugoslavia](./images/migration.png){#fig-migrants}
 
 As a result, remittances from foreign workers fell significantly, exacerbating the capital account issues faced by Yugoslavia. This problem became particularly acute in the 1980s due to the delayed impact of the policy changes. Both in absolute terms and relative to GDP, remittances decreased notably, especially after 1981 (see @fig-remittances). This decline in remittances further compounded the economic challenges facing the country, straining its financial stability.
+
+::: {@fig-remittances layout-ncol=2}
+
+:::
+
+
 
 ### External Debt
 

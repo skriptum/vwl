@@ -3,7 +3,10 @@ title: Yugoslav Socialism's Collapse - A crisis made abroad?
 format: pdf
 toc: true
 lof: true
+bibliography: essay.bib
 ---
+
+{{< pagebreak >}}
 
 The early 1990s marked a pivotal moment in world history, famously described as the "end of history" by political theorist Francis Fukuyama [@fukuyamaEndHistory1989]. With the collapse of the Soviet Union and the widespread adoption of liberal capitalism, it seemed as though Western democratic capitalism had triumphed as the ultimate and unchallenged form of socio-economic organization. Amidst this global shift, socialism—the greatest socio-political experiment of the 20th century—appeared to be consigned to the past, discredited and dismantled across much of the globe.
 
@@ -29,7 +32,7 @@ Unlike other socialist economies, Yugoslavia maintained a relatively open stance
 
 A variety of theories seek to explain the disintegration of the Socialist Federal Republic of Yugoslavia (SFY). Jović’s overview [@jovicDisintegrationYugoslaviaCritical2001] outlines seven distinct arguments, including economic, cultural, nationalist, and international political factors. My argument straddles the economic and international political explanations, with a primary focus on the collapse of the economic system rather than the disintegration of the state itself.
 
-Yarashevich’s analysis [@yarashevichEconomicReasonsBreakup2013a] explores the economic reasons behind the breakup of Yugoslavia, identifying four key factors. These include two internal issues—labor market challenges and the system of self-management—as well as two external pressures—external debt and foreign trade dynamics.
+Yarashevich’s analysis [@yarashevichEconomicReasonsBreakup2013] explores the economic reasons behind the breakup of Yugoslavia, identifying four key factors. These include two internal issues—labor market challenges and the system of self-management—as well as two external pressures—external debt and foreign trade dynamics.
 
 Additional economic factors are highlighted by Kukić [@kukicOriginsRegionalDivergence2020], who examines the regional economic divergence within Yugoslavia. He argues that the failure of the regions to converge economically can be attributed to the soft-budget constraint and the inherent flaws of the workers' self-management system.
 
@@ -46,7 +49,7 @@ Economic data series for Yugoslavia are notoriously difficult to obtain and ofte
 Many of the additional data sources used throughout this analysis are drawn from the OECD Economic Surveys [@OECDEconomicSurveys]. These biannual surveys, conducted from 1962 to 1990, provide standardized tables on various economic indicators, including foreign trade, debt, balance of payments, and the federal budget, among others. Some of the data in these reports were sourced directly from Yugoslavia’s Official Statistics Office, while other figures were calculated by OECD researchers. Data from these digitized reports have been extracted using OCR (Optical Character Recognition) technology, then transformed into time-series data for further combination and analysis.
 
 
-## Oil Shocks
+## The Effect of the Oil Shocks
 
 The oil shocks of 1973 and 1979 marked a turning point in the global economy, as sudden and dramatic increases in oil prices sent shockwaves through oil-dependent nations worldwide. These crises saw global oil prices nearly triple, rising by almost 300%, and profoundly disrupted the economic stability of many countries. For Yugoslavia—a nation without domestic oil production and heavily reliant on imported energy—these shocks presented a formidable challenge that would strain its economic model. 
 
@@ -76,31 +79,33 @@ The second option—boosting exports—proved only partially successful and fell
 
 Additionally, countries that had previously been key destinations for Yugoslav emigrants, such as Germany and France, closed their borders to economic migrants. Germany, in particular, ended its "Anwerbeabkommen" (recruitment agreement) in 1973 following the first oil shock, and further tightened immigration rules in 1979 after the second. This shift made it increasingly difficult for Yugoslav workers to find employment abroad, reducing the flow of remittances—an important source of hard currency for Yugoslavia’s economy.
 
-As a result, the number of emigrants dropped significantly, and Yugoslavia began to experience net negative migration, with more people returning to the country than leaving it. In the 1970s, a record 230,000 people emigrated, but by the following decade, this figure had fallen to just 30,000 and continued to decline, as shown in @fig-migrants.  [@meznaric17YugoslaviaEmigration1993]. 
+As a result, the number of emigrants dropped significantly, and Yugoslavia began to experience net negative migration, with more people returning to the country than leaving it. In the 1970s, a record 230,000 people emigrated, but by the following decade, this figure had fallen to just 30,000 and continued to decline, as shown in @fig-migrants. 
 
-![Migration in Yugoslavia](./images/migration.png){#fig-migrants}
+![Migration in Yugoslavia (Source: @meznaric17YugoslaviaEmigration1993)](./images/migration.png){#fig-migrants}
 
 As a result, remittances from foreign workers fell significantly, exacerbating the capital account issues faced by Yugoslavia. This problem became particularly acute in the 1980s due to the delayed impact of the policy changes. Both in absolute terms and relative to GDP, remittances decreased notably, especially after 1981 (see @fig-remittances). This decline in remittances further compounded the economic challenges facing the country, straining its financial stability.
 
-::: {@fig-remittances layout-ncol=2}
+::: {#fig-remittances layout-ncol=2}
+![Remittances as Share of GDP](./images/remit_rel.png)
 
+![Remittances to Yugoslavia](./images/remit_total.png)
+
+Importance of Remittances for Yugoslavia
 :::
 
 
 
 ### External Debt
 
-The oil crisis precipitated a balance of payments crisis in many countries, including Yugoslavia. To address its growing current account deficit, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, these Western investors are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 [@yarashevichEconomicReasonsBreakup2013a].
+The oil crisis precipitated a balance of payments crisis in many countries, including Yugoslavia. To address its growing current account deficit, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, these Western investors are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 [@yarashevichEconomicReasonsBreakup2013].
 
 This reliance on Western capital would become a significant liability starting in the 1980s. The second oil shock triggered inflationary pressures in the West, particularly in the United States, where the Federal Reserve responded by raising interest rates to as high as 20% in 1981. Emerging economies, including Yugoslavia, felt the impact of these soaring interest rates acutely. They were forced to pay a steep premium to finance their debt and faced escalating costs for servicing it.
 
-With the onset of the Mexican debt crisis in 1982, access to foreign credit rapidly dried up for many countries. Foreign lenders quickly pulled back from emerging markets, retreating to safer investments such as US Treasury Bonds. During this period, "Yugoslavia completely lost its access to international financial markets" [@mojmirFormerYugoslaviaDebt1996], leaving the country with no choice but to seek alternative methods for financing essential imports, such as energy, crucial for sustaining its economy.
+With the onset of the Mexican debt crisis in 1982, access to foreign credit rapidly dried up for many countries. Foreign lenders quickly pulled back from emerging markets, retreating to safer investments such as US Treasury Bonds. During this period, "Yugoslavia completely lost its access to international financial markets" [@mojmirFormerYugoslaviasDebt1996], leaving the country with no choice but to seek alternative methods for financing essential imports, such as energy, crucial for sustaining its economy.
 
-A major strain on the economy was the debt servicing payments, which escalated to 10% of GDP in 1980 and reached a record 21.7% in 1986. For any country, such substantial debt payments would create a dire situation, but for Yugoslavia, already grappling with numerous economic difficulties, this became an extraordinarily challenging predicament.
+A major strain on the economy was the debt servicing payments, which escalated to 10% of GDP in 1980 and reached a record 21.7% in 1986. For any country, such substantial debt payments would be a severe challenge, but for Yugoslavia—already struggling with numerous economic difficulties—this situation became exceptionally dire. It left the country with no option but to seek external assistance from Western sources.
 
-**XX Grafik INterest Payment as % of GDP**
-
-For any country, such substantial debt payments would be a severe challenge, but for Yugoslavia—already struggling with numerous economic difficulties—this situation became exceptionally dire. It left the country with no option but to seek external assistance from Western sources.
+![Debt Dynamics](./images/debt.png)
 
 ## The Role of the IMF
 
@@ -109,3 +114,7 @@ This situation presented a prime opportunity for the International Monetary Fund
 The IMF's approach during this period involved imposing stringent conditions on countries seeking financial assistance, including market-oriented reforms, privatization, and deregulation. For Yugoslavia, this meant that in addition to securing emergency funding, it was required to implement significant economic reforms that aimed to align its economy more closely with market principles. These reforms were intended to stabilize the economy in the short term but often led to considerable social and economic adjustments, influencing the country's economic trajectory and contributing to the broader wave of neoliberal reforms globally.
 
 ## Conclusion
+
+{{< pagebreak >}}
+
+## References

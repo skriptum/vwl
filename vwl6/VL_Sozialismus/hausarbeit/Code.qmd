@@ -393,28 +393,69 @@ ggsave("images/imports_total.png", width = 6, height = 6, dpi = 300)
 comb %>%
   filter(year > 1960) %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=gross_debt*1000000/gdp_dollar), color="red") +
-    geom_point(aes(y=debt_servicing*1000000/gdp_dollar), color="blue")
+    geom_line(aes(y=debt_servicing*1000000/gdp_dollar*100, color="Debt Servicing")) + 
+    geom_point(aes(y=debt_servicing*1000000/gdp_dollar*100, color="Debt Servicing"), shape=6) +
+    geom_line(aes(y=gross_debt*1000000/gdp_dollar *100, color="Gross Debt")) +
+    geom_point(aes(y=gross_debt*1000000/gdp_dollar *100, color="Gross Debt"), shape=5) +
+    #styling
+    scale_color_brewer(palette = "Set1") +
+    labs(
+      x = "Year",
+      y = "% of GDP"
+      ) +
+    theme_tufte() +
+    theme(
+      legend.position = "bottom",
+      legend.title = element_blank(),
+      panel.border = element_rect(fill = NA, color = "black"),
+      ) +
+    xlim(c(1960,1987)) +
+    scale_y_continuous(n.breaks=7) +
+    scale_x_continuous(n.breaks=8)
+
 ```
 
 ### Worker Remittances as % of GDP
 
 ```{r}
-comb %>%
+remit_total_plot <- comb %>%
   ggplot(aes(x = year)) +
     geom_line(aes(y=remit/1000000), color="orange") +  #absolute
     geom_point(aes(y=remit/1000000), color="orange", shape=5)
-    #geom_line(aes(y=remit/gdp_dollar*100), color="blue") #relative to GDP
+remit_total_plot
 ```
 
 ```{r}
-comb %>%
+remit_rel_plot <- comb %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=remit/gdp_dollar*100), color="blue") #relative to GDP
+    geom_line(aes(y=remit/gdp_dollar*100), color="blue") +#relative to GDP
     geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5)
+remit_rel_plot
 ```
 
 sinking share of worker remittances, absolutely numbers down as well as relative
+
+```{r}
+#remit_total_plot +
+remit_rel_plot + 
+  scale_color_brewer(palette = "Set1")+  
+  labs(
+    x = "Year",
+    #y = "Remittances (Million $) ",
+    y = "% of GDP"
+    ) +
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    ) +
+  xlim(c(1960,1990))
+
+#ggsave("images/remit_total.png", width = 6, height = 6, dpi = 300)
+ggsave("images/remit_rel.png", width = 6, height = 6, dpi = 300)
+```
+
 
 
 ### Trade Balance as % of GDP

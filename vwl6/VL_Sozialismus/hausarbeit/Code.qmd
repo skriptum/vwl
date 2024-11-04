@@ -1,69 +1,18 @@
----
-format: html
----
+# Code for Yugoslavia Paper
 
-Economic Downfall of Yugoslavia - economic inevitability or political failure?
+Author: marten walk
 
-## Imports
+## Imports 
 
 ```{r}
 library(tidyverse)
 library(maddison)
 library(ggthemes)
-#library(zoo)
 ```
 
-## Comparison with other Countries
+## Data Cleaning
 
-```{r}
-comp_data <- maddison::maddison
-```
-
-Filter for Greece, Portugal, Spain and Yugoslavia
-
-```{r}
-comp_data <- comp_data %>%
-  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG")) %>%
-  filter(countrycode %in% c("BRA", "MEX", "YUG", "BGR", "POL")) %>%
-  filter(year >= 1950 & year <= 1990)
-```
-
-Plot the GDP per capita from 1945-1990
-
-```{r}
-shapes <- c(0,1,2,5,6)
-comp_data %>%
-  ggplot(aes(x = year, y = rgdpnapc, color = country, shape = country)) +
-  geom_line(size=0.4) +
-  geom_point() +
-  scale_color_brewer(palette = "Set1")+  
-  labs(title = "GDP per capita from 1945-1990",
-       x = "Year",
-       y = "GDP per capita") +
-  theme_tufte() +
-  scale_shape_manual(values = shapes) +
-  theme(
-    legend.position = "bottom",
-    legend.title = element_blank(),
-    panel.border = element_rect(fill = NA, color = "black"),
-    )
-#ggsave("images/GDP_per_capita.png", width = 10, height = 6, dpi = 300)
-```
-
-Plot the growth rate of gdp
-
-```{r}
-# growth rate = (gdp(t) - gdp(t-1)) / gdp(t-1)
-comp_data %>%
-  group_by(country) %>%
-  mutate(growth_rate = (rgdpnapc - lag(rgdpnapc)) / lag(rgdpnapc)) %>%
-  mutate(moving_avg = rollmean(growth_rate, 3, fill = NA, align = "right")) %>%
-  ggplot(aes(x = year, y = moving_avg, color = country, shape = country)) +
-  geom_line(size=0.4)
-  geom_point()
-```
-
-## Debt
+### Debt
 
 ```{r}
 debt <- read_csv2("data/debt.csv")
@@ -78,20 +27,7 @@ debt$debt_servicing_percent <- debt$debt_servicing_percent / 10
 
 ```
 
-Plot Gross Debt
-
-```{r}
-debt %>%
-  ggplot(aes(x = year)) +
-  geom_line(aes(y=gross_debt)) +
-  geom_point(aes(y=debt_servicing)) +
-  geom_line(aes(y=debt_servicing)) +
-  labs(x = "Year",
-       y = "Million USD"
-       ) 
-```
-
-## Trade
+### Trade
 
 ```{r}
 trade <- read_csv2("data/trade.csv")
@@ -117,6 +53,160 @@ trade <- trade %>%
   mutate_all(as.numeric) %>%
   select(-c(3,5,9,18)) # remove subcategories
 ```
+
+
+### Facts
+
+```{r}
+facts <- read_csv("data/facts.csv")
+```
+
+```{r}
+facts <- facts %>% 
+  select(-Unit) %>%
+  t(.) %>% # transpose so that the years are in the first column
+  as.data.frame(.) %>% # convert to data frame
+  setNames(.[1,]) %>% # set the first row as the column names
+  .[-1,] %>% # remove the first row
+  rownames_to_column("year") # year = index col
+```
+
+Rename columns
+
+```{r}
+facts <- facts %>%
+  rename(
+    "GNP_factor_dinar" = "Gross national product at factor cost",
+    "GNP_pp_dollar" = "Gross national product per head",
+    "GFAF_dinar" = "Gross fixed asset formation",
+    "GFAF_percent" = "Gross fixed asset formation as percentage of GDP",
+    "GNP_agriculture_percent" = "Origin of GDP - Agriculture",
+    "GNP_mining_percent" = "Origin of GDP - Mining and manufacturing",
+    "GNP_building_percent" = "Origin of GDP - Building",
+    "GNP_other_percent" = "Origin of GDP - Other",
+    "G_revenue_percent" = "General government revenue as percentage of GDP"
+  ) %>%
+  select(-c("Collective consumption as percentage of GDP", "Federal revenue as percentage of GDP")) %>%
+  #remove all spaces in data
+  mutate_all(str_replace_all, " ", "") %>%
+  mutate_all(as.numeric)
+```
+
+### Exchange Rate
+
+```{r}
+exchange <- read_csv("data/exchange_rate.csv")
+```
+
+```{r}
+exchange <- exchange %>%
+  t(.) %>%
+  as.data.frame(.) %>%
+  rownames_to_column("year") %>%
+  setNames(.[1,]) %>%
+  mutate_all(as.numeric) %>%
+  remove_missing()
+```
+
+### Balance of Payments
+
+```{r}
+bop <- read_csv("data/bop.csv")
+```
+
+clean
+
+```{r}
+bop <- bop %>%
+  rename_all(str_replace_all, " ", "_") %>%
+  rename_all(tolower) %>%
+  #rename column 2 
+  rename("exports" = "exports,_f.o.b." ) %>%
+  rename("imports" = "imports,_c.i.f." ) %>%
+  rename("remit" = "emigrant_and_worker_remittances") %>%
+  mutate_all(as.numeric) %>%
+  mutate(imports = abs(imports)) %>%
+  # multiply all by 1000000
+  mutate_all(~ . * 1000000) %>%
+  mutate(year = year / 1000000)
+  #remove duplicate year 1979
+```
+
+
+
+### Migration
+
+```{r}
+migration <- read_csv("data/migration.csv")
+```
+
+
+## Explorative Plotting
+
+### Trade Balance
+
+Trade Balance
+
+```{r}
+bop %>%
+  ggplot(aes(x = year)) +
+  geom_col(aes(y = -exports, fill = "red")) + 
+  geom_col(aes(y = imports, fill = "blue")) +
+  geom_line(aes(y = trade_balance), color = "black") 
+```
+
+Current Account Balance
+
+```{r}
+bop %>%
+  ggplot(aes(x = year)) +
+  geom_line(aes(y = trade_balance), color = "black") +
+  geom_line(aes(y = current_balance), color = "green") 
+  #geom_col(aes(y = remit), fill = "blue")
+```
+
+### Exchange Rate
+
+```{r}
+exchange %>%
+  filter(Year <=1990) %>%
+  ggplot(aes(x = Year, y = log(Rate))) +
+  geom_line()
+```
+
+Plot the yearly change in the exchange rate
+
+```{r}
+exchange %>%
+  filter(Year <=1987) %>%
+  mutate(change = Rate - lag(Rate)) %>%
+  ggplot(aes(x = Year, y = change)) +
+  geom_line()
+```
+
+### Facts 
+
+Plot the GNP per capita
+
+```{r}
+ggplot(aes(x = year, y = GNP_pp_dollar), data=facts) +
+  geom_line() +
+  labs(title = "GNP per capita",
+       x = "Year",
+       y = "GNP per capita") 
+```
+
+Plot the gov revenue as percentage of GDP
+
+```{r}
+ggplot(aes(x = year, y = G_revenue_percent), data=facts) +
+  geom_line() +
+  labs(title = "General government revenue as percentage of GDP",
+       x = "Year",
+       y = "Percentage of GDP") 
+```
+
+### Trade
 
 Plot Total Imports and Exports and the deficit between them
 
@@ -161,145 +251,121 @@ trade %>%
   geom_area(aes(y = IMPORTS_Mineral_fuels+ + IMPORTS_Chemicals), fill="red") 
 ```
 
-## General Facts
+
+## Combine the Data
 
 ```{r}
-facts <- read_csv("data/facts.csv")
+comb <- comp_data %>%
+  filter(countrycode == "YUG") %>%
+  select(rgdpnapc, pop, year) %>%
+  mutate(gdp_dollar = rgdpnapc * pop*100) %>%
+  left_join(trade, by = "year") %>%
+  left_join(debt, by = "year") %>%
+  left_join(facts %>% select(year, GNP_pp_dollar), by = "year") %>%
+  left_join(bop %>% select(year, trade_balance, current_balance, remit), by = "year") %>%
+  left_join(migration, by="year")
 ```
 
 ```{r}
-facts <- facts %>% 
-  select(-Unit) %>%
-  t(.) %>% # transpose so that the years are in the first column
-  as.data.frame(.) %>% # convert to data frame
-  setNames(.[1,]) %>% # set the first row as the column names
-  .[-1,] %>% # remove the first row
-  rownames_to_column("year") # year = index col
+comb <- comb %>%
+  mutate_at(vars(starts_with("IMPORTS_"), starts_with("EXPORTS_")), ~.*1000000) %>%
+  mutate(gnp_dollar_yug = GNP_pp_dollar * pop*1000)
 ```
 
-Rename columns
+## Plotting of Finished Figures
+
+### Figure 1: Comparison of GDP Countries
 
 ```{r}
-facts <- facts %>%
-  rename(
-    "GNP_factor_dinar" = "Gross national product at factor cost",
-    "GNP_pp_dollar" = "Gross national product per head",
-    "GFAF_dinar" = "Gross fixed asset formation",
-    "GFAF_percent" = "Gross fixed asset formation as percentage of GDP",
-    "GNP_agriculture_percent" = "Origin of GDP - Agriculture",
-    "GNP_mining_percent" = "Origin of GDP - Mining and manufacturing",
-    "GNP_building_percent" = "Origin of GDP - Building",
-    "GNP_other_percent" = "Origin of GDP - Other",
-    "G_revenue_percent" = "General government revenue as percentage of GDP"
-  ) %>%
-  select(-c("Collective consumption as percentage of GDP", "Federal revenue as percentage of GDP")) %>%
-  #remove all spaces in data
-  mutate_all(str_replace_all, " ", "") %>%
-  mutate_all(as.numeric)
+comp_data <- maddison::maddison
 ```
 
-Plot the GNP per capita
+Filter for selection of countries
 
 ```{r}
-ggplot(aes(x = year, y = GNP_pp_dollar), data=facts) +
-  geom_line() +
-  labs(title = "GNP per capita",
+comp_data <- comp_data %>%
+  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG")) %>%
+  filter(countrycode %in% c("BRA", "MEX", "YUG", "BGR", "POL")) %>%
+  filter(year >= 1950 & year <= 1990)
+```
+
+Plot the GDP per capita from 1945-1990
+
+```{r}
+shapes <- c(0,1,2,5,6)
+comp_data %>%
+  ggplot(aes(x = year, y = rgdpnapc, color = country, shape = country)) +
+  geom_line(size=0.4) +
+  geom_point() +
+  scale_color_brewer(palette = "Set1")+  
+  labs(title = "GDP per capita from 1945-1990",
        x = "Year",
-       y = "GNP per capita") 
+       y = "GDP per capita") +
+  theme_tufte() +
+  scale_shape_manual(values = shapes) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    )
+ggsave("images/GDP_per_capita.png", width = 7, height = 4, dpi = 500)
 ```
 
-Plot the gov revenue as percentage of GDP
+Plot the growth rate of gdp
 
 ```{r}
-ggplot(aes(x = year, y = G_revenue_percent), data=facts) +
-  geom_line() +
-  labs(title = "General government revenue as percentage of GDP",
-       x = "Year",
-       y = "Percentage of GDP") 
+# growth rate = (gdp(t) - gdp(t-1)) / gdp(t-1)
+comp_data %>%
+  group_by(country) %>%
+  mutate(growth_rate = (rgdpnapc - lag(rgdpnapc)) / lag(rgdpnapc)) %>%
+  mutate(moving_avg = rollmean(growth_rate, 3, fill = NA, align = "right")) %>%
+  ggplot(aes(x = year, y = moving_avg, color = country, shape = country)) +
+  geom_line(size=0.4)
+  geom_point()
 ```
-
-## Exchange Rate
-
-```{r}
-exchange <- read_csv("data/exchange_rate.csv")
-```
+### Figure 2: Energy Imports
 
 ```{r}
-exchange <- exchange %>%
-  t(.) %>%
-  as.data.frame(.) %>%
-  rownames_to_column("year") %>%
-  setNames(.[1,]) %>%
-  mutate_all(as.numeric) %>%
-  remove_missing()
-```
-
-```{r}
-exchange %>%
-  filter(Year <=1990) %>%
-  ggplot(aes(x = Year, y = log(Rate))) +
-  geom_line()
-```
-
-Plot the yearly change in the exchange rate
-
-```{r}
-exchange %>%
-  filter(Year <=1987) %>%
-  mutate(change = Rate - lag(Rate)) %>%
-  ggplot(aes(x = Year, y = change)) +
-  geom_line()
-```
-
-## BOP
-
-```{r}
-bop <- read_csv("data/bop.csv")
-```
-
-clean
-
-```{r}
-bop <- bop %>%
-  rename_all(str_replace_all, " ", "_") %>%
-  rename_all(tolower) %>%
-  #rename column 2 
-  rename("exports" = "exports,_f.o.b." ) %>%
-  rename("imports" = "imports,_c.i.f." ) %>%
-  rename("remit" = "emigrant_and_worker_remittances") %>%
-  mutate_all(as.numeric) %>%
-  mutate(imports = abs(imports)) %>%
-  # multiply all by 1000000
-  mutate_all(~ . * 1000000) %>%
-  mutate(year = year / 1000000)
-  #remove duplicate year 1979
-```
-
-Trade Balance
-
-```{r}
-bop %>%
+imports_gdp_plot <- comb %>%
   ggplot(aes(x = year)) +
-  geom_col(aes(y = -exports, fill = "red")) + 
-  geom_col(aes(y = imports, fill = "blue")) +
-  geom_line(aes(y = trade_balance), color = "black") 
+    geom_line(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), color="red")  +
+    geom_point(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), shape=5, color="red")
+imports_gdp_plot
 ```
 
-Current Account Balance
-
 ```{r}
-bop %>%
+imports_total_plot <- comb %>%
   ggplot(aes(x = year)) +
-  geom_line(aes(y = trade_balance), color = "black") +
-  geom_line(aes(y = current_balance), color = "green") 
-  #geom_col(aes(y = remit), fill = "blue")
+    geom_line(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), color="blue") +
+    geom_point(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), shape=5, color="blue")
+imports_total_plot
 ```
-
-## Migration
 
 ```{r}
-migration <- read_csv("data/migration.csv")
+imports_gdp_plot +
+#imports_total_plot + 
+  scale_color_brewer(palette = "Set1")+  
+  labs(
+    x = "Year",
+    y = "% of GDP",
+    #y = "% of Imports"
+    ) +
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    ) +
+  xlim(c(1957,1990))
+
+ggsave("images/imports_gdp.png", width = 4, height = 4, dpi = 500)
+#ggsave("images/imports_total.png", width = 4, height = 4, dpi = 500)
 ```
+
+
+
+### Figure 3: Migration
+
 Plot the number of migrants and net migration
 
 ```{r}
@@ -324,55 +390,38 @@ ggplot(migration, aes(x=year))+
     ) +
   scale_y_continuous(n.breaks=6)+
   xlim(c(1967,1985)) 
-#ggsave("images/migration.png", width=10, height=6, dpi=300)
+ggsave("images/migration.png", width=7, height=4, dpi=500)
 ```
 
 
-# Combine some Data
+### Figure 4: Remittances
 
 ```{r}
-comb <- comp_data %>%
-  filter(countrycode == "YUG") %>%
-  select(rgdpnapc, pop, year) %>%
-  mutate(gdp_dollar = rgdpnapc * pop*100) %>%
-  left_join(trade, by = "year") %>%
-  left_join(debt, by = "year") %>%
-  left_join(facts %>% select(year, GNP_pp_dollar), by = "year") %>%
-  left_join(bop %>% select(year, trade_balance, current_balance, remit), by = "year")
-```
-
-```{r}
-comb <- comb %>%
-  mutate_at(vars(starts_with("IMPORTS_"), starts_with("EXPORTS_")), ~.*1000000) %>%
-  mutate(gnp_dollar_yug = GNP_pp_dollar * pop*1000)
-```
-
-## Energy Imports as share of GDP
-
-```{r}
-imports_gdp_plot <- comb %>%
+remit_total_plot <- comb %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), color="red")  +
-    geom_point(aes(y=IMPORTS_Mineral_fuels/gdp_dollar*100), shape=5, color="red")
-imports_gdp_plot
+    geom_line(aes(y=remit/1000000), color="orange") +  #absolute
+    geom_point(aes(y=remit/1000000), color="orange", shape=5)
+remit_total_plot
 ```
 
 ```{r}
-imports_total_plot <- comb %>%
+remit_rel_plot <- comb %>%
   ggplot(aes(x = year)) +
-    geom_line(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), color="blue") +
-    geom_point(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), shape=5, color="blue")
-imports_total_plot
+    geom_line(aes(y=remit/gdp_dollar*100), color="blue") +#relative to GDP
+    geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5)
+remit_rel_plot
 ```
 
+sinking share of worker remittances, absolutely numbers down as well as relative
+
 ```{r}
-#imports_gdp_plot +
-imports_total_plot + 
+remit_total_plot +
+# remit_rel_plot + 
   scale_color_brewer(palette = "Set1")+  
   labs(
     x = "Year",
-    #y = "% of GDP",
-    y = "% of Imports"
+    y = "Remittances (Million $) ",
+    # y = "% of GDP"
     ) +
   theme_tufte() +
   theme(
@@ -380,14 +429,14 @@ imports_total_plot +
     legend.title = element_blank(),
     panel.border = element_rect(fill = NA, color = "black"),
     ) +
-  xlim(c(1957,1990))
+  xlim(c(1960,1990))
 
-#ggsave("images/imports_gdp.png", width = 6, height = 6, dpi = 300)
-ggsave("images/imports_total.png", width = 6, height = 6, dpi = 300)
+ggsave("images/remit_total.png", width = 4, height = 4, dpi = 500)
+# ggsave("images/remit_rel.png", width = 4, height = 4, dpi = 500)
 ```
 
 
-### Gross Debt as % of GDP and Servicing as % of GDP
+### Figure 5: Debt (Gross and relative)
 
 ```{r}
 comb %>%
@@ -409,59 +458,8 @@ comb %>%
       legend.title = element_blank(),
       panel.border = element_rect(fill = NA, color = "black"),
       ) +
-    xlim(c(1960,1987)) +
-    scale_y_continuous(n.breaks=7) +
-    scale_x_continuous(n.breaks=8)
-
+    xlim(c(1960,1986)) +
+    scale_y_continuous(n.breaks=7) 
+ggsave("images/debt.png", width=7, height=4, dpi=500)
 ```
 
-### Worker Remittances as % of GDP
-
-```{r}
-remit_total_plot <- comb %>%
-  ggplot(aes(x = year)) +
-    geom_line(aes(y=remit/1000000), color="orange") +  #absolute
-    geom_point(aes(y=remit/1000000), color="orange", shape=5)
-remit_total_plot
-```
-
-```{r}
-remit_rel_plot <- comb %>%
-  ggplot(aes(x = year)) +
-    geom_line(aes(y=remit/gdp_dollar*100), color="blue") +#relative to GDP
-    geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5)
-remit_rel_plot
-```
-
-sinking share of worker remittances, absolutely numbers down as well as relative
-
-```{r}
-#remit_total_plot +
-remit_rel_plot + 
-  scale_color_brewer(palette = "Set1")+  
-  labs(
-    x = "Year",
-    #y = "Remittances (Million $) ",
-    y = "% of GDP"
-    ) +
-  theme_tufte() +
-  theme(
-    legend.position = "bottom",
-    legend.title = element_blank(),
-    panel.border = element_rect(fill = NA, color = "black"),
-    ) +
-  xlim(c(1960,1990))
-
-#ggsave("images/remit_total.png", width = 6, height = 6, dpi = 300)
-ggsave("images/remit_rel.png", width = 6, height = 6, dpi = 300)
-```
-
-
-
-### Trade Balance as % of GDP
-
-```{r}
-comb %>%
-  ggplot(aes(x = year)) +
-    geom_line(aes(y=-trade_balance/gdp_dollar*100), color="red") 
-```

@@ -81,7 +81,7 @@ Additionally, countries that had previously been key destinations for Yugoslav e
 
 As a result, the number of emigrants dropped significantly, and Yugoslavia began to experience net negative migration, with more people returning to the country than leaving it. In the 1970s, a record 230,000 people emigrated, but by the following decade, this figure had fallen to just 30,000 and continued to decline, as shown in @fig-migrants. 
 
-![Migration in Yugoslavia (Source: @meznaric17YugoslaviaEmigration1993)](./images/migration.png){#fig-migrants}
+![Migration in Yugoslavia (Source: @meznaricYugoslaviaEmigrationOut1993)](./images/migration.png){#fig-migrants}
 
 As a result, remittances from foreign workers fell significantly, exacerbating the capital account issues faced by Yugoslavia. This problem became particularly acute in the 1980s due to the delayed impact of the policy changes. Both in absolute terms and relative to GDP, remittances decreased notably, especially after 1981 (see @fig-remittances). This decline in remittances further compounded the economic challenges facing the country, straining its financial stability.
 
@@ -97,7 +97,7 @@ Importance of Remittances for Yugoslavia
 
 ### External Debt
 
-The oil crisis precipitated a balance of payments crisis in many countries, including Yugoslavia. To address its growing current account deficit, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, these Western investors are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 [@yarashevichEconomicReasonsBreakup2013].
+The oil crisis precipitated a balance of payments crisis in many countries, including Yugoslavia. To address its growing current account deficit, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, these Western investors are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 [@yarashevichEconomicReasonsBreakYugoslavia2013].
 
 This reliance on Western capital would become a significant liability starting in the 1980s. The second oil shock triggered inflationary pressures in the West, particularly in the United States, where the Federal Reserve responded by raising interest rates to as high as 20% in 1981. Emerging economies, including Yugoslavia, felt the impact of these soaring interest rates acutely. They were forced to pay a steep premium to finance their debt and faced escalating costs for servicing it.
 

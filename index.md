@@ -12,15 +12,15 @@ Weiterführende Links
 
 ::::{grid} 3
 
-:::{grid-item-card}  28
+:::{grid-item-card}  31
 Anzahl Module
 :::
 
-:::{grid-item-card}  340
+:::{grid-item-card}  368
 Anzahl Notizen
 :::
 
-:::{grid-item-card}  5
+:::{grid-item-card}  6
 Anzahl Semester
 :::
 

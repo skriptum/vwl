@@ -64,12 +64,13 @@ During this tumultuous period, the impact on Yugoslavia’s economy was stark: t
 The Impact of Rising Energy Prices on Imports
 :::
 
-
 Even for advanced Western nations like Germany, the two oil shocks triggered significant crises. However, for a less developed country like Yugoslavia, whose currency was weaker on international markets, affording these costly imports became nearly impossible. As Rogel [@rogelBreakupYugoslaviaIts2004] explains, "for a country like Yugoslavia, which was greatly dependent on imported fuel paid for in hard currency, the oil price crisis alone could have resulted in financial ruin" (p. 14).
 
 ### Global Economic Downturn
 
-To cope with rising import prices, a country typically has three options: reduce imports, increase exports, or offset the costs through capital account inflows. Yugoslavia, however, found it difficult to significantly cut imports, despite implementing various policies and imposing substantial reductions in energy access. For an industrialized economy, energy is the backbone, and reducing its consumption without causing serious economic disruption is rarely feasible. The dramatic surge in prices made it nearly impossible to offset these costs through reductions alone, leaving the country vulnerable to external pressures.
+To cope with rising import prices, a country typically has three options: reduce imports, increase exports, or offset the costs through capital account inflows. Yugoslavia, however, found it difficult to significantly cut imports, despite implementing various policies and imposing substantial reductions in energy access. For an industrialized economy, energy is the backbone, and reducing its consumption without causing serious economic disruption is rarely feasible. The dramatic surge in prices made it nearly impossible to offset these costs through reductions alone, leaving the country vulnerable to external pressures and a negative trade balance.
+
+![Yugoslav Trade Balance](./images/trade_balance.png)
 
 The second option—boosting exports—proved only partially successful and fell far short of generating the necessary hard currency. Yugoslavia's main trading partners, the members of the European Economic Community (EEC), were grappling with their own macroeconomic challenges. The stagflation of the 1970s, characterized by low growth and high inflation, sharply reduced demand for foreign products, particularly for Yugoslavia’s key export category: finished manufactures. As a result, the external market for Yugoslav goods shrank, further exacerbating the country’s economic difficulties.
 
@@ -85,10 +86,11 @@ As a result, the number of emigrants dropped significantly, and Yugoslavia began
 
 As a result, remittances from foreign workers fell significantly, exacerbating the capital account issues faced by Yugoslavia. This problem became particularly acute in the 1980s due to the delayed impact of the policy changes. Both in absolute terms and relative to GDP, remittances decreased notably, especially after 1981 (see @fig-remittances). This decline in remittances further compounded the economic challenges facing the country, straining its financial stability.
 
+
 ::: {#fig-remittances layout-ncol=2}
 ![Remittances as Share of GDP](./images/remit_rel.png)
 
-![Remittances to Yugoslavia](./images/remit_total.png)
+![Gross Remittances](./images/remit_total.png)
 
 Importance of Remittances for Yugoslavia
 :::
@@ -106,6 +108,10 @@ With the onset of the Mexican debt crisis in 1982, access to foreign credit rapi
 A major strain on the economy was the debt servicing payments, which escalated to 10% of GDP in 1980 and reached a record 21.7% in 1986. For any country, such substantial debt payments would be a severe challenge, but for Yugoslavia—already struggling with numerous economic difficulties—this situation became exceptionally dire. It left the country with no option but to seek external assistance from Western sources.
 
 ![Debt Dynamics](./images/debt.png)
+
+### Balance of Payments Crisis
+
+
 
 ## The Role of the IMF
 

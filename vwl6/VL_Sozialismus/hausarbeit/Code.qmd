@@ -143,18 +143,6 @@ migration <- read_csv("data/migration.csv")
 
 ## Explorative Plotting
 
-### Trade Balance
-
-Trade Balance
-
-```{r}
-bop %>%
-  ggplot(aes(x = year)) +
-  geom_col(aes(y = -exports, fill = "red")) + 
-  geom_col(aes(y = imports, fill = "blue")) +
-  geom_line(aes(y = trade_balance), color = "black") 
-```
-
 Current Account Balance
 
 ```{r}
@@ -255,6 +243,15 @@ trade %>%
 ## Combine the Data
 
 ```{r}
+comp_data <- maddison::maddison
+comp_data <- comp_data %>%
+  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG")) %>%
+  filter(countrycode %in% c("BRA", "MEX", "YUG", "BGR", "POL")) %>%
+  filter(year >= 1950 & year <= 1990)
+```
+
+
+```{r}
 comb <- comp_data %>%
   filter(countrycode == "YUG") %>%
   select(rgdpnapc, pop, year) %>%
@@ -274,20 +271,7 @@ comb <- comb %>%
 
 ## Plotting of Finished Figures
 
-### Figure 1: Comparison of GDP Countries
-
-```{r}
-comp_data <- maddison::maddison
-```
-
-Filter for selection of countries
-
-```{r}
-comp_data <- comp_data %>%
-  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG")) %>%
-  filter(countrycode %in% c("BRA", "MEX", "YUG", "BGR", "POL")) %>%
-  filter(year >= 1950 & year <= 1990)
-```
+### Figure: Comparison of GDP Countries
 
 Plot the GDP per capita from 1945-1990
 
@@ -323,7 +307,7 @@ comp_data %>%
   geom_line(size=0.4)
   geom_point()
 ```
-### Figure 2: Energy Imports
+### Figure: Energy Imports
 
 ```{r}
 imports_gdp_plot <- comb %>%
@@ -342,13 +326,13 @@ imports_total_plot
 ```
 
 ```{r}
-imports_gdp_plot +
-#imports_total_plot + 
+# imports_gdp_plot +
+imports_total_plot +
   scale_color_brewer(palette = "Set1")+  
   labs(
     x = "Year",
-    y = "% of GDP",
-    #y = "% of Imports"
+    # y = "% of GDP",
+    y = "% of Imports"
     ) +
   theme_tufte() +
   theme(
@@ -358,13 +342,13 @@ imports_gdp_plot +
     ) +
   xlim(c(1957,1990))
 
-ggsave("images/imports_gdp.png", width = 4, height = 4, dpi = 500)
-#ggsave("images/imports_total.png", width = 4, height = 4, dpi = 500)
+# ggsave("images/imports_gdp.png", width = 4, height = 3, dpi = 500)
+ggsave("images/imports_total.png", width = 4, height = 3, dpi = 500)
 ```
 
 
 
-### Figure 3: Migration
+### Figure: Migration
 
 Plot the number of migrants and net migration
 
@@ -394,7 +378,7 @@ ggsave("images/migration.png", width=7, height=4, dpi=500)
 ```
 
 
-### Figure 4: Remittances
+### Figure: Remittances
 
 ```{r}
 remit_total_plot <- comb %>%
@@ -416,7 +400,7 @@ sinking share of worker remittances, absolutely numbers down as well as relative
 
 ```{r}
 remit_total_plot +
-# remit_rel_plot + 
+#remit_rel_plot + 
   scale_color_brewer(palette = "Set1")+  
   labs(
     x = "Year",
@@ -431,12 +415,12 @@ remit_total_plot +
     ) +
   xlim(c(1960,1990))
 
-ggsave("images/remit_total.png", width = 4, height = 4, dpi = 500)
-# ggsave("images/remit_rel.png", width = 4, height = 4, dpi = 500)
+ggsave("images/remit_total.png", width = 4, height = 3, dpi = 500)
+# ggsave("images/remit_rel.png", width = 4, height = 3, dpi = 500)
 ```
 
 
-### Figure 5: Debt (Gross and relative)
+### Figure: Debt (Gross and relative)
 
 ```{r}
 comb %>%
@@ -463,3 +447,31 @@ comb %>%
 ggsave("images/debt.png", width=7, height=4, dpi=500)
 ```
 
+
+### Figure: Trade Balance
+
+Trade Balance
+
+```{r}
+bop %>%
+  ggplot(aes(x = year)) +
+  geom_col(aes(y = -exports/1e6, color="Exports"), fill="red", size=0, alpha=0.6) + 
+  geom_col(aes(y = imports/1e6, color="Imports"), fill="blue", size=0, alpha=0.6) +
+  geom_line(aes(y = trade_balance/1e6), color="black") +
+  geom_point(aes(y = trade_balance/1e6), color="black", shape=5) +
+  #styling
+  labs(title = "Trade Balance, 1960-1990",
+       x = "Year",
+       y = "Flows (Million $)"
+       ) +
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black")
+    ) +
+  scale_x_continuous(n.breaks=7) +
+  scale_y_continuous(n.breaks=6) +
+  geom_hline(yintercept=0, color="grey")
+ggsave("images/trade_balance.png", width = 7, height = 4, dpi = 500)
+```

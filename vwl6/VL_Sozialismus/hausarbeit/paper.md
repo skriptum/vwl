@@ -44,9 +44,9 @@ In the following sections, I will outline the key external shocks and their over
 
 ## Data
 
-Economic data series for Yugoslavia are notoriously difficult to obtain and often unreliable. Official growth data for the Social Product, Yugoslavia’s equivalent to GDP, are particularly problematic due to price distortions and data fabrication. Therefore, this analysis relies on alternative time series from the Maddison Project Database, which draws on the independent research conducted by the Research Project on National Income in East Central Europe.
+Economic data series for Yugoslavia are notoriously difficult to obtain and often unreliable. Official growth data for the Social Product, Yugoslavia’s equivalent to GDP, are particularly problematic due to price distortions and data fabrication. Therefore, this analysis relies on alternative time series from the Maddison Project Database [@boltMaddisonProjectDatabase2024], which draws on the independent research conducted by the Research Project on National Income in East Central Europe.
 
-Many of the additional data sources used throughout this analysis are drawn from the OECD Economic Surveys [@OECDEconomicSurveys]. These biannual surveys, conducted from 1962 to 1990, provide standardized tables on various economic indicators, including foreign trade, debt, balance of payments, and the federal budget, among others. Some of the data in these reports were sourced directly from Yugoslavia’s Official Statistics Office, while other figures were calculated by OECD researchers. Data from these digitized reports have been extracted using OCR (Optical Character Recognition) technology, then transformed into time-series data for further combination and analysis.
+Many of the additional data sources used throughout this analysis are drawn from the OECD Economic Surveys [@OECDEconomicSurveys]. These biannual surveys, conducted from 1962 to 1990, provide standardized tables on various economic indicators, including foreign trade, debt, balance of payments, and the federal budget, among others. Some of the data in these reports were sourced directly from Yugoslavia’s Official Statistics Office, while other figures were calculated by OECD researchers. Data from these digitized reports used here has been extracted using OCR (Optical Character Recognition) technology, then transformed into time-series data for further combination and analysis.
 
 
 ## The Effect of the Oil Shocks
@@ -74,8 +74,6 @@ To cope with rising import prices, a country typically has three options: reduce
 
 The second option—boosting exports—proved only partially successful and fell far short of generating the necessary hard currency. Yugoslavia's main trading partners, the members of the European Economic Community (EEC), were grappling with their own macroeconomic challenges. The stagflation of the 1970s, characterized by low growth and high inflation, sharply reduced demand for foreign products, particularly for Yugoslavia’s key export category: finished manufactures. As a result, the external market for Yugoslav goods shrank, further exacerbating the country’s economic difficulties.
 
-**XX GRafik Exporte Machinery**
-
 ### Immigration Restrictions
 
 Additionally, countries that had previously been key destinations for Yugoslav emigrants, such as Germany and France, closed their borders to economic migrants. Germany, in particular, ended its "Anwerbeabkommen" (recruitment agreement) in 1973 following the first oil shock, and further tightened immigration rules in 1979 after the second. This shift made it increasingly difficult for Yugoslav workers to find employment abroad, reducing the flow of remittances—an important source of hard currency for Yugoslavia’s economy.
@@ -99,9 +97,9 @@ Importance of Remittances for Yugoslavia
 
 ### External Debt
 
-The oil crisis precipitated a balance of payments crisis in many countries, including Yugoslavia. To address its growing current account deficit, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, these Western investors are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 [@yarashevichEconomicReasonsBreakYugoslavia2013].
+To address its growing current account deficit in the 1970s, Yugoslavia turned to Western lenders for assistance. In search of attractive investment opportunities outside their stagnating domestic markets, western capitalists willingly invested in emerging markets like Yugoslavia [@babicCausesGrowthYugoslav1986]. They are estimated to have covered approximately 90% of Yugoslavia’s current account deficit up to 1975 with their lending [@yarashevichEconomicReasonsBreakYugoslavia2013].
 
-This reliance on Western capital would become a significant liability starting in the 1980s. The second oil shock triggered inflationary pressures in the West, particularly in the United States, where the Federal Reserve responded by raising interest rates to as high as 20% in 1981. Emerging economies, including Yugoslavia, felt the impact of these soaring interest rates acutely. They were forced to pay a steep premium to finance their debt and faced escalating costs for servicing it.
+This reliance on Western capital would became a significant liability starting in the 1980s. The second oil shock triggered inflationary pressures in the West, particularly in the United States, where the Federal Reserve responded by raising interest rates to as high as 20% in 1981. Emerging economies, including Yugoslavia, felt the impact of these soaring interest rates acutely. They were forced to pay a steep premium to finance their debt and faced escalating costs for servicing it.
 
 With the onset of the Mexican debt crisis in 1982, access to foreign credit rapidly dried up for many countries. Foreign lenders quickly pulled back from emerging markets, retreating to safer investments such as US Treasury Bonds. During this period, "Yugoslavia completely lost its access to international financial markets" [@mojmirFormerYugoslaviasDebt1996], leaving the country with no choice but to seek alternative methods for financing essential imports, such as energy, crucial for sustaining its economy.
 
@@ -109,13 +107,11 @@ A major strain on the economy was the debt servicing payments, which escalated t
 
 ![Debt Dynamics](./images/debt.png)
 
-### Balance of Payments Crisis
-
-
-
 ## The Role of the IMF
 
 This situation presented a prime opportunity for the International Monetary Fund (IMF), which was originally established to manage balance of payments crises as a lender of last resort. During the 1980s, the IMF expanded its role beyond mere stabilization to become a leading advocate for market-liberalizing reforms. As the "world's leading promoter of market-liberalizing reforms" [@kentikelenisMakingNeoliberalGlobalization2019], the IMF began to push for a broader agenda of economic liberalization and structural adjustments in countries facing financial turmoil.
+
+**XX Balance of Payments Yugoslavia**
 
 The IMF's approach during this period involved imposing stringent conditions on countries seeking financial assistance, including market-oriented reforms, privatization, and deregulation. For Yugoslavia, this meant that in addition to securing emergency funding, it was required to implement significant economic reforms that aimed to align its economy more closely with market principles. These reforms were intended to stabilize the economy in the short term but often led to considerable social and economic adjustments, influencing the country's economic trajectory and contributing to the broader wave of neoliberal reforms globally.
 

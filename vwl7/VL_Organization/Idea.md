@@ -23,7 +23,6 @@ Organizational Structure with Incentives that align
 - which connections to which stakeholders (other farmers, subscribers, workers)
 
 
-
 Idea: 
 - farmers for other types of produce
 - coop in other parts of the world
@@ -35,4 +34,15 @@ Idea:
 )
 
 Company: **AGRICO** - Cooperative Farming
+
+
+For Essay:
+
+- include Organizational Structure (functional / division)
+- siye of employees: max 10
+- sources / papers / theories in **references**
+- conclusion / self assesment of utioia 
+	- limitations (ca. 1 page) 
+	- pros cons
+- phyisical space / environment of organization
 

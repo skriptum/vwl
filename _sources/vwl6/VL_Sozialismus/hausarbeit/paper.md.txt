@@ -4,6 +4,7 @@ format: pdf
 toc: true
 lof: true
 bibliography: essay.bib
+link-citations: true
 ---
 
 {{< pagebreak >}}
@@ -30,11 +31,11 @@ Unlike other socialist economies, Yugoslavia maintained a relatively open stance
 
 ## Existing Explanations
 
-A variety of theories seek to explain the disintegration of the Socialist Federal Republic of Yugoslavia (SFY). Jović’s overview [@jovicDisintegrationYugoslaviaCritical2001] outlines seven distinct arguments, including economic, cultural, nationalist, and international political factors. My argument straddles the economic and international political explanations, with a primary focus on the collapse of the economic system rather than the disintegration of the state itself.
+A variety of theories seek to explain the disintegration of the Socialist Federal Republic of Yugoslavia (SFY). @jovicDisintegrationYugoslaviaCritical2001 outlines seven distinct arguments, including economic, cultural, nationalist, and international political factors. My argument straddles the economic and international political explanations, with a primary focus on the collapse of the economic system rather than the disintegration of the state itself.
 
-Yarashevich’s analysis [@yarashevichEconomicReasonsBreakup2013] explores the economic reasons behind the breakup of Yugoslavia, identifying four key factors. These include two internal issues—labor market challenges and the system of self-management—as well as two external pressures—external debt and foreign trade dynamics.
+@yarashevichEconomicReasonsBreakYugoslavia2013 explore the economic reasons behind the breakup of Yugoslavia, identifying four key factors. These include two internal issues—labor market challenges and the system of self-management—as well as two external pressures—external debt and foreign trade dynamics.
 
-Additional economic factors are highlighted by Kukić [@kukicOriginsRegionalDivergence2020], who examines the regional economic divergence within Yugoslavia. He argues that the failure of the regions to converge economically can be attributed to the soft-budget constraint and the inherent flaws of the workers' self-management system.
+Additional economic factors are highlighted by @kukicOriginsRegionalDivergence2020, who examines the regional economic divergence within Yugoslavia. He argues that the failure of the regions to converge economically can be attributed to the soft-budget constraint and the inherent flaws of the workers' self-management system.
 
 While all these explanations offer valid insights, the collapse of a system as complex as Yugoslavia’s can never be attributed to a single cause. However, arguments that focus solely on internal economic inefficiencies fall short of explaining why other, similarly diverse countries experienced comparable trajectories in the 1980s. Despite their different political and economic systems, these countries exhibited strikingly similar patterns of decline, suggesting that broader external factors played a critical role beyond internal dynamics.
 

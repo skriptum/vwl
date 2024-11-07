@@ -31,7 +31,8 @@ Idea:
 
 
 
-
+![img](../../../../../Desktop/screenshots/2024-11-07_17-33-20.png
+)
 
 Company: **AGRICO** - Cooperative Farming
 

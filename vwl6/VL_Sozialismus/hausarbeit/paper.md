@@ -110,11 +110,25 @@ A major strain on the economy was the debt servicing payments, which escalated t
 
 ## The Role of the IMF
 
-This situation presented a prime opportunity for the International Monetary Fund (IMF), which was originally established to manage balance of payments crises as a lender of last resort. During the 1980s, the IMF expanded its role beyond mere stabilization to become a leading advocate for market-liberalizing reforms. As the "world's leading promoter of market-liberalizing reforms" [@kentikelenisMakingNeoliberalGlobalization2019], the IMF began to push for a broader agenda of economic liberalization and structural adjustments in countries facing financial turmoil.
+It is in this situation of mutliple crisis, that were triggered by the oil shock of 1979, that Yugoslavia had to turn to western assistance. The Balance of Payments Crisis was out of control and could not be controlled without external help.
 
-**XX Balance of Payments Yugoslavia**
+This situation presented a prime opportunity for the International Monetary Fund (IMF), which was originally established to manage balance of payments crises as a lender of last resort. It has two main avenues with which it helps countries to overcome their short-term liquidity problems. one is the direct lending with short to medium-term loans to overcome a shortage of hard currencies. the second is by providing a "seal of approval" that a country is on track to a more sustainable financial position and therefore private lenders can start buying  debt or lending again [@jensenCrisisConditionsCapital2004]. 
 
-The IMF's approach during this period involved imposing stringent conditions on countries seeking financial assistance, including market-oriented reforms, privatization, and deregulation. For Yugoslavia, this meant that in addition to securing emergency funding, it was required to implement significant economic reforms that aimed to align its economy more closely with market principles. These reforms were intended to stabilize the economy in the short term but often led to considerable social and economic adjustments, influencing the country's economic trajectory and contributing to the broader wave of neoliberal reforms globally.
+To reach a deal with the IMF, the country in crisis has to follow a program of policies negotiated in secrecy to adress the underlying macro-economic issues.  During the 1980s, the IMF expanded its role beyond mere stabilization to become a leading advocate for market-focused reforms. As the "world's leading promoter of market-liberalizing reforms" [@kentikelenisMakingNeoliberalGlobalization2019], the IMF began to push for a broader agenda of economic liberalization and structural adjustments in countries facing financial crisis.
+
+The IMF oftentime follows a standard procedure to adress the underlying Balance of Payments crisis; one of reducing aggregate demand, mostly trough fiscal cuts, and encouraging exports to reveice inflows of hard currencies. In theory, these programs should not have a profound effect on GDP growth in the long run. Fiscal cuts should increase the confidence investors and houeshold have, that a larger cut is not looming in the future, and therefore lead to a better growth outlook in a phenomen called "expansionary austerity" [@giavazziCanSevereFiscal1990].
+
+ In practice, the effect of these policies are oftentimes adversarial to the stated goal of inducing growth. The Policies introduced by the IMF severly contract GDP growth and investment [@guajardoExpansionaryAusterityInternational2014], oftentimes far above the level needed to adress the underlying issues. In the wake of this fall, a vast range of unintended consequences, e.g on public health [@hoddieShortTermPainLongTerm2014],  are introduced in the countries.
+
+In the case of Yugoslavia, the reform package focused on improving price signals to more closely follow international market prices. The implicit assumption of this policy is that economic actors react in a rational and similar way to market economies in adjusting to these price hikes. In reality, the enterprises in a socialist economy like yugoslavia react different to incentives and are faced with different financing situations than their capitalist counterparts [@tysonConditionalityAdjustmentHungary1986]. 
+
+
+
+
+
+![Real Wage Dynamics](./images/real_wage.png)
+
+![Investment as Share of Social Product](./images/inv_sp.png)
 
 ## Conclusion
 

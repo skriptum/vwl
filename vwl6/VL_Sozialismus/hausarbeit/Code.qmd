@@ -134,12 +134,30 @@ bop <- bop %>%
 
 
 
-### Migration
+### Migration & Budget
 
 ```{r}
 migration <- read_csv("data/migration.csv")
 ```
+```{r}
+investment <- read_csv("data/investment.csv")
+```
+### Wage 
+```{r}
+wage <- read_csv("data/wage.csv")
+```
 
+Calculate real wage
+```{r}
+wage$real <- wage$wage / wage$col #cost of living = col
+wage$real_growth <- wage$real - lag(wage$real)
+```
+
+calc 3year moving average
+
+```{r}
+wage$moving_avg <- zoo::rollmean(wage$real_growth, 5, fill = NA, align = "right")
+```
 
 ## Explorative Plotting
 
@@ -193,6 +211,7 @@ ggplot(aes(x = year, y = G_revenue_percent), data=facts) +
        x = "Year",
        y = "Percentage of GDP") 
 ```
+
 
 ### Trade
 
@@ -258,9 +277,11 @@ comb <- comp_data %>%
   mutate(gdp_dollar = rgdpnapc * pop*100) %>%
   left_join(trade, by = "year") %>%
   left_join(debt, by = "year") %>%
-  left_join(facts %>% select(year, GNP_pp_dollar), by = "year") %>%
+  left_join(facts %>% select(year, GNP_pp_dollar, GNP_factor_dinar), by = "year") %>%
   left_join(bop %>% select(year, trade_balance, current_balance, remit), by = "year") %>%
-  left_join(migration, by="year")
+  left_join(migration, by="year") %>%
+  left_join(investment, by="year") %>%
+  left_join(wage %>% select(year, real_growth, moving_avg), by="year")
 ```
 
 ```{r}
@@ -298,14 +319,14 @@ ggsave("images/GDP_per_capita.png", width = 7, height = 4, dpi = 500)
 Plot the growth rate of gdp
 
 ```{r}
-# growth rate = (gdp(t) - gdp(t-1)) / gdp(t-1)
-comp_data %>%
-  group_by(country) %>%
-  mutate(growth_rate = (rgdpnapc - lag(rgdpnapc)) / lag(rgdpnapc)) %>%
-  mutate(moving_avg = rollmean(growth_rate, 3, fill = NA, align = "right")) %>%
-  ggplot(aes(x = year, y = moving_avg, color = country, shape = country)) +
-  geom_line(size=0.4)
-  geom_point()
+# # growth rate = (gdp(t) - gdp(t-1)) / gdp(t-1)
+# comp_data %>%
+#   group_by(country) %>%
+#   mutate(growth_rate = (rgdpnapc - lag(rgdpnapc)) / lag(rgdpnapc)) %>%
+#   mutate(moving_avg = rollmean(growth_rate, 3, fill = NA, align = "right")) %>%
+#   ggplot(aes(x = year, y = moving_avg, color = country, shape = country)) +
+#   geom_line(size=0.4)
+#   geom_point()
 ```
 ### Figure: Energy Imports
 
@@ -321,7 +342,8 @@ imports_gdp_plot
 imports_total_plot <- comb %>%
   ggplot(aes(x = year)) +
     geom_line(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), color="blue") +
-    geom_point(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), shape=5, color="blue")
+    geom_point(aes(y=IMPORTS_Mineral_fuels/IMPORTS_Total*100), shape=5, color="blue") +
+    ylim(0,30)
 imports_total_plot
 ```
 
@@ -392,20 +414,21 @@ remit_total_plot
 remit_rel_plot <- comb %>%
   ggplot(aes(x = year)) +
     geom_line(aes(y=remit/gdp_dollar*100), color="blue") +#relative to GDP
-    geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5)
+    geom_point(aes(y=remit/gdp_dollar*100), color="blue", shape=5) +
+    ylim(0,8)
 remit_rel_plot
 ```
 
 sinking share of worker remittances, absolutely numbers down as well as relative
 
 ```{r}
-remit_total_plot +
-#remit_rel_plot + 
+#remit_total_plot +
+remit_rel_plot + 
   scale_color_brewer(palette = "Set1")+  
   labs(
     x = "Year",
-    y = "Remittances (Million $) ",
-    # y = "% of GDP"
+    # y = "Remittances (Million $) ",
+    y = "% of GDP"
     ) +
   theme_tufte() +
   theme(
@@ -415,8 +438,8 @@ remit_total_plot +
     ) +
   xlim(c(1960,1990))
 
-ggsave("images/remit_total.png", width = 4, height = 3, dpi = 500)
-# ggsave("images/remit_rel.png", width = 4, height = 3, dpi = 500)
+# ggsave("images/remit_total.png", width = 4, height = 3, dpi = 500)
+ggsave("images/remit_rel.png", width = 4, height = 3, dpi = 500)
 ```
 
 
@@ -444,7 +467,7 @@ comb %>%
       ) +
     xlim(c(1960,1986)) +
     scale_y_continuous(n.breaks=7) 
-ggsave("images/debt.png", width=7, height=4, dpi=500)
+ggsave("images/debt.png", width=7, height=3, dpi=500)
 ```
 
 
@@ -474,4 +497,51 @@ bop %>%
   scale_y_continuous(n.breaks=6) +
   geom_hline(yintercept=0, color="grey")
 ggsave("images/trade_balance.png", width = 7, height = 4, dpi = 500)
+```
+
+### Figure: Inv and GDP
+
+```{r}
+ggplot(aes(x=year, y=(inv_otal / social_product)*100), data=investment) +
+  geom_line() +
+  geom_point(shape=5) +
+  theme_tufte() +
+  labs(title = "Gross fixed Investment and Social Product",
+       x = "Year",
+       y = "% of SP"
+       ) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black")
+    ) +
+  xlim(1969,1987)
+ggsave("images/inv_sp.png", height=3, width=7, dpi=500)
+```
+```{r}
+ggplot(aes(x=year, y=(inv_social/inv_otal)), data=investment) +
+  geom_line()
+```
+
+### Figure: Real Wage Growth
+
+Plot the real wage growth and the 5-year moving average of the real wage growth
+
+```{r}
+ggplot(aes(x = year), data=wage) +
+  geom_point(aes(y= real_growth, color="")) +
+  geom_line(aes(y= moving_avg, color="5-year mov. avg")) +
+  geom_point(aes(y= moving_avg), shape=5, color = "red") +
+  labs(title = "",
+       x = "Year",
+       y = "Growth") +
+  geom_hline(yintercept=0, color="grey") +
+  theme_tufte() +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    panel.border = element_rect(fill = NA, color = "black"),
+    ) +
+  scale_y_continuous(labels = scales::percent_format(scale = 100))
+ggsave("images/real_wage.png", width = 7, height = 4, dpi = 500)
 ```

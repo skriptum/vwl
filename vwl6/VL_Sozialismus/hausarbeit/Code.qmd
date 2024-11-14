@@ -518,18 +518,14 @@ ggplot(aes(x=year, y=(inv_otal / social_product)*100), data=investment) +
   xlim(1969,1987)
 ggsave("images/inv_sp.png", height=3, width=7, dpi=500)
 ```
-```{r}
-ggplot(aes(x=year, y=(inv_social/inv_otal)), data=investment) +
-  geom_line()
-```
 
 ### Figure: Real Wage Growth
 
 Plot the real wage growth and the 5-year moving average of the real wage growth
 
 ```{r}
-ggplot(aes(x = year), data=wage) +
-  geom_point(aes(y= real_growth, color="")) +
+ggplot(aes(x = year), data=comb) +
+  geom_point(aes(y= real_growth, color="yearly"), shape=3) +
   geom_line(aes(y= moving_avg, color="5-year mov. avg")) +
   geom_point(aes(y= moving_avg), shape=5, color = "red") +
   labs(title = "",
@@ -537,11 +533,13 @@ ggplot(aes(x = year), data=wage) +
        y = "Growth") +
   geom_hline(yintercept=0, color="grey") +
   theme_tufte() +
+  scale_color_brewer(palette = "Set1") +
   theme(
     legend.position = "bottom",
     legend.title = element_blank(),
     panel.border = element_rect(fill = NA, color = "black"),
     ) +
-  scale_y_continuous(labels = scales::percent_format(scale = 100))
+  scale_y_continuous(labels = scales::percent_format(scale = 100)) +
+  xlim(1970,1990)
 ggsave("images/real_wage.png", width = 7, height = 4, dpi = 500)
 ```

@@ -59,7 +59,3 @@ How? KPIs, Numbers, Measurement
 	- able to build a long term career + work life balance
 	- better work benefits
 	- union organizing to build real criticism
-- 
-
-
-# Contingency Theory

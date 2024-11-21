@@ -1,0 +1,92 @@
+# 3. International Monetary System
+
+### IMS Requirements
+
+- convertible currency
+- capital mobility
+- legal system stability
+- liquidity management rules
+- external imbalance arrangements (floating, CB role etc.)
+
+
+
+### Evaluation Criteria
+
+- confidence
+- stability
+- ability to have *independent monetary policy*
+- limited functional costs
+- should allow balancing different goals
+  - *internal balance:* low unempl. <-> inflation
+  - *external balance*: trade equilibrium
+  - *financial balance*: no BOP crisis 
+
+
+
+## Balance of Payments
+
+> **Balance of Payments (BOP)**: statement of all transactions made by entities (between them and rest od the world)
+
+- all types of transactions
+- quantity + value of products
+- balance to 0 (accounting truth)
+
+
+
+### Accounts
+
+> **Current Account**: all transactions in terms of goods, services, income, asset transfers
+
+= mostly imports / exports
+
+> **capital account:** transactions of financial instruments / central bank reserves / monetary transfers
+
+
+
+Exchange Rate effects (on current account)
+
+- **Volume Effect** of ER ↑
+  -  less foreign currency = less imports
+  - Foreigners = more domestic currency = more exports
+- **Value Effect**: relative price of the good
+
+
+
+Which effect dominates?
+
+- depends on elasticity (Marshall-Lehner condition)
+  - higher elasticity = volume effect dominates
+  - lower elasticity = value effect
+- J-curve:
+  - very short run: value effect
+  - slower adjustment of imp. / exp.
+
+
+
+## Reserve currencies
+
+> **Reserve Currency**: currency that is held in significant quanitty by CB & Institutions as part of foreign exchange reserves
+
+- used in int. trade / transactions
+- used by CB to impact ER
+- asset function
+
+
+
+Advantages
+
+- easy international trade
+- ease of borrowing in your own currency
+- lower ER (not exchaning that much)
+
+
+
+Disadvantages
+
+- speculative bubbles
+- difficulty to maintain internal / external balances (*Triffin Dilemma*)
+  - produce a lot of currency to make world happy (trouble exporting + inflation)
+  - or protect economy (less currency available to foreigners)
+
+
+

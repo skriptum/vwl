@@ -1,0 +1,42 @@
+# 1. Introduction to monetary Problems
+
+> **Currency**: 
+> - unit of account
+> - express value of any good
+> - medium of payment
+> - store of value
+
+= counterpart of legal flows
+
+History:
+
+- barter economy
+	- needs „*double coincidence of needs*“ 
+	- storage + transportation costs
+- gold currency
+	- large value / weight ratio
+	- easily divisible
+- modern banking system
+	- expansion of debt+loans
+	- fiat currencies
+
+> **Exchange Rate:** projection of relative value against each other (currency pair)
+
+- *direct* quotation: price of foreign in domestic
+- *indirect* quotation: price of domestic in foreign
+
+- *spot* exchange rate: todays prices
+- *forward* exchange rate: quoted today, delivered later
+	- adjusted for inflation differentials + interest rates
+
+> **Arbitrage:** taking advantage of price differentials for same goo
+
+= same prices = Purchasing Power Parity
+
+$$
+M_{i,j} = \frac{P_j}{P_i}
+$$
+
+- $M_{i,j}$ = exchange rate
+- $P_{i},P_j$ = price levels in countries
+

@@ -36,7 +36,7 @@ History:
 $$
 M_{i,j} = \frac{P_j}{P_i}
 $$
+
 - $M_{i,j}$ = exchange rate
 - $P_{i},P_j$ = price levels in countries
-
 

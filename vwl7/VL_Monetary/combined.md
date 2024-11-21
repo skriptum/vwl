@@ -2,6 +2,10 @@
 title: International Monetary Problems
 subtitle: UPEC - J. RAY
 toc: true
+format:
+  html:
+    html-math-method: katex
+    self-contained: true
 ---
 
 # 1. Introduction to monetary Problems

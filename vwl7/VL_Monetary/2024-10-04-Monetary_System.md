@@ -7,13 +7,16 @@
 $$
 r_{i,o} = \frac{P_i}{P_j}
 $$
+
 r = exchange rate
 
 ### relative PPP
 
 $$
 \frac{r_{i,j}^{t}}{r_{i,j}^{t-1}} = \frac{P_j^t}{P_j^{t-1}}/\frac{P_i^j}{P_i^{t-1}}
-$$ allows for differential in inflation dynamics
+$$ 
+
+allows for differential in inflation dynamics
 
 ### real exchange rate
 
@@ -42,7 +45,6 @@ Short Run: (financial variables)
 - interest rate differentials
 
 **Interest Rate Parity (IRP)**
-
 $$
 t_{i}= t_{j} - \frac{r_{i,j}^{t+1}-r_{ij}^{t+1}}{r_{ij}^t}
 $$

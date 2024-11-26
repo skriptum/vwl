@@ -133,7 +133,6 @@ bop <- bop %>%
 ```
 
 
-
 ### Migration & Budget
 
 ```{r}
@@ -290,6 +289,15 @@ comb <- comb %>%
   mutate(gnp_dollar_yug = GNP_pp_dollar * pop*1000)
 ```
 
+do some deflating exercises etc
+```{r}
+library(priceR)
+```
+
+```{r}
+comb$
+```
+
 ## Plotting of Finished Figures
 
 ### Figure: Comparison of GDP Countries
@@ -427,7 +435,7 @@ remit_rel_plot +
   scale_color_brewer(palette = "Set1")+  
   labs(
     x = "Year",
-    # y = "Remittances (Million $) ",
+    # y = "Remittances (Million $, current prices) ",
     y = "% of GDP"
     ) +
   theme_tufte() +
@@ -543,3 +551,34 @@ ggplot(aes(x = year), data=comb) +
   xlim(1970,1990)
 ggsave("images/real_wage.png", width = 7, height = 4, dpi = 500)
 ```
+
+## Additional Tests
+
+do some deflating exercises etc
+
+```{r}
+library(priceR)
+```
+
+```{r}
+bop$adjusted_remit <- adjust_for_inflation(bop$year, bop$remit, "US", to_date = 2011)
+```
+
+```{r}
+df_90 <- readstata13::read.dta13("https://www.rug.nl/ggdc/historicaldevelopment/maddison/data/mpd2018_1990bm.dta")
+```
+
+```{r}
+df_90 %>%
+  filter(countrycode == "YUG") %>%
+  select(gdppc, year) %>%
+  filter(year >= 1960)
+```
+```{r}
+comp_data %>%
+  filter(countrycode == "YUG") %>%
+  select(cgdppc, year) %>%
+  filter(year >= 1960)
+```
+
+

@@ -16,7 +16,7 @@ The early 1990s marked a pivotal moment in world history, famously described as 
 
 Yet, the story of socialism’s demise is not a simple tale of ideological failure; it is intertwined with complex internal and external dynamics. Among the various socialist models, Yugoslav socialism stood out for its unique blend of market mechanisms and worker self-management, presenting an alternative vision of socialism that diverged from the centralized planning of the Soviet model. However, by the 1980s, this once-promising system found itself in deep crisis, ultimately unraveling in the face of political and economic challenges.
 
-This essay explores the downfall of Yugoslav market socialism, arguing that its collapse cannot be attributed to internal inefficiencies or ideological shortcomings. Instead, it posits that external factors played the decisive role in undermining the Yugoslav economy and bringing the end of its socialist experiment.
+This essay argues that the collapse of Yugoslav market socialism was driven by external factors, not internal inefficiencies or ideological failure. It highlights the decisive role of geopolitical pressures and global economic forces in dismantling this unique socialist model in the years leading up to 1990. These dynamics, more than any inherent flaws, dismantled a socialist model that had successfully combined market mechanisms with worker self-management for decades. I will focus less on the complex dissolution of the Yugoslav state in the 1990s and more on the end of the socialist model, marked by the  introduction of the economic Reforms in 1989.
 
 The first section provides a brief overview of Yugoslavia's economic history, setting the stage for an analysis of existing explanations for its collapse. Following this, the essay examines four major external shocks that significantly impacted the Yugoslav economy: beginning with the Oil Shock of the 1970s, it then explores the global economic downturn, the escalation of external debt, ebbing of immigration, and concludes with an analysis of the IMF Adjustment Programs.
 
@@ -28,7 +28,7 @@ The following period until the start of the 1980s was defined by rapid growth in
 
 The Yugoslav economic system was defined by the central role of workers' self-management, in which workers effectively owned the firms. A significant portion of decision-making occurred within workers' councils, which had the authority to hire and fire managers and determine how profits were distributed between investment and wages.
 
-Unlike other socialist economies, Yugoslavia maintained a relatively open stance towards both Eastern and Western trade. As a founding member of the General Agreement on Tariffs and Trade (GATT), it engaged extensively in international trade, particularly from the 1960s onwards. Yugoslavia’s imports and exports were notably diversified, spanning a wide range of trading partners and products.
+Unlike other socialist economies, Yugoslavia maintained a relatively open stance towards both Eastern and Western trade. As a member of the General Agreement on Tariffs and Trade (GATT), it engaged extensively in international trade, particularly from the 1960s onwards. Yugoslavia’s imports and exports were notably diversified, spanning a wide range of trading partners and products, and it had a higher share of trade with OECD countries than the socialist bloc [@kukicOriginsRegionalDivergence2020, p. 4].
 
 ## Existing Explanations
 
@@ -37,6 +37,8 @@ A variety of theories seek to explain the disintegration of the Socialist Federa
 @yarashevichEconomicReasonsBreakYugoslavia2013 explore the economic reasons behind the breakup of Yugoslavia, identifying four key factors. These include two internal issues—labor market challenges and the system of self-management—as well as two external pressures—external debt and foreign trade dynamics.
 
 Additional economic factors are highlighted by @kukicOriginsRegionalDivergence2020, who examines the regional economic divergence within Yugoslavia. He argues that the failure of the regions to converge economically can be attributed to the soft-budget constraint and the inherent flaws of the workers' self-management system.
+
+<!XX!> 
 
 While all these explanations offer valid insights, the collapse of a system as complex as Yugoslavia’s can never be attributed to a single cause. However, arguments that focus solely on internal economic inefficiencies fall short of explaining why other, similarly diverse countries experienced comparable trajectories in the 1980s. Despite their different political and economic systems, these countries exhibited strikingly similar patterns of decline (@fig-gdp), suggesting that broader external factors played a critical role beyond internal dynamics.
 
@@ -57,16 +59,15 @@ The oil shocks of 1973 and 1979 marked a turning point in the global economy, as
 
 During this period, the impact on Yugoslavia’s economy was stark: the share of energy imports in total imports surged from about 5% in the 1960s to nearly 30% by the early 1980s (see @fig-imports2). Similarly, energy imports as a share of GDP rose sharply, climbing from roughly 1% in the 1960s to almost 15% at the beginning of the 1980s, as visible in @fig-imports1. These shifts underscored the country’s growing vulnerability to external economic forces and contributed to the mounting pressures on its socialist economy.
 
-
 ::: {#fig-imports layout-ncol=2}
-![Mineral Fuel Imports as % of GDP](./images/imports_gdp.png){#fig-imports1}
+![Mineral Fuel Imports as % of Gross Domestic Product](./images/imports_gdp.png){#fig-imports1}
 
 ![Mineral Fuel Imports as % of Total Imports](./images/imports_total.png){#fig-imports2}
 
 The Impact of Rising Energy Prices on Imports
 :::
 
-Even for advanced Western nations like Germany, the two oil shocks triggered significant crises. However, for a less developed country like Yugoslavia, whose currency was weaker on international markets, affording these costly imports became nearly impossible. As Rogel [@rogelBreakupYugoslaviaIts2004] explains, "for a country like Yugoslavia, which was greatly dependent on imported fuel paid for in hard currency, the oil price crisis alone could have resulted in financial ruin" (p. 14).
+Even for advanced Western nations like Germany, the two oil shocks triggered significant crises. However, for a less developed country like Yugoslavia, whose currency was weaker on international markets, affording these costly imports became nearly impossible. As @rogelBreakupYugoslaviaIts2004 explains, "for a country like Yugoslavia, which was greatly dependent on imported fuel paid for in hard currency, the oil price crisis alone could have resulted in financial ruin" (p. 14).
 
 ### Global Economic Downturn
 
@@ -114,11 +115,15 @@ In the context of multiple crises, many of which were precipitated by the 1979 o
 
 This situation presented a prime opportunity for the International Monetary Fund (IMF), which was originally established to manage balance of payments crises as a global lender of last resort. The IMF offers two primary avenues of assistance to countries facing short-term liquidity challenges. The first is direct lending, providing short- to medium-term loans to address a shortage of hard currencies. The second is the provision of a "seal of approval," indicating that a country is on a trajectory towards a more sustainable financial position, thereby enabling private lenders to resume debt or lending activities [@jensenCrisisConditionsCapital2004]. 
 
+### The IMF Prescription
+
 In order to reach an agreement with the International Monetary Fund (IMF), the country in crisis must implement a program of policies that have been negotiated in secrecy and are designed to address the underlying macroeconomic issues.  During the 1980s, the IMF expanded its role beyond that of mere stabilization to become a leading advocate for market-focused reforms. As the "world's leading promoter of market-liberalizing reforms" [@kentikelenisMakingNeoliberalGlobalization2019], the IMF began to advocate for a more expansive program of economic liberalization and structural adjustments in countries experiencing financial crises.
 
 The International Monetary Fund (IMF) frequently employs a standard procedure to address underlying balance of payments crises. This procedure typically involves reducing aggregate demand, primarily through fiscal cuts, while simultaneously encouraging exports to receive inflows of hard currencies. In theory, these programs should not have a significant impact on GDP growth in the long term. Fiscal cuts should enhance the confidence of investors and households that a significant reduction in future spending is unlikely, thereby fostering a more optimistic growth outlook. This phenomenon is known as "expansionary austerity" [@giavazziCanSevereFiscal1990].
 
 In practice, the effect of these policies is frequently contrary to the stated objective of stimulating growth. The policies introduced by the International Monetary Fund (IMF) have a markedly adverse impact on GDP growth and investment, frequently contracting much stronger than expected and needed for macroeconomic balance. In the aftermath of this decline, a multitude of unforeseen consequences emerge in the countries affected, including those pertaining to public health [@hoddieShortTermPainLongTerm2014].
+
+### The Yugoslav Reality
 
 In the case of Yugoslavia, the reform packages initiated in 1981 concentrated on enhancing price signals to align more closely with international market prices. The implicit assumption of this policy is that economic actors will react in a rational and uniform manner to market economies in adjusting to these price increases. In practice, however, the enterprises in a socialist economy like Yugoslavia do not respond in the same way to incentives and are confronted with different financing circumstances than their capitalist counterparts [@tysonConditionalityAdjustmentHungary1986]. 
 
@@ -138,11 +143,13 @@ In Yugoslavia, the "IMF actually called for cuts in public  spending to be conce
 
 In general, the impact of the adjustment programs in Yugoslavia can be described as ambivalent. However, it is evident that they did not provide a solution in the short term. Rather, due to an inability to adapt to the complexities of a socialist economy, they contributed to the exacerbation of the economic crisis. 
 
-## Conclusion
+### Aftermath
 
 In response to the fundamental and enduring crisis and following a series of continuous adjustment programs, preliminary measures were initiated in 1988 with the objective of modifying the economic system. A total of 39 new amendments were incorporated into the Constitution, along with the introduction of 22 new pieces of legislation. This package also included the removal of limits on private property and the introduction of new types of property in enterprises. In 1989, a comprehensive "shock therapy"-style package was implemented, comprising the liberalization of 75% of prices, a complete freeze on wages, the pegging of the exchange rate to the German Mark, and the commencement of enterprise privatization [@uvalicRiseFallMarket2019]. This marked the conclusion of the Yugoslav socialist experiment and was soon followed by the dissolution of the Socialist Federal Republic of Yugoslavia and the outbreak of civil wars.
 
-As detailed in this essay, the dissolution of the Yugoslav economic system can be attributed to external circumstances that the country's economic policymakers were compelled to address. The 1970s saw the onset of a series of oil shocks that had a global impact, precipitating a sharp contraction in growth and an increase in inflation. This combination of rising import prices, economic downturn, and inflation (referred to as "stagflation") resulted in a reduction in demand for Yugoslav goods and services, as well as a decline in immigration. Additionally, it contributed to the deterioration of global financing conditions. As a consequence of these circumstances, the balance of payments of Yugoslavia was significantly affected. 
+## Conclusion
+
+As detailed in this essay, the dissolution of the Yugoslav economic system can be attributed to external circumstances that the country's economic policymakers were compelled to address. The 1970s saw the onset of a series of oil shocks that had a global impact, precipitating a sharp contraction in growth and an increase in inflation. This combination of rising import prices, economic downturn, and inflation (referred to as "stagflation") resulted in a reduction in demand for Yugoslav goods and services, as well as a decline in emigration. Additionally, it contributed to the deterioration of global financing conditions. As a consequence of these circumstances, the balance of payments of Yugoslavia was significantly affected. 
 
 Faced with the necessity of addressing the imbalance in its balance sheet, Yugoslavia sought assistance from the IMF. In consequence of the neoliberal turn in the academic environment of the 1980s, this institution adopted policies that proved counterproductive insofar as they did not address the underlying issues. In conclusion, the prolonged economic crisis of the 1980s ultimately resulted in the dissolution of the socialist experiment in Yugoslavia, although without it, the country probably would have fared significantly better.
 

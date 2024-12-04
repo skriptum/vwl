@@ -17,3 +17,41 @@ Contents:
 - Backup Slides with expanding Material
 - discussion question
 - short Conclusion
+
+
+
+### **Interest Rate Relevance for Renewables**
+
+[Role of capital costs in decarbonizing the electricity sector](https://iopscience.iop.org/article/10.1088/1748-9326/11/11/114010)
+
+[Impact of Interest Rates on Electricity Production Costs](https://www.cepweb.org/wp-content/uploads/CEP_DN_Interest_Rates_Energy_Prices.pdf)
+
+[Wood Mac Report:](https://www.woodmac.com/horizons/energy-transition-investing-in-a-high-interest-rate-era/) 
+
+
+
+- reaction to inflation: FED and European Central Banks raise interest rates
+- Green Energy vs Brown Energy: 
+  - high upfront cost - cap expenditure
+  - low operational costs 
+
+![img](../images/2024-11-25_18-28-00.png)
+
+
+
+lower LCOE (Levelized Cost of Energy) in long-term
+
+- but due to capex = very susceptible to interest rates
+- if the interest rates rise from 2% historic to 4%
+- much higher rise in LCOE for Green Energy
+
+![2024-11-25_18-20-38](../images/2024-11-25_18-20-38.png)
+
+aka Elasticity to interest rate is much higher
+
+![img](../images/2024-11-25_18-20-57.png)
+
+As one graph: what happened in post-2020:
+
+![img](../images/2024-11-25_18-26-49.png)
+

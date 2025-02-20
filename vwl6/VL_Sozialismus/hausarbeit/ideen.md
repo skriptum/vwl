@@ -211,3 +211,92 @@ Breakdown: economic reasons => nationalism etc
 
 
 
+## Comments Magnus
+
+*Du lieferst sehr viele guten Daten und Argumente, warum Jugoslawien an externen ökonomischen Schocks zerbrochen ist. Ein Absatz vor der Conclusion würde helfen, diese Befunde nochmal zusammenzuführen und kritisch mit Jovic z.B. zu diskutieren. Warum greifen die anderen Erklärungen nicht? Auch Jovic argumentiert gegen die ökonomische Erklärung meines Wissens. Versuch mal das mit Bezug auf deine Daten zu entkräften.*
+
+ökonomischer Druck -erzeugt erst die Spaltungen in den Lokalitäten
+
+- distribution of economic hardship had to be decided
+- hwat held the federal system together: federal transfers from rich to poor
+- republican opposition to federal transfers
+  - political fight 
+  - economic fight over ressources produced in the republic (e.g. slovenia)
+- described by woodwardBalkanTragedyChaos1995
+- the radicalness of the austeritiy package : kind of forced the local republics to try as much as possible to limit the extent to which they are hit
+- internal economic imbalances 
+
+
+
+- jovic argues: rich republics severely hindered federal effort
+- but Croatia = first republic to be faced with complete economic bankruptcy (jovicBreakdownEliteIdeological1999, 146)
+  - General: republics with greater exposure to western credit and trade = higher risk
+  - should be more in favor of IMF programs and not block it
+
+
+
+Text:
+
+- external economic pressure -> conditions that left no other option than IMF for yugoslav leadership
+- adjustment program with severe economic hardships due to radical austerity
+- distribution of them had to be decided upon 
+  - federal cohesioon + identity was absed on extensive distribution between richer and poorer republics
+- economic crisis questions these transfers (deemed to be inefficient by the IMF (incentives))
+  - richer republics start to question 
+  - political turmoil only started long after the constitutonal decentralisation
+- Damit zeigt sich, dass nicht die politische Zersplitterung die wirtschaftliche Krise verschärfte, sondern umgekehrt: Die wirtschaftliche Krise verstärkte politische Spaltungen und führte letztlich zur Auflösung des Bundesstaates.
+- 
+
+
+
+*Außerdem wirft dein IMF-Argument die Frage auf, wenn der IMF nicht die richtigen Policies verordnet hat, warum hat Jugoslawien nicht von sich aus die richtigen Maßnahmen ergriffen. Auch das kannst du diskutieren. Jovic würde hier eben die Dysfunktionalität der jugoslawischen Konföderation anführen, die mit der Verfassung von 1974 hausgemacht war. Meinst du auch eine funktionsfähige Zentralregierung in Belgrad wären ökonomische die Hände gebunden gewesen, adäquat auf die Krise zu reagieren? Warum? Hier könnte ein detailierterer Vergleich mit ein, zwei kapitalistischen Schwellenländern helfen, die ebenfalls in Zahlungsschwierigkeiten geraten sind (Brasilien, Mexiko).*
+
+
+
+The question arises why the leadership of Yugoslavia agreed to these harsh conditions in their adjustment program. As @jovicBreakdownEliteIdeological1999 argues, the economic dissolution was preluded by a breakdown in elite ideological consensus, which in turn led to political rifts between the republics and the federal government. These Rifts made it harder to coherently negotiate with the IMF, and hadnt it been for thiese rifts, the increased negotiation power could have brought a more favourable deal. 
+
+This argument contradicts the historical experiences on IMF negotiations in other countries. As described by @petrasIMFAusterityState1986, that a prolonged duration of economic crisis "increase the leverage of the IMF and lessen the margin for local autonomous action" [p.435]. When countries have exhausted all their easy refinancing operations, IMF leverage is at a maximum and even a completely unified government cant fight polciies viewed as suboptimal. Historic Examples of this include Mexico in 1982, which was ruled by the Institutional Revolutionary Party (PRI) uninterrupted from 1929 to 2000 in a one-party state and exerted complete power on regional and national level. Even in this position, with a strong presidency in negotiations, mexico was prescribed one of the hardest austerity programs by the IMF. A similar case is the repressive military government in Brasil, that had all the means to force their programs trough. This shows, that even if Yugoslavia had a strong elite consensus in the negotations, the desperate economic situation created by the external economic pressures tied their hands to push back on these adverse policies.
+
+Jovic argument
+
+- dysfunktionale Verhandlungsführung erschwerte Durchsetzen von "besseren" policies
+- aufgrund der Zersplitterung der politischen Elite
+
+aber:
+
+- die Verhandlungsmacht hängt vor allem von der Tiefe der Verstrickung der Wirtschaft mit Welthandel zusammen als von der politischen Handlungsfähigkeit
+- Vergleich Mexiko, Brazil:
+  - Mexiko: Alleinherrschaft der PRI von 1922 bis 2000
+    - komplette Kontrolle auf lokaler und staatlicher Ebene
+    - geeinte Verhandlungsposition des Präsidenten
+  - Brasilien: undemokratische Militätherrschaft bis 1988
+    - aber Massenproteste und auf lokaler Ebene wenig popular support
+  - Jugoslavien: Mischform, ein-parteien herrschaft aber divergierende Interessen der Lokalregierungen
+- alle 3 extrem radikal durchgesetzte Sparprogramme 
+  - ökonomisch die Hände gebunden
+- = nicht die stärke / einheitlichkeit der verhandlungspartner ist relevant, sondern wirtschaftliche Verstrickung
+- jugoslawien auch mit einheitlichen interessen in der politischen elite = keine veränderung
+  - die abhängigkeit von weiteren fianzspritzen machte verhandlungen schwierig
+  - wirtschaftliche krise war so intensiv, dass nichts übrig blieb (bereits dargelegt)
+
+
+
+
+
+"Federal Prime Minister openly declared that Yugoslavia 'w ould
+not be able, even w ith the greatest effort, to repay the debts falling due in 1983" Jovic Theses. p146
+
+
+
+
+
+
+
+IMF Programme: petrasIMFAusterityState1986
+
+- Leverage in negotations depends on unity of leadership
+- and general situation of the receiving country
+- "IMF regulation is thus conditional on the prior penetration of international capital"
+
+
+

@@ -158,6 +158,40 @@ calc 3year moving average
 wage$moving_avg <- zoo::rollmean(wage$real_growth, 5, fill = NA, align = "right")
 ```
 
+### Budget
+
+```{r}
+budget <- read_csv("data/budget.csv")
+```
+```{r}
+budget <- budget %>%
+  t(.) %>%
+  as.data.frame(.) %>%
+  #first row as column names
+  setNames(.[1,]) %>%
+  #remove first row
+  .[-1,] %>%
+  #set index column as year column
+  rownames_to_column("year") 
+```
+
+```{r}
+budget <- budget %>%
+  rename_all(str_replace_all, " ", "") %>%
+  rename_all(tolower) %>%
+  mutate_all(as.numeric) %>%
+  mutate(share = grants/revenues)
+```
+
+```{r}
+budget %>%
+  ggplot(aes(x = year, y=share)) +
+    geom_line() 
+```
+
+= no visible decline in grants to federal republics + data issues!
+
+
 ## Explorative Plotting
 
 Current Account Balance
@@ -257,13 +291,37 @@ trade %>%
   geom_area(aes(y = IMPORTS_Mineral_fuels+ + IMPORTS_Chemicals), fill="red") 
 ```
 
+### Maddison Plots
+
+```{r}
+maddison::maddison %>%
+  filter(countrycode %in% c("BRA", "MEX", "YUG", "HUN")) %>%
+  filter(year >= 1950 & year <= 1990) %>%
+  ggplot(aes(x = year, y = rgdpnapc, color = country)) +
+  geom_line() +
+  scale_color_brewer(palette = "Set1")
+```
+Plot the growth rate of the GDP per capita (5 year average for all countries)
+
+```{r}
+maddison::maddison %>%
+  filter(countrycode %in% c("BRA", "MEX", "YUG", "HUN")) %>%
+  filter(year >= 1950 & year <= 1990) %>%
+  group_by(country) %>%
+  mutate(growth_rate = (rgdpnapc - lag(rgdpnapc)) / lag(rgdpnapc)) %>%
+  mutate(moving_avg = zoo::rollmean(growth_rate, 5, fill = NA, align = "right")) %>%
+  ggplot(aes(x = year, y = moving_avg, color = country)) +
+  geom_line() +
+  scale_color_brewer(palette = "Set1")
+```
+
 
 ## Combine the Data
 
 ```{r}
 comp_data <- maddison::maddison
 comp_data <- comp_data %>%
-  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG")) %>%
+  #filter(countrycode %in% c("GRC", "PRT", "ESP", "YUG", "HUN")) %>%
   filter(countrycode %in% c("BRA", "MEX", "YUG", "BGR", "POL")) %>%
   filter(year >= 1950 & year <= 1990)
 ```

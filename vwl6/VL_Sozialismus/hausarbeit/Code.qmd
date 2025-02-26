@@ -442,27 +442,27 @@ Plot the number of migrants and net migration
 
 ```{r}
 ggplot(migration, aes(x=year))+
-  geom_line(aes(y=nr_emigration/1000,color="Nr. of Emigrants")) +
+  geom_line(aes(y=nr_emigration/1000,color="Nr. of Emigr.")) +
   geom_point(aes(y=nr_emigration/1000), color="blue", shape=5) +
-  geom_line(aes(y=net/1000, color="Net Migration"))+
+  geom_line(aes(y=net/1000, color="Net Migr."))+
   geom_point(aes(y=net/1000), color="red", shape=6) +
   #styling
   scale_color_brewer(palette = "Set1")+  
   labs(
-    title = "Yugoslav Migration 1968-1985",
+    #title = "Yugoslav Migration 1968-1985",
     x = "Year",
     y = "Migrants in Thousands",
     ) +
   geom_hline(yintercept=0, color="grey")+
   theme_tufte() +
   theme(
-    legend.position = "bottom",
+    legend.position = c(0.75,0.75),
     legend.title = element_blank(),
     panel.border = element_rect(fill = NA, color = "black"),
     ) +
   scale_y_continuous(n.breaks=6)+
   xlim(c(1967,1985)) 
-ggsave("images/migration.png", width=7, height=4, dpi=500)
+ggsave("images/migration.png", width=4, height=3, dpi=500)
 ```
 
 

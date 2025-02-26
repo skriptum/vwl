@@ -240,12 +240,13 @@ Text:
 - external economic pressure -> conditions that left no other option than IMF for yugoslav leadership
 - adjustment program with severe economic hardships due to radical austerity
 - distribution of them had to be decided upon 
-  - federal cohesioon + identity was absed on extensive distribution between richer and poorer republics
+  - federal cohesioon + identity was based on extensive distribution between richer and poorer republics
 - economic crisis questions these transfers (deemed to be inefficient by the IMF (incentives))
   - richer republics start to question 
   - political turmoil only started long after the constitutonal decentralisation
 - Damit zeigt sich, dass nicht die politische Zersplitterung die wirtschaftliche Krise verschärfte, sondern umgekehrt: Die wirtschaftliche Krise verstärkte politische Spaltungen und führte letztlich zur Auflösung des Bundesstaates.
-- 
+
+
 
 
 

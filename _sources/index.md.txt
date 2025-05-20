@@ -98,7 +98,7 @@ also for Empirical Economics with R: [Replication Code](https://skriptum.github.
 
 | Modul                     | Prof              | Übersicht                                   | Zusammenfassung                                              |
 | ------------------------- | ----------------- | ------------------------------------------- | ------------------------------------------------------------ |
-| Sozialistische Ökonomien  | Magnus Neubert    | [Übersicht](vwl6/VL_Sozialismus/README.md)  |                                                              |
+| Sozialistische Ökonomien  | Magnus Neubert    | [Übersicht](vwl6/VL_Sozialismus/README.md)  | [Seminar Paper](https://uploads.martenw.com/Socialism/paper.html) |
 | Umweltökonomie            | Bartos Bartkowski | [Übersicht](vwl6/README.md)                 | [Zusammenfassung PDF](https://uploads.martenw.com/Umwelt/Zusammenfassung.pdf) |
 | Introductory Econometrics | Christoph Wunder  | [Übersicht](vwl6/VL_Econometrics/README.md) | [Cheat Sheet PDF](https://uploads.martenw.com/Econometrics/Zusammenfassung.pdf) |
 

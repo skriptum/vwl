@@ -102,3 +102,10 @@ also for Empirical Economics with R: [Replication Code](https://skriptum.github.
 | Umweltökonomie            | Bartos Bartkowski | [Übersicht](vwl6/README.md)                 | [Zusammenfassung PDF](https://uploads.martenw.com/Umwelt/Zusammenfassung.pdf) |
 | Introductory Econometrics | Christoph Wunder  | [Übersicht](vwl6/VL_Econometrics/README.md) | [Cheat Sheet PDF](https://uploads.martenw.com/Econometrics/Zusammenfassung.pdf) |
 
+### Bachelor
+
+| Modul           | Prof        | PDF  | Link                                                    |
+| --------------- | ----------- | ---- | ------------------------------------------------------- |
+| Bachelorseminar | Lars Börner | tba  | [GitHub Repo](https://github.com/skriptum/gaspreis-did) |
+| Bachelorarbeit  | Lars Börner | tba  | [GitHub Repo](https://github.com/skriptum/inequality)   |
+

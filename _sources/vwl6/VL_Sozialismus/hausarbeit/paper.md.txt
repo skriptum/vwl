@@ -38,8 +38,6 @@ A variety of theories seek to explain the disintegration of the Socialist Federa
 
 Additional economic factors are highlighted by @kukicOriginsRegionalDivergence2020, who examines the regional economic divergence within Yugoslavia. He argues that the failure of the regions to converge economically can be attributed to the soft-budget constraint and the inherent flaws of the workers' self-management system.
 
-<!XX!> 
-
 While all these explanations offer valid insights, the collapse of a system as complex as Yugoslavia’s can never be attributed to a single cause. However, arguments that focus solely on internal economic inefficiencies fall short of explaining why other, similarly diverse countries experienced comparable trajectories in the 1980s. Despite their different political and economic systems, these countries exhibited strikingly similar patterns of decline (@fig-gdp), suggesting that broader external factors played a critical role beyond internal dynamics.
 
 ![GDP p.C. in selected countries](./images/GDP_per_capita.png){#fig-gdp}

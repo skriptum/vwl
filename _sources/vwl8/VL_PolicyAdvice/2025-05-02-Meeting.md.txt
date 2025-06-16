@@ -1,0 +1,37 @@
+## Brachert Paper
+
+
+
+TOC
+
+- Intro & Motivation (Mario)
+- Literature (Marten)
+  - Import. / Export -> Verweis auf Limitations
+- RDD & Identificiation  (Mario)
+  - Density Test etc.
+  - Erläuterung RDD: Randomization , Continuity
+- Data & Results (Marten)
+  - Data Criticism: which clubs are included in regressions / which are not
+- Discussion & Review on the scientific scale (Marten)
+- Limitations (ZSM.)
+
+
+
+| Topic                 | Assigned       | Length |
+| --------------------- | -------------- | ------ |
+| Intro & Motivation    | Mario          | 1min   |
+| Literature            | Marten         | 2min   |
+| RDD & Identification  | Mario          | 5min   |
+| Data & Results        | Marten         | 2min   |
+| Discussion & Scale    | Marten         | 2min   |
+| Limitations & Opinion | Mario + Marten | ~ 7min |
+
+Seminararbeit äquivalent
+
+
+
+Zeitplan:
+
+- bis 17.05 Schreiben der Parts
+- 22.05 Besprechung
+- 30.05 Abgabe

@@ -1,0 +1,153 @@
+## Main Findings
+
+Our evaluation of this Paper:
+
+- Ranks high on Maryland Scientific Methods Scale
+
+- Creative use of RDD
+- some criticism concerning transparency, literature treatment and robustness check
+
+
+
+## Related Literature
+
+- lot of literature on the topic (contested policy debate)
+- mostly looking at overall economic effects in a region
+  - oerview paper by coates and humphreys = no significant effect
+- some sectoral analysis
+  - fedderson maenning: world cup 2006
+- some explanations:
+  - substittion effects: consumers have limited sport budget = if football not there, just switch to other sports
+  - export / import effects: if no sports in one region, go to another etc
+
+this is the literature
+
+consensus: **temporally, sectorally and geographically bounded** economic effects
+
+
+
+## Data
+
+Paper: uses valid data sources
+
+- from 1995 - 2012
+- 16 seasons, four leagues (Italy, Fracne, Germany, UK)
+- attendance Data: http://european-football-statistics.co.uk/attn.htm
+  - data sources of this website not revealed
+  - not official statistics, consumer collected
+  - often used in research
+- NUTS 3 Level regional economic data
+  - problem: broad categories of sectors
+  - only focused on: Wholesale, Retail, Accommodation,...
+
+
+
+
+
+## Results
+
+### H1
+
+**Effect of Relegation on club income** (Variable = attendance)
+
+
+
+Plot: typical for RDD
+
+- Cutoff
+- see the discontinuity around cutoff
+
+- 28% decrease relative
+
+- plotted with a polynomial of 4th order
+
+
+
+
+
+---
+
+- but is this a valid Variable for Club Income?
+  - no specific data on this on club level
+  - but especially in germany: a lot of clubs in second league that have more visitors than first
+  - due to famous clubs in 2nd (HSV, BSC, etc)
+- and corporate clubs without many fans in 1st (RBL)
+- differential effects in different countries?
+  - not transparent in the analysis that some may have heavier effect than others
+
+
+
+### H2
+
+**effect of relegation on football related sectors**
+
+Hypotheses 2: confirmed
+
+- regional GVA & Employment
+- very broad categories of economic sectors 
+- not as statistically significant as before
+- 3% reduction in sectors in relegated regions
+
+### H3
+
+**effect of relegation on overall economic growth**
+
+Hypotheses 3: partially confirmed
+
+- no relevant regional growth effects 
+- but employment effects (p only 0.1 = statistical superfluous)
+  - at least in the short term tested here
+  - limited statististical significance
+
+### summary
+
+Sectoral, geographically, temporal effects
+
+- short run differences in related sectors
+- but very subtle
+
+probably: Substitution
+
+
+
+## Discussion
+
+- Overfitting of Polynomial 4 to show a cutoff (esp H2 Figure)
+  - @gelmanWhyHighOrderPolynomials2019
+  - only visual element
+- Bandwidth around Cutoff changes in every regression
+  - automatically calculated
+  - comparibility of regressions harmed
+  - impairs the interpretation
+- differential effects in different leagues
+  - not mentioned in the paper
+  - our guess: very different in UK vs germany (relegation attendance)
+
+
+
+## Conclusion
+
+- meaningful evidence
+  - innovative RDD to real world data
+  - SMS Level 4 (fulfills all )
+    - Cutoff sufficiently sharp :white_check_mark:
+    - only treatment changes at the boundary :ballot_box_with_check:
+    - no manipulation around cut off :white_check_mark:
+  - discussion = not complete criticism, 
+    - just light improvements we would have wished
+  - for us: training session in being critical of a paper
+
+
+
+
+
+MARIOS:
+
+- Relevance for Policy Advice
+  - sector-specific, short-term effects of sports franchises
+  - inform public subsidy decisions (e.g., infrastructure, policing)
+  - Reinforces skepticism toward overstated ex-ante projections
+- some Criticism, nonetheless good
+  - McCrary Test
+  - Econometric Inconsistencies
+

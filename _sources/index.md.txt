@@ -104,8 +104,11 @@ also for Empirical Economics with R: [Replication Code](https://skriptum.github.
 
 ### Bachelor
 
-| Modul           | Prof        | PDF  | Link                                                    |
-| --------------- | ----------- | ---- | ------------------------------------------------------- |
-| Bachelorseminar | Lars Börner | tba  | [GitHub Repo](https://github.com/skriptum/gaspreis-did) |
-| Bachelorarbeit  | Lars Börner | tba  | [GitHub Repo](https://github.com/skriptum/inequality)   |
+Title: "Housing and Wealth Inequality across Europe"
+
+Final PDF: [Link](https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf)
+
+GitHub Repo (Code and Source): [Link](https://github.com/skriptum/inequality)
+
+> **Abstract:**  How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices benefit the middle 40% and especially the bottom 50%, while a booming stock market concentrates gains in the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares in Europe. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy. 
 
